@@ -3,600 +3,800 @@
     "phrase": "touch base",
     "definition": "To make brief contact with someone to check on progress or share updates.",
     "business_context_example": "Let's touch base on Friday to see where we are with the client proposal.",
-    "audio_text": "touch base"
+    "audio_text": "touch base",
+    "category": "Meetings",
+    "translation_bg": "да се чуем накратко (за докъде сме)"
   },
   {
     "phrase": "circle back",
     "definition": "To return to a topic or task later, after dealing with other things first.",
     "business_context_example": "I don't have the numbers yet, so let's circle back to the budget after lunch.",
-    "audio_text": "circle back"
+    "audio_text": "circle back",
+    "category": "Meetings",
+    "translation_bg": "да се върнем на темата по-късно"
   },
   {
     "phrase": "on the same page",
     "definition": "To share the same understanding or agreement about something.",
     "business_context_example": "Before we email the vendor, I want to make sure we're on the same page about pricing.",
-    "audio_text": "on the same page"
+    "audio_text": "on the same page",
+    "category": "Meetings",
+    "translation_bg": "с еднакво разбиране, на едно мнение"
   },
   {
     "phrase": "follow up",
     "definition": "To check on something again after a first contact, message, or meeting.",
     "business_context_example": "I sent the invoice last week, but I'll follow up today since they haven't replied.",
-    "audio_text": "follow up"
+    "audio_text": "follow up",
+    "category": "Email",
+    "translation_bg": "да проследя, да напомня след първия контакт"
   },
   {
     "phrase": "run something by someone",
     "definition": "To show or explain an idea to someone to get their opinion or approval.",
     "business_context_example": "Can I run this draft by you before I send it to the whole team?",
-    "audio_text": "run something by someone"
+    "audio_text": "run something by someone",
+    "category": "Meetings",
+    "translation_bg": "да покажа нещо на някого за мнение"
   },
   {
     "phrase": "in the loop",
     "definition": "Informed and included in updates about a project or decision.",
     "business_context_example": "Please keep me in the loop about any changes to the delivery schedule.",
-    "audio_text": "in the loop"
+    "audio_text": "in the loop",
+    "category": "Email",
+    "translation_bg": "в течение"
   },
   {
     "phrase": "call it a day",
     "definition": "To stop working, usually because you've done enough for now.",
     "business_context_example": "We've fixed the main bug and it's already 7 pm, so let's call it a day.",
-    "audio_text": "call it a day"
+    "audio_text": "call it a day",
+    "category": "Teamwork & office",
+    "translation_bg": "да приключим за днес"
   },
   {
     "phrase": "take the lead",
     "definition": "To take responsibility for a task or project and guide others.",
     "business_context_example": "Maria will take the lead on the onboarding project since she knows the client best.",
-    "audio_text": "take the lead"
+    "audio_text": "take the lead",
+    "category": "Teamwork & office",
+    "translation_bg": "да поема водещата роля"
   },
   {
     "phrase": "get back to someone",
     "definition": "To reply to someone later with an answer or information.",
     "business_context_example": "I need to check with my manager first, but I'll get back to you by Thursday.",
-    "audio_text": "get back to someone"
+    "audio_text": "get back to someone",
+    "category": "Email",
+    "translation_bg": "да отговоря на някого по-късно"
   },
   {
     "phrase": "move the needle",
     "definition": "To make a noticeable difference or real progress on something important.",
     "business_context_example": "The new ads brought 3 sales, but honestly that doesn't move the needle for us.",
-    "audio_text": "move the needle"
+    "audio_text": "move the needle",
+    "category": "Problem solving",
+    "translation_bg": "да направя осезаема разлика"
   },
   {
     "phrase": "reach out",
     "definition": "To contact someone, usually to ask for help or start a conversation.",
     "business_context_example": "A client from Germany reached out yesterday asking about our group rates.",
-    "audio_text": "reach out"
+    "audio_text": "reach out",
+    "category": "Email",
+    "translation_bg": "да се свържа с някого"
   },
   {
     "phrase": "heads up",
     "definition": "A short warning or notice that something is going to happen.",
     "business_context_example": "Just a heads up: the office internet will be down tomorrow from 9 to 11.",
-    "audio_text": "heads up"
+    "audio_text": "heads up",
+    "category": "Email",
+    "translation_bg": "предупреждение отрано"
   },
   {
     "phrase": "keep me posted",
     "definition": "Continue to give me updates as things change.",
     "business_context_example": "I can't join the call, so keep me posted on what the client decides.",
-    "audio_text": "keep me posted"
+    "audio_text": "keep me posted",
+    "category": "Email",
+    "translation_bg": "дръж ме в течение"
   },
   {
     "phrase": "kick off",
     "definition": "To start a project, meeting, or event.",
     "business_context_example": "We'll kick off the new campaign with a short team meeting on Monday.",
-    "audio_text": "kick off"
+    "audio_text": "kick off",
+    "category": "Meetings",
+    "translation_bg": "да стартираме"
   },
   {
     "phrase": "wrap up",
     "definition": "To finish or end something, like a meeting or a task.",
     "business_context_example": "Let's wrap up this call, we've covered everything on the agenda.",
-    "audio_text": "wrap up"
+    "audio_text": "wrap up",
+    "category": "Meetings",
+    "translation_bg": "да приключим"
   },
   {
     "phrase": "go over",
     "definition": "To review or examine something carefully.",
     "business_context_example": "Can we go over the contract together before I sign it?",
-    "audio_text": "go over"
+    "audio_text": "go over",
+    "category": "Meetings",
+    "translation_bg": "да прегледаме внимателно"
   },
   {
     "phrase": "bring up",
     "definition": "To start talking about a topic in a conversation or meeting.",
     "business_context_example": "I didn't want to bring up the salary question in front of everyone.",
-    "audio_text": "bring up"
+    "audio_text": "bring up",
+    "category": "Meetings",
+    "translation_bg": "да повдигна тема"
   },
   {
     "phrase": "touch on",
     "definition": "To mention a topic briefly without discussing it in detail.",
     "business_context_example": "The presentation touched on remote work, but the focus was hiring.",
-    "audio_text": "touch on"
+    "audio_text": "touch on",
+    "category": "Meetings",
+    "translation_bg": "да спомена накратко"
   },
   {
     "phrase": "chime in",
     "definition": "To join a conversation by adding a comment or opinion.",
     "business_context_example": "Feel free to chime in if you have questions during the demo.",
-    "audio_text": "chime in"
+    "audio_text": "chime in",
+    "category": "Meetings",
+    "translation_bg": "да се включа в разговора"
   },
   {
     "phrase": "weigh in",
     "definition": "To give your opinion on something being discussed.",
     "business_context_example": "Before we choose the logo, I'd like the design team to weigh in.",
-    "audio_text": "weigh in"
+    "audio_text": "weigh in",
+    "category": "Meetings",
+    "translation_bg": "да дам мнение"
   },
   {
     "phrase": "speak up",
     "definition": "To say what you think openly, or to talk louder.",
     "business_context_example": "If you disagree with the plan, please speak up now, not after we start.",
-    "audio_text": "speak up"
+    "audio_text": "speak up",
+    "category": "Meetings",
+    "translation_bg": "да кажа мнението си на глас"
   },
   {
     "phrase": "take it offline",
     "definition": "To discuss something privately later, outside the current meeting.",
     "business_context_example": "This is getting too detailed for the group, let's take it offline.",
-    "audio_text": "take it offline"
+    "audio_text": "take it offline",
+    "category": "Meetings",
+    "translation_bg": "да го обсъдим отделно след срещата"
   },
   {
     "phrase": "action items",
     "definition": "Specific tasks that people agree to do after a meeting.",
     "business_context_example": "I'll send the action items by email: two for me, one for Ivan.",
-    "audio_text": "action items"
+    "audio_text": "action items",
+    "category": "Meetings",
+    "translation_bg": "конкретни задачи след среща"
   },
   {
     "phrase": "takeaways",
     "definition": "The main points or lessons you remember from a meeting or event.",
     "business_context_example": "My main takeaway from the conference was that clients want shorter courses.",
-    "audio_text": "takeaways"
+    "audio_text": "takeaways",
+    "category": "Meetings",
+    "translation_bg": "основни изводи"
   },
   {
     "phrase": "brainstorm",
     "definition": "To think of many ideas quickly, usually in a group, without judging them yet.",
     "business_context_example": "Let's brainstorm names for the new course before we pick one.",
-    "audio_text": "brainstorm"
+    "audio_text": "brainstorm",
+    "category": "Meetings",
+    "translation_bg": "да генерираме идеи заедно"
   },
   {
     "phrase": "bounce ideas off someone",
     "definition": "To share ideas with someone to hear their reaction.",
     "business_context_example": "Do you have 10 minutes? I want to bounce a few ideas off you.",
-    "audio_text": "bounce ideas off someone"
+    "audio_text": "bounce ideas off someone",
+    "category": "Meetings",
+    "translation_bg": "да обсъдя идеи с някого, за да чуя реакция"
   },
   {
     "phrase": "get down to business",
     "definition": "To stop small talk and start discussing the important topic.",
     "business_context_example": "Coffee's ready, so let's get down to business: the Q3 numbers.",
-    "audio_text": "get down to business"
+    "audio_text": "get down to business",
+    "category": "Meetings",
+    "translation_bg": "да се захващаме за работа"
   },
   {
     "phrase": "break the ice",
     "definition": "To say or do something that makes people feel relaxed at the start.",
     "business_context_example": "He told a short story about his dog to break the ice with the new client.",
-    "audio_text": "break the ice"
+    "audio_text": "break the ice",
+    "category": "Meetings",
+    "translation_bg": "да разчупя леда"
   },
   {
     "phrase": "small talk",
     "definition": "Light, friendly conversation about unimportant topics.",
     "business_context_example": "We made small talk about the weather before the interview started.",
-    "audio_text": "small talk"
+    "audio_text": "small talk",
+    "category": "Meetings",
+    "translation_bg": "лек разговор за незначителни неща"
   },
   {
     "phrase": "cut to the chase",
     "definition": "To skip the introduction and talk about the main point directly.",
     "business_context_example": "I'll cut to the chase: we need the delivery 2 weeks earlier.",
-    "audio_text": "cut to the chase"
+    "audio_text": "cut to the chase",
+    "category": "Meetings",
+    "translation_bg": "да мина направо на въпроса"
   },
   {
     "phrase": "long story short",
     "definition": "A way to give only the short version of a longer story.",
     "business_context_example": "Long story short, the supplier canceled and we found a better one.",
-    "audio_text": "long story short"
+    "audio_text": "long story short",
+    "category": "Meetings",
+    "translation_bg": "накратко казано"
   },
   {
     "phrase": "in a nutshell",
     "definition": "Said very briefly, using only the main facts.",
     "business_context_example": "In a nutshell, the project is late but under budget.",
-    "audio_text": "in a nutshell"
+    "audio_text": "in a nutshell",
+    "category": "Meetings",
+    "translation_bg": "с две думи"
   },
   {
     "phrase": "bottom line",
     "definition": "The most important point, or the final financial result.",
     "business_context_example": "The bottom line is simple: if we don't sign by Friday, we lose the deal.",
-    "audio_text": "bottom line"
+    "audio_text": "bottom line",
+    "category": "Meetings",
+    "translation_bg": "най-важното; крайният финансов резултат"
   },
   {
     "phrase": "big picture",
     "definition": "The overall situation, not the small details.",
     "business_context_example": "Forget the font size for now, let's look at the big picture of the website.",
-    "audio_text": "big picture"
+    "audio_text": "big picture",
+    "category": "Meetings",
+    "translation_bg": "общата картина"
   },
   {
     "phrase": "on the fence",
     "definition": "Undecided between two options.",
     "business_context_example": "I'm still on the fence about hiring a second designer this year.",
-    "audio_text": "on the fence"
+    "audio_text": "on the fence",
+    "category": "Meetings",
+    "translation_bg": "колебая се между два варианта"
   },
   {
     "phrase": "see eye to eye",
     "definition": "To agree with someone about something.",
     "business_context_example": "We don't see eye to eye on pricing, but we agree on everything else.",
-    "audio_text": "see eye to eye"
+    "audio_text": "see eye to eye",
+    "category": "Meetings",
+    "translation_bg": "на едно мнение сме"
   },
   {
     "phrase": "play it by ear",
     "definition": "To decide what to do as the situation develops, without a fixed plan.",
     "business_context_example": "We don't know how many people will come, so let's play it by ear.",
-    "audio_text": "play it by ear"
+    "audio_text": "play it by ear",
+    "category": "Meetings",
+    "translation_bg": "ще решаваме в движение"
   },
   {
     "phrase": "off the top of my head",
     "definition": "Said from memory, without checking or preparing.",
     "business_context_example": "Off the top of my head, we have about 40 active students right now.",
-    "audio_text": "off the top of my head"
+    "audio_text": "off the top of my head",
+    "category": "Meetings",
+    "translation_bg": "по памет, без да проверявам"
   },
   {
     "phrase": "the elephant in the room",
     "definition": "A big, obvious problem that everyone avoids talking about.",
     "business_context_example": "Let's talk about the elephant in the room: our biggest client is leaving.",
-    "audio_text": "the elephant in the room"
+    "audio_text": "the elephant in the room",
+    "category": "Meetings",
+    "translation_bg": "очевидният проблем, за който никой не говори"
   },
   {
     "phrase": "loop someone in",
     "definition": "To include someone in a conversation or email thread so they stay informed.",
     "business_context_example": "Can you loop in the accountant? She needs to see these invoices too.",
-    "audio_text": "loop someone in"
+    "audio_text": "loop someone in",
+    "category": "Email",
+    "translation_bg": "да включа някого в комуникацията"
   },
   {
     "phrase": "cc someone",
     "definition": "To send someone a copy of an email so they can follow the conversation.",
     "business_context_example": "Please cc me when you reply to the client so I know what was agreed.",
-    "audio_text": "c c someone"
+    "audio_text": "c c someone",
+    "category": "Email",
+    "translation_bg": "да сложа някого в копие"
   },
   {
     "phrase": "reply all",
     "definition": "To answer an email so that everyone in the thread sees your reply.",
     "business_context_example": "Careful with reply all, 30 people don't need to see your lunch plans.",
-    "audio_text": "reply all"
+    "audio_text": "reply all",
+    "category": "Email",
+    "translation_bg": "отговор до всички"
   },
   {
     "phrase": "typo",
     "definition": "A small mistake in typing, like a wrong or missing letter.",
     "business_context_example": "There's a typo in the subject line: it says 'meating' instead of 'meeting'.",
-    "audio_text": "typo"
+    "audio_text": "typo",
+    "category": "Email",
+    "translation_bg": "печатна грешка"
   },
   {
     "phrase": "proofread",
     "definition": "To read a text carefully to find and fix mistakes before sending it.",
     "business_context_example": "Always proofread the newsletter twice before it goes to 500 people.",
-    "audio_text": "proofread"
+    "audio_text": "proofread",
+    "category": "Email",
+    "translation_bg": "да изчета текст за грешки"
   },
   {
     "phrase": "double-check",
     "definition": "To check something a second time to be sure it's correct.",
     "business_context_example": "Can you double-check the flight times before I book the hotel?",
-    "audio_text": "double check"
+    "audio_text": "double check",
+    "category": "Email",
+    "translation_bg": "да проверя повторно"
   },
   {
     "phrase": "sign off on",
     "definition": "To officially approve something.",
     "business_context_example": "The CFO needs to sign off on any purchase over 1,000 euro.",
-    "audio_text": "sign off on"
+    "audio_text": "sign off on",
+    "category": "Email",
+    "translation_bg": "да одобря официално"
   },
   {
     "phrase": "follow through",
     "definition": "To finish what you promised or started.",
     "business_context_example": "He has great ideas, but he rarely follows through on them.",
-    "audio_text": "follow through"
+    "audio_text": "follow through",
+    "category": "Email",
+    "translation_bg": "да довърша обещаното"
   },
   {
     "phrase": "figure out",
     "definition": "To find the answer or solution to something after thinking about it.",
     "business_context_example": "I can't figure out why the printer works for everyone except me.",
-    "audio_text": "figure out"
+    "audio_text": "figure out",
+    "category": "Problem solving",
+    "translation_bg": "да разбера как, да измисля решение"
   },
   {
     "phrase": "sort out",
     "definition": "To solve a problem or organize something that was messy.",
     "business_context_example": "Give me an hour to sort out the schedule conflict with the two classes.",
-    "audio_text": "sort out"
+    "audio_text": "sort out",
+    "category": "Problem solving",
+    "translation_bg": "да оправя, да подредя"
   },
   {
     "phrase": "deal with",
     "definition": "To handle a problem, task, or person.",
     "business_context_example": "I'll deal with the complaint this afternoon, right after my calls.",
-    "audio_text": "deal with"
+    "audio_text": "deal with",
+    "category": "Problem solving",
+    "translation_bg": "да се справя с"
   },
   {
     "phrase": "put off",
     "definition": "To delay something until later.",
     "business_context_example": "We've put off the website update twice already, let's just do it.",
-    "audio_text": "put off"
+    "audio_text": "put off",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да отложа"
   },
   {
     "phrase": "put on hold",
     "definition": "To pause something for a period of time.",
     "business_context_example": "The expansion is on hold until we see the summer results.",
-    "audio_text": "put on hold"
+    "audio_text": "put on hold",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да сложа на пауза"
   },
   {
     "phrase": "iron out",
     "definition": "To remove small problems or disagreements from a plan.",
     "business_context_example": "The contract is almost ready, we just need to iron out the payment terms.",
-    "audio_text": "iron out"
+    "audio_text": "iron out",
+    "category": "Problem solving",
+    "translation_bg": "да изгладя дребните проблеми"
   },
   {
     "phrase": "nail down",
     "definition": "To make something exact and final, like a date or a price.",
     "business_context_example": "Before Friday we need to nail down the exact start date of the course.",
-    "audio_text": "nail down"
+    "audio_text": "nail down",
+    "category": "Problem solving",
+    "translation_bg": "да фиксирам окончателно"
   },
   {
     "phrase": "pencil in",
     "definition": "To plan something for a date that may still change.",
     "business_context_example": "Let's pencil in Tuesday at 3, and I'll confirm by tomorrow.",
-    "audio_text": "pencil in"
+    "audio_text": "pencil in",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да запиша предварително, с уговорка"
   },
   {
     "phrase": "set up",
     "definition": "To arrange or organize something, like a meeting or a system.",
     "business_context_example": "I'll set up a call with the new supplier for Thursday morning.",
-    "audio_text": "set up"
+    "audio_text": "set up",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да организирам, да уредя"
   },
   {
     "phrase": "call off",
     "definition": "To cancel something that was planned.",
     "business_context_example": "They called off the training because only 2 people signed up.",
-    "audio_text": "call off"
+    "audio_text": "call off",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да отменя"
   },
   {
     "phrase": "put together",
     "definition": "To create something by combining parts, like a report or a team.",
     "business_context_example": "Can you put together a short offer for the hotel chain by Monday?",
-    "audio_text": "put together"
+    "audio_text": "put together",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да подготвя, да сглобя"
   },
   {
     "phrase": "come up with",
     "definition": "To think of an idea, plan, or solution.",
     "business_context_example": "She came up with a smart way to cut our delivery costs by 15%.",
-    "audio_text": "come up with"
+    "audio_text": "come up with",
+    "category": "Problem solving",
+    "translation_bg": "да измисля"
   },
   {
     "phrase": "take on",
     "definition": "To accept new work or responsibility.",
     "business_context_example": "I can't take on another project this month, my schedule is full.",
-    "audio_text": "take on"
+    "audio_text": "take on",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да поема нова работа"
   },
   {
     "phrase": "take over",
     "definition": "To take control of something from someone else.",
     "business_context_example": "When Petar retires in May, his daughter will take over the company.",
-    "audio_text": "take over"
+    "audio_text": "take over",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да поема контрола от някого"
   },
   {
     "phrase": "fill in for someone",
     "definition": "To do someone's job temporarily while they are away.",
     "business_context_example": "Elena will fill in for me while I'm on vacation next week.",
-    "audio_text": "fill in for someone"
+    "audio_text": "fill in for someone",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да заместя някого временно"
   },
   {
     "phrase": "fill out",
     "definition": "To complete a form by writing information in it.",
     "business_context_example": "New clients need to fill out this short form before the first lesson.",
-    "audio_text": "fill out"
+    "audio_text": "fill out",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да попълня формуляр"
   },
   {
     "phrase": "hand over",
     "definition": "To give responsibility or an object to someone else.",
     "business_context_example": "Before you leave, please hand over the project files to Stefan.",
-    "audio_text": "hand over"
+    "audio_text": "hand over",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да предам отговорност или нещо на друг"
   },
   {
     "phrase": "on my plate",
     "definition": "The amount of work I currently have to do.",
     "business_context_example": "I'd love to help, but I have too much on my plate this week.",
-    "audio_text": "on my plate"
+    "audio_text": "on my plate",
+    "category": "Tasks & deadlines",
+    "translation_bg": "текущите ми задачи, „на главата ми“"
   },
   {
     "phrase": "have the bandwidth",
     "definition": "To have enough time and energy for extra work.",
     "business_context_example": "Do you have the bandwidth to review 2 more applications today?",
-    "audio_text": "have the bandwidth"
+    "audio_text": "have the bandwidth",
+    "category": "Tasks & deadlines",
+    "translation_bg": "имам капацитет и време"
   },
   {
     "phrase": "juggle",
     "definition": "To manage several tasks or responsibilities at the same time.",
     "business_context_example": "She's juggling 3 client projects and a new hire's training.",
-    "audio_text": "juggle"
+    "audio_text": "juggle",
+    "category": "Tasks & deadlines",
+    "translation_bg": "жонглирам с няколко задачи едновременно"
   },
   {
     "phrase": "keep track of",
     "definition": "To follow and record information so you don't lose or forget it.",
     "business_context_example": "We use a simple spreadsheet to keep track of student payments.",
-    "audio_text": "keep track of"
+    "audio_text": "keep track of",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да следя, да водя отчет"
   },
   {
     "phrase": "run out of time",
     "definition": "To have no time left to finish something.",
     "business_context_example": "We ran out of time in the demo, so questions moved to email.",
-    "audio_text": "run out of time"
+    "audio_text": "run out of time",
+    "category": "Tasks & deadlines",
+    "translation_bg": "времето ми свършва"
   },
   {
     "phrase": "running behind",
     "definition": "Late compared to the planned schedule.",
     "business_context_example": "Sorry, I'm running behind today, can we move our call to 4 pm?",
-    "audio_text": "running behind"
+    "audio_text": "running behind",
+    "category": "Tasks & deadlines",
+    "translation_bg": "изоставам от графика"
   },
   {
     "phrase": "make time for",
     "definition": "To find time in your schedule for something important.",
     "business_context_example": "Even in busy weeks, I make time for a 30-minute review every Friday.",
-    "audio_text": "make time for"
+    "audio_text": "make time for",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да отделя време за"
   },
   {
     "phrase": "time-consuming",
     "definition": "Needing a lot of time to do.",
     "business_context_example": "Writing reports by hand is time-consuming, let's use a template.",
-    "audio_text": "time consuming"
+    "audio_text": "time consuming",
+    "category": "Tasks & deadlines",
+    "translation_bg": "отнемащ много време"
   },
   {
     "phrase": "get sidetracked",
     "definition": "To lose focus because something else takes your attention.",
     "business_context_example": "I got sidetracked by emails and forgot to send the invoice.",
-    "audio_text": "get sidetracked"
+    "audio_text": "get sidetracked",
+    "category": "Tasks & deadlines",
+    "translation_bg": "да се разсея с друго"
   },
   {
     "phrase": "on short notice",
     "definition": "With very little warning or time to prepare.",
     "business_context_example": "Thanks for joining the call on such short notice.",
-    "audio_text": "on short notice"
+    "audio_text": "on short notice",
+    "category": "Tasks & deadlines",
+    "translation_bg": "с малко предизвестие"
   },
   {
     "phrase": "at the last minute",
     "definition": "At the latest possible time, just before a deadline.",
     "business_context_example": "The client changed the order at the last minute, again.",
-    "audio_text": "at the last minute"
+    "audio_text": "at the last minute",
+    "category": "Tasks & deadlines",
+    "translation_bg": "в последната минута"
   },
   {
     "phrase": "down to the wire",
     "definition": "Continuing until the very last moment before a deadline.",
     "business_context_example": "The proposal went down to the wire, we sent it at 11:58 pm.",
-    "audio_text": "down to the wire"
+    "audio_text": "down to the wire",
+    "category": "Tasks & deadlines",
+    "translation_bg": "до последния възможен момент"
   },
   {
     "phrase": "crunch time",
     "definition": "A short, stressful period when a lot of work must be finished.",
     "business_context_example": "It's crunch time: the launch is Monday and the site isn't ready.",
-    "audio_text": "crunch time"
+    "audio_text": "crunch time",
+    "category": "Tasks & deadlines",
+    "translation_bg": "напечен период преди краен срок"
   },
   {
     "phrase": "behind schedule",
     "definition": "Later than planned.",
     "business_context_example": "The renovation is 2 weeks behind schedule because of the permits.",
-    "audio_text": "behind schedule"
+    "audio_text": "behind schedule",
+    "category": "Tasks & deadlines",
+    "translation_bg": "изоставащ от графика"
   },
   {
     "phrase": "on track",
     "definition": "Making progress as planned.",
     "business_context_example": "Sales are on track to reach the yearly goal by November.",
-    "audio_text": "on track"
+    "audio_text": "on track",
+    "category": "Tasks & deadlines",
+    "translation_bg": "по план"
   },
   {
     "phrase": "up in the air",
     "definition": "Not yet decided or certain.",
     "business_context_example": "The date for the team retreat is still up in the air.",
-    "audio_text": "up in the air"
+    "audio_text": "up in the air",
+    "category": "Tasks & deadlines",
+    "translation_bg": "още не е решено"
   },
   {
     "phrase": "in the pipeline",
     "definition": "Being prepared or developed, but not ready yet.",
     "business_context_example": "We have 3 new courses in the pipeline for the autumn season.",
-    "audio_text": "in the pipeline"
+    "audio_text": "in the pipeline",
+    "category": "Tasks & deadlines",
+    "translation_bg": "в процес на подготовка"
   },
   {
     "phrase": "back to the drawing board",
     "definition": "Starting again from the beginning because the plan failed.",
     "business_context_example": "The client rejected all 3 designs, so it's back to the drawing board.",
-    "audio_text": "back to the drawing board"
+    "audio_text": "back to the drawing board",
+    "category": "Problem solving",
+    "translation_bg": "започваме отначало"
   },
   {
     "phrase": "get the ball rolling",
     "definition": "To start a process or activity.",
     "business_context_example": "I'll get the ball rolling by booking the venue today.",
-    "audio_text": "get the ball rolling"
+    "audio_text": "get the ball rolling",
+    "category": "Problem solving",
+    "translation_bg": "да задвижа нещата"
   },
   {
     "phrase": "the ball is in your court",
     "definition": "It's your turn to act or decide.",
     "business_context_example": "We sent our best offer yesterday, so the ball is in their court now.",
-    "audio_text": "the ball is in your court"
+    "audio_text": "the ball is in your court",
+    "category": "Problem solving",
+    "translation_bg": "топката е в твоето поле"
   },
   {
     "phrase": "quick win",
     "definition": "A small improvement that is easy to achieve and shows fast results.",
     "business_context_example": "Fixing the contact form is a quick win, it takes an hour and helps sales.",
-    "audio_text": "quick win"
+    "audio_text": "quick win",
+    "category": "Problem solving",
+    "translation_bg": "бърза и лесна победа"
   },
   {
     "phrase": "low-hanging fruit",
     "definition": "The easiest tasks or opportunities to start with.",
     "business_context_example": "Let's go for the low-hanging fruit first: emailing our old clients.",
-    "audio_text": "low hanging fruit"
+    "audio_text": "low hanging fruit",
+    "category": "Problem solving",
+    "translation_bg": "най-лесните възможности"
   },
   {
     "phrase": "no-brainer",
     "definition": "A decision so easy and obvious that it needs no thought.",
     "business_context_example": "The software costs 10 euro and saves us 5 hours a week. It's a no-brainer.",
-    "audio_text": "no brainer"
+    "audio_text": "no brainer",
+    "category": "Problem solving",
+    "translation_bg": "очевидно лесно решение"
   },
   {
     "phrase": "game plan",
     "definition": "A strategy or plan for achieving a goal.",
     "business_context_example": "What's our game plan if the landlord raises the rent?",
-    "audio_text": "game plan"
+    "audio_text": "game plan",
+    "category": "Problem solving",
+    "translation_bg": "план за действие"
   },
   {
     "phrase": "plan B",
     "definition": "An alternative plan in case the first one fails.",
     "business_context_example": "If the trainer cancels, plan B is to run the workshop online.",
-    "audio_text": "plan B"
+    "audio_text": "plan B",
+    "category": "Problem solving",
+    "translation_bg": "резервен план"
   },
   {
     "phrase": "workaround",
     "definition": "A temporary way to solve a problem without fixing its cause.",
     "business_context_example": "The payment button is broken, but the workaround is a direct bank link.",
-    "audio_text": "workaround"
+    "audio_text": "workaround",
+    "category": "Problem solving",
+    "translation_bg": "временно заобиколно решение"
   },
   {
     "phrase": "trial and error",
     "definition": "Trying different ways and learning from mistakes until something works.",
     "business_context_example": "We found the best ad format through trial and error over 3 months.",
-    "audio_text": "trial and error"
+    "audio_text": "trial and error",
+    "category": "Problem solving",
+    "translation_bg": "проба-грешка"
   },
   {
     "phrase": "rule of thumb",
     "definition": "A simple, practical rule that works in most situations.",
     "business_context_example": "As a rule of thumb, we reply to every client email within 24 hours.",
-    "audio_text": "rule of thumb"
+    "audio_text": "rule of thumb",
+    "category": "Problem solving",
+    "translation_bg": "практическо правило"
   },
   {
     "phrase": "cut corners",
     "definition": "To do something cheaply or quickly by skipping important steps.",
     "business_context_example": "Don't cut corners on the contract, have a lawyer read it.",
-    "audio_text": "cut corners"
+    "audio_text": "cut corners",
+    "category": "Problem solving",
+    "translation_bg": "да претупам, да спестя важни стъпки"
   },
   {
     "phrase": "drop the ball",
     "definition": "To make a mistake by forgetting or failing to do something.",
     "business_context_example": "I dropped the ball on the renewal email and we lost the client.",
-    "audio_text": "drop the ball"
+    "audio_text": "drop the ball",
+    "category": "Teamwork & office",
+    "translation_bg": "да изпусна задача, да се издъня"
   },
   {
     "phrase": "step up",
     "definition": "To take responsibility or make a bigger effort when it's needed.",
     "business_context_example": "When the manager got sick, Diana stepped up and ran the whole event.",
-    "audio_text": "step up"
+    "audio_text": "step up",
+    "category": "Teamwork & office",
+    "translation_bg": "да поема отговорност в труден момент"
   },
   {
     "phrase": "go the extra mile",
     "definition": "To do more than what is expected.",
     "business_context_example": "She went the extra mile and translated the menu for free.",
-    "audio_text": "go the extra mile"
+    "audio_text": "go the extra mile",
+    "category": "Teamwork & office",
+    "translation_bg": "да направя повече от очакваното"
   },
   {
     "phrase": "pull your weight",
     "definition": "To do your fair share of the work in a team.",
     "business_context_example": "Everyone pulled their weight during the move, so we finished in a day.",
-    "audio_text": "pull your weight"
+    "audio_text": "pull your weight",
+    "category": "Teamwork & office",
+    "translation_bg": "да върша своя дял от работата"
   },
   {
     "phrase": "team player",
     "definition": "Someone who works well with others and helps the group succeed.",
     "business_context_example": "We're looking for a team player, not a lone star.",
-    "audio_text": "team player"
+    "audio_text": "team player",
+    "category": "Teamwork & office",
+    "translation_bg": "екипен играч"
   },
   {
     "phrase": "learn the ropes",
     "definition": "To learn how to do a new job or task.",
     "business_context_example": "Give the new assistant a month to learn the ropes.",
-    "audio_text": "learn the ropes"
+    "audio_text": "learn the ropes",
+    "category": "Teamwork & office",
+    "translation_bg": "да навляза в нова работа"
   },
   {
     "phrase": "get up to speed",
     "definition": "To learn the latest information so you can work effectively.",
     "business_context_example": "Read these 2 documents to get up to speed on the project.",
-    "audio_text": "get up to speed"
+    "audio_text": "get up to speed",
+    "category": "Teamwork & office",
+    "translation_bg": "да се запозная с актуалното"
   }
 ]

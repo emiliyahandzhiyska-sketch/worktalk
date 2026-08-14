@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WorkTalk — Everyday English for Work</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#2f6fed">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -70,7 +73,13 @@
       <div class="h-2.5 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
         <div id="progressBar" class="h-full rounded-full bg-brand-500 transition-all duration-500" style="width:0%"></div>
       </div>
-      <p id="highScoreLabel" class="text-xs text-slate-500 dark:text-slate-400 mt-2">Quiz best: not played yet</p>
+      <div class="flex items-center justify-between mt-2">
+        <p id="highScoreLabel" class="text-xs text-slate-500 dark:text-slate-400">Quiz best: not played yet</p>
+        <div class="flex items-center gap-2">
+          <span id="streakLabel" class="text-xs font-bold text-orange-500 hidden"></span>
+          <button id="shareBtn" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">📤 Share</button>
+        </div>
+      </div>
     </section>
 
     <!-- Tabs -->
@@ -85,6 +94,12 @@
 
     <!-- Flashcards view -->
     <main id="viewFlashcards">
+      <!-- Daily review banner -->
+      <div id="todayBanner" class="mb-4"></div>
+
+      <!-- Category filter -->
+      <div id="categoryChips" class="flex gap-2 overflow-x-auto pb-2 mb-3 -mx-1 px-1"></div>
+
       <div id="flashcard" class="flip-card cursor-pointer select-none" tabindex="0" role="button" aria-label="Flip card">
         <div class="flip-inner min-h-[280px]">
           <!-- Front -->
@@ -103,6 +118,8 @@
             <p id="cardDefinition" class="text-lg font-semibold leading-snug mb-5"></p>
             <p class="text-xs uppercase tracking-widest text-brand-100/80 mb-2">At work</p>
             <p id="cardExample" class="text-sm leading-relaxed italic opacity-95"></p>
+            <button id="bgBtn" class="mt-4 self-start px-3 py-1.5 rounded-full bg-white/15 hover:bg-white/25 text-xs font-semibold transition-colors">🇧🇬 Превод</button>
+            <p id="cardTranslation" class="hidden text-sm font-semibold mt-2"></p>
           </div>
         </div>
       </div>

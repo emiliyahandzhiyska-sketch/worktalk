@@ -40,6 +40,23 @@ let currentCard = 0;
 let mastered = new Set();
 let quiz = null; // { questions, index, score, locked }
 let uoe = null;  // { mode, items, index, score, checked }
+let cardFilter = { category: null, unmasteredOnly: false };
+let review = null; // spaced-repetition session: { queue, index, shown }
+
+// Cards visible under the current category / unmastered filter
+function visibleCards() {
+  return words.filter(w =>
+    (!cardFilter.category || w.category === cardFilter.category) &&
+    (!cardFilter.unmasteredOnly || !mastered.has(w.phrase)));
+}
+
+function cur() {
+  return visibleCards()[currentCard];
+}
+
+function todayStr() {
+  return new Date().toISOString().slice(0, 10);
+}
 
 // ---------- Boot ----------
 
@@ -74,6 +91,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     speechSynthesis.getVoices();
     speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
   }
+
+  // PWA: installable + works offline
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
 });
 
 // ---------- Decks ----------
@@ -91,16 +113,48 @@ async function loadDeck(id) {
   currentCard = 0;
   quiz = null;
   uoe = null;
+  review = null;
+  cardFilter = { category: null, unmasteredOnly: false };
   loadProgress();
 
   document.getElementById('tagline').textContent =
     `${d.name} · ${words.length} phrases you'll actually use.`;
 
   renderDeckPicker();
+  renderCategoryChips();
+  renderTodayBanner();
   renderCard();
   renderProgress();
   renderQuizStart();
   renderUoeMenu();
+}
+
+function renderCategoryChips() {
+  const cats = [...new Set(words.map(w => w.category))];
+  const chip = (label, active, handler) => `
+    <button onclick="${handler}"
+      class="whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${active
+        ? 'bg-brand-500 text-white border-brand-500'
+        : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-brand-500'}">${label}</button>`;
+  document.getElementById('categoryChips').innerHTML =
+    chip('All', !cardFilter.category && !cardFilter.unmasteredOnly, 'setCategory(null)') +
+    cats.map(c => chip(c, cardFilter.category === c, `setCategory('${c}')`)).join('') +
+    chip('🎯 To learn', cardFilter.unmasteredOnly, 'toggleUnmastered()');
+}
+
+function setCategory(c) {
+  cardFilter.category = c;
+  if (c === null) cardFilter.unmasteredOnly = false;
+  currentCard = 0;
+  renderCategoryChips();
+  renderCard();
+}
+
+function toggleUnmastered() {
+  cardFilter.unmasteredOnly = !cardFilter.unmasteredOnly;
+  currentCard = 0;
+  renderCategoryChips();
+  renderCard();
 }
 
 function renderDeckPicker() {
@@ -170,6 +224,8 @@ function renderProgress() {
   const hs = getHighScore();
   document.getElementById('highScoreLabel').textContent =
     hs === null ? 'Quiz best: not played yet' : `Quiz best: ${hs} / ${QUIZ_LENGTH}`;
+
+  renderStreak();
 }
 
 // ---------- Tabs ----------
@@ -182,7 +238,7 @@ function bindEvents() {
 
   const card = document.getElementById('flashcard');
   card.addEventListener('click', e => {
-    if (e.target.closest('#ttsBtn')) return; // listen button shouldn't flip
+    if (e.target.closest('#ttsBtn') || e.target.closest('#bgBtn')) return; // buttons shouldn't flip
     card.classList.toggle('flipped');
   });
   card.addEventListener('keydown', e => {
@@ -202,8 +258,14 @@ function bindEvents() {
   });
   document.getElementById('ttsBtn').addEventListener('click', e => {
     e.stopPropagation();
-    speak(words[currentCard].audio_text);
+    const w = cur();
+    if (w) speak(w.audio_text);
   });
+  document.getElementById('bgBtn').addEventListener('click', e => {
+    e.stopPropagation();
+    document.getElementById('cardTranslation').classList.toggle('hidden');
+  });
+  document.getElementById('shareBtn').addEventListener('click', shareProgress);
 }
 
 function switchTab(tab) {
@@ -229,12 +291,14 @@ function styleTabs(active) {
 // ---------- Flashcards ----------
 
 function moveCard(step) {
-  currentCard = (currentCard + step + words.length) % words.length;
+  const n = visibleCards().length;
+  if (!n) return;
+  currentCard = (currentCard + step + n) % n;
   renderCard();
 }
 
 function renderCard() {
-  const w = words[currentCard];
+  const list = visibleCards();
   const card = document.getElementById('flashcard');
 
   // Reset flip without animating backwards through the old content
@@ -243,31 +307,248 @@ function renderCard() {
   card.classList.remove('flipped');
   requestAnimationFrame(() => { inner.style.transition = ''; });
 
+  document.getElementById('cardTranslation').classList.add('hidden');
+
+  if (!list.length) {
+    document.getElementById('cardPhrase').textContent = 'Nothing here 🎉';
+    document.getElementById('cardDefinition').textContent =
+      'Every card in this filter is mastered. Nice work!';
+    document.getElementById('cardExample').textContent = '';
+    document.getElementById('cardTranslation').textContent = '';
+    document.getElementById('cardCounter').textContent = '0 / 0';
+    renderMasterBtn();
+    return;
+  }
+
+  currentCard = Math.min(currentCard, list.length - 1);
+  const w = list[currentCard];
   document.getElementById('cardPhrase').textContent = w.phrase;
   document.getElementById('cardDefinition').textContent = w.definition;
   document.getElementById('cardExample').textContent = '“' + w.business_context_example + '”';
-  document.getElementById('cardCounter').textContent = `${currentCard + 1} / ${words.length}`;
+  document.getElementById('cardTranslation').textContent = '🇧🇬 ' + w.translation_bg;
+  document.getElementById('cardCounter').textContent = `${currentCard + 1} / ${list.length}`;
 
   renderMasterBtn();
 }
 
 function renderMasterBtn() {
   const btn = document.getElementById('masterBtn');
-  const isMastered = mastered.has(words[currentCard].phrase);
-  btn.textContent = isMastered ? '★ Mastered — tap to unmark' : '✓ Mark as mastered';
+  const w = cur();
+  btn.disabled = !w;
+  const isMastered = w && mastered.has(w.phrase);
+  btn.textContent = !w ? '—' : isMastered ? '★ Mastered — tap to unmark' : '✓ Mark as mastered';
   btn.className = 'w-full mt-4 py-3 rounded-xl font-bold text-sm transition-colors ' +
-    (isMastered
-      ? 'bg-amber-400 hover:bg-amber-500 text-amber-950'
-      : 'bg-emerald-500 hover:bg-emerald-600 text-white');
+    (!w
+      ? 'bg-slate-200 dark:bg-slate-800 text-slate-400'
+      : isMastered
+        ? 'bg-amber-400 hover:bg-amber-500 text-amber-950'
+        : 'bg-emerald-500 hover:bg-emerald-600 text-white');
 }
 
 function toggleMastered() {
-  const phrase = words[currentCard].phrase;
-  if (mastered.has(phrase)) mastered.delete(phrase);
-  else mastered.add(phrase);
+  const w = cur();
+  if (!w) return;
+  if (mastered.has(w.phrase)) mastered.delete(w.phrase);
+  else mastered.add(w.phrase);
   saveMastered();
-  renderMasterBtn();
   renderProgress();
+  // Under the "To learn" filter the card disappears once mastered
+  if (cardFilter.unmasteredOnly) renderCard();
+  else renderMasterBtn();
+}
+
+// ---------- Spaced repetition (Today's review) ----------
+
+const NEW_PER_DAY = 5;
+
+function getSrs() {
+  try { return JSON.parse(localStorage.getItem(sKey('srs')) || '{}'); }
+  catch { return {}; }
+}
+
+function setSrs(d) {
+  localStorage.setItem(sKey('srs'), JSON.stringify(d));
+}
+
+function newIntroducedToday() {
+  try {
+    const d = JSON.parse(localStorage.getItem(sKey('srs_new')) || '{}');
+    return d.date === todayStr() ? d.count : 0;
+  } catch { return 0; }
+}
+
+function bumpNewIntroduced() {
+  localStorage.setItem(sKey('srs_new'),
+    JSON.stringify({ date: todayStr(), count: newIntroducedToday() + 1 }));
+}
+
+function buildTodayQueue() {
+  const srs = getSrs();
+  const t = todayStr();
+  const due = words.filter(w => srs[w.phrase] && srs[w.phrase].due <= t);
+  const newAllowed = Math.max(0, NEW_PER_DAY - newIntroducedToday());
+  const fresh = words.filter(w => !srs[w.phrase]).slice(0, newAllowed);
+  return shuffle([...due, ...fresh]);
+}
+
+function renderTodayBanner() {
+  const box = document.getElementById('todayBanner');
+  if (review) return; // session UI handles itself
+  const q = buildTodayQueue();
+  if (!q.length) {
+    box.innerHTML = `
+      <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-2xl p-4 text-sm font-semibold text-emerald-800 dark:text-emerald-200">
+        ✅ Today's review is done. Come back tomorrow!
+      </div>`;
+  } else {
+    box.innerHTML = `
+      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 flex items-center justify-between gap-3 shadow-sm">
+        <div>
+          <p class="font-bold text-sm">📆 Today's review</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">${q.length} card${q.length > 1 ? 's' : ''} waiting for you</p>
+        </div>
+        <button onclick="startReview()" class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Start</button>
+      </div>`;
+  }
+}
+
+function startReview() {
+  review = { queue: buildTodayQueue(), index: 0, shown: false };
+  renderReviewCard();
+}
+
+function renderReviewCard() {
+  const box = document.getElementById('todayBanner');
+
+  if (review.index >= review.queue.length) {
+    const n = review.queue.length;
+    review = null;
+    markDayDone();
+    renderProgress();
+    box.innerHTML = `
+      <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-2xl p-4 text-sm font-semibold text-emerald-800 dark:text-emerald-200 fade-in">
+        🎉 Review done: ${n} card${n > 1 ? 's' : ''}. See you tomorrow!
+      </div>`;
+    return;
+  }
+
+  const w = review.queue[review.index];
+  const header = `
+    <div class="flex items-center justify-between mb-3">
+      <span class="text-xs font-bold text-brand-500">📆 Today's review</span>
+      <span class="text-xs text-slate-500 dark:text-slate-400">${review.index + 1} / ${review.queue.length}</span>
+    </div>`;
+
+  if (!review.shown) {
+    box.innerHTML = `
+      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm fade-in">
+        ${header}
+        <p class="text-xl font-extrabold text-center my-4">${w.phrase}</p>
+        <div class="flex gap-2">
+          <button onclick="reviewSpeak()" class="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 font-semibold text-sm">🔊</button>
+          <button onclick="reviewShow()" class="flex-1 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Show answer</button>
+        </div>
+      </div>`;
+  } else {
+    box.innerHTML = `
+      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm fade-in">
+        ${header}
+        <p class="text-lg font-extrabold mb-1">${w.phrase}</p>
+        <p class="text-sm mb-2">${w.definition}</p>
+        <p class="text-xs italic text-slate-500 dark:text-slate-400 mb-4">“${w.business_context_example}”</p>
+        <div class="grid grid-cols-2 gap-2">
+          <button onclick="reviewGrade(false)" class="py-2.5 rounded-xl bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200 font-bold text-sm">😅 Still learning</button>
+          <button onclick="reviewGrade(true)" class="py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm transition-colors">😎 I know it</button>
+        </div>
+      </div>`;
+  }
+}
+
+function reviewShow() {
+  review.shown = true;
+  renderReviewCard();
+}
+
+function reviewSpeak() {
+  speak(review.queue[review.index].audio_text);
+}
+
+function reviewGrade(known) {
+  const w = review.queue[review.index];
+  const srs = getSrs();
+  const wasNew = !srs[w.phrase];
+  // "Still learning" comes back tomorrow; "I know it" doubles the interval (max 60 days)
+  const interval = known ? (wasNew ? 2 : Math.min(60, (srs[w.phrase].i || 1) * 2)) : 1;
+  const due = new Date();
+  due.setDate(due.getDate() + interval);
+  srs[w.phrase] = { i: interval, due: due.toISOString().slice(0, 10) };
+  setSrs(srs);
+  if (wasNew) bumpNewIntroduced();
+  review.index++;
+  review.shown = false;
+  renderReviewCard();
+}
+
+// ---------- Streak (global, all decks count) ----------
+
+const STREAK_COUNT_KEY = 'worktalk_streak_count';
+const STREAK_LAST_KEY = 'worktalk_streak_last';
+
+function yesterdayStr() {
+  const y = new Date();
+  y.setDate(y.getDate() - 1);
+  return y.toISOString().slice(0, 10);
+}
+
+function getStreak() {
+  const last = localStorage.getItem(STREAK_LAST_KEY);
+  if (!last || (last !== todayStr() && last !== yesterdayStr())) return 0;
+  return parseInt(localStorage.getItem(STREAK_COUNT_KEY), 10) || 0;
+}
+
+function markDayDone() {
+  const t = todayStr();
+  const last = localStorage.getItem(STREAK_LAST_KEY);
+  if (last === t) return;
+  const count = last === yesterdayStr()
+    ? (parseInt(localStorage.getItem(STREAK_COUNT_KEY), 10) || 0) + 1
+    : 1;
+  localStorage.setItem(STREAK_COUNT_KEY, String(count));
+  localStorage.setItem(STREAK_LAST_KEY, t);
+  renderStreak();
+}
+
+function renderStreak() {
+  const n = getStreak();
+  const el = document.getElementById('streakLabel');
+  el.classList.toggle('hidden', n === 0);
+  el.textContent = `🔥 ${n}-day streak`;
+}
+
+// ---------- Share progress ----------
+
+async function shareProgress() {
+  const lines = ['My WorkTalk progress 📚'];
+  for (const d of decks) {
+    let m = 0;
+    try { m = JSON.parse(localStorage.getItem(`worktalk_${d.id}_mastered`) || '[]').length; }
+    catch { /* ignore */ }
+    const hs = localStorage.getItem(`worktalk_${d.id}_high_score`);
+    if (m || hs) lines.push(`${d.icon} ${d.name}: ${m} mastered${hs ? `, quiz best ${hs}/${QUIZ_LENGTH}` : ''}`);
+  }
+  const st = getStreak();
+  if (st) lines.push(`🔥 ${st}-day streak`);
+  lines.push(location.origin);
+  const text = lines.join('\n');
+
+  if (navigator.share) {
+    try { await navigator.share({ text }); return; }
+    catch { /* fall through to clipboard */ }
+  }
+  await navigator.clipboard.writeText(text);
+  const btn = document.getElementById('shareBtn');
+  btn.textContent = '✅ Copied';
+  setTimeout(() => { btn.textContent = '📤 Share'; }, 1500);
 }
 
 // ---------- Text-to-speech ----------
@@ -400,6 +681,7 @@ function renderQuizEnd() {
   const prev = getHighScore();
   const isRecord = prev === null || score > prev;
   if (isRecord) localStorage.setItem(sKey('high_score'), String(score));
+  markDayDone();
   renderProgress();
 
   const msg =
@@ -427,6 +709,8 @@ const UOE_MODES = {
   open:      { icon: '⌨️', title: 'Open cloze',        desc: 'Type the missing phrase yourself.' },
   transform: { icon: '🔁', title: 'Transformations',   desc: 'Rewrite the sentence using a key word.' },
   wordform:  { icon: '🔤', title: 'Word formation',    desc: 'Build the right form of the word.' },
+  listen:    { icon: '👂', title: 'Listening',         desc: 'Hear the phrase, pick the meaning.' },
+  dictation: { icon: '🎧', title: 'Dictation',         desc: 'Listen and type what you hear.' },
   own:       { icon: '💡', title: 'Your own sentence', desc: 'Use a phrase in a sentence about your life.' }
 };
 
@@ -466,7 +750,7 @@ function blankOut(w) {
 function renderUoeMenu() {
   uoe = null;
   const best = getUoeBest();
-  const scored = ['cloze', 'open', 'transform', 'wordform'];
+  const scored = ['cloze', 'open', 'transform', 'wordform', 'listen', 'dictation'];
   document.getElementById('uoeBox').innerHTML = `
     <div class="fade-in">
       <h2 class="text-xl font-extrabold mb-1">Use of English</h2>
@@ -506,6 +790,19 @@ function startUoe(mode) {
     items = shuffle(exercises.transformations).slice(0, UOE_ROUND);
   } else if (mode === 'wordform') {
     items = shuffle(exercises.word_formation).slice(0, UOE_ROUND);
+  } else if (mode === 'listen') {
+    items = shuffle(words).slice(0, UOE_ROUND).map(w => ({
+      audio: w.audio_text,
+      correct: w.definition,
+      options: shuffle([w.definition,
+        ...shuffle(words.filter(x => x.phrase !== w.phrase)).slice(0, 3).map(x => x.definition)])
+    }));
+  } else if (mode === 'dictation') {
+    items = shuffle(words).slice(0, UOE_ROUND).map(w => ({
+      audio: w.audio_text,
+      answer: w.phrase,
+      hint: `${w.phrase.split(' ').length} word${w.phrase.split(' ').length > 1 ? 's' : ''}`
+    }));
   } else {
     items = shuffle(words);
   }
@@ -575,6 +872,32 @@ function renderUoeItem() {
         <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Use the correct form of: <b class="text-brand-500">${it.base}</b></p>
         ${uoeInput('Type the word…')}
       </div>`;
+  } else if (uoe.mode === 'listen') {
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <div class="text-center mb-5">
+          <button onclick="uoePlay()" class="px-8 py-4 rounded-2xl bg-brand-50 dark:bg-slate-800 text-brand-600 dark:text-brand-100 font-bold text-lg hover:bg-brand-100 dark:hover:bg-slate-700 transition-colors">🔊 Play</button>
+          <p class="text-xs text-slate-400 mt-2">What does the phrase mean?</p>
+        </div>
+        <div class="space-y-2.5">
+          ${it.options.map((opt, i) => `
+            <button data-opt="${i}" onclick="uoeClozeAnswer(${i})"
+              class="opt-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm font-medium hover:border-brand-500 dark:hover:border-brand-500 transition-colors">
+              ${opt}
+            </button>`).join('')}
+        </div>
+      </div>`;
+    uoePlay();
+  } else if (uoe.mode === 'dictation') {
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <div class="text-center mb-4">
+          <button onclick="uoePlay()" class="px-8 py-4 rounded-2xl bg-brand-50 dark:bg-slate-800 text-brand-600 dark:text-brand-100 font-bold text-lg hover:bg-brand-100 dark:hover:bg-slate-700 transition-colors">🔊 Play</button>
+          <p class="text-xs text-slate-400 mt-2">Type what you hear (${it.hint})</p>
+        </div>
+        ${uoeInput('Type the phrase…')}
+      </div>`;
+    uoePlay();
   } else {
     const w = it;
     box.innerHTML = `
@@ -618,7 +941,7 @@ function uoeCheck() {
   uoe.checked = true;
 
   let correct, revealHtml;
-  if (uoe.mode === 'open') {
+  if (uoe.mode === 'open' || uoe.mode === 'dictation') {
     correct = ans === normalize(it.answer);
     revealHtml = `Answer: <b>${it.answer}</b>`;
   } else if (uoe.mode === 'transform') {
@@ -654,6 +977,10 @@ function uoeCheck() {
   document.getElementById('uoeAnswer').disabled = true;
 }
 
+function uoePlay() {
+  speak(uoe.items[uoe.index].audio);
+}
+
 function uoeNext() {
   uoe.index++;
   if (uoe.mode === 'own') {
@@ -670,6 +997,7 @@ function renderUoeEnd() {
   const prevBest = getUoeBest()[mode];
   const isRecord = prevBest === undefined || score > prevBest;
   saveUoeBest(mode, score);
+  markDayDone();
 
   const msg =
     score === items.length ? 'Perfect round! 🏆' :
