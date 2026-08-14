@@ -9,6 +9,12 @@ const BRAND = {
   ctaUrl: 'mailto:emiliya.handzhiyska@gmail.com?subject=Lesson%20inquiry%20(via%20WorkTalk)'
 };
 
+// Push reminders. Paste the OneSignal App ID here to switch them on.
+// While it's empty nothing loads and students are never asked for permission.
+const PUSH = {
+  oneSignalAppId: ''
+};
+
 // Per-deck storage key, e.g. worktalk_marketing_mastered
 function sKey(name) {
   return `worktalk_${deckId}_${name}`;
@@ -94,9 +100,111 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // PWA: installable + works offline
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
+    navigator.serviceWorker.register('sw.js').then(watchForUpdates).catch(() => {});
   }
+
+  initPush();
 });
+
+// ---------- Toasts ----------
+
+function showToast(id, html) {
+  const zone = document.getElementById('toastZone');
+  if (document.getElementById(id)) return;
+  const el = document.createElement('div');
+  el.id = id;
+  el.className = 'fade-in pointer-events-auto w-full max-w-md bg-white dark:bg-slate-800 ' +
+    'border border-slate-200 dark:border-slate-700 rounded-2xl shadow-lg p-4 text-sm';
+  el.innerHTML = html;
+  zone.appendChild(el);
+}
+
+function closeToast(id) {
+  document.getElementById(id)?.remove();
+}
+
+// ---------- New version available ----------
+
+function watchForUpdates(reg) {
+  if (!reg) return;
+  reg.addEventListener('updatefound', () => {
+    const sw = reg.installing;
+    if (!sw) return;
+    sw.addEventListener('statechange', () => {
+      // A previous worker was controlling the page, so this really is an update
+      if (sw.state === 'installed' && navigator.serviceWorker.controller) {
+        showToast('updateToast', `
+          <p class="font-bold mb-1">✨ New version available</p>
+          <p class="text-slate-500 dark:text-slate-400 mb-3">Refresh to get the latest phrases and exercises.</p>
+          <div class="flex gap-2">
+            <button onclick="location.reload()" class="flex-1 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm">Refresh</button>
+            <button onclick="closeToast('updateToast')" class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 font-semibold text-sm">Later</button>
+          </div>`);
+      }
+    });
+  });
+  // Ask the browser to look for a new version on every visit
+  reg.update().catch(() => {});
+}
+
+// ---------- Push reminders (OneSignal) ----------
+
+const PUSH_ASKED_KEY = 'worktalk_push_asked';
+
+function pushReady() {
+  return !!PUSH.oneSignalAppId && 'Notification' in window && 'serviceWorker' in navigator;
+}
+
+function initPush() {
+  if (!pushReady()) return;
+  const s = document.createElement('script');
+  s.src = 'https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js';
+  s.defer = true;
+  document.head.appendChild(s);
+
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  window.OneSignalDeferred.push(async OneSignal => {
+    await OneSignal.init({
+      appId: PUSH.oneSignalAppId,
+      // Our own worker owns the root scope, so OneSignal gets its own corner
+      serviceWorkerPath: 'push/onesignal/OneSignalSDKWorker.js',
+      serviceWorkerParam: { scope: '/push/onesignal/' },
+      // We ask in our own words first, at a good moment
+      autoResume: true,
+      promptOptions: { slidedown: { prompts: [] } }
+    });
+  });
+}
+
+// Called after a finished review, quiz or exercise: the moment a student
+// is most likely to want a nudge tomorrow.
+function maybeAskForReminders() {
+  if (!pushReady()) return;
+  if (localStorage.getItem(PUSH_ASKED_KEY)) return;
+  if (Notification.permission !== 'default') return;
+
+  showToast('pushToast', `
+    <p class="font-bold mb-1">🔔 Want a daily nudge?</p>
+    <p class="text-slate-500 dark:text-slate-400 mb-3">We'll remind you once a day when your review is ready. No spam, and you can turn it off anytime.</p>
+    <div class="flex gap-2">
+      <button onclick="acceptReminders()" class="flex-1 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm">Yes, remind me</button>
+      <button onclick="declineReminders()" class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 font-semibold text-sm">No thanks</button>
+    </div>`);
+}
+
+async function acceptReminders() {
+  closeToast('pushToast');
+  localStorage.setItem(PUSH_ASKED_KEY, 'yes');
+  try {
+    await window.OneSignal.Notifications.requestPermission();
+  } catch { /* browser refused or SDK not ready */ }
+}
+
+function declineReminders() {
+  closeToast('pushToast');
+  // Remember the "no" so we never nag again
+  localStorage.setItem(PUSH_ASKED_KEY, 'no');
+}
 
 // ---------- Decks ----------
 
@@ -516,6 +624,7 @@ function markDayDone() {
   localStorage.setItem(STREAK_COUNT_KEY, String(count));
   localStorage.setItem(STREAK_LAST_KEY, t);
   renderStreak();
+  maybeAskForReminders();
 }
 
 function renderStreak() {

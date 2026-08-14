@@ -1,7 +1,7 @@
 // WorkTalk service worker: network first, cache fallback.
 // Updates arrive immediately when online; the app still opens offline.
 
-const CACHE = 'worktalk-v1';
+const CACHE = 'worktalk-v2';
 
 const CORE = [
   '.',
@@ -31,6 +31,8 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
+  // Push traffic must always go to the network, never to our cache
+  if (/onesignal|\/push\//i.test(e.request.url)) return;
   e.respondWith(
     fetch(e.request)
       .then(res => {
