@@ -71,11 +71,13 @@
     </section>
 
     <!-- Tabs -->
-    <nav class="grid grid-cols-2 gap-2 bg-slate-200/70 dark:bg-slate-900 rounded-2xl p-1.5 mb-6" role="tablist">
+    <nav class="grid grid-cols-3 gap-2 bg-slate-200/70 dark:bg-slate-900 rounded-2xl p-1.5 mb-6" role="tablist">
       <button id="tabFlashcards" role="tab" aria-selected="true" data-tab="flashcards"
-        class="tab-btn py-2.5 rounded-xl font-semibold text-sm transition-colors">🃏 Flashcards</button>
+        class="tab-btn py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-colors">🃏 Cards</button>
       <button id="tabQuiz" role="tab" aria-selected="false" data-tab="quiz"
-        class="tab-btn py-2.5 rounded-xl font-semibold text-sm transition-colors">✅ Quiz</button>
+        class="tab-btn py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-colors">✅ Quiz</button>
+      <button id="tabUoe" role="tab" aria-selected="false" data-tab="uoe"
+        class="tab-btn py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-colors">✍️ Use of English</button>
     </nav>
 
     <!-- Flashcards view -->
@@ -123,6 +125,11 @@
     <!-- Quiz view -->
     <main id="viewQuiz" class="hidden">
       <div id="quizBox" class="bg-white dark:bg-slate-900 rounded-2xl shadow-md border border-slate-200 dark:border-slate-800 p-6"></div>
+    </main>
+
+    <!-- Use of English view -->
+    <main id="viewUoe" class="hidden">
+      <div id="uoeBox" class="bg-white dark:bg-slate-900 rounded-2xl shadow-md border border-slate-200 dark:border-slate-800 p-6"></div>
     </main>
 
   </div>

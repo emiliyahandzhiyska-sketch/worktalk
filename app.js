@@ -4,15 +4,18 @@
 const STORAGE_KEYS = {
   theme: 'worktalk_theme',
   mastered: 'worktalk_mastered',
-  highScore: 'worktalk_high_score'
+  highScore: 'worktalk_high_score',
+  uoeBest: 'worktalk_uoe_best'
 };
 
 const QUIZ_LENGTH = 5;
 
 let words = [];
+let exercises = { transformations: [], word_formation: [] };
 let currentCard = 0;
 let mastered = new Set();
 let quiz = null; // { questions, index, score, locked }
+let uoe = null;  // { mode, items, index, score, checked }
 
 // ---------- Boot ----------
 
@@ -21,9 +24,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   loadProgress();
 
   try {
-    const res = await fetch('words.json');
-    if (!res.ok) throw new Error(res.statusText);
-    words = await res.json();
+    const [wRes, eRes] = await Promise.all([fetch('words.json'), fetch('exercises.json')]);
+    if (!wRes.ok || !eRes.ok) throw new Error('load failed');
+    words = await wRes.json();
+    exercises = await eRes.json();
   } catch (err) {
     // fetch() fails when index.html is opened straight from the file system
     // (file:// blocks it). Show a friendly hint instead of a blank screen.
@@ -139,8 +143,10 @@ function bindEvents() {
 function switchTab(tab) {
   document.getElementById('viewFlashcards').classList.toggle('hidden', tab !== 'flashcards');
   document.getElementById('viewQuiz').classList.toggle('hidden', tab !== 'quiz');
+  document.getElementById('viewUoe').classList.toggle('hidden', tab !== 'uoe');
   styleTabs(tab);
   if (tab === 'quiz' && !quiz) renderQuizStart();
+  if (tab === 'uoe' && !uoe) renderUoeMenu();
 }
 
 function styleTabs(active) {
@@ -343,5 +349,276 @@ function renderQuizEnd() {
       ${isRecord ? '<p class="text-sm font-semibold text-emerald-500 mb-2">New personal best!</p>' : ''}
       <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">${msg}</p>
       <button onclick="startQuiz()" class="px-8 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold transition-colors">Try again</button>
+    </div>`;
+}
+
+// ---------- Use of English ----------
+
+const UOE_ROUND = 8;
+
+const UOE_MODES = {
+  cloze:     { icon: '🧩', title: 'Cloze test',        desc: 'Pick the phrase that fits the gap.' },
+  open:      { icon: '⌨️', title: 'Open cloze',        desc: 'Type the missing phrase yourself.' },
+  transform: { icon: '🔁', title: 'Transformations',   desc: 'Rewrite the sentence using a key word.' },
+  wordform:  { icon: '🔤', title: 'Word formation',    desc: 'Build the right form of the word.' },
+  own:       { icon: '💡', title: 'Your own sentence', desc: 'Use a phrase in a sentence about your life.' }
+};
+
+function getUoeBest() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEYS.uoeBest) || '{}'); }
+  catch { return {}; }
+}
+
+function saveUoeBest(mode, score) {
+  const best = getUoeBest();
+  if (best[mode] === undefined || score > best[mode]) {
+    best[mode] = score;
+    localStorage.setItem(STORAGE_KEYS.uoeBest, JSON.stringify(best));
+  }
+}
+
+function normalize(s) {
+  return s.toLowerCase().replace(/[.,!?;:'"’]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function escapeRegex(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Entries whose example contains the phrase word for word (no inflection),
+// so we can blank it out cleanly.
+function clozeEligible() {
+  return words.filter(w =>
+    w.business_context_example.toLowerCase().includes(w.phrase.toLowerCase()));
+}
+
+function blankOut(w) {
+  return w.business_context_example.replace(
+    new RegExp(escapeRegex(w.phrase), 'i'), '_______');
+}
+
+function renderUoeMenu() {
+  uoe = null;
+  const best = getUoeBest();
+  const scored = ['cloze', 'open', 'transform', 'wordform'];
+  document.getElementById('uoeBox').innerHTML = `
+    <div class="fade-in">
+      <h2 class="text-xl font-extrabold mb-1">Use of English</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400 mb-5">Exam-style practice with the phrases from your cards.</p>
+      <div class="space-y-2.5">
+        ${Object.entries(UOE_MODES).map(([mode, m]) => `
+          <button onclick="startUoe('${mode}')"
+            class="w-full text-left px-4 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:border-brand-500 dark:hover:border-brand-500 transition-colors flex items-center gap-3">
+            <span class="text-2xl">${m.icon}</span>
+            <span class="flex-1">
+              <span class="block font-bold text-sm">${m.title}</span>
+              <span class="block text-xs text-slate-500 dark:text-slate-400">${m.desc}</span>
+            </span>
+            ${scored.includes(mode) && best[mode] !== undefined
+              ? `<span class="text-xs font-semibold text-brand-500">Best: ${best[mode]}/${UOE_ROUND}</span>` : ''}
+          </button>`).join('')}
+      </div>
+    </div>`;
+}
+
+function startUoe(mode) {
+  let items;
+  if (mode === 'cloze') {
+    items = shuffle(clozeEligible()).slice(0, UOE_ROUND).map(w => ({
+      sentence: blankOut(w),
+      correct: w.phrase,
+      options: shuffle([w.phrase,
+        ...shuffle(words.filter(x => x.phrase !== w.phrase)).slice(0, 3).map(x => x.phrase)])
+    }));
+  } else if (mode === 'open') {
+    items = shuffle(clozeEligible()).slice(0, UOE_ROUND).map(w => ({
+      sentence: blankOut(w),
+      answer: w.phrase,
+      hint: w.phrase.split(' ').map(x => x[0] + '···').join(' ')
+    }));
+  } else if (mode === 'transform') {
+    items = shuffle(exercises.transformations).slice(0, UOE_ROUND);
+  } else if (mode === 'wordform') {
+    items = shuffle(exercises.word_formation).slice(0, UOE_ROUND);
+  } else {
+    items = shuffle(words);
+  }
+  uoe = { mode, items, index: 0, score: 0, checked: false };
+  renderUoeItem();
+}
+
+function uoeHeader() {
+  const m = UOE_MODES[uoe.mode];
+  const progress = uoe.mode === 'own'
+    ? `Sentence ${uoe.index + 1}`
+    : `${uoe.index + 1} of ${uoe.items.length} · Score: ${uoe.score}`;
+  return `
+    <div class="flex items-center justify-between mb-4">
+      <button onclick="renderUoeMenu()" class="text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-brand-500">← Menu</button>
+      <span class="text-xs text-slate-500 dark:text-slate-400">${m.icon} ${m.title} · ${progress}</span>
+    </div>`;
+}
+
+function uoeInput(placeholder) {
+  return `
+    <input id="uoeAnswer" type="text" autocomplete="off" placeholder="${placeholder}"
+      onkeydown="if(event.key==='Enter')uoeCheck()"
+      class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:outline-none focus:border-brand-500 mb-3">
+    <button onclick="uoeCheck()" class="w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Check</button>
+    <div id="uoeFeedback" class="mt-3"></div>`;
+}
+
+function renderUoeItem() {
+  const box = document.getElementById('uoeBox');
+  const it = uoe.items[uoe.index];
+  uoe.checked = false;
+
+  if (uoe.mode === 'cloze') {
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <p class="text-base leading-relaxed mb-5">${it.sentence}</p>
+        <div class="space-y-2.5">
+          ${it.options.map((opt, i) => `
+            <button data-opt="${i}" onclick="uoeClozeAnswer(${i})"
+              class="opt-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm font-medium hover:border-brand-500 dark:hover:border-brand-500 transition-colors">
+              ${opt}
+            </button>`).join('')}
+        </div>
+      </div>`;
+  } else if (uoe.mode === 'open') {
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <p class="text-base leading-relaxed mb-2">${it.sentence}</p>
+        <button onclick="document.getElementById('uoeHint').classList.remove('hidden')"
+          class="text-xs font-semibold text-brand-500 mb-3">Show hint</button>
+        <p id="uoeHint" class="hidden text-sm text-slate-500 dark:text-slate-400 mb-3">Hint: <b>${it.hint}</b></p>
+        ${uoeInput('Type the missing phrase…')}
+      </div>`;
+  } else if (uoe.mode === 'transform') {
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Rewrite this sentence</p>
+        <p class="text-base font-semibold leading-relaxed mb-2">“${it.original}”</p>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Use the word: <b class="text-brand-500">${it.key}</b> (keep the meaning the same)</p>
+        ${uoeInput('Write the new sentence…')}
+      </div>`;
+  } else if (uoe.mode === 'wordform') {
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <p class="text-base leading-relaxed mb-2">${it.sentence.replace('___', '<b class="text-brand-500">_______</b>')}</p>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Use the correct form of: <b class="text-brand-500">${it.base}</b></p>
+        ${uoeInput('Type the word…')}
+      </div>`;
+  } else {
+    const w = it;
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Your phrase</p>
+        <p class="text-2xl font-extrabold mb-1">${w.phrase}</p>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">${w.definition}</p>
+        <p class="text-sm mb-3">Write your own sentence about <b>your</b> work or life:</p>
+        ${uoeInput('My sentence…')}
+      </div>`;
+  }
+  const inp = document.getElementById('uoeAnswer');
+  if (inp) inp.focus();
+}
+
+function uoeClozeAnswer(i) {
+  if (uoe.checked) return;
+  uoe.checked = true;
+  const it = uoe.items[uoe.index];
+  const correct = it.options[i] === it.correct;
+  if (correct) uoe.score++;
+
+  document.querySelectorAll('.opt-btn').forEach(btn => {
+    const opt = it.options[+btn.dataset.opt];
+    btn.disabled = true;
+    if (opt === it.correct) {
+      btn.className += ' !bg-emerald-100 dark:!bg-emerald-900/50 !border-emerald-500';
+    } else if (+btn.dataset.opt === i) {
+      btn.className += ' !bg-rose-100 dark:!bg-rose-900/40 !border-rose-500';
+    }
+  });
+  setTimeout(uoeNext, 1100);
+}
+
+function uoeCheck() {
+  if (uoe.checked) return;
+  const it = uoe.items[uoe.index];
+  const raw = document.getElementById('uoeAnswer').value;
+  const ans = normalize(raw);
+  if (!ans) return;
+  uoe.checked = true;
+
+  let correct, revealHtml;
+  if (uoe.mode === 'open') {
+    correct = ans === normalize(it.answer);
+    revealHtml = `Answer: <b>${it.answer}</b>`;
+  } else if (uoe.mode === 'transform') {
+    correct = it.accept.some(a => ans.includes(normalize(a)));
+    revealHtml = `Model answer: <b>${it.model}</b>`;
+  } else if (uoe.mode === 'wordform') {
+    correct = it.accept.some(a => ans === normalize(a));
+    revealHtml = `Answer: <b>${it.accept[0]}</b>`;
+  } else {
+    // Own sentence: check they used the phrase (longest word as the anchor,
+    // so inflections like "reached out" still count) and wrote a real sentence.
+    const anchor = it.phrase.split(' ').sort((a, b) => b.length - a.length)[0]
+      .toLowerCase().slice(0, 4);
+    correct = ans.includes(anchor) && ans.split(' ').length >= 4;
+    revealHtml = `Example: <i>${it.business_context_example}</i>`;
+  }
+
+  const fb = document.getElementById('uoeFeedback');
+  const isOwn = uoe.mode === 'own';
+  if (!isOwn && correct) uoe.score++;
+  fb.innerHTML = `
+    <div class="fade-in p-3 rounded-xl text-sm ${correct
+      ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-200'
+      : 'bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200'}">
+      <p class="font-bold mb-1">${correct
+        ? (isOwn ? 'Nice sentence! 👏' : 'Correct! ✅')
+        : (isOwn ? 'Almost. Try to include the phrase itself.' : 'Not quite.')}</p>
+      <p>${revealHtml}</p>
+    </div>
+    <button onclick="uoeNext()" class="w-full mt-3 py-2.5 rounded-xl bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 font-bold text-sm">
+      ${isOwn ? 'Next phrase →' : 'Continue →'}
+    </button>`;
+  document.getElementById('uoeAnswer').disabled = true;
+}
+
+function uoeNext() {
+  uoe.index++;
+  if (uoe.mode === 'own') {
+    if (uoe.index >= uoe.items.length) uoe.items = shuffle(words), uoe.index = 0;
+    renderUoeItem();
+    return;
+  }
+  if (uoe.index < uoe.items.length) renderUoeItem();
+  else renderUoeEnd();
+}
+
+function renderUoeEnd() {
+  const { mode, score, items } = uoe;
+  const prevBest = getUoeBest()[mode];
+  const isRecord = prevBest === undefined || score > prevBest;
+  saveUoeBest(mode, score);
+
+  const msg =
+    score === items.length ? 'Perfect round! 🏆' :
+    score >= items.length * 0.7 ? 'Strong result. Keep going!' :
+    'Good practice. The cards are your friend, then try again.';
+
+  document.getElementById('uoeBox').innerHTML = `
+    <div class="text-center py-6 fade-in">
+      <p class="text-4xl mb-3">${score >= items.length * 0.7 ? '🎉' : '💪'}</p>
+      <h2 class="text-xl font-extrabold mb-2">${UOE_MODES[mode].title}: ${score} / ${items.length}</h2>
+      ${isRecord ? '<p class="text-sm font-semibold text-emerald-500 mb-2">New personal best!</p>' : ''}
+      <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">${msg}</p>
+      <div class="flex gap-2 justify-center">
+        <button onclick="startUoe('${mode}')" class="px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Try again</button>
+        <button onclick="renderUoeMenu()" class="px-6 py-3 rounded-xl bg-slate-200 dark:bg-slate-800 font-bold text-sm hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">All exercises</button>
+      </div>
     </div>`;
 }

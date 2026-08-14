@@ -1,0 +1,118 @@
+{
+  "transformations": [
+    {
+      "original": "I'll contact the supplier tomorrow.",
+      "key": "REACH",
+      "model": "I'll reach out to the supplier tomorrow.",
+      "accept": ["reach out"]
+    },
+    {
+      "original": "Let's discuss this privately after the meeting.",
+      "key": "OFFLINE",
+      "model": "Let's take it offline.",
+      "accept": ["take it offline", "take this offline"]
+    },
+    {
+      "original": "Please keep me informed about the delivery.",
+      "key": "POSTED",
+      "model": "Please keep me posted about the delivery.",
+      "accept": ["keep me posted"]
+    },
+    {
+      "original": "We had to cancel the workshop.",
+      "key": "OFF",
+      "model": "We had to call off the workshop.",
+      "accept": ["call off", "called off", "workshop off"]
+    },
+    {
+      "original": "The decision is yours now.",
+      "key": "COURT",
+      "model": "The ball is in your court now.",
+      "accept": ["in your court"]
+    },
+    {
+      "original": "We agree about the schedule.",
+      "key": "PAGE",
+      "model": "We're on the same page about the schedule.",
+      "accept": ["on the same page"]
+    },
+    {
+      "original": "I'm too busy to accept more work this week.",
+      "key": "PLATE",
+      "model": "I have too much on my plate this week.",
+      "accept": ["on my plate"]
+    },
+    {
+      "original": "She always does more than people expect.",
+      "key": "MILE",
+      "model": "She always goes the extra mile.",
+      "accept": ["extra mile"]
+    },
+    {
+      "original": "We need to make the price exact and final.",
+      "key": "NAIL",
+      "model": "We need to nail down the price.",
+      "accept": ["nail down", "nail the price down"]
+    },
+    {
+      "original": "I'll start the process by emailing the venue.",
+      "key": "BALL",
+      "model": "I'll get the ball rolling by emailing the venue.",
+      "accept": ["ball rolling"]
+    },
+    {
+      "original": "The project is later than planned.",
+      "key": "SCHEDULE",
+      "model": "The project is behind schedule.",
+      "accept": ["behind schedule"]
+    },
+    {
+      "original": "The date hasn't been decided yet.",
+      "key": "AIR",
+      "model": "The date is still up in the air.",
+      "accept": ["up in the air"]
+    },
+    {
+      "original": "Skip the details and tell me the main point.",
+      "key": "CHASE",
+      "model": "Cut to the chase.",
+      "accept": ["cut to the chase"]
+    },
+    {
+      "original": "He failed to send the renewal email.",
+      "key": "DROPPED",
+      "model": "He dropped the ball on the renewal email.",
+      "accept": ["dropped the ball"]
+    },
+    {
+      "original": "Maria will be responsible for the project.",
+      "key": "LEAD",
+      "model": "Maria will take the lead on the project.",
+      "accept": ["take the lead"]
+    },
+    {
+      "original": "Can you review the contract with me?",
+      "key": "OVER",
+      "model": "Can you go over the contract with me?",
+      "accept": ["go over"]
+    }
+  ],
+  "word_formation": [
+    { "sentence": "We received 25 ___ for the assistant position.", "base": "APPLY", "accept": ["applications"] },
+    { "sentence": "The final ___ is up to the CEO.", "base": "DECIDE", "accept": ["decision"] },
+    { "sentence": "After 3 years she became the office ___.", "base": "MANAGE", "accept": ["manager"] },
+    { "sentence": "The factory is the biggest ___ in our town.", "base": "EMPLOY", "accept": ["employer"] },
+    { "sentence": "Both sides signed the ___ yesterday.", "base": "AGREE", "accept": ["agreement"] },
+    { "sentence": "Working from home improved my ___.", "base": "PRODUCE", "accept": ["productivity"] },
+    { "sentence": "The launch was a big ___.", "base": "SUCCEED", "accept": ["success"] },
+    { "sentence": "The company saw strong ___ in its second year.", "base": "GROW", "accept": ["growth"] },
+    { "sentence": "Our main ___ just lowered their prices.", "base": "COMPETE", "accept": ["competitor"] },
+    { "sentence": "The ___ lasted 3 hours, but we got a better deal.", "base": "NEGOTIATE", "accept": ["negotiation", "negotiations"] },
+    { "sentence": "Her ___ convinced the whole board.", "base": "PRESENT", "accept": ["presentation"] },
+    { "sentence": "My ___ handles the calendar and the invoices.", "base": "ASSIST", "accept": ["assistant"] },
+    { "sentence": "Please confirm when the ___ arrives.", "base": "PAY", "accept": ["payment"] },
+    { "sentence": "All new staff get 2 weeks of ___.", "base": "TRAIN", "accept": ["training"] },
+    { "sentence": "Hiring is my ___ now.", "base": "RESPONSIBLE", "accept": ["responsibility"] },
+    { "sentence": "You'll get a booking ___ by email.", "base": "CONFIRM", "accept": ["confirmation"] }
+  ]
+}
