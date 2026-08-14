@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     return;
   }
 
+  document.getElementById('tagline').textContent =
+    `Everyday English for work. ${words.length} phrases you'll actually use.`;
+
   bindEvents();
   renderCard();
   renderProgress();
@@ -122,6 +125,11 @@ function bindEvents() {
   document.getElementById('prevBtn').addEventListener('click', () => moveCard(-1));
   document.getElementById('nextBtn').addEventListener('click', () => moveCard(1));
   document.getElementById('masterBtn').addEventListener('click', toggleMastered);
+  document.getElementById('shuffleBtn').addEventListener('click', () => {
+    words = shuffle(words);
+    currentCard = 0;
+    renderCard();
+  });
   document.getElementById('ttsBtn').addEventListener('click', e => {
     e.stopPropagation();
     speak(words[currentCard].audio_text);
