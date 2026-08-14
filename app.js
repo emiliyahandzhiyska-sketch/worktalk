@@ -5,7 +5,7 @@ const THEME_KEY = 'worktalk_theme';
 const DECK_KEY = 'worktalk_deck';
 
 const BRAND = {
-  school: 'Езикова работилница',
+  school: 'Language Workshop',
   ctaUrl: 'mailto:emiliya.handzhiyska@gmail.com?subject=Lesson%20inquiry%20(via%20WorkTalk)'
 };
 
