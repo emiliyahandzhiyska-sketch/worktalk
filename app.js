@@ -68,6 +68,7 @@ function todayStr() {
 
 document.addEventListener('DOMContentLoaded', async () => {
   initTheme();
+  initPalette();
   migrateOldKeys();
   document.getElementById('ctaLink').href = BRAND.ctaUrl;
 
@@ -280,6 +281,82 @@ function renderDeckPicker() {
 
 async function switchDeckTo(id) {
   if (id !== deckId) await loadDeck(id);
+}
+
+// ---------- Brand palettes ----------
+
+// Add "?palette" to the URL to get a colour switcher bar. Students never see it.
+// v = [50, 100, 500, 600, 700]; bg = page background (defaults to cool grey).
+const PAGE_DEFAULT = '241 245 249';
+const CLOUD_DANCER = '240 238 233'; // Pantone 11-4201, approximate hex #F0EEE9
+
+const PALETTES = {
+  // --- Language Workshop red, from softest to the logo itself ---
+  clay:    { group: 'Brand red', name: 'Clay rose (softest)', dot: '#b86b6b',
+             v: ['253 244 243', '247 227 225', '184 107 107', '158 87 87', '129 70 70'] },
+  coral:   { group: 'Brand red', name: 'Warm coral', dot: '#e0736b',
+             v: ['255 244 242', '255 226 221', '224 115 107', '199 91 84', '163 73 67'] },
+  brick:   { group: 'Brand red', name: 'Muted brick', dot: '#b4443c',
+             v: ['253 243 242', '248 224 221', '180 68 60', '150 56 49', '122 46 40'] },
+  logo:    { group: 'Brand red', name: 'Logo red (full)', dot: '#e30613',
+             v: ['255 241 241', '255 223 223', '227 6 19', '192 5 16', '155 4 13'] },
+
+  // --- Pantone 2026: Cloud Dancer as the page, companion shades as the accent ---
+  woodrose:{ group: 'Pantone 2026', name: 'Cloud Dancer + Woodrose', dot: '#a5686f', bg: CLOUD_DANCER,
+             v: ['250 245 245', '240 226 227', '165 104 111', '139 86 92', '112 63 69'] },
+  rosebrown:{group: 'Pantone 2026', name: 'Cloud Dancer + Rose Brown', dot: '#9c6a5e', bg: CLOUD_DANCER,
+             v: ['250 245 243', '240 226 220', '156 106 94', '131 87 76', '107 70 61'] },
+  bluefusion:{group:'Pantone 2026', name: 'Cloud Dancer + Blue Fusion', dot: '#3f5d9e', bg: CLOUD_DANCER,
+             v: ['242 245 251', '222 230 245', '63 93 158', '51 76 131', '40 60 104'] },
+  violet:  { group: 'Pantone 2026', name: 'Cloud Dancer + Quiet Violet', dot: '#7a6a8a', bg: CLOUD_DANCER,
+             v: ['247 245 249', '234 229 239', '122 106 138', '101 87 119', '81 69 99'] },
+
+  // --- The current look, for comparison ---
+  blue:    { group: 'Current', name: 'Classic blue', dot: '#2f6fed',
+             v: ['238 246 255', '217 234 255', '47 111 237', '31 92 214', '26 76 176'] },
+  teal:    { group: 'Current', name: 'Teal', dot: '#0d9488',
+             v: ['240 253 250', '204 251 241', '13 148 136', '15 118 110', '17 94 89'] }
+};
+
+const PALETTE_KEY = 'worktalk_palette';
+const SHADES = ['--brand-50', '--brand-100', '--brand-500', '--brand-600', '--brand-700'];
+
+function applyPalette(id) {
+  const p = PALETTES[id];
+  if (!p) return;
+  SHADES.forEach((v, i) => document.documentElement.style.setProperty(v, p.v[i]));
+  document.documentElement.style.setProperty('--page', p.bg || PAGE_DEFAULT);
+  document.querySelector('meta[name=theme-color]').setAttribute('content', p.dot);
+  localStorage.setItem(PALETTE_KEY, id);
+  if (document.getElementById('paletteBar')) renderPaletteBar();
+}
+
+function initPalette() {
+  const saved = localStorage.getItem(PALETTE_KEY);
+  if (saved && PALETTES[saved]) applyPalette(saved);
+  if (new URLSearchParams(location.search).has('palette')) renderPaletteBar();
+}
+
+function renderPaletteBar() {
+  const active = localStorage.getItem(PALETTE_KEY) || 'blue';
+  let bar = document.getElementById('paletteBar');
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'paletteBar';
+    bar.className = 'fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur ' +
+      'text-white px-3 py-2 flex items-center gap-2 overflow-x-auto';
+    document.body.prepend(bar);
+    document.body.style.paddingTop = '52px';
+  }
+  const groups = [...new Set(Object.values(PALETTES).map(p => p.group))];
+  bar.innerHTML = groups.map(g => `
+    <span class="text-xs font-bold whitespace-nowrap opacity-60 ml-2 first:ml-0">${g}</span>` +
+    Object.entries(PALETTES).filter(([, p]) => p.group === g).map(([id, p]) => `
+      <button onclick="applyPalette('${id}')"
+        class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors ${
+          id === active ? 'bg-white text-slate-900' : 'bg-white/10 hover:bg-white/20'}">
+        <span class="w-3 h-3 rounded-full border border-white/30" style="background:${p.dot}"></span>${p.name}
+      </button>`).join('')).join('');
 }
 
 // ---------- Theme ----------

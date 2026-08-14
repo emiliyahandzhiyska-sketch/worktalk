@@ -14,10 +14,14 @@
       theme: {
         extend: {
           fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          // Driven by CSS variables so the whole palette can be swapped live
           colors: {
             brand: {
-              50: '#eef6ff', 100: '#d9eaff', 500: '#2f6fed',
-              600: '#1f5cd6', 700: '#1a4cb0'
+              50:  'rgb(var(--brand-50) / <alpha-value>)',
+              100: 'rgb(var(--brand-100) / <alpha-value>)',
+              500: 'rgb(var(--brand-500) / <alpha-value>)',
+              600: 'rgb(var(--brand-600) / <alpha-value>)',
+              700: 'rgb(var(--brand-700) / <alpha-value>)'
             }
           }
         }
@@ -27,6 +31,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
+    /* Default palette: Classic blue. Swapped at runtime by applyPalette(). */
+    :root {
+      --brand-50:  238 246 255;
+      --brand-100: 217 234 255;
+      --brand-500:  47 111 237;
+      --brand-600:  31  92 214;
+      --brand-700:  26  76 176;
+      --page: 241 245 249;
+    }
     .flip-card { perspective: 1200px; }
     .flip-inner {
       transition: transform 0.55s cubic-bezier(.4,.1,.2,1);
@@ -43,7 +56,7 @@
     @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
   </style>
 </head>
-<body class="min-h-screen bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans transition-colors">
+<body class="min-h-screen bg-[rgb(var(--page))] text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans transition-colors">
 
   <div class="max-w-2xl mx-auto px-4 pb-16">
 
