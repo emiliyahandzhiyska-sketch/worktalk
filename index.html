@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkTalk — Everyday English for Work</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: {
+              50: '#eef6ff', 100: '#d9eaff', 500: '#2f6fed',
+              600: '#1f5cd6', 700: '#1a4cb0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .flip-card { perspective: 1200px; }
+    .flip-inner {
+      transition: transform 0.55s cubic-bezier(.4,.1,.2,1);
+      transform-style: preserve-3d;
+      position: relative;
+    }
+    .flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+    .flip-face {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .flip-back { transform: rotateY(180deg); position: absolute; inset: 0; }
+    .fade-in { animation: fadeIn .3s ease both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans transition-colors">
+
+  <div class="max-w-2xl mx-auto px-4 pb-16">
+
+    <!-- Header -->
+    <header class="flex items-center justify-between py-6">
+      <div>
+        <h1 class="text-2xl font-extrabold tracking-tight">
+          Work<span class="text-brand-500">Talk</span>
+        </h1>
+        <p class="text-sm text-slate-500 dark:text-slate-400">Everyday English for work. 10 phrases you'll actually use.</p>
+      </div>
+      <button id="themeToggle" aria-label="Toggle dark mode"
+        class="p-2.5 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform">
+        <span id="themeIcon" class="text-lg">🌙</span>
+      </button>
+    </header>
+
+    <!-- Progress -->
+    <section class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-4 mb-5">
+      <div class="flex items-center justify-between text-sm mb-2">
+        <span class="font-semibold">Your progress</span>
+        <span id="progressLabel" class="text-slate-500 dark:text-slate-400">0 / 10 mastered</span>
+      </div>
+      <div class="h-2.5 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
+        <div id="progressBar" class="h-full rounded-full bg-brand-500 transition-all duration-500" style="width:0%"></div>
+      </div>
+      <p id="highScoreLabel" class="text-xs text-slate-500 dark:text-slate-400 mt-2">Quiz best: not played yet</p>
+    </section>
+
+    <!-- Tabs -->
+    <nav class="grid grid-cols-2 gap-2 bg-slate-200/70 dark:bg-slate-900 rounded-2xl p-1.5 mb-6" role="tablist">
+      <button id="tabFlashcards" role="tab" aria-selected="true" data-tab="flashcards"
+        class="tab-btn py-2.5 rounded-xl font-semibold text-sm transition-colors">🃏 Flashcards</button>
+      <button id="tabQuiz" role="tab" aria-selected="false" data-tab="quiz"
+        class="tab-btn py-2.5 rounded-xl font-semibold text-sm transition-colors">✅ Quiz</button>
+    </nav>
+
+    <!-- Flashcards view -->
+    <main id="viewFlashcards">
+      <div id="flashcard" class="flip-card cursor-pointer select-none" tabindex="0" role="button" aria-label="Flip card">
+        <div class="flip-inner min-h-[280px]">
+          <!-- Front -->
+          <div class="flip-face min-h-[280px] bg-white dark:bg-slate-900 rounded-2xl shadow-md border border-slate-200 dark:border-slate-800 p-8 flex flex-col items-center justify-center text-center">
+            <p class="text-xs uppercase tracking-widest text-slate-400 mb-4">Phrase</p>
+            <p id="cardPhrase" class="text-3xl font-extrabold tracking-tight mb-6"></p>
+            <button id="ttsBtn" aria-label="Hear pronunciation"
+              class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 dark:bg-slate-800 text-brand-600 dark:text-brand-100 font-semibold text-sm hover:bg-brand-100 dark:hover:bg-slate-700 transition-colors">
+              🔊 Listen
+            </button>
+            <p class="text-xs text-slate-400 mt-6">Tap the card to see the meaning</p>
+          </div>
+          <!-- Back -->
+          <div class="flip-back flip-face bg-brand-600 text-white rounded-2xl shadow-md p-8 flex flex-col justify-center">
+            <p class="text-xs uppercase tracking-widest text-brand-100/80 mb-2">Meaning</p>
+            <p id="cardDefinition" class="text-lg font-semibold leading-snug mb-5"></p>
+            <p class="text-xs uppercase tracking-widest text-brand-100/80 mb-2">At work</p>
+            <p id="cardExample" class="text-sm leading-relaxed italic opacity-95"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card controls -->
+      <div class="flex items-center justify-between mt-5 gap-3">
+        <button id="prevBtn" class="px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm font-semibold text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">← Back</button>
+        <span id="cardCounter" class="text-sm font-medium text-slate-500 dark:text-slate-400">1 / 10</span>
+        <button id="nextBtn" class="px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm font-semibold text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">Next →</button>
+      </div>
+
+      <button id="masterBtn"
+        class="w-full mt-4 py-3 rounded-xl font-bold text-sm transition-colors bg-emerald-500 hover:bg-emerald-600 text-white">
+        ✓ Mark as mastered
+      </button>
+    </main>
+
+    <!-- Quiz view -->
+    <main id="viewQuiz" class="hidden">
+      <div id="quizBox" class="bg-white dark:bg-slate-900 rounded-2xl shadow-md border border-slate-200 dark:border-slate-800 p-6"></div>
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

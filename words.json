@@ -1,0 +1,62 @@
+[
+  {
+    "phrase": "touch base",
+    "definition": "To make brief contact with someone to check on progress or share updates.",
+    "business_context_example": "Let's touch base on Friday to see where we are with the client proposal.",
+    "audio_text": "touch base"
+  },
+  {
+    "phrase": "circle back",
+    "definition": "To return to a topic or task later, after dealing with other things first.",
+    "business_context_example": "I don't have the numbers yet, so let's circle back to the budget after lunch.",
+    "audio_text": "circle back"
+  },
+  {
+    "phrase": "on the same page",
+    "definition": "To share the same understanding or agreement about something.",
+    "business_context_example": "Before we email the vendor, I want to make sure we're on the same page about pricing.",
+    "audio_text": "on the same page"
+  },
+  {
+    "phrase": "follow up",
+    "definition": "To check on something again after a first contact, message, or meeting.",
+    "business_context_example": "I sent the invoice last week, but I'll follow up today since they haven't replied.",
+    "audio_text": "follow up"
+  },
+  {
+    "phrase": "run something by someone",
+    "definition": "To show or explain an idea to someone to get their opinion or approval.",
+    "business_context_example": "Can I run this draft by you before I send it to the whole team?",
+    "audio_text": "run something by someone"
+  },
+  {
+    "phrase": "in the loop",
+    "definition": "Informed and included in updates about a project or decision.",
+    "business_context_example": "Please keep me in the loop about any changes to the delivery schedule.",
+    "audio_text": "in the loop"
+  },
+  {
+    "phrase": "call it a day",
+    "definition": "To stop working, usually because you've done enough for now.",
+    "business_context_example": "We've fixed the main bug and it's already 7 pm, so let's call it a day.",
+    "audio_text": "call it a day"
+  },
+  {
+    "phrase": "take the lead",
+    "definition": "To take responsibility for a task or project and guide others.",
+    "business_context_example": "Maria will take the lead on the onboarding project since she knows the client best.",
+    "audio_text": "take the lead"
+  },
+  {
+    "phrase": "get back to someone",
+    "definition": "To reply to someone later with an answer or information.",
+    "business_context_example": "I need to check with my manager first, but I'll get back to you by Thursday.",
+    "audio_text": "get back to someone"
+  },
+  {
+    "phrase": "move the needle",
+    "definition": "To make a noticeable difference or real progress on something important.",
+    "business_context_example": "The new ads brought 3 sales, but honestly that doesn't move the needle for us.",
+    "audio_text": "move the needle"
+  }
+]
