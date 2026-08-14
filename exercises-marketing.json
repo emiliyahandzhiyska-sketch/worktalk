@@ -1,0 +1,90 @@
+{
+  "transformations": [
+    {
+      "original": "We need to say clearly what makes us different.",
+      "key": "SELLING",
+      "model": "We need a clear unique selling point.",
+      "accept": ["selling point"]
+    },
+    {
+      "original": "Many people open our emails.",
+      "key": "RATE",
+      "model": "Our open rate is high.",
+      "accept": ["open rate"]
+    },
+    {
+      "original": "The video was shared by thousands of people in one day.",
+      "key": "VIRAL",
+      "model": "The video went viral in one day.",
+      "accept": ["went viral", "go viral", "gone viral"]
+    },
+    {
+      "original": "We tested two versions of the headline.",
+      "key": "A/B",
+      "model": "We A/B tested the headline.",
+      "accept": ["a/b test", "ab test", "a b test"]
+    },
+    {
+      "original": "Ask your customers what problems they have.",
+      "key": "PAIN",
+      "model": "Ask your customers about their pain points.",
+      "accept": ["pain point"]
+    },
+    {
+      "original": "Reviews from real clients make people trust you.",
+      "key": "PROOF",
+      "model": "Social proof makes people trust you.",
+      "accept": ["social proof"]
+    },
+    {
+      "original": "Let people use the product for 14 days without paying.",
+      "key": "TRIAL",
+      "model": "Give people a 14-day free trial.",
+      "accept": ["free trial"]
+    },
+    {
+      "original": "People who book early pay a lower price.",
+      "key": "BIRD",
+      "model": "There's an early bird price for people who book early.",
+      "accept": ["early bird"]
+    },
+    {
+      "original": "The ad brought us 40 people who might become customers.",
+      "key": "LEADS",
+      "model": "The ad brought us 40 leads.",
+      "accept": ["leads"]
+    },
+    {
+      "original": "Keeping customers is cheaper than finding new ones.",
+      "key": "RETENTION",
+      "model": "Customer retention is cheaper than finding new customers.",
+      "accept": ["retention"]
+    },
+    {
+      "original": "A free checklist collects email addresses for us.",
+      "key": "MAGNET",
+      "model": "The free checklist is our lead magnet.",
+      "accept": ["lead magnet"]
+    },
+    {
+      "original": "The button must tell people exactly what to do.",
+      "key": "ACTION",
+      "model": "The button needs a clear call to action.",
+      "accept": ["call to action"]
+    }
+  ],
+  "word_formation": [
+    { "sentence": "Her landing page copy is very ___.", "base": "PERSUADE", "accept": ["persuasive"] },
+    { "sentence": "The newsletter has 2,000 ___.", "base": "SUBSCRIBE", "accept": ["subscribers"] },
+    { "sentence": "The summer ___ doubled our sales.", "base": "PROMOTE", "accept": ["promotion"] },
+    { "sentence": "We spent 300 euro on online ___ last month.", "base": "ADVERTISE", "accept": ["advertising", "advertisements", "adverts"] },
+    { "sentence": "A points program builds customer ___.", "base": "LOYAL", "accept": ["loyalty"] },
+    { "sentence": "Short videos get the highest ___.", "base": "ENGAGE", "accept": ["engagement"] },
+    { "sentence": "A clearer button improved our ___ rate.", "base": "CONVERT", "accept": ["conversion"] },
+    { "sentence": "Most new clients come from personal ___.", "base": "RECOMMEND", "accept": ["recommendations"] },
+    { "sentence": "The campaign was about brand ___.", "base": "AWARE", "accept": ["awareness"] },
+    { "sentence": "The monthly ___ shows which posts worked.", "base": "ANALYZE", "accept": ["analysis"] },
+    { "sentence": "Good ads need ___, not just a budget.", "base": "CREATE", "accept": ["creativity"] },
+    { "sentence": "The blog post is a ___ of 5 email tools.", "base": "COMPARE", "accept": ["comparison"] }
+  ]
+}

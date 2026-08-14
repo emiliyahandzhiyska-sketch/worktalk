@@ -1,0 +1,302 @@
+[
+  {
+    "phrase": "target audience",
+    "definition": "The specific group of people a product or message is made for.",
+    "business_context_example": "Our target audience is HR managers in companies with 50 to 200 employees.",
+    "audio_text": "target audience"
+  },
+  {
+    "phrase": "brand awareness",
+    "definition": "How well people know and recognize a brand.",
+    "business_context_example": "The podcast didn't sell anything directly, but it built brand awareness.",
+    "audio_text": "brand awareness"
+  },
+  {
+    "phrase": "call to action",
+    "definition": "The words that tell people exactly what to do next, like 'Sign up' or 'Book now'.",
+    "business_context_example": "The email had no call to action, so nobody knew what to click.",
+    "audio_text": "call to action"
+  },
+  {
+    "phrase": "conversion rate",
+    "definition": "The percentage of visitors who do what you want, like buying or signing up.",
+    "business_context_example": "The new page design lifted our conversion rate from 2% to 5%.",
+    "audio_text": "conversion rate"
+  },
+  {
+    "phrase": "click-through rate",
+    "definition": "The percentage of people who click a link after seeing it.",
+    "business_context_example": "The second subject line doubled our click-through rate.",
+    "audio_text": "click through rate"
+  },
+  {
+    "phrase": "landing page",
+    "definition": "A single web page made for one goal, usually collecting sign-ups or sales.",
+    "business_context_example": "We sent the ad traffic to a landing page, not to the homepage.",
+    "audio_text": "landing page"
+  },
+  {
+    "phrase": "lead magnet",
+    "definition": "A free gift, like a guide or checklist, offered in exchange for an email address.",
+    "business_context_example": "Our lead magnet is a free PDF with 20 email templates in English.",
+    "audio_text": "lead magnet"
+  },
+  {
+    "phrase": "sales funnel",
+    "definition": "The steps a person goes through from first hearing about you to buying.",
+    "business_context_example": "People enter our sales funnel through the free webinar.",
+    "audio_text": "sales funnel"
+  },
+  {
+    "phrase": "lead generation",
+    "definition": "The process of finding people who might become customers.",
+    "business_context_example": "LinkedIn posts are our cheapest channel for lead generation.",
+    "audio_text": "lead generation"
+  },
+  {
+    "phrase": "engagement",
+    "definition": "How much people react to your content: likes, comments, shares, replies.",
+    "business_context_example": "Question posts get 3 times more engagement than photos.",
+    "audio_text": "engagement"
+  },
+  {
+    "phrase": "reach",
+    "definition": "The number of different people who see your content.",
+    "business_context_example": "The reel had a reach of 12,000, mostly people who don't follow us.",
+    "audio_text": "reach"
+  },
+  {
+    "phrase": "impressions",
+    "definition": "The total number of times your content was shown, including repeats.",
+    "business_context_example": "The ad got 50,000 impressions but only 90 clicks.",
+    "audio_text": "impressions"
+  },
+  {
+    "phrase": "organic traffic",
+    "definition": "Visitors who find you without paid ads, usually through search or social media.",
+    "business_context_example": "The blog brings steady organic traffic, about 800 visits a month.",
+    "audio_text": "organic traffic"
+  },
+  {
+    "phrase": "paid ads",
+    "definition": "Advertising you pay for, like Facebook or Google ads.",
+    "business_context_example": "We spend 200 euro a month on paid ads and track every lead.",
+    "audio_text": "paid ads"
+  },
+  {
+    "phrase": "A/B testing",
+    "definition": "Comparing two versions of something to see which works better.",
+    "business_context_example": "A/B testing showed that the shorter headline sold more.",
+    "audio_text": "A B testing"
+  },
+  {
+    "phrase": "copywriting",
+    "definition": "Writing text whose job is to sell or persuade.",
+    "business_context_example": "Good copywriting turned the boring course page into our best seller.",
+    "audio_text": "copywriting"
+  },
+  {
+    "phrase": "headline",
+    "definition": "The title of an ad, page, or article; the first line people read.",
+    "business_context_example": "Test 5 headlines before you spend money on the ad.",
+    "audio_text": "headline"
+  },
+  {
+    "phrase": "tagline",
+    "definition": "A short, memorable phrase connected to a brand.",
+    "business_context_example": "Their tagline is 3 words long and everyone remembers it.",
+    "audio_text": "tagline"
+  },
+  {
+    "phrase": "unique selling point",
+    "definition": "The one thing that makes your offer different from competitors.",
+    "business_context_example": "Our unique selling point is lessons built around the client's real work emails.",
+    "audio_text": "unique selling point"
+  },
+  {
+    "phrase": "value proposition",
+    "definition": "A clear statement of what the customer gets and why it's worth it.",
+    "business_context_example": "The value proposition on the homepage answers 'why us' in one sentence.",
+    "audio_text": "value proposition"
+  },
+  {
+    "phrase": "niche",
+    "definition": "A small, specific part of a market.",
+    "business_context_example": "We picked a niche: English for finance teams, not English for everyone.",
+    "audio_text": "niche"
+  },
+  {
+    "phrase": "positioning",
+    "definition": "How you want customers to see your brand compared to others.",
+    "business_context_example": "Our positioning is premium: fewer clients, deeper work, higher price.",
+    "audio_text": "positioning"
+  },
+  {
+    "phrase": "product launch",
+    "definition": "The planned introduction of a new product to the market.",
+    "business_context_example": "The product launch starts with a 3-email warm-up sequence.",
+    "audio_text": "product launch"
+  },
+  {
+    "phrase": "soft launch",
+    "definition": "Releasing something quietly to a small group before the big public launch.",
+    "business_context_example": "We did a soft launch with 10 loyal clients to catch problems early.",
+    "audio_text": "soft launch"
+  },
+  {
+    "phrase": "create buzz",
+    "definition": "To make people talk about something before or during a launch.",
+    "business_context_example": "The countdown posts created buzz a week before the course opened.",
+    "audio_text": "create buzz"
+  },
+  {
+    "phrase": "go viral",
+    "definition": "To spread very quickly online because people keep sharing it.",
+    "business_context_example": "Her 15-second office joke went viral and brought 2,000 followers.",
+    "audio_text": "go viral"
+  },
+  {
+    "phrase": "influencer",
+    "definition": "A person with an online audience who can affect what people buy.",
+    "business_context_example": "A local influencer mentioned our cafe and the weekend was full.",
+    "audio_text": "influencer"
+  },
+  {
+    "phrase": "testimonial",
+    "definition": "A customer's statement saying they liked your product or service.",
+    "business_context_example": "We added 3 testimonials under the price and sales went up.",
+    "audio_text": "testimonial"
+  },
+  {
+    "phrase": "case study",
+    "definition": "A detailed story of how a real customer got results with your product.",
+    "business_context_example": "The case study shows how a hotel team improved their email English in 8 weeks.",
+    "audio_text": "case study"
+  },
+  {
+    "phrase": "referral",
+    "definition": "A new customer sent to you by an existing customer.",
+    "business_context_example": "Half of our students come from referrals, so we thank every one.",
+    "audio_text": "referral"
+  },
+  {
+    "phrase": "customer retention",
+    "definition": "Keeping existing customers instead of losing them.",
+    "business_context_example": "Customer retention is cheaper than winning new clients with ads.",
+    "audio_text": "customer retention"
+  },
+  {
+    "phrase": "churn",
+    "definition": "The rate at which customers stop buying or cancel.",
+    "business_context_example": "Churn goes up every summer, so we plan a July offer.",
+    "audio_text": "churn"
+  },
+  {
+    "phrase": "upsell",
+    "definition": "To offer a customer a bigger or better version of what they're buying.",
+    "business_context_example": "After the group course, we upsell private lessons to the most active students.",
+    "audio_text": "upsell"
+  },
+  {
+    "phrase": "cross-sell",
+    "definition": "To offer a customer a related product in addition to what they're buying.",
+    "business_context_example": "The bookshop cross-sells notebooks and pens at the counter.",
+    "audio_text": "cross sell"
+  },
+  {
+    "phrase": "free trial",
+    "definition": "A period when people can use a product without paying.",
+    "business_context_example": "The 7-day free trial converts about 1 in 5 users into subscribers.",
+    "audio_text": "free trial"
+  },
+  {
+    "phrase": "early bird",
+    "definition": "A special lower price for people who buy before everyone else.",
+    "business_context_example": "The early bird price ends Sunday, then it goes up by 30%.",
+    "audio_text": "early bird"
+  },
+  {
+    "phrase": "waiting list",
+    "definition": "A list of people who want to buy when a product becomes available.",
+    "business_context_example": "The course is full, but the waiting list already has 40 names.",
+    "audio_text": "waiting list"
+  },
+  {
+    "phrase": "open rate",
+    "definition": "The percentage of people who open an email you sent.",
+    "business_context_example": "Emails with a question in the subject line get a higher open rate.",
+    "audio_text": "open rate"
+  },
+  {
+    "phrase": "unsubscribe",
+    "definition": "To choose to stop receiving someone's emails.",
+    "business_context_example": "A few people unsubscribe after every sales email, and that's normal.",
+    "audio_text": "unsubscribe"
+  },
+  {
+    "phrase": "newsletter",
+    "definition": "A regular email sent to a list of subscribers with news or useful content.",
+    "business_context_example": "The weekly newsletter goes out every Tuesday at 9 am.",
+    "audio_text": "newsletter"
+  },
+  {
+    "phrase": "content calendar",
+    "definition": "A plan showing what content you will publish and when.",
+    "business_context_example": "The content calendar has 3 posts a week planned a month ahead.",
+    "audio_text": "content calendar"
+  },
+  {
+    "phrase": "evergreen content",
+    "definition": "Content that stays useful for years, not just this week.",
+    "business_context_example": "The grammar guides are evergreen content, they bring readers all year.",
+    "audio_text": "evergreen content"
+  },
+  {
+    "phrase": "brand voice",
+    "definition": "The personality and style a brand uses in all its communication.",
+    "business_context_example": "Our brand voice is warm and direct, never corporate and cold.",
+    "audio_text": "brand voice"
+  },
+  {
+    "phrase": "storytelling",
+    "definition": "Using stories instead of dry facts to connect with an audience.",
+    "business_context_example": "Storytelling works: the post about one student's job interview beat every ad.",
+    "audio_text": "storytelling"
+  },
+  {
+    "phrase": "pain point",
+    "definition": "A specific problem your customer has that your product solves.",
+    "business_context_example": "The biggest pain point for our clients is writing emails to foreign partners.",
+    "audio_text": "pain point"
+  },
+  {
+    "phrase": "social proof",
+    "definition": "Evidence that other people trust you: reviews, numbers, logos, testimonials.",
+    "business_context_example": "Adding 'trusted by 300 students' gave the page instant social proof.",
+    "audio_text": "social proof"
+  },
+  {
+    "phrase": "market research",
+    "definition": "Collecting information about customers and competitors before you act.",
+    "business_context_example": "Two weeks of market research saved us from building the wrong course.",
+    "audio_text": "market research"
+  },
+  {
+    "phrase": "customer journey",
+    "definition": "All the steps and contacts a customer has with your brand over time.",
+    "business_context_example": "We mapped the customer journey from first Instagram visit to signed contract.",
+    "audio_text": "customer journey"
+  },
+  {
+    "phrase": "return on investment",
+    "definition": "How much profit you get compared to what you spent.",
+    "business_context_example": "The ads cost 500 euro and brought 4 clients, a clear return on investment.",
+    "audio_text": "return on investment"
+  },
+  {
+    "phrase": "giveaway",
+    "definition": "A contest where people can win a free product, usually for likes, shares, or emails.",
+    "business_context_example": "The giveaway added 900 followers, but only a few became clients.",
+    "audio_text": "giveaway"
+  }
+]

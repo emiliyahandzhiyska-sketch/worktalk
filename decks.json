@@ -1,0 +1,18 @@
+[
+  {
+    "id": "workplace",
+    "name": "Everyday Workplace English",
+    "icon": "💼",
+    "tagline": "Meetings, email, deadlines, office life.",
+    "words": "words.json",
+    "exercises": "exercises.json"
+  },
+  {
+    "id": "marketing",
+    "name": "Marketing English",
+    "icon": "📣",
+    "tagline": "Campaigns, funnels, metrics, client talk.",
+    "words": "words-marketing.json",
+    "exercises": "exercises-marketing.json"
+  }
+]

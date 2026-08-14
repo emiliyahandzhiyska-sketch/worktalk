@@ -1,15 +1,39 @@
 // WorkTalk — ESL flashcards + quiz for adult learners
 // Vanilla JS, no dependencies. Data lives in words.json.
 
-const STORAGE_KEYS = {
-  theme: 'worktalk_theme',
-  mastered: 'worktalk_mastered',
-  highScore: 'worktalk_high_score',
-  uoeBest: 'worktalk_uoe_best'
+const THEME_KEY = 'worktalk_theme';
+const DECK_KEY = 'worktalk_deck';
+
+const BRAND = {
+  school: 'Езикова работилница',
+  ctaUrl: 'mailto:emiliya.handzhiyska@gmail.com?subject=Lesson%20inquiry%20(via%20WorkTalk)'
 };
+
+// Per-deck storage key, e.g. worktalk_marketing_mastered
+function sKey(name) {
+  return `worktalk_${deckId}_${name}`;
+}
+
+// Progress saved before decks existed belongs to the workplace deck
+function migrateOldKeys() {
+  const map = {
+    worktalk_mastered: 'worktalk_workplace_mastered',
+    worktalk_high_score: 'worktalk_workplace_high_score',
+    worktalk_uoe_best: 'worktalk_workplace_uoe_best'
+  };
+  for (const [oldKey, newKey] of Object.entries(map)) {
+    const v = localStorage.getItem(oldKey);
+    if (v !== null && localStorage.getItem(newKey) === null) {
+      localStorage.setItem(newKey, v);
+    }
+    if (v !== null) localStorage.removeItem(oldKey);
+  }
+}
 
 const QUIZ_LENGTH = 5;
 
+let decks = [];
+let deckId = 'workplace';
 let words = [];
 let exercises = { transformations: [], word_formation: [] };
 let currentCard = 0;
@@ -21,31 +45,29 @@ let uoe = null;  // { mode, items, index, score, checked }
 
 document.addEventListener('DOMContentLoaded', async () => {
   initTheme();
-  loadProgress();
+  migrateOldKeys();
+  document.getElementById('ctaLink').href = BRAND.ctaUrl;
 
   try {
-    const [wRes, eRes] = await Promise.all([fetch('words.json'), fetch('exercises.json')]);
-    if (!wRes.ok || !eRes.ok) throw new Error('load failed');
-    words = await wRes.json();
-    exercises = await eRes.json();
+    const dRes = await fetch('decks.json');
+    if (!dRes.ok) throw new Error(dRes.statusText);
+    decks = await dRes.json();
+
+    const saved = localStorage.getItem(DECK_KEY);
+    deckId = decks.some(d => d.id === saved) ? saved : decks[0].id;
+
+    bindEvents();
+    await loadDeck(deckId);
   } catch (err) {
     // fetch() fails when index.html is opened straight from the file system
     // (file:// blocks it). Show a friendly hint instead of a blank screen.
     document.getElementById('viewFlashcards').innerHTML =
       '<div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 text-sm leading-relaxed">' +
-      '<p class="font-bold mb-2">Couldn\'t load words.json</p>' +
+      '<p class="font-bold mb-2">Couldn\'t load the app data</p>' +
       '<p>Open the app through a local server, for example:</p>' +
       '<code class="block mt-2 p-2 rounded bg-slate-100 dark:bg-slate-800">npx serve</code></div>';
     return;
   }
-
-  document.getElementById('tagline').textContent =
-    `Everyday English for work. ${words.length} phrases you'll actually use.`;
-
-  bindEvents();
-  renderCard();
-  renderProgress();
-  renderQuizStart();
 
   // Warm up the voice list; Chrome loads voices async.
   if ('speechSynthesis' in window) {
@@ -54,10 +76,54 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 });
 
+// ---------- Decks ----------
+
+async function loadDeck(id) {
+  deckId = id;
+  localStorage.setItem(DECK_KEY, id);
+  const d = decks.find(x => x.id === id);
+
+  const [wRes, eRes] = await Promise.all([fetch(d.words), fetch(d.exercises)]);
+  if (!wRes.ok || !eRes.ok) throw new Error('deck load failed');
+  words = await wRes.json();
+  exercises = await eRes.json();
+
+  currentCard = 0;
+  quiz = null;
+  uoe = null;
+  loadProgress();
+
+  document.getElementById('tagline').textContent =
+    `${d.name} · ${words.length} phrases you'll actually use.`;
+
+  renderDeckPicker();
+  renderCard();
+  renderProgress();
+  renderQuizStart();
+  renderUoeMenu();
+}
+
+function renderDeckPicker() {
+  document.getElementById('deckPicker').innerHTML = decks.map(d => `
+    <button onclick="switchDeckTo('${d.id}')"
+      class="text-left px-4 py-3 rounded-2xl border transition-colors ${d.id === deckId
+        ? 'bg-brand-500 border-brand-500 text-white shadow-sm'
+        : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500'}">
+      <span class="block text-sm font-bold">${d.icon} ${d.name}</span>
+      <span class="block text-xs mt-0.5 ${d.id === deckId
+        ? 'text-white/80'
+        : 'text-slate-500 dark:text-slate-400'}">${d.tagline}</span>
+    </button>`).join('');
+}
+
+async function switchDeckTo(id) {
+  if (id !== deckId) await loadDeck(id);
+}
+
 // ---------- Theme ----------
 
 function initTheme() {
-  const saved = localStorage.getItem(STORAGE_KEYS.theme);
+  const saved = localStorage.getItem(THEME_KEY);
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const dark = saved ? saved === 'dark' : prefersDark;
   applyTheme(dark);
@@ -65,7 +131,7 @@ function initTheme() {
   document.getElementById('themeToggle').addEventListener('click', () => {
     const nowDark = !document.documentElement.classList.contains('dark');
     applyTheme(nowDark);
-    localStorage.setItem(STORAGE_KEYS.theme, nowDark ? 'dark' : 'light');
+    localStorage.setItem(THEME_KEY, nowDark ? 'dark' : 'light');
   });
 }
 
@@ -78,18 +144,18 @@ function applyTheme(dark) {
 
 function loadProgress() {
   try {
-    mastered = new Set(JSON.parse(localStorage.getItem(STORAGE_KEYS.mastered) || '[]'));
+    mastered = new Set(JSON.parse(localStorage.getItem(sKey('mastered')) || '[]'));
   } catch {
     mastered = new Set();
   }
 }
 
 function saveMastered() {
-  localStorage.setItem(STORAGE_KEYS.mastered, JSON.stringify([...mastered]));
+  localStorage.setItem(sKey('mastered'), JSON.stringify([...mastered]));
 }
 
 function getHighScore() {
-  const v = parseInt(localStorage.getItem(STORAGE_KEYS.highScore), 10);
+  const v = parseInt(localStorage.getItem(sKey('high_score')), 10);
   return Number.isNaN(v) ? null : v;
 }
 
@@ -333,7 +399,7 @@ function renderQuizEnd() {
   const { score, questions } = quiz;
   const prev = getHighScore();
   const isRecord = prev === null || score > prev;
-  if (isRecord) localStorage.setItem(STORAGE_KEYS.highScore, String(score));
+  if (isRecord) localStorage.setItem(sKey('high_score'), String(score));
   renderProgress();
 
   const msg =
@@ -365,7 +431,7 @@ const UOE_MODES = {
 };
 
 function getUoeBest() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_KEYS.uoeBest) || '{}'); }
+  try { return JSON.parse(localStorage.getItem(sKey('uoe_best')) || '{}'); }
   catch { return {}; }
 }
 
@@ -373,7 +439,7 @@ function saveUoeBest(mode, score) {
   const best = getUoeBest();
   if (best[mode] === undefined || score > best[mode]) {
     best[mode] = score;
-    localStorage.setItem(STORAGE_KEYS.uoeBest, JSON.stringify(best));
+    localStorage.setItem(sKey('uoe_best'), JSON.stringify(best));
   }
 }
 
