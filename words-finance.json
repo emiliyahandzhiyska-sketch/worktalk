@@ -1,0 +1,410 @@
+[
+  {
+    "phrase": "cash flow",
+    "definition": "The money moving in and out of a business over a period of time.",
+    "business_context_example": "The company is profitable on paper, but cash flow is tight until clients pay.",
+    "audio_text": "cash flow",
+    "category": "Cash & budgets",
+    "translation_bg": "паричен поток"
+  },
+  {
+    "phrase": "break even",
+    "definition": "To reach the point where income equals costs, with no profit and no loss.",
+    "business_context_example": "We break even at 25 students per course; everything above that is profit.",
+    "audio_text": "break even",
+    "category": "Profit & loss",
+    "translation_bg": "да изляза на нула"
+  },
+  {
+    "phrase": "profit margin",
+    "definition": "The percentage of revenue left after costs are paid.",
+    "business_context_example": "Group courses have a better profit margin than private lessons.",
+    "audio_text": "profit margin",
+    "category": "Profit & loss",
+    "translation_bg": "маржин на печалба"
+  },
+  {
+    "phrase": "revenue",
+    "definition": "The total money a business earns before any costs are taken out.",
+    "business_context_example": "Revenue grew 20%, but so did our costs, so profit stayed flat.",
+    "audio_text": "revenue",
+    "category": "Profit & loss",
+    "translation_bg": "приход, оборот"
+  },
+  {
+    "phrase": "turnover",
+    "definition": "The total sales of a business in a period; also, how often staff leave and are replaced.",
+    "business_context_example": "Annual turnover passed 500,000 euro for the first time.",
+    "audio_text": "turnover",
+    "category": "Profit & loss",
+    "translation_bg": "оборот; също текучество на персонал"
+  },
+  {
+    "phrase": "overheads",
+    "definition": "The regular costs of running a business, like rent, salaries and utilities.",
+    "business_context_example": "Moving to a smaller office cut our overheads by a third.",
+    "audio_text": "overheads",
+    "category": "Cash & budgets",
+    "translation_bg": "постоянни разходи"
+  },
+  {
+    "phrase": "fixed costs",
+    "definition": "Costs that stay the same no matter how much you sell.",
+    "business_context_example": "Rent and insurance are fixed costs, so a quiet month still hurts.",
+    "audio_text": "fixed costs",
+    "category": "Cash & budgets",
+    "translation_bg": "фиксирани разходи"
+  },
+  {
+    "phrase": "variable costs",
+    "definition": "Costs that go up or down depending on how much you produce or sell.",
+    "business_context_example": "Printing course books is a variable cost: more students, more books.",
+    "audio_text": "variable costs",
+    "category": "Cash & budgets",
+    "translation_bg": "променливи разходи"
+  },
+  {
+    "phrase": "bottom line",
+    "definition": "The final profit or loss figure at the end of a financial report.",
+    "business_context_example": "Cutting the ad budget helped the bottom line but hurt new sign-ups.",
+    "audio_text": "bottom line",
+    "category": "Profit & loss",
+    "translation_bg": "крайният финансов резултат"
+  },
+  {
+    "phrase": "in the black",
+    "definition": "Making a profit.",
+    "business_context_example": "After 18 months, the school is finally in the black.",
+    "audio_text": "in the black",
+    "category": "Profit & loss",
+    "translation_bg": "на печалба"
+  },
+  {
+    "phrase": "in the red",
+    "definition": "Losing money or having a negative balance.",
+    "business_context_example": "January and February are always in the red for us.",
+    "audio_text": "in the red",
+    "category": "Profit & loss",
+    "translation_bg": "на загуба"
+  },
+  {
+    "phrase": "write off",
+    "definition": "To accept that money owed will never be paid, and remove it from the accounts.",
+    "business_context_example": "We had to write off 2,000 euro when the client's company closed.",
+    "audio_text": "write off",
+    "category": "Accounting",
+    "translation_bg": "да отпиша (несъбираемо вземане)"
+  },
+  {
+    "phrase": "balance sheet",
+    "definition": "A financial statement showing what a company owns and owes at one moment.",
+    "business_context_example": "The bank asked for our balance sheet before approving the loan.",
+    "audio_text": "balance sheet",
+    "category": "Accounting",
+    "translation_bg": "счетоводен баланс"
+  },
+  {
+    "phrase": "income statement",
+    "definition": "A report showing revenue, costs and profit over a period.",
+    "business_context_example": "The income statement shows where the extra 8,000 euro of costs came from.",
+    "audio_text": "income statement",
+    "category": "Accounting",
+    "translation_bg": "отчет за приходите и разходите"
+  },
+  {
+    "phrase": "accounts receivable",
+    "definition": "Money that customers owe the business but haven't paid yet.",
+    "business_context_example": "Accounts receivable is 15,000 euro, and half of it is over 60 days late.",
+    "audio_text": "accounts receivable",
+    "category": "Accounting",
+    "translation_bg": "вземания от клиенти"
+  },
+  {
+    "phrase": "accounts payable",
+    "definition": "Money the business owes to its suppliers.",
+    "business_context_example": "Accounts payable is due on the 15th, so keep that cash aside.",
+    "audio_text": "accounts payable",
+    "category": "Accounting",
+    "translation_bg": "задължения към доставчици"
+  },
+  {
+    "phrase": "invoice",
+    "definition": "A document requesting payment for goods or services.",
+    "business_context_example": "I'll send the invoice today with 14-day payment terms.",
+    "audio_text": "invoice",
+    "category": "Payments & clients",
+    "translation_bg": "фактура"
+  },
+  {
+    "phrase": "payment terms",
+    "definition": "The agreed rules about when and how a customer must pay.",
+    "business_context_example": "Our payment terms are 50% upfront, 50% on delivery.",
+    "audio_text": "payment terms",
+    "category": "Payments & clients",
+    "translation_bg": "условия за плащане"
+  },
+  {
+    "phrase": "overdue",
+    "definition": "Not paid by the agreed date.",
+    "business_context_example": "Three invoices are overdue, so I'm calling them this morning.",
+    "audio_text": "overdue",
+    "category": "Payments & clients",
+    "translation_bg": "просрочено"
+  },
+  {
+    "phrase": "chase an invoice",
+    "definition": "To contact a customer repeatedly to get them to pay.",
+    "business_context_example": "I spend an hour every Friday chasing invoices.",
+    "audio_text": "chase an invoice",
+    "category": "Payments & clients",
+    "translation_bg": "да гоня плащане по фактура"
+  },
+  {
+    "phrase": "upfront payment",
+    "definition": "Money paid before the work starts.",
+    "business_context_example": "We ask for a 30% upfront payment from new corporate clients.",
+    "audio_text": "upfront payment",
+    "category": "Payments & clients",
+    "translation_bg": "плащане в аванс"
+  },
+  {
+    "phrase": "deposit",
+    "definition": "A part payment made in advance to secure a booking or order.",
+    "business_context_example": "The deposit is non-refundable if they cancel in the last week.",
+    "audio_text": "deposit",
+    "category": "Payments & clients",
+    "translation_bg": "депозит, капаро"
+  },
+  {
+    "phrase": "refund",
+    "definition": "Money given back to a customer.",
+    "business_context_example": "She missed 4 lessons, so we agreed on a partial refund.",
+    "audio_text": "refund",
+    "category": "Payments & clients",
+    "translation_bg": "възстановяване на сума"
+  },
+  {
+    "phrase": "quote",
+    "definition": "A stated price for a job, given before the work begins.",
+    "business_context_example": "I'll send a quote for the 12-week programme by Wednesday.",
+    "audio_text": "quote",
+    "category": "Payments & clients",
+    "translation_bg": "оферта с цена"
+  },
+  {
+    "phrase": "budget",
+    "definition": "A plan for how much money will be earned and spent.",
+    "business_context_example": "The training budget for next year is 6,000 euro per department.",
+    "audio_text": "budget",
+    "category": "Cash & budgets",
+    "translation_bg": "бюджет"
+  },
+  {
+    "phrase": "over budget",
+    "definition": "Costing more than was planned.",
+    "business_context_example": "The website came in 40% over budget because of the extra pages.",
+    "audio_text": "over budget",
+    "category": "Cash & budgets",
+    "translation_bg": "над бюджета"
+  },
+  {
+    "phrase": "cut costs",
+    "definition": "To reduce spending.",
+    "business_context_example": "We cut costs by dropping two software tools nobody used.",
+    "audio_text": "cut costs",
+    "category": "Cash & budgets",
+    "translation_bg": "да намаля разходите"
+  },
+  {
+    "phrase": "tighten the belt",
+    "definition": "To spend less because money is short.",
+    "business_context_example": "Sales dropped in July, so we're tightening the belt until autumn.",
+    "audio_text": "tighten the belt",
+    "category": "Cash & budgets",
+    "translation_bg": "да стегна колана"
+  },
+  {
+    "phrase": "run the numbers",
+    "definition": "To do the calculations to check whether something makes financial sense.",
+    "business_context_example": "Run the numbers before you promise that discount.",
+    "audio_text": "run the numbers",
+    "category": "Cash & budgets",
+    "translation_bg": "да сметна нещата"
+  },
+  {
+    "phrase": "ballpark figure",
+    "definition": "A rough estimate, not an exact number.",
+    "business_context_example": "Give me a ballpark figure and I'll tell you if it's realistic.",
+    "audio_text": "ballpark figure",
+    "category": "Cash & budgets",
+    "translation_bg": "приблизителна сума"
+  },
+  {
+    "phrase": "cash cow",
+    "definition": "A product or service that reliably brings in a lot of money.",
+    "business_context_example": "Corporate courses are our cash cow; the app is still an experiment.",
+    "audio_text": "cash cow",
+    "category": "Growth & investment",
+    "translation_bg": "продукт, който носи стабилни пари"
+  },
+  {
+    "phrase": "return on investment",
+    "definition": "How much you gain compared to what you spent.",
+    "business_context_example": "The return on investment from the trade fair was poor: one client.",
+    "audio_text": "return on investment",
+    "category": "Growth & investment",
+    "translation_bg": "възвръщаемост на инвестицията"
+  },
+  {
+    "phrase": "break-even point",
+    "definition": "The exact level of sales where you stop losing money.",
+    "business_context_example": "Our break-even point drops if we teach online instead of renting rooms.",
+    "audio_text": "break even point",
+    "category": "Profit & loss",
+    "translation_bg": "точка на рентабилност"
+  },
+  {
+    "phrase": "working capital",
+    "definition": "The money available for day-to-day running of the business.",
+    "business_context_example": "We need more working capital to pay teachers before clients pay us.",
+    "audio_text": "working capital",
+    "category": "Growth & investment",
+    "translation_bg": "оборотен капитал"
+  },
+  {
+    "phrase": "loan",
+    "definition": "Money borrowed that must be paid back, usually with interest.",
+    "business_context_example": "The bank offered a loan at 6% over 5 years.",
+    "audio_text": "loan",
+    "category": "Growth & investment",
+    "translation_bg": "заем, кредит"
+  },
+  {
+    "phrase": "interest rate",
+    "definition": "The percentage charged for borrowing money.",
+    "business_context_example": "If the interest rate rises again, we'll postpone the second office.",
+    "audio_text": "interest rate",
+    "category": "Growth & investment",
+    "translation_bg": "лихвен процент"
+  },
+  {
+    "phrase": "debt",
+    "definition": "Money that is owed.",
+    "business_context_example": "The company is growing but carrying too much debt.",
+    "audio_text": "debt",
+    "category": "Growth & investment",
+    "translation_bg": "дълг"
+  },
+  {
+    "phrase": "equity",
+    "definition": "The value of ownership in a company after debts are subtracted.",
+    "business_context_example": "He put in 50,000 euro for a 20% equity stake.",
+    "audio_text": "equity",
+    "category": "Growth & investment",
+    "translation_bg": "собствен капитал, дял"
+  },
+  {
+    "phrase": "shareholder",
+    "definition": "A person or company that owns part of a business.",
+    "business_context_example": "Shareholders meet twice a year to approve the accounts.",
+    "audio_text": "shareholder",
+    "category": "Growth & investment",
+    "translation_bg": "акционер, съдружник"
+  },
+  {
+    "phrase": "dividend",
+    "definition": "A share of profit paid out to owners.",
+    "business_context_example": "The board decided to reinvest instead of paying a dividend.",
+    "audio_text": "dividend",
+    "category": "Growth & investment",
+    "translation_bg": "дивидент"
+  },
+  {
+    "phrase": "forecast",
+    "definition": "A prediction of future sales, costs or profit.",
+    "business_context_example": "Our forecast for Q4 assumes two new corporate contracts.",
+    "audio_text": "forecast",
+    "category": "Reporting",
+    "translation_bg": "прогноза"
+  },
+  {
+    "phrase": "quarter",
+    "definition": "A three-month period used for financial reporting.",
+    "business_context_example": "We'll review the numbers at the end of the quarter.",
+    "audio_text": "quarter",
+    "category": "Reporting",
+    "translation_bg": "тримесечие"
+  },
+  {
+    "phrase": "fiscal year",
+    "definition": "The 12-month period a company uses for accounting.",
+    "business_context_example": "Our fiscal year ends on 31 December, same as the calendar year.",
+    "audio_text": "fiscal year",
+    "category": "Reporting",
+    "translation_bg": "финансова година"
+  },
+  {
+    "phrase": "year on year",
+    "definition": "Compared with the same period last year.",
+    "business_context_example": "Enrolments are up 12% year on year.",
+    "audio_text": "year on year",
+    "category": "Reporting",
+    "translation_bg": "спрямо същия период година по-рано"
+  },
+  {
+    "phrase": "audit",
+    "definition": "An official check of a company's financial records.",
+    "business_context_example": "The audit found two invoices recorded in the wrong month.",
+    "audio_text": "audit",
+    "category": "Reporting",
+    "translation_bg": "одит, проверка"
+  },
+  {
+    "phrase": "VAT",
+    "definition": "Value Added Tax, a tax added to the price of goods and services.",
+    "business_context_example": "The price is 1,200 euro plus VAT.",
+    "audio_text": "V A T",
+    "category": "Tax",
+    "translation_bg": "ДДС"
+  },
+  {
+    "phrase": "tax return",
+    "definition": "A form declaring income and tax owed to the authorities.",
+    "business_context_example": "The accountant files our tax return in March.",
+    "audio_text": "tax return",
+    "category": "Tax",
+    "translation_bg": "данъчна декларация"
+  },
+  {
+    "phrase": "tax-deductible",
+    "definition": "An expense that can be subtracted from income before tax is calculated.",
+    "business_context_example": "Professional training is tax-deductible for most companies.",
+    "audio_text": "tax deductible",
+    "category": "Tax",
+    "translation_bg": "признат разход за данъчни цели"
+  },
+  {
+    "phrase": "expense claim",
+    "definition": "A request to be paid back for money spent on work.",
+    "business_context_example": "Submit your travel expense claim with the receipts by Friday.",
+    "audio_text": "expense claim",
+    "category": "Tax",
+    "translation_bg": "искане за възстановяване на разходи"
+  },
+  {
+    "phrase": "payroll",
+    "definition": "The list of employees and the wages the company pays them.",
+    "business_context_example": "Payroll runs on the 25th of each month.",
+    "audio_text": "payroll",
+    "category": "Tax",
+    "translation_bg": "ведомост за заплати"
+  },
+  {
+    "phrase": "bargain someone down",
+    "definition": "To persuade someone to accept a lower price.",
+    "business_context_example": "They tried to bargain us down by 20%, and we met in the middle.",
+    "audio_text": "bargain someone down",
+    "category": "Payments & clients",
+    "translation_bg": "да сваля цената на някого с пазарене"
+  }
+]

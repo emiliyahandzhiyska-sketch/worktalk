@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "The company is making a profit at last.", "key": "BLACK", "model": "The company is in the black at last.", "accept": ["in the black"] },
+    { "original": "We lost money in both winter months.", "key": "RED", "model": "We were in the red in both winter months.", "accept": ["in the red"] },
+    { "original": "Income and costs are finally equal.", "key": "EVEN", "model": "We finally break even.", "accept": ["break even"] },
+    { "original": "Give me a rough estimate of the cost.", "key": "BALLPARK", "model": "Give me a ballpark figure for the cost.", "accept": ["ballpark"] },
+    { "original": "We had to accept that the money would never be paid.", "key": "WRITE", "model": "We had to write off the money.", "accept": ["write off", "write it off"] },
+    { "original": "Please do the calculations before you promise a discount.", "key": "NUMBERS", "model": "Please run the numbers before you promise a discount.", "accept": ["run the numbers"] },
+    { "original": "The project cost more than we planned.", "key": "BUDGET", "model": "The project came in over budget.", "accept": ["over budget"] },
+    { "original": "We have to spend less until sales improve.", "key": "BELT", "model": "We have to tighten the belt until sales improve.", "accept": ["tighten the belt", "tighten our belt"] },
+    { "original": "The invoice hasn't been paid by the agreed date.", "key": "OVERDUE", "model": "The invoice is overdue.", "accept": ["overdue"] },
+    { "original": "Corporate courses reliably bring in most of our money.", "key": "COW", "model": "Corporate courses are our cash cow.", "accept": ["cash cow"] },
+    { "original": "They want us to accept a lower price.", "key": "BARGAIN", "model": "They want to bargain us down.", "accept": ["bargain us down", "bargain down"] },
+    { "original": "Training costs can be subtracted before tax.", "key": "DEDUCTIBLE", "model": "Training costs are tax-deductible.", "accept": ["tax deductible", "tax-deductible"] },
+    { "original": "Enrolments rose 12% compared with last year.", "key": "YEAR", "model": "Enrolments rose 12% year on year.", "accept": ["year on year"] },
+    { "original": "I keep contacting the client to get them to pay.", "key": "CHASING", "model": "I keep chasing the invoice.", "accept": ["chasing the invoice", "chasing invoices", "chasing them"] },
+    { "original": "The client pays 30% before the work starts.", "key": "UPFRONT", "model": "The client pays 30% upfront.", "accept": ["upfront"] },
+    { "original": "Rent stays the same however much we sell.", "key": "FIXED", "model": "Rent is a fixed cost.", "accept": ["fixed cost", "fixed costs"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ___ files our accounts every March.", "base": "ACCOUNT", "accept": ["accountant"] },
+    { "sentence": "We need your ___ before the transfer goes out.", "base": "APPROVE", "accept": ["approval"] },
+    { "sentence": "The bank asked for proof of ___.", "base": "EARN", "accept": ["earnings"] },
+    { "sentence": "This course is a good ___ for the company.", "base": "INVEST", "accept": ["investment"] },
+    { "sentence": "The ___ of the euro affected our margins.", "base": "STRONG", "accept": ["strength"] },
+    { "sentence": "Please keep every receipt for ___ purposes.", "base": "TAX", "accept": ["taxation", "tax"] },
+    { "sentence": "The report shows a clear ___ in costs.", "base": "REDUCE", "accept": ["reduction"] },
+    { "sentence": "Our ___ has doubled since 2024.", "base": "PROFIT", "accept": ["profitability"] },
+    { "sentence": "The ___ signed the loan agreement.", "base": "BORROW", "accept": ["borrower"] },
+    { "sentence": "There was a small ___ between the two invoices.", "base": "DIFFER", "accept": ["difference"] },
+    { "sentence": "We made a ___ of 15% on that contract.", "base": "SAVE", "accept": ["saving"] },
+    { "sentence": "The ___ of the audit was very positive.", "base": "CONCLUDE", "accept": ["conclusion"] },
+    { "sentence": "Late ___ is our biggest cash-flow problem.", "base": "PAY", "accept": ["payment"] },
+    { "sentence": "The figures need ___ before the meeting.", "base": "CONFIRM", "accept": ["confirmation", "confirming"] },
+    { "sentence": "Our ___ costs rose after the move.", "base": "OPERATE", "accept": ["operating", "operational"] },
+    { "sentence": "He gave a very ___ estimate of the risk.", "base": "CARE", "accept": ["careful"] }
+  ]
+}

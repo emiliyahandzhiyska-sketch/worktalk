@@ -14,5 +14,21 @@
     "tagline": "Campaigns, funnels, metrics, client talk.",
     "words": "words-marketing.json",
     "exercises": "exercises-marketing.json"
+  },
+  {
+    "id": "finance",
+    "name": "Finance English",
+    "icon": "📊",
+    "tagline": "Cash flow, invoices, budgets, reporting.",
+    "words": "words-finance.json",
+    "exercises": "exercises-finance.json"
+  },
+  {
+    "id": "sport",
+    "name": "Sport & Fitness English",
+    "icon": "⚽",
+    "tagline": "Training, matches, results, staying fit.",
+    "words": "words-sport.json",
+    "exercises": "exercises-sport.json"
   }
 ]

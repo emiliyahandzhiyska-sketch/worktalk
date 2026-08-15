@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "I started playing tennis last spring.", "key": "TOOK", "model": "I took up tennis last spring.", "accept": ["took up"] },
+    { "original": "I'm not physically fit at the moment.", "key": "SHAPE", "model": "I'm out of shape at the moment.", "accept": ["out of shape"] },
+    { "original": "She wants to become fit before the summer.", "key": "GET", "model": "She wants to get in shape before the summer.", "accept": ["get in shape"] },
+    { "original": "They defeated us very easily, 6-1.", "key": "THRASHED", "model": "They thrashed us 6-1.", "accept": ["thrashed"] },
+    { "original": "The match ended 1-1.", "key": "DRAW", "model": "The match ended in a draw.", "accept": ["draw"] },
+    { "original": "He can't play because of an injury.", "key": "OUT", "model": "He's out injured.", "accept": ["out injured", "is out"] },
+    { "original": "Nobody expected that team to win.", "key": "UNDERDOGS", "model": "They were the underdogs.", "accept": ["underdog", "underdogs"] },
+    { "original": "I injured a muscle while running.", "key": "PULLED", "model": "I pulled a muscle while running.", "accept": ["pulled a muscle"] },
+    { "original": "Did you watch the match last night?", "key": "CATCH", "model": "Did you catch the game last night?", "accept": ["catch the game", "catch the match"] },
+    { "original": "I've been a fan of this club since childhood.", "key": "SUPPORTED", "model": "I've supported this club since childhood.", "accept": ["supported"] },
+    { "original": "The game starts at eight o'clock.", "key": "KICK", "model": "Kick-off is at eight.", "accept": ["kick off", "kick-off"] },
+    { "original": "They scored and made it 2-2.", "key": "EQUALISED", "model": "They equalised to make it 2-2.", "accept": ["equalised", "equalized"] },
+    { "original": "Everyone now has an equal chance.", "key": "LEVEL", "model": "It's a level playing field.", "accept": ["level playing field"] },
+    { "original": "He achieved his best ever time in the race.", "key": "PERSONAL", "model": "He set a personal best in the race.", "accept": ["personal best"] },
+    { "original": "The referee ordered him to leave the field.", "key": "SENT", "model": "He was sent off.", "accept": ["sent off"] },
+    { "original": "Young athletes get exhausted when they never rest.", "key": "BURN", "model": "Young athletes burn out when they never rest.", "accept": ["burn out"] }
+  ],
+  "word_formation": [
+    { "sentence": "She's the fastest ___ in the club.", "base": "RUN", "accept": ["runner"] },
+    { "sentence": "The team's ___ improved all season.", "base": "PERFORM", "accept": ["performance"] },
+    { "sentence": "He won the national ___ twice.", "base": "CHAMPION", "accept": ["championship"] },
+    { "sentence": "Her ___ after the injury took four months.", "base": "RECOVER", "accept": ["recovery"] },
+    { "sentence": "The ___ between the two clubs is famous.", "base": "RIVAL", "accept": ["rivalry"] },
+    { "sentence": "Regular ___ is better than one hard session.", "base": "TRAIN", "accept": ["training"] },
+    { "sentence": "The crowd showed great ___ for the away team.", "base": "SUPPORT", "accept": ["support"] },
+    { "sentence": "There were 40,000 ___ in the stadium.", "base": "SPECTATE", "accept": ["spectators"] },
+    { "sentence": "His ___ surprised everyone at 38 years old.", "base": "FIT", "accept": ["fitness"] },
+    { "sentence": "The ___ lasted three weeks.", "base": "COMPETE", "accept": ["competition"] },
+    { "sentence": "She is a professional ___.", "base": "ATHLETIC", "accept": ["athlete"] },
+    { "sentence": "The ___ of the decision made fans angry.", "base": "FAIR", "accept": ["unfairness"] },
+    { "sentence": "Good ___ prevents most injuries.", "base": "PREPARE", "accept": ["preparation"] },
+    { "sentence": "He made a very ___ return to the pitch.", "base": "SUCCESS", "accept": ["successful"] },
+    { "sentence": "The ___ of the game has changed since the 90s.", "base": "SPEED", "accept": ["speed"] },
+    { "sentence": "Their ___ was the best in the league.", "base": "DEFEND", "accept": ["defence", "defense"] }
+  ]
+}

@@ -1,0 +1,402 @@
+[
+  {
+    "phrase": "work out",
+    "definition": "To do physical exercise, usually at a gym.",
+    "business_context_example": "I work out three times a week before the office opens.",
+    "audio_text": "work out",
+    "category": "Gym & fitness",
+    "translation_bg": "да тренирам"
+  },
+  {
+    "phrase": "warm up",
+    "definition": "To do gentle exercise before training to prepare the body.",
+    "business_context_example": "Always warm up for 10 minutes or you'll pull something.",
+    "audio_text": "warm up",
+    "category": "Gym & fitness",
+    "translation_bg": "да загрея"
+  },
+  {
+    "phrase": "cool down",
+    "definition": "To do gentle exercise after training so the body recovers.",
+    "business_context_example": "We cool down with stretching and a slow walk.",
+    "audio_text": "cool down",
+    "category": "Gym & fitness",
+    "translation_bg": "да се разтоваря след тренировка"
+  },
+  {
+    "phrase": "get in shape",
+    "definition": "To become physically fit.",
+    "business_context_example": "I joined the gym in January to get in shape before the summer.",
+    "audio_text": "get in shape",
+    "category": "Gym & fitness",
+    "translation_bg": "да вляза във форма"
+  },
+  {
+    "phrase": "out of shape",
+    "definition": "Not physically fit.",
+    "business_context_example": "After two years at a desk I'm completely out of shape.",
+    "audio_text": "out of shape",
+    "category": "Gym & fitness",
+    "translation_bg": "извън форма"
+  },
+  {
+    "phrase": "build muscle",
+    "definition": "To make your muscles bigger and stronger through training.",
+    "business_context_example": "You need protein and rest to build muscle, not just heavy weights.",
+    "audio_text": "build muscle",
+    "category": "Gym & fitness",
+    "translation_bg": "да качвам мускулна маса"
+  },
+  {
+    "phrase": "lift weights",
+    "definition": "To train with heavy objects to get stronger.",
+    "business_context_example": "She lifts weights on Mondays and runs on Thursdays.",
+    "audio_text": "lift weights",
+    "category": "Gym & fitness",
+    "translation_bg": "да вдигам тежести"
+  },
+  {
+    "phrase": "reps",
+    "definition": "Repetitions: how many times you repeat an exercise in one set.",
+    "business_context_example": "Do 12 reps, rest 60 seconds, then repeat three times.",
+    "audio_text": "reps",
+    "category": "Gym & fitness",
+    "translation_bg": "повторения"
+  },
+  {
+    "phrase": "personal best",
+    "definition": "Your own best ever result in a sport.",
+    "business_context_example": "He ran a personal best of 42 minutes in the 10K.",
+    "audio_text": "personal best",
+    "category": "Results & scores",
+    "translation_bg": "личен рекорд"
+  },
+  {
+    "phrase": "personal trainer",
+    "definition": "A professional who plans and guides your training.",
+    "business_context_example": "A personal trainer fixed my technique in two sessions.",
+    "audio_text": "personal trainer",
+    "category": "Gym & fitness",
+    "translation_bg": "личен треньор"
+  },
+  {
+    "phrase": "endurance",
+    "definition": "The ability to keep going physically for a long time.",
+    "business_context_example": "Cycling to work built up my endurance without any extra time.",
+    "audio_text": "endurance",
+    "category": "Gym & fitness",
+    "translation_bg": "издръжливост"
+  },
+  {
+    "phrase": "stamina",
+    "definition": "Physical or mental energy that lets you keep going.",
+    "business_context_example": "Long meetings need the same stamina as a long run, honestly.",
+    "audio_text": "stamina",
+    "category": "Gym & fitness",
+    "translation_bg": "издръжливост, „запас от сили“"
+  },
+  {
+    "phrase": "take up a sport",
+    "definition": "To start doing a sport regularly.",
+    "business_context_example": "I took up swimming after my back started hurting.",
+    "audio_text": "take up a sport",
+    "category": "Talking about sport",
+    "translation_bg": "да започна да спортувам нещо"
+  },
+  {
+    "phrase": "give up",
+    "definition": "To stop doing something you used to do.",
+    "business_context_example": "He gave up football at 35 and switched to tennis.",
+    "audio_text": "give up",
+    "category": "Talking about sport",
+    "translation_bg": "да се откажа"
+  },
+  {
+    "phrase": "keep fit",
+    "definition": "To stay healthy through regular exercise.",
+    "business_context_example": "Walking the dog twice a day is how I keep fit.",
+    "audio_text": "keep fit",
+    "category": "Gym & fitness",
+    "translation_bg": "да поддържам форма"
+  },
+  {
+    "phrase": "train hard",
+    "definition": "To practise with a lot of effort.",
+    "business_context_example": "They trained hard all winter and it showed in the first match.",
+    "audio_text": "train hard",
+    "category": "Team sports",
+    "translation_bg": "да тренирам усилено"
+  },
+  {
+    "phrase": "coach",
+    "definition": "A person who trains a team or athlete; also, to train someone.",
+    "business_context_example": "The new coach changed the whole style of the team.",
+    "audio_text": "coach",
+    "category": "Team sports",
+    "translation_bg": "треньор; да тренирам някого"
+  },
+  {
+    "phrase": "squad",
+    "definition": "The full group of players available for a team.",
+    "business_context_example": "Only 11 start, but the squad has 22 players.",
+    "audio_text": "squad",
+    "category": "Team sports",
+    "translation_bg": "състав, отбор (целият)"
+  },
+  {
+    "phrase": "line-up",
+    "definition": "The list of players chosen to start a game.",
+    "business_context_example": "The line-up was announced an hour before kick-off.",
+    "audio_text": "line up",
+    "category": "Team sports",
+    "translation_bg": "стартов състав"
+  },
+  {
+    "phrase": "kick-off",
+    "definition": "The start of a football match.",
+    "business_context_example": "Kick-off is at 8, so let's meet at half past seven.",
+    "audio_text": "kick off",
+    "category": "Team sports",
+    "translation_bg": "начален удар, начало на мач"
+  },
+  {
+    "phrase": "half-time",
+    "definition": "The break in the middle of a match.",
+    "business_context_example": "They were losing 2-0 at half-time and still won.",
+    "audio_text": "half time",
+    "category": "Team sports",
+    "translation_bg": "полувреме, почивката"
+  },
+  {
+    "phrase": "extra time",
+    "definition": "Additional playing time when the score is level.",
+    "business_context_example": "The final went to extra time and then penalties.",
+    "audio_text": "extra time",
+    "category": "Team sports",
+    "translation_bg": "продължения"
+  },
+  {
+    "phrase": "draw",
+    "definition": "A result where both teams have the same score.",
+    "business_context_example": "A 1-1 draw was a fair result for both sides.",
+    "audio_text": "draw",
+    "category": "Results & scores",
+    "translation_bg": "равен резултат"
+  },
+  {
+    "phrase": "beat",
+    "definition": "To defeat someone in a game or competition.",
+    "business_context_example": "We beat them 3-0 away, which nobody expected.",
+    "audio_text": "beat",
+    "category": "Results & scores",
+    "translation_bg": "да победя (някого)"
+  },
+  {
+    "phrase": "thrash",
+    "definition": "To beat someone very easily by a big score.",
+    "business_context_example": "They thrashed us 6-1 and we deserved it.",
+    "audio_text": "thrash",
+    "category": "Results & scores",
+    "translation_bg": "да разбия, да смажа"
+  },
+  {
+    "phrase": "narrow win",
+    "definition": "A victory by a very small margin.",
+    "business_context_example": "It was a narrow win, 1-0 with a goal in the last minute.",
+    "audio_text": "narrow win",
+    "category": "Results & scores",
+    "translation_bg": "победа на косъм"
+  },
+  {
+    "phrase": "runner-up",
+    "definition": "The person or team that finishes second.",
+    "business_context_example": "She was runner-up in the national championship two years running.",
+    "audio_text": "runner up",
+    "category": "Results & scores",
+    "translation_bg": "втори, подгласник"
+  },
+  {
+    "phrase": "underdog",
+    "definition": "The player or team expected to lose.",
+    "business_context_example": "Everyone loves an underdog, especially when they win.",
+    "audio_text": "underdog",
+    "category": "Results & scores",
+    "translation_bg": "аутсайдер"
+  },
+  {
+    "phrase": "home advantage",
+    "definition": "The benefit of playing in your own stadium with your own fans.",
+    "business_context_example": "Home advantage is worth a goal in a game like this.",
+    "audio_text": "home advantage",
+    "category": "Team sports",
+    "translation_bg": "предимство на домакинския терен"
+  },
+  {
+    "phrase": "away game",
+    "definition": "A match played at the opponent's ground.",
+    "business_context_example": "The away game in Varna is on Saturday.",
+    "audio_text": "away game",
+    "category": "Team sports",
+    "translation_bg": "гостуване"
+  },
+  {
+    "phrase": "fixture",
+    "definition": "A scheduled sports match.",
+    "business_context_example": "The fixture was moved to Sunday because of the weather.",
+    "audio_text": "fixture",
+    "category": "Team sports",
+    "translation_bg": "насрочен мач"
+  },
+  {
+    "phrase": "referee",
+    "definition": "The official who controls a match and applies the rules.",
+    "business_context_example": "The referee gave a penalty that nobody in the stadium understood.",
+    "audio_text": "referee",
+    "category": "Team sports",
+    "translation_bg": "съдия"
+  },
+  {
+    "phrase": "foul",
+    "definition": "An action against the rules of the game.",
+    "business_context_example": "It was a clear foul, but play continued.",
+    "audio_text": "foul",
+    "category": "Team sports",
+    "translation_bg": "нарушение, фал"
+  },
+  {
+    "phrase": "sent off",
+    "definition": "Ordered to leave the field as a punishment.",
+    "business_context_example": "Their captain was sent off in the first half.",
+    "audio_text": "sent off",
+    "category": "Team sports",
+    "translation_bg": "изгонен от игра"
+  },
+  {
+    "phrase": "score",
+    "definition": "To get a point or goal; also, the record of points.",
+    "business_context_example": "He scored twice in ten minutes.",
+    "audio_text": "score",
+    "category": "Results & scores",
+    "translation_bg": "да отбележа; резултат"
+  },
+  {
+    "phrase": "equalise",
+    "definition": "To score and make the scores level.",
+    "business_context_example": "They equalised in the 89th minute and the stadium went quiet.",
+    "audio_text": "equalise",
+    "category": "Results & scores",
+    "translation_bg": "да изравня резултата"
+  },
+  {
+    "phrase": "warm-up match",
+    "definition": "A practice game played before an important competition.",
+    "business_context_example": "The warm-up match showed the defence still isn't ready.",
+    "audio_text": "warm up match",
+    "category": "Team sports",
+    "translation_bg": "контролна среща"
+  },
+  {
+    "phrase": "pull a muscle",
+    "definition": "To injure a muscle by stretching it too far.",
+    "business_context_example": "I pulled a muscle sprinting for the bus, of all things.",
+    "audio_text": "pull a muscle",
+    "category": "Health & injury",
+    "translation_bg": "да си разтегна мускул"
+  },
+  {
+    "phrase": "sprain",
+    "definition": "To injure a joint by twisting it.",
+    "business_context_example": "She sprained her ankle in training and missed three weeks.",
+    "audio_text": "sprain",
+    "category": "Health & injury",
+    "translation_bg": "да си изкълча"
+  },
+  {
+    "phrase": "be out injured",
+    "definition": "To be unable to play because of an injury.",
+    "business_context_example": "Their best striker is out injured until October.",
+    "audio_text": "be out injured",
+    "category": "Health & injury",
+    "translation_bg": "да съм извън игра заради контузия"
+  },
+  {
+    "phrase": "recover",
+    "definition": "To get better after illness or injury.",
+    "business_context_example": "He recovered faster than expected and played on Sunday.",
+    "audio_text": "recover",
+    "category": "Health & injury",
+    "translation_bg": "да се възстановя"
+  },
+  {
+    "phrase": "burn out",
+    "definition": "To become exhausted from training or working too hard.",
+    "business_context_example": "Young players burn out when nobody tells them to rest.",
+    "audio_text": "burn out",
+    "category": "Health & injury",
+    "translation_bg": "да прегоря от натоварване"
+  },
+  {
+    "phrase": "rest day",
+    "definition": "A planned day without training.",
+    "business_context_example": "Sunday is a rest day, and it's part of the plan, not a break from it.",
+    "audio_text": "rest day",
+    "category": "Health & injury",
+    "translation_bg": "почивен ден от тренировки"
+  },
+  {
+    "phrase": "support a team",
+    "definition": "To be a fan of a particular team.",
+    "business_context_example": "I've supported the same team since I was six.",
+    "audio_text": "support a team",
+    "category": "Watching & fans",
+    "translation_bg": "да съм фен на отбор"
+  },
+  {
+    "phrase": "supporter",
+    "definition": "A fan of a team.",
+    "business_context_example": "Two thousand supporters travelled to the away game.",
+    "audio_text": "supporter",
+    "category": "Watching & fans",
+    "translation_bg": "запалянко, фен"
+  },
+  {
+    "phrase": "season ticket",
+    "definition": "A ticket that covers all home matches in a season.",
+    "business_context_example": "A season ticket works out cheaper than eight single games.",
+    "audio_text": "season ticket",
+    "category": "Watching & fans",
+    "translation_bg": "абонаментна карта за сезона"
+  },
+  {
+    "phrase": "catch the game",
+    "definition": "To watch a match, usually on TV.",
+    "business_context_example": "Did you catch the game last night?",
+    "audio_text": "catch the game",
+    "category": "Watching & fans",
+    "translation_bg": "да гледам мача"
+  },
+  {
+    "phrase": "highlights",
+    "definition": "A short video showing the best moments of a match.",
+    "business_context_example": "I missed it live, so I watched the highlights on the train.",
+    "audio_text": "highlights",
+    "category": "Watching & fans",
+    "translation_bg": "най-интересното от мача"
+  },
+  {
+    "phrase": "league table",
+    "definition": "The ranking of teams in a competition.",
+    "business_context_example": "Three wins moved them to second in the league table.",
+    "audio_text": "league table",
+    "category": "Results & scores",
+    "translation_bg": "класиране, таблица"
+  },
+  {
+    "phrase": "level playing field",
+    "definition": "A situation where everyone has an equal chance.",
+    "business_context_example": "Online lessons gave smaller schools a level playing field.",
+    "audio_text": "level playing field",
+    "category": "Talking about sport",
+    "translation_bg": "равни условия за всички"
+  }
+]
