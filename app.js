@@ -231,6 +231,7 @@ async function loadDeck(id) {
 
   renderDeckPicker();
   renderCategoryChips();
+  renderMotivation();
   renderTodayBanner();
   renderCard();
   renderProgress();
@@ -451,6 +452,12 @@ function bindEvents() {
     document.getElementById('cardTranslation').classList.toggle('hidden');
   });
   document.getElementById('shareBtn').addEventListener('click', shareProgress);
+  document.getElementById('badgesToggle').addEventListener('click', () => {
+    const grid = document.getElementById('badgesGrid');
+    grid.classList.toggle('hidden');
+    document.getElementById('badgesChevron').textContent =
+      grid.classList.contains('hidden') ? '▾' : '▴';
+  });
 }
 
 function switchTab(tab) {
@@ -537,6 +544,7 @@ function toggleMastered() {
   else mastered.add(w.phrase);
   saveMastered();
   renderProgress();
+  checkAchievements();
   // Under the "To learn" filter the card disappears once mastered
   if (cardFilter.unmasteredOnly) renderCard();
   else renderMasterBtn();
@@ -702,6 +710,7 @@ function markDayDone() {
   localStorage.setItem(STREAK_LAST_KEY, t);
   renderStreak();
   maybeAskForReminders();
+  checkAchievements();
 }
 
 function renderStreak() {
@@ -709,6 +718,150 @@ function renderStreak() {
   const el = document.getElementById('streakLabel');
   el.classList.toggle('hidden', n === 0);
   el.textContent = `🔥 ${n}-day streak`;
+}
+
+// ---------- Daily encouragement ----------
+
+// Short, real English. Doubles as reading practice, with a Bulgarian version
+// for the days when the English alone doesn't land.
+const ENCOURAGEMENTS = [
+  { en: "Five minutes today beats an hour next Sunday.", bg: "Пет минути днес струват повече от час следващата неделя." },
+  { en: "You don't need perfect English. You need English people understand.", bg: "Не ти трябва перфектен английски. Трябва ти английски, който хората разбират." },
+  { en: "The phrase you use today is the one you'll keep.", bg: "Фразата, която използваш днес, е тази, която ще ти остане." },
+  { en: "Mistakes are how the words move from your notes into your mouth.", bg: "Грешките са начинът думите да минат от бележките в устата ти." },
+  { en: "Nobody remembers your grammar. They remember that you spoke.", bg: "Никой не помни граматиката ти. Помнят, че си проговорил." },
+  { en: "One card is progress. Zero cards is the only bad day.", bg: "Една карта е напредък. Само нула карти е лош ден." },
+  { en: "You already understand more than you did last month.", bg: "Вече разбираш повече, отколкото миналия месец." },
+  { en: "Say it out loud. Reading silently teaches your eyes, not your mouth.", bg: "Кажи го на глас. Тихото четене учи очите, не устата." },
+  { en: "The hardest email gets easier the third time you write one.", bg: "Най-трудният имейл олеква на третия път." },
+  { en: "Slow English that arrives beats fast English that never starts.", bg: "Бавен английски, който стига до целта, бие бърз, който не тръгва." },
+  { en: "Learn the phrase your job actually needs. Skip the rest for now.", bg: "Учи фразата, която работата ти иска. Останалото може да чака." },
+  { en: "Your accent is not a problem to fix. It's information about you.", bg: "Акцентът ти не е проблем за поправяне. Той е информация за теб." },
+  { en: "Ten minutes a day for a month is five hours you didn't have before.", bg: "Десет минути дневно за месец са пет часа, които не си имал." },
+  { en: "If you can explain your job in English, you can do the interview.", bg: "Ако можеш да обясниш работата си на английски, можеш и интервюто." },
+  { en: "Don't wait to feel ready. Ready comes after, not before.", bg: "Не чакай да се почувстваш готов. Готовността идва след, не преди." },
+  { en: "Every phrase you master is one less pause in your next meeting.", bg: "Всяка усвоена фраза е една пауза по-малко на следващата ти среща." },
+  { en: "You're not behind. You're in the middle, and the middle is quiet.", bg: "Не изоставаш. В средата си, а средата е тиха." },
+  { en: "Small and boring beats big and once.", bg: "Малко и скучно бие много и веднъж." },
+  { en: "Reading the definition is easy. Using it on Tuesday is the work.", bg: "Да прочетеш значението е лесно. Работата е да го използваш във вторник." },
+  { en: "Come back tomorrow. That's the whole method.", bg: "Върни се утре. Това е целият метод." }
+];
+
+function encouragementOfTheDay() {
+  const d = new Date();
+  const dayNumber = Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000);
+  return ENCOURAGEMENTS[dayNumber % ENCOURAGEMENTS.length];
+}
+
+function renderMotivation() {
+  const e = encouragementOfTheDay();
+  document.getElementById('motivationCard').innerHTML = `
+    <div class="bg-brand-50 dark:bg-slate-900 border border-brand-100 dark:border-slate-800 rounded-2xl p-4">
+      <p class="text-sm font-semibold leading-snug text-brand-700 dark:text-brand-100">💡 ${e.en}</p>
+      <button onclick="document.getElementById('motivationBg').classList.toggle('hidden')"
+        class="text-xs font-semibold text-brand-500 mt-1.5">🇧🇬 Превод</button>
+      <p id="motivationBg" class="hidden text-xs text-slate-500 dark:text-slate-400 mt-1">${e.bg}</p>
+    </div>`;
+}
+
+// ---------- Achievements ----------
+
+const BADGES_KEY = 'worktalk_badges';
+
+const ACHIEVEMENTS = [
+  { id: 'first',     icon: '🌱', title: 'First step',    desc: 'Master your first phrase',        test: s => s.masteredAll >= 1 },
+  { id: 'ten',       icon: '🔟', title: 'Ten down',      desc: 'Master 10 phrases',               test: s => s.masteredAll >= 10 },
+  { id: 'fifty',     icon: '🏅', title: 'Fifty strong',  desc: 'Master 50 phrases',               test: s => s.masteredAll >= 50 },
+  { id: 'hundred',   icon: '💯', title: 'Century',       desc: 'Master 100 phrases',              test: s => s.masteredAll >= 100 },
+  { id: 'halfdeck',  icon: '📗', title: 'Half a deck',   desc: 'Master half of any deck',         test: s => s.bestDeckPct >= 50 },
+  { id: 'fulldeck',  icon: '👑', title: 'Deck complete', desc: 'Master a whole deck',             test: s => s.bestDeckPct >= 100 },
+  { id: 'streak7',   icon: '🔥', title: 'One week',      desc: 'Practise 7 days in a row',        test: s => s.streak >= 7 },
+  { id: 'streak30',  icon: '🚀', title: 'One month',     desc: 'Practise 30 days in a row',       test: s => s.streak >= 30 },
+  { id: 'quiz',      icon: '🎯', title: 'Perfect quiz',  desc: 'Score 5 out of 5',                test: s => s.bestQuiz >= 5 },
+  { id: 'exam',      icon: '🧠', title: 'Exam ready',    desc: 'Perfect round in any exercise',   test: s => s.bestUoe >= UOE_ROUND },
+  { id: 'listener',  icon: '🎧', title: 'Good ear',      desc: 'Score 6+ in listening or dictation', test: s => s.bestListening >= 6 },
+  { id: 'explorer',  icon: '🗺️', title: 'Explorer',      desc: 'Try every deck',                  test: s => s.decksTouched >= decks.length },
+  { id: 'reviewer',  icon: '📆', title: 'Regular',       desc: 'Review 25 cards',                 test: s => s.reviewed >= 25 },
+  { id: 'devoted',   icon: '💎', title: 'Devoted',       desc: 'Review 200 cards',                test: s => s.reviewed >= 200 }
+];
+
+function readJson(key, fallback) {
+  try { return JSON.parse(localStorage.getItem(key) || fallback); }
+  catch { return JSON.parse(fallback); }
+}
+
+function collectStats() {
+  let masteredAll = 0, bestDeckPct = 0, bestQuiz = 0, bestUoe = 0,
+      bestListening = 0, reviewed = 0, decksTouched = 0;
+
+  for (const d of decks) {
+    const m = readJson(`worktalk_${d.id}_mastered`, '[]').length;
+    const srs = readJson(`worktalk_${d.id}_srs`, '{}');
+    const hs = parseInt(localStorage.getItem(`worktalk_${d.id}_high_score`), 10) || 0;
+    const uoeBest = readJson(`worktalk_${d.id}_uoe_best`, '{}');
+
+    masteredAll += m;
+    reviewed += Object.keys(srs).length;
+    bestQuiz = Math.max(bestQuiz, hs);
+    for (const [mode, score] of Object.entries(uoeBest)) {
+      bestUoe = Math.max(bestUoe, score);
+      if (mode === 'listen' || mode === 'dictation') bestListening = Math.max(bestListening, score);
+    }
+    // Deck size is only known for the loaded deck; use it where we can
+    const size = d.id === deckId ? words.length : null;
+    if (size) bestDeckPct = Math.max(bestDeckPct, Math.round((m / size) * 100));
+    if (m || hs || Object.keys(srs).length || Object.keys(uoeBest).length) decksTouched++;
+  }
+  return { masteredAll, bestDeckPct, bestQuiz, bestUoe, bestListening, reviewed,
+           decksTouched, streak: getStreak() };
+}
+
+function earnedBadges() {
+  return new Set(readJson(BADGES_KEY, '[]'));
+}
+
+function checkAchievements() {
+  const stats = collectStats();
+  const had = earnedBadges();
+  const now = ACHIEVEMENTS.filter(a => a.test(stats));
+  const fresh = now.filter(a => !had.has(a.id));
+
+  if (fresh.length) {
+    localStorage.setItem(BADGES_KEY, JSON.stringify([...had, ...fresh.map(a => a.id)]));
+    celebrate(fresh);
+  }
+  renderBadges();
+}
+
+function celebrate(list) {
+  const a = list[0];
+  const extra = list.length > 1 ? ` (+${list.length - 1} more)` : '';
+  showToast('badgeToast', `
+    <div class="flex items-center gap-3">
+      <span class="text-3xl">${a.icon}</span>
+      <div class="flex-1">
+        <p class="font-bold">Achievement unlocked${extra}</p>
+        <p class="text-slate-500 dark:text-slate-400">${a.title}: ${a.desc.toLowerCase()}</p>
+      </div>
+      <button onclick="closeToast('badgeToast')" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-700 font-semibold text-xs">Nice</button>
+    </div>`);
+  setTimeout(() => closeToast('badgeToast'), 6000);
+}
+
+function renderBadges() {
+  const had = earnedBadges();
+  document.getElementById('badgesSummary').textContent =
+    `Achievements · ${had.size} / ${ACHIEVEMENTS.length}`;
+  document.getElementById('badgesGrid').innerHTML = ACHIEVEMENTS.map(a => {
+    const got = had.has(a.id);
+    return `<div title="${a.title}: ${a.desc}"
+      class="flex flex-col items-center gap-1 p-2 rounded-xl text-center ${got
+        ? 'bg-brand-50 dark:bg-slate-800'
+        : 'bg-slate-50 dark:bg-slate-900 opacity-40 grayscale'}">
+      <span class="text-xl">${a.icon}</span>
+      <span class="text-[10px] font-semibold leading-tight">${a.title}</span>
+    </div>`;
+  }).join('');
 }
 
 // ---------- Share progress ----------
@@ -1184,6 +1337,7 @@ function renderUoeEnd() {
   const isRecord = prevBest === undefined || score > prevBest;
   saveUoeBest(mode, score);
   markDayDone();
+  checkAchievements();
 
   const msg =
     score === items.length ? 'Perfect round! 🏆' :
