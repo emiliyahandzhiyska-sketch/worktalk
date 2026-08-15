@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "The doctor wants to carry out some examinations.", "key": "TESTS", "model": "The doctor wants to run some tests.", "accept": ["run some tests", "run tests"] },
+    { "original": "She had a bad reaction to penicillin.", "key": "ALLERGIC", "model": "She's allergic to penicillin.", "accept": ["allergic to"] },
+    { "original": "The illness started suddenly and was severe.", "key": "ACUTE", "model": "It was an acute illness.", "accept": ["acute"] },
+    { "original": "The pain has lasted for years and keeps returning.", "key": "CHRONIC", "model": "The pain is chronic.", "accept": ["chronic"] },
+    { "original": "The hospital allowed her to go home on Sunday.", "key": "DISCHARGED", "model": "She was discharged on Sunday.", "accept": ["discharged"] },
+    { "original": "They took him into hospital overnight.", "key": "ADMITTED", "model": "He was admitted overnight.", "accept": ["admitted"] },
+    { "original": "Your GP has to send you to the specialist.", "key": "REFERRAL", "model": "You need a referral from your GP.", "accept": ["referral"] },
+    { "original": "Half the team became ill with flu.", "key": "CAME", "model": "Half the team came down with flu.", "accept": ["came down with"] },
+    { "original": "The anaesthetic stops working after two hours.", "key": "WEARS", "model": "The anaesthetic wears off after two hours.", "accept": ["wears off", "wear off"] },
+    { "original": "This medicine can make you sleepy, which is unwanted.", "key": "EFFECT", "model": "Drowsiness is a side effect of this medicine.", "accept": ["side effect"] },
+    { "original": "He is getting better after the operation.", "key": "RECOVERING", "model": "He's recovering after the operation.", "accept": ["recovering", "recover"] },
+    { "original": "The patient agreed after the risks were explained.", "key": "CONSENT", "model": "The patient gave informed consent.", "accept": ["informed consent", "consent"] },
+    { "original": "I'm available to work if the hospital needs me tonight.", "key": "CALL", "model": "I'm on call tonight.", "accept": ["on call"] },
+    { "original": "Patients are seen by urgency, not arrival time.", "key": "TRIAGE", "model": "Triage decides the order.", "accept": ["triage"] },
+    { "original": "You'll come back in six weeks so we can check.", "key": "FOLLOW", "model": "You'll have a follow-up appointment in six weeks.", "accept": ["follow up", "follow-up"] },
+    { "original": "The condition is not going to kill anyone.", "key": "THREATENING", "model": "The condition is not life-threatening.", "accept": ["life threatening", "life-threatening"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ___ was confirmed after the scan.", "base": "DIAGNOSE", "accept": ["diagnosis"] },
+    { "sentence": "He needs ___ three times a week.", "base": "TREAT", "accept": ["treatment"] },
+    { "sentence": "The ___ explained the procedure carefully.", "base": "SURGERY", "accept": ["surgeon"] },
+    { "sentence": "Her ___ took longer than expected.", "base": "RECOVER", "accept": ["recovery"] },
+    { "sentence": "The ward has 20 ___ at the moment.", "base": "PATIENCE", "accept": ["patients"] },
+    { "sentence": "___ against flu is offered every autumn.", "base": "VACCINATE", "accept": ["vaccination"] },
+    { "sentence": "The ___ of the medicine is on the box.", "base": "DESCRIBE", "accept": ["description"] },
+    { "sentence": "He works as a ___ in the children's ward.", "base": "NURSE", "accept": ["nurse"] },
+    { "sentence": "Regular exercise is good ___.", "base": "PREVENT", "accept": ["prevention"] },
+    { "sentence": "The ___ arrived within eight minutes.", "base": "AMBULANT", "accept": ["ambulance"] },
+    { "sentence": "___ care is available 24 hours a day.", "base": "EMERGE", "accept": ["emergency"] },
+    { "sentence": "She made a full ___ within three months.", "base": "RECOVER", "accept": ["recovery"] },
+    { "sentence": "The ___ of the injection is minimal.", "base": "PAIN", "accept": ["pain"] },
+    { "sentence": "Please give your written ___ before surgery.", "base": "CONSENT", "accept": ["consent"] },
+    { "sentence": "The results showed a serious ___.", "base": "INFECT", "accept": ["infection"] },
+    { "sentence": "This drug has very few ___ effects.", "base": "HARM", "accept": ["harmful"] }
+  ]
+}

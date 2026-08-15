@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "We pay another company to handle our payroll.", "key": "OUTSOURCE", "model": "We outsource our payroll.", "accept": ["outsource"] },
+    { "original": "The company reduced its number of employees.", "key": "DOWNSIZED", "model": "The company downsized.", "accept": ["downsized", "downsize"] },
+    { "original": "Two companies joined to become one.", "key": "MERGER", "model": "There was a merger between the two companies.", "accept": ["merger", "merged"] },
+    { "original": "Pass the problem to someone more senior.", "key": "ESCALATE", "model": "Escalate the problem.", "accept": ["escalate"] },
+    { "original": "We need the regional heads to support the plan.", "key": "BUY", "model": "We need buy-in from the regional heads.", "accept": ["buy in", "buy-in"] },
+    { "original": "The project slowly grew beyond what we agreed.", "key": "CREEP", "model": "That's scope creep.", "accept": ["scope creep"] },
+    { "original": "Legal has to approve it before we publish.", "key": "SIGN", "model": "We need sign-off from legal before we publish.", "accept": ["sign off", "sign-off"] },
+    { "original": "Both sides benefited from the agreement.", "key": "WIN", "model": "It was a win-win agreement.", "accept": ["win win", "win-win"] },
+    { "original": "He finished the negotiation successfully.", "key": "CLOSED", "model": "He closed the deal.", "accept": ["closed the deal", "close a deal"] },
+    { "original": "They made a different offer in response to ours.", "key": "COUNTEROFFER", "model": "They made a counteroffer.", "accept": ["counteroffer", "counter offer"] },
+    { "original": "The work is done by our own staff, not an agency.", "key": "HOUSE", "model": "The work is done in house.", "accept": ["in house", "in-house"] },
+    { "original": "The person I report to approved the budget.", "key": "LINE", "model": "My line manager approved the budget.", "accept": ["line manager"] },
+    { "original": "Translation is not included in this contract.", "key": "SCOPE", "model": "Translation is outside the scope of this contract.", "accept": ["scope"] },
+    { "original": "The trial time at the start of the job is six months.", "key": "PROBATION", "model": "The probation period is six months.", "accept": ["probation"] },
+    { "original": "The branch produced worse results than expected.", "key": "UNDERPERFORMED", "model": "The branch underperformed.", "accept": ["underperformed", "underperform"] },
+    { "original": "Three other offers gave us power in the talks.", "key": "LEVERAGE", "model": "Three other offers gave us leverage.", "accept": ["leverage"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ___ was announced at the town hall.", "base": "ANNOUNCE", "accept": ["announcement"] },
+    { "sentence": "Her ___ to director was overdue.", "base": "PROMOTE", "accept": ["promotion"] },
+    { "sentence": "We need better ___ between the two teams.", "base": "COMMUNICATE", "accept": ["communication"] },
+    { "sentence": "The ___ of the new system took four months.", "base": "IMPLEMENT", "accept": ["implementation"] },
+    { "sentence": "He is responsible for supplier ___.", "base": "RELATE", "accept": ["relations", "relationships"] },
+    { "sentence": "The team's ___ improved after the training.", "base": "PERFORM", "accept": ["performance"] },
+    { "sentence": "Their ___ in the market is very strong.", "base": "POSITION", "accept": ["position"] },
+    { "sentence": "We need your ___ before Friday.", "base": "DECIDE", "accept": ["decision"] },
+    { "sentence": "The ___ process takes about six weeks.", "base": "RECRUIT", "accept": ["recruitment"] },
+    { "sentence": "There was strong ___ to the restructure.", "base": "RESIST", "accept": ["resistance"] },
+    { "sentence": "The ___ of the merger surprised everyone.", "base": "ANNOUNCE", "accept": ["announcement"] },
+    { "sentence": "This role requires excellent ___ skills.", "base": "ORGANISE", "accept": ["organisational", "organizational"] },
+    { "sentence": "Employee ___ dropped after the pay rise.", "base": "SATISFY", "accept": ["satisfaction"] },
+    { "sentence": "The ___ presented the results to the board.", "base": "MANAGE", "accept": ["manager", "management"] },
+    { "sentence": "We measure customer ___ every quarter.", "base": "LOYAL", "accept": ["loyalty"] },
+    { "sentence": "The plan needs ___ from all departments.", "base": "COOPERATE", "accept": ["cooperation"] }
+  ]
+}

@@ -267,17 +267,43 @@ function toggleUnmastered() {
   renderCard();
 }
 
+let deckListOpen = false;
+
+// With 9 decks a full grid pushes everything off screen, so only the active
+// deck is shown until the learner asks to change it.
 function renderDeckPicker() {
-  document.getElementById('deckPicker').innerHTML = decks.map(d => `
-    <button onclick="switchDeckTo('${d.id}')"
-      class="text-left px-4 py-3 rounded-2xl border transition-colors ${d.id === deckId
-        ? 'bg-brand-500 border-brand-500 text-white shadow-sm'
-        : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500'}">
-      <span class="block text-sm font-bold">${d.icon} ${d.name}</span>
-      <span class="block text-xs mt-0.5 ${d.id === deckId
-        ? 'text-white/80'
-        : 'text-slate-500 dark:text-slate-400'}">${d.tagline}</span>
-    </button>`).join('');
+  const active = decks.find(d => d.id === deckId) || decks[0];
+  document.getElementById('deckPicker').innerHTML = `
+    <button onclick="toggleDeckList()"
+      class="w-full text-left px-4 py-3 rounded-2xl bg-brand-500 text-white shadow-sm flex items-center gap-3">
+      <span class="text-2xl">${active.icon}</span>
+      <span class="flex-1 min-w-0">
+        <span class="block text-sm font-bold truncate">${active.name}</span>
+        <span class="block text-xs text-white/80 truncate">${active.tagline}</span>
+      </span>
+      <span class="text-xs font-bold bg-white/20 px-2.5 py-1 rounded-lg whitespace-nowrap">
+        ${deckListOpen ? 'Close ▴' : 'Change ▾'}
+      </span>
+    </button>
+    <div class="${deckListOpen ? '' : 'hidden'} grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
+      ${decks.filter(d => d.id !== deckId).map(d => `
+        <button onclick="pickDeck('${d.id}')"
+          class="text-left px-4 py-3 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 transition-colors">
+          <span class="block text-sm font-bold">${d.icon} ${d.name}</span>
+          <span class="block text-xs mt-0.5 text-slate-500 dark:text-slate-400">${d.tagline}</span>
+        </button>`).join('')}
+    </div>`;
+}
+
+function toggleDeckList() {
+  deckListOpen = !deckListOpen;
+  renderDeckPicker();
+}
+
+async function pickDeck(id) {
+  deckListOpen = false;
+  await switchDeckTo(id);
+  renderDeckPicker();
 }
 
 async function switchDeckTo(id) {

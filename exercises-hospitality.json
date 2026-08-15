@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "The hotel has no rooms left for the weekend.", "key": "BOOKED", "model": "The hotel is fully booked for the weekend.", "accept": ["fully booked"] },
+    { "original": "They took more bookings than they have rooms.", "key": "OVERBOOKED", "model": "The hotel is overbooked.", "accept": ["overbooked"] },
+    { "original": "The guest arrived without a reservation.", "key": "WALK", "model": "The guest was a walk-in.", "accept": ["walk in", "walk-in"] },
+    { "original": "The guest booked but never arrived.", "key": "SHOW", "model": "The guest was a no-show.", "accept": ["no show", "no-show"] },
+    { "original": "Breakfast is free for loyalty members.", "key": "COMPLIMENTARY", "model": "Breakfast is complimentary for loyalty members.", "accept": ["complimentary"] },
+    { "original": "We moved them to a better room as an apology.", "key": "UPGRADED", "model": "We upgraded them as an apology.", "accept": ["upgraded", "upgrade"] },
+    { "original": "The rate includes breakfast and dinner.", "key": "HALF", "model": "The rate is half board.", "accept": ["half board"] },
+    { "original": "July and August are the busiest months.", "key": "PEAK", "model": "July and August are peak season.", "accept": ["peak season"] },
+    { "original": "Would you like to pay separately?", "key": "SPLIT", "model": "Would you like to split the bill?", "accept": ["split the bill"] },
+    { "original": "Please tell us if you can't eat certain foods.", "key": "DIETARY", "model": "Please tell us about any dietary requirements.", "accept": ["dietary requirements"] },
+    { "original": "We gave them a free dinner to make up for the problem.", "key": "COMPENSATED", "model": "We compensated them with a free dinner.", "accept": ["compensated", "compensate"] },
+    { "original": "We're sorry that this caused you trouble.", "key": "INCONVENIENCE", "model": "We apologise for the inconvenience.", "accept": ["inconvenience"] },
+    { "original": "This is the last chance to order before we close.", "key": "ORDERS", "model": "Last orders, please.", "accept": ["last orders"] },
+    { "original": "The plan of the trip includes two free afternoons.", "key": "ITINERARY", "model": "The itinerary includes two free afternoons.", "accept": ["itinerary"] },
+    { "original": "We served 140 guests on Saturday night.", "key": "COVERS", "model": "We did 140 covers on Saturday night.", "accept": ["covers"] },
+    { "original": "She did much more than expected for the guest.", "key": "MILE", "model": "She went the extra mile for the guest.", "accept": ["extra mile"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ___ was very helpful at the front desk.", "base": "RECEIVE", "accept": ["receptionist"] },
+    { "sentence": "We received an excellent ___ from that guest.", "base": "REVIEW", "accept": ["review"] },
+    { "sentence": "Their ___ is famous across the region.", "base": "HOSPITABLE", "accept": ["hospitality"] },
+    { "sentence": "The ___ of the room was disappointing.", "base": "CLEAN", "accept": ["cleanliness"] },
+    { "sentence": "Please confirm your ___ by email.", "base": "BOOK", "accept": ["booking"] },
+    { "sentence": "The ___ speaks four languages.", "base": "GUIDE", "accept": ["guide"] },
+    { "sentence": "We had a very ___ stay, thank you.", "base": "ENJOY", "accept": ["enjoyable"] },
+    { "sentence": "The restaurant is famous for its ___.", "base": "SERVE", "accept": ["service"] },
+    { "sentence": "___ numbers rise every summer.", "base": "TOUR", "accept": ["tourist", "tourism"] },
+    { "sentence": "The hotel offers ___ for 200 guests.", "base": "ACCOMMODATE", "accept": ["accommodation"] },
+    { "sentence": "Her ___ of the situation calmed the guest.", "base": "HANDLE", "accept": ["handling"] },
+    { "sentence": "The ___ of the meal was excellent.", "base": "PRESENT", "accept": ["presentation"] },
+    { "sentence": "We need a written ___ of the complaint.", "base": "DESCRIBE", "accept": ["description"] },
+    { "sentence": "The ___ staff work from April to October.", "base": "SEASON", "accept": ["seasonal"] },
+    { "sentence": "Guest ___ is our main measure of success.", "base": "SATISFY", "accept": ["satisfaction"] },
+    { "sentence": "The ___ of the hotel is right in the centre.", "base": "LOCATE", "accept": ["location"] }
+  ]
+}

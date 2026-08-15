@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "The machine was not working for three hours.", "key": "DOWNTIME", "model": "There were three hours of downtime.", "accept": ["downtime"] },
+    { "original": "We found the real underlying reason for the failure.", "key": "ROOT", "model": "We found the root cause of the failure.", "accept": ["root cause"] },
+    { "original": "The single paint booth slows down the whole line.", "key": "BOTTLENECK", "model": "The paint booth is the bottleneck.", "accept": ["bottleneck"] },
+    { "original": "We adjusted the sensors so they measure accurately.", "key": "CALIBRATED", "model": "We calibrated the sensors.", "accept": ["calibrated", "calibrate"] },
+    { "original": "Servicing done before something breaks saves money.", "key": "PREVENTIVE", "model": "Preventive maintenance saves money.", "accept": ["preventive maintenance", "preventative maintenance"] },
+    { "original": "We decided the software was not the cause.", "key": "RULED", "model": "We ruled out the software.", "accept": ["ruled out", "rule out"] },
+    { "original": "We found a temporary way past the faulty sensor.", "key": "WORKED", "model": "We worked around the faulty sensor.", "accept": ["worked around", "work around"] },
+    { "original": "The old presses got new control systems.", "key": "RETROFITTED", "model": "The old presses were retrofitted with new controls.", "accept": ["retrofitted", "retrofit"] },
+    { "original": "The equipment was permanently taken out of service.", "key": "DECOMMISSIONED", "model": "The equipment was decommissioned.", "accept": ["decommissioned", "decommission"] },
+    { "original": "The engineer formally approved the stage as complete.", "key": "SIGNED", "model": "The engineer signed off on the stage.", "accept": ["signed off", "sign off"] },
+    { "original": "Order it now, because delivery takes 14 weeks.", "key": "LEAD", "model": "The lead time is 14 weeks.", "accept": ["lead time"] },
+    { "original": "The crack appeared after years of repeated stress.", "key": "FATIGUE", "model": "The crack was caused by metal fatigue.", "accept": ["fatigue"] },
+    { "original": "Nobody works here until the risks are studied.", "key": "ASSESSMENT", "model": "No work starts without a risk assessment.", "accept": ["risk assessment"] },
+    { "original": "Increase production from 100 to 1,000 units.", "key": "SCALE", "model": "We need to scale up from 100 to 1,000 units.", "accept": ["scale up"] },
+    { "original": "Stop the line completely before clearing the jam.", "key": "SHUT", "model": "Shut down the line before clearing the jam.", "accept": ["shut down", "shut the line down"] },
+    { "original": "An incident nearly caused injury but didn't.", "key": "MISS", "model": "It was a near miss.", "accept": ["near miss"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ___ finished the installation on Friday.", "base": "ENGINE", "accept": ["engineer", "engineers"] },
+    { "sentence": "Regular ___ prevents most breakdowns.", "base": "MAINTAIN", "accept": ["maintenance"] },
+    { "sentence": "The ___ of the machine is 2 tonnes per hour.", "base": "CAPABLE", "accept": ["capacity"] },
+    { "sentence": "We need an accurate ___ of the part.", "base": "MEASURE", "accept": ["measurement"] },
+    { "sentence": "The ___ of the design was tested first.", "base": "SAFE", "accept": ["safety"] },
+    { "sentence": "The new material is far more ___.", "base": "DURATION", "accept": ["durable"] },
+    { "sentence": "The ___ of the project took eight months.", "base": "CONSTRUCT", "accept": ["construction"] },
+    { "sentence": "The ___ must be checked before every shift.", "base": "EQUIP", "accept": ["equipment"] },
+    { "sentence": "Poor ___ caused the component to fail.", "base": "DESIGN", "accept": ["design"] },
+    { "sentence": "The ___ of the system is fully automatic.", "base": "OPERATE", "accept": ["operation"] },
+    { "sentence": "We made several ___ to the original plan.", "base": "MODIFY", "accept": ["modifications"] },
+    { "sentence": "The ___ report listed 23 small faults.", "base": "INSPECT", "accept": ["inspection"] },
+    { "sentence": "There was a complete ___ of the old system.", "base": "REPLACE", "accept": ["replacement"] },
+    { "sentence": "The pipes showed signs of ___.", "base": "CORRODE", "accept": ["corrosion"] },
+    { "sentence": "This valve needs ___ every six months.", "base": "CALIBRATE", "accept": ["calibration"] },
+    { "sentence": "The ___ of the new line is planned for June.", "base": "COMMISSION", "accept": ["commissioning"] }
+  ]
+}

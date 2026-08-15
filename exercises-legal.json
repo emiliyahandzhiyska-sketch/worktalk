@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "They broke the rules written in the contract.", "key": "BREACH", "model": "They were in breach of contract.", "accept": ["breach of contract", "breach"] },
+    { "original": "The agreement has no legal effect.", "key": "VOID", "model": "The agreement is void.", "accept": ["void"] },
+    { "original": "This document legally forces both sides to act.", "key": "BINDING", "model": "This document is binding on both sides.", "accept": ["binding"] },
+    { "original": "We ended the dispute by agreement instead of going to trial.", "key": "SETTLED", "model": "We settled out of court.", "accept": ["settled out of court", "settle out of court"] },
+    { "original": "Every supplier has to follow our data rules.", "key": "COMPLY", "model": "Every supplier has to comply with our data rules.", "accept": ["comply with"] },
+    { "original": "You must give 30 days' warning before ending the contract.", "key": "NOTICE", "model": "There is a 30-day notice period.", "accept": ["notice period", "notice"] },
+    { "original": "The company is legally responsible for the damage.", "key": "LIABLE", "model": "The company is liable for the damage.", "accept": ["liable for", "liable"] },
+    { "original": "Sign this before we show you any figures.", "key": "DISCLOSURE", "model": "Sign the non-disclosure agreement first.", "accept": ["non disclosure", "non-disclosure"] },
+    { "original": "They checked all the facts carefully before buying.", "key": "DILIGENCE", "model": "They carried out due diligence before buying.", "accept": ["due diligence"] },
+    { "original": "The flood excused them from delivering on time.", "key": "MAJEURE", "model": "Force majeure excused them from delivering on time.", "accept": ["force majeure"] },
+    { "original": "Both sides negotiated honestly and fairly.", "key": "FAITH", "model": "Both sides negotiated in good faith.", "accept": ["in good faith", "good faith"] },
+    { "original": "We agreed the price, but nothing is final until signature.", "key": "SUBJECT", "model": "The price was agreed subject to contract.", "accept": ["subject to contract"] },
+    { "original": "The dispute goes to a private decision-maker, not a court.", "key": "ARBITRATION", "model": "The dispute goes to arbitration.", "accept": ["arbitration"] },
+    { "original": "They asked a higher court to change the decision.", "key": "APPEALED", "model": "They appealed the decision.", "accept": ["appealed", "appeal"] },
+    { "original": "The school owns the rights to the course materials.", "key": "PROPERTY", "model": "The course materials are the school's intellectual property.", "accept": ["intellectual property"] },
+    { "original": "We officially changed clause 4 of the contract.", "key": "AMENDED", "model": "We amended clause 4 of the contract.", "accept": ["amended", "amend"] }
+  ],
+  "word_formation": [
+    { "sentence": "The two parties signed a written ___.", "base": "AGREE", "accept": ["agreement"] },
+    { "sentence": "The court found him ___ for the damage.", "base": "LIABILITY", "accept": ["liable"] },
+    { "sentence": "Full ___ with the regulation is mandatory.", "base": "COMPLY", "accept": ["compliance"] },
+    { "sentence": "The ___ of the clause was unclear.", "base": "MEAN", "accept": ["meaning"] },
+    { "sentence": "She acted without the owner's ___.", "base": "PERMIT", "accept": ["permission"] },
+    { "sentence": "The ___ was rejected by the judge.", "base": "APPLY", "accept": ["application"] },
+    { "sentence": "They demanded ___ for the loss.", "base": "COMPENSATE", "accept": ["compensation"] },
+    { "sentence": "The contract requires written ___ of any change.", "base": "NOTIFY", "accept": ["notification"] },
+    { "sentence": "The document has no legal ___ without a date.", "base": "VALID", "accept": ["validity"] },
+    { "sentence": "The ___ of the contract took three weeks.", "base": "NEGOTIATE", "accept": ["negotiation"] },
+    { "sentence": "He gave his ___ in court on Tuesday.", "base": "TESTIFY", "accept": ["testimony"] },
+    { "sentence": "The ___ of the new law starts in January.", "base": "ENFORCE", "accept": ["enforcement"] },
+    { "sentence": "All information must be treated as ___.", "base": "CONFIDENCE", "accept": ["confidential"] },
+    { "sentence": "The ___ signed on behalf of the company.", "base": "REPRESENT", "accept": ["representative"] },
+    { "sentence": "There was a clear ___ of the safety rules.", "base": "VIOLATE", "accept": ["violation"] },
+    { "sentence": "The judge asked for further ___.", "base": "CLARIFY", "accept": ["clarification"] }
+  ]
+}

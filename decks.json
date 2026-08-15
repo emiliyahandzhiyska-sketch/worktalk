@@ -30,5 +30,45 @@
     "tagline": "Training, matches, results, staying fit.",
     "words": "words-sport.json",
     "exercises": "exercises-sport.json"
+  },
+  {
+    "id": "business",
+    "name": "Business & Corporate English",
+    "icon": "🏢",
+    "tagline": "Strategy, HR, negotiation, corporate life.",
+    "words": "words-business.json",
+    "exercises": "exercises-business.json"
+  },
+  {
+    "id": "legal",
+    "name": "Legal English",
+    "icon": "⚖️",
+    "tagline": "Contracts, compliance, disputes, company law.",
+    "words": "words-legal.json",
+    "exercises": "exercises-legal.json"
+  },
+  {
+    "id": "healthcare",
+    "name": "Healthcare English",
+    "icon": "🩺",
+    "tagline": "Patients, treatment, hospital and admin.",
+    "words": "words-healthcare.json",
+    "exercises": "exercises-healthcare.json"
+  },
+  {
+    "id": "technical",
+    "name": "Technical & Engineering English",
+    "icon": "⚙️",
+    "tagline": "Specs, production, faults, safety, delivery.",
+    "words": "words-technical.json",
+    "exercises": "exercises-technical.json"
+  },
+  {
+    "id": "hospitality",
+    "name": "Hospitality & Tourism English",
+    "icon": "🏨",
+    "tagline": "Front desk, restaurant, guests, tours.",
+    "words": "words-hospitality.json",
+    "exercises": "exercises-hospitality.json"
   }
 ]
