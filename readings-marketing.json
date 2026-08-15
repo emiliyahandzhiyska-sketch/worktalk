@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The post that worked, and why",
+    "level": "B1",
+    "text": "For six months the bakery posted photos of bread. Beautiful photos, good light, almost no engagement.\n\nThen the owner posted something else: a short video of her hands shaping dough at 4:30 in the morning, with one line of text about why she still does it herself. Reach jumped from 900 to 34,000. Two hundred new followers in a day.\n\nHer marketing friend explained it simply. The bread photos showed the product. The video showed the pain point behind it: everyone who watched was awake at 4:30 for a reason of their own.\n\nThe temptation after a post goes viral is to repeat it exactly. She didn't. She built a content calendar around the same idea instead: three posts a week, each showing one real moment from the shop. Not staged, not polished.\n\nSix weeks later the numbers looked different. Reach was lower than the viral post but four times higher than before. More useful, the landing page for the baking course had a conversion rate of 7%, up from under 2%.\n\nOne viral post is luck. A format that keeps working is a strategy.",
+    "questions": [
+      { "q": "Why did the video perform better than the bread photos?", "options": ["It connected with something the audience felt", "It was longer and more detailed", "It was posted at a better time", "It included a discount code"], "correct": 0 },
+      { "q": "What did the owner do after the post went viral?", "options": ["Built a repeatable format around the same idea", "Posted the same video again", "Stopped posting for six weeks", "Paid for ads to boost it"], "correct": 0 },
+      { "q": "What happened to the landing page conversion rate?", "options": ["It rose from under 2% to 7%", "It stayed the same", "It fell after the viral post", "It reached 34%"], "correct": 0 },
+      { "q": "What is the main message of the text?", "options": ["A repeatable format beats one lucky post", "Video always works better than photos", "Posting early in the morning is best", "Followers matter more than sales"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Two hundred euro, four leads",
+    "level": "B2",
+    "text": "A small language school ran its first paid ads campaign in March. The budget was 200 euro, spread over three weeks, aimed at HR managers in companies with more than fifty employees.\n\nThe first version failed quietly. The headline was \"Professional English Courses\" and the call to action said \"Learn more\". Click-through rate: 0.4%. Nobody filled in the form.\n\nFor the second version they changed two things. The headline became a question the target audience actually asks: \"Can your team handle a call in English?\" The call to action changed to \"See the 20-minute assessment\". Same budget, same audience.\n\nClick-through rate rose to 2.1%. Eleven people downloaded the lead magnet, a short PDF with sample assessment questions. Four of them booked a meeting.\n\nThe director did the maths. Two hundred euro produced four leads, and one of them signed a contract worth 4,800 euro. The return on investment was obvious, but she noticed something else: the winning ad said nothing about the school. It only described the client's problem.\n\nThey now start every campaign with the pain point and add the offer last.",
+    "questions": [
+      { "q": "Why did the first version of the ad fail?", "options": ["It described the product, not the client's problem", "The budget was too small", "It targeted the wrong country", "The images were poor quality"], "correct": 0 },
+      { "q": "What was the lead magnet in this campaign?", "options": ["A PDF with sample assessment questions", "A free trial lesson", "A discount voucher", "A webinar recording"], "correct": 0 },
+      { "q": "How many people booked a meeting?", "options": ["Four", "Eleven", "Two", "Fifty"], "correct": 0 },
+      { "q": "What did the director learn from the winning ad?", "options": ["Lead with the client's problem, not the offer", "Spend more money on ads", "Target smaller companies", "Use longer headlines"], "correct": 0 }
+    ]
+  }
+]

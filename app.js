@@ -42,6 +42,7 @@ let decks = [];
 let deckId = 'workplace';
 let words = [];
 let exercises = { transformations: [], word_formation: [] };
+let readings = [];
 let currentCard = 0;
 let mastered = new Set();
 let quiz = null; // { questions, index, score, locked }
@@ -214,10 +215,14 @@ async function loadDeck(id) {
   localStorage.setItem(DECK_KEY, id);
   const d = decks.find(x => x.id === id);
 
-  const [wRes, eRes] = await Promise.all([fetch(d.words), fetch(d.exercises)]);
+  const [wRes, eRes, rRes] = await Promise.all([
+    fetch(d.words), fetch(d.exercises), fetch(d.readings)
+  ]);
   if (!wRes.ok || !eRes.ok) throw new Error('deck load failed');
   words = await wRes.json();
   exercises = await eRes.json();
+  // Readings are optional: a deck without them simply hides the mode
+  readings = rRes.ok ? await rRes.json() : [];
 
   currentCard = 0;
   quiz = null;
@@ -1074,6 +1079,7 @@ const UOE_MODES = {
   open:      { icon: '⌨️', title: 'Open cloze',        desc: 'Type the missing phrase yourself.' },
   transform: { icon: '🔁', title: 'Transformations',   desc: 'Rewrite the sentence using a key word.' },
   wordform:  { icon: '🔤', title: 'Word formation',    desc: 'Build the right form of the word.' },
+  reading:   { icon: '📖', title: 'Reading',           desc: 'Read a short story, answer questions.' },
   listen:    { icon: '👂', title: 'Listening',         desc: 'Hear the phrase, pick the meaning.' },
   dictation: { icon: '🎧', title: 'Dictation',         desc: 'Listen and type what you hear.' },
   own:       { icon: '💡', title: 'Your own sentence', desc: 'Use a phrase in a sentence about your life.' }
@@ -1115,7 +1121,7 @@ function blankOut(w) {
 function renderUoeMenu() {
   uoe = null;
   const best = getUoeBest();
-  const scored = ['cloze', 'open', 'transform', 'wordform', 'listen', 'dictation'];
+  const scored = ['cloze', 'open', 'transform', 'wordform', 'reading', 'listen', 'dictation'];
   document.getElementById('uoeBox').innerHTML = `
     <div class="fade-in">
       <h2 class="text-xl font-extrabold mb-1">Use of English</h2>
@@ -1155,6 +1161,19 @@ function startUoe(mode) {
     items = shuffle(exercises.transformations).slice(0, UOE_ROUND);
   } else if (mode === 'wordform') {
     items = shuffle(exercises.word_formation).slice(0, UOE_ROUND);
+  } else if (mode === 'reading') {
+    const passage = shuffle(readings)[0];
+    if (!passage) return;
+    // Options are authored with the correct answer first, so shuffle each one
+    // and remember where the right answer landed.
+    const qs = passage.questions.map(q => {
+      const right = q.options[q.correct];
+      const options = shuffle(q.options);
+      return { q: q.q, options, correct: options.indexOf(right) };
+    });
+    uoe = { mode, passage, items: qs, index: 0, score: 0, checked: false };
+    renderUoeItem();
+    return;
   } else if (mode === 'listen') {
     items = shuffle(words).slice(0, UOE_ROUND).map(w => ({
       audio: w.audio_text,
@@ -1236,6 +1255,25 @@ function renderUoeItem() {
         <p class="text-base leading-relaxed mb-2">${it.sentence.replace('___', '<b class="text-brand-500">_______</b>')}</p>
         <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Use the correct form of: <b class="text-brand-500">${it.base}</b></p>
         ${uoeInput('Type the word…')}
+      </div>`;
+  } else if (uoe.mode === 'reading') {
+    const p = uoe.passage;
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <div class="mb-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800 max-h-64 overflow-y-auto">
+          <p class="font-extrabold text-sm mb-1">${p.title}</p>
+          <p class="text-[10px] uppercase tracking-widest text-slate-400 mb-2">Level ${p.level}</p>
+          ${p.text.split('\n\n').map(par =>
+            `<p class="text-sm leading-relaxed mb-2">${par}</p>`).join('')}
+        </div>
+        <p class="text-sm font-bold mb-3">${it.q}</p>
+        <div class="space-y-2.5">
+          ${it.options.map((opt, i) => `
+            <button data-opt="${i}" onclick="uoeReadingAnswer(${i})"
+              class="opt-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm font-medium hover:border-brand-500 dark:hover:border-brand-500 transition-colors">
+              ${opt}
+            </button>`).join('')}
+        </div>
       </div>`;
   } else if (uoe.mode === 'listen') {
     box.innerHTML = `
@@ -1340,6 +1378,24 @@ function uoeCheck() {
       ${isOwn ? 'Next phrase →' : 'Continue →'}
     </button>`;
   document.getElementById('uoeAnswer').disabled = true;
+}
+
+function uoeReadingAnswer(i) {
+  if (uoe.checked) return;
+  uoe.checked = true;
+  const it = uoe.items[uoe.index];
+  if (i === it.correct) uoe.score++;
+
+  document.querySelectorAll('.opt-btn').forEach(btn => {
+    const idx = +btn.dataset.opt;
+    btn.disabled = true;
+    if (idx === it.correct) {
+      btn.className += ' !bg-emerald-100 dark:!bg-emerald-900/50 !border-emerald-500';
+    } else if (idx === i) {
+      btn.className += ' !bg-rose-100 dark:!bg-rose-900/40 !border-rose-500';
+    }
+  });
+  setTimeout(uoeNext, 1100);
 }
 
 function uoePlay() {

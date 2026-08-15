@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Clause 14",
+    "level": "B2",
+    "text": "The supplier was six weeks late. The client wanted to cancel and claim damages. Both sides believed the contract was on their side.\n\nIt came down to clause 14, four lines long, written two years earlier by somebody who had since left the company.\n\nThe clause said delivery delays caused by \"circumstances beyond reasonable control\" would not be treated as a breach of contract. The supplier argued this was force majeure: the factory in Turkey had closed for three weeks after a flood.\n\nThe client's legal counsel read it differently. The flood was real, but the supplier had known about the closure for eleven days before telling anyone. The contract also required written notice within 48 hours of any delay.\n\nThat second point decided it. The delay might have been excusable; the silence was not.\n\nThey settled out of court. The supplier gave a 20% credit against the next order and both sides amended the contract to define notice more clearly.\n\nThe lawyer's comment afterwards was worth more than her invoice. Most disputes, she said, are not about what went wrong. They are about who said nothing when it did.",
+    "questions": [
+      { "q": "What did the supplier argue?", "options": ["The flood was force majeure", "The contract was void", "The client owed them money", "The delay was only two weeks"], "correct": 0 },
+      { "q": "Which point decided the dispute?", "options": ["The supplier failed to give written notice in time", "The flood never actually happened", "Clause 14 was unclear", "The contract had expired"], "correct": 0 },
+      { "q": "How was the dispute resolved?", "options": ["They settled out of court", "A judge gave a verdict", "It went to arbitration", "The client sued successfully"], "correct": 0 },
+      { "q": "What was the lawyer's main point?", "options": ["Disputes often come from silence, not the original problem", "Contracts should always be longer", "Force majeure clauses never work", "Clients usually win in court"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "The NDA that arrived too late",
+    "level": "B1",
+    "text": "A small software company met a potential partner in March. Over two friendly meetings they explained how their pricing model worked, including the part nobody else in the market had copied.\n\nThe non-disclosure agreement was signed in May.\n\nBy September the partner had launched a competing product using a very similar model. The software company asked its legal counsel whether it could sue.\n\nThe answer was uncomfortable. The NDA was properly drafted and binding, but it only covered information shared after the signature date. Everything explained in March sat outside it.\n\nThere was a second problem. The pricing model was a business idea, not intellectual property. It wasn't a patent, a trademark or copyright material. Ideas themselves are rarely protected; the specific expression of them sometimes is.\n\nThe company changed one habit after that. Nothing commercially sensitive is discussed until an NDA is signed, even in a friendly first meeting, and the agreement now includes information shared before the signature date.\n\nIt cost them a market advantage to learn a rule that fits in one sentence: sign first, talk second.",
+    "questions": [
+      { "q": "Why couldn't the NDA help them?", "options": ["It only covered information shared after signing", "It was never signed", "It was badly written", "It had already expired"], "correct": 0 },
+      { "q": "Why was the pricing model not protected?", "options": ["Ideas alone are rarely intellectual property", "It was published publicly", "The patent had expired", "It belonged to the partner"], "correct": 0 },
+      { "q": "What did the company change afterwards?", "options": ["No sensitive talk before an NDA is signed", "They stopped meeting partners", "They registered a trademark", "They moved to a different market"], "correct": 0 },
+      { "q": "What does \"binding\" mean in the text?", "options": ["Legally forcing both sides to comply", "Written in complex language", "Valid for one year only", "Signed by a lawyer"], "correct": 0 }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Room 402",
+    "level": "B1",
+    "text": "It was the second Saturday in August and the hotel was fully booked. At 9 pm a couple arrived with a valid reservation and a booking reference. The system showed no room.\n\nThe hotel was overbooked by one. It happens, usually because of a no-show that never happens.\n\nThe receptionist, Petya, had two options. Explain the policy, or solve the problem. She did the second thing first and the explaining afterwards.\n\nShe called a partner hotel four minutes away, booked their last available room, and paid for the taxi. Then she came back to the desk and told the couple exactly what had happened, without hiding behind the word \"system\".\n\nShe also promised them room 402 for the following night, a sea view, at the rate they had originally booked.\n\nThey were not happy. They were, however, treated like adults.\n\nThe next morning they moved in, stayed four more nights, and left a review that mentioned Petya by name. The line the manager remembered was this one: they told us the truth before we had to ask twice.\n\nOverbooking costs a hotel money. Pretending it didn't happen costs more.",
+    "questions": [
+      { "q": "Why was there no room for the couple?", "options": ["The hotel was overbooked", "They arrived on the wrong date", "Their booking was cancelled", "The room was damaged"], "correct": 0 },
+      { "q": "What did Petya do first?", "options": ["Found and paid for another hotel and taxi", "Explained the hotel's policy", "Called her manager", "Offered a full refund"], "correct": 0 },
+      { "q": "What did she promise for the following night?", "options": ["Room 402 with a sea view at the original rate", "A free week's stay", "A full refund plus compensation", "A room at the partner hotel"], "correct": 0 },
+      { "q": "What impressed the guests most?", "options": ["Being told the truth without having to ask", "The free taxi", "The sea view", "The speed of check-in"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "140 covers and one allergy",
+    "level": "B2",
+    "text": "Saturday night, 140 covers booked, and the restaurant was two waiters short because of illness.\n\nAt 7:40 a table of six was seated. One guest mentioned a nut allergy while ordering drinks. The waiter wrote it on the ticket in red, as the rule requires, and repeated it to the kitchen out loud.\n\nAt 8:20 the pastry chef, who had come in on his day off to help, plated a dessert with a hazelnut crumb. It was the standard plating. He had not seen the ticket, because desserts were being fired from a printer at the other end of the pass.\n\nThe head chef caught it as the plate left the pass. Nobody was harmed.\n\nThe restaurant changed one thing the following week. Allergy tickets are now printed on both stations and a second person reads them back before service. It adds about eight seconds per table.\n\nThe owner explained it simply at the staff meeting. On the busiest night of the year, with the best people in the building, the system nearly failed. That is exactly when a system has to work, and eight seconds is a cheap price.",
+    "questions": [
+      { "q": "How was the allergy recorded?", "options": ["Written in red on the ticket and said aloud to the kitchen", "Entered into the booking system only", "Told to the manager", "Marked on the menu"], "correct": 0 },
+      { "q": "Why did the pastry chef miss the allergy?", "options": ["Dessert tickets printed at a different station", "He was not told about the table", "He could not read the handwriting", "He was working too quickly"], "correct": 0 },
+      { "q": "What was the outcome that night?", "options": ["The head chef stopped the plate; nobody was harmed", "The guest became ill", "The table was refunded", "The restaurant closed early"], "correct": 0 },
+      { "q": "What is the owner's main argument?", "options": ["Systems must work on the hardest nights, so a small cost is worth it", "The kitchen needs more staff", "Allergy rules are too complicated", "Desserts should be simplified"], "correct": 0 }
+    ]
+  }
+]

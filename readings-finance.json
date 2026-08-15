@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Profitable on paper",
+    "level": "B2",
+    "text": "The workshop had its best year ever. Revenue was up 22%, the profit margin held at 19%, and the accountant confirmed the company was firmly in the black.\n\nIn November the owner nearly couldn't pay the salaries.\n\nThe problem wasn't profit. It was cash flow. Three corporate clients had payment terms of 60 days, and two of them treated 60 as a suggestion. Accounts receivable sat at 34,000 euro, most of it overdue, while the fixed costs went out on time every month.\n\nHer accountant suggested three changes. First, ask for a 30% upfront payment from every new corporate client. Second, chase invoices on day 31, not day 61, with a short polite email. Third, keep one month of overheads in a separate account and never touch it.\n\nThe first change met some resistance. Two clients pushed back, and one tried to bargain her down on the rate instead. She held the terms and lost nobody.\n\nBy March, accounts receivable had dropped to 11,000 euro. The business earned roughly the same, but it stopped feeling dangerous.\n\nProfit is an opinion, her accountant said. Cash is a fact.",
+    "questions": [
+      { "q": "What was the company's real problem?", "options": ["Cash flow, not profitability", "Falling revenue", "High fixed costs", "Too few clients"], "correct": 0 },
+      { "q": "What does \"accounts receivable\" mean here?", "options": ["Money clients owed the business", "Money the business owed suppliers", "The company's savings", "Money spent on salaries"], "correct": 0 },
+      { "q": "What happened when she asked for upfront payments?", "options": ["Some pushed back but nobody left", "Half the clients cancelled", "Every client refused", "The bank raised her interest rate"], "correct": 0 },
+      { "q": "What does \"Profit is an opinion, cash is a fact\" suggest?", "options": ["Reported profit can hide real money problems", "Profit is more important than cash", "Accountants often make mistakes", "Cash should be reinvested quickly"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "The quote that was too low",
+    "level": "B1",
+    "text": "A translation agency was asked to quote for a large project: 400 pages, delivered in six weeks. The client mentioned twice that budget was tight.\n\nThe project manager ran the numbers quickly and sent a quote 15% below their normal rate. The client accepted the same day, which should have been the first warning.\n\nThe work took longer than planned. Two translators were needed instead of one, and the review stage doubled. By week four the project was over budget and the agency was working evenings to stay on schedule.\n\nWhen the invoice went out, the agency had made a 3% margin. Their break-even point on projects like this is 12%.\n\nThe director looked at it afterwards and found the mistake. Nobody had asked what the pages actually contained. Half of them were technical drawings with dense labels, which take three times longer than normal text.\n\nThe new rule is simple. No quote goes out without seeing a sample of the real material, and no discount is offered before the scope is clear.\n\nCutting corners on the quote cost more than the discount ever saved.",
+    "questions": [
+      { "q": "What was the first warning sign?", "options": ["The client accepted the quote immediately", "The client asked for a discount", "The deadline was six weeks", "The project had 400 pages"], "correct": 0 },
+      { "q": "Why did the project cost more than expected?", "options": ["The material was technical and slower to translate", "The translators worked too slowly", "The client changed the deadline", "The software licence expired"], "correct": 0 },
+      { "q": "What is the agency's break-even point on such projects?", "options": ["12%", "3%", "15%", "22%"], "correct": 0 },
+      { "q": "What rule did the agency introduce?", "options": ["See a sample before quoting", "Never give discounts to new clients", "Always use two translators", "Charge by the hour instead"], "correct": 0 }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The restructure nobody explained",
+    "level": "B2",
+    "text": "The email arrived on a Friday afternoon: three departments merged into two, effective the first of next month. It was 90 words long and used the word \"synergies\" twice.\n\nBy Monday, four people had updated their profiles on job sites.\n\nThe problem was not the restructure. Most staff agreed the old org chart made little sense, and two teams had been doing overlapping work for years. The problem was that nobody explained what it meant for individual jobs.\n\nThe new head of operations noticed the silence and did something unusual. She held a town hall with no slides and answered questions for 50 minutes, including the uncomfortable ones. Would headcount fall? Yes, by six roles, all through natural departures, none forced. Would anyone's line manager change? Yes, eleven people, and each would hear directly before the end of the week.\n\nShe was not able to promise everything would be fine. She was able to say exactly what she knew and exactly what she didn't.\n\nTwo of the four job seekers stayed. When asked why, one said the answer was simple: for the first time in a year, somebody told him the truth in a room where he could ask a follow-up question.",
+    "questions": [
+      { "q": "What was the real problem with the restructure?", "options": ["Nobody explained what it meant for individual jobs", "The new structure made no sense", "It happened too slowly", "It cost too much money"], "correct": 0 },
+      { "q": "How would the headcount reduction happen?", "options": ["Through natural departures", "Through forced redundancies", "By moving staff abroad", "By cutting salaries instead"], "correct": 0 },
+      { "q": "What was unusual about the town hall?", "options": ["No slides and honest answers to hard questions", "It lasted only ten minutes", "Only managers were invited", "It was held online"], "correct": 0 },
+      { "q": "Why did one employee decide to stay?", "options": ["He was told the truth and could ask questions", "He received a pay rise", "His job title improved", "He was promised a promotion"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Walking away",
+    "level": "B2",
+    "text": "The negotiation had been running for five weeks. A large retail chain wanted English training for 120 staff across nine locations, and the contract was worth more than everything the school had earned that year.\n\nAt the fourth meeting, procurement made a counteroffer: the same programme at 38% below the quoted price, with payment 90 days after delivery.\n\nThe director asked for a day to think. That evening she wrote down two numbers: the price at which the project made sense, and the price below which it would quietly damage the business by taking teachers away from profitable work.\n\nThe counteroffer sat well below the second number.\n\nThe next morning she said no, politely and without a long explanation. She offered a smaller version instead: three locations, same rate, with an option to extend. Procurement said they would come back to her. They didn't, for six weeks.\n\nThen they did. The smaller version was approved, and by the following spring it had grown to seven locations at the original rate.\n\nHer leverage was never a clever argument. It was knowing her walk away price before she entered the room.",
+    "questions": [
+      { "q": "What did procurement propose at the fourth meeting?", "options": ["A 38% lower price with 90-day payment", "A longer contract at the same rate", "Training for fewer staff", "An immediate signature"], "correct": 0 },
+      { "q": "What two numbers did the director write down?", "options": ["The price that worked and the price that would harm the business", "Her costs and her profit", "The client's budget and her own", "Last year's revenue and this year's target"], "correct": 0 },
+      { "q": "What did she offer instead of accepting?", "options": ["A smaller version at the same rate", "The same programme at a lower rate", "A free trial period", "To end the negotiation permanently"], "correct": 0 },
+      { "q": "According to the text, where did her leverage come from?", "options": ["Knowing her walk away price in advance", "A clever argument in the meeting", "Support from another client", "The size of her company"], "correct": 0 }
+    ]
+  }
+]

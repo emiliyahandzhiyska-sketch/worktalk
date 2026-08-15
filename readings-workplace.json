@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The Monday that got away",
+    "level": "B1",
+    "text": "Ivan opened his laptop at 8:15 with a clear plan. Finish the client proposal, follow up on two invoices, and call it a day by six.\n\nAt 8:40 his manager sent a message: \"Quick heads up, the client moved the meeting to Wednesday.\" Two days earlier than planned. Ivan looked at the half-finished proposal and felt his stomach drop.\n\nHe decided to take the lead instead of panicking. He wrote to the designer: \"Can I run something by you? I need the cover page by tomorrow morning, not Thursday.\" She replied in four minutes: \"No problem, I have the bandwidth today.\"\n\nThen he did the harder thing. He emailed the client and asked one direct question: which three sections mattered most to them. The answer came back within the hour, and two of the sections he had been polishing were not on the list.\n\nBy five o'clock the proposal was done, shorter than planned and better than the original. The invoices, though, were still sitting there. Ivan added them to Tuesday and closed the laptop.\n\nHe didn't finish everything. He finished the thing that moved the needle.",
+    "questions": [
+      { "q": "Why did Ivan's plan change?", "options": ["The client moved the meeting earlier", "His manager gave him a new project", "The designer was unavailable", "He lost the proposal file"], "correct": 0 },
+      { "q": "What did the designer mean by \"I have the bandwidth today\"?", "options": ["She had time and energy to help", "She needed a faster internet connection", "She was too busy to help", "She wanted to work from home"], "correct": 0 },
+      { "q": "What was the result of Ivan's email to the client?", "options": ["He learned two sections weren't needed", "The client cancelled the meeting", "The client asked for more sections", "The client complained about the delay"], "correct": 0 },
+      { "q": "What does the last line suggest about Ivan's day?", "options": ["He prioritised the work that mattered most", "He wasted the whole day", "He finished every task on his list", "He asked his manager for help"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "The meeting nobody needed",
+    "level": "B1",
+    "text": "Every Thursday at ten, eleven people joined a call that lasted an hour. Nobody had put it in the calendar recently. It had simply always been there.\n\nThe new team lead, Dana, watched it twice and noticed something. In sixty minutes, roughly nine of them were useful. The rest was people repeating updates that were already written down.\n\nAt the third meeting she brought it up. \"I want to be on the same page before I change anything,\" she said. \"Does this meeting help you?\" Silence, then one person spoke up: \"Honestly, I get sidetracked for the rest of the morning after it.\"\n\nDana didn't cancel the meeting. She cut it to fifteen minutes, made everyone send written updates the day before, and kept the call for one thing only: decisions that were up in the air.\n\nThe first short version felt strange. The second one ran nine minutes. By the fourth week, two people said it was the only meeting they didn't dread.\n\nDana later said the change was easy. Asking the question in front of everyone was the hard part.",
+    "questions": [
+      { "q": "What did Dana notice about the meeting?", "options": ["Most of the hour was not useful", "Too few people attended", "It was scheduled at a bad time", "Nobody prepared for it"], "correct": 0 },
+      { "q": "What did the team member mean by \"I get sidetracked\"?", "options": ["He loses focus afterwards", "He forgets the meeting", "He enjoys the discussion", "He arrives late"], "correct": 0 },
+      { "q": "What change did Dana make?", "options": ["Shortened it and moved updates to writing", "Cancelled the meeting completely", "Invited more people to join", "Moved it to a different day"], "correct": 0 },
+      { "q": "According to Dana, what was the difficult part?", "options": ["Asking the question openly", "Writing the new agenda", "Convincing her manager", "Learning the new software"], "correct": 0 }
+    ]
+  }
+]

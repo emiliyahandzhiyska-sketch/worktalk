@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The bracket that cost 40,000 euro",
+    "level": "B2",
+    "text": "The line stopped four times in one week. Each time, the same sensor reported a fault, and each time the maintenance team replaced it. Downtime cost roughly 900 euro an hour.\n\nAfter the fourth failure, an engineer refused to fit a fifth sensor. He shut the line down properly, locked it out, and spent two hours looking at what was around the sensor rather than at the sensor itself.\n\nHe found a mounting bracket with two bolts, one of them loose. Every time the machine ran above a certain speed, the bracket vibrated, the sensor moved about a millimetre out of alignment, and the reading went out of tolerance.\n\nThe sensors had never been faulty. They had been reporting a real problem accurately.\n\nThe fix took eleven minutes and one bolt. The four replaced sensors, the lost production and the overtime came to just under 40,000 euro.\n\nThe plant changed its procedure afterwards. Any fault that repeats three times triggers a root cause review before another part is replaced.\n\nThe engineer's note in the log was one line: the machine was not lying to us.",
+    "questions": [
+      { "q": "What was the actual cause of the faults?", "options": ["A loose bolt on a mounting bracket", "A defective batch of sensors", "Incorrect software settings", "Operator error"], "correct": 0 },
+      { "q": "Why did the sensor readings go out of tolerance?", "options": ["Vibration moved the sensor out of alignment", "The sensor overheated", "The cable was damaged", "The calibration had expired"], "correct": 0 },
+      { "q": "What procedure did the plant introduce?", "options": ["A root cause review after three repeats", "Weekly sensor replacement", "Slower machine speeds", "Daily calibration checks"], "correct": 0 },
+      { "q": "What does \"the machine was not lying to us\" mean?", "options": ["The readings were accurate; the diagnosis was wrong", "The sensors were faulty after all", "The operators reported it correctly", "The software needed an update"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Handover on the twelfth",
+    "level": "B1",
+    "text": "The contract said handover on the twelfth of June. On the eighth, the site had 63 items on the punch list, most of them small: sealant, paint, two door handles, a missing label on a valve.\n\nThe main contractor wanted to sign off anyway and finish the list afterwards. The client's engineer refused.\n\nHer reason was practical, not bureaucratic. Once a building is handed over, the people who fix small items are no longer on site every day. A punch list of 63 becomes a punch list of 40 within a month and then stays there for a year.\n\nShe offered a compromise. The subcontractors would stay through the weekend, the list would be cleared to fewer than ten items, and handover would move to the fifteenth. The client accepted the three-day delay in writing.\n\nBy Sunday evening the list was down to six. Handover happened on the fifteenth with the as-built drawings complete and every item documented.\n\nThe contractor complained about the weekend at the time. Eight months later, at the first maintenance review, the building had generated fewer defect reports than any other site that year.",
+    "questions": [
+      { "q": "Why did the engineer refuse to sign off?", "options": ["Small items rarely get fixed after handover", "The building was unsafe", "The contract had changed", "The drawings were missing"], "correct": 0 },
+      { "q": "What compromise was agreed?", "options": ["Work through the weekend and delay handover to the 15th", "Sign off and fix items later", "Cancel the contract", "Reduce the contractor's payment"], "correct": 0 },
+      { "q": "How many punch list items remained by Sunday evening?", "options": ["Six", "Sixty-three", "Forty", "Ten"], "correct": 0 },
+      { "q": "What happened eight months later?", "options": ["The building had fewer defect reports than other sites", "The contractor refused further work", "New faults appeared", "The client asked for compensation"], "correct": 0 }
+    ]
+  }
+]

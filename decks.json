@@ -5,7 +5,8 @@
     "icon": "💼",
     "tagline": "Meetings, email, deadlines, office life.",
     "words": "words.json",
-    "exercises": "exercises.json"
+    "exercises": "exercises.json",
+    "readings": "readings-workplace.json"
   },
   {
     "id": "marketing",
@@ -13,7 +14,8 @@
     "icon": "📣",
     "tagline": "Campaigns, funnels, metrics, client talk.",
     "words": "words-marketing.json",
-    "exercises": "exercises-marketing.json"
+    "exercises": "exercises-marketing.json",
+    "readings": "readings-marketing.json"
   },
   {
     "id": "finance",
@@ -21,7 +23,8 @@
     "icon": "📊",
     "tagline": "Cash flow, invoices, budgets, reporting.",
     "words": "words-finance.json",
-    "exercises": "exercises-finance.json"
+    "exercises": "exercises-finance.json",
+    "readings": "readings-finance.json"
   },
   {
     "id": "sport",
@@ -29,7 +32,8 @@
     "icon": "⚽",
     "tagline": "Training, matches, results, staying fit.",
     "words": "words-sport.json",
-    "exercises": "exercises-sport.json"
+    "exercises": "exercises-sport.json",
+    "readings": "readings-sport.json"
   },
   {
     "id": "business",
@@ -37,7 +41,8 @@
     "icon": "🏢",
     "tagline": "Strategy, HR, negotiation, corporate life.",
     "words": "words-business.json",
-    "exercises": "exercises-business.json"
+    "exercises": "exercises-business.json",
+    "readings": "readings-business.json"
   },
   {
     "id": "legal",
@@ -45,7 +50,8 @@
     "icon": "⚖️",
     "tagline": "Contracts, compliance, disputes, company law.",
     "words": "words-legal.json",
-    "exercises": "exercises-legal.json"
+    "exercises": "exercises-legal.json",
+    "readings": "readings-legal.json"
   },
   {
     "id": "healthcare",
@@ -53,7 +59,8 @@
     "icon": "🩺",
     "tagline": "Patients, treatment, hospital and admin.",
     "words": "words-healthcare.json",
-    "exercises": "exercises-healthcare.json"
+    "exercises": "exercises-healthcare.json",
+    "readings": "readings-healthcare.json"
   },
   {
     "id": "technical",
@@ -61,7 +68,8 @@
     "icon": "⚙️",
     "tagline": "Specs, production, faults, safety, delivery.",
     "words": "words-technical.json",
-    "exercises": "exercises-technical.json"
+    "exercises": "exercises-technical.json",
+    "readings": "readings-technical.json"
   },
   {
     "id": "hospitality",
@@ -69,6 +77,7 @@
     "icon": "🏨",
     "tagline": "Front desk, restaurant, guests, tours.",
     "words": "words-hospitality.json",
-    "exercises": "exercises-hospitality.json"
+    "exercises": "exercises-hospitality.json",
+    "readings": "readings-hospitality.json"
   }
 ]

@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Six weeks off",
+    "level": "B1",
+    "text": "Marina had never missed a training session in two years. Then, in the last ten minutes of an ordinary Tuesday game, she sprained her ankle.\n\nThe physiotherapist was direct. Six weeks, no running. She could swim after week two, and lift weights with her upper body from the start.\n\nThe first ten days were the worst. Not the pain, the boredom. She watched her team play twice from the side and left early both times.\n\nWhat changed her mood was a small decision. Instead of counting the days until she could run, she set a different target: get stronger in the parts of her body she had ignored for years. She trained her shoulders and back three times a week and kept a note of every session.\n\nBy week five she was swimming 1,500 metres without stopping, something she couldn't do before the injury.\n\nShe came back in October and ran a personal best in her first 10K two months later. Her coach said the rest had done what training couldn't.\n\nMarina put it differently. She said the injury taught her that a rest day is part of the plan, not a break from it.",
+    "questions": [
+      { "q": "What injury did Marina have?", "options": ["A sprained ankle", "A pulled muscle", "A broken arm", "Back pain"], "correct": 0 },
+      { "q": "What did she find hardest at first?", "options": ["The boredom of not training", "The pain in her ankle", "The cost of physiotherapy", "Her coach's reaction"], "correct": 0 },
+      { "q": "What did she do instead of waiting to run again?", "options": ["Trained the parts of her body she had ignored", "Stopped all exercise completely", "Changed to a different sport", "Started coaching younger players"], "correct": 0 },
+      { "q": "What did Marina learn from the injury?", "options": ["Rest is part of training, not a break from it", "Running is bad for the ankles", "Swimming is better than running", "Injuries are always avoidable"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "The underdogs",
+    "level": "B1",
+    "text": "Before the final, every newspaper picked the same winner. The favourites had beaten our team twice that season, once 4-0.\n\nThe coach didn't argue with any of it. In the team talk he said one sentence: \"They have to win. We only have to play.\"\n\nWe were the underdogs and everyone knew it, including us. The strange thing is that it helped. There was no pressure in the changing room, only a kind of curiosity.\n\nThey scored first, after eleven minutes. At half-time we were 1-0 down and, honestly, lucky it wasn't three.\n\nThe second half was different. Their captain was sent off for a foul near the halfway line, and suddenly the game had a shape we could use. We equalised in the 70th minute and the stadium, mostly their supporters, went quiet.\n\nIt went to extra time. Nobody scored. Then penalties, which are less about skill than about who can breathe.\n\nWe won 4-3. Our goalkeeper, who had said almost nothing all season, saved two.\n\nHome advantage, better players, better league position. None of it mattered for one afternoon.",
+    "questions": [
+      { "q": "Why was the team called the underdogs?", "options": ["They were expected to lose", "They played away from home", "They had a new coach", "They had fewer supporters"], "correct": 0 },
+      { "q": "What changed the shape of the game?", "options": ["The opposing captain was sent off", "The referee gave a penalty", "Their goalkeeper was injured", "The weather changed"], "correct": 0 },
+      { "q": "How was the match finally decided?", "options": ["On penalties", "In extra time", "In the 70th minute", "By the referee"], "correct": 0 },
+      { "q": "What point does the last line make?", "options": ["Advantages don't guarantee a result", "Home advantage always matters", "The best team always wins", "Penalties are unfair"], "correct": 0 }
+    ]
+  }
+]

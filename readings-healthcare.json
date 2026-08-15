@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Two minutes at the bedside",
+    "level": "B1",
+    "text": "Mr Kolev was 74 and had been admitted for a routine operation on his hip. Everything went well. The surgery took ninety minutes, there were no complications, and he was due to be discharged on the fourth day.\n\nOn the second morning a junior doctor noticed he had stopped eating. His notes said nothing unusual. His blood pressure was normal, the wound was clean, and no test showed a problem.\n\nShe sat down for two minutes and asked him why.\n\nHe told her he was afraid that if he ate, he would need the toilet, and he couldn't reach it alone, and he didn't want to trouble the nurses. He had decided, quietly, to eat as little as possible until he went home.\n\nThe solution took one sentence to a nurse and a call bell moved 30 centimetres closer to his hand.\n\nHe ate lunch that day. He was discharged on time and made a full recovery.\n\nHer consultant used the story in teaching for years afterwards. Every test they ran was normal, he would say. The information they needed was not in any of them.",
+    "questions": [
+      { "q": "Why had Mr Kolev stopped eating?", "options": ["He was afraid of needing the toilet and troubling the nurses", "He had lost his appetite after surgery", "The food made him feel sick", "He was told not to eat before a test"], "correct": 0 },
+      { "q": "What did the tests show?", "options": ["Nothing abnormal", "A serious infection", "Low blood pressure", "A problem with the wound"], "correct": 0 },
+      { "q": "How was the problem solved?", "options": ["The call bell was moved within his reach", "He was given medication", "He stayed in hospital longer", "He was moved to another ward"], "correct": 0 },
+      { "q": "What is the main lesson of the story?", "options": ["Talking to the patient can reveal what tests cannot", "Routine operations are always safe", "Older patients need more tests", "Junior doctors need more training"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "The waiting list",
+    "level": "B2",
+    "text": "The clinic had a nine-month waiting list for one particular procedure. Patients complained, staff apologised, and everyone assumed the answer was more doctors or more money.\n\nA new manager spent three weeks looking at the data instead. What she found surprised the team.\n\nAround 18% of appointments were no-shows. Another 12% were patients who arrived without the referral letter their GP should have sent, so they were turned away and booked again months later. Together, almost a third of the capacity was being lost before anyone touched a patient.\n\nShe made three changes. A text message two days before each appointment. A simple check when booking, confirming the referral was already in the system. And a short list of patients who agreed to come at four hours' notice if a slot opened.\n\nNothing new was bought and nobody was hired.\n\nSix months later the waiting list was five months, not nine. No-shows had dropped to 7%.\n\nThe consultant who had asked for two extra staff put it honestly at the review meeting. He said he had been treating a process problem as a resource problem for three years.",
+    "questions": [
+      { "q": "What was causing most of the lost capacity?", "options": ["No-shows and missing referrals", "Staff shortages", "Equipment breakdowns", "Long procedure times"], "correct": 0 },
+      { "q": "What is a \"no-show\" in this text?", "options": ["A patient who books but doesn't attend", "A patient without insurance", "A cancelled operation", "A doctor who is absent"], "correct": 0 },
+      { "q": "What resources were added to fix the problem?", "options": ["None; the process was changed instead", "Two extra consultants", "A new building", "More equipment"], "correct": 0 },
+      { "q": "What did the consultant admit?", "options": ["He had mistaken a process problem for a resource problem", "He had been right all along", "The data was incorrect", "The changes wouldn't last"], "correct": 0 }
+    ]
+  }
+]
