@@ -1,0 +1,668 @@
+{
+  "workplace": [
+    {
+      "title": "The deadline moved",
+      "level": "B1",
+      "setting": "Ivan tells his colleague Dana the client meeting is two days earlier.",
+      "speakers": { "A": "Ivan", "B": "Dana" },
+      "lines": [
+        { "s": "A", "t": "Dana, quick heads up. The client moved the meeting to Wednesday." },
+        { "s": "B", "t": "Wednesday? That's two days earlier. Where are we with the proposal?" },
+        { "s": "A", "t": "About half done. I'd rather cut the scope than send something weak." },
+        { "s": "B", "t": "Agreed. Which sections actually matter to them?" },
+        { "s": "A", "t": "That's what I asked them. They said pricing, timeline and the team." },
+        { "s": "B", "t": "So the market analysis can go. That saves you a day." },
+        { "s": "A", "t": "Can I run the new structure by you before I write it?" },
+        { "s": "B", "t": "Send it over. I have the bandwidth this afternoon." },
+        { "s": "A", "t": "Thanks. I'll keep you posted if anything changes." },
+        { "s": "B", "t": "Do that. And let's not touch it after six, it's already been a long week." }
+      ]
+    },
+    {
+      "title": "Too much on my plate",
+      "level": "B1",
+      "setting": "A manager asks someone to take on another project.",
+      "speakers": { "A": "Manager", "B": "Elena" },
+      "lines": [
+        { "s": "A", "t": "Elena, could you take on the onboarding project as well?" },
+        { "s": "B", "t": "I'd like to, but I have too much on my plate this month." },
+        { "s": "A", "t": "What's taking most of your time?" },
+        { "s": "B", "t": "The two client reports and covering for Stefan while he's away." },
+        { "s": "A", "t": "Right. When does Stefan get back?" },
+        { "s": "B", "t": "The fifteenth. After that I'd have the bandwidth." },
+        { "s": "A", "t": "Let's pencil it in for the sixteenth, then." },
+        { "s": "B", "t": "That works. Can we go over the scope before it starts?" },
+        { "s": "A", "t": "Of course. I'll set up a short call for Friday." },
+        { "s": "B", "t": "Perfect. Then I can hit the ground running." }
+      ]
+    }
+  ],
+
+  "business": [
+    {
+      "title": "Getting buy-in",
+      "level": "B2",
+      "setting": "Two managers discuss a restructure before presenting it.",
+      "speakers": { "A": "Petar", "B": "Nadia" },
+      "lines": [
+        { "s": "A", "t": "Before we take this to the board, we need buy-in from the regional heads." },
+        { "s": "B", "t": "All four of them? Two will push back hard." },
+        { "s": "A", "t": "Probably. What's their main objection?" },
+        { "s": "B", "t": "Headcount. They think restructuring is a word for cutting jobs." },
+        { "s": "A", "t": "It isn't, and we should say that in plain language at the town hall." },
+        { "s": "B", "t": "Then we need numbers. How many roles actually change?" },
+        { "s": "A", "t": "Eleven people get a new line manager. Nobody is made redundant." },
+        { "s": "B", "t": "Say exactly that. Vague answers are what start the rumours." },
+        { "s": "A", "t": "Agreed. I'll put it on one slide and take questions for as long as they last." },
+        { "s": "B", "t": "Good. And get sign-off from HR before Thursday." }
+      ]
+    },
+    {
+      "title": "The counteroffer",
+      "level": "B2",
+      "setting": "A supplier responds to a client's much lower offer.",
+      "speakers": { "A": "Client", "B": "Supplier" },
+      "lines": [
+        { "s": "A", "t": "We've reviewed your quote. Our counteroffer is 38% lower." },
+        { "s": "B", "t": "That's a big gap. Can I ask what's driving the number?" },
+        { "s": "A", "t": "Procurement has a fixed budget for this category." },
+        { "s": "B", "t": "Understood. At that price I'd be taking teachers off profitable work." },
+        { "s": "A", "t": "So it's a no?" },
+        { "s": "B", "t": "It's a different yes. Three locations instead of nine, at our rate." },
+        { "s": "A", "t": "A pilot, effectively." },
+        { "s": "B", "t": "Exactly. With an option to extend if the results hold." },
+        { "s": "A", "t": "I'll take that back to the team. It might get through faster, actually." },
+        { "s": "B", "t": "Take your time. The offer stands until the end of the quarter." }
+      ]
+    }
+  ],
+
+  "sales": [
+    {
+      "title": "It's too expensive",
+      "level": "B2",
+      "setting": "A salesperson meets a price objection on the fourth call.",
+      "speakers": { "A": "Client", "B": "Kalin" },
+      "lines": [
+        { "s": "A", "t": "We like the programme, but honestly, it's too expensive." },
+        { "s": "B", "t": "Too expensive compared to what?" },
+        { "s": "A", "t": "Compared to doing nothing, I suppose. We tried training two years ago." },
+        { "s": "B", "t": "And what happened?" },
+        { "s": "A", "t": "People stopped attending after three weeks. We paid for the whole thing." },
+        { "s": "B", "t": "So the real question isn't price. It's whether it will happen this time." },
+        { "s": "A", "t": "That's fair." },
+        { "s": "B", "t": "Then let's start with one department, and tie the rest to attendance." },
+        { "s": "A", "t": "Meaning if attendance drops, we stop?" },
+        { "s": "B", "t": "No penalty. If it works, we continue. Would that be easier to approve?" },
+        { "s": "A", "t": "Considerably. Send it that way and I'll walk it through myself." }
+      ]
+    },
+    {
+      "title": "Qualifying the lead",
+      "level": "B1",
+      "setting": "A first call with a company that downloaded a guide.",
+      "speakers": { "A": "Salesperson", "B": "HR contact" },
+      "lines": [
+        { "s": "A", "t": "Thanks for making time. You downloaded our assessment guide last week." },
+        { "s": "B", "t": "Yes, I was curious. We have people who struggle on calls in English." },
+        { "s": "A", "t": "How many people, roughly?" },
+        { "s": "B", "t": "Maybe twenty in customer service." },
+        { "s": "A", "t": "And is there a budget for training this year?" },
+        { "s": "B", "t": "There's a training budget, but I don't control it." },
+        { "s": "A", "t": "Who does?" },
+        { "s": "B", "t": "The operations director. She signs off anything over five thousand." },
+        { "s": "A", "t": "Would it help if I prepared a short summary you could forward to her?" },
+        { "s": "B", "t": "That would help a lot. One page, if possible." },
+        { "s": "A", "t": "One page it is. I'll send it today and follow up on Thursday." }
+      ]
+    }
+  ],
+
+  "marketing": [
+    {
+      "title": "Why the ad failed",
+      "level": "B2",
+      "setting": "Reviewing a campaign that got clicks but no leads.",
+      "speakers": { "A": "Director", "B": "Marketer" },
+      "lines": [
+        { "s": "A", "t": "Fifty thousand impressions and four leads. What went wrong?" },
+        { "s": "B", "t": "The click-through rate was fine. The landing page lost them." },
+        { "s": "A", "t": "What's on it?" },
+        { "s": "B", "t": "Our history, our team, three paragraphs about quality." },
+        { "s": "A", "t": "And the call to action?" },
+        { "s": "B", "t": "At the bottom. It says 'Learn more', which asks for nothing." },
+        { "s": "A", "t": "So the ad promised a solution and the page talked about us." },
+        { "s": "B", "t": "Exactly. I'd rewrite it around one pain point and one action." },
+        { "s": "A", "t": "Do that, and let's A/B test two headlines before we spend more." },
+        { "s": "B", "t": "Agreed. Same budget, two weeks, then we compare conversion rates." }
+      ]
+    },
+    {
+      "title": "Planning the content calendar",
+      "level": "B1",
+      "setting": "Two colleagues plan next month's posts.",
+      "speakers": { "A": "Vesela", "B": "Marto" },
+      "lines": [
+        { "s": "A", "t": "We need the content calendar for October by Friday." },
+        { "s": "B", "t": "How many posts a week are we doing now?" },
+        { "s": "A", "t": "Three. Two useful, one behind the scenes." },
+        { "s": "B", "t": "The behind the scenes ones get the most engagement, by far." },
+        { "s": "A", "t": "Then let's make it two of those and one offer." },
+        { "s": "B", "t": "What about the lead magnet? It's been the same PDF since spring." },
+        { "s": "A", "t": "Good point. A fresh one would give us something to talk about." },
+        { "s": "B", "t": "I'll draft it. Something short, ten email templates maybe." },
+        { "s": "A", "t": "Perfect. That's evergreen content, we can use it all year." },
+        { "s": "B", "t": "I'll have a draft by Wednesday so you can review it." }
+      ]
+    }
+  ],
+
+  "customerservice": [
+    {
+      "title": "The angry caller",
+      "level": "B1",
+      "setting": "A customer has been transferred twice and is losing patience.",
+      "speakers": { "A": "Customer", "B": "Vesela" },
+      "lines": [
+        { "s": "A", "t": "This is the third time I've explained this. Nobody has called me back." },
+        { "s": "B", "t": "You've told this story three times already, and that's our fault, not yours." },
+        { "s": "A", "t": "Well. Thank you for saying that." },
+        { "s": "B", "t": "Let me take ownership of it now. Could you give me your order number?" },
+        { "s": "A", "t": "It's WT four four nine one." },
+        { "s": "B", "t": "Thank you. I can see it. The delivery is four days late, with no update sent." },
+        { "s": "A", "t": "So when will it actually arrive?" },
+        { "s": "B", "t": "Thursday is realistic. I could say Wednesday, but I'd rather be honest." },
+        { "s": "A", "t": "I appreciate that." },
+        { "s": "B", "t": "I'll send the tracking number now, and I'll call you myself if anything changes." },
+        { "s": "A", "t": "That's all I wanted from the start, really." }
+      ]
+    },
+    {
+      "title": "A refund request",
+      "level": "B1",
+      "setting": "A customer wants money back outside the returns policy.",
+      "speakers": { "A": "Customer", "B": "Agent" },
+      "lines": [
+        { "s": "A", "t": "I'd like a refund. The course wasn't what I expected." },
+        { "s": "B", "t": "I'm sorry to hear that. May I ask what was different?" },
+        { "s": "A", "t": "I thought it was one to one. It's a group of eight." },
+        { "s": "B", "t": "I understand. Could I check when you enrolled?" },
+        { "s": "A", "t": "About six weeks ago." },
+        { "s": "B", "t": "Our returns policy covers thirty days, so a full refund isn't possible." },
+        { "s": "A", "t": "That's disappointing." },
+        { "s": "B", "t": "It is. What I can do is move you to the one-to-one track and credit what you've used." },
+        { "s": "A", "t": "So I'd only pay the difference?" },
+        { "s": "B", "t": "Exactly. Shall I check availability for next month?" },
+        { "s": "A", "t": "Yes, please. That's a fair solution." }
+      ]
+    }
+  ],
+
+  "hr": [
+    {
+      "title": "The exit interview",
+      "level": "B2",
+      "setting": "An HR manager talks to someone who has handed in their notice.",
+      "speakers": { "A": "HR", "B": "Leaver" },
+      "lines": [
+        { "s": "A", "t": "Thanks for doing this. There's nothing to lose by being direct." },
+        { "s": "B", "t": "All right. It wasn't the money, if that's the first question." },
+        { "s": "A", "t": "It was, actually. So what was it?" },
+        { "s": "B", "t": "The shifts. They're published on Friday for the following Monday." },
+        { "s": "A", "t": "And that made life outside work impossible to plan." },
+        { "s": "B", "t": "I cancelled the same course three times. Eventually I stopped booking things." },
+        { "s": "A", "t": "Did you raise it with your line manager?" },
+        { "s": "B", "t": "Twice. I was told it's how the department works." },
+        { "s": "A", "t": "That's useful, and I'm sorry it took your resignation for me to hear it." },
+        { "s": "B", "t": "Fix it for the others and I'll consider that a good outcome." }
+      ]
+    },
+    {
+      "title": "Asking for a pay rise",
+      "level": "B2",
+      "setting": "An employee raises salary in a performance review.",
+      "speakers": { "A": "Employee", "B": "Manager" },
+      "lines": [
+        { "s": "A", "t": "Before we finish, I'd like to talk about my salary." },
+        { "s": "B", "t": "Go ahead." },
+        { "s": "A", "t": "I've taken on the reporting and I'm training two new starters." },
+        { "s": "B", "t": "Both true. What figure did you have in mind?" },
+        { "s": "A", "t": "Twelve per cent, which brings me in line with the market for this role." },
+        { "s": "B", "t": "That's above what I can approve alone. I'd need to build a case." },
+        { "s": "A", "t": "What would make that case stronger?" },
+        { "s": "B", "t": "Numbers. How much time the new reporting saves the team each month." },
+        { "s": "A", "t": "I can put that together this week." },
+        { "s": "B", "t": "Do that, and I'll take it to the head of department in the next cycle." }
+      ]
+    }
+  ],
+
+  "finance": [
+    {
+      "title": "Profitable but broke",
+      "level": "B2",
+      "setting": "An owner and her accountant look at why cash is tight.",
+      "speakers": { "A": "Owner", "B": "Accountant" },
+      "lines": [
+        { "s": "A", "t": "We had our best year, and I nearly couldn't pay salaries in November." },
+        { "s": "B", "t": "That's not a profit problem. That's cash flow." },
+        { "s": "A", "t": "The profit margin held at nineteen per cent." },
+        { "s": "B", "t": "And accounts receivable is thirty-four thousand, most of it overdue." },
+        { "s": "A", "t": "Two clients treat sixty days as a suggestion." },
+        { "s": "B", "t": "Then ask for thirty per cent upfront on every new contract." },
+        { "s": "A", "t": "Won't that scare people off?" },
+        { "s": "B", "t": "Some will push back. Almost nobody actually leaves." },
+        { "s": "A", "t": "And the ones already late?" },
+        { "s": "B", "t": "Chase on day thirty-one, not day sixty-one. A short polite email." }
+      ]
+    },
+    {
+      "title": "The quote was too low",
+      "level": "B1",
+      "setting": "Reviewing a project that came in under the break-even point.",
+      "speakers": { "A": "Director", "B": "Project manager" },
+      "lines": [
+        { "s": "A", "t": "We made a three per cent margin. Our break-even point is twelve." },
+        { "s": "B", "t": "I know. The pages took three times longer than normal text." },
+        { "s": "A", "t": "Did we see a sample before quoting?" },
+        { "s": "B", "t": "No. The client said the budget was tight, so I ran the numbers quickly." },
+        { "s": "A", "t": "And discounted fifteen per cent before knowing the scope." },
+        { "s": "B", "t": "Yes. They accepted the same day, which should have warned me." },
+        { "s": "A", "t": "It usually does. Let's make one rule from this." },
+        { "s": "B", "t": "No quote without a sample of the real material." },
+        { "s": "A", "t": "And no discount before the scope is clear." },
+        { "s": "B", "t": "Agreed. I'll put it in the template so nobody forgets." }
+      ]
+    }
+  ],
+
+  "accounting": [
+    {
+      "title": "Forty-eight euro",
+      "level": "B2",
+      "setting": "A supervisor asks a bookkeeper not to write off a small difference.",
+      "speakers": { "A": "Bookkeeper", "B": "Supervisor" },
+      "lines": [
+        { "s": "A", "t": "The bank reconciliation is out by forty-eight euro. Everything else matches." },
+        { "s": "B", "t": "What were you going to do with it?" },
+        { "s": "A", "t": "Post an adjustment. It's below materiality and it's Friday." },
+        { "s": "B", "t": "Give it thirty minutes first. Where does the forty-eight come from?" },
+        { "s": "A", "t": "A courier charge. It's in the purchase ledger and in office costs." },
+        { "s": "B", "t": "So it's a duplicate. Have you looked for others from that supplier?" },
+        { "s": "A", "t": "Not yet. Give me a moment... there are eleven more across the year." },
+        { "s": "B", "t": "Which means costs are overstated and profit is understated." },
+        { "s": "A", "t": "One thousand three hundred and forty euro in total." },
+        { "s": "B", "t": "Small differences are rarely small. Write a note for the file." }
+      ]
+    },
+    {
+      "title": "Why December looks bad",
+      "level": "B2",
+      "setting": "Explaining non-cash adjustments to a director.",
+      "speakers": { "A": "Director", "B": "Accountant" },
+      "lines": [
+        { "s": "A", "t": "November showed nine thousand profit. December shows almost nothing." },
+        { "s": "B", "t": "Three things landed in December, and none of them are cash." },
+        { "s": "A", "t": "Go on." },
+        { "s": "B", "t": "The annual insurance was posted in full instead of as a prepayment." },
+        { "s": "A", "t": "So it should be spread over twelve months." },
+        { "s": "B", "t": "Yes. Second, a provision for the disputed invoice." },
+        { "s": "A", "t": "And the third?" },
+        { "s": "B", "t": "Depreciation on the new equipment started. Seven hundred a month." },
+        { "s": "A", "t": "So the bank balance is actually fine." },
+        { "s": "B", "t": "Higher than November. Always ask what moved that isn't cash." }
+      ]
+    }
+  ],
+
+  "administration": [
+    {
+      "title": "Double-booked",
+      "level": "B1",
+      "setting": "Two meetings are scheduled in the same room at the same time.",
+      "speakers": { "A": "Assistant", "B": "Manager" },
+      "lines": [
+        { "s": "A", "t": "The big room is double-booked at eleven. Two teams, both confirmed." },
+        { "s": "B", "t": "Who booked first?" },
+        { "s": "A", "t": "The finance review, three weeks ago." },
+        { "s": "B", "t": "Then they keep it. Can the other one move?" },
+        { "s": "A", "t": "I can reschedule it to one o'clock or move it to the small room." },
+        { "s": "B", "t": "How many people?" },
+        { "s": "A", "t": "Nine, so the small room would be tight." },
+        { "s": "B", "t": "Reschedule, then. Ask them, don't tell them." },
+        { "s": "A", "t": "I'll offer one and three and let them choose." },
+        { "s": "B", "t": "Perfect. And block out the room properly this time." }
+      ]
+    },
+    {
+      "title": "Nine steps to five",
+      "level": "B1",
+      "setting": "An office coordinator proposes cutting an enrolment process.",
+      "speakers": { "A": "Coordinator", "B": "Manager" },
+      "lines": [
+        { "s": "A", "t": "Enrolling one student takes nine steps and about twenty-five minutes." },
+        { "s": "B", "t": "With two hundred a month, that's a lot of hours." },
+        { "s": "A", "t": "Eighty-three. I asked one question about each step." },
+        { "s": "B", "t": "Which was?" },
+        { "s": "A", "t": "Who reads this, and what happens if it doesn't exist?" },
+        { "s": "B", "t": "And?" },
+        { "s": "A", "t": "Two steps had no answer at all. The certificate template and the folder." },
+        { "s": "B", "t": "Nobody has opened those folders since 2023." },
+        { "s": "A", "t": "Exactly. And the spreadsheet and timetable can pull from one source." },
+        { "s": "B", "t": "Do it. Send me the new workflow on one page." }
+      ]
+    }
+  ],
+
+  "it": [
+    {
+      "title": "Roll back first",
+      "level": "B2",
+      "setting": "A release breaks saved settings four minutes after going live.",
+      "speakers": { "A": "Support", "B": "Engineer" },
+      "lines": [
+        { "s": "A", "t": "Nine emails in four minutes. People log in and their settings are empty." },
+        { "s": "B", "t": "Rolling back now. I'll look at the cause afterwards." },
+        { "s": "A", "t": "Don't you want to find the bug first?" },
+        { "s": "B", "t": "Not while customers are affected. Restore service, then investigate." },
+        { "s": "A", "t": "How long will the roll back take?" },
+        { "s": "B", "t": "About ten minutes. Tell people it's a known issue and we're on it." },
+        { "s": "A", "t": "Done. Any idea what caused it?" },
+        { "s": "B", "t": "A migration renamed a column and the back end still asks for the old name." },
+        { "s": "A", "t": "The tests didn't catch that?" },
+        { "s": "B", "t": "They used fresh accounts with no saved settings. That changes today." }
+      ]
+    },
+    {
+      "title": "The suspicious attachment",
+      "level": "B1",
+      "setting": "Someone in accounts opened a file that shouldn't have been opened.",
+      "speakers": { "A": "Employee", "B": "IT manager" },
+      "lines": [
+        { "s": "A", "t": "I think I've done something bad. I opened an invoice attachment." },
+        { "s": "B", "t": "Is your computer still connected to the network?" },
+        { "s": "A", "t": "Yes." },
+        { "s": "B", "t": "Unplug the cable now, and turn off the wifi. Don't shut it down." },
+        { "s": "A", "t": "Done. Some files have strange names now." },
+        { "s": "B", "t": "That's ransomware. The backups ran at two this morning, so we're fine." },
+        { "s": "A", "t": "I'm really sorry." },
+        { "s": "B", "t": "The email copied a real supplier exactly. You're not the first." },
+        { "s": "A", "t": "What happens now?" },
+        { "s": "B", "t": "I restore from backup, and I tell everyone what to look for. No lecture." }
+      ]
+    }
+  ],
+
+  "legal": [
+    {
+      "title": "Clause 14",
+      "level": "B2",
+      "setting": "A client and legal counsel discuss a late delivery.",
+      "speakers": { "A": "Client", "B": "Counsel" },
+      "lines": [
+        { "s": "A", "t": "They're six weeks late. I want to cancel and claim damages." },
+        { "s": "B", "t": "They'll argue force majeure. The factory flooded." },
+        { "s": "A", "t": "So we're stuck?" },
+        { "s": "B", "t": "Not necessarily. Clause 14 requires written notice within forty-eight hours." },
+        { "s": "A", "t": "And they said nothing for eleven days." },
+        { "s": "B", "t": "That's the point that matters. The delay might be excusable, the silence isn't." },
+        { "s": "A", "t": "Do we go to court?" },
+        { "s": "B", "t": "I'd settle out of court. Litigation costs more than the invoice." },
+        { "s": "A", "t": "What would a fair settlement look like?" },
+        { "s": "B", "t": "A credit against the next order, and we amend the notice clause." }
+      ]
+    },
+    {
+      "title": "Sign first, talk second",
+      "level": "B1",
+      "setting": "A founder learns why the NDA didn't protect them.",
+      "speakers": { "A": "Founder", "B": "Lawyer" },
+      "lines": [
+        { "s": "A", "t": "They launched a copy of our pricing model. Can we sue?" },
+        { "s": "B", "t": "When did you sign the non-disclosure agreement?" },
+        { "s": "A", "t": "In May." },
+        { "s": "B", "t": "And when did you explain the model to them?" },
+        { "s": "A", "t": "March. Two friendly meetings." },
+        { "s": "B", "t": "Then it sits outside the agreement. The NDA only covers what came after." },
+        { "s": "A", "t": "Isn't the model our intellectual property?" },
+        { "s": "B", "t": "A business idea usually isn't. A patent or copyright would be." },
+        { "s": "A", "t": "That's an expensive lesson." },
+        { "s": "B", "t": "One sentence long. Sign first, talk second." }
+      ]
+    }
+  ],
+
+  "healthcare": [
+    {
+      "title": "Two minutes at the bedside",
+      "level": "B1",
+      "setting": "A junior doctor asks a patient why he has stopped eating.",
+      "speakers": { "A": "Doctor", "B": "Mr Kolev" },
+      "lines": [
+        { "s": "A", "t": "Good morning. I noticed you haven't eaten since yesterday." },
+        { "s": "B", "t": "I'm not very hungry." },
+        { "s": "A", "t": "Your tests are all normal, so I wondered if something else was wrong." },
+        { "s": "B", "t": "It's silly, really." },
+        { "s": "A", "t": "Tell me anyway. I have two minutes and nowhere else to be." },
+        { "s": "B", "t": "If I eat, I'll need the toilet. I can't reach it on my own." },
+        { "s": "A", "t": "And you didn't want to trouble the nurses." },
+        { "s": "B", "t": "They're busy. So I thought I'd manage until I go home." },
+        { "s": "A", "t": "Let me move your call bell closer, and I'll tell the ward." },
+        { "s": "B", "t": "That's all it takes? Then I'll have lunch." }
+      ]
+    },
+    {
+      "title": "The waiting list",
+      "level": "B2",
+      "setting": "A manager shows a consultant why capacity is being lost.",
+      "speakers": { "A": "Manager", "B": "Consultant" },
+      "lines": [
+        { "s": "A", "t": "The waiting list is nine months. You asked for two more staff." },
+        { "s": "B", "t": "Because we can't see enough patients." },
+        { "s": "A", "t": "Eighteen per cent of appointments are no-shows." },
+        { "s": "B", "t": "That's higher than I thought." },
+        { "s": "A", "t": "And twelve per cent arrive without a referral, so they're turned away." },
+        { "s": "B", "t": "Almost a third of the capacity, before anyone is treated." },
+        { "s": "A", "t": "A text message two days before, and a check when booking." },
+        { "s": "B", "t": "And a short-notice list for slots that open up." },
+        { "s": "A", "t": "Exactly. No new staff, no new equipment." },
+        { "s": "B", "t": "I've been treating a process problem as a resource problem for three years." }
+      ]
+    }
+  ],
+
+  "hospitality": [
+    {
+      "title": "Room 402",
+      "level": "B1",
+      "setting": "A couple arrives at 9pm and the hotel is overbooked by one.",
+      "speakers": { "A": "Guest", "B": "Petya" },
+      "lines": [
+        { "s": "A", "t": "Good evening. We have a reservation for two nights, the name is Ivanov." },
+        { "s": "B", "t": "Let me check... I'm very sorry. We're overbooked and there's no room tonight." },
+        { "s": "A", "t": "We booked six weeks ago." },
+        { "s": "B", "t": "You did, and this is our mistake, not a problem with your booking." },
+        { "s": "A", "t": "So what happens now?" },
+        { "s": "B", "t": "I've held a room at our partner hotel, four minutes away, and we pay the taxi." },
+        { "s": "A", "t": "And tomorrow?" },
+        { "s": "B", "t": "Room 402 here, sea view, at the rate you originally booked." },
+        { "s": "A", "t": "That's better than I expected, honestly." },
+        { "s": "B", "t": "I'd rather tell you straight than hide behind the word 'system'." }
+      ]
+    },
+    {
+      "title": "A nut allergy on a full Saturday",
+      "level": "B2",
+      "setting": "A waiter takes an order on the busiest night of the year.",
+      "speakers": { "A": "Guest", "B": "Waiter" },
+      "lines": [
+        { "s": "A", "t": "Before we order, I should say I have a serious nut allergy." },
+        { "s": "B", "t": "Thank you for telling me. I'll write it in red and repeat it to the kitchen." },
+        { "s": "A", "t": "Even a small amount is a problem." },
+        { "s": "B", "t": "Understood. Are you happy for me to check each dish with the chef?" },
+        { "s": "A", "t": "Please do." },
+        { "s": "B", "t": "The starters are fine. I'd avoid the dessert with the crumb topping." },
+        { "s": "A", "t": "Is there an alternative?" },
+        { "s": "B", "t": "The sorbet, and I'll confirm the whole ticket with the pastry section." },
+        { "s": "A", "t": "You've done this before." },
+        { "s": "B", "t": "Every allergy gets read back twice. It takes eight seconds and it matters." }
+      ]
+    }
+  ],
+
+  "technical": [
+    {
+      "title": "Not the sensor",
+      "level": "B2",
+      "setting": "An engineer refuses to replace a part for the fifth time.",
+      "speakers": { "A": "Supervisor", "B": "Engineer" },
+      "lines": [
+        { "s": "A", "t": "Same fault again. Just swap the sensor and get the line running." },
+        { "s": "B", "t": "That's the fifth sensor this week. I'd like two hours instead." },
+        { "s": "A", "t": "Downtime costs nine hundred an hour." },
+        { "s": "B", "t": "And we've paid that four times already for a part that isn't broken." },
+        { "s": "A", "t": "You think the sensors are fine?" },
+        { "s": "B", "t": "I think they're reporting a real problem accurately." },
+        { "s": "A", "t": "All right. What's your plan?" },
+        { "s": "B", "t": "Shut down properly, lock out, and look at everything around the sensor." },
+        { "s": "A", "t": "Two hours. Then we do it your way or mine." },
+        { "s": "B", "t": "Fair. If I'm wrong, I'll fit the fifth sensor myself." }
+      ]
+    },
+    {
+      "title": "Handover on the twelfth",
+      "level": "B1",
+      "setting": "A client engineer refuses to sign off with 63 items open.",
+      "speakers": { "A": "Contractor", "B": "Engineer" },
+      "lines": [
+        { "s": "A", "t": "We're ready for handover on the twelfth as agreed." },
+        { "s": "B", "t": "The punch list still has sixty-three items." },
+        { "s": "A", "t": "All small. Sealant, paint, two door handles." },
+        { "s": "B", "t": "I know. And after handover, nobody is on site to fix them." },
+        { "s": "A", "t": "We'd come back." },
+        { "s": "B", "t": "Sixty-three becomes forty in a month and stays there for a year." },
+        { "s": "A", "t": "So what are you proposing?" },
+        { "s": "B", "t": "Work the weekend, clear the list below ten, and hand over on the fifteenth." },
+        { "s": "A", "t": "Three days late." },
+        { "s": "B", "t": "In writing, agreed by the client, with the as-built drawings complete." }
+      ]
+    }
+  ],
+
+  "sport": [
+    {
+      "title": "Six weeks off",
+      "level": "B1",
+      "setting": "A physiotherapist explains an injury to a runner.",
+      "speakers": { "A": "Marina", "B": "Physio" },
+      "lines": [
+        { "s": "A", "t": "How bad is it? I've got a race in October." },
+        { "s": "B", "t": "You've sprained the ankle. Six weeks, no running." },
+        { "s": "A", "t": "Six weeks? I haven't missed a session in two years." },
+        { "s": "B", "t": "I know. That's part of why it happened." },
+        { "s": "A", "t": "So I just sit still?" },
+        { "s": "B", "t": "No. Swimming from week two, and upper body from tomorrow." },
+        { "s": "A", "t": "That's not really training." },
+        { "s": "B", "t": "It's training the parts you've ignored for years." },
+        { "s": "A", "t": "And October?" },
+        { "s": "B", "t": "Possible, if you treat rest as part of the plan, not a break from it." }
+      ]
+    },
+    {
+      "title": "Before the final",
+      "level": "B1",
+      "setting": "A coach talks to the team before a match everyone expects them to lose.",
+      "speakers": { "A": "Player", "B": "Coach" },
+      "lines": [
+        { "s": "A", "t": "They beat us four nil in November." },
+        { "s": "B", "t": "They did. Every newspaper has already picked them." },
+        { "s": "A", "t": "That's not helping." },
+        { "s": "B", "t": "It should. They have to win. We only have to play." },
+        { "s": "A", "t": "And if they score first?" },
+        { "s": "B", "t": "Then we're where everyone expects us to be, and nothing has changed." },
+        { "s": "A", "t": "Home advantage is theirs too." },
+        { "s": "B", "t": "For ninety minutes it's eleven against eleven and a referee." },
+        { "s": "A", "t": "You really think we can do this." },
+        { "s": "B", "t": "I think underdogs play better without pressure. Go and enjoy it." }
+      ]
+    }
+  ],
+
+  "nutrition": [
+    {
+      "title": "The smaller plate",
+      "level": "B1",
+      "setting": "A doctor talks to a patient who has tried three diets.",
+      "speakers": { "A": "Ivo", "B": "Doctor" },
+      "lines": [
+        { "s": "A", "t": "I've tried three diets in two years. None of them lasted." },
+        { "s": "B", "t": "What do you actually eat on a normal Tuesday?" },
+        { "s": "A", "t": "Nothing terrible. Bread, chicken, rice, a takeaway on Friday." },
+        { "s": "B", "t": "That sounds fine. How much of it?" },
+        { "s": "A", "t": "A full plate. It's always been a full plate." },
+        { "s": "B", "t": "Then it's portion size, not the food. Nothing needs to be banned." },
+        { "s": "A", "t": "So what do I change?" },
+        { "s": "B", "t": "Use a smaller plate, and stop eating in front of the television." },
+        { "s": "A", "t": "That's it?" },
+        { "s": "B", "t": "It's boring, and boring is what people can still do in March." }
+      ]
+    },
+    {
+      "title": "Reading the label",
+      "level": "B2",
+      "setting": "A nutritionist shows a class how to read packaging.",
+      "speakers": { "A": "Student", "B": "Nutritionist" },
+      "lines": [
+        { "s": "A", "t": "It says low-fat and high in protein. That's healthy, isn't it?" },
+        { "s": "B", "t": "Guess the sugar content. One small pot." },
+        { "s": "A", "t": "Maybe six grams?" },
+        { "s": "B", "t": "Twenty-one. More than a standard chocolate bar." },
+        { "s": "A", "t": "But the front says nothing about that." },
+        { "s": "B", "t": "The front is advertising. The back is information." },
+        { "s": "A", "t": "What should I actually look at?" },
+        { "s": "B", "t": "Per hundred grams: sugar, saturated fat, salt. Three lines." },
+        { "s": "A", "t": "And the ingredients?" },
+        { "s": "B", "t": "Listed by quantity. If sugar is in the first three, you know what you're buying." }
+      ]
+    }
+  ],
+
+  "lifestyle": [
+    {
+      "title": "The phone in the kitchen",
+      "level": "B1",
+      "setting": "Two colleagues compare notes on screen time.",
+      "speakers": { "A": "Maya", "B": "Colleague" },
+      "lines": [
+        { "s": "A", "t": "My screen time said six hours forty a day. I checked it twice." },
+        { "s": "B", "t": "What did you delete?" },
+        { "s": "A", "t": "Nothing. I moved my charger to the kitchen." },
+        { "s": "B", "t": "That's all?" },
+        { "s": "A", "t": "The first three nights were strange. I reached for a phone that wasn't there." },
+        { "s": "B", "t": "And now?" },
+        { "s": "A", "t": "Four hours, and the last hour of the day is completely different." },
+        { "s": "B", "t": "I tried that once. I use my phone as an alarm clock." },
+        { "s": "A", "t": "So buy an alarm clock. Mine cost seven euro." },
+        { "s": "B", "t": "That is annoyingly simple. All right, I'll try it this week." }
+      ]
+    },
+    {
+      "title": "Saying no in November",
+      "level": "B2",
+      "setting": "A brother and sister talk about too many commitments.",
+      "speakers": { "A": "Krasimir", "B": "Sister" },
+      "lines": [
+        { "s": "A", "t": "Two committees, a weekend course, and the neighbour's renovation." },
+        { "s": "B", "t": "Do you enjoy any of them?" },
+        { "s": "A", "t": "I attend all of them. That's not the same thing." },
+        { "s": "B", "t": "Write down why you said yes to each one." },
+        { "s": "A", "t": "That feels uncomfortable." },
+        { "s": "B", "t": "Do it anyway. I'll wait." },
+        { "s": "A", "t": "Seven of eleven say the same thing. It felt rude to refuse." },
+        { "s": "B", "t": "So cancel three tonight and see what actually happens." },
+        { "s": "A", "t": "And if people are offended?" },
+        { "s": "B", "t": "Then you'll know. My guess is nobody will be, and that will annoy you." }
+      ]
+    }
+  ]
+}

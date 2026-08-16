@@ -43,7 +43,8 @@ let deckId = 'workplace';
 let words = [];
 let exercises = { transformations: [], word_formation: [] };
 let readings = [];
-let mistakes = []; // shared across every topic
+let mistakes = [];  // shared across every topic
+let dialogues = {}; // keyed by deck id
 let currentCard = 0;
 let mastered = new Set();
 let quiz = null; // { questions, index, score, locked }
@@ -75,10 +76,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('ctaLink').href = BRAND.ctaUrl;
 
   try {
-    const [dRes, mRes] = await Promise.all([fetch('decks.json'), fetch('mistakes.json')]);
+    const [dRes, mRes, gRes] = await Promise.all([
+      fetch('decks.json'), fetch('mistakes.json'), fetch('dialogues.json')
+    ]);
     if (!dRes.ok) throw new Error(dRes.statusText);
     decks = await dRes.json();
     mistakes = mRes.ok ? await mRes.json() : [];
+    dialogues = gRes.ok ? await gRes.json() : {};
 
     // One-time reset so everyone lands back on the first topic once. The app
     // still remembers your last topic after this.
@@ -1352,6 +1356,7 @@ const UOE_MODES = {
   wordform:  { icon: '🔤', title: 'Word formation',    desc: 'Build the right form of the word.' },
   speaking:  { icon: '🎤', title: 'Speaking',          desc: 'Say the phrase out loud and get scored.' },
   mistakes:  { icon: '🚫', title: 'Common mistakes',   desc: 'Errors Bulgarian speakers actually make.' },
+  dialogue:  { icon: '💬', title: 'Dialogues',         desc: 'Hear a real conversation, then take a role.' },
   reading:   { icon: '📖', title: 'Reading',           desc: 'Read a short story, answer questions.' },
   listen:    { icon: '👂', title: 'Listening',         desc: 'Hear the phrase, pick the meaning.' },
   dictation: { icon: '🎧', title: 'Dictation',         desc: 'Listen and type what you hear.' },
@@ -1401,7 +1406,8 @@ function renderUoeMenu() {
       <p class="text-sm text-slate-500 dark:text-slate-400 mb-5">Exam-style practice with the phrases from your cards.</p>
       <div class="space-y-2.5">
         ${Object.entries(UOE_MODES).map(([mode, m]) => {
-          const off = mode === 'speaking' && !speechSupported();
+          const off = (mode === 'speaking' && !speechSupported()) ||
+                      (mode === 'dialogue' && !dialoguesForDeck().length);
           return `
           <button ${off ? 'disabled' : `onclick="startUoe('${mode}')"`}
             class="w-full text-left px-4 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 ${off
@@ -1411,7 +1417,7 @@ function renderUoeMenu() {
             <span class="flex-1">
               <span class="block font-bold text-sm">${m.title}</span>
               <span class="block text-xs text-slate-500 dark:text-slate-400">${
-                off ? 'Needs Chrome or Edge' : m.desc}</span>
+                off ? (mode === 'dialogue' ? 'Coming soon for this topic' : 'Needs Chrome or Edge') : m.desc}</span>
             </span>
             ${!off && scored.includes(mode) && best[mode] !== undefined
               ? `<span class="text-xs font-semibold text-brand-500">Best: ${best[mode]}/${UOE_ROUND}</span>` : ''}
@@ -1443,6 +1449,9 @@ function startUoe(mode) {
     items = shuffle(exercises.transformations).slice(0, UOE_ROUND);
   } else if (mode === 'wordform') {
     items = shuffle(exercises.word_formation).slice(0, UOE_ROUND);
+  } else if (mode === 'dialogue') {
+    renderDialogueList();
+    return;
   } else if (mode === 'mistakes') {
     items = shuffle(mistakes).slice(0, UOE_ROUND).map(m => {
       const options = shuffle([m.right, m.wrong]);
@@ -1743,6 +1752,156 @@ function uoeMistakeAnswer(i) {
       <p id="mistakeBg" class="hidden mt-1">${it.why_bg}</p>
     </div>
     <button onclick="uoeNext()" class="w-full mt-3 py-2.5 rounded-xl bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 font-bold text-sm">Continue →</button>`;
+}
+
+// ---------- Dialogues ----------
+
+let dlg = null; // { list, item, role, playing, index }
+
+// Two different English voices, so the two speakers don't sound identical
+function voicePair() {
+  const voices = speechSynthesis.getVoices()
+    .filter(v => /^en[-_](US|GB)/i.test(v.lang));
+  if (!voices.length) return [null, null];
+  return [voices[0], voices[1] || voices[0]];
+}
+
+function speakAs(text, speaker, onDone) {
+  if (!('speechSynthesis' in window)) { onDone && onDone(); return; }
+  const [vA, vB] = voicePair();
+  const u = new SpeechSynthesisUtterance(text);
+  const v = speaker === 'A' ? vA : vB;
+  if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = 'en-US'; }
+  u.rate = 0.9;
+  u.pitch = speaker === 'A' ? 1 : 0.85; // extra separation when only one voice exists
+  u.onend = () => onDone && onDone();
+  u.onerror = () => onDone && onDone();
+  speechSynthesis.speak(u);
+}
+
+function dialoguesForDeck() {
+  return dialogues[deckId] || [];
+}
+
+function renderDialogueList() {
+  const list = dialoguesForDeck();
+  dlg = null;
+  speechSynthesis.cancel();
+
+  document.getElementById('uoeBox').innerHTML = `
+    <div class="fade-in">
+      <div class="flex items-center justify-between mb-4">
+        <button onclick="renderUoeMenu()" class="text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-brand-500">← Menu</button>
+        <span class="text-xs text-slate-500 dark:text-slate-400">💬 Dialogues</span>
+      </div>
+      ${list.length ? `
+        <div class="space-y-2.5">
+          ${list.map((d, i) => `
+            <button onclick="openDialogue(${i})"
+              class="w-full text-left px-4 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:border-brand-500 transition-colors">
+              <span class="block font-bold text-sm">${d.title}</span>
+              <span class="block text-xs text-slate-500 dark:text-slate-400 mt-0.5">${d.setting}</span>
+              <span class="inline-block mt-1.5 text-[10px] font-bold uppercase tracking-widest text-brand-500">Level ${d.level} · ${d.lines.length} lines</span>
+            </button>`).join('')}
+        </div>`
+        : '<p class="text-sm text-slate-500 dark:text-slate-400">No dialogues for this topic yet.</p>'}
+    </div>`;
+}
+
+function openDialogue(i) {
+  dlg = { item: dialoguesForDeck()[i], role: null, playing: false, index: 0 };
+  renderDialogue();
+}
+
+function renderDialogue() {
+  const d = dlg.item;
+  const nameOf = s => (d.speakers && d.speakers[s]) || s;
+
+  document.getElementById('uoeBox').innerHTML = `
+    <div class="fade-in">
+      <div class="flex items-center justify-between mb-3">
+        <button onclick="renderDialogueList()" class="text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-brand-500">← Dialogues</button>
+        <span class="text-xs text-slate-500 dark:text-slate-400">Level ${d.level}</span>
+      </div>
+      <p class="font-extrabold text-lg">${d.title}</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">${d.setting}</p>
+
+      <div class="flex flex-wrap gap-2 mb-4">
+        <button id="dlgPlay" onclick="playDialogue()" class="px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">▶ Play all</button>
+        <button onclick="setRole('A')" class="px-3 py-2.5 rounded-xl text-sm font-semibold transition-colors ${dlg.role === 'A' ? 'bg-brand-500 text-white' : 'bg-slate-100 dark:bg-slate-800'}">🎭 Read as ${nameOf('A')}</button>
+        <button onclick="setRole('B')" class="px-3 py-2.5 rounded-xl text-sm font-semibold transition-colors ${dlg.role === 'B' ? 'bg-brand-500 text-white' : 'bg-slate-100 dark:bg-slate-800'}">🎭 Read as ${nameOf('B')}</button>
+      </div>
+
+      ${dlg.role ? `<p class="text-xs bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200 rounded-xl p-3 mb-3">
+        Your lines are highlighted. The app reads ${nameOf(dlg.role === 'A' ? 'B' : 'A')} and waits for you.</p>` : ''}
+
+      <div id="dlgLines" class="space-y-2">
+        ${d.lines.map((l, i) => `
+          <div id="dlgLine${i}" class="flex gap-2 ${l.s === 'A' ? '' : 'flex-row-reverse'}">
+            <div class="max-w-[80%] px-3.5 py-2.5 rounded-2xl text-sm ${
+              dlg.role === l.s
+                ? 'bg-amber-100 dark:bg-amber-900/40 border border-amber-400'
+                : l.s === 'A'
+                  ? 'bg-slate-100 dark:bg-slate-800'
+                  : 'bg-brand-50 dark:bg-slate-700'}">
+              <span class="block text-[10px] font-bold uppercase tracking-widest opacity-60">${nameOf(l.s)}</span>
+              ${l.t}
+            </div>
+            <button onclick="speakAs(${JSON.stringify(l.t).replace(/"/g, '&quot;')}, '${l.s}')"
+              class="self-center text-xs opacity-50 hover:opacity-100">🔊</button>
+          </div>`).join('')}
+      </div>
+    </div>`;
+}
+
+function setRole(r) {
+  dlg.role = dlg.role === r ? null : r;
+  speechSynthesis.cancel();
+  renderDialogue();
+}
+
+function playDialogue() {
+  const btn = document.getElementById('dlgPlay');
+  if (dlg.playing) {
+    speechSynthesis.cancel();
+    dlg.playing = false;
+    btn.textContent = '▶ Play all';
+    clearHighlight();
+    return;
+  }
+  dlg.playing = true;
+  dlg.index = 0;
+  btn.textContent = '⏸ Stop';
+  stepDialogue();
+}
+
+function clearHighlight() {
+  dlg.item.lines.forEach((_, i) =>
+    document.getElementById('dlgLine' + i)?.classList.remove('ring-2', 'ring-brand-500', 'rounded-2xl'));
+}
+
+function stepDialogue() {
+  if (!dlg || !dlg.playing) return;
+  const lines = dlg.item.lines;
+
+  if (dlg.index >= lines.length) {
+    dlg.playing = false;
+    const btn = document.getElementById('dlgPlay');
+    if (btn) btn.textContent = '▶ Play all';
+    clearHighlight();
+    return;
+  }
+
+  const line = lines[dlg.index];
+  clearHighlight();
+  document.getElementById('dlgLine' + dlg.index)
+    ?.classList.add('ring-2', 'ring-brand-500', 'rounded-2xl');
+
+  // In role-play the app stays quiet on your lines and leaves you a gap to speak
+  const isYours = dlg.role === line.s;
+  const nextStep = () => { dlg.index++; setTimeout(stepDialogue, 250); };
+  if (isYours) setTimeout(nextStep, 400 + line.t.length * 55);
+  else speakAs(line.t, line.s, nextStep);
 }
 
 // The full list, for reading rather than testing
