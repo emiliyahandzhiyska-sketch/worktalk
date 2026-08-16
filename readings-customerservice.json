@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The customer who wanted to be heard",
+    "level": "B1",
+    "text": "The call started badly. The customer had been transferred twice, repeated his order number three times, and was now speaking very loudly.\n\nThe agent, Vesela, did something that isn't in most scripts. She stopped explaining the policy and said one sentence: \"You've told this story three times already, and that's our fault, not yours.\"\n\nThere was a pause. Then the volume dropped.\n\nThe actual problem was small. A delayed delivery, four days late, with no update from anyone. The item was still coming. What had made him angry was silence, not the delay.\n\nVesela gave him the tracking number, told him honestly that Thursday was realistic and Wednesday was not, and promised to call him herself if anything changed. She wrote proper case notes so nobody would ask him to explain it again.\n\nHe stayed a customer. Two months later he ordered again and mentioned her name in the comments field.\n\nHer manager used the recording in training, with one instruction: listen to the first thirty seconds, and notice that she solved nothing in them.",
+    "questions": [
+      { "q": "Why was the customer angry?", "options": ["Nobody had kept him informed", "The item was faulty", "The price was too high", "He was charged twice"], "correct": 0 },
+      { "q": "What did Vesela do differently?", "options": ["She acknowledged the company's failure before explaining anything", "She offered a refund immediately", "She transferred him to a manager", "She followed the script exactly"], "correct": 0 },
+      { "q": "What did she promise about the delivery?", "options": ["Thursday, honestly, rather than a hopeful Wednesday", "Next-day delivery", "A full refund", "A replacement item"], "correct": 0 },
+      { "q": "What was the manager's point about the recording?", "options": ["The first thirty seconds solved nothing but changed everything", "She spoke too quickly", "The call was too long", "The policy was applied correctly"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Two questions instead of twelve",
+    "level": "B2",
+    "text": "The old satisfaction survey had twelve questions. Around 4% of customers completed it, and most of those were people who were either delighted or furious.\n\nThe head of service replaced it with two questions. Did we solve your problem? And what would have made this easier?\n\nCompletion rose to 31%.\n\nThe first question gave a number the team could track. The second gave something more useful. In the first month, 140 people answered it, and roughly a third wrote a version of the same sentence: they had not known their case was still open.\n\nNothing was wrong with the resolution time. The problem was silence between updates.\n\nThe team introduced one rule. Every open case gets a message every 48 hours, even when the message is \"no change yet, still with the supplier, next update Friday.\"\n\nComplaint volumes fell 22% in three months. Resolution time barely moved.\n\nThe head of service is honest about what this taught her. They had spent two years trying to be faster, when customers had mostly been asking them to be present.",
+    "questions": [
+      { "q": "What was wrong with the old survey?", "options": ["Only 4% completed it, mostly extremes", "It asked the wrong questions", "It was sent too late", "It was only available by phone"], "correct": 0 },
+      { "q": "What did the second question reveal?", "options": ["Customers didn't know their case was still open", "Prices were too high", "Staff were impolite", "The website was confusing"], "correct": 0 },
+      { "q": "What rule did the team introduce?", "options": ["An update every 48 hours, even with no news", "A faster resolution target", "More staff on the phones", "A new complaints form"], "correct": 0 },
+      { "q": "What did the head of service conclude?", "options": ["Customers wanted presence more than speed", "Surveys are not useful", "Resolution time is the key metric", "The team needed more training"], "correct": 0 }
+    ]
+  }
+]

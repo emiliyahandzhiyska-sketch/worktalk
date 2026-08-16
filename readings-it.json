@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Eleven minutes",
+    "level": "B2",
+    "text": "The release went out at 14:00 on a Thursday. By 14:04 the support inbox had nine emails saying the same thing: customers could log in, but their saved settings were empty.\n\nThe on-call engineer didn't try to find the bug. He rolled back the release. Total downtime: eleven minutes.\n\nOnly then did the team look at what happened. A database migration had renamed one column, and an old part of the back end still asked for the old name. It had passed every test, because the tests used fresh accounts with no saved settings.\n\nThey found it in forty minutes, fixed it in ten, and deployed again the next morning with a test that used real-shaped data.\n\nThe post-incident note is one page and contains no names. It ends with two rules the team already had but had quietly stopped following: never deploy after 15:00, and roll back first, investigate second.\n\nThe lead engineer's comment stayed on the wall for a year. Every minute you spend debugging in production is a minute your customers are paying for your curiosity.",
+    "questions": [
+      { "q": "What did the engineer do first?", "options": ["Rolled back the release", "Started debugging the code", "Called the customers", "Restarted the server"], "correct": 0 },
+      { "q": "Why did the tests not catch the problem?", "options": ["They used fresh accounts with no saved settings", "They were not run at all", "The test server was down", "The tests were too slow"], "correct": 0 },
+      { "q": "What actually caused the bug?", "options": ["A renamed database column the back end still asked for", "A firewall rule", "A phishing attack", "A full disk"], "correct": 0 },
+      { "q": "What is the lead engineer's main point?", "options": ["Restore service first, investigate afterwards", "Never change a database", "Deploy more often", "Tests are a waste of time"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "invoice_final.pdf.exe",
+    "level": "B1",
+    "text": "The email looked ordinary. It came from a supplier the company had worked with for four years, with the right logo, the right signature, and an attachment called invoice_final.pdf.exe.\n\nOne person in accounts opened it. Within twenty minutes, files across three shared folders were encrypted and a message appeared asking for payment.\n\nThe IT manager did three things in order. He disconnected the affected machine from the network. He checked the backups, which had run at 02:00 that morning. And he told everyone, immediately, in plain language, what had happened.\n\nThat third step mattered more than it sounds. Two other people admitted they had also received the email. One had nearly clicked it.\n\nThe files were restored by early evening. Nothing was paid.\n\nAfterwards the company changed two habits. Backups are now tested by restoring a random folder every month, because a backup nobody has restored is only a hope. And staff who report a suspicious email get a thank you, never a lecture.\n\nThe person who opened the attachment still works there. The IT manager insisted on that.",
+    "questions": [
+      { "q": "Why did the email look genuine?", "options": ["It copied a real supplier's logo and signature", "It came from a colleague", "It had no attachment", "It was written in perfect Bulgarian"], "correct": 0 },
+      { "q": "What did the IT manager do first?", "options": ["Disconnected the affected machine from the network", "Paid the ransom", "Called the police", "Reinstalled the computer"], "correct": 0 },
+      { "q": "Why is telling everyone immediately important?", "options": ["Others had received the same email", "It is required by law", "It saves money", "It speeds up the backup"], "correct": 0 },
+      { "q": "What does the text say about backups?", "options": ["A backup nobody has restored is only a hope", "Backups should run weekly", "Backups should be stored offline", "Backups are unnecessary with encryption"], "correct": 0 }
+    ]
+  }
+]

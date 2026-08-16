@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "The service was unavailable for 40 minutes.", "key": "OUTAGE", "model": "There was a 40-minute outage.", "accept": ["outage"] },
+    { "original": "We returned the system to the previous version.", "key": "ROLLED", "model": "We rolled back to the previous version.", "accept": ["rolled back", "roll back"] },
+    { "original": "We released an urgent fix outside the normal schedule.", "key": "HOTFIX", "model": "We released a hotfix.", "accept": ["hotfix"] },
+    { "original": "Please report the problem through the support system.", "key": "TICKET", "model": "Please raise a ticket.", "accept": ["raise a ticket", "ticket"] },
+    { "original": "We already know about that problem.", "key": "KNOWN", "model": "That's a known issue.", "accept": ["known issue"] },
+    { "original": "We couldn't make the error happen again.", "key": "REPRODUCE", "model": "We couldn't reproduce the bug.", "accept": ["reproduce"] },
+    { "original": "The old system is still running because replacing it is hard.", "key": "LEGACY", "model": "It's a legacy system.", "accept": ["legacy system", "legacy"] },
+    { "original": "The feature becomes available to users gradually.", "key": "ROLLS", "model": "The feature rolls out gradually.", "accept": ["rolls out", "roll out"] },
+    { "original": "Security now requires a password plus a second check.", "key": "TWO", "model": "We use two-factor authentication.", "accept": ["two factor", "two-factor"] },
+    { "original": "Private data was accessed by someone unauthorised.", "key": "BREACH", "model": "There was a data breach.", "accept": ["data breach", "breach"] },
+    { "original": "The fake email was designed to steal passwords.", "key": "PHISHING", "model": "It was a phishing email.", "accept": ["phishing"] },
+    { "original": "Colleagues check the code before it goes live.", "key": "REVIEW", "model": "We do code review before release.", "accept": ["code review"] },
+    { "original": "We move the old records to the new system this weekend.", "key": "MIGRATE", "model": "We migrate the old records this weekend.", "accept": ["migrate"] },
+    { "original": "She had permission to read but not to change.", "key": "PERMISSIONS", "model": "Her permissions were read only.", "accept": ["permissions", "read permissions"] },
+    { "original": "The program stopped working suddenly.", "key": "CRASHED", "model": "The program crashed.", "accept": ["crashed", "crash"] },
+    { "original": "Put the new code onto the live system.", "key": "DEPLOY", "model": "Deploy the new code.", "accept": ["deploy"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ___ fixed it in twenty minutes.", "base": "DEVELOP", "accept": ["developer"] },
+    { "sentence": "We need better ___ between the two systems.", "base": "INTEGRATE", "accept": ["integration"] },
+    { "sentence": "Data ___ is required by law.", "base": "PROTECT", "accept": ["protection"] },
+    { "sentence": "The ___ of the migration took a weekend.", "base": "COMPLETE", "accept": ["completion"] },
+    { "sentence": "System ___ is checked every hour.", "base": "AVAILABLE", "accept": ["availability"] },
+    { "sentence": "The ___ of the new version was delayed.", "base": "RELEASE", "accept": ["release"] },
+    { "sentence": "Poor ___ caused the slow queries.", "base": "DESIGN", "accept": ["design"] },
+    { "sentence": "___ is stronger with a longer key.", "base": "ENCRYPT", "accept": ["encryption"] },
+    { "sentence": "The ___ needs your approval first.", "base": "INSTALL", "accept": ["installation"] },
+    { "sentence": "We measure the ___ of every request.", "base": "PERFORM", "accept": ["performance"] },
+    { "sentence": "The system requires user ___.", "base": "AUTHENTICATE", "accept": ["authentication"] },
+    { "sentence": "There is no ___ of that error in the logs.", "base": "RECORD", "accept": ["record"] },
+    { "sentence": "The ___ runs automatically at midnight.", "base": "BACK", "accept": ["backup"] },
+    { "sentence": "Her ___ of the problem was accurate.", "base": "DESCRIBE", "accept": ["description"] },
+    { "sentence": "We need a ___ solution, not a temporary one.", "base": "PERMANENT", "accept": ["permanent"] },
+    { "sentence": "The ___ was reported to the authority.", "base": "INCIDENT", "accept": ["incident"] }
+  ]
+}

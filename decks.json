@@ -115,5 +115,23 @@
     "words": "words-administration.json",
     "exercises": "exercises-administration.json",
     "readings": "readings-administration.json"
+  },
+  {
+    "id": "it",
+    "name": "IT English",
+    "icon": "💻",
+    "tagline": "Systems, bugs, releases, data, security.",
+    "words": "words-it.json",
+    "exercises": "exercises-it.json",
+    "readings": "readings-it.json"
+  },
+  {
+    "id": "customerservice",
+    "name": "Customer Service English",
+    "icon": "🎧",
+    "tagline": "Complaints, calls, refunds, keeping people.",
+    "words": "words-customerservice.json",
+    "exercises": "exercises-customerservice.json",
+    "readings": "readings-customerservice.json"
   }
 ]

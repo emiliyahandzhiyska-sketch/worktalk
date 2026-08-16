@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "May I ask you to wait while I check?", "key": "HOLD", "model": "May I put you on hold while I check?", "accept": ["put you on hold", "on hold"] },
+    { "original": "I'll send you to the billing department.", "key": "TRANSFER", "model": "I'll transfer you to the billing department.", "accept": ["transfer"] },
+    { "original": "We solved the problem in the first conversation.", "key": "CONTACT", "model": "That's first contact resolution.", "accept": ["first contact resolution"] },
+    { "original": "Show the customer you understand how they feel.", "key": "EMPATHISE", "model": "Empathise with the customer.", "accept": ["empathise", "empathize"] },
+    { "original": "Calm the situation before it becomes an argument.", "key": "ESCALATE", "model": "De-escalate the situation.", "accept": ["de escalate", "de-escalate"] },
+    { "original": "Accept responsibility even if another team caused it.", "key": "OWNERSHIP", "model": "Take ownership of the problem.", "accept": ["take ownership", "ownership"] },
+    { "original": "Tell customers honestly what will happen and when.", "key": "EXPECTATIONS", "model": "Manage expectations.", "accept": ["manage expectations", "managing expectations"] },
+    { "original": "We gave a free month without admitting fault.", "key": "GOODWILL", "model": "We offered a goodwill gesture.", "accept": ["goodwill gesture", "goodwill"] },
+    { "original": "Pass the case to someone with more authority.", "key": "ESCALATE", "model": "Escalate the case.", "accept": ["escalate"] },
+    { "original": "The item is not available to buy at the moment.", "key": "STOCK", "model": "The item is out of stock.", "accept": ["out of stock"] },
+    { "original": "Give updates even when nothing has changed.", "key": "INFORMED", "model": "Keep the customer informed.", "accept": ["keep the customer informed", "informed"] },
+    { "original": "Promise less than you can do, then do more.", "key": "UNDER", "model": "Under-promise and over-deliver.", "accept": ["under promise", "under-promise"] },
+    { "original": "I need to check you are who you say you are.", "key": "VERIFY", "model": "I need to verify your identity.", "accept": ["verify your identity", "verify identity"] },
+    { "original": "The order arrived later than we promised.", "key": "DELAYED", "model": "It was a delayed delivery.", "accept": ["delayed delivery", "delayed"] },
+    { "original": "Here's a temporary way to continue for today.", "key": "WORK", "model": "Here's a work around for today.", "accept": ["work around", "workaround"] },
+    { "original": "Most of our tickets are already answered online.", "key": "KNOWLEDGE", "model": "They're answered in the knowledge base.", "accept": ["knowledge base"] }
+  ],
+  "word_formation": [
+    { "sentence": "Customer ___ rose to 91% this quarter.", "base": "SATISFY", "accept": ["satisfaction"] },
+    { "sentence": "We sent a written ___ for the delay.", "base": "APOLOGISE", "accept": ["apology"] },
+    { "sentence": "Her ___ calmed the whole conversation.", "base": "PATIENT", "accept": ["patience"] },
+    { "sentence": "The ___ took two days longer than promised.", "base": "DELIVER", "accept": ["delivery"] },
+    { "sentence": "We need a faster ___ to complaints.", "base": "RESPOND", "accept": ["response"] },
+    { "sentence": "The ___ of the issue was our fault.", "base": "CAUSE", "accept": ["cause"] },
+    { "sentence": "Their ___ to our brand is remarkable.", "base": "LOYAL", "accept": ["loyalty"] },
+    { "sentence": "He gave a clear ___ of what went wrong.", "base": "EXPLAIN", "accept": ["explanation"] },
+    { "sentence": "The team showed real ___ under pressure.", "base": "PROFESSION", "accept": ["professionalism"] },
+    { "sentence": "___ of the refund takes three days.", "base": "PROCESS", "accept": ["processing"] },
+    { "sentence": "We value honest ___ from our customers.", "base": "FEED", "accept": ["feedback"] },
+    { "sentence": "The ___ was replaced free of charge.", "base": "FAULT", "accept": ["faulty item", "fault"] },
+    { "sentence": "Her ___ of the situation was excellent.", "base": "HANDLE", "accept": ["handling"] },
+    { "sentence": "The customer requested a full ___.", "base": "REFUND", "accept": ["refund"] },
+    { "sentence": "We aim for complete ___ every time.", "base": "RESOLVE", "accept": ["resolution"] },
+    { "sentence": "A ___ approach works better than a script.", "base": "PERSON", "accept": ["personal"] }
+  ]
+}
