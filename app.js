@@ -469,6 +469,7 @@ function renderProgress() {
     hs === null ? 'Quiz best: not played yet' : `Quiz best: ${hs} / ${QUIZ_LENGTH}`;
 
   renderStreak();
+  renderCertRow();
 }
 
 // ---------- Tabs ----------
@@ -519,6 +520,11 @@ function bindEvents() {
     if (w) speak(w.business_context_example, 0.6);
   });
   document.getElementById('shareBtn').addEventListener('click', shareProgress);
+  document.getElementById('certBtn').addEventListener('click', openCertificate);
+  document.getElementById('certClose').addEventListener('click', () =>
+    document.getElementById('certModal').classList.add('hidden'));
+  document.getElementById('certPrint').addEventListener('click', () => window.print());
+  document.getElementById('certNameInput').addEventListener('input', e => setCertName(e.target.value));
   document.getElementById('badgesToggle').addEventListener('click', () => {
     const grid = document.getElementById('badgesGrid');
     grid.classList.toggle('hidden');
@@ -929,6 +935,54 @@ function renderBadges() {
       <span class="text-[10px] font-semibold leading-tight">${a.title}</span>
     </div>`;
   }).join('');
+}
+
+// ---------- Certificate ----------
+
+const NAME_KEY = 'worktalk_student_name';
+
+function deckComplete() {
+  return words.length > 0 &&
+    words.every(w => mastered.has(w.phrase));
+}
+
+function renderCertRow() {
+  document.getElementById('certRow').classList.toggle('hidden', !deckComplete());
+}
+
+function openCertificate() {
+  const d = decks.find(x => x.id === deckId);
+  const hs = getHighScore();
+  const uoeBest = getUoeBest();
+  const bestExercise = Object.values(uoeBest).length ? Math.max(...Object.values(uoeBest)) : null;
+
+  document.getElementById('certDeck').textContent = `${d.icon} ${d.name}`;
+  document.getElementById('certDate').textContent =
+    new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  const stat = (value, label) => `
+    <div class="rounded-xl bg-amber-50 py-3 px-2">
+      <p class="text-xl font-extrabold text-amber-700">${value}</p>
+      <p class="text-[10px] uppercase tracking-widest text-slate-500 mt-0.5">${label}</p>
+    </div>`;
+  document.getElementById('certStats').innerHTML =
+    stat(words.length, 'phrases mastered') +
+    stat(hs === null ? '—' : `${hs}/${QUIZ_LENGTH}`, 'best quiz') +
+    stat(bestExercise === null ? '—' : `${bestExercise}/${UOE_ROUND}`, 'best exercise');
+
+  const saved = localStorage.getItem(NAME_KEY) || '';
+  const input = document.getElementById('certNameInput');
+  input.value = saved;
+  setCertName(saved);
+
+  document.getElementById('certModal').classList.remove('hidden');
+  if (!saved) input.focus();
+}
+
+function setCertName(name) {
+  const clean = name.trim().slice(0, 40);
+  document.getElementById('certName').textContent = clean || ' ';
+  localStorage.setItem(NAME_KEY, clean);
 }
 
 // ---------- Share progress ----------

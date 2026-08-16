@@ -53,6 +53,22 @@
     }
     .flip-back { transform: rotateY(180deg); position: absolute; inset: 0; }
     .fade-in { animation: fadeIn .3s ease both; }
+
+    /* Printing shows the certificate alone, always on white */
+    @media print {
+      body { background: #fff !important; }
+      body * { visibility: hidden; }
+      #certificate, #certificate * { visibility: visible; }
+      #certificate {
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .no-print { display: none !important; }
+      @page { margin: 14mm; }
+    }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
   </style>
 </head>
@@ -92,6 +108,12 @@
       <div class="h-2.5 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
         <div id="progressBar" class="h-full rounded-full bg-brand-500 transition-all duration-500" style="width:0%"></div>
       </div>
+      <div id="certRow" class="hidden mt-3">
+        <button id="certBtn" class="w-full py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold text-sm transition-colors">
+          🎓 Get your certificate
+        </button>
+      </div>
+
       <div class="flex items-center justify-between mt-2">
         <p id="highScoreLabel" class="text-xs text-slate-500 dark:text-slate-400">Quiz best: not played yet</p>
         <div class="flex items-center gap-2">
@@ -203,6 +225,47 @@
       Made with ❤️ in Plovdiv by <b>Language Workshop</b>
     </footer>
 
+  </div>
+
+  <!-- Certificate -->
+  <div id="certModal" class="hidden fixed inset-0 z-50 bg-slate-900/70 overflow-y-auto p-4">
+    <div class="max-w-2xl mx-auto my-6">
+      <div id="certificate" class="bg-white text-slate-800 rounded-2xl p-8 sm:p-12 shadow-2xl border-[6px] border-double border-amber-500">
+        <p class="text-center text-xs uppercase tracking-[0.3em] text-amber-600 font-bold mb-1">Language Workshop</p>
+        <p class="text-center text-[10px] uppercase tracking-widest text-slate-400 mb-6">Plovdiv, Bulgaria</p>
+
+        <h2 class="text-center text-2xl sm:text-3xl font-extrabold tracking-tight mb-1">Certificate of Completion</h2>
+        <p class="text-center text-xs text-slate-500 mb-8">This certifies that</p>
+
+        <p id="certName" class="text-center text-3xl sm:text-4xl font-extrabold mb-2 pb-2 border-b-2 border-slate-200">&nbsp;</p>
+        <p class="text-center text-xs text-slate-500 mb-8">has completed the WorkTalk topic</p>
+
+        <p id="certDeck" class="text-center text-xl font-bold text-amber-700 mb-8"></p>
+
+        <div id="certStats" class="grid grid-cols-3 gap-3 text-center mb-8"></div>
+
+        <div class="flex items-end justify-between text-xs text-slate-500 pt-6">
+          <div>
+            <p id="certDate" class="font-semibold text-slate-700"></p>
+            <p>Date of completion</p>
+          </div>
+          <div class="text-right">
+            <p class="font-semibold text-slate-700">Emilia Handzhiyska</p>
+            <p>Language Workshop</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="no-print mt-4 bg-white dark:bg-slate-900 rounded-2xl p-4 shadow-lg">
+        <label class="block text-xs font-semibold mb-1.5 text-slate-600 dark:text-slate-300">Your name on the certificate</label>
+        <input id="certNameInput" type="text" placeholder="e.g. Maria Petrova" autocomplete="name"
+          class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm mb-3 focus:outline-none focus:border-brand-500">
+        <div class="flex gap-2">
+          <button id="certPrint" class="flex-1 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">🖨 Print or save as PDF</button>
+          <button id="certClose" class="px-5 py-2.5 rounded-xl bg-slate-200 dark:bg-slate-800 font-bold text-sm">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Bottom toasts: reminder opt-in, new version available -->
