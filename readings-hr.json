@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Three exit interviews",
+    "level": "B2",
+    "text": "In eleven months, seven people left the customer service team. Staff turnover reached 58%, the highest in the company.\n\nThe standard explanation was salary. The team was paid slightly below market, and everyone repeated this until it sounded like a fact.\n\nThen the HR manager read three exit interviews in the same week. All three mentioned money once, briefly. All three spent longer describing the same thing: shifts published on Friday evening for the week starting Monday.\n\nPeople couldn't book a dentist. They couldn't promise to collect a child. One woman said she had cancelled the same course three times.\n\nThe fix cost nothing. Shifts moved to a three-week rolling schedule, published on the first of each month. Two people were given fixed patterns because of childcare.\n\nTurnover in the following year was 12%.\n\nThe HR manager made one more change afterwards, and she says it mattered more than the schedule. Exit interviews are now read by the department head, not filed. Her reason was simple: the answers had been sitting in a folder for two years.",
+    "questions": [
+      { "q": "What did everyone assume the problem was?", "options": ["Low salary", "Poor management", "Difficult customers", "Long hours"], "correct": 0 },
+      { "q": "What did the exit interviews actually reveal?", "options": ["Shifts were published too late to plan a life", "The office was too far away", "Training was inadequate", "There was no career path"], "correct": 0 },
+      { "q": "What happened to staff turnover after the change?", "options": ["It fell from 58% to 12%", "It stayed the same", "It rose slightly", "It fell to 40%"], "correct": 0 },
+      { "q": "What second change did the HR manager make?", "options": ["Exit interviews are now read by the department head", "Salaries were increased", "Managers received new training", "Shifts were made shorter"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "The candidate who asked back",
+    "level": "B1",
+    "text": "The vacancy was for an office coordinator. Forty applications arrived, and the shortlist had five names.\n\nFour of the five interviews followed the same pattern. Good answers, prepared examples, and then, at the end, no questions. Or one polite question about the start date.\n\nThe fifth candidate, Nadia, asked three. What does success look like in this role after six months? What does the person doing it now find most frustrating? And who would she work with most closely?\n\nThe hiring manager admitted afterwards that she couldn't answer the second question properly, which told her something about the job description.\n\nNadia got the offer letter on Thursday. She accepted on Monday, after asking one more question about the probation period and the training budget.\n\nSix months later she had reorganised the filing system and reduced the enrolment workflow from nine steps to five.\n\nAt the next recruitment round, the manager added something to her notes. Candidates who ask about frustration are usually the ones who fix things.",
+    "questions": [
+      { "q": "What made Nadia different from the other candidates?", "options": ["She asked serious questions at the end", "She had more experience", "She accepted the lowest salary", "She applied first"], "correct": 0 },
+      { "q": "What did the manager realise during the interview?", "options": ["She couldn't answer a question about the role's frustrations", "Nadia was overqualified", "The salary was too low", "The interview was too short"], "correct": 0 },
+      { "q": "What did Nadia ask about before accepting?", "options": ["The probation period and training budget", "Holiday entitlement", "The pension scheme", "Remote work options"], "correct": 0 },
+      { "q": "What did the manager add to her notes?", "options": ["Candidates who ask about frustration often fix things", "Always shortlist five people", "Ask about salary early", "Interviews should be longer"], "correct": 0 }
+    ]
+  }
+]

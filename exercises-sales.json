@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "I phoned someone who had never heard of us.", "key": "COLD", "model": "I made a cold call.", "accept": ["cold call", "cold called"] },
+    { "original": "Check whether this prospect is worth your time.", "key": "QUALIFY", "model": "Qualify the lead.", "accept": ["qualify the lead", "qualify"] },
+    { "original": "The assistant controls access to the boss.", "key": "GATEKEEPER", "model": "The assistant is the gatekeeper.", "accept": ["gatekeeper"] },
+    { "original": "She got the customer to agree to buy.", "key": "CLOSED", "model": "She closed the sale.", "accept": ["closed the sale", "close the sale"] },
+    { "original": "Asking about start dates shows they're ready to buy.", "key": "SIGNAL", "model": "That's a buying signal.", "accept": ["buying signal"] },
+    { "original": "They gave reasons for not buying.", "key": "OBJECTIONS", "model": "They raised objections.", "accept": ["objection", "objections"] },
+    { "original": "They resisted strongly on the timeline.", "key": "PUSHED", "model": "They pushed back on the timeline.", "accept": ["pushed back", "push back"] },
+    { "original": "That condition would stop the sale completely.", "key": "BREAKER", "model": "That's a deal breaker.", "accept": ["deal breaker"] },
+    { "original": "He reached his sales target for the quarter.", "key": "QUOTA", "model": "He hit quota for the quarter.", "accept": ["hit quota", "quota"] },
+    { "original": "We brought back a customer who had left.", "key": "WON", "model": "We won back the customer.", "accept": ["won back", "win back"] },
+    { "original": "The percentage of deals we win is 60%.", "key": "RATE", "model": "Our win rate is 60%.", "accept": ["win rate"] },
+    { "original": "Explain the timeline to the client step by step.", "key": "WALK", "model": "Walk the client through the timeline.", "accept": ["walk the client through", "walk through"] },
+    { "original": "Build interest slowly before making the offer.", "key": "WARM", "model": "Warm up the lead first.", "accept": ["warm up"] },
+    { "original": "The client is delaying without saying no.", "key": "STALL", "model": "That's a stall.", "accept": ["stall", "stalling"] },
+    { "original": "Every important client has a named contact person.", "key": "ACCOUNT", "model": "Every key client has an account manager.", "accept": ["account manager"] },
+    { "original": "The price is based on what it's worth to them.", "key": "VALUE", "model": "We use value-based pricing.", "accept": ["value based", "value-based"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ___ closed three deals last month.", "base": "SELL", "accept": ["seller", "salesperson"] },
+    { "sentence": "We need a clear ___ of the offer.", "base": "EXPLAIN", "accept": ["explanation"] },
+    { "sentence": "Her ___ style is calm and direct.", "base": "NEGOTIATE", "accept": ["negotiating", "negotiation"] },
+    { "sentence": "Customer ___ dropped after the price rise.", "base": "SATISFY", "accept": ["satisfaction"] },
+    { "sentence": "The ___ was rejected without explanation.", "base": "PROPOSE", "accept": ["proposal"] },
+    { "sentence": "We sent a written ___ the same day.", "base": "CONFIRM", "accept": ["confirmation"] },
+    { "sentence": "His ___ convinced the whole committee.", "base": "PRESENT", "accept": ["presentation"] },
+    { "sentence": "There is strong ___ in this market.", "base": "COMPETE", "accept": ["competition"] },
+    { "sentence": "The team showed real ___ this quarter.", "base": "IMPROVE", "accept": ["improvement"] },
+    { "sentence": "We track every ___ in the CRM.", "base": "INTERACT", "accept": ["interaction"] },
+    { "sentence": "Their ___ to buy was obvious.", "base": "WILLING", "accept": ["willingness"] },
+    { "sentence": "The ___ of the deal was 12,000 euro.", "base": "VALUE", "accept": ["value"] },
+    { "sentence": "He is a very ___ salesperson.", "base": "SUCCESS", "accept": ["successful"] },
+    { "sentence": "___ is paid monthly on collected revenue.", "base": "COMMISSION", "accept": ["commission"] },
+    { "sentence": "We need better ___ of the pipeline.", "base": "MANAGE", "accept": ["management"] },
+    { "sentence": "The client asked for a price ___.", "base": "REDUCE", "accept": ["reduction"] }
+  ]
+}

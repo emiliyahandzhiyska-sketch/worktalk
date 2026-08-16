@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "We compared the bank statement with our records.", "key": "RECONCILED", "model": "We reconciled the bank account.", "accept": ["reconciled", "reconcile", "reconciliation"] },
+    { "original": "There is a difference between the two figures.", "key": "DISCREPANCY", "model": "There is a discrepancy between the two figures.", "accept": ["discrepancy"] },
+    { "original": "The cost of the van is spread over five years.", "key": "DEPRECIATION", "model": "The van is subject to depreciation over five years.", "accept": ["depreciation", "depreciated"] },
+    { "original": "We recorded the electricity cost in December, before the bill arrived.", "key": "ACCRUAL", "model": "We made an accrual for the electricity cost.", "accept": ["accrual", "accrued"] },
+    { "original": "We paid the insurance in advance for the whole year.", "key": "PREPAYMENT", "model": "The insurance is a prepayment.", "accept": ["prepayment", "prepaid"] },
+    { "original": "The money owed will probably never be collected.", "key": "BAD", "model": "It is a bad debt.", "accept": ["bad debt"] },
+    { "original": "We reduced the amount the customer owes.", "key": "CREDIT", "model": "We issued a credit note.", "accept": ["credit note"] },
+    { "original": "Every transaction must be recorded twice.", "key": "DOUBLE", "model": "We use double-entry bookkeeping.", "accept": ["double entry", "double-entry"] },
+    { "original": "The accounts for the month were finalised.", "key": "CLOSE", "model": "We completed the month-end close.", "accept": ["month end close", "month-end close", "close"] },
+    { "original": "The difference between planned and actual spend was 2,300 euro.", "key": "VARIANCE", "model": "The variance was 2,300 euro.", "accept": ["variance"] },
+    { "original": "Set aside an amount for a likely future cost.", "key": "PROVISION", "model": "Make a provision for the future cost.", "accept": ["provision"] },
+    { "original": "The auditor asked for the papers proving each entry.", "key": "SUPPORTING", "model": "The auditor asked for supporting documentation.", "accept": ["supporting documentation"] },
+    { "original": "The balance moves into the next accounting period.", "key": "CARRY", "model": "The balance is carried forward.", "accept": ["carried forward", "carry forward"] },
+    { "original": "Money spent on long-term assets, not running costs.", "key": "CAPEX", "model": "That's capex, not opex.", "accept": ["capex"] },
+    { "original": "The report shows how long invoices have been unpaid.", "key": "AGED", "model": "The aged debtors report shows this.", "accept": ["aged debtors", "aged debtor"] },
+    { "original": "The error is too small to affect any decision.", "key": "MATERIALITY", "model": "The error is below materiality.", "accept": ["materiality", "material"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ___ prepared the year-end figures.", "base": "ACCOUNT", "accept": ["accountant"] },
+    { "sentence": "We need an accurate ___ of the stock.", "base": "VALUE", "accept": ["valuation"] },
+    { "sentence": "The ___ found two errors in March.", "base": "AUDIT", "accept": ["auditor", "audit"] },
+    { "sentence": "There was no ___ for that expense.", "base": "JUSTIFY", "accept": ["justification"] },
+    { "sentence": "The ___ of the accounts took four days.", "base": "PREPARE", "accept": ["preparation"] },
+    { "sentence": "All entries require proper ___.", "base": "DOCUMENT", "accept": ["documentation"] },
+    { "sentence": "The figures need ___ before filing.", "base": "APPROVE", "accept": ["approval"] },
+    { "sentence": "Our ___ improved after the software change.", "base": "ACCURATE", "accept": ["accuracy"] },
+    { "sentence": "The company reported a ___ this year.", "base": "LOSE", "accept": ["loss"] },
+    { "sentence": "There was a small ___ in the totals.", "base": "DIFFER", "accept": ["difference"] },
+    { "sentence": "The ___ of the asset was reduced.", "base": "VALUE", "accept": ["valuation", "value"] },
+    { "sentence": "We made an ___ to the December accounts.", "base": "ADJUST", "accept": ["adjustment"] },
+    { "sentence": "The ___ of costs by department is useful.", "base": "ANALYSE", "accept": ["analysis"] },
+    { "sentence": "___ standards changed in 2024.", "base": "REPORT", "accept": ["reporting"] },
+    { "sentence": "The invoice needs ___ from the manager.", "base": "AUTHORISE", "accept": ["authorisation", "authorization"] },
+    { "sentence": "Their ___ record is excellent.", "base": "PAY", "accept": ["payment"] }
+  ]
+}

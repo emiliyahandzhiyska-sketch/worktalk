@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Nine steps to five",
+    "level": "B1",
+    "text": "Enrolling one student took nine steps. A form by email, a reply, a payment link, a confirmation, a name added to a spreadsheet, a second name added to the timetable, a welcome email, a certificate template prepared, and a folder created.\n\nIt took about 25 minutes each time. With 200 enrolments a month, that was 83 hours of somebody's life.\n\nThe office coordinator mapped the workflow on one sheet of paper and asked a simple question about each step: who reads this, and what happens if it doesn't exist?\n\nTwo steps had no answer at all. The certificate template was prepared at enrolment but used only at the end of the course, often for a different course. The folder was created for a filing system nobody had used since 2023.\n\nTwo more steps were merged. The spreadsheet and the timetable now pull from the same source, so one entry updates both.\n\nNine steps became five, and 25 minutes became eleven.\n\nNobody was asked to work faster. The work simply stopped containing things that were never needed.",
+    "questions": [
+      { "q": "How long did one enrolment originally take?", "options": ["About 25 minutes", "About 11 minutes", "About an hour", "Five minutes"], "correct": 0 },
+      { "q": "What question did the coordinator ask about each step?", "options": ["Who reads this and what happens without it?", "Who invented this step?", "How long does it take?", "Can we automate it?"], "correct": 0 },
+      { "q": "Why was the certificate template step removed?", "options": ["It was prepared too early and often for the wrong course", "Certificates were no longer issued", "It was done by another department", "The software changed"], "correct": 0 },
+      { "q": "What is the main message of the text?", "options": ["Removing unnecessary steps beats working faster", "Staff should be more organised", "Spreadsheets are dangerous", "Automation solves everything"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "The Friday email",
+    "level": "B1",
+    "text": "Every Friday at 4 pm, an email went out to 60 members of staff. It contained room changes, supply notices, reminders about expense reports, and occasionally something genuinely urgent.\n\nNobody read it. When the administrator asked, people were honest: it arrived at the worst possible hour, and important things were mixed with the printer being out of paper.\n\nShe made three changes.\n\nUrgent items no longer wait for Friday. They go out alone, with the word URGENT in the subject line, and there are never more than two a month.\n\nThe weekly email moved to Tuesday morning and became a list with headings. Anything needing action from the reader appears first, with a name and a date beside it.\n\nAnd the distribution list was cleaned. Eleven addresses belonged to people who had left, and nine people received it who had no reason to.\n\nOpen rates were never measured. But room-change mistakes fell from about four a month to one, and three people said thank you, which had never happened in two years.",
+    "questions": [
+      { "q": "Why did nobody read the Friday email?", "options": ["Bad timing and important items mixed with trivial ones", "It was too short", "It arrived on the wrong day of the month", "It was sent to the wrong people only"], "correct": 0 },
+      { "q": "How are urgent items handled now?", "options": ["Sent separately, marked URGENT, rarely", "Included at the top of the weekly email", "Announced in meetings", "Posted on a notice board"], "correct": 0 },
+      { "q": "What was wrong with the distribution list?", "options": ["It included people who had left and people who didn't need it", "It was too short", "It had no names", "It was stored incorrectly"], "correct": 0 },
+      { "q": "How does the text measure the improvement?", "options": ["Fewer room-change mistakes and some thank yous", "By open rates", "By a staff survey", "By time saved"], "correct": 0 }
+    ]
+  }
+]

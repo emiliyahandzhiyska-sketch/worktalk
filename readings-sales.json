@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The objection that wasn't about price",
+    "level": "B2",
+    "text": "Four meetings in, the client said it: \"It's too expensive.\"\n\nThe old version of Kalin would have started defending. Quality, experience, results, all true and all useless. Instead he asked one question. \"Too expensive compared to what?\"\n\nThe answer surprised him. They weren't comparing him to a cheaper competitor. They were comparing the programme to doing nothing, because two years earlier they had paid for training that nobody attended after week three.\n\nThe objection was never price. It was risk.\n\nSo he changed the proposal, not the number. The first month became a pilot with one department. Payment for the rest depended on attendance staying above 70%. If it dropped, they could stop with no penalty.\n\nThey signed in nine days.\n\nAttendance in the pilot was 88%, mostly because the sessions were booked into the calendar by the client's own team leader, not by Kalin.\n\nHe now asks the same question in every negotiation, and roughly half the time the word \"expensive\" turns out to mean something else entirely.",
+    "questions": [
+      { "q": "What did Kalin do instead of defending his price?", "options": ["He asked what they were comparing it to", "He offered a discount", "He sent more references", "He ended the meeting"], "correct": 0 },
+      { "q": "What was the real objection?", "options": ["Risk, based on a previous failed training", "A cheaper competitor", "The delivery timetable", "The trainer's experience"], "correct": 0 },
+      { "q": "How did he change the proposal?", "options": ["A pilot with payment tied to attendance", "He reduced the price by 30%", "He added more sessions", "He extended the payment terms"], "correct": 0 },
+      { "q": "Why was attendance in the pilot high?", "options": ["The client's own team leader scheduled the sessions", "The sessions were shorter", "Attendance was compulsory", "The trainer was well known"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Forty prospects, nine calls",
+    "level": "B1",
+    "text": "The new salesperson had a list of forty prospects and a target of ten meetings a month. She spent the first week calling all forty. She got two meetings and a lot of polite refusals.\n\nHer manager looked at the list with her on Friday. Of the forty, eleven had fewer than ten employees, so they had no training budget at all. Nine had bought from a competitor within the last three months. Six had no contact name, only a general email address.\n\nThat left fourteen worth calling, and only nine where she knew who the decision maker was.\n\nThe second week she called those nine, twice each, at different times of day. She reached seven people and booked five meetings.\n\nSame person, same script, same voice. The difference was that she stopped spending her energy on names that could never say yes.\n\nHer manager put it in one line during the pipeline review: qualifying is not admin work you do before selling. It is the selling.",
+    "questions": [
+      { "q": "Why did the first week produce poor results?", "options": ["Most prospects could never buy", "Her script was bad", "She called at the wrong times", "The product was too expensive"], "correct": 0 },
+      { "q": "How many prospects were genuinely worth calling?", "options": ["Fourteen, and nine with a known decision maker", "Forty", "Twenty", "Two"], "correct": 0 },
+      { "q": "What did she do differently in the second week?", "options": ["Called the qualified nine twice each at different times", "Sent emails instead of calling", "Changed her sales script", "Lowered the price"], "correct": 0 },
+      { "q": "What is the manager's main point?", "options": ["Qualifying is part of selling, not preparation for it", "Salespeople should make more calls", "Scripts matter most", "Managers should join calls"], "correct": 0 }
+    ]
+  }
+]

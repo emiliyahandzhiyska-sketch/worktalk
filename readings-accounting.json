@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Forty-eight euro",
+    "level": "B2",
+    "text": "The bank reconciliation was out by 48 euro. Everything else matched.\n\nThe junior bookkeeper wanted to post an adjustment and move on. It was a Friday, the amount was below materiality, and nobody would ever notice.\n\nHer supervisor asked her to spend thirty more minutes on it.\n\nThe 48 euro turned out to be a courier charge, posted once to the purchase ledger and once directly to office costs. A duplicate. On its own, trivial.\n\nThen she searched for the same supplier across the year and found eleven more duplicates, all small, all posted by the same automated import that ran twice on days when the system timed out.\n\nTotal: 1,340 euro of costs recorded twice, which meant the management accounts had been understating profit all year.\n\nThe import was fixed in an afternoon. The bookkeeper wrote a short note for the file explaining what happened and how to spot it.\n\nHer supervisor's comment stayed with her. Small differences are rarely small, she said. They're just the part of the problem that reached the surface.",
+    "questions": [
+      { "q": "What did the junior bookkeeper want to do at first?", "options": ["Post an adjustment and move on", "Call the bank", "Ask the auditor", "Restart the reconciliation"], "correct": 0 },
+      { "q": "What caused the 48-euro difference?", "options": ["A courier charge posted twice", "A missing invoice", "A bank error", "A wrong exchange rate"], "correct": 0 },
+      { "q": "How much had been recorded twice over the year?", "options": ["1,340 euro", "48 euro", "480 euro", "13,400 euro"], "correct": 0 },
+      { "q": "What is the supervisor's main point?", "options": ["Small differences often reveal larger problems", "Reconciliations should be done weekly", "Automation is unreliable", "Juniors need more supervision"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Why the profit moved",
+    "level": "B2",
+    "text": "The director looked at the management accounts and asked a fair question. Why did November show 9,000 euro of profit and December show almost nothing, when the business had done roughly the same amount of work?\n\nThe accountant walked her through it.\n\nThree things landed in December. The annual insurance had been posted in full instead of being treated as a prepayment across twelve months. A provision was made for a disputed invoice that might never be paid. And the depreciation on the new classroom equipment started, adding 700 euro a month for the first time.\n\nNone of these were cash. The bank balance in December was actually higher than in November.\n\nThey changed two things. The insurance was spread properly, and depreciation was included in the monthly forecast from the start rather than appearing as a surprise.\n\nThe director's takeaway was not about accounting rules. It was that a month can look terrible for reasons that have nothing to do with how the month went.\n\nShe now reads the management accounts with one question first: what moved that isn't cash?",
+    "questions": [
+      { "q": "Why did December look much worse than November?", "options": ["Non-cash adjustments landed in that month", "Sales fell sharply", "A large client left", "Costs of teaching rose"], "correct": 0 },
+      { "q": "How should the insurance have been treated?", "options": ["As a prepayment spread over twelve months", "As a provision", "As a fixed asset", "As bad debt"], "correct": 0 },
+      { "q": "What was true about the bank balance in December?", "options": ["It was higher than in November", "It was lower than in November", "It was exactly the same", "It was negative"], "correct": 0 },
+      { "q": "What question does the director now ask first?", "options": ["What moved that isn't cash?", "How many students enrolled?", "What did we spend on marketing?", "Who approved the costs?"], "correct": 0 }
+    ]
+  }
+]

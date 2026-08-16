@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "The room is booked twice at the same time.", "key": "DOUBLE", "model": "The room is double-booked.", "accept": ["double booked", "double-booked"] },
+    { "original": "Can we move the call to Friday?", "key": "RESCHEDULE", "model": "Can we reschedule the call to Friday?", "accept": ["reschedule"] },
+    { "original": "I'll contact them again about the signed forms.", "key": "CHASE", "model": "I'll chase up the signed forms.", "accept": ["chase up", "chase"] },
+    { "original": "Please work together with the venue about parking.", "key": "LIAISE", "model": "Please liaise with the venue about parking.", "accept": ["liaise with", "liaise"] },
+    { "original": "Send the agenda to everyone before the meeting.", "key": "CIRCULATE", "model": "Circulate the agenda before the meeting.", "accept": ["circulate"] },
+    { "original": "Please confirm that you received the documents.", "key": "ACKNOWLEDGE", "model": "Please acknowledge receipt of the documents.", "accept": ["acknowledge receipt", "acknowledge"] },
+    { "original": "I'm doing her work while she's on holiday.", "key": "COVERING", "model": "I'm covering for her while she's on holiday.", "accept": ["covering for", "cover for"] },
+    { "original": "Reserve that time so nobody books it.", "key": "BLOCK", "model": "Block out that time.", "accept": ["block out"] },
+    { "original": "We're nearly out of printer paper.", "key": "RUNNING", "model": "We're running low on printer paper.", "accept": ["running low", "run low"] },
+    { "original": "Documents with client names must be destroyed securely.", "key": "SHREDDED", "model": "They must be shredded.", "accept": ["shredded", "shred"] },
+    { "original": "Please write the official record of the meeting.", "key": "MINUTE", "model": "Please minute the meeting.", "accept": ["minute the meeting", "minute"] },
+    { "original": "We already have her contract in our records.", "key": "FILE", "model": "We have her contract on file.", "accept": ["on file"] },
+    { "original": "We complete and return certificates within two days.", "key": "TURN", "model": "We turn around certificates within two days.", "accept": ["turn around", "turnaround"] },
+    { "original": "Decide what matters most and start there.", "key": "PRIORITISE", "model": "Prioritise the work.", "accept": ["prioritise", "prioritize"] },
+    { "original": "Twenty minutes a day stops the inbox building up.", "key": "TOP", "model": "It keeps me on top of the inbox.", "accept": ["on top of"] },
+    { "original": "Set the automatic reply before you leave.", "key": "OFFICE", "model": "Set your out of office before you leave.", "accept": ["out of office"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ___ greeted every visitor by name.", "base": "RECEIVE", "accept": ["receptionist"] },
+    { "sentence": "Her ___ skills keep the office running.", "base": "ORGANISE", "accept": ["organisational", "organizational"] },
+    { "sentence": "We need written ___ of the change.", "base": "CONFIRM", "accept": ["confirmation"] },
+    { "sentence": "The ___ of files took three weeks.", "base": "ARCHIVE", "accept": ["archiving"] },
+    { "sentence": "Please send the ___ by Friday.", "base": "DOCUMENT", "accept": ["documents", "documentation"] },
+    { "sentence": "The ___ of the meeting were circulated.", "base": "MINUTE", "accept": ["minutes"] },
+    { "sentence": "Her ___ to detail is exceptional.", "base": "ATTEND", "accept": ["attention"] },
+    { "sentence": "We improved the ___ of the whole process.", "base": "EFFICIENT", "accept": ["efficiency"] },
+    { "sentence": "The ___ list needs updating.", "base": "DISTRIBUTE", "accept": ["distribution"] },
+    { "sentence": "A clear ___ of duties helps everyone.", "base": "DESCRIBE", "accept": ["description"] },
+    { "sentence": "The ___ of supplies happens monthly.", "base": "ORDER", "accept": ["ordering"] },
+    { "sentence": "We keep ___ records of every visitor.", "base": "ACCURATE", "accept": ["accurate"] },
+    { "sentence": "The ___ was scheduled for Tuesday.", "base": "MAINTAIN", "accept": ["maintenance"] },
+    { "sentence": "Her ___ was noticed by the whole team.", "base": "RELY", "accept": ["reliability"] },
+    { "sentence": "The room ___ system works well now.", "base": "BOOK", "accept": ["booking"] },
+    { "sentence": "We need a faster ___ to enquiries.", "base": "RESPOND", "accept": ["response"] }
+  ]
+}

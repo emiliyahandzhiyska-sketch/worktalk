@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "We reduced 40 applications to five candidates.", "key": "SHORTLISTED", "model": "We shortlisted five candidates.", "accept": ["shortlisted", "shortlist"] },
+    { "original": "She formally told the company she was leaving.", "key": "NOTICE", "model": "She handed in her notice.", "accept": ["handed in her notice", "hand in your notice", "notice"] },
+    { "original": "He lost his job because the role no longer existed.", "key": "REDUNDANCY", "model": "He was made redundant.", "accept": ["redundant", "redundancy"] },
+    { "original": "Employees leave and are replaced very often here.", "key": "TURNOVER", "model": "Staff turnover is very high here.", "accept": ["staff turnover", "turnover"] },
+    { "original": "The company teaches staff new skills for their current jobs.", "key": "UPSKILL", "model": "The company upskills its staff.", "accept": ["upskill", "upskills", "upskilled"] },
+    { "original": "He is completely exhausted from long-term work stress.", "key": "BURNOUT", "model": "He is suffering from burnout.", "accept": ["burnout"] },
+    { "original": "She asked for more money after three good quarters.", "key": "RISE", "model": "She asked for a pay rise.", "accept": ["pay rise", "rise"] },
+    { "original": "Take a day off instead of being paid for Saturday.", "key": "LIEU", "model": "Take time off in lieu.", "accept": ["in lieu"] },
+    { "original": "We talk to people who are leaving to find out why.", "key": "EXIT", "model": "We hold exit interviews.", "accept": ["exit interview", "exit interviews"] },
+    { "original": "The employee made a formal complaint in writing.", "key": "GRIEVANCE", "model": "The employee raised a grievance.", "accept": ["grievance"] },
+    { "original": "Sharing client data breaks the company's rules seriously.", "key": "MISCONDUCT", "model": "Sharing client data is gross misconduct.", "accept": ["misconduct"] },
+    { "original": "Staff can choose when they start and finish.", "key": "FLEXITIME", "model": "The company offers flexitime.", "accept": ["flexitime", "flexi time"] },
+    { "original": "There is a difference between the skills we have and need.", "key": "GAP", "model": "There is a skills gap.", "accept": ["skills gap"] },
+    { "original": "The contract has an agreed end date.", "key": "FIXED", "model": "It is a fixed-term contract.", "accept": ["fixed term", "fixed-term"] },
+    { "original": "An experienced colleague guides every new manager.", "key": "MENTOR", "model": "Every new manager has a mentor.", "accept": ["mentor"] },
+    { "original": "We keep employees rather than losing them.", "key": "RETENTION", "model": "Our retention is good.", "accept": ["retention"] }
+  ],
+  "word_formation": [
+    { "sentence": "We received 60 ___ for the role.", "base": "APPLY", "accept": ["applications", "applicants"] },
+    { "sentence": "The ___ process took five weeks.", "base": "RECRUIT", "accept": ["recruitment"] },
+    { "sentence": "Her ___ was accepted with regret.", "base": "RESIGN", "accept": ["resignation"] },
+    { "sentence": "Staff ___ improved after the change.", "base": "SATISFY", "accept": ["satisfaction"] },
+    { "sentence": "The ___ meeting is scheduled for Friday.", "base": "DISCIPLINE", "accept": ["disciplinary"] },
+    { "sentence": "We offer excellent ___ opportunities.", "base": "TRAIN", "accept": ["training"] },
+    { "sentence": "The ___ of new staff takes two weeks.", "base": "INDUCT", "accept": ["induction"] },
+    { "sentence": "Her ___ to the company is obvious.", "base": "COMMIT", "accept": ["commitment"] },
+    { "sentence": "Every ___ receives written feedback.", "base": "CANDIDATE", "accept": ["candidate"] },
+    { "sentence": "The role requires strong ___ skills.", "base": "LEAD", "accept": ["leadership"] },
+    { "sentence": "___ is measured by an annual survey.", "base": "ENGAGE", "accept": ["engagement"] },
+    { "sentence": "We need a fair ___ of the workload.", "base": "DISTRIBUTE", "accept": ["distribution"] },
+    { "sentence": "The ___ was fair and well documented.", "base": "DECIDE", "accept": ["decision"] },
+    { "sentence": "Employee ___ is our biggest cost.", "base": "ABSENT", "accept": ["absence"] },
+    { "sentence": "The manager showed real ___ for the team.", "base": "SUPPORT", "accept": ["support"] },
+    { "sentence": "___ training is mandatory for managers.", "base": "DIVERSE", "accept": ["diversity"] }
+  ]
+}

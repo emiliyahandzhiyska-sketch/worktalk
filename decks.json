@@ -79,5 +79,41 @@
     "words": "words-hospitality.json",
     "exercises": "exercises-hospitality.json",
     "readings": "readings-hospitality.json"
+  },
+  {
+    "id": "hr",
+    "name": "HR English",
+    "icon": "🧑‍💼",
+    "tagline": "Hiring, contracts, leave, people problems.",
+    "words": "words-hr.json",
+    "exercises": "exercises-hr.json",
+    "readings": "readings-hr.json"
+  },
+  {
+    "id": "sales",
+    "name": "Sales English",
+    "icon": "🤝",
+    "tagline": "Prospecting, pitching, objections, closing.",
+    "words": "words-sales.json",
+    "exercises": "exercises-sales.json",
+    "readings": "readings-sales.json"
+  },
+  {
+    "id": "accounting",
+    "name": "Accounting English",
+    "icon": "🧮",
+    "tagline": "Ledgers, reconciliation, accruals, reporting.",
+    "words": "words-accounting.json",
+    "exercises": "exercises-accounting.json",
+    "readings": "readings-accounting.json"
+  },
+  {
+    "id": "administration",
+    "name": "Administration English",
+    "icon": "🗂️",
+    "tagline": "Scheduling, records, supplies, office support.",
+    "words": "words-administration.json",
+    "exercises": "exercises-administration.json",
+    "readings": "readings-administration.json"
   }
 ]
