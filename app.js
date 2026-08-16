@@ -15,6 +15,17 @@ const PUSH = {
   oneSignalAppId: ''
 };
 
+// Certificate email capture. Paste a Formspree endpoint here to receive
+// captured emails in your inbox. While it's empty, emails are only kept
+// locally on the student's own device (visible to them, not to you) — so
+// capture is effectively off until this is set.
+// Setup: create a free form at https://formspree.io (50 submissions/month
+// free), copy the endpoint URL (looks like https://formspree.io/f/xxxxxxxx),
+// paste it below, commit and push.
+const LEADS = {
+  endpoint: ''
+};
+
 // Per-deck storage key, e.g. worktalk_marketing_mastered
 function sKey(name) {
   return `worktalk_${deckId}_${name}`;
@@ -566,7 +577,22 @@ function bindEvents() {
   document.getElementById('certBtn').addEventListener('click', openCertificate);
   document.getElementById('certClose').addEventListener('click', () =>
     document.getElementById('certModal').classList.add('hidden'));
-  document.getElementById('certPrint').addEventListener('click', () => window.print());
+  document.getElementById('certPrint').addEventListener('click', () => {
+    const email = document.getElementById('certEmailInput').value;
+    const note = document.getElementById('certEmailNote');
+    if (email.trim() && !validEmail(email)) {
+      note.textContent = 'That email doesn\'t look right — check it, or leave it blank.';
+      note.className = 'text-[11px] text-rose-500 mt-1 mb-3';
+      document.getElementById('certEmailInput').focus();
+      return; // don't block on empty, only on a clearly broken address
+    }
+    if (email.trim()) {
+      localStorage.setItem(EMAIL_KEY, email.trim());
+      const d = decks.find(x => x.id === deckId);
+      captureLead(email, document.getElementById('certName').textContent.trim(), d.name);
+    }
+    window.print();
+  });
   document.getElementById('certNameInput').addEventListener('input', e => setCertName(e.target.value));
   document.getElementById('badgesToggle').addEventListener('click', () => {
     const grid = document.getElementById('badgesGrid');
@@ -1137,6 +1163,48 @@ async function copyReport() {
 // ---------- Certificate ----------
 
 const NAME_KEY = 'worktalk_student_name';
+const EMAIL_KEY = 'worktalk_student_email';
+const LEADS_LOCAL_KEY = 'worktalk_leads'; // local fallback record, per device
+const LEADS_SENT_KEY = 'worktalk_leads_sent'; // avoid re-submitting the same email+deck every print
+
+function validEmail(v) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
+}
+
+function leadsReady() {
+  return !!LEADS.endpoint;
+}
+
+// Fire-and-forget: never blocks printing, never shows an error to the student
+async function captureLead(email, name, deckName) {
+  const clean = email.trim();
+  if (!validEmail(clean)) return;
+
+  // Always keep a local record, even if no endpoint is configured yet —
+  // that way switching the endpoint on later doesn't lose earlier signups
+  const local = readJson(LEADS_LOCAL_KEY, '[]');
+  local.push({ email: clean, name, topic: deckName, date: new Date().toISOString() });
+  localStorage.setItem(LEADS_LOCAL_KEY, JSON.stringify(local.slice(-200)));
+
+  if (!leadsReady()) return;
+
+  const sentKey = `${clean.toLowerCase()}|${deckName}`;
+  const sent = new Set(readJson(LEADS_SENT_KEY, '[]'));
+  if (sent.has(sentKey)) return; // already captured this email for this topic
+
+  try {
+    await fetch(LEADS.endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        email: clean, name: name || '(no name given)',
+        topic: deckName, source: 'WorkTalk certificate', app: location.origin
+      })
+    });
+    sent.add(sentKey);
+    localStorage.setItem(LEADS_SENT_KEY, JSON.stringify([...sent]));
+  } catch { /* offline or blocked — the local record above still has it */ }
+}
 
 function deckComplete() {
   return words.length > 0 &&
@@ -1171,6 +1239,8 @@ function openCertificate() {
   const input = document.getElementById('certNameInput');
   input.value = saved;
   setCertName(saved);
+
+  document.getElementById('certEmailInput').value = localStorage.getItem(EMAIL_KEY) || '';
 
   document.getElementById('certModal').classList.remove('hidden');
   if (!saved) input.focus();
