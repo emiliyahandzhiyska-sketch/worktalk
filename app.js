@@ -481,7 +481,7 @@ function bindEvents() {
 
   const card = document.getElementById('flashcard');
   card.addEventListener('click', e => {
-    if (e.target.closest('#ttsBtn') || e.target.closest('#bgBtn')) return; // buttons shouldn't flip
+    if (e.target.closest('button')) return; // the card's own buttons shouldn't flip it
     card.classList.toggle('flipped');
   });
   card.addEventListener('keydown', e => {
@@ -507,6 +507,16 @@ function bindEvents() {
   document.getElementById('bgBtn').addEventListener('click', e => {
     e.stopPropagation();
     document.getElementById('cardTranslation').classList.toggle('hidden');
+  });
+  document.getElementById('sentenceBtn').addEventListener('click', e => {
+    e.stopPropagation();
+    const w = cur();
+    if (w) speak(w.business_context_example);
+  });
+  document.getElementById('slowBtn').addEventListener('click', e => {
+    e.stopPropagation();
+    const w = cur();
+    if (w) speak(w.business_context_example, 0.6);
   });
   document.getElementById('shareBtn').addEventListener('click', shareProgress);
   document.getElementById('badgesToggle').addEventListener('click', () => {
@@ -961,7 +971,7 @@ function pickVoice() {
   return preferred || english[0];
 }
 
-function speak(text) {
+function speak(text, rate = 0.9) {
   if (!('speechSynthesis' in window)) {
     alert('Your browser doesn\'t support speech. Try Chrome or Edge.');
     return;
@@ -975,8 +985,31 @@ function speak(text) {
   } else {
     u.lang = 'en-US';
   }
-  u.rate = 0.9; // slightly slower for learners
+  u.rate = rate; // 0.9 default, slower on request
   speechSynthesis.speak(u);
+}
+
+// ---------- Speech recognition (speaking practice) ----------
+
+const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+function speechSupported() {
+  return !!SpeechRec;
+}
+
+// Word-level similarity, so "I'll touch base" still counts for "touch base"
+// and a missing article doesn't fail an otherwise correct attempt.
+function similarity(said, target) {
+  const a = normalize(said).split(' ').filter(Boolean);
+  const b = normalize(target).split(' ').filter(Boolean);
+  if (!b.length) return 0;
+  const pool = [...a];
+  let hits = 0;
+  for (const w of b) {
+    const i = pool.indexOf(w);
+    if (i > -1) { hits++; pool.splice(i, 1); }
+  }
+  return hits / b.length;
 }
 
 // ---------- Quiz ----------
@@ -1105,6 +1138,7 @@ const UOE_MODES = {
   open:      { icon: '⌨️', title: 'Open cloze',        desc: 'Type the missing phrase yourself.' },
   transform: { icon: '🔁', title: 'Transformations',   desc: 'Rewrite the sentence using a key word.' },
   wordform:  { icon: '🔤', title: 'Word formation',    desc: 'Build the right form of the word.' },
+  speaking:  { icon: '🎤', title: 'Speaking',          desc: 'Say the phrase out loud and get scored.' },
   reading:   { icon: '📖', title: 'Reading',           desc: 'Read a short story, answer questions.' },
   listen:    { icon: '👂', title: 'Listening',         desc: 'Hear the phrase, pick the meaning.' },
   dictation: { icon: '🎧', title: 'Dictation',         desc: 'Listen and type what you hear.' },
@@ -1147,23 +1181,28 @@ function blankOut(w) {
 function renderUoeMenu() {
   uoe = null;
   const best = getUoeBest();
-  const scored = ['cloze', 'open', 'transform', 'wordform', 'reading', 'listen', 'dictation'];
+  const scored = ['cloze', 'open', 'transform', 'wordform', 'speaking', 'reading', 'listen', 'dictation'];
   document.getElementById('uoeBox').innerHTML = `
     <div class="fade-in">
       <h2 class="text-xl font-extrabold mb-1">Use of English</h2>
       <p class="text-sm text-slate-500 dark:text-slate-400 mb-5">Exam-style practice with the phrases from your cards.</p>
       <div class="space-y-2.5">
-        ${Object.entries(UOE_MODES).map(([mode, m]) => `
-          <button onclick="startUoe('${mode}')"
-            class="w-full text-left px-4 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:border-brand-500 dark:hover:border-brand-500 transition-colors flex items-center gap-3">
+        ${Object.entries(UOE_MODES).map(([mode, m]) => {
+          const off = mode === 'speaking' && !speechSupported();
+          return `
+          <button ${off ? 'disabled' : `onclick="startUoe('${mode}')"`}
+            class="w-full text-left px-4 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 ${off
+              ? 'opacity-50 cursor-not-allowed'
+              : 'hover:border-brand-500 dark:hover:border-brand-500'} transition-colors flex items-center gap-3">
             <span class="text-2xl">${m.icon}</span>
             <span class="flex-1">
               <span class="block font-bold text-sm">${m.title}</span>
-              <span class="block text-xs text-slate-500 dark:text-slate-400">${m.desc}</span>
+              <span class="block text-xs text-slate-500 dark:text-slate-400">${
+                off ? 'Needs Chrome or Edge' : m.desc}</span>
             </span>
-            ${scored.includes(mode) && best[mode] !== undefined
+            ${!off && scored.includes(mode) && best[mode] !== undefined
               ? `<span class="text-xs font-semibold text-brand-500">Best: ${best[mode]}/${UOE_ROUND}</span>` : ''}
-          </button>`).join('')}
+          </button>`; }).join('')}
       </div>
     </div>`;
 }
@@ -1187,6 +1226,12 @@ function startUoe(mode) {
     items = shuffle(exercises.transformations).slice(0, UOE_ROUND);
   } else if (mode === 'wordform') {
     items = shuffle(exercises.word_formation).slice(0, UOE_ROUND);
+  } else if (mode === 'speaking') {
+    items = shuffle(words).slice(0, UOE_ROUND).map(w => ({
+      target: w.phrase,
+      audio: w.audio_text,
+      example: w.business_context_example
+    }));
   } else if (mode === 'reading') {
     const passage = shuffle(readings)[0];
     if (!passage) return;
@@ -1281,6 +1326,19 @@ function renderUoeItem() {
         <p class="text-base leading-relaxed mb-2">${it.sentence.replace('___', '<b class="text-brand-500">_______</b>')}</p>
         <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Use the correct form of: <b class="text-brand-500">${it.base}</b></p>
         ${uoeInput('Type the word…')}
+      </div>`;
+  } else if (uoe.mode === 'speaking') {
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Say this out loud</p>
+        <p class="text-2xl font-extrabold mb-1">${it.target}</p>
+        <p class="text-xs italic text-slate-500 dark:text-slate-400 mb-5">“${it.example}”</p>
+        <div class="flex gap-2 mb-3">
+          <button onclick="speak(uoe.items[uoe.index].audio)" class="px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 font-semibold text-sm">🔊 Hear it</button>
+          <button id="micBtn" onclick="startListening()" class="flex-1 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">🎤 Tap and speak</button>
+        </div>
+        <button onclick="uoeSpeakingSkip()" class="w-full py-2 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-brand-500">Skip this one</button>
+        <div id="uoeFeedback" class="mt-3"></div>
       </div>`;
   } else if (uoe.mode === 'reading') {
     const p = uoe.passage;
@@ -1422,6 +1480,97 @@ function uoeReadingAnswer(i) {
     }
   });
   setTimeout(uoeNext, 1100);
+}
+
+let recogniser = null;
+
+function startListening() {
+  if (uoe.checked || !speechSupported()) return;
+  const btn = document.getElementById('micBtn');
+  const fb = document.getElementById('uoeFeedback');
+
+  if (recogniser) { try { recogniser.abort(); } catch {} }
+  recogniser = new SpeechRec();
+  recogniser.lang = 'en-US';
+  recogniser.interimResults = false;
+  recogniser.maxAlternatives = 3;
+
+  btn.textContent = '🔴 Listening…';
+  btn.disabled = true;
+  fb.innerHTML = '';
+
+  recogniser.onresult = e => {
+    const target = uoe.items[uoe.index].target;
+    // The engine offers several guesses; take the friendliest one
+    let best = { text: '', score: 0 };
+    for (const alt of e.results[0]) {
+      const s = similarity(alt.transcript, target);
+      if (s > best.score) best = { text: alt.transcript, score: s };
+    }
+    gradeSpeaking(best.text, best.score);
+  };
+
+  recogniser.onerror = e => {
+    btn.textContent = '🎤 Tap and speak';
+    btn.disabled = false;
+    const msg = e.error === 'not-allowed'
+      ? 'Microphone blocked. Allow it in the address bar, then try again.'
+      : e.error === 'no-speech'
+        ? "I didn't hear anything. Try again, a little louder."
+        : 'Something went wrong with the microphone. Try again.';
+    fb.innerHTML = `<div class="p-3 rounded-xl text-sm bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200">${msg}</div>`;
+  };
+
+  recogniser.onend = () => {
+    if (!uoe.checked) { btn.textContent = '🎤 Tap and speak'; btn.disabled = false; }
+  };
+
+  try { recogniser.start(); }
+  catch { btn.textContent = '🎤 Tap and speak'; btn.disabled = false; }
+}
+
+function gradeSpeaking(heard, score) {
+  if (uoe.checked) return;
+  uoe.checked = true;
+  const it = uoe.items[uoe.index];
+  const good = score >= 0.8;
+  // A second attempt still gives feedback, but the point is already gone
+  if (good && !it.retried) uoe.score++;
+
+  const btn = document.getElementById('micBtn');
+  btn.disabled = true;
+  btn.textContent = good ? '✅ Nice' : '↻ Try again';
+
+  document.getElementById('uoeFeedback').innerHTML = `
+    <div class="fade-in p-3 rounded-xl text-sm ${good
+      ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-200'
+      : 'bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200'}">
+      <p class="font-bold mb-1">${good ? 'That sounded right! 👏' : 'Close, but not quite.'}</p>
+      <p>I heard: <b>“${heard || '—'}”</b></p>
+      ${good ? '' : `<p class="mt-1">Target: <b>${it.target}</b></p>`}
+    </div>
+    <div class="flex gap-2 mt-3">
+      ${good ? '' : `<button onclick="retrySpeaking()" class="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 font-semibold text-sm">🎤 Again</button>`}
+      <button onclick="uoeNext()" class="flex-1 py-2.5 rounded-xl bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 font-bold text-sm">Continue →</button>
+    </div>`;
+}
+
+// A retry doesn't award the point that was already missed
+function retrySpeaking() {
+  uoe.checked = false;
+  const btn = document.getElementById('micBtn');
+  btn.disabled = false;
+  btn.textContent = '🎤 Tap and speak';
+  document.getElementById('uoeFeedback').innerHTML = '';
+  uoe.items[uoe.index].retried = true;
+  startListening();
+}
+
+function uoeSpeakingSkip() {
+  if (uoe.checked) return;
+  uoe.checked = true;
+  if (recogniser) { try { recogniser.abort(); } catch {} }
+  uoeNext();
 }
 
 function uoePlay() {
