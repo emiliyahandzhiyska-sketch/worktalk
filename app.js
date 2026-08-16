@@ -231,6 +231,10 @@ async function loadDeck(id) {
   // Readings are optional: a deck without them simply hides the mode
   readings = rRes.ok ? await rRes.json() : [];
 
+  // The report needs deck size and last-used date for decks that aren't loaded
+  localStorage.setItem(sKey('size'), String(words.length));
+  localStorage.setItem(sKey('last'), todayStr());
+
   currentCard = 0;
   quiz = null;
   uoe = null;
@@ -520,6 +524,16 @@ function bindEvents() {
     if (w) speak(w.business_context_example, 0.6);
   });
   document.getElementById('shareBtn').addEventListener('click', shareProgress);
+  document.getElementById('reportBtn').addEventListener('click', openReport);
+  document.getElementById('reportClose').addEventListener('click', () =>
+    document.getElementById('reportModal').classList.add('hidden'));
+  document.getElementById('reportPrint').addEventListener('click', () => window.print());
+  document.getElementById('reportCopy').addEventListener('click', copyReport);
+  document.getElementById('reportNameInput').addEventListener('input', e => {
+    const clean = e.target.value.trim().slice(0, 40);
+    localStorage.setItem(NAME_KEY, clean);
+    document.getElementById('reportName').textContent = clean || 'Learner';
+  });
   document.getElementById('certBtn').addEventListener('click', openCertificate);
   document.getElementById('certClose').addEventListener('click', () =>
     document.getElementById('certModal').classList.add('hidden'));
@@ -935,6 +949,148 @@ function renderBadges() {
       <span class="text-[10px] font-semibold leading-tight">${a.title}</span>
     </div>`;
   }).join('');
+}
+
+// ---------- Progress report ----------
+
+// Everything the report needs, read straight from storage so decks that
+// aren't currently loaded still appear.
+function collectReport() {
+  const rows = [];
+  for (const d of decks) {
+    const size = parseInt(localStorage.getItem(`worktalk_${d.id}_size`), 10);
+    if (!size) continue;                       // never opened, nothing to report
+    const m = readJson(`worktalk_${d.id}_mastered`, '[]').length;
+    const hs = parseInt(localStorage.getItem(`worktalk_${d.id}_high_score`), 10);
+    const uoeBest = readJson(`worktalk_${d.id}_uoe_best`, '{}');
+    const srs = Object.keys(readJson(`worktalk_${d.id}_srs`, '{}')).length;
+    rows.push({
+      name: `${d.icon} ${d.name}`,
+      group: d.group,
+      size, mastered: m,
+      pct: Math.round((m / size) * 100),
+      quiz: Number.isNaN(hs) ? null : hs,
+      uoeBest, inReview: srs,
+      last: localStorage.getItem(`worktalk_${d.id}_last`) || null
+    });
+  }
+  rows.sort((a, b) => b.pct - a.pct);
+  return rows;
+}
+
+function openReport() {
+  const rows = collectReport();
+  const badges = earnedBadges();
+  const totalMastered = rows.reduce((s, r) => s + r.mastered, 0);
+  const totalReview = rows.reduce((s, r) => s + r.inReview, 0);
+
+  document.getElementById('reportDate').textContent =
+    new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  const saved = localStorage.getItem(NAME_KEY) || '';
+  const input = document.getElementById('reportNameInput');
+  input.value = saved;
+  document.getElementById('reportName').textContent = saved || 'Learner';
+
+  const tile = (v, l) => `
+    <div class="rounded-xl bg-slate-50 py-3 px-2 text-center">
+      <p class="text-xl font-extrabold text-brand-600">${v}</p>
+      <p class="text-[10px] uppercase tracking-widest text-slate-500 mt-0.5">${l}</p>
+    </div>`;
+  document.getElementById('reportSummary').innerHTML =
+    tile(totalMastered, 'phrases mastered') +
+    tile(rows.length, 'topics started') +
+    tile(getStreak(), 'day streak') +
+    tile(`${badges.size}/${ACHIEVEMENTS.length}`, 'achievements');
+
+  if (!rows.length) {
+    document.getElementById('reportBody').innerHTML =
+      '<p class="text-sm text-slate-500">No practice recorded yet. Open a topic and master a few cards first.</p>';
+    document.getElementById('reportModal').classList.remove('hidden');
+    return;
+  }
+
+  const modeLabel = m => (UOE_MODES[m] ? UOE_MODES[m].title : m);
+  const bestList = b => Object.entries(b).length
+    ? Object.entries(b).map(([m, s]) => `${modeLabel(m)} ${s}/${UOE_ROUND}`).join(', ')
+    : '—';
+
+  const table = `
+    <table class="w-full text-xs border-collapse mb-6">
+      <thead>
+        <tr class="text-left text-slate-500 border-b border-slate-200">
+          <th class="py-2 font-semibold">Topic</th>
+          <th class="py-2 font-semibold text-center">Mastered</th>
+          <th class="py-2 font-semibold text-center">Quiz</th>
+          <th class="py-2 font-semibold">Exercise bests</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows.map(r => `
+          <tr class="border-b border-slate-100 align-top">
+            <td class="py-2 pr-2 font-semibold">${r.name}</td>
+            <td class="py-2 text-center whitespace-nowrap">
+              ${r.mastered}/${r.size}
+              <span class="block text-[10px] text-slate-400">${r.pct}%</span>
+            </td>
+            <td class="py-2 text-center">${r.quiz === null ? '—' : `${r.quiz}/${QUIZ_LENGTH}`}</td>
+            <td class="py-2 text-slate-600">${bestList(r.uoeBest)}</td>
+          </tr>`).join('')}
+      </tbody>
+    </table>`;
+
+  // What a teacher would actually plan a lesson around
+  const weakest = rows.filter(r => r.pct < 50).slice(0, 3);
+  const triedModes = new Set(rows.flatMap(r => Object.keys(r.uoeBest)));
+  const untried = Object.keys(UOE_MODES).filter(m => m !== 'own' && !triedModes.has(m));
+
+  const focus = `
+    <div class="rounded-xl bg-amber-50 p-4 text-xs leading-relaxed">
+      <p class="font-bold text-sm mb-2">Suggested focus</p>
+      ${weakest.length
+        ? `<p class="mb-1"><b>Topics to revisit:</b> ${weakest.map(r => `${r.name} (${r.pct}%)`).join(', ')}</p>`
+        : '<p class="mb-1">Every started topic is above 50%. Good coverage.</p>'}
+      ${untried.length
+        ? `<p><b>Exercise types not tried yet:</b> ${untried.map(modeLabel).join(', ')}</p>`
+        : '<p>Every exercise type has been tried at least once.</p>'}
+      <p class="mt-1"><b>Cards in the daily review system:</b> ${totalReview}</p>
+    </div>`;
+
+  document.getElementById('reportBody').innerHTML = table + focus;
+  document.getElementById('reportModal').classList.remove('hidden');
+}
+
+// A plain-text version, for pasting into a message to the teacher
+function reportAsText() {
+  const rows = collectReport();
+  const name = localStorage.getItem(NAME_KEY) || 'Learner';
+  const lines = [
+    `WorkTalk progress report — ${name}`,
+    new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }),
+    ''
+  ];
+  for (const r of rows) {
+    const bests = Object.entries(r.uoeBest)
+      .map(([m, s]) => `${UOE_MODES[m] ? UOE_MODES[m].title : m} ${s}/${UOE_ROUND}`).join(', ');
+    lines.push(`${r.name}: ${r.mastered}/${r.size} mastered (${r.pct}%)` +
+      (r.quiz !== null ? `, quiz ${r.quiz}/${QUIZ_LENGTH}` : '') +
+      (bests ? `, ${bests}` : ''));
+  }
+  const st = getStreak();
+  if (st) lines.push('', `Streak: ${st} day${st > 1 ? 's' : ''}`);
+  lines.push(location.origin);
+  return lines.join('\n');
+}
+
+async function copyReport() {
+  const btn = document.getElementById('reportCopy');
+  try {
+    await navigator.clipboard.writeText(reportAsText());
+    btn.textContent = '✅ Copied';
+  } catch {
+    btn.textContent = 'Copy failed';
+  }
+  setTimeout(() => { btn.textContent = '📋 Copy for your teacher'; }, 1800);
 }
 
 // ---------- Certificate ----------

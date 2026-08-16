@@ -58,8 +58,9 @@
     @media print {
       body { background: #fff !important; }
       body * { visibility: hidden; }
-      #certificate, #certificate * { visibility: visible; }
-      #certificate {
+      #certificate, #certificate *,
+      #report, #report * { visibility: visible; }
+      #certificate, #report {
         position: absolute;
         top: 0; left: 0; right: 0;
         margin: 0;
@@ -118,6 +119,7 @@
         <p id="highScoreLabel" class="text-xs text-slate-500 dark:text-slate-400">Quiz best: not played yet</p>
         <div class="flex items-center gap-2">
           <span id="streakLabel" class="text-xs font-bold text-orange-500 hidden"></span>
+          <button id="reportBtn" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">📄 Report</button>
           <button id="shareBtn" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">📤 Share</button>
         </div>
       </div>
@@ -222,9 +224,40 @@
     </section>
 
     <footer class="text-center text-xs text-slate-400 dark:text-slate-500 mt-6">
-      Made with ❤️ in Plovdiv by <b>Language Workshop</b>
+      Made with ❤️ by <b>Language Workshop</b>
     </footer>
 
+  </div>
+
+  <!-- Progress report for the teacher -->
+  <div id="reportModal" class="hidden fixed inset-0 z-50 bg-slate-900/70 overflow-y-auto p-4">
+    <div class="max-w-2xl mx-auto my-6">
+      <div id="report" class="bg-white text-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl">
+        <div class="flex items-start justify-between border-b border-slate-200 pb-4 mb-5">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-brand-600 font-bold">Language Workshop</p>
+            <h2 class="text-xl font-extrabold tracking-tight mt-0.5">Learner progress report</h2>
+          </div>
+          <div class="text-right text-xs text-slate-500">
+            <p id="reportName" class="font-bold text-slate-800 text-sm"></p>
+            <p id="reportDate"></p>
+          </div>
+        </div>
+        <div id="reportSummary" class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6"></div>
+        <div id="reportBody"></div>
+      </div>
+
+      <div class="no-print mt-4 bg-white dark:bg-slate-900 rounded-2xl p-4 shadow-lg">
+        <label class="block text-xs font-semibold mb-1.5 text-slate-600 dark:text-slate-300">Your name on the report</label>
+        <input id="reportNameInput" type="text" placeholder="e.g. Maria Petrova" autocomplete="name"
+          class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm mb-3 focus:outline-none focus:border-brand-500">
+        <div class="flex flex-wrap gap-2">
+          <button id="reportCopy" class="flex-1 min-w-[140px] py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">📋 Copy for your teacher</button>
+          <button id="reportPrint" class="px-5 py-2.5 rounded-xl bg-slate-200 dark:bg-slate-800 font-bold text-sm">🖨 Print</button>
+          <button id="reportClose" class="px-5 py-2.5 rounded-xl bg-slate-200 dark:bg-slate-800 font-bold text-sm">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Certificate -->
@@ -232,7 +265,7 @@
     <div class="max-w-2xl mx-auto my-6">
       <div id="certificate" class="bg-white text-slate-800 rounded-2xl p-8 sm:p-12 shadow-2xl border-[6px] border-double border-amber-500">
         <p class="text-center text-xs uppercase tracking-[0.3em] text-amber-600 font-bold mb-1">Language Workshop</p>
-        <p class="text-center text-[10px] uppercase tracking-widest text-slate-400 mb-6">Plovdiv, Bulgaria</p>
+        <p class="text-center text-[10px] uppercase tracking-widest text-slate-400 mb-6">English for work, anywhere</p>
 
         <h2 class="text-center text-2xl sm:text-3xl font-extrabold tracking-tight mb-1">Certificate of Completion</h2>
         <p class="text-center text-xs text-slate-500 mb-8">This certifies that</p>
