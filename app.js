@@ -43,6 +43,7 @@ let deckId = 'workplace';
 let words = [];
 let exercises = { transformations: [], word_formation: [] };
 let readings = [];
+let mistakes = []; // shared across every topic
 let currentCard = 0;
 let mastered = new Set();
 let quiz = null; // { questions, index, score, locked }
@@ -74,9 +75,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('ctaLink').href = BRAND.ctaUrl;
 
   try {
-    const dRes = await fetch('decks.json');
+    const [dRes, mRes] = await Promise.all([fetch('decks.json'), fetch('mistakes.json')]);
     if (!dRes.ok) throw new Error(dRes.statusText);
     decks = await dRes.json();
+    mistakes = mRes.ok ? await mRes.json() : [];
 
     // One-time reset so everyone lands back on the first topic once. The app
     // still remembers your last topic after this.
@@ -1349,6 +1351,7 @@ const UOE_MODES = {
   transform: { icon: '🔁', title: 'Transformations',   desc: 'Rewrite the sentence using a key word.' },
   wordform:  { icon: '🔤', title: 'Word formation',    desc: 'Build the right form of the word.' },
   speaking:  { icon: '🎤', title: 'Speaking',          desc: 'Say the phrase out loud and get scored.' },
+  mistakes:  { icon: '🚫', title: 'Common mistakes',   desc: 'Errors Bulgarian speakers actually make.' },
   reading:   { icon: '📖', title: 'Reading',           desc: 'Read a short story, answer questions.' },
   listen:    { icon: '👂', title: 'Listening',         desc: 'Hear the phrase, pick the meaning.' },
   dictation: { icon: '🎧', title: 'Dictation',         desc: 'Listen and type what you hear.' },
@@ -1391,7 +1394,7 @@ function blankOut(w) {
 function renderUoeMenu() {
   uoe = null;
   const best = getUoeBest();
-  const scored = ['cloze', 'open', 'transform', 'wordform', 'speaking', 'reading', 'listen', 'dictation'];
+  const scored = ['cloze', 'open', 'transform', 'wordform', 'speaking', 'mistakes', 'reading', 'listen', 'dictation'];
   document.getElementById('uoeBox').innerHTML = `
     <div class="fade-in">
       <h2 class="text-xl font-extrabold mb-1">Use of English</h2>
@@ -1414,6 +1417,10 @@ function renderUoeMenu() {
               ? `<span class="text-xs font-semibold text-brand-500">Best: ${best[mode]}/${UOE_ROUND}</span>` : ''}
           </button>`; }).join('')}
       </div>
+      <button onclick="browseMistakes()"
+        class="w-full mt-3 py-2.5 rounded-xl border border-dashed border-slate-300 dark:border-slate-600 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:border-brand-500 hover:text-brand-500 transition-colors">
+        📕 Browse all ${mistakes.length} common mistakes
+      </button>
     </div>`;
 }
 
@@ -1436,6 +1443,11 @@ function startUoe(mode) {
     items = shuffle(exercises.transformations).slice(0, UOE_ROUND);
   } else if (mode === 'wordform') {
     items = shuffle(exercises.word_formation).slice(0, UOE_ROUND);
+  } else if (mode === 'mistakes') {
+    items = shuffle(mistakes).slice(0, UOE_ROUND).map(m => {
+      const options = shuffle([m.right, m.wrong]);
+      return { ...m, options, correct: options.indexOf(m.right) };
+    });
   } else if (mode === 'speaking') {
     items = shuffle(words).slice(0, UOE_ROUND).map(w => ({
       target: w.phrase,
@@ -1536,6 +1548,20 @@ function renderUoeItem() {
         <p class="text-base leading-relaxed mb-2">${it.sentence.replace('___', '<b class="text-brand-500">_______</b>')}</p>
         <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Use the correct form of: <b class="text-brand-500">${it.base}</b></p>
         ${uoeInput('Type the word…')}
+      </div>`;
+  } else if (uoe.mode === 'mistakes') {
+    box.innerHTML = `
+      <div class="fade-in">${uoeHeader()}
+        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">${it.category}</p>
+        <p class="text-sm font-bold mb-4">Which one is correct?</p>
+        <div class="space-y-2.5">
+          ${it.options.map((opt, i) => `
+            <button data-opt="${i}" onclick="uoeMistakeAnswer(${i})"
+              class="opt-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm font-medium hover:border-brand-500 dark:hover:border-brand-500 transition-colors">
+              ${opt}
+            </button>`).join('')}
+        </div>
+        <div id="uoeFeedback" class="mt-3"></div>
       </div>`;
   } else if (uoe.mode === 'speaking') {
     box.innerHTML = `
@@ -1690,6 +1716,58 @@ function uoeReadingAnswer(i) {
     }
   });
   setTimeout(uoeNext, 1100);
+}
+
+function uoeMistakeAnswer(i) {
+  if (uoe.checked) return;
+  uoe.checked = true;
+  const it = uoe.items[uoe.index];
+  const correct = i === it.correct;
+  if (correct) uoe.score++;
+
+  document.querySelectorAll('.opt-btn').forEach(btn => {
+    const idx = +btn.dataset.opt;
+    btn.disabled = true;
+    if (idx === it.correct) btn.className += ' !bg-emerald-100 dark:!bg-emerald-900/50 !border-emerald-500';
+    else btn.className += ' !bg-rose-100 dark:!bg-rose-900/40 !border-rose-500 line-through opacity-70';
+  });
+
+  document.getElementById('uoeFeedback').innerHTML = `
+    <div class="fade-in p-3 rounded-xl text-sm ${correct
+      ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-200'
+      : 'bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200'}">
+      <p class="font-bold mb-1">${correct ? 'Correct! ✅' : 'Not quite.'}</p>
+      <p>${it.why}</p>
+      <button onclick="document.getElementById('mistakeBg').classList.toggle('hidden')"
+        class="text-xs font-semibold underline mt-1.5">🇧🇬 Обяснение на български</button>
+      <p id="mistakeBg" class="hidden mt-1">${it.why_bg}</p>
+    </div>
+    <button onclick="uoeNext()" class="w-full mt-3 py-2.5 rounded-xl bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 font-bold text-sm">Continue →</button>`;
+}
+
+// The full list, for reading rather than testing
+function browseMistakes() {
+  const byCat = {};
+  for (const m of mistakes) (byCat[m.category] ||= []).push(m);
+
+  document.getElementById('uoeBox').innerHTML = `
+    <div class="fade-in">
+      <div class="flex items-center justify-between mb-4">
+        <button onclick="renderUoeMenu()" class="text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-brand-500">← Menu</button>
+        <span class="text-xs text-slate-500 dark:text-slate-400">🚫 ${mistakes.length} common mistakes</span>
+      </div>
+      ${Object.entries(byCat).map(([cat, list]) => `
+        <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mt-4 mb-2 first:mt-0">${cat}</p>
+        <div class="space-y-2">
+          ${list.map(m => `
+            <div class="rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-sm">
+              <p class="text-rose-600 dark:text-rose-400 line-through">${m.wrong}</p>
+              <p class="text-emerald-600 dark:text-emerald-400 font-semibold">${m.right}</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">${m.why}</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400">${m.why_bg}</p>
+            </div>`).join('')}
+        </div>`).join('')}
+    </div>`;
 }
 
 let recogniser = null;
