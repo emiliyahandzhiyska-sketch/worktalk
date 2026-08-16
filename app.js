@@ -276,8 +276,12 @@ function renderCategoryChips() {
       class="whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${active
         ? 'bg-brand-500 text-white border-brand-500'
         : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-brand-500'}">${label}</button>`;
-  // Levels only appear once the phrases in this topic actually carry them
-  const levels = ['A2', 'B1', 'B2', 'C1'].filter(l => words.some(w => w.level === l));
+  // Level chips only make sense once most of the topic carries a level.
+  // A couple of phrases enriched via another topic would filter to one card.
+  const levelled = words.filter(w => w.level).length;
+  const levels = levelled >= words.length / 2
+    ? ['A2', 'B1', 'B2', 'C1'].filter(l => words.some(w => w.level === l))
+    : [];
 
   document.getElementById('categoryChips').innerHTML =
     chip('All', !cardFilter.category && !cardFilter.unmasteredOnly && !cardFilter.level, 'setCategory(null)') +
