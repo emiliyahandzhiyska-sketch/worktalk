@@ -45,17 +45,19 @@ let exercises = { transformations: [], word_formation: [] };
 let readings = [];
 let mistakes = [];  // shared across every topic
 let dialogues = {}; // keyed by deck id
+let enrich = {};    // phrase -> { l: level, c: [collocations] }
 let currentCard = 0;
 let mastered = new Set();
 let quiz = null; // { questions, index, score, locked }
 let uoe = null;  // { mode, items, index, score, checked }
-let cardFilter = { category: null, unmasteredOnly: false };
+let cardFilter = { category: null, unmasteredOnly: false, level: null };
 let review = null; // spaced-repetition session: { queue, index, shown }
 
 // Cards visible under the current category / unmastered filter
 function visibleCards() {
   return words.filter(w =>
     (!cardFilter.category || w.category === cardFilter.category) &&
+    (!cardFilter.level || w.level === cardFilter.level) &&
     (!cardFilter.unmasteredOnly || !mastered.has(w.phrase)));
 }
 
@@ -76,13 +78,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('ctaLink').href = BRAND.ctaUrl;
 
   try {
-    const [dRes, mRes, gRes] = await Promise.all([
-      fetch('decks.json'), fetch('mistakes.json'), fetch('dialogues.json')
+    const [dRes, mRes, gRes, eRes] = await Promise.all([
+      fetch('decks.json'), fetch('mistakes.json'), fetch('dialogues.json'), fetch('enrich.json')
     ]);
     if (!dRes.ok) throw new Error(dRes.statusText);
     decks = await dRes.json();
     mistakes = mRes.ok ? await mRes.json() : [];
     dialogues = gRes.ok ? await gRes.json() : {};
+    enrich = eRes.ok ? await eRes.json() : {};
 
     // One-time reset so everyone lands back on the first topic once. The app
     // still remembers your last topic after this.
@@ -233,6 +236,11 @@ async function loadDeck(id) {
   ]);
   if (!wRes.ok || !eRes.ok) throw new Error('deck load failed');
   words = await wRes.json();
+  // Level and word partners live in one shared file, merged on by phrase
+  words = words.map(w => {
+    const extra = enrich[w.phrase];
+    return extra ? { ...w, level: extra.l, collocations: extra.c || [] } : w;
+  });
   exercises = await eRes.json();
   // Readings are optional: a deck without them simply hides the mode
   readings = rRes.ok ? await rRes.json() : [];
@@ -245,7 +253,7 @@ async function loadDeck(id) {
   quiz = null;
   uoe = null;
   review = null;
-  cardFilter = { category: null, unmasteredOnly: false };
+  cardFilter = { category: null, unmasteredOnly: false, level: null };
   loadProgress();
 
   document.getElementById('tagline').textContent =
@@ -268,15 +276,26 @@ function renderCategoryChips() {
       class="whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${active
         ? 'bg-brand-500 text-white border-brand-500'
         : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-brand-500'}">${label}</button>`;
+  // Levels only appear once the phrases in this topic actually carry them
+  const levels = ['A2', 'B1', 'B2', 'C1'].filter(l => words.some(w => w.level === l));
+
   document.getElementById('categoryChips').innerHTML =
-    chip('All', !cardFilter.category && !cardFilter.unmasteredOnly, 'setCategory(null)') +
+    chip('All', !cardFilter.category && !cardFilter.unmasteredOnly && !cardFilter.level, 'setCategory(null)') +
     cats.map(c => chip(c, cardFilter.category === c, `setCategory('${c}')`)).join('') +
+    levels.map(l => chip(l, cardFilter.level === l, `setLevel('${l}')`)).join('') +
     chip('🎯 To learn', cardFilter.unmasteredOnly, 'toggleUnmastered()');
 }
 
 function setCategory(c) {
   cardFilter.category = c;
-  if (c === null) cardFilter.unmasteredOnly = false;
+  if (c === null) { cardFilter.unmasteredOnly = false; cardFilter.level = null; }
+  currentCard = 0;
+  renderCategoryChips();
+  renderCard();
+}
+
+function setLevel(l) {
+  cardFilter.level = cardFilter.level === l ? null : l;
   currentCard = 0;
   renderCategoryChips();
   renderCard();
@@ -611,6 +630,18 @@ function renderCard() {
   document.getElementById('cardDefinition').textContent = w.definition;
   document.getElementById('cardExample').textContent = '“' + w.business_context_example + '”';
   document.getElementById('cardTranslation').textContent = '🇧🇬 ' + w.translation_bg;
+
+  const lvl = document.getElementById('cardLevel');
+  lvl.classList.toggle('hidden', !w.level);
+  if (w.level) lvl.textContent = w.level;
+
+  const colBox = document.getElementById('cardCollocations');
+  const hasCol = w.collocations && w.collocations.length;
+  colBox.classList.toggle('hidden', !hasCol);
+  if (hasCol) {
+    document.getElementById('cardCollocationsList').innerHTML =
+      w.collocations.map(c => `<span class="inline-block bg-white/15 rounded-lg px-2 py-1 mr-1.5 mb-1.5">${c}</span>`).join('');
+  }
   document.getElementById('cardCounter').textContent = `${currentCard + 1} / ${list.length}`;
 
   renderMasterBtn();

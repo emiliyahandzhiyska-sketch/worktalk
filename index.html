@@ -158,7 +158,10 @@
         <div class="flip-inner min-h-[280px]">
           <!-- Front -->
           <div class="flip-face min-h-[280px] bg-white dark:bg-slate-900 rounded-2xl shadow-md border border-slate-200 dark:border-slate-800 p-8 flex flex-col items-center justify-center text-center">
-            <p class="text-xs uppercase tracking-widest text-slate-400 mb-4">Phrase</p>
+            <div class="flex items-center gap-2 mb-4">
+              <p class="text-xs uppercase tracking-widest text-slate-400">Phrase</p>
+              <span id="cardLevel" class="hidden text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-50 dark:bg-slate-800 text-brand-600 dark:text-brand-100"></span>
+            </div>
             <p id="cardPhrase" class="text-3xl font-extrabold tracking-tight mb-6"></p>
             <button id="ttsBtn" aria-label="Hear pronunciation"
               class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 dark:bg-slate-800 text-brand-600 dark:text-brand-100 font-semibold text-sm hover:bg-brand-100 dark:hover:bg-slate-700 transition-colors">
@@ -172,6 +175,10 @@
             <p id="cardDefinition" class="text-lg font-semibold leading-snug mb-5"></p>
             <p class="text-xs uppercase tracking-widest text-brand-100/80 mb-2">At work</p>
             <p id="cardExample" class="text-sm leading-relaxed italic opacity-95"></p>
+            <div id="cardCollocations" class="hidden mt-4">
+              <p class="text-xs uppercase tracking-widest text-brand-100/80 mb-1.5">Goes with</p>
+              <p id="cardCollocationsList" class="text-sm leading-relaxed"></p>
+            </div>
             <div class="flex flex-wrap gap-2 mt-4">
               <button id="sentenceBtn" class="px-3 py-1.5 rounded-full bg-white/15 hover:bg-white/25 text-xs font-semibold transition-colors">🔊 Sentence</button>
               <button id="slowBtn" class="px-3 py-1.5 rounded-full bg-white/15 hover:bg-white/25 text-xs font-semibold transition-colors">🐢 Slow</button>
