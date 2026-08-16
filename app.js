@@ -278,6 +278,8 @@ let deckListOpen = false;
 // deck is shown until the learner asks to change it.
 function renderDeckPicker() {
   const active = decks.find(d => d.id === deckId) || decks[0];
+  document.getElementById('deckCount').textContent =
+    `${decks.length} topics · ${active.group}`;
   document.getElementById('deckPicker').innerHTML = `
     <button onclick="toggleDeckList()"
       class="w-full text-left px-4 py-3 rounded-2xl bg-brand-500 text-white shadow-sm flex items-center gap-3">
@@ -290,14 +292,31 @@ function renderDeckPicker() {
         ${deckListOpen ? 'Close ▴' : 'Change ▾'}
       </span>
     </button>
-    <div class="${deckListOpen ? '' : 'hidden'} grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
-      ${decks.filter(d => d.id !== deckId).map(d => `
-        <button onclick="pickDeck('${d.id}')"
-          class="text-left px-4 py-3 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 transition-colors">
-          <span class="block text-sm font-bold">${d.icon} ${d.name}</span>
-          <span class="block text-xs mt-0.5 text-slate-500 dark:text-slate-400">${d.tagline}</span>
-        </button>`).join('')}
+    <div class="${deckListOpen ? '' : 'hidden'} mt-2">
+      ${deckGroupsHtml()}
     </div>`;
+}
+
+// 15 topics in one flat list is a lot to scroll, so they sit under group headings.
+function deckGroupsHtml() {
+  const groups = [...new Set(decks.map(d => d.group))];
+  return groups.map(g => {
+    const inGroup = decks.filter(d => d.group === g);
+    return `
+      <div class="mb-3 last:mb-0">
+        <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-1.5 px-1">${g}</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          ${inGroup.map(d => `
+            <button onclick="pickDeck('${d.id}')" ${d.id === deckId ? 'aria-current="true"' : ''}
+              class="text-left px-4 py-3 rounded-2xl border transition-colors ${d.id === deckId
+                ? 'bg-brand-50 dark:bg-slate-800 border-brand-500'
+                : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500'}">
+              <span class="block text-sm font-bold">${d.icon} ${d.name}${d.id === deckId ? ' ✓' : ''}</span>
+              <span class="block text-xs mt-0.5 text-slate-500 dark:text-slate-400">${d.tagline}</span>
+            </button>`).join('')}
+        </div>
+      </div>`;
+  }).join('');
 }
 
 function toggleDeckList() {

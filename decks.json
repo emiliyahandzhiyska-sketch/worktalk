@@ -3,105 +3,77 @@
     "id": "workplace",
     "name": "Everyday Workplace English",
     "icon": "💼",
+    "group": "Everyday",
     "tagline": "Meetings, email, deadlines, office life.",
     "words": "words.json",
     "exercises": "exercises.json",
     "readings": "readings-workplace.json"
   },
   {
-    "id": "marketing",
-    "name": "Marketing English",
-    "icon": "📣",
-    "tagline": "Campaigns, funnels, metrics, client talk.",
-    "words": "words-marketing.json",
-    "exercises": "exercises-marketing.json",
-    "readings": "readings-marketing.json"
-  },
-  {
-    "id": "finance",
-    "name": "Finance English",
-    "icon": "📊",
-    "tagline": "Cash flow, invoices, budgets, reporting.",
-    "words": "words-finance.json",
-    "exercises": "exercises-finance.json",
-    "readings": "readings-finance.json"
-  },
-  {
-    "id": "sport",
-    "name": "Sport & Fitness English",
-    "icon": "⚽",
-    "tagline": "Training, matches, results, staying fit.",
-    "words": "words-sport.json",
-    "exercises": "exercises-sport.json",
-    "readings": "readings-sport.json"
-  },
-  {
     "id": "business",
     "name": "Business & Corporate English",
     "icon": "🏢",
+    "group": "Everyday",
     "tagline": "Strategy, HR, negotiation, corporate life.",
     "words": "words-business.json",
     "exercises": "exercises-business.json",
     "readings": "readings-business.json"
   },
   {
-    "id": "legal",
-    "name": "Legal English",
-    "icon": "⚖️",
-    "tagline": "Contracts, compliance, disputes, company law.",
-    "words": "words-legal.json",
-    "exercises": "exercises-legal.json",
-    "readings": "readings-legal.json"
-  },
-  {
-    "id": "healthcare",
-    "name": "Healthcare English",
-    "icon": "🩺",
-    "tagline": "Patients, treatment, hospital and admin.",
-    "words": "words-healthcare.json",
-    "exercises": "exercises-healthcare.json",
-    "readings": "readings-healthcare.json"
-  },
-  {
-    "id": "technical",
-    "name": "Technical & Engineering English",
-    "icon": "⚙️",
-    "tagline": "Specs, production, faults, safety, delivery.",
-    "words": "words-technical.json",
-    "exercises": "exercises-technical.json",
-    "readings": "readings-technical.json"
-  },
-  {
-    "id": "hospitality",
-    "name": "Hospitality & Tourism English",
-    "icon": "🏨",
-    "tagline": "Front desk, restaurant, guests, tours.",
-    "words": "words-hospitality.json",
-    "exercises": "exercises-hospitality.json",
-    "readings": "readings-hospitality.json"
-  },
-  {
-    "id": "hr",
-    "name": "HR English",
-    "icon": "🧑‍💼",
-    "tagline": "Hiring, contracts, leave, people problems.",
-    "words": "words-hr.json",
-    "exercises": "exercises-hr.json",
-    "readings": "readings-hr.json"
-  },
-  {
     "id": "sales",
     "name": "Sales English",
     "icon": "🤝",
+    "group": "Departments",
     "tagline": "Prospecting, pitching, objections, closing.",
     "words": "words-sales.json",
     "exercises": "exercises-sales.json",
     "readings": "readings-sales.json"
   },
   {
+    "id": "marketing",
+    "name": "Marketing English",
+    "icon": "📣",
+    "group": "Departments",
+    "tagline": "Campaigns, funnels, metrics, client talk.",
+    "words": "words-marketing.json",
+    "exercises": "exercises-marketing.json",
+    "readings": "readings-marketing.json"
+  },
+  {
+    "id": "customerservice",
+    "name": "Customer Service English",
+    "icon": "🎧",
+    "group": "Departments",
+    "tagline": "Complaints, calls, refunds, keeping people.",
+    "words": "words-customerservice.json",
+    "exercises": "exercises-customerservice.json",
+    "readings": "readings-customerservice.json"
+  },
+  {
+    "id": "hr",
+    "name": "HR English",
+    "icon": "🧑‍💼",
+    "group": "Departments",
+    "tagline": "Hiring, contracts, leave, people problems.",
+    "words": "words-hr.json",
+    "exercises": "exercises-hr.json",
+    "readings": "readings-hr.json"
+  },
+  {
+    "id": "finance",
+    "name": "Finance English",
+    "icon": "📊",
+    "group": "Departments",
+    "tagline": "Cash flow, invoices, budgets, reporting.",
+    "words": "words-finance.json",
+    "exercises": "exercises-finance.json",
+    "readings": "readings-finance.json"
+  },
+  {
     "id": "accounting",
     "name": "Accounting English",
     "icon": "🧮",
+    "group": "Departments",
     "tagline": "Ledgers, reconciliation, accruals, reporting.",
     "words": "words-accounting.json",
     "exercises": "exercises-accounting.json",
@@ -111,6 +83,7 @@
     "id": "administration",
     "name": "Administration English",
     "icon": "🗂️",
+    "group": "Departments",
     "tagline": "Scheduling, records, supplies, office support.",
     "words": "words-administration.json",
     "exercises": "exercises-administration.json",
@@ -120,18 +93,60 @@
     "id": "it",
     "name": "IT English",
     "icon": "💻",
+    "group": "Departments",
     "tagline": "Systems, bugs, releases, data, security.",
     "words": "words-it.json",
     "exercises": "exercises-it.json",
     "readings": "readings-it.json"
   },
   {
-    "id": "customerservice",
-    "name": "Customer Service English",
-    "icon": "🎧",
-    "tagline": "Complaints, calls, refunds, keeping people.",
-    "words": "words-customerservice.json",
-    "exercises": "exercises-customerservice.json",
-    "readings": "readings-customerservice.json"
+    "id": "legal",
+    "name": "Legal English",
+    "icon": "⚖️",
+    "group": "Departments",
+    "tagline": "Contracts, compliance, disputes, company law.",
+    "words": "words-legal.json",
+    "exercises": "exercises-legal.json",
+    "readings": "readings-legal.json"
+  },
+  {
+    "id": "healthcare",
+    "name": "Healthcare English",
+    "icon": "🩺",
+    "group": "Industries",
+    "tagline": "Patients, treatment, hospital and admin.",
+    "words": "words-healthcare.json",
+    "exercises": "exercises-healthcare.json",
+    "readings": "readings-healthcare.json"
+  },
+  {
+    "id": "hospitality",
+    "name": "Hospitality & Tourism English",
+    "icon": "🏨",
+    "group": "Industries",
+    "tagline": "Front desk, restaurant, guests, tours.",
+    "words": "words-hospitality.json",
+    "exercises": "exercises-hospitality.json",
+    "readings": "readings-hospitality.json"
+  },
+  {
+    "id": "technical",
+    "name": "Technical & Engineering English",
+    "icon": "⚙️",
+    "group": "Industries",
+    "tagline": "Specs, production, faults, safety, delivery.",
+    "words": "words-technical.json",
+    "exercises": "exercises-technical.json",
+    "readings": "readings-technical.json"
+  },
+  {
+    "id": "sport",
+    "name": "Sport & Fitness English",
+    "icon": "⚽",
+    "group": "Beyond work",
+    "tagline": "Training, matches, results, staying fit.",
+    "words": "words-sport.json",
+    "exercises": "exercises-sport.json",
+    "readings": "readings-sport.json"
   }
 ]
