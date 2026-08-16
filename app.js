@@ -830,7 +830,7 @@ const ACHIEVEMENTS = [
   { id: 'quiz',      icon: '🎯', title: 'Perfect quiz',  desc: 'Score 5 out of 5',                test: s => s.bestQuiz >= 5 },
   { id: 'exam',      icon: '🧠', title: 'Exam ready',    desc: 'Perfect round in any exercise',   test: s => s.bestUoe >= UOE_ROUND },
   { id: 'listener',  icon: '🎧', title: 'Good ear',      desc: 'Score 6+ in listening or dictation', test: s => s.bestListening >= 6 },
-  { id: 'explorer',  icon: '🗺️', title: 'Explorer',      desc: 'Try every deck',                  test: s => s.decksTouched >= decks.length },
+  { id: 'explorer',  icon: '🗺️', title: 'Explorer',      desc: 'Try 5 different topics',          test: s => s.decksTouched >= 5 },
   { id: 'reviewer',  icon: '📆', title: 'Regular',       desc: 'Review 25 cards',                 test: s => s.reviewed >= 25 },
   { id: 'devoted',   icon: '💎', title: 'Devoted',       desc: 'Review 200 cards',                test: s => s.reviewed >= 200 }
 ];
