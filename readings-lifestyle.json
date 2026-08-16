@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The phone in the kitchen",
+    "level": "B1",
+    "text": "Maya's screen time report said six hours and forty minutes a day. She checked it twice, because it felt impossible.\n\nShe didn't delete anything. She moved her phone charger from the bedroom to the kitchen.\n\nThe first three nights were strange. She reached for a phone that wasn't there, twice each night. On the fourth night she read eleven pages of a book she had started in April.\n\nTwo weeks later her screen time was four hours. Still high, but the last hour of every day had changed completely. She fell asleep faster and stopped doomscrolling the news at midnight.\n\nHer colleague tried the same thing and failed, because he used his phone as an alarm clock. So he bought a seven-euro alarm clock, and then it worked.\n\nMaya makes no big claims about it. She didn't become a different person or take up meditation. She says only that she gets an extra forty minutes at the end of the day, and she chooses what happens in them.\n\nThe charger is still in the kitchen. That's the whole system.",
+    "questions": [
+      { "q": "What change did Maya make?", "options": ["She moved her phone charger to the kitchen", "She deleted social media apps", "She bought a new phone", "She stopped reading the news"], "correct": 0 },
+      { "q": "What happened in the first few nights?", "options": ["She reached for a phone that wasn't there", "She slept badly all week", "She gave up immediately", "Nothing changed at all"], "correct": 0 },
+      { "q": "Why did her colleague fail at first?", "options": ["He used his phone as an alarm clock", "He worked night shifts", "He had no kitchen", "He didn't really try"], "correct": 0 },
+      { "q": "What does Maya claim about the change?", "options": ["She gained forty minutes she now chooses how to use", "She became a completely different person", "She stopped using her phone entirely", "She started meditating daily"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Saying no in November",
+    "level": "B2",
+    "text": "By November, Krasimir was saying yes to everything. Two committees, a weekend course, a neighbour's renovation, and a job that already filled the week.\n\nHe wasn't enjoying any of it. He was attending all of it.\n\nThe change started with an uncomfortable exercise his sister suggested. He wrote down every commitment and beside each one wrote why he had agreed. Seven of the eleven answers were some version of \"it felt rude to refuse\".\n\nHe cancelled three things in one evening. All three replies were friendly. Nobody was offended, which annoyed him slightly, because it meant the fear had been entirely his own.\n\nSetting boundaries felt rude for about two weeks. Then it felt normal.\n\nWhat surprised him most was not the free time. It was that the things he kept got better. He read for the course instead of skimming. He actually talked to people at the one committee he stayed on.\n\nHis rule now is simple and slightly annoying to everyone who asks him for something: he says he'll answer tomorrow. Most of the pressure to say yes lives in the first thirty seconds.",
+    "questions": [
+      { "q": "Why had Krasimir agreed to most of his commitments?", "options": ["Refusing felt rude", "He was paid for them", "He enjoyed all of them", "His employer required it"], "correct": 0 },
+      { "q": "What happened when he cancelled three things?", "options": ["Everyone replied in a friendly way", "Two people stopped speaking to him", "He lost his job", "He immediately regretted it"], "correct": 0 },
+      { "q": "What surprised him most?", "options": ["The things he kept became better", "He had less free time", "Nobody noticed the change", "He felt lonely"], "correct": 0 },
+      { "q": "What is his rule now?", "options": ["He answers requests the following day", "He refuses everything", "He only says yes in writing", "He asks his sister first"], "correct": 0 }
+    ]
+  }
+]

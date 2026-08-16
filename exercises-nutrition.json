@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "I'm drinking less coffee than before.", "key": "CUT", "model": "I've cut down on coffee.", "accept": ["cut down on", "cut down"] },
+    { "original": "He stopped drinking fizzy drinks completely.", "key": "OUT", "model": "He cut out fizzy drinks.", "accept": ["cut out"] },
+    { "original": "Cake is fine in sensible amounts.", "key": "MODERATION", "model": "Cake is fine in moderation.", "accept": ["in moderation", "moderation"] },
+    { "original": "She didn't eat lunch today.", "key": "SKIPPED", "model": "She skipped lunch today.", "accept": ["skipped", "skip a meal"] },
+    { "original": "I ate far more than my body needed.", "key": "OVERATE", "model": "I overate.", "accept": ["overate", "overeat"] },
+    { "original": "He eats when he's stressed, not when he's hungry.", "key": "COMFORT", "model": "That's comfort eating.", "accept": ["comfort eating"] },
+    { "original": "I really want something salty right now.", "key": "CRAVING", "model": "I'm craving something salty.", "accept": ["craving", "crave"] },
+    { "original": "She became four kilos heavier over winter.", "key": "PUT", "model": "She put on four kilos over winter.", "accept": ["put on"] },
+    { "original": "Make sure you drink enough water during the day.", "key": "HYDRATED", "model": "Stay hydrated during the day.", "accept": ["stay hydrated", "hydrated"] },
+    { "original": "This diet promises fast results and never lasts.", "key": "FAD", "model": "It's a fad diet.", "accept": ["fad diet"] },
+    { "original": "She keeps losing and regaining the same weight.", "key": "YO", "model": "That's yo-yo dieting.", "accept": ["yo yo", "yo-yo"] },
+    { "original": "I prepare several meals in advance on Sunday.", "key": "PREP", "model": "I do meal prep on Sunday.", "accept": ["meal prep"] },
+    { "original": "Bread made from the whole grain is better here.", "key": "WHOLEGRAIN", "model": "Wholegrain bread is better here.", "accept": ["wholegrain", "whole grain"] },
+    { "original": "This food contains no milk products.", "key": "DAIRY", "model": "It's dairy-free.", "accept": ["dairy free", "dairy-free"] },
+    { "original": "A change you can keep for years is what matters.", "key": "SUSTAINABLE", "model": "A sustainable habit is what matters.", "accept": ["sustainable habit", "sustainable"] },
+    { "original": "Pay attention to your food while eating it.", "key": "MINDFUL", "model": "Practise mindful eating.", "accept": ["mindful eating", "mindful"] }
+  ],
+  "word_formation": [
+    { "sentence": "This meal is very ___.", "base": "NUTRITION", "accept": ["nutritious"] },
+    { "sentence": "___ takes about four hours for a big meal.", "base": "DIGEST", "accept": ["digestion"] },
+    { "sentence": "The ___ of the label is confusing.", "base": "INFORM", "accept": ["information"] },
+    { "sentence": "She made a healthy ___ at the café.", "base": "CHOOSE", "accept": ["choice"] },
+    { "sentence": "Regular meals are ___ for blood sugar.", "base": "HELP", "accept": ["helpful"] },
+    { "sentence": "The doctor gave clear ___ about salt.", "base": "ADVISE", "accept": ["advice"] },
+    { "sentence": "Too much sugar can be ___.", "base": "HARM", "accept": ["harmful"] },
+    { "sentence": "Their ___ improved within a month.", "base": "HEALTHY", "accept": ["health"] },
+    { "sentence": "He follows a strict ___ plan.", "base": "EAT", "accept": ["eating"] },
+    { "sentence": "The ___ of vegetables in Bulgaria is high.", "base": "CONSUME", "accept": ["consumption"] },
+    { "sentence": "A ___ diet includes many food groups.", "base": "VARY", "accept": ["varied"] },
+    { "sentence": "___ is a common problem in winter.", "base": "DEFICIENT", "accept": ["deficiency"] },
+    { "sentence": "The ___ of the meal was excellent.", "base": "PREPARE", "accept": ["preparation"] },
+    { "sentence": "She showed real ___ in changing her habits.", "base": "DETERMINE", "accept": ["determination"] },
+    { "sentence": "Sugar gives a quick but short ___.", "base": "ENERGETIC", "accept": ["energy"] },
+    { "sentence": "The ___ of processed food has risen.", "base": "AVAILABLE", "accept": ["availability"] }
+  ]
+}

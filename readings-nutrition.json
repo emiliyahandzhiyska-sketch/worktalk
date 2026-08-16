@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The smaller plate",
+    "level": "B1",
+    "text": "Ivo tried three diets in two years. Each one worked for a few weeks and then stopped, usually around the time something went wrong at work.\n\nThe fourth attempt was different, mostly because it was smaller.\n\nHis doctor didn't give him a plan. She asked one question: what do you actually eat on a normal Tuesday? He wrote it down for a week and brought the list back.\n\nNothing on it was shocking. The problem was quantity, not quality. His portion sizes had grown slowly over ten years, and he had never noticed because the plate was always full.\n\nThey changed two things. He used a smaller plate, and he stopped eating in front of the television, where he could finish a meal without remembering it.\n\nNo food was banned. He still ate bread, still had a takeaway on Fridays.\n\nSeven months later he had lost nine kilos, and more importantly he had not thought about a diet since March.\n\nHe describes it now in one sentence: he didn't get more disciplined, he just made the sensible thing easier than the other thing.",
+    "questions": [
+      { "q": "Why did the earlier diets fail?", "options": ["They stopped working when life got stressful", "The food was too expensive", "His doctor disagreed with them", "He was allergic to the ingredients"], "correct": 0 },
+      { "q": "What was the real problem with his eating?", "options": ["Portion sizes, not food quality", "Too much sugar", "Skipping breakfast", "Eating too late"], "correct": 0 },
+      { "q": "What two changes did he make?", "options": ["A smaller plate and no eating in front of the TV", "No bread and no takeaways", "Two meals a day", "Counting every calorie"], "correct": 0 },
+      { "q": "How does he explain his success?", "options": ["He made the sensible choice the easier one", "He became more disciplined", "He found a better diet plan", "He started going to the gym"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Reading the label backwards",
+    "level": "B2",
+    "text": "The yoghurt was marketed as a healthy breakfast. Low-fat, high in protein, a picture of fruit on the front.\n\nA nutritionist visiting the school held it up and asked the class to guess the sugar content. The answers ranged from four grams to ten. The real number was 21 grams per pot, more than a standard chocolate bar.\n\nHer point was not that yoghurt is bad. It was that the front of a package is advertising, and the back is information.\n\nShe taught them one habit. Ignore the claims on the front completely. Turn the pack over, find the per-100-gram column, and read three lines: sugar, saturated fat, salt. Then look at the ingredients, which are listed in order of quantity. If sugar appears in the first three, you know what you're buying.\n\nOne student tested it that evening on eight products in her kitchen. Six were fine. Two were not what she thought, and one of them was the cereal she gave her children every morning.\n\nShe didn't throw it away. She moved it to Sundays.",
+    "questions": [
+      { "q": "How much sugar did the yoghurt contain?", "options": ["21 grams per pot", "4 grams per pot", "10 grams per pot", "None"], "correct": 0 },
+      { "q": "What was the nutritionist's main point?", "options": ["The front is advertising, the back is information", "Yoghurt should be avoided", "Low-fat food is always better", "Children shouldn't eat cereal"], "correct": 0 },
+      { "q": "What three lines did she say to check?", "options": ["Sugar, saturated fat and salt", "Calories, protein and fibre", "Vitamins, minerals and fat", "Price, weight and date"], "correct": 0 },
+      { "q": "What did the student do with the cereal?", "options": ["Kept it but moved it to Sundays", "Threw it away", "Returned it to the shop", "Gave it to a neighbour"], "correct": 0 }
+    ]
+  }
+]

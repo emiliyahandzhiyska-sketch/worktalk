@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "I returned to my old bad habit in December.", "key": "WAGON", "model": "I fell off the wagon in December.", "accept": ["fell off the wagon", "off the wagon"] },
+    { "original": "One bad week is fine if you return to the plan.", "key": "TRACK", "model": "One bad week is fine if you get back on track.", "accept": ["back on track", "on track"] },
+    { "original": "I relax gradually at the end of the day with a book.", "key": "WIND", "model": "I wind down with a book.", "accept": ["wind down"] },
+    { "original": "She goes to bed later than most people.", "key": "OWL", "model": "She's a night owl.", "accept": ["night owl"] },
+    { "original": "I slept longer than I meant to.", "key": "OVERSLEPT", "model": "I overslept.", "accept": ["overslept", "oversleep"] },
+    { "original": "Go to bed earlier than usual tonight.", "key": "EARLY", "model": "Get an early night tonight.", "accept": ["early night"] },
+    { "original": "We spend a weekend a month without any devices.", "key": "DETOX", "model": "We do a digital detox one weekend a month.", "accept": ["digital detox", "detox"] },
+    { "original": "I can't stop thinking about work in the evening.", "key": "SWITCH", "model": "I can't switch off in the evening.", "accept": ["switch off"] },
+    { "original": "Decide what you will and won't accept from others.", "key": "BOUNDARIES", "model": "Set boundaries.", "accept": ["set boundaries", "boundaries"] },
+    { "original": "I don't have the mental capacity for that today.", "key": "HEADSPACE", "model": "I don't have the headspace for that today.", "accept": ["headspace"] },
+    { "original": "There is simply too much for me to handle.", "key": "OVERWHELMED", "model": "I feel overwhelmed.", "accept": ["overwhelmed"] },
+    { "original": "He started a new activity for enjoyment at 45.", "key": "PICKED", "model": "He picked up a hobby at 45.", "accept": ["picked up a hobby", "pick up a hobby"] },
+    { "original": "We removed everything we didn't need from the flat.", "key": "DECLUTTERED", "model": "We decluttered the flat.", "accept": ["decluttered", "declutter"] },
+    { "original": "They spend no more than they earn.", "key": "MEANS", "model": "They live within their means.", "accept": ["within their means", "live within your means"] },
+    { "original": "Doing that felt risky and unfamiliar for her.", "key": "COMFORT", "model": "It was stepping out of her comfort zone.", "accept": ["comfort zone"] },
+    { "original": "She works extra hours on her own project for money.", "key": "HUSTLE", "model": "She has a side hustle.", "accept": ["side hustle"] }
+  ],
+  "word_formation": [
+    { "sentence": "A regular ___ helps more than motivation.", "base": "ROUTINE", "accept": ["routine"] },
+    { "sentence": "His ___ improved after he cut screen time.", "base": "SLEEP", "accept": ["sleep"] },
+    { "sentence": "___ is more useful than a long holiday once a year.", "base": "RELAX", "accept": ["relaxation"] },
+    { "sentence": "She showed great ___ in keeping the habit.", "base": "PERSIST", "accept": ["persistence"] },
+    { "sentence": "The ___ of the flat took a whole weekend.", "base": "ORGANISE", "accept": ["organisation", "organization"] },
+    { "sentence": "Their ___ changed after the move.", "base": "LIVE", "accept": ["lifestyle", "living"] },
+    { "sentence": "___ is the main cause of his headaches.", "base": "STRESSFUL", "accept": ["stress"] },
+    { "sentence": "He made a ___ decision to work less.", "base": "CONSCIENCE", "accept": ["conscious"] },
+    { "sentence": "Her ___ improved when she started walking.", "base": "HAPPY", "accept": ["happiness"] },
+    { "sentence": "The ___ takes 50 minutes each way.", "base": "COMMUTE", "accept": ["commute"] },
+    { "sentence": "___ work suits some people and not others.", "base": "REMOTELY", "accept": ["remote"] },
+    { "sentence": "We need better ___ between work and rest.", "base": "BALANCE", "accept": ["balance"] },
+    { "sentence": "___ activities are good for the mind.", "base": "SOCIAL", "accept": ["social"] },
+    { "sentence": "His ___ to change was obvious.", "base": "COMMIT", "accept": ["commitment"] },
+    { "sentence": "Regular ___ reduces anxiety.", "base": "EXERCISE", "accept": ["exercise"] },
+    { "sentence": "She felt a real sense of ___ afterwards.", "base": "ACHIEVE", "accept": ["achievement"] }
+  ]
+}

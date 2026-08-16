@@ -148,5 +148,25 @@
     "words": "words-sport.json",
     "exercises": "exercises-sport.json",
     "readings": "readings-sport.json"
+  },
+  {
+    "id": "nutrition",
+    "name": "Diet & Nutrition English",
+    "icon": "🥗",
+    "group": "Beyond work",
+    "tagline": "Food choices, labels, habits, weight.",
+    "words": "words-nutrition.json",
+    "exercises": "exercises-nutrition.json",
+    "readings": "readings-nutrition.json"
+  },
+  {
+    "id": "lifestyle",
+    "name": "Lifestyle English",
+    "icon": "🌿",
+    "group": "Beyond work",
+    "tagline": "Routines, sleep, screens, balance, growth.",
+    "words": "words-lifestyle.json",
+    "exercises": "exercises-lifestyle.json",
+    "readings": "readings-lifestyle.json"
   }
 ]

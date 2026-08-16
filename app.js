@@ -78,6 +78,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!dRes.ok) throw new Error(dRes.statusText);
     decks = await dRes.json();
 
+    // One-time reset so everyone lands back on the first topic once. The app
+    // still remembers your last topic after this.
+    if (localStorage.getItem('worktalk_deck_reset') !== 'v2') {
+      localStorage.removeItem(DECK_KEY);
+      localStorage.setItem('worktalk_deck_reset', 'v2');
+    }
+
     const saved = localStorage.getItem(DECK_KEY);
     deckId = decks.some(d => d.id === saved) ? saved : decks[0].id;
 
