@@ -413,12 +413,20 @@ const PALETTES = {
   violet:  { group: 'Pantone 2026', name: 'Cloud Dancer + Quiet Violet', dot: '#7a6a8a', bg: CLOUD_DANCER,
              v: ['247 245 249', '234 229 239', '122 106 138', '101 87 119', '81 69 99'] },
 
-  // --- The current look, for comparison ---
-  blue:    { group: 'Current', name: 'Classic blue', dot: '#2f6fed',
+  // --- From Emi's reference photo: warm coral/red cylinders against pale mint ---
+  photocoral: { group: 'From your photo', name: 'Coral (default)', dot: '#e64a3e', bg: '220 238 236',
+             v: ['255 242 238', '255 217 208', '230 74 62', '201 51 39', '161 36 25'] },
+  photomint:  { group: 'From your photo', name: 'Mint accent', dot: '#5c868a', bg: '255 240 236',
+             v: ['239 248 247', '215 235 234', '127 169 172', '92 134 138', '69 101 104'] },
+
+  // --- The previous look, for comparison ---
+  blue:    { group: 'Previous', name: 'Classic blue', dot: '#2f6fed',
              v: ['238 246 255', '217 234 255', '47 111 237', '31 92 214', '26 76 176'] },
-  teal:    { group: 'Current', name: 'Teal', dot: '#0d9488',
+  teal:    { group: 'Previous', name: 'Teal', dot: '#0d9488',
              v: ['240 253 250', '204 251 241', '13 148 136', '15 118 110', '17 94 89'] }
 };
+
+const DEFAULT_PALETTE = 'photocoral';
 
 const PALETTE_KEY = 'worktalk_palette';
 const SHADES = ['--brand-50', '--brand-100', '--brand-500', '--brand-600', '--brand-700'];
@@ -435,12 +443,12 @@ function applyPalette(id) {
 
 function initPalette() {
   const saved = localStorage.getItem(PALETTE_KEY);
-  if (saved && PALETTES[saved]) applyPalette(saved);
+  applyPalette(saved && PALETTES[saved] ? saved : DEFAULT_PALETTE);
   if (new URLSearchParams(location.search).has('palette')) renderPaletteBar();
 }
 
 function renderPaletteBar() {
-  const active = localStorage.getItem(PALETTE_KEY) || 'blue';
+  const active = localStorage.getItem(PALETTE_KEY) || DEFAULT_PALETTE;
   let bar = document.getElementById('paletteBar');
   if (!bar) {
     bar = document.createElement('div');
