@@ -56,6 +56,8 @@ let exercises = { transformations: [], word_formation: [] };
 let readings = [];
 let mistakes = [];  // shared across every topic
 let dialogues = {}; // keyed by deck id
+let grammar = [];   // shared grammar points, independent of any topic
+let grammarTopic = null; // { point, index, score, checked }, null = showing the menu
 let enrich = {};    // phrase -> { l: level, c: [collocations] }
 let currentCard = 0;
 let mastered = new Set();
@@ -89,14 +91,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('ctaLink').href = BRAND.ctaUrl;
 
   try {
-    const [dRes, mRes, gRes, eRes] = await Promise.all([
-      fetch('decks.json'), fetch('mistakes.json'), fetch('dialogues.json'), fetch('enrich.json')
+    const [dRes, mRes, gRes, eRes, grRes] = await Promise.all([
+      fetch('decks.json'), fetch('mistakes.json'), fetch('dialogues.json'), fetch('enrich.json'),
+      fetch('grammar.json')
     ]);
     if (!dRes.ok) throw new Error(dRes.statusText);
     decks = await dRes.json();
     mistakes = mRes.ok ? await mRes.json() : [];
     dialogues = gRes.ok ? await gRes.json() : {};
     enrich = eRes.ok ? await eRes.json() : {};
+    grammar = grRes.ok ? await grRes.json() : [];
 
     // One-time reset so everyone lands back on the first topic once. The app
     // still remembers your last topic after this.
@@ -616,16 +620,18 @@ function switchTab(tab) {
   document.getElementById('viewFlashcards').classList.toggle('hidden', tab !== 'flashcards');
   document.getElementById('viewQuiz').classList.toggle('hidden', tab !== 'quiz');
   document.getElementById('viewUoe').classList.toggle('hidden', tab !== 'uoe');
+  document.getElementById('viewGrammar').classList.toggle('hidden', tab !== 'grammar');
   styleTabs(tab);
   if (tab === 'quiz' && !quiz) renderQuizStart();
   if (tab === 'uoe' && !uoe) renderUoeMenu();
+  if (tab === 'grammar' && !grammarTopic) renderGrammarMenu();
 }
 
 function styleTabs(active) {
   document.querySelectorAll('.tab-btn').forEach(btn => {
     const isActive = btn.dataset.tab === active;
     btn.setAttribute('aria-selected', isActive);
-    btn.className = 'tab-btn py-2.5 rounded-xl font-semibold text-sm transition-colors ' +
+    btn.className = 'tab-btn py-2.5 rounded-xl font-semibold text-[11px] sm:text-sm transition-colors ' +
       (isActive
         ? 'bg-white dark:bg-slate-700 text-brand-600 dark:text-white shadow-sm'
         : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200');
@@ -1914,6 +1920,174 @@ function uoeMistakeAnswer(i) {
       <p id="mistakeBg" class="hidden mt-1">${it.why_bg}</p>
     </div>
     <button onclick="uoeNext()" class="w-full mt-3 py-2.5 rounded-xl bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 font-bold text-sm">Continue →</button>`;
+}
+
+// ---------- Grammar ----------
+// Shared across all topics, independent of the loaded deck. Each point has a
+// plain-English rule, a Bulgarian version, examples, and its own 5-question
+// mini quiz. More categories (Prepositions, Word order, ...) join later —
+// grouping by `category` already supports that without any restructuring.
+
+const GRAMMAR_BEST_KEY = 'worktalk_grammar_best';
+
+function grammarBest() {
+  return readJson(GRAMMAR_BEST_KEY, '{}');
+}
+
+function saveGrammarBest(id, score) {
+  const best = grammarBest();
+  if (best[id] === undefined || score > best[id]) {
+    best[id] = score;
+    localStorage.setItem(GRAMMAR_BEST_KEY, JSON.stringify(best));
+  }
+}
+
+function renderGrammarMenu() {
+  grammarTopic = null;
+  const best = grammarBest();
+  const box = document.getElementById('grammarBox');
+
+  if (!grammar.length) {
+    box.innerHTML = '<p class="text-sm text-slate-500 dark:text-slate-400">Grammar content isn\'t available right now.</p>';
+    return;
+  }
+
+  const byCat = {};
+  for (const g of grammar) (byCat[g.category] ||= []).push(g);
+
+  box.innerHTML = `
+    <div class="fade-in">
+      <h2 class="text-xl font-extrabold mb-1">Grammar</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400 mb-5">Short rules, real examples, a 5-question check. Works the same across every topic.</p>
+      ${Object.entries(byCat).map(([cat, points]) => `
+        <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mt-4 mb-2 first:mt-0">${cat}</p>
+        <div class="space-y-2.5">
+          ${points.map(g => `
+            <button onclick="openGrammarTopic('${g.id}')"
+              class="w-full text-left px-4 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:border-brand-500 transition-colors flex items-center gap-3">
+              <span class="flex-1">
+                <span class="block font-bold text-sm">${g.title}</span>
+                <span class="block text-[10px] font-bold uppercase tracking-widest text-brand-500 mt-1">Level ${g.level}</span>
+              </span>
+              ${best[g.id] !== undefined ? `<span class="text-xs font-semibold text-brand-500 whitespace-nowrap">Best: ${best[g.id]}/${g.exercises.length}</span>` : ''}
+            </button>`).join('')}
+        </div>`).join('')}
+    </div>`;
+}
+
+function openGrammarTopic(id) {
+  const point = grammar.find(g => g.id === id);
+  if (!point) return;
+  grammarTopic = { point, index: -1, score: 0, checked: false }; // -1 = explanation screen
+  renderGrammarExplanation();
+}
+
+function renderGrammarExplanation() {
+  const { point } = grammarTopic;
+  document.getElementById('grammarBox').innerHTML = `
+    <div class="fade-in">
+      <button onclick="renderGrammarMenu()" class="text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-brand-500 mb-3">← All grammar</button>
+      <p class="text-[11px] font-bold uppercase tracking-widest text-brand-500 mb-1">${point.category} · Level ${point.level}</p>
+      <h2 class="text-xl font-extrabold mb-3">${point.title}</h2>
+
+      <p class="text-sm leading-relaxed mb-3">${point.rule_en}</p>
+      <button onclick="document.getElementById('grammarRuleBg').classList.toggle('hidden')"
+        class="text-xs font-semibold text-brand-500 mb-3">🇧🇬 Правилото на български</button>
+      <p id="grammarRuleBg" class="hidden text-sm leading-relaxed text-slate-600 dark:text-slate-300 mb-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800">${point.rule_bg}</p>
+
+      <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mt-4 mb-2">Examples</p>
+      <div class="space-y-2 mb-5">
+        ${point.examples.map(ex => `
+          <div class="rounded-xl border border-slate-200 dark:border-slate-700 p-3">
+            <p class="text-sm">${ex.en}</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">${ex.bg}</p>
+          </div>`).join('')}
+      </div>
+
+      <button onclick="startGrammarQuiz()" class="w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Start the 5-question check →</button>
+    </div>`;
+}
+
+function startGrammarQuiz() {
+  grammarTopic.index = 0;
+  grammarTopic.score = 0;
+  grammarTopic.checked = false;
+  renderGrammarQuestion();
+}
+
+function renderGrammarQuestion() {
+  const { point, index } = grammarTopic;
+  const it = point.exercises[index];
+  grammarTopic.checked = false;
+
+  document.getElementById('grammarBox').innerHTML = `
+    <div class="fade-in">
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-xs font-bold text-brand-500">${point.title}</span>
+        <span class="text-xs text-slate-500 dark:text-slate-400">${index + 1} / ${point.exercises.length} · Score: ${grammarTopic.score}</span>
+      </div>
+      <p class="text-lg leading-relaxed mb-5">${it.sentence}</p>
+      <div class="space-y-2.5">
+        ${it.options.map((opt, i) => `
+          <button data-opt="${i}" onclick="grammarAnswer(${i})"
+            class="opt-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm font-medium hover:border-brand-500 dark:hover:border-brand-500 transition-colors">
+            ${opt}
+          </button>`).join('')}
+      </div>
+      <div id="grammarFeedback" class="mt-3"></div>
+    </div>`;
+}
+
+function grammarAnswer(i) {
+  if (grammarTopic.checked) return;
+  grammarTopic.checked = true;
+  const it = grammarTopic.point.exercises[grammarTopic.index];
+  const correct = i === it.correct;
+  if (correct) grammarTopic.score++;
+
+  document.querySelectorAll('.opt-btn').forEach(btn => {
+    const idx = +btn.dataset.opt;
+    btn.disabled = true;
+    if (idx === it.correct) btn.className += ' !bg-emerald-100 dark:!bg-emerald-900/50 !border-emerald-500';
+    else if (idx === i) btn.className += ' !bg-rose-100 dark:!bg-rose-900/40 !border-rose-500';
+  });
+
+  document.getElementById('grammarFeedback').innerHTML = `
+    <button onclick="grammarNext()" class="w-full mt-1 py-2.5 rounded-xl bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 font-bold text-sm">
+      ${correct ? 'Correct! Continue →' : 'Continue →'}
+    </button>`;
+}
+
+function grammarNext() {
+  grammarTopic.index++;
+  if (grammarTopic.index < grammarTopic.point.exercises.length) renderGrammarQuestion();
+  else renderGrammarEnd();
+}
+
+function renderGrammarEnd() {
+  const { point, score } = grammarTopic;
+  const total = point.exercises.length;
+  const prevBest = grammarBest()[point.id];
+  const isRecord = prevBest === undefined || score > prevBest;
+  saveGrammarBest(point.id, score);
+  markDayDone();
+
+  const msg =
+    score === total ? 'Perfect. That rule is yours now. 🏆' :
+    score >= total * 0.7 ? 'Strong result. One more pass and it will stick.' :
+    'Good practice. Reread the rule above and try again.';
+
+  document.getElementById('grammarBox').innerHTML = `
+    <div class="text-center py-6 fade-in">
+      <p class="text-4xl mb-3">${score >= total * 0.7 ? '🎉' : '💪'}</p>
+      <h2 class="text-xl font-extrabold mb-2">${point.title}: ${score} / ${total}</h2>
+      ${isRecord ? '<p class="text-sm font-semibold text-emerald-500 mb-2">New personal best!</p>' : ''}
+      <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">${msg}</p>
+      <div class="flex gap-2 justify-center">
+        <button onclick="startGrammarQuiz()" class="px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Try again</button>
+        <button onclick="renderGrammarMenu()" class="px-6 py-3 rounded-xl bg-slate-200 dark:bg-slate-800 font-bold text-sm hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">All grammar</button>
+      </div>
+    </div>`;
 }
 
 // ---------- Dialogues ----------

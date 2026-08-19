@@ -1,0 +1,122 @@
+[
+  {
+    "id": "present-simple-vs-continuous",
+    "category": "Tenses",
+    "title": "Present Simple vs Present Continuous",
+    "level": "A2",
+    "rule_en": "Use the present simple for routines, facts, and things that are generally true: \"I work in finance.\" Use the present continuous for something happening right now, or a temporary situation around now: \"I'm working from home this week.\"",
+    "rule_bg": "Сегашно просто за рутина, факти и трайни неща: „I work in finance.“ Сегашно продължително за нещо, което се случва точно сега или временно, около момента на говорене: „I'm working from home this week.“",
+    "examples": [
+      { "en": "She usually checks her email at 8. Right now she's checking a report instead.", "bg": "Обикновено проверява имейла в 8. В момента проверява доклад вместо това." },
+      { "en": "We meet every Monday. This Monday we're meeting online because of the storm.", "bg": "Срещаме се всеки понеделник. Този понеделник се срещаме онлайн заради бурята." },
+      { "en": "I don't usually drink coffee, but I'm drinking one now, it's been a long day.", "bg": "Обикновено не пия кафе, но сега пия, беше дълъг ден." }
+    ],
+    "exercises": [
+      { "sentence": "Normally I ___ at 9, but today I'm starting at 7.", "options": ["start", "am starting"], "correct": 0 },
+      { "sentence": "Listen! Someone ___ at the door.", "options": ["knocks", "is knocking"], "correct": 1 },
+      { "sentence": "Water ___ at 100 degrees Celsius.", "options": ["boils", "is boiling"], "correct": 0 },
+      { "sentence": "I can't talk now, I ___ a client.", "options": ["call", "am calling"], "correct": 1 },
+      { "sentence": "He ___ three languages: Bulgarian, English and German.", "options": ["speaks", "is speaking"], "correct": 0 }
+    ]
+  },
+  {
+    "id": "present-perfect-vs-past-simple",
+    "category": "Tenses",
+    "title": "Present Perfect vs Past Simple",
+    "level": "B1",
+    "rule_en": "Use the present perfect when the time isn't finished, or the exact time doesn't matter: \"I've sent the invoice.\" (it's done, no date given). Use the past simple when the time is specific and finished: \"I sent the invoice yesterday.\"",
+    "rule_bg": "Сегашно перфектно, когато моментът не е приключил или точното време не е важно: „I've sent the invoice.“ Минало просто, когато времето е конкретно и приключило: „I sent the invoice yesterday.“",
+    "examples": [
+      { "en": "I've worked here for six years. I started in 2020.", "bg": "Работя тук от 6 години. Започнах през 2020." },
+      { "en": "Have you finished the report? — Yes, I finished it this morning.", "bg": "Приключи ли доклада? — Да, приключих го тази сутрин." },
+      { "en": "We've never been to that supplier's factory.", "bg": "Никога не сме били на фабриката на този доставчик." }
+    ],
+    "exercises": [
+      { "sentence": "I ___ this company since 2019.", "options": ["worked for", "have worked for"], "correct": 1 },
+      { "sentence": "She ___ the meeting last Tuesday.", "options": ["cancelled", "has cancelled"], "correct": 0 },
+      { "sentence": "___ you ever ___ to Berlin?", "options": ["Did / go", "Have / been"], "correct": 1 },
+      { "sentence": "He ___ the proposal yesterday afternoon.", "options": ["sent", "has sent"], "correct": 0 },
+      { "sentence": "We ___ already ___ three suppliers this month.", "options": ["did / contact", "have / contacted"], "correct": 1 }
+    ]
+  },
+  {
+    "id": "present-perfect-for-since",
+    "category": "Tenses",
+    "title": "Present Perfect with FOR and SINCE",
+    "level": "B1",
+    "rule_en": "Use FOR with a length of time: for five years, for two weeks, for a month. Use SINCE with a starting point: since 2020, since Monday, since I joined.",
+    "rule_bg": "FOR с продължителност: for five years, for two weeks. SINCE с начална точка: since 2020, since Monday, since I joined.",
+    "examples": [
+      { "en": "I've known her for ten years.", "bg": "Познавам я от 10 години." },
+      { "en": "The price hasn't changed since January.", "bg": "Цената не се е променила от януари." },
+      { "en": "They've used this supplier since they opened the business.", "bg": "Ползват този доставчик, откакто отвориха бизнеса." }
+    ],
+    "exercises": [
+      { "sentence": "I've lived in Plovdiv ___ 2015.", "options": ["for", "since"], "correct": 1 },
+      { "sentence": "We haven't spoken ___ three months.", "options": ["for", "since"], "correct": 0 },
+      { "sentence": "She's been the manager ___ the company started.", "options": ["for", "since"], "correct": 1 },
+      { "sentence": "He's been on sick leave ___ a week.", "options": ["for", "since"], "correct": 0 },
+      { "sentence": "The invoice has been overdue ___ last Friday.", "options": ["for", "since"], "correct": 1 }
+    ]
+  },
+  {
+    "id": "past-simple-vs-continuous",
+    "category": "Tenses",
+    "title": "Past Simple vs Past Continuous",
+    "level": "B1",
+    "rule_en": "Use the past continuous for an action in progress at a point in the past, often interrupted by a shorter action in the past simple: \"I was writing the report when the client called.\"",
+    "rule_bg": "Минало продължително за действие, което е било в ход в определен момент в миналото, често прекъснато от по-кратко действие в минало просто: „I was writing the report when the client called.“",
+    "examples": [
+      { "en": "While she was presenting, the projector stopped working.", "bg": "Докато представяше, проекторът спря да работи." },
+      { "en": "I was checking my email when I saw the news.", "bg": "Проверявах имейла си, когато видях новината." },
+      { "en": "They were negotiating for hours before they agreed.", "bg": "Преговаряха с часове, преди да се съгласят." }
+    ],
+    "exercises": [
+      { "sentence": "I ___ lunch when my phone rang.", "options": ["had", "was having"], "correct": 1 },
+      { "sentence": "While we ___ the contract, the client called with a new request.", "options": ["reviewed", "were reviewing"], "correct": 1 },
+      { "sentence": "The meeting ___ at nine and finished at ten.", "options": ["started", "was starting"], "correct": 0 },
+      { "sentence": "She ___ to the client when her laptop crashed.", "options": ["talked", "was talking"], "correct": 1 },
+      { "sentence": "He ___ the office at exactly 6 pm yesterday.", "options": ["left", "was leaving"], "correct": 0 }
+    ]
+  },
+  {
+    "id": "future-forms",
+    "category": "Tenses",
+    "title": "Future: WILL, GOING TO, Present Continuous",
+    "level": "B2",
+    "rule_en": "Use WILL for decisions made now and predictions: \"I'll call him.\" Use GOING TO for plans already decided: \"We're going to launch in March.\" Use the present continuous for fixed arrangements with a time and place: \"I'm meeting the client at 3.\"",
+    "rule_bg": "WILL за решения, взети в момента, и предвиждания: „I'll call him.“ GOING TO за вече решени планове: „We're going to launch in March.“ Сегашно продължително за уговорени срещи с точно време и място: „I'm meeting the client at 3.“",
+    "examples": [
+      { "en": "I think prices will rise next year.", "bg": "Мисля, че цените ще се вдигнат догодина." },
+      { "en": "We're going to open a second office, it's already decided.", "bg": "Ще отворим втори офис, вече е решено." },
+      { "en": "I'm flying to London on Friday, the ticket is booked.", "bg": "Летя до Лондон в петък, билетът е купен." }
+    ],
+    "exercises": [
+      { "sentence": "A: The phone's ringing. B: I ___ it.", "options": ["'m going to answer", "'ll answer"], "correct": 1 },
+      { "sentence": "We ___ the new website next month, it's all planned.", "options": ["are going to launch", "will launch"], "correct": 0 },
+      { "sentence": "I ___ Maria at 2 pm tomorrow, it's in my calendar.", "options": ["am meeting", "will meet"], "correct": 0 },
+      { "sentence": "Look at those clouds! It ___ rain.", "options": ["is going to", "will"], "correct": 0 },
+      { "sentence": "Don't worry about the invoice, I ___ it this afternoon.", "options": ["send", "'ll send"], "correct": 1 }
+    ]
+  },
+  {
+    "id": "first-conditional",
+    "category": "Tenses",
+    "title": "First Conditional (real future situations)",
+    "level": "B2",
+    "rule_en": "Use the first conditional for real, possible future situations: IF + present simple, ... WILL + base verb. \"If the client agrees, we'll sign tomorrow.\" Never use WILL after IF.",
+    "rule_bg": "Първи тип условно изречение за реални, възможни бъдещи ситуации: IF + сегашно просто, ... WILL + основна форма. „If the client agrees, we'll sign tomorrow.“ Никога не се слага WILL след IF.",
+    "examples": [
+      { "en": "If we cut the price, they'll order more.", "bg": "Ако намалим цената, ще поръчат повече." },
+      { "en": "If it rains tomorrow, we'll move the event indoors.", "bg": "Ако вали утре, ще преместим събитието на закрито." },
+      { "en": "She'll be upset if you cancel again.", "bg": "Ще се разстрои, ако отмениш пак." }
+    ],
+    "exercises": [
+      { "sentence": "If we ___ the deadline, the client will be angry.", "options": ["miss", "will miss"], "correct": 0 },
+      { "sentence": "If you ___ me the file, I'll finish it tonight.", "options": ["send", "will send"], "correct": 0 },
+      { "sentence": "She ___ if the meeting starts late.", "options": ["complains", "will complain"], "correct": 1 },
+      { "sentence": "If the budget ___ approved, we'll start in June.", "options": ["is", "will be"], "correct": 0 },
+      { "sentence": "We won't sign the contract if the price ___ too high.", "options": ["is", "will be"], "correct": 0 }
+    ]
+  }
+]

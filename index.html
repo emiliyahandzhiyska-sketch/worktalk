@@ -137,13 +137,15 @@
     <section id="motivationCard" class="mb-5"></section>
 
     <!-- Tabs -->
-    <nav class="grid grid-cols-3 gap-2 bg-slate-200/70 dark:bg-slate-900 rounded-2xl p-1.5 mb-6" role="tablist">
+    <nav class="grid grid-cols-4 gap-1.5 sm:gap-2 bg-slate-200/70 dark:bg-slate-900 rounded-2xl p-1.5 mb-6" role="tablist">
       <button id="tabFlashcards" role="tab" aria-selected="true" data-tab="flashcards"
-        class="tab-btn py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-colors">🃏 Cards</button>
+        class="tab-btn py-2.5 rounded-xl font-semibold text-[11px] sm:text-sm transition-colors">🃏 Cards</button>
       <button id="tabQuiz" role="tab" aria-selected="false" data-tab="quiz"
-        class="tab-btn py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-colors">✅ Quiz</button>
+        class="tab-btn py-2.5 rounded-xl font-semibold text-[11px] sm:text-sm transition-colors">✅ Quiz</button>
       <button id="tabUoe" role="tab" aria-selected="false" data-tab="uoe"
-        class="tab-btn py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-colors">✍️ Use of English</button>
+        class="tab-btn py-2.5 rounded-xl font-semibold text-[11px] sm:text-sm transition-colors">✍️ Use of English</button>
+      <button id="tabGrammar" role="tab" aria-selected="false" data-tab="grammar"
+        class="tab-btn py-2.5 rounded-xl font-semibold text-[11px] sm:text-sm transition-colors">📐 Grammar</button>
     </nav>
 
     <!-- Flashcards view -->
@@ -215,6 +217,11 @@
     <!-- Use of English view -->
     <main id="viewUoe" class="hidden">
       <div id="uoeBox" class="bg-white dark:bg-slate-900 rounded-2xl shadow-md border border-slate-200 dark:border-slate-800 p-6"></div>
+    </main>
+
+    <!-- Grammar view -->
+    <main id="viewGrammar" class="hidden">
+      <div id="grammarBox" class="bg-white dark:bg-slate-900 rounded-2xl shadow-md border border-slate-200 dark:border-slate-800 p-6"></div>
     </main>
 
     <!-- School CTA -->
