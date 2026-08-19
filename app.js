@@ -267,8 +267,10 @@ async function loadDeck(id) {
   cardFilter = { category: null, unmasteredOnly: false, level: null };
   loadProgress();
 
-  document.getElementById('tagline').textContent =
-    `${d.name} · ${words.length} phrases you'll actually use.`;
+  const taglinePhrase = d.group === 'Beyond work'
+    ? `${words.length} phrases you'll reach for again and again.`
+    : `${words.length} phrases worth learning first.`;
+  document.getElementById('tagline').textContent = `${d.name} · ${taglinePhrase}`;
 
   renderDeckPicker();
   renderCategoryChips();
