@@ -118,5 +118,214 @@
       { "sentence": "If the budget ___ approved, we'll start in June.", "options": ["is", "will be"], "correct": 0 },
       { "sentence": "We won't sign the contract if the price ___ too high.", "options": ["is", "will be"], "correct": 0 }
     ]
+  },
+
+  {
+    "id": "prepositions-time-transport",
+    "category": "Prepositions",
+    "title": "Prepositions of Time and Transport",
+    "level": "B1",
+    "rule_en": "Use AT for exact times (at 9, at noon), ON for days and dates (on Monday, on 5 May), and IN for longer periods (in June, in 2024, in the morning). For transport, use BY with no article: by bus, by train, by plane — except \"on foot\".",
+    "rule_bg": "AT за точен час (at 9, at noon), ON за дни и дати (on Monday, on 5 May), IN за по-дълги периоди (in June, in 2024, in the morning). За транспорт: BY без член: by bus, by train, by plane, с изключение на „on foot“.",
+    "examples": [
+      { "en": "The meeting is at 9 on Monday in June.", "bg": "Срещата е в 9 часа, в понеделник, през юни." },
+      { "en": "I go to work by bus, not by the bus.", "bg": "Ходя на работа с автобус, без член пред „bus“." },
+      { "en": "We'll finish it by Friday, not until Friday.", "bg": "Ще го приключим до петък (краен срок), не „until“, което значи до тогава непрекъснато." }
+    ],
+    "exercises": [
+      { "sentence": "The meeting is ___ 9 o'clock.", "options": ["at", "on"], "correct": 0 },
+      { "sentence": "Her birthday is ___ 5 May.", "options": ["on", "in"], "correct": 0 },
+      { "sentence": "I usually travel ___ train.", "options": ["by", "with"], "correct": 0 },
+      { "sentence": "We were both born ___ the same year.", "options": ["on", "in"], "correct": 1 },
+      { "sentence": "Please send it ___ Friday at the latest.", "options": ["by", "until"], "correct": 0 }
+    ]
+  },
+  {
+    "id": "prepositions-after-verbs-adjectives",
+    "category": "Prepositions",
+    "title": "Prepositions After Verbs and Adjectives",
+    "level": "B2",
+    "rule_en": "Some verbs and adjectives are always followed by the same preposition: depend ON, married TO, listen TO, look forward TO, interested IN, good AT. Learn each one as a single phrase, not word by word.",
+    "rule_bg": "Някои глаголи и прилагателни винаги вървят с един и същ предлог: depend ON, married TO, listen TO, look forward TO, interested IN, good AT. Учи ги като цял израз, не дума по дума.",
+    "examples": [
+      { "en": "It depends on the client, not of the client.", "bg": "Зависи от клиента, не „depends of“." },
+      { "en": "She's married to a doctor.", "bg": "Омъжена е за лекар." },
+      { "en": "I look forward to hearing from you.", "bg": "С нетърпение очаквам да чуя от вас." }
+    ],
+    "exercises": [
+      { "sentence": "It depends ___ the weather.", "options": ["of", "on"], "correct": 1 },
+      { "sentence": "He's married ___ an engineer.", "options": ["with", "to"], "correct": 1 },
+      { "sentence": "I'm really interested ___ this offer.", "options": ["on", "in"], "correct": 1 },
+      { "sentence": "She's very good ___ negotiating.", "options": ["at", "in"], "correct": 0 },
+      { "sentence": "I look forward ___ your reply.", "options": ["to", "for"], "correct": 0 }
+    ]
+  },
+
+  {
+    "id": "verb-patterns",
+    "category": "Verb patterns",
+    "title": "Verb Patterns That Trip Up Bulgarian Speakers",
+    "level": "B2",
+    "rule_en": "\"Agree\" and \"feel\" are already complete verbs — never add \"am\" or \"myself\": I agree (not I am agree), I feel good (not I feel myself good). You SAY something, but you TELL someone something. After modal verbs like must, can, will, use the bare verb with no \"to\".",
+    "rule_bg": "„Agree“ и „feel“ вече са пълни глаголи — не се добавя „am“ или „myself“: I agree, I feel good. Казваш нещо (say something), но казваш на някого (tell someone). След модални глаголи (must, can, will) глаголът е без „to“.",
+    "examples": [
+      { "en": "I agree with you.", "bg": "Съгласен съм с теб." },
+      { "en": "Can you tell me the price?", "bg": "Можеш ли да ми кажеш цената?" },
+      { "en": "I must finish this today.", "bg": "Трябва да го довърша днес." }
+    ],
+    "exercises": [
+      { "sentence": "I ___ with your plan.", "options": ["am agree", "agree"], "correct": 1 },
+      { "sentence": "Can you ___ me the address?", "options": ["say", "tell"], "correct": 1 },
+      { "sentence": "He ___ me that he'd be late.", "options": ["said", "told"], "correct": 1 },
+      { "sentence": "I ___ finish this by five.", "options": ["must to", "must"], "correct": 1 },
+      { "sentence": "I ___ good about the decision.", "options": ["feel myself", "feel"], "correct": 1 }
+    ]
+  },
+
+  {
+    "id": "ing-ed-adjectives",
+    "category": "Confusing pairs",
+    "title": "-ING vs -ED Adjectives",
+    "level": "B2",
+    "rule_en": "-ING adjectives describe the thing that causes the feeling: a boring meeting. -ED adjectives describe how a person feels: I was bored. The meeting is interesting; I am interested.",
+    "rule_bg": "Прилагателните на -ING описват нещото, което предизвиква усещането: a boring meeting. Прилагателните на -ED описват как се чувства човекът: I was bored. Срещата е interesting; аз съм interested.",
+    "examples": [
+      { "en": "The presentation was boring, so I felt bored.", "bg": "Презентацията беше скучна, затова се отегчих." },
+      { "en": "I'm interested in the offer, it looks interesting.", "bg": "Заинтересован съм от офертата, изглежда интересна." },
+      { "en": "The result was surprising; everyone was surprised.", "bg": "Резултатът беше изненадващ; всички бяха изненадани." }
+    ],
+    "exercises": [
+      { "sentence": "The film was really ___.", "options": ["boring", "bored"], "correct": 0 },
+      { "sentence": "I was ___ by the news.", "options": ["surprising", "surprised"], "correct": 1 },
+      { "sentence": "This course is very ___.", "options": ["interesting", "interested"], "correct": 0 },
+      { "sentence": "She felt ___ after the long flight.", "options": ["exhausting", "exhausted"], "correct": 1 },
+      { "sentence": "The results were ___ for the whole team.", "options": ["exciting", "excited"], "correct": 0 }
+    ]
+  },
+
+  {
+    "id": "false-friends-grammar",
+    "category": "False friends",
+    "title": "Words That Trick Bulgarian Speakers",
+    "level": "B2",
+    "rule_en": "Some English words look like Bulgarian words but mean something different. \"Actual\" means real, not настоящ. \"Eventually\" means in the end, not евентуално. \"Sympathetic\" means understanding, not симпатичен. \"Control\" means to have power over something, not проверявам.",
+    "rule_bg": "Някои английски думи изглеждат като български, но значат друго. „Actual“ значи действителен, не „настоящ“. „Eventually“ значи в крайна сметка, не „евентуално“. „Sympathetic“ значи състрадателен, не „симпатичен“. „Control“ значи управлявам, не „проверявам“.",
+    "examples": [
+      { "en": "What is the current situation?", "bg": "Не „actual situation“, когато имаш предвид настоящото положение." },
+      { "en": "We will possibly need a second office.", "bg": "Не „eventually“, когато имаш предвид „евентуално“." },
+      { "en": "Please check the numbers before sending.", "bg": "Не „control“, когато имаш предвид „провери“." }
+    ],
+    "exercises": [
+      { "sentence": "What is the ___ price, not the old one?", "options": ["actual", "current"], "correct": 1 },
+      { "sentence": "We might ___ need more staff.", "options": ["eventually", "possibly"], "correct": 1 },
+      { "sentence": "She's a very ___ colleague, easy to like.", "options": ["sympathetic", "likeable"], "correct": 1 },
+      { "sentence": "Please ___ the numbers before sending.", "options": ["control", "check"], "correct": 1 },
+      { "sentence": "We ___ the project in six months.", "options": ["realized", "completed"], "correct": 1 }
+    ]
+  },
+
+  {
+    "id": "countable-uncountable",
+    "category": "Countable or not",
+    "title": "Countable vs Uncountable Nouns",
+    "level": "B1",
+    "rule_en": "Information, advice, news, and furniture have no plural in English, even though their Bulgarian equivalents do. Say \"a piece of advice\", not \"an advice\". News and police also take special verb forms: the news IS good; the police ARE investigating.",
+    "rule_bg": "Information, advice, news и furniture нямат множествено число на английски, макар че на български имат. Казва се „a piece of advice“, не „an advice“. News и police вървят с особени глаголни форми: the news IS good; the police ARE investigating.",
+    "examples": [
+      { "en": "I need more information, not more informations.", "bg": "Трябва ми повече информация, без множествено число." },
+      { "en": "Thanks for the advice.", "bg": "Благодаря за съвета." },
+      { "en": "The news is good today.", "bg": "Новината е добра днес." }
+    ],
+    "exercises": [
+      { "sentence": "I need more ___.", "options": ["informations", "information"], "correct": 1 },
+      { "sentence": "Can I give you a piece of ___?", "options": ["advice", "advices"], "correct": 0 },
+      { "sentence": "The news ___ very good.", "options": ["are", "is"], "correct": 1 },
+      { "sentence": "We bought new ___ for the office.", "options": ["furnitures", "furniture"], "correct": 1 },
+      { "sentence": "The police ___ investigating the case.", "options": ["is", "are"], "correct": 1 }
+    ]
+  },
+
+  {
+    "id": "comparatives-superlatives",
+    "category": "Comparisons",
+    "title": "Comparatives and Superlatives",
+    "level": "A2",
+    "rule_en": "Don't double the comparative or superlative. \"Better\" is already comparative — never \"more better\". \"Best\" is already superlative — never \"most best\". Don't put \"very much\" before an adjective; just use \"very\".",
+    "rule_bg": "Не удвоявай сравнителната или превъзходната степен. „Better“ вече е сравнителна степен — никога „more better“. „Best“ вече е превъзходна степен — никога „most best“. Пред прилагателно не се слага „very much“, само „very“.",
+    "examples": [
+      { "en": "This solution is better, not more better.", "bg": "Това решение е по-добро, не „more better“." },
+      { "en": "It was the best result, not the most best.", "bg": "Беше най-добрият резултат, не „most best“." },
+      { "en": "The report is very interesting, not very much interesting.", "bg": "Докладът е много интересен, не „very much interesting“." }
+    ],
+    "exercises": [
+      { "sentence": "This offer is ___ than the last one.", "options": ["more better", "better"], "correct": 1 },
+      { "sentence": "It was the ___ result of the year.", "options": ["most best", "best"], "correct": 1 },
+      { "sentence": "The plan is ___ interesting.", "options": ["very much", "very"], "correct": 1 },
+      { "sentence": "She's ___ than her brother.", "options": ["more tall", "taller"], "correct": 1 },
+      { "sentence": "That was the ___ meeting we've ever had.", "options": ["worst", "most worst"], "correct": 0 }
+    ]
+  },
+
+  {
+    "id": "word-partners-grammar",
+    "category": "Word partners",
+    "title": "Common Word Partners (Collocations)",
+    "level": "B1",
+    "rule_en": "Some words always go together, and the pair often doesn't translate directly. Prices are HIGH or LOW, not big or small. You MAKE a mistake but DO your homework. You TAKE a photo and TAKE an exam. Lights are TURNED ON and OFF.",
+    "rule_bg": "Някои думи винаги вървят заедно и двойката често не се превежда буквално. Цените са HIGH или LOW, не big/small. Грешка се „прави“ с MAKE, но домашно с DO. Снимка и изпит се „вземат“ с TAKE. Лампите се TURN ON/OFF.",
+    "examples": [
+      { "en": "The price is too high, not too big.", "bg": "Цената е твърде висока, не „big“." },
+      { "en": "I made a mistake in the invoice.", "bg": "Направих грешка във фактурата." },
+      { "en": "Can you take a photo of the whiteboard?", "bg": "Можеш ли да снимаш дъската?" }
+    ],
+    "exercises": [
+      { "sentence": "The price is very ___ this month.", "options": ["big", "high"], "correct": 1 },
+      { "sentence": "I ___ a mistake in the report.", "options": ["did", "made"], "correct": 1 },
+      { "sentence": "She ___ her homework every evening.", "options": ["makes", "does"], "correct": 1 },
+      { "sentence": "Can you ___ a photo of this?", "options": ["make", "take"], "correct": 1 },
+      { "sentence": "Please ___ off the light when you leave.", "options": ["close", "turn"], "correct": 1 }
+    ]
+  },
+
+  {
+    "id": "subject-verb-agreement",
+    "category": "Agreement",
+    "title": "Subject-Verb Agreement",
+    "level": "B2",
+    "rule_en": "\"Everybody\", \"everyone\" and \"nobody\" take a singular verb: everybody IS ready. In business English, collective nouns like \"team\" and \"company\" are usually singular too: our team IS working on it.",
+    "rule_bg": "„Everybody“, „everyone“ и „nobody“ вървят с глагол в единствено число: everybody IS ready. В бизнес английски „team“ и „company“ също обикновено са в единствено число: our team IS working on it.",
+    "examples": [
+      { "en": "Everybody is ready for the call.", "bg": "Всички са готови за разговора." },
+      { "en": "Our team is working on it.", "bg": "Нашият екип работи по въпроса." },
+      { "en": "Nobody knows the answer yet.", "bg": "Никой още не знае отговора." }
+    ],
+    "exercises": [
+      { "sentence": "Everybody ___ ready for the meeting.", "options": ["are", "is"], "correct": 1 },
+      { "sentence": "Our team ___ finishing the project this week.", "options": ["are", "is"], "correct": 1 },
+      { "sentence": "Nobody ___ the password.", "options": ["know", "knows"], "correct": 1 },
+      { "sentence": "The company ___ growing fast.", "options": ["is", "are"], "correct": 0 },
+      { "sentence": "Everyone ___ their own opinion.", "options": ["have", "has"], "correct": 1 }
+    ]
+  },
+
+  {
+    "id": "no-word-for-word",
+    "category": "Word for word from Bulgarian",
+    "title": "Don't Translate Word for Word",
+    "level": "B2",
+    "rule_en": "Some Bulgarian sentence patterns don't translate directly. Age uses \"be\", not \"have\": I AM 30, not I have 30 years. \"Thank God\" has no \"s\". For progress up to now, say \"so far\", not \"till now\".",
+    "rule_bg": "Някои български изречения не се превеждат буквално. Възрастта е с „be“, не с „have“: I AM 30. „Thank God“ е без „s“. За напредък досега казваме „so far“, не „till now“.",
+    "examples": [
+      { "en": "I am 30 years old.", "bg": "На 30 години съм." },
+      { "en": "Thank God it's Friday.", "bg": "Слава Богу, петък е." },
+      { "en": "So far we have three applications.", "bg": "Досега имаме три кандидатури." }
+    ],
+    "exercises": [
+      { "sentence": "I ___ 30 years old.", "options": ["have", "am"], "correct": 1 },
+      { "sentence": "___ God it's Friday!", "options": ["Thanks", "Thank"], "correct": 1 },
+      { "sentence": "___, we have three confirmed bookings.", "options": ["Till now", "So far"], "correct": 1 },
+      { "sentence": "My sister ___ 25 years old.", "options": ["has", "is"], "correct": 1 },
+      { "sentence": "I ___ a car today, so I can give you a lift.", "options": ["am with", "have"], "correct": 1 }
+    ]
   }
 ]
