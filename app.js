@@ -1055,11 +1055,49 @@ function collectReport() {
   return rows;
 }
 
+// CEFR level of every mastered phrase, tallied straight from the shared
+// enrich map so it works even for decks that aren't currently loaded.
+function collectCEFR() {
+  const counts = { A2: 0, B1: 0, B2: 0, C1: 0 };
+  let total = 0;
+  for (const d of decks) {
+    for (const phrase of readJson(`worktalk_${d.id}_mastered`, '[]')) {
+      const lvl = enrich[phrase]?.l;
+      if (lvl && lvl in counts) { counts[lvl]++; total++; }
+    }
+  }
+  return { counts, total };
+}
+
+function cefrBarsHtml(counts, total) {
+  const cefrColor = { A2: 'bg-emerald-400', B1: 'bg-brand-500', B2: 'bg-amber-500', C1: 'bg-rose-500' };
+  const top = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+  return `
+    <div class="rounded-xl border border-slate-200 p-4 mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <p class="font-bold text-sm">CEFR level of mastered phrases</p>
+        <span class="text-xs text-slate-500">${total} phrase${total === 1 ? '' : 's'} rated</span>
+      </div>
+      <div class="space-y-2">
+        ${Object.entries(counts).map(([lvl, n]) => `
+          <div class="flex items-center gap-2">
+            <span class="w-6 text-xs font-bold text-slate-500">${lvl}</span>
+            <div class="flex-1 h-2.5 rounded-full bg-slate-100 overflow-hidden">
+              <div class="h-full ${cefrColor[lvl]} rounded-full" style="width:${total ? (n / total * 100) : 0}%"></div>
+            </div>
+            <span class="w-8 text-right text-xs text-slate-500">${n}</span>
+          </div>`).join('')}
+      </div>
+      ${total ? `<p class="text-xs text-slate-500 mt-3">Most mastered phrases are at <b>${top[0]}</b>.</p>` : ''}
+    </div>`;
+}
+
 function openReport() {
   const rows = collectReport();
   const badges = earnedBadges();
   const totalMastered = rows.reduce((s, r) => s + r.mastered, 0);
   const totalReview = rows.reduce((s, r) => s + r.inReview, 0);
+  const cefr = collectCEFR();
 
   document.getElementById('reportDate').textContent =
     new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -1133,7 +1171,8 @@ function openReport() {
       <p class="mt-1"><b>Cards in the daily review system:</b> ${totalReview}</p>
     </div>`;
 
-  document.getElementById('reportBody').innerHTML = table + focus;
+  document.getElementById('reportBody').innerHTML =
+    (cefr.total ? cefrBarsHtml(cefr.counts, cefr.total) : '') + table + focus;
   document.getElementById('reportModal').classList.remove('hidden');
 }
 
@@ -1153,6 +1192,14 @@ function reportAsText() {
       (r.quiz !== null ? `, quiz ${r.quiz}/${QUIZ_LENGTH}` : '') +
       (bests ? `, ${bests}` : ''));
   }
+  const cefr = collectCEFR();
+  if (cefr.total) {
+    lines.push('', 'CEFR level of mastered phrases:');
+    for (const [lvl, n] of Object.entries(cefr.counts)) {
+      if (n) lines.push(`  ${lvl}: ${n} (${Math.round(n / cefr.total * 100)}%)`);
+    }
+  }
+
   const st = getStreak();
   if (st) lines.push('', `Streak: ${st} day${st > 1 ? 's' : ''}`);
   lines.push(location.origin);
