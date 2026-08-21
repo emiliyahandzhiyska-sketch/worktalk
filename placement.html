@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Placement Test — Language Workshop</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#e64a3e">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: {
+              50:  'rgb(var(--brand-50) / <alpha-value>)',
+              100: 'rgb(var(--brand-100) / <alpha-value>)',
+              500: 'rgb(var(--brand-500) / <alpha-value>)',
+              600: 'rgb(var(--brand-600) / <alpha-value>)',
+              700: 'rgb(var(--brand-700) / <alpha-value>)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-50:  255 242 238;
+      --brand-100: 255 217 208;
+      --brand-500: 230  74  62;
+      --brand-600: 201  51  39;
+      --brand-700: 161  36  25;
+      --page: 220 238 236;
+    }
+    .fade-in { animation: fadeIn .3s ease both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+    /* Printing shows the report alone, always on white */
+    @media print {
+      body { background: #fff !important; }
+      body * { visibility: hidden; }
+      #report, #report * { visibility: visible; }
+      #report {
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        margin: 0; border-radius: 0; box-shadow: none;
+      }
+      .no-print { display: none !important; }
+      @page { margin: 14mm; }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[rgb(var(--page))] text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans">
+
+  <div class="max-w-2xl mx-auto px-4 pb-16">
+
+    <header class="py-6 no-print">
+      <p class="text-xs uppercase tracking-[0.25em] text-brand-600 font-bold">Language Workshop</p>
+      <h1 class="text-2xl font-extrabold tracking-tight">English Placement Test</h1>
+    </header>
+
+    <!-- Sticky bar shown only during the test -->
+    <div id="testBar" class="hidden sticky top-0 z-40 bg-[rgb(var(--page))] dark:bg-slate-950 pt-2 pb-3 no-print">
+      <div class="flex items-center justify-between text-xs font-semibold mb-2">
+        <span id="progressLabel" class="text-slate-500 dark:text-slate-400"></span>
+        <span id="timer" class="tabular-nums font-bold"></span>
+      </div>
+      <div class="h-1.5 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
+        <div id="progressBar" class="h-full rounded-full bg-brand-500 transition-all duration-300" style="width:0%"></div>
+      </div>
+    </div>
+
+    <main id="app"></main>
+
+  </div>
+
+  <script src="placement.js"></script>
+</body>
+</html>

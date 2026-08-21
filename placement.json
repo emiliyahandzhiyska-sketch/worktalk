@@ -1,0 +1,60 @@
+{
+  "_note": "40-question placement test. 32 grammar/vocabulary questions get shuffled; the 8 reading questions stay together under their passage. Correct answers are authored at index 0 and shuffled at runtime.",
+
+  "questions": [
+    { "id": "g1",  "type": "grammar", "level": "A2", "q": "She ___ to the office every day.", "options": ["works", "is working", "work", "worked"] },
+    { "id": "g2",  "type": "grammar", "level": "A2", "q": "There ___ any milk in the kitchen.", "options": ["isn't", "aren't", "wasn't", "hasn't"] },
+    { "id": "g3",  "type": "grammar", "level": "A2", "q": "I ___ born in Sofia.", "options": ["was", "were", "am", "have been"] },
+    { "id": "g4",  "type": "grammar", "level": "A2", "q": "___ you speak German?", "options": ["Do", "Are", "Is", "Have"] },
+    { "id": "g5",  "type": "grammar", "level": "A2", "q": "This is ___ desk, not yours.", "options": ["my", "mine", "me", "myself"] },
+
+    { "id": "g6",  "type": "grammar", "level": "B1", "q": "If it rains tomorrow, we ___ the event indoors.", "options": ["will move", "would move", "moved", "are moving"] },
+    { "id": "g7",  "type": "grammar", "level": "B1", "q": "I ___ for this company since 2019.", "options": ["have worked", "work", "worked", "am working"] },
+    { "id": "g8",  "type": "grammar", "level": "B1", "q": "She ___ the report when the client called.", "options": ["was writing", "wrote", "writes", "has written"] },
+    { "id": "g9",  "type": "grammar", "level": "B1", "q": "The meeting is ___ Monday at 9 am.", "options": ["on", "in", "at", "by"] },
+    { "id": "g10", "type": "grammar", "level": "B1", "q": "I look forward to ___ from you.", "options": ["hearing", "hear", "heard", "be hearing"] },
+    { "id": "g11", "type": "grammar", "level": "B1", "q": "He said he ___ send the invoice the following day.", "options": ["would", "will", "has", "is"] },
+
+    { "id": "g12", "type": "grammar", "level": "B2", "q": "By the time we arrived, the meeting ___.", "options": ["had already started", "already started", "has already started", "was already starting"] },
+    { "id": "g13", "type": "grammar", "level": "B2", "q": "If I ___ more time, I would rewrite the whole proposal.", "options": ["had", "have", "will have", "would have"] },
+    { "id": "g14", "type": "grammar", "level": "B2", "q": "The contract ___ by the legal team last week.", "options": ["was reviewed", "reviewed", "has reviewed", "is reviewing"] },
+    { "id": "g15", "type": "grammar", "level": "B2", "q": "___ the delay, the client remained calm.", "options": ["Despite", "Although", "However", "Whereas"] },
+    { "id": "g16", "type": "grammar", "level": "B2", "q": "I'd rather you ___ me before deciding.", "options": ["asked", "ask", "will ask", "would ask"] },
+    { "id": "g17", "type": "grammar", "level": "B2", "q": "Not only ___ the deadline, but they also reduced the cost.", "options": ["did they meet", "they met", "meet they", "they did meet"] },
+
+    { "id": "g18", "type": "grammar", "level": "C1", "q": "Had we known about the risk, we ___ differently.", "options": ["would have acted", "would act", "had acted", "will act"] },
+    { "id": "g19", "type": "grammar", "level": "C1", "q": "The proposal, ___ was submitted late, was still accepted.", "options": ["which", "that", "what", "whose"] },
+    { "id": "g20", "type": "grammar", "level": "C1", "q": "Seldom ___ such a well-prepared candidate.", "options": ["have we seen", "we have seen", "we saw", "did we saw"] },
+
+    { "id": "v1",  "type": "vocabulary", "level": "A2", "q": "Could you ___ me the file, please?", "options": ["send", "put", "make", "do"] },
+    { "id": "v2",  "type": "vocabulary", "level": "A2", "q": "I'd like to ___ an appointment for Tuesday.", "options": ["make", "do", "take", "give"] },
+
+    { "id": "v3",  "type": "vocabulary", "level": "B1", "q": "Let's ___ base next week to see where we are.", "options": ["touch", "take", "make", "hold"] },
+    { "id": "v4",  "type": "vocabulary", "level": "B1", "q": "Please ___ me in the loop on this project.", "options": ["keep", "hold", "take", "put"] },
+    { "id": "v5",  "type": "vocabulary", "level": "B1", "q": "I'll ___ up on the unpaid invoice tomorrow.", "options": ["follow", "take", "look", "come"] },
+    { "id": "v6",  "type": "vocabulary", "level": "B1", "q": "We need to ___ down the final price today.", "options": ["nail", "hit", "put", "set"] },
+
+    { "id": "v7",  "type": "vocabulary", "level": "B2", "q": "Their offer was so low that we decided to ___ away.", "options": ["walk", "go", "take", "step"] },
+    { "id": "v8",  "type": "vocabulary", "level": "B2", "q": "Before signing, the buyer carried out full ___.", "options": ["due diligence", "hard checking", "deep review", "close control"] },
+    { "id": "v9",  "type": "vocabulary", "level": "B2", "q": "Enrolments are up 12% ___.", "options": ["year on year", "year for year", "year to year", "year by year"] },
+
+    { "id": "v10", "type": "vocabulary", "level": "C1", "q": "Their failure to give notice constituted a ___ of contract.", "options": ["breach", "break", "crack", "fault"] },
+    { "id": "v11", "type": "vocabulary", "level": "C1", "q": "We need board ___ before committing to that figure.", "options": ["sign-off", "signature", "signing", "signal"] },
+    { "id": "v12", "type": "vocabulary", "level": "C1", "q": "The project suffered from ___, growing far beyond the original brief.", "options": ["scope creep", "scope crawl", "scope drift", "scope slide"] }
+  ],
+
+  "reading": {
+    "title": "The cheaper supplier",
+    "text": "Last March, a small furniture company received an offer that looked impossible to refuse. A new supplier promised the same components at 22% below their current price, with delivery in three weeks instead of five.\n\nThe operations manager, Ivana, did not sign immediately. She asked for a sample batch and sent it to the workshop for testing. The parts arrived on time and looked identical to the ones they already used.\n\nWhat changed her mind was a single question she put to the workshop foreman: how long does it take to fit one? The answer was eleven minutes, against seven for the current parts. The holes had been drilled a fraction off centre, so every piece needed adjusting by hand.\n\nAcross a year, those four extra minutes came to more than 600 hours of labour, considerably more than the 22% saved on the parts themselves.\n\nIvana kept the original supplier and negotiated a 6% discount by showing them the competing offer. The whole exercise took three weeks and cost nothing but a sample batch.\n\nShe now applies the same rule to every quote the company receives: the price on the invoice is never the full price. What matters is what a thing costs once it is in your hands.",
+    "questions": [
+      { "id": "r1", "type": "reading", "level": "A2", "q": "What did the new supplier promise?", "options": ["Lower prices and faster delivery", "Better quality than anyone else", "A longer contract", "Free samples every month"] },
+      { "id": "r2", "type": "reading", "level": "B1", "q": "Why did Ivana ask for a sample batch?", "options": ["To test the parts before committing", "To push the price down further", "To delay the decision on purpose", "To please the workshop foreman"] },
+      { "id": "r3", "type": "reading", "level": "B1", "q": "What did the workshop discover about the new parts?", "options": ["They took longer to fit", "They broke during testing", "They arrived in the wrong colour", "They were delivered late"] },
+      { "id": "r4", "type": "reading", "level": "B2", "q": "How much extra labour did the new parts create over a year?", "options": ["More than 600 hours", "About 22 hours", "Around 60 hours", "Roughly 300 hours"] },
+      { "id": "r5", "type": "reading", "level": "B2", "q": "What did Ivana do in the end?", "options": ["Stayed with the original supplier at a lower price", "Signed with the new supplier anyway", "Ordered from both suppliers", "Stopped buying those parts altogether"] },
+      { "id": "r6", "type": "reading", "level": "B2", "q": "\"An offer that looked impossible to refuse\" suggests the offer seemed", "options": ["extremely attractive", "slightly suspicious", "difficult to understand", "only mildly interesting"] },
+      { "id": "r7", "type": "reading", "level": "C1", "q": "What does \"the price on the invoice is never the full price\" mean here?", "options": ["The real cost includes what a thing costs to use", "Invoices frequently contain arithmetic errors", "Suppliers always hide extra fees", "Prices tend to rise after signing"] },
+      { "id": "r8", "type": "reading", "level": "C1", "q": "What does the passage imply about the sample batch?", "options": ["It was a cheap way to avoid an expensive mistake", "It wasted three weeks the company could not spare", "It should have been considerably larger", "It proved the parts were dangerously faulty"] }
+    ]
+  }
+}
