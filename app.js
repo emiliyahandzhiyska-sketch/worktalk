@@ -525,6 +525,23 @@ function renderProgress() {
 
   renderStreak();
   renderCertRow();
+  saveSectionState();
+}
+
+// The report reads topics that aren't loaded, and categories only exist in
+// the words file, so the per-section counts are cached as they change.
+function saveSectionState() {
+  if (!words.length) return;
+  const byCat = {};
+  for (const w of words) {
+    if (!byCat[w.category]) byCat[w.category] = [0, 0];
+    byCat[w.category][1]++;
+    if (mastered.has(w.phrase)) byCat[w.category][0]++;
+  }
+  localStorage.setItem(sKey('sections'), JSON.stringify(byCat));
+  // Rewritten here too, not only on deck load, so a topic can't drop out of
+  // the report if storage is cleared while the app is open
+  localStorage.setItem(sKey('size'), String(words.length));
 }
 
 // ---------- Tabs ----------
@@ -1045,6 +1062,15 @@ function collectReport() {
     const hs = parseInt(localStorage.getItem(`worktalk_${d.id}_high_score`), 10);
     const uoeBest = readJson(`worktalk_${d.id}_uoe_best`, '{}');
     const srs = Object.keys(readJson(`worktalk_${d.id}_srs`, '{}')).length;
+
+    const sections = readJson(`worktalk_${d.id}_sections`, '{}');
+    const secEntries = Object.entries(sections);
+    const secDone = secEntries.filter(([, [got, of]]) => of > 0 && got === of).map(([k]) => k);
+    // The section closest to finishing is the most useful thing to assign next
+    const secNext = secEntries
+      .filter(([, [got, of]]) => got < of)
+      .sort((a, b) => (b[1][0] / b[1][1]) - (a[1][0] / a[1][1]))[0] || null;
+
     rows.push({
       name: `${d.icon} ${d.name}`,
       group: d.group,
@@ -1052,6 +1078,9 @@ function collectReport() {
       pct: Math.round((m / size) * 100),
       quiz: Number.isNaN(hs) ? null : hs,
       uoeBest, inReview: srs,
+      secTotal: secEntries.length,
+      secDone,
+      secNext: secNext ? { name: secNext[0], got: secNext[1][0], of: secNext[1][1] } : null,
       last: localStorage.getItem(`worktalk_${d.id}_last`) || null
     });
   }
@@ -1116,11 +1145,12 @@ function openReport() {
       <p class="text-xl font-extrabold text-brand-600">${v}</p>
       <p class="text-[10px] uppercase tracking-widest text-slate-500 mt-0.5">${l}</p>
     </div>`;
+  const sectionsDone = rows.reduce((s, r) => s + r.secDone.length, 0);
   document.getElementById('reportSummary').innerHTML =
     tile(totalMastered, 'phrases mastered') +
+    tile(sectionsDone, 'sections complete') +
     tile(rows.length, 'topics started') +
-    tile(getStreak(), 'day streak') +
-    tile(`${badges.size}/${ACHIEVEMENTS.length}`, 'achievements');
+    tile(getStreak(), 'day streak');
 
   if (!rows.length) {
     document.getElementById('reportBody').innerHTML =
@@ -1147,7 +1177,17 @@ function openReport() {
       <tbody>
         ${rows.map(r => `
           <tr class="border-b border-slate-100 align-top">
-            <td class="py-2 pr-2 font-semibold">${r.name}</td>
+            <td class="py-2 pr-2 font-semibold">
+              ${r.name}
+              ${r.secTotal ? `
+                <span class="block text-[10px] font-normal text-slate-400 mt-0.5">
+                  ${r.secDone.length}/${r.secTotal} sections complete
+                </span>
+                ${r.secDone.length ? `
+                  <span class="block text-[10px] font-normal text-emerald-600 leading-snug">
+                    ✓ ${r.secDone.join(', ')}
+                  </span>` : ''}` : ''}
+            </td>
             <td class="py-2 text-center whitespace-nowrap">
               ${r.mastered}/${r.size}
               <span class="block text-[10px] text-slate-400">${r.pct}%</span>
@@ -1159,6 +1199,12 @@ function openReport() {
     </table>`;
 
   // What a teacher would actually plan a lesson around
+  // Only suggest a section the learner has actually started, otherwise
+  // "closest to a certificate" would point at something untouched
+  const nearest = rows
+    .filter(r => r.secNext && r.secNext.got > 0)
+    .map(r => ({ topic: r.name, section: r.secNext }))
+    .sort((a, b) => (b.section.got / b.section.of) - (a.section.got / a.section.of))[0] || null;
   const weakest = rows.filter(r => r.pct < 50).slice(0, 3);
   const triedModes = new Set(rows.flatMap(r => Object.keys(r.uoeBest)));
   const untried = Object.keys(UOE_MODES).filter(m => m !== 'own' && !triedModes.has(m));
@@ -1172,6 +1218,9 @@ function openReport() {
       ${untried.length
         ? `<p><b>Exercise types not tried yet:</b> ${untried.map(modeLabel).join(', ')}</p>`
         : '<p>Every exercise type has been tried at least once.</p>'}
+      ${nearest
+        ? `<p class="mt-1"><b>Closest section to a certificate:</b> ${nearest.section.name} in ${nearest.topic} (${nearest.section.got}/${nearest.section.of}) — ${nearest.section.of - nearest.section.got} card${nearest.section.of - nearest.section.got === 1 ? '' : 's'} to go.</p>`
+        : ''}
       <p class="mt-1"><b>Cards in the daily review system:</b> ${totalReview}</p>
     </div>`;
 
@@ -1195,6 +1244,10 @@ function reportAsText() {
     lines.push(`${r.name}: ${r.mastered}/${r.size} mastered (${r.pct}%)` +
       (r.quiz !== null ? `, quiz ${r.quiz}/${QUIZ_LENGTH}` : '') +
       (bests ? `, ${bests}` : ''));
+    if (r.secTotal) {
+      lines.push(`  sections: ${r.secDone.length}/${r.secTotal}` +
+        (r.secDone.length ? ` — ${r.secDone.join(', ')}` : ''));
+    }
   }
   const cefr = collectCEFR();
   if (cefr.total) {
