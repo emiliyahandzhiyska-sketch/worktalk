@@ -585,7 +585,7 @@ function bindEvents() {
     localStorage.setItem(NAME_KEY, clean);
     document.getElementById('reportName').textContent = clean || 'Learner';
   });
-  document.getElementById('certBtn').addEventListener('click', openCertificate);
+  // Certificate buttons are rendered per earned scope, so they bind inline
   document.getElementById('certClose').addEventListener('click', () =>
     document.getElementById('certModal').classList.add('hidden'));
   document.getElementById('certPrint').addEventListener('click', () => {
@@ -600,7 +600,8 @@ function bindEvents() {
     if (email.trim()) {
       localStorage.setItem(EMAIL_KEY, email.trim());
       const d = decks.find(x => x.id === deckId);
-      captureLead(email, document.getElementById('certName').textContent.trim(), d.name);
+      captureLead(email, document.getElementById('certName').textContent.trim(),
+        certScope.label || d.name);
     }
     window.print();
   });
@@ -1223,6 +1224,9 @@ async function copyReport() {
 // ---------- Certificate ----------
 
 const NAME_KEY = 'worktalk_student_name';
+const LEVEL_SORT = ['A2', 'B1', 'B2', 'C1'];
+// What the open certificate is for, so printing and email capture agree
+let certScope = { scope: 'deck', sectionKey: null, label: '' };
 const EMAIL_KEY = 'worktalk_student_email';
 const LEADS_LOCAL_KEY = 'worktalk_leads'; // local fallback record, per device
 const LEADS_SENT_KEY = 'worktalk_leads_sent'; // avoid re-submitting the same email+deck every print
@@ -1277,17 +1281,67 @@ function deckComplete() {
     words.every(w => mastered.has(w.phrase));
 }
 
-function renderCertRow() {
-  document.getElementById('certRow').classList.toggle('hidden', !deckComplete());
+// A section is a category inside the loaded deck. Finishing one earns its
+// own certificate, so a 100-phrase topic rewards progress long before the end.
+function completedSections() {
+  const byCat = {};
+  for (const w of words) (byCat[w.category] ||= []).push(w);
+  return Object.entries(byCat)
+    .filter(([, list]) => list.every(w => mastered.has(w.phrase)))
+    .map(([cat, list]) => ({ key: cat, count: list.length }));
 }
 
-function openCertificate() {
-  const d = decks.find(x => x.id === deckId);
-  const hs = getHighScore();
-  const uoeBest = getUoeBest();
-  const bestExercise = Object.values(uoeBest).length ? Math.max(...Object.values(uoeBest)) : null;
+function renderCertRow() {
+  const row = document.getElementById('certRow');
+  const sections = completedSections();
+  const whole = deckComplete();
 
-  document.getElementById('certDeck').textContent = `${d.icon} ${d.name}`;
+  if (!whole && !sections.length) {
+    row.classList.add('hidden');
+    row.innerHTML = '';
+    return;
+  }
+
+  row.classList.remove('hidden');
+  row.innerHTML = `
+    ${whole ? `
+      <button onclick="openCertificate('deck')"
+        class="w-full py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold text-sm transition-colors mb-2">
+        👑 Get your topic certificate
+      </button>` : ''}
+    ${sections.length ? `
+      <p class="text-[10px] uppercase tracking-widest text-slate-400 mb-1.5">
+        Section certificate${sections.length > 1 ? 's' : ''} earned
+      </p>
+      <div class="flex flex-wrap gap-1.5">
+        ${sections.map(s => `
+          <button onclick="openCertificate('section', ${JSON.stringify(s.key).replace(/"/g, '&quot;')})"
+            class="px-3 py-1.5 rounded-lg bg-amber-100 dark:bg-amber-900/40 text-amber-900 dark:text-amber-200 text-xs font-bold hover:bg-amber-200 dark:hover:bg-amber-900/60 transition-colors">
+            🎓 ${s.key}
+          </button>`).join('')}
+      </div>` : ''}`;
+}
+
+// scope: 'deck' for the whole topic, 'section' for one category inside it
+function openCertificate(scope = 'deck', sectionKey = null) {
+  const d = decks.find(x => x.id === deckId);
+  const isSection = scope === 'section' && sectionKey;
+  const inScope = isSection ? words.filter(w => w.category === sectionKey) : words;
+
+  certScope = { scope, sectionKey, label: isSection ? `${sectionKey} — ${d.name}` : d.name };
+
+  document.getElementById('certIntro').textContent = isSection
+    ? 'has completed the section'
+    : 'has completed the WorkTalk topic';
+
+  document.getElementById('certDeck').textContent = isSection
+    ? sectionKey
+    : `${d.icon} ${d.name}`;
+
+  const sub = document.getElementById('certSubtitle');
+  sub.classList.toggle('hidden', !isSection);
+  if (isSection) sub.textContent = `of ${d.icon} ${d.name}`;
+
   document.getElementById('certDate').textContent =
     new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -1296,10 +1350,28 @@ function openCertificate() {
       <p class="text-xl font-extrabold text-amber-700">${value}</p>
       <p class="text-[10px] uppercase tracking-widest text-slate-500 mt-0.5">${label}</p>
     </div>`;
-  document.getElementById('certStats').innerHTML =
-    stat(words.length, 'phrases mastered') +
-    stat(hs === null ? '—' : `${hs}/${QUIZ_LENGTH}`, 'best quiz') +
-    stat(bestExercise === null ? '—' : `${bestExercise}/${UOE_ROUND}`, 'best exercise');
+
+  if (isSection) {
+    // Quiz and exercise scores are deck-wide, so a section certificate
+    // reports what actually belongs to the section instead.
+    const levels = [...new Set(inScope.map(w => w.level).filter(Boolean))]
+      .sort((a, b) => LEVEL_SORT.indexOf(a) - LEVEL_SORT.indexOf(b));
+    const range = levels.length ? (levels.length > 1 ? `${levels[0]}–${levels[levels.length - 1]}` : levels[0]) : '—';
+    const sectionCount = completedSections().length;
+    const totalSections = new Set(words.map(w => w.category)).size;
+    document.getElementById('certStats').innerHTML =
+      stat(inScope.length, 'phrases mastered') +
+      stat(range, 'CEFR range') +
+      stat(`${sectionCount}/${totalSections}`, 'sections done');
+  } else {
+    const hs = getHighScore();
+    const uoeBest = getUoeBest();
+    const bestExercise = Object.values(uoeBest).length ? Math.max(...Object.values(uoeBest)) : null;
+    document.getElementById('certStats').innerHTML =
+      stat(words.length, 'phrases mastered') +
+      stat(hs === null ? '—' : `${hs}/${QUIZ_LENGTH}`, 'best quiz') +
+      stat(bestExercise === null ? '—' : `${bestExercise}/${UOE_ROUND}`, 'best exercise');
+  }
 
   const saved = localStorage.getItem(NAME_KEY) || '';
   const input = document.getElementById('certNameInput');
