@@ -15,15 +15,12 @@ const PUSH = {
   oneSignalAppId: ''
 };
 
-// Certificate email capture. Paste a Formspree endpoint here to receive
-// captured emails in your inbox. While it's empty, emails are only kept
-// locally on the student's own device (visible to them, not to you) — so
-// capture is effectively off until this is set.
-// Setup: create a free form at https://formspree.io (50 submissions/month
-// free), copy the endpoint URL (looks like https://formspree.io/f/xxxxxxxx),
-// paste it below, commit and push.
+// Certificate email capture. Submissions land in the Formspree inbox for
+// the address that owns this form. Clearing the endpoint switches capture
+// off: emails then stay only on the student's own device.
+// Free plan allows 50 submissions a month.
 const LEADS = {
-  endpoint: ''
+  endpoint: 'https://formspree.io/f/mqpzjlrk'
 };
 
 // Per-deck storage key, e.g. worktalk_marketing_mastered
@@ -1256,14 +1253,20 @@ async function captureLead(email, name, deckName) {
   if (sent.has(sentKey)) return; // already captured this email for this topic
 
   try {
-    await fetch(LEADS.endpoint, {
+    const res = await fetch(LEADS.endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
+        // _subject is a Formspree field: it becomes the inbox subject line
+        _subject: `WorkTalk certificate: ${name || 'unnamed'} — ${deckName}`,
         email: clean, name: name || '(no name given)',
         topic: deckName, source: 'WorkTalk certificate', app: location.origin
       })
     });
+    // fetch only throws on network failure, so a rejected submission
+    // (monthly limit reached, form paused) would otherwise be recorded as
+    // sent and never retried. Only mark it sent when Formspree accepted it.
+    if (!res.ok) return;
     sent.add(sentKey);
     localStorage.setItem(LEADS_SENT_KEY, JSON.stringify([...sent]));
   } catch { /* offline or blocked — the local record above still has it */ }
