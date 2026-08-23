@@ -9,10 +9,11 @@ const BRAND = {
   ctaUrl: 'mailto:emiliya.handzhiyska@gmail.com?subject=Lesson%20inquiry%20(via%20WorkTalk)'
 };
 
-// Push reminders. Paste the OneSignal App ID here to switch them on.
-// While it's empty nothing loads and students are never asked for permission.
+// Push reminders. Clearing this App ID switches them off: nothing loads and
+// students are never asked for permission. The App ID is public by design —
+// the secret API key belongs on a server and is never used here.
 const PUSH = {
-  oneSignalAppId: ''
+  oneSignalAppId: '09c2d75c-a2e1-4e36-902f-b0cdf3e1b80f'
 };
 
 // Certificate email capture. Submissions land in the Formspree inbox for
@@ -194,15 +195,21 @@ function initPush() {
 
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   window.OneSignalDeferred.push(async OneSignal => {
-    await OneSignal.init({
-      appId: PUSH.oneSignalAppId,
-      // Our own worker owns the root scope, so OneSignal gets its own corner
-      serviceWorkerPath: 'push/onesignal/OneSignalSDKWorker.js',
-      serviceWorkerParam: { scope: '/push/onesignal/' },
-      // We ask in our own words first, at a good moment
-      autoResume: true,
-      promptOptions: { slidedown: { prompts: [] } }
-    });
+    try {
+      await OneSignal.init({
+        appId: PUSH.oneSignalAppId,
+        // Our own worker owns the root scope, so OneSignal gets its own corner
+        serviceWorkerPath: 'push/onesignal/OneSignalSDKWorker.js',
+        serviceWorkerParam: { scope: '/push/onesignal/' },
+        // We ask in our own words first, at a good moment
+        autoResume: true,
+        promptOptions: { slidedown: { prompts: [] } }
+      });
+    } catch {
+      // OneSignal refuses origins other than the configured Site URL, which is
+      // what happens on localhost. Reminders simply stay off; nothing else breaks.
+      PUSH.oneSignalAppId = '';
+    }
   });
 }
 
