@@ -2,6 +2,7 @@
   {
     "title": "Room 402",
     "level": "B1",
+    "focus": "Front desk",
     "setting": "A couple arrives at 9pm and the hotel is overbooked by one.",
     "speakers": {"A":"Guest","B":"Petya"},
     "lines": [
@@ -15,24 +16,6 @@
       {"s":"B","t":"Room 402 here, sea view, at the rate you originally booked."},
       {"s":"A","t":"That's better than I expected, honestly."},
       {"s":"B","t":"I'd rather tell you straight than hide behind the word 'system'."}
-    ]
-  },
-  {
-    "title": "A nut allergy on a full Saturday",
-    "level": "B2",
-    "setting": "A waiter takes an order on the busiest night of the year.",
-    "speakers": {"A":"Guest","B":"Waiter"},
-    "lines": [
-      {"s":"A","t":"Before we order, I should say I have a serious nut allergy."},
-      {"s":"B","t":"Thank you for telling me. I'll write it in red and repeat it to the kitchen."},
-      {"s":"A","t":"Even a small amount is a problem."},
-      {"s":"B","t":"Understood. Are you happy for me to check each dish with the chef?"},
-      {"s":"A","t":"Please do."},
-      {"s":"B","t":"The starters are fine. I'd avoid the dessert with the crumb topping."},
-      {"s":"A","t":"Is there an alternative?"},
-      {"s":"B","t":"The sorbet, and I'll confirm the whole ticket with the pastry section."},
-      {"s":"A","t":"You've done this before."},
-      {"s":"B","t":"Every allergy gets read back twice. It takes eight seconds and it matters."}
     ]
   },
   {
@@ -94,6 +77,25 @@
       {"s":"B","t":"All-inclusive as well?"},
       {"s":"A","t":"No. That brings people who never leave the hotel, and the town needs them too."},
       {"s":"B","t":"Then push the loyalty programme at the same time, and keep two of the seasonal staff through the winter."}
+    ]
+  },
+  {
+    "title": "A nut allergy on a full Saturday",
+    "level": "B2",
+    "focus": "Restaurant & bar",
+    "setting": "A waiter takes an order on the busiest night of the year.",
+    "speakers": {"A":"Guest","B":"Waiter"},
+    "lines": [
+      {"s":"A","t":"Before we order, I should say I have a serious nut allergy."},
+      {"s":"B","t":"Thank you for telling me. I'll write it in red and repeat it to the kitchen."},
+      {"s":"A","t":"Even a small amount is a problem."},
+      {"s":"B","t":"Understood. Are you happy for me to check each dish with the chef?"},
+      {"s":"A","t":"Please do."},
+      {"s":"B","t":"The starters are fine. I'd avoid the dessert with the crumb topping."},
+      {"s":"A","t":"Is there an alternative?"},
+      {"s":"B","t":"The sorbet, and I'll confirm the whole ticket with the pastry section."},
+      {"s":"A","t":"You've done this before."},
+      {"s":"B","t":"Every allergy gets read back twice. It takes eight seconds and it matters."}
     ]
   },
   {

@@ -1,41 +1,5 @@
 [
   {
-    "title": "The exit interview",
-    "level": "B2",
-    "setting": "An HR manager talks to someone who has handed in their notice.",
-    "speakers": {"A":"HR","B":"Leaver"},
-    "lines": [
-      {"s":"A","t":"Thanks for doing this. There's nothing to lose by being direct."},
-      {"s":"B","t":"All right. It wasn't the money, if that's the first question."},
-      {"s":"A","t":"It was, actually. So what was it?"},
-      {"s":"B","t":"The shifts. They're published on Friday for the following Monday."},
-      {"s":"A","t":"And that made life outside work impossible to plan."},
-      {"s":"B","t":"I cancelled the same course three times. Eventually I stopped booking things."},
-      {"s":"A","t":"Did you raise it with your line manager?"},
-      {"s":"B","t":"Twice. I was told it's how the department works."},
-      {"s":"A","t":"That's useful, and I'm sorry it took your resignation for me to hear it."},
-      {"s":"B","t":"Fix it for the others and I'll consider that a good outcome."}
-    ]
-  },
-  {
-    "title": "Asking for a pay rise",
-    "level": "B2",
-    "setting": "An employee raises salary in a performance review.",
-    "speakers": {"A":"Employee","B":"Manager"},
-    "lines": [
-      {"s":"A","t":"Before we finish, I'd like to talk about my salary."},
-      {"s":"B","t":"Go ahead."},
-      {"s":"A","t":"I've taken on the reporting and I'm training two new starters."},
-      {"s":"B","t":"Both true. What figure did you have in mind?"},
-      {"s":"A","t":"Twelve per cent, which brings me in line with the market for this role."},
-      {"s":"B","t":"That's above what I can approve alone. I'd need to build a case."},
-      {"s":"A","t":"What would make that case stronger?"},
-      {"s":"B","t":"Numbers. How much time the new reporting saves the team each month."},
-      {"s":"A","t":"I can put that together this week."},
-      {"s":"B","t":"Do that, and I'll take it to the head of department in the next cycle."}
-    ]
-  },
-  {
     "title": "Ninety applicants",
     "level": "B2",
     "focus": "Recruitment",
@@ -54,6 +18,25 @@
       {"s":"B","t":"So ask about the last time they disagreed with a manager. Then a reference check before the offer letter goes anywhere."},
       {"s":"A","t":"And if our first choice says no?"},
       {"s":"B","t":"We go to the second name. That's why you interview six and not two, and why the hire is decided before anyone celebrates."}
+    ]
+  },
+  {
+    "title": "Asking for a pay rise",
+    "level": "B2",
+    "focus": "Contracts & pay",
+    "setting": "An employee raises salary in a performance review.",
+    "speakers": {"A":"Employee","B":"Manager"},
+    "lines": [
+      {"s":"A","t":"Before we finish, I'd like to talk about my salary."},
+      {"s":"B","t":"Go ahead."},
+      {"s":"A","t":"I've taken on the reporting and I'm training two new starters."},
+      {"s":"B","t":"Both true. What figure did you have in mind?"},
+      {"s":"A","t":"Twelve per cent, which brings me in line with the market for this role."},
+      {"s":"B","t":"That's above what I can approve alone. I'd need to build a case."},
+      {"s":"A","t":"What would make that case stronger?"},
+      {"s":"B","t":"Numbers. How much time the new reporting saves the team each month."},
+      {"s":"A","t":"I can put that together this week."},
+      {"s":"B","t":"Do that, and I'll take it to the head of department in the next cycle."}
     ]
   },
   {
@@ -115,6 +98,25 @@
       {"s":"B","t":"Then start with one visible thing. Work-life balance improves the day somebody senior leaves at five."},
       {"s":"A","t":"And the equal opportunities training?"},
       {"s":"B","t":"Do it properly or leave it alone. Diversity and inclusion on a slide with nothing behind it damages job satisfaction faster than silence does."}
+    ]
+  },
+  {
+    "title": "The exit interview",
+    "level": "B2",
+    "focus": "Leaving",
+    "setting": "An HR manager talks to someone who has handed in their notice.",
+    "speakers": {"A":"HR","B":"Leaver"},
+    "lines": [
+      {"s":"A","t":"Thanks for doing this. There's nothing to lose by being direct."},
+      {"s":"B","t":"All right. It wasn't the money, if that's the first question."},
+      {"s":"A","t":"It was, actually. So what was it?"},
+      {"s":"B","t":"The shifts. They're published on Friday for the following Monday."},
+      {"s":"A","t":"And that made life outside work impossible to plan."},
+      {"s":"B","t":"I cancelled the same course three times. Eventually I stopped booking things."},
+      {"s":"A","t":"Did you raise it with your line manager?"},
+      {"s":"B","t":"Twice. I was told it's how the department works."},
+      {"s":"A","t":"That's useful, and I'm sorry it took your resignation for me to hear it."},
+      {"s":"B","t":"Fix it for the others and I'll consider that a good outcome."}
     ]
   },
   {

@@ -2,6 +2,7 @@
   {
     "title": "Profitable but broke",
     "level": "B2",
+    "focus": "Cash & budgets",
     "setting": "An owner and her accountant look at why cash is tight.",
     "speakers": {"A":"Owner","B":"Accountant"},
     "lines": [
@@ -15,24 +16,6 @@
       {"s":"B","t":"Some will push back. Almost nobody actually leaves."},
       {"s":"A","t":"And the ones already late?"},
       {"s":"B","t":"Chase on day thirty-one, not day sixty-one. A short polite email."}
-    ]
-  },
-  {
-    "title": "The quote was too low",
-    "level": "B1",
-    "setting": "Reviewing a project that came in under the break-even point.",
-    "speakers": {"A":"Director","B":"Project manager"},
-    "lines": [
-      {"s":"A","t":"We made a three per cent margin. Our break-even point is twelve."},
-      {"s":"B","t":"I know. The pages took three times longer than normal text."},
-      {"s":"A","t":"Did we see a sample before quoting?"},
-      {"s":"B","t":"No. The client said the budget was tight, so I ran the numbers quickly."},
-      {"s":"A","t":"And discounted fifteen per cent before knowing the scope."},
-      {"s":"B","t":"Yes. They accepted the same day, which should have warned me."},
-      {"s":"A","t":"It usually does. Let's make one rule from this."},
-      {"s":"B","t":"No quote without a sample of the real material."},
-      {"s":"A","t":"And no discount before the scope is clear."},
-      {"s":"B","t":"Agreed. I'll put it in the template so nobody forgets."}
     ]
   },
   {
@@ -54,6 +37,25 @@
       {"s":"B","t":"Until the March invoices land. Cut costs where customers never see it, and stop discounting to win work you can't finance."},
       {"s":"A","t":"That last one stung."},
       {"s":"B","t":"It was meant to. A budget you write in January and never open again is a wish."}
+    ]
+  },
+  {
+    "title": "The quote was too low",
+    "level": "B1",
+    "focus": "Profit & loss",
+    "setting": "Reviewing a project that came in under the break-even point.",
+    "speakers": {"A":"Director","B":"Project manager"},
+    "lines": [
+      {"s":"A","t":"We made a three per cent margin. Our break-even point is twelve."},
+      {"s":"B","t":"I know. The pages took three times longer than normal text."},
+      {"s":"A","t":"Did we see a sample before quoting?"},
+      {"s":"B","t":"No. The client said the budget was tight, so I ran the numbers quickly."},
+      {"s":"A","t":"And discounted fifteen per cent before knowing the scope."},
+      {"s":"B","t":"Yes. They accepted the same day, which should have warned me."},
+      {"s":"A","t":"It usually does. Let's make one rule from this."},
+      {"s":"B","t":"No quote without a sample of the real material."},
+      {"s":"A","t":"And no discount before the scope is clear."},
+      {"s":"B","t":"Agreed. I'll put it in the template so nobody forgets."}
     ]
   },
   {

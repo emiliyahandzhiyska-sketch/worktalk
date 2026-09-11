@@ -2,6 +2,7 @@
   {
     "title": "Clause 14",
     "level": "B2",
+    "focus": "Contracts",
     "setting": "A client and legal counsel discuss a late delivery.",
     "speakers": {"A":"Client","B":"Counsel"},
     "lines": [
@@ -15,24 +16,6 @@
       {"s":"B","t":"I'd settle out of court. Litigation costs more than the invoice."},
       {"s":"A","t":"What would a fair settlement look like?"},
       {"s":"B","t":"A credit against the next order, and we amend the notice clause."}
-    ]
-  },
-  {
-    "title": "Sign first, talk second",
-    "level": "B1",
-    "setting": "A founder learns why the NDA didn't protect them.",
-    "speakers": {"A":"Founder","B":"Lawyer"},
-    "lines": [
-      {"s":"A","t":"They launched a copy of our pricing model. Can we sue?"},
-      {"s":"B","t":"When did you sign the non-disclosure agreement?"},
-      {"s":"A","t":"In May."},
-      {"s":"B","t":"And when did you explain the model to them?"},
-      {"s":"A","t":"March. Two friendly meetings."},
-      {"s":"B","t":"Then it sits outside the agreement. The NDA only covers what came after."},
-      {"s":"A","t":"Isn't the model our intellectual property?"},
-      {"s":"B","t":"A business idea usually isn't. A patent or copyright would be."},
-      {"s":"A","t":"That's an expensive lesson."},
-      {"s":"B","t":"One sentence long. Sign first, talk second."}
     ]
   },
   {
@@ -159,6 +142,25 @@
       {"s":"B","t":"That belongs in a shareholder agreement, written while everybody still likes each other."},
       {"s":"A","t":"And before we buy the Plovdiv business?"},
       {"s":"B","t":"Due diligence. Six weeks of it, because I'd rather find the problem than inherit it."}
+    ]
+  },
+  {
+    "title": "Sign first, talk second",
+    "level": "B1",
+    "focus": "IP & rights",
+    "setting": "A founder learns why the NDA didn't protect them.",
+    "speakers": {"A":"Founder","B":"Lawyer"},
+    "lines": [
+      {"s":"A","t":"They launched a copy of our pricing model. Can we sue?"},
+      {"s":"B","t":"When did you sign the non-disclosure agreement?"},
+      {"s":"A","t":"In May."},
+      {"s":"B","t":"And when did you explain the model to them?"},
+      {"s":"A","t":"March. Two friendly meetings."},
+      {"s":"B","t":"Then it sits outside the agreement. The NDA only covers what came after."},
+      {"s":"A","t":"Isn't the model our intellectual property?"},
+      {"s":"B","t":"A business idea usually isn't. A patent or copyright would be."},
+      {"s":"A","t":"That's an expensive lesson."},
+      {"s":"B","t":"One sentence long. Sign first, talk second."}
     ]
   },
   {

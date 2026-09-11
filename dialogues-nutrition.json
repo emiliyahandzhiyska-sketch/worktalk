@@ -2,6 +2,7 @@
   {
     "title": "The smaller plate",
     "level": "B1",
+    "focus": "Eating well",
     "setting": "A doctor talks to a patient who has tried three diets.",
     "speakers": {"A":"Ivo","B":"Doctor"},
     "lines": [
@@ -15,24 +16,6 @@
       {"s":"B","t":"Use a smaller plate, and stop eating in front of the television."},
       {"s":"A","t":"That's it?"},
       {"s":"B","t":"It's boring, and boring is what people can still do in March."}
-    ]
-  },
-  {
-    "title": "Reading the label",
-    "level": "B2",
-    "setting": "A nutritionist shows a class how to read packaging.",
-    "speakers": {"A":"Student","B":"Nutritionist"},
-    "lines": [
-      {"s":"A","t":"It says low-fat and high in protein. That's healthy, isn't it?"},
-      {"s":"B","t":"Guess the sugar content. One small pot."},
-      {"s":"A","t":"Maybe six grams?"},
-      {"s":"B","t":"Twenty-one. More than a standard chocolate bar."},
-      {"s":"A","t":"But the front says nothing about that."},
-      {"s":"B","t":"The front is advertising. The back is information."},
-      {"s":"A","t":"What should I actually look at?"},
-      {"s":"B","t":"Per hundred grams: sugar, saturated fat, salt. Three lines."},
-      {"s":"A","t":"And the ingredients?"},
-      {"s":"B","t":"Listed by quantity. If sugar is in the first three, you know what you're buying."}
     ]
   },
   {
@@ -113,6 +96,25 @@
       {"s":"B","t":"My sister is gluten-free. I've heard what people say to her."},
       {"s":"A","t":"'A little bit won't hurt.'"},
       {"s":"B","t":"Every single time. I'll bring the list of what the kitchen can actually do."}
+    ]
+  },
+  {
+    "title": "Reading the label",
+    "level": "B2",
+    "focus": "Labels & shopping",
+    "setting": "A nutritionist shows a class how to read packaging.",
+    "speakers": {"A":"Student","B":"Nutritionist"},
+    "lines": [
+      {"s":"A","t":"It says low-fat and high in protein. That's healthy, isn't it?"},
+      {"s":"B","t":"Guess the sugar content. One small pot."},
+      {"s":"A","t":"Maybe six grams?"},
+      {"s":"B","t":"Twenty-one. More than a standard chocolate bar."},
+      {"s":"A","t":"But the front says nothing about that."},
+      {"s":"B","t":"The front is advertising. The back is information."},
+      {"s":"A","t":"What should I actually look at?"},
+      {"s":"B","t":"Per hundred grams: sugar, saturated fat, salt. Three lines."},
+      {"s":"A","t":"And the ingredients?"},
+      {"s":"B","t":"Listed by quantity. If sugar is in the first three, you know what you're buying."}
     ]
   },
   {

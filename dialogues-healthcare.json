@@ -1,41 +1,5 @@
 [
   {
-    "title": "Two minutes at the bedside",
-    "level": "B1",
-    "setting": "A junior doctor asks a patient why he has stopped eating.",
-    "speakers": {"A":"Doctor","B":"Mr Kolev"},
-    "lines": [
-      {"s":"A","t":"Good morning. I noticed you haven't eaten since yesterday."},
-      {"s":"B","t":"I'm not very hungry."},
-      {"s":"A","t":"Your tests are all normal, so I wondered if something else was wrong."},
-      {"s":"B","t":"It's silly, really."},
-      {"s":"A","t":"Tell me anyway. I have two minutes and nowhere else to be."},
-      {"s":"B","t":"If I eat, I'll need the toilet. I can't reach it on my own."},
-      {"s":"A","t":"And you didn't want to trouble the nurses."},
-      {"s":"B","t":"They're busy. So I thought I'd manage until I go home."},
-      {"s":"A","t":"Let me move your call bell closer, and I'll tell the ward."},
-      {"s":"B","t":"That's all it takes? Then I'll have lunch."}
-    ]
-  },
-  {
-    "title": "The waiting list",
-    "level": "B2",
-    "setting": "A manager shows a consultant why capacity is being lost.",
-    "speakers": {"A":"Manager","B":"Consultant"},
-    "lines": [
-      {"s":"A","t":"The waiting list is nine months. You asked for two more staff."},
-      {"s":"B","t":"Because we can't see enough patients."},
-      {"s":"A","t":"Eighteen per cent of appointments are no-shows."},
-      {"s":"B","t":"That's higher than I thought."},
-      {"s":"A","t":"And twelve per cent arrive without a referral, so they're turned away."},
-      {"s":"B","t":"Almost a third of the capacity, before anyone is treated."},
-      {"s":"A","t":"A text message two days before, and a check when booking."},
-      {"s":"B","t":"And a short-notice list for slots that open up."},
-      {"s":"A","t":"Exactly. No new staff, no new equipment."},
-      {"s":"B","t":"I've been treating a process problem as a resource problem for three years."}
-    ]
-  },
-  {
     "title": "Since Thursday",
     "level": "B1",
     "focus": "Patients & symptoms",
@@ -116,6 +80,25 @@
     ]
   },
   {
+    "title": "Two minutes at the bedside",
+    "level": "B1",
+    "focus": "Hospital & staff",
+    "setting": "A junior doctor asks a patient why he has stopped eating.",
+    "speakers": {"A":"Doctor","B":"Mr Kolev"},
+    "lines": [
+      {"s":"A","t":"Good morning. I noticed you haven't eaten since yesterday."},
+      {"s":"B","t":"I'm not very hungry."},
+      {"s":"A","t":"Your tests are all normal, so I wondered if something else was wrong."},
+      {"s":"B","t":"It's silly, really."},
+      {"s":"A","t":"Tell me anyway. I have two minutes and nowhere else to be."},
+      {"s":"B","t":"If I eat, I'll need the toilet. I can't reach it on my own."},
+      {"s":"A","t":"And you didn't want to trouble the nurses."},
+      {"s":"B","t":"They're busy. So I thought I'd manage until I go home."},
+      {"s":"A","t":"Let me move your call bell closer, and I'll tell the ward."},
+      {"s":"B","t":"That's all it takes? Then I'll have lunch."}
+    ]
+  },
+  {
     "title": "Bed eleven",
     "level": "B2",
     "focus": "Hospital & staff",
@@ -137,22 +120,22 @@
     ]
   },
   {
-    "title": "Somebody call an ambulance",
-    "level": "B1",
-    "focus": "Emergency",
-    "setting": "A man has collapsed in a corridor and two people are deciding what to do.",
-    "speakers": {"A":"Colleague","B":"Nurse Vanya"},
+    "title": "The waiting list",
+    "level": "B2",
+    "focus": "Admin & insurance",
+    "setting": "A manager shows a consultant why capacity is being lost.",
+    "speakers": {"A":"Manager","B":"Consultant"},
     "lines": [
-      {"s":"A","t":"He's on the floor in the corridor and he isn't answering me."},
-      {"s":"B","t":"Call an ambulance now. Say the address twice and don't hang up."},
-      {"s":"A","t":"Should I move him?"},
-      {"s":"B","t":"Leave him where he is. Is he breathing?"},
-      {"s":"A","t":"I can't tell."},
-      {"s":"B","t":"Put your ear next to his mouth and watch his chest. Ten seconds."},
-      {"s":"A","t":"Nothing."},
-      {"s":"B","t":"Then I start CPR and you keep the line open. Tell them it's life-threatening, in exactly those words."},
-      {"s":"A","t":"The first aid box is in the kitchen."},
-      {"s":"B","t":"Leave it. Send somebody to the front door so the crew from A&E find us in seconds instead of minutes."}
+      {"s":"A","t":"The waiting list is nine months. You asked for two more staff."},
+      {"s":"B","t":"Because we can't see enough patients."},
+      {"s":"A","t":"Eighteen per cent of appointments are no-shows."},
+      {"s":"B","t":"That's higher than I thought."},
+      {"s":"A","t":"And twelve per cent arrive without a referral, so they're turned away."},
+      {"s":"B","t":"Almost a third of the capacity, before anyone is treated."},
+      {"s":"A","t":"A text message two days before, and a check when booking."},
+      {"s":"B","t":"And a short-notice list for slots that open up."},
+      {"s":"A","t":"Exactly. No new staff, no new equipment."},
+      {"s":"B","t":"I've been treating a process problem as a resource problem for three years."}
     ]
   },
   {
@@ -174,6 +157,25 @@
       {"s":"B","t":"A sick note for the days you've already missed, and the doctor signs it today."},
       {"s":"A","t":"My sick leave runs out at the end of the month."},
       {"s":"B","t":"Then let's book the follow-up appointment now, before the book fills. And nothing happens here without informed consent, so read whatever you sign."}
+    ]
+  },
+  {
+    "title": "Somebody call an ambulance",
+    "level": "B1",
+    "focus": "Emergency",
+    "setting": "A man has collapsed in a corridor and two people are deciding what to do.",
+    "speakers": {"A":"Colleague","B":"Nurse Vanya"},
+    "lines": [
+      {"s":"A","t":"He's on the floor in the corridor and he isn't answering me."},
+      {"s":"B","t":"Call an ambulance now. Say the address twice and don't hang up."},
+      {"s":"A","t":"Should I move him?"},
+      {"s":"B","t":"Leave him where he is. Is he breathing?"},
+      {"s":"A","t":"I can't tell."},
+      {"s":"B","t":"Put your ear next to his mouth and watch his chest. Ten seconds."},
+      {"s":"A","t":"Nothing."},
+      {"s":"B","t":"Then I start CPR and you keep the line open. Tell them it's life-threatening, in exactly those words."},
+      {"s":"A","t":"The first aid box is in the kitchen."},
+      {"s":"B","t":"Leave it. Send somebody to the front door so the crew from A&E find us in seconds instead of minutes."}
     ]
   }
 ]

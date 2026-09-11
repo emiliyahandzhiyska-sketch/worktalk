@@ -1,41 +1,5 @@
 [
   {
-    "title": "Not the sensor",
-    "level": "B2",
-    "setting": "An engineer refuses to replace a part for the fifth time.",
-    "speakers": {"A":"Supervisor","B":"Engineer"},
-    "lines": [
-      {"s":"A","t":"Same fault again. Just swap the sensor and get the line running."},
-      {"s":"B","t":"That's the fifth sensor this week. I'd like two hours instead."},
-      {"s":"A","t":"Downtime costs nine hundred an hour."},
-      {"s":"B","t":"And we've paid that four times already for a part that isn't broken."},
-      {"s":"A","t":"You think the sensors are fine?"},
-      {"s":"B","t":"I think they're reporting a real problem accurately."},
-      {"s":"A","t":"All right. What's your plan?"},
-      {"s":"B","t":"Shut down properly, lock out, and look at everything around the sensor."},
-      {"s":"A","t":"Two hours. Then we do it your way or mine."},
-      {"s":"B","t":"Fair. If I'm wrong, I'll fit the fifth sensor myself."}
-    ]
-  },
-  {
-    "title": "Handover on the twelfth",
-    "level": "B1",
-    "setting": "A client engineer refuses to sign off with 63 items open.",
-    "speakers": {"A":"Contractor","B":"Engineer"},
-    "lines": [
-      {"s":"A","t":"We're ready for handover on the twelfth as agreed."},
-      {"s":"B","t":"The punch list still has sixty-three items."},
-      {"s":"A","t":"All small. Sealant, paint, two door handles."},
-      {"s":"B","t":"I know. And after handover, nobody is on site to fix them."},
-      {"s":"A","t":"We'd come back."},
-      {"s":"B","t":"Sixty-three becomes forty in a month and stays there for a year."},
-      {"s":"A","t":"So what are you proposing?"},
-      {"s":"B","t":"Work the weekend, clear the list below ten, and hand over on the fifteenth."},
-      {"s":"A","t":"Three days late."},
-      {"s":"B","t":"In writing, agreed by the client, with the as-built drawings complete."}
-    ]
-  },
-  {
     "title": "Half a millimetre",
     "level": "B2",
     "focus": "Design & specs",
@@ -76,6 +40,25 @@
     ]
   },
   {
+    "title": "Not the sensor",
+    "level": "B2",
+    "focus": "Maintenance & faults",
+    "setting": "An engineer refuses to replace a part for the fifth time.",
+    "speakers": {"A":"Supervisor","B":"Engineer"},
+    "lines": [
+      {"s":"A","t":"Same fault again. Just swap the sensor and get the line running."},
+      {"s":"B","t":"That's the fifth sensor this week. I'd like two hours instead."},
+      {"s":"A","t":"Downtime costs nine hundred an hour."},
+      {"s":"B","t":"And we've paid that four times already for a part that isn't broken."},
+      {"s":"A","t":"You think the sensors are fine?"},
+      {"s":"B","t":"I think they're reporting a real problem accurately."},
+      {"s":"A","t":"All right. What's your plan?"},
+      {"s":"B","t":"Shut down properly, lock out, and look at everything around the sensor."},
+      {"s":"A","t":"Two hours. Then we do it your way or mine."},
+      {"s":"B","t":"Fair. If I'm wrong, I'll fit the fifth sensor myself."}
+    ]
+  },
+  {
     "title": "Sunday morning, on purpose",
     "level": "B2",
     "focus": "Maintenance & faults",
@@ -95,6 +78,25 @@
       {"s":"A","t":"While it's off, I'd overhaul the gearbox as well. It's twelve years old."},
       {"s":"B","t":"Do the overhaul. And if there's a defect in the new belt, I want to hear about it before it's fitted."},
       {"s":"A","t":"Agreed. After this the whole line goes on preventive maintenance, and we retrofit the newer controller in the spring."}
+    ]
+  },
+  {
+    "title": "Handover on the twelfth",
+    "level": "B1",
+    "focus": "Project delivery",
+    "setting": "A client engineer refuses to sign off with 63 items open.",
+    "speakers": {"A":"Contractor","B":"Engineer"},
+    "lines": [
+      {"s":"A","t":"We're ready for handover on the twelfth as agreed."},
+      {"s":"B","t":"The punch list still has sixty-three items."},
+      {"s":"A","t":"All small. Sealant, paint, two door handles."},
+      {"s":"B","t":"I know. And after handover, nobody is on site to fix them."},
+      {"s":"A","t":"We'd come back."},
+      {"s":"B","t":"Sixty-three becomes forty in a month and stays there for a year."},
+      {"s":"A","t":"So what are you proposing?"},
+      {"s":"B","t":"Work the weekend, clear the list below ten, and hand over on the fifteenth."},
+      {"s":"A","t":"Three days late."},
+      {"s":"B","t":"In writing, agreed by the client, with the as-built drawings complete."}
     ]
   },
   {

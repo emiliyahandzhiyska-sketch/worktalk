@@ -1,41 +1,5 @@
 [
   {
-    "title": "Six weeks off",
-    "level": "B1",
-    "setting": "A physiotherapist explains an injury to a runner.",
-    "speakers": {"A":"Marina","B":"Physio"},
-    "lines": [
-      {"s":"A","t":"How bad is it? I've got a race in October."},
-      {"s":"B","t":"You've sprained the ankle. Six weeks, no running."},
-      {"s":"A","t":"Six weeks? I haven't missed a session in two years."},
-      {"s":"B","t":"I know. That's part of why it happened."},
-      {"s":"A","t":"So I just sit still?"},
-      {"s":"B","t":"No. Swimming from week two, and upper body from tomorrow."},
-      {"s":"A","t":"That's not really training."},
-      {"s":"B","t":"It's training the parts you've ignored for years."},
-      {"s":"A","t":"And October?"},
-      {"s":"B","t":"Possible, if you treat rest as part of the plan, not a break from it."}
-    ]
-  },
-  {
-    "title": "Before the final",
-    "level": "B1",
-    "setting": "A coach talks to the team before a match everyone expects them to lose.",
-    "speakers": {"A":"Player","B":"Coach"},
-    "lines": [
-      {"s":"A","t":"They beat us four nil in November."},
-      {"s":"B","t":"They did. Every newspaper has already picked them."},
-      {"s":"A","t":"That's not helping."},
-      {"s":"B","t":"It should. They have to win. We only have to play."},
-      {"s":"A","t":"And if they score first?"},
-      {"s":"B","t":"Then we're where everyone expects us to be, and nothing has changed."},
-      {"s":"A","t":"Home advantage is theirs too."},
-      {"s":"B","t":"For ninety minutes it's eleven against eleven and a referee."},
-      {"s":"A","t":"You really think we can do this."},
-      {"s":"B","t":"I think underdogs play better without pressure. Go and enjoy it."}
-    ]
-  },
-  {
     "title": "Six weeks in",
     "level": "B1",
     "focus": "Gym & fitness",
@@ -56,6 +20,25 @@
       {"s":"B","t":"Ten, and cool down for five afterwards. That's where people your age stop getting injured."},
       {"s":"A","t":"And if I want to build muscle rather than only lift weights?"},
       {"s":"B","t":"Heavier, fewer reps, and eat properly. Stamina comes from the running, and the two don't fight each other."}
+    ]
+  },
+  {
+    "title": "Before the final",
+    "level": "B1",
+    "focus": "Results & scores",
+    "setting": "A coach talks to the team before a match everyone expects them to lose.",
+    "speakers": {"A":"Player","B":"Coach"},
+    "lines": [
+      {"s":"A","t":"They beat us four nil in November."},
+      {"s":"B","t":"They did. Every newspaper has already picked them."},
+      {"s":"A","t":"That's not helping."},
+      {"s":"B","t":"It should. They have to win. We only have to play."},
+      {"s":"A","t":"And if they score first?"},
+      {"s":"B","t":"Then we're where everyone expects us to be, and nothing has changed."},
+      {"s":"A","t":"Home advantage is theirs too."},
+      {"s":"B","t":"For ninety minutes it's eleven against eleven and a referee."},
+      {"s":"A","t":"You really think we can do this."},
+      {"s":"B","t":"I think underdogs play better without pressure. Go and enjoy it."}
     ]
   },
   {
@@ -119,6 +102,25 @@
       {"s":"B","t":"There's a warm-up match on Tuesday against the under-21s."},
       {"s":"A","t":"Use it. Everybody plays forty-five minutes and nobody gets hurt. Keep it level until half-time and the crowd turns on them."},
       {"s":"B","t":"I'll confirm the fixture with them this afternoon."}
+    ]
+  },
+  {
+    "title": "Six weeks off",
+    "level": "B1",
+    "focus": "Health & injury",
+    "setting": "A physiotherapist explains an injury to a runner.",
+    "speakers": {"A":"Marina","B":"Physio"},
+    "lines": [
+      {"s":"A","t":"How bad is it? I've got a race in October."},
+      {"s":"B","t":"You've sprained the ankle. Six weeks, no running."},
+      {"s":"A","t":"Six weeks? I haven't missed a session in two years."},
+      {"s":"B","t":"I know. That's part of why it happened."},
+      {"s":"A","t":"So I just sit still?"},
+      {"s":"B","t":"No. Swimming from week two, and upper body from tomorrow."},
+      {"s":"A","t":"That's not really training."},
+      {"s":"B","t":"It's training the parts you've ignored for years."},
+      {"s":"A","t":"And October?"},
+      {"s":"B","t":"Possible, if you treat rest as part of the plan, not a break from it."}
     ]
   },
   {

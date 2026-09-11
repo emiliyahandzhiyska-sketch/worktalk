@@ -2,6 +2,7 @@
   {
     "title": "Double-booked",
     "level": "B1",
+    "focus": "Scheduling",
     "setting": "Two meetings are scheduled in the same room at the same time.",
     "speakers": {"A":"Assistant","B":"Manager"},
     "lines": [
@@ -15,24 +16,6 @@
       {"s":"B","t":"Reschedule, then. Ask them, don't tell them."},
       {"s":"A","t":"I'll offer one and three and let them choose."},
       {"s":"B","t":"Perfect. And block out the room properly this time."}
-    ]
-  },
-  {
-    "title": "Nine steps to five",
-    "level": "B1",
-    "setting": "An office coordinator proposes cutting an enrolment process.",
-    "speakers": {"A":"Coordinator","B":"Manager"},
-    "lines": [
-      {"s":"A","t":"Enrolling one student takes nine steps and about twenty-five minutes."},
-      {"s":"B","t":"With two hundred a month, that's a lot of hours."},
-      {"s":"A","t":"Eighty-three. I asked one question about each step."},
-      {"s":"B","t":"Which was?"},
-      {"s":"A","t":"Who reads this, and what happens if it doesn't exist?"},
-      {"s":"B","t":"And?"},
-      {"s":"A","t":"Two steps had no answer at all. The certificate template and the folder."},
-      {"s":"B","t":"Nobody has opened those folders since 2023."},
-      {"s":"A","t":"Exactly. And the spreadsheet and timetable can pull from one source."},
-      {"s":"B","t":"Do it. Send me the new workflow on one page."}
     ]
   },
   {
@@ -72,6 +55,25 @@
       {"s":"A","t":"Fix the list first, then send. The policy goes as an attachment, with a two-line memo in the email itself."},
       {"s":"B","t":"And the meeting on the 3rd?"},
       {"s":"A","t":"You minute the meeting, I'll chair it. My out of office is on from Thursday, so anything urgent comes to you."}
+    ]
+  },
+  {
+    "title": "Nine steps to five",
+    "level": "B1",
+    "focus": "Office support",
+    "setting": "An office coordinator proposes cutting an enrolment process.",
+    "speakers": {"A":"Coordinator","B":"Manager"},
+    "lines": [
+      {"s":"A","t":"Enrolling one student takes nine steps and about twenty-five minutes."},
+      {"s":"B","t":"With two hundred a month, that's a lot of hours."},
+      {"s":"A","t":"Eighty-three. I asked one question about each step."},
+      {"s":"B","t":"Which was?"},
+      {"s":"A","t":"Who reads this, and what happens if it doesn't exist?"},
+      {"s":"B","t":"And?"},
+      {"s":"A","t":"Two steps had no answer at all. The certificate template and the folder."},
+      {"s":"B","t":"Nobody has opened those folders since 2023."},
+      {"s":"A","t":"Exactly. And the spreadsheet and timetable can pull from one source."},
+      {"s":"B","t":"Do it. Send me the new workflow on one page."}
     ]
   },
   {

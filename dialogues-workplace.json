@@ -1,41 +1,5 @@
 [
   {
-    "title": "The deadline moved",
-    "level": "B1",
-    "setting": "Ivan tells his colleague Dana the client meeting is two days earlier.",
-    "speakers": {"A":"Ivan","B":"Dana"},
-    "lines": [
-      {"s":"A","t":"Dana, quick heads up. The client moved the meeting to Wednesday."},
-      {"s":"B","t":"Wednesday? That's two days earlier. Where are we with the proposal?"},
-      {"s":"A","t":"About half done. I'd rather cut the scope than send something weak."},
-      {"s":"B","t":"Agreed. Which sections actually matter to them?"},
-      {"s":"A","t":"That's what I asked them. They said pricing, timeline and the team."},
-      {"s":"B","t":"So the market analysis can go. That saves you a day."},
-      {"s":"A","t":"Can I run the new structure by you before I write it?"},
-      {"s":"B","t":"Send it over. I have the bandwidth this afternoon."},
-      {"s":"A","t":"Thanks. I'll keep you posted if anything changes."},
-      {"s":"B","t":"Do that. And let's not touch it after six, it's already been a long week."}
-    ]
-  },
-  {
-    "title": "Too much on my plate",
-    "level": "B1",
-    "setting": "A manager asks someone to take on another project.",
-    "speakers": {"A":"Manager","B":"Elena"},
-    "lines": [
-      {"s":"A","t":"Elena, could you take on the onboarding project as well?"},
-      {"s":"B","t":"I'd like to, but I have too much on my plate this month."},
-      {"s":"A","t":"What's taking most of your time?"},
-      {"s":"B","t":"The two client reports and covering for Stefan while he's away."},
-      {"s":"A","t":"Right. When does Stefan get back?"},
-      {"s":"B","t":"The fifteenth. After that I'd have the bandwidth."},
-      {"s":"A","t":"Let's pencil it in for the sixteenth, then."},
-      {"s":"B","t":"That works. Can we go over the scope before it starts?"},
-      {"s":"A","t":"Of course. I'll set up a short call for Friday."},
-      {"s":"B","t":"Perfect. Then I can hit the ground running."}
-    ]
-  },
-  {
     "title": "Nine people, one hour",
     "level": "B2",
     "focus": "Meetings",
@@ -64,6 +28,25 @@
       {"s":"B","t":"We play it by ear. Long story short, the big picture hasn't changed: we ship in April, or we ship badly."},
       {"s":"A","t":"Anybody want to chime in before I wrap up?"},
       {"s":"B","t":"Just read back the action items. The takeaways can go in the email, and the bottom line is Thursday."}
+    ]
+  },
+  {
+    "title": "The deadline moved",
+    "level": "B1",
+    "focus": "Email",
+    "setting": "Ivan tells his colleague Dana the client meeting is two days earlier.",
+    "speakers": {"A":"Ivan","B":"Dana"},
+    "lines": [
+      {"s":"A","t":"Dana, quick heads up. The client moved the meeting to Wednesday."},
+      {"s":"B","t":"Wednesday? That's two days earlier. Where are we with the proposal?"},
+      {"s":"A","t":"About half done. I'd rather cut the scope than send something weak."},
+      {"s":"B","t":"Agreed. Which sections actually matter to them?"},
+      {"s":"A","t":"That's what I asked them. They said pricing, timeline and the team."},
+      {"s":"B","t":"So the market analysis can go. That saves you a day."},
+      {"s":"A","t":"Can I run the new structure by you before I write it?"},
+      {"s":"B","t":"Send it over. I have the bandwidth this afternoon."},
+      {"s":"A","t":"Thanks. I'll keep you posted if anything changes."},
+      {"s":"B","t":"Do that. And let's not touch it after six, it's already been a long week."}
     ]
   },
   {
@@ -126,6 +109,25 @@
       {"s":"A","t":"We come up with something ourselves, which costs three weeks."},
       {"s":"B","t":"Then iron out the details this week. My rule of thumb is never to cut corners on the part customers touch."},
       {"s":"A","t":"Agreed. I'll send you the game plan tonight, and then the ball is in your court on the budget."}
+    ]
+  },
+  {
+    "title": "Too much on my plate",
+    "level": "B1",
+    "focus": "Tasks & deadlines",
+    "setting": "A manager asks someone to take on another project.",
+    "speakers": {"A":"Manager","B":"Elena"},
+    "lines": [
+      {"s":"A","t":"Elena, could you take on the onboarding project as well?"},
+      {"s":"B","t":"I'd like to, but I have too much on my plate this month."},
+      {"s":"A","t":"What's taking most of your time?"},
+      {"s":"B","t":"The two client reports and covering for Stefan while he's away."},
+      {"s":"A","t":"Right. When does Stefan get back?"},
+      {"s":"B","t":"The fifteenth. After that I'd have the bandwidth."},
+      {"s":"A","t":"Let's pencil it in for the sixteenth, then."},
+      {"s":"B","t":"That works. Can we go over the scope before it starts?"},
+      {"s":"A","t":"Of course. I'll set up a short call for Friday."},
+      {"s":"B","t":"Perfect. Then I can hit the ground running."}
     ]
   },
   {

@@ -1,41 +1,5 @@
 [
   {
-    "title": "The phone in the kitchen",
-    "level": "B1",
-    "setting": "Two colleagues compare notes on screen time.",
-    "speakers": {"A":"Maya","B":"Colleague"},
-    "lines": [
-      {"s":"A","t":"My screen time said six hours forty a day. I checked it twice."},
-      {"s":"B","t":"What did you delete?"},
-      {"s":"A","t":"Nothing. I moved my charger to the kitchen."},
-      {"s":"B","t":"That's all?"},
-      {"s":"A","t":"The first three nights were strange. I reached for a phone that wasn't there."},
-      {"s":"B","t":"And now?"},
-      {"s":"A","t":"Four hours, and the last hour of the day is completely different."},
-      {"s":"B","t":"I tried that once. I use my phone as an alarm clock."},
-      {"s":"A","t":"So buy an alarm clock. Mine cost seven euro."},
-      {"s":"B","t":"That is annoyingly simple. All right, I'll try it this week."}
-    ]
-  },
-  {
-    "title": "Saying no in November",
-    "level": "B2",
-    "setting": "A brother and sister talk about too many commitments.",
-    "speakers": {"A":"Krasimir","B":"Sister"},
-    "lines": [
-      {"s":"A","t":"Two committees, a weekend course, and the neighbour's renovation."},
-      {"s":"B","t":"Do you enjoy any of them?"},
-      {"s":"A","t":"I attend all of them. That's not the same thing."},
-      {"s":"B","t":"Write down why you said yes to each one."},
-      {"s":"A","t":"That feels uncomfortable."},
-      {"s":"B","t":"Do it anyway. I'll wait."},
-      {"s":"A","t":"Seven of eleven say the same thing. It felt rude to refuse."},
-      {"s":"B","t":"So cancel three tonight and see what actually happens."},
-      {"s":"A","t":"And if people are offended?"},
-      {"s":"B","t":"Then you'll know. My guess is nobody will be, and that will annoy you."}
-    ]
-  },
-  {
     "title": "Day nine",
     "level": "B1",
     "focus": "Routines & habits",
@@ -78,6 +42,25 @@
     ]
   },
   {
+    "title": "The phone in the kitchen",
+    "level": "B1",
+    "focus": "Digital life",
+    "setting": "Two colleagues compare notes on screen time.",
+    "speakers": {"A":"Maya","B":"Colleague"},
+    "lines": [
+      {"s":"A","t":"My screen time said six hours forty a day. I checked it twice."},
+      {"s":"B","t":"What did you delete?"},
+      {"s":"A","t":"Nothing. I moved my charger to the kitchen."},
+      {"s":"B","t":"That's all?"},
+      {"s":"A","t":"The first three nights were strange. I reached for a phone that wasn't there."},
+      {"s":"B","t":"And now?"},
+      {"s":"A","t":"Four hours, and the last hour of the day is completely different."},
+      {"s":"B","t":"I tried that once. I use my phone as an alarm clock."},
+      {"s":"A","t":"So buy an alarm clock. Mine cost seven euro."},
+      {"s":"B","t":"That is annoyingly simple. All right, I'll try it this week."}
+    ]
+  },
+  {
     "title": "Four hours and eleven minutes",
     "level": "B1",
     "focus": "Digital life",
@@ -94,6 +77,25 @@
       {"s":"B","t":"A week is a holiday. Turn off every notification except calls, and that's most of the battle won."},
       {"s":"A","t":"Even messages?"},
       {"s":"B","t":"Especially messages. Then unplug after ten at night and leave the phone in another room, so picking it up is a decision instead of a reflex."}
+    ]
+  },
+  {
+    "title": "Saying no in November",
+    "level": "B2",
+    "focus": "Wellbeing",
+    "setting": "A brother and sister talk about too many commitments.",
+    "speakers": {"A":"Krasimir","B":"Sister"},
+    "lines": [
+      {"s":"A","t":"Two committees, a weekend course, and the neighbour's renovation."},
+      {"s":"B","t":"Do you enjoy any of them?"},
+      {"s":"A","t":"I attend all of them. That's not the same thing."},
+      {"s":"B","t":"Write down why you said yes to each one."},
+      {"s":"A","t":"That feels uncomfortable."},
+      {"s":"B","t":"Do it anyway. I'll wait."},
+      {"s":"A","t":"Seven of eleven say the same thing. It felt rude to refuse."},
+      {"s":"B","t":"So cancel three tonight and see what actually happens."},
+      {"s":"A","t":"And if people are offended?"},
+      {"s":"B","t":"Then you'll know. My guess is nobody will be, and that will annoy you."}
     ]
   },
   {
