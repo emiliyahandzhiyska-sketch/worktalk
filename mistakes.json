@@ -734,5 +734,197 @@
     "why_bg": "„At work“ е устойчиво, като at home и at school.",
     "category": "Prepositions",
     "grammar": "prepositions-place"
+  },
+  {
+    "wrong": "You sent it, no?",
+    "right": "You sent it, didn't you?",
+    "why": "English needs a full question tag. 'No?' is a direct translation of 'нали?'.",
+    "why_bg": "Английският иска пълна опашка. „No?“ е буквален превод на „нали?“.",
+    "category": "Questions & word order",
+    "grammar": "question-tags"
+  },
+  {
+    "wrong": "She works here, isn't she?",
+    "right": "She works here, doesn't she?",
+    "why": "There is no 'be' in the sentence, so the tag falls back on 'does'.",
+    "why_bg": "В изречението няма „be“, затова опашката ползва „does“.",
+    "category": "Questions & word order",
+    "grammar": "question-tags"
+  },
+  {
+    "wrong": "Yesterday I must work late.",
+    "right": "Yesterday I had to work late.",
+    "why": "'Must' has no past form. In the past it becomes 'had to'.",
+    "why_bg": "„Must“ няма минало време. В минало става „had to“.",
+    "category": "Modals",
+    "grammar": "must-have-to"
+  },
+  {
+    "wrong": "You don't have to smoke here.",
+    "right": "You mustn't smoke here.",
+    "why": "'Don't have to' means optional. A prohibition needs 'mustn't'.",
+    "why_bg": "„Don't have to“ значи по избор. Забраната иска „mustn't“.",
+    "category": "Modals",
+    "grammar": "must-have-to"
+  },
+  {
+    "wrong": "You should to call them first.",
+    "right": "You should call them first.",
+    "why": "There is no 'to' after a modal verb.",
+    "why_bg": "След модален глагол няма „to“.",
+    "category": "Modals",
+    "grammar": "should-might"
+  },
+  {
+    "wrong": "She should told me earlier.",
+    "right": "She should have told me earlier.",
+    "why": "For the past, use 'should have' plus the third form.",
+    "why_bg": "За миналото: „should have“ плюс трета форма.",
+    "category": "Modals",
+    "grammar": "should-might"
+  },
+  {
+    "wrong": "I have been knowing him for years.",
+    "right": "I have known him for years.",
+    "why": "'Know' is a state verb and has no continuous form.",
+    "why_bg": "„Know“ е глагол за състояние и няма продължителна форма.",
+    "category": "Tenses",
+    "grammar": "present-perfect-continuous"
+  },
+  {
+    "wrong": "She is calling you all morning.",
+    "right": "She has been calling you all morning.",
+    "why": "'All morning' covers a stretch running up to now, so the present perfect continuous.",
+    "why_bg": "„All morning“ покрива отрязък до сега, значи present perfect continuous.",
+    "category": "Tenses",
+    "grammar": "present-perfect-continuous"
+  },
+  {
+    "wrong": "Did you used to work there?",
+    "right": "Did you use to work there?",
+    "why": "'Did' already carries the past, so the -d disappears.",
+    "why_bg": "„Did“ вече носи миналото, затова -d изчезва.",
+    "category": "Tenses",
+    "grammar": "used-to"
+  },
+  {
+    "wrong": "I am used to work from home.",
+    "right": "I am used to working from home.",
+    "why": "After 'be used to' the verb takes -ing, because that 'to' is a preposition.",
+    "why_bg": "След „be used to“ глаголът е с -ing, защото това „to“ е предлог.",
+    "category": "Tenses",
+    "grammar": "used-to"
+  },
+  {
+    "wrong": "If I would have time, I would help.",
+    "right": "If I had time, I would help.",
+    "why": "'Would' never goes in the 'if' half. The past simple does.",
+    "why_bg": "„Would“ никога не стои в частта с „if“. Там е минало просто.",
+    "category": "Tenses",
+    "grammar": "second-conditional"
+  },
+  {
+    "wrong": "If I was you, I will accept the offer.",
+    "right": "If I were you, I would accept the offer.",
+    "why": "An unreal situation takes the past simple after 'if' and 'would' in the result.",
+    "why_bg": "Нереална ситуация: минало просто след „if“ и „would“ в резултата.",
+    "category": "Tenses",
+    "grammar": "second-conditional"
+  },
+  {
+    "wrong": "The report was send yesterday.",
+    "right": "The report was sent yesterday.",
+    "why": "The passive needs the third form: send, sent, sent.",
+    "why_bg": "Страдателният иска трета форма: send, sent, sent.",
+    "category": "Sentence patterns",
+    "grammar": "passive-voice"
+  },
+  {
+    "wrong": "The contract is signed from both sides.",
+    "right": "The contract is signed by both sides.",
+    "why": "The passive names the doer with 'by', never with 'from'.",
+    "why_bg": "Страдателният назовава извършителя с „by“, никога с „from“.",
+    "category": "Sentence patterns",
+    "grammar": "passive-voice"
+  },
+  {
+    "wrong": "The man who he called me was polite.",
+    "right": "The man who called me was polite.",
+    "why": "'Who' is already the subject. Adding 'he' says it twice.",
+    "why_bg": "„Who“ вече е подлогът. Добавянето на „he“ го казва два пъти.",
+    "category": "Sentence patterns",
+    "grammar": "relative-clauses"
+  },
+  {
+    "wrong": "This is the report what you asked for.",
+    "right": "This is the report that you asked for.",
+    "why": "'What' never introduces a relative clause. Use that, who or which.",
+    "why_bg": "„What“ никога не въвежда относително изречение. Ползва се that, who или which.",
+    "category": "Sentence patterns",
+    "grammar": "relative-clauses"
+  },
+  {
+    "wrong": "She said she will call me back.",
+    "right": "She said she would call me back.",
+    "why": "'Will' becomes 'would' in reported speech.",
+    "why_bg": "„Will“ става „would“ в непряка реч.",
+    "category": "Sentence patterns",
+    "grammar": "reported-speech"
+  },
+  {
+    "wrong": "He told that the price had changed.",
+    "right": "He told me that the price had changed.",
+    "why": "'Tell' needs a person after it. With no person, use 'said'.",
+    "why_bg": "„Tell“ иска човек след себе си. Без човек се ползва „said“.",
+    "category": "Sentence patterns",
+    "grammar": "reported-speech"
+  },
+  {
+    "wrong": "I enjoy to work with this team.",
+    "right": "I enjoy working with this team.",
+    "why": "'Enjoy' is always followed by -ing.",
+    "why_bg": "След „enjoy“ винаги идва -ing.",
+    "category": "Verb patterns",
+    "grammar": "gerund-infinitive"
+  },
+  {
+    "wrong": "She suggested to meet on Thursday.",
+    "right": "She suggested meeting on Thursday.",
+    "why": "'Suggest' takes -ing, even though the Bulgarian translation uses 'да'.",
+    "why_bg": "„Suggest“ иска -ing, въпреки че българският превод е с „да“.",
+    "category": "Verb patterns",
+    "grammar": "gerund-infinitive"
+  },
+  {
+    "wrong": "I don't have some time today.",
+    "right": "I don't have any time today.",
+    "why": "A negative sentence takes 'any'.",
+    "why_bg": "Отрицателно изречение иска „any“.",
+    "category": "Countable or not",
+    "grammar": "quantifiers"
+  },
+  {
+    "wrong": "We have a few money left.",
+    "right": "We have a little money left.",
+    "why": "Money is uncountable, so 'a little'.",
+    "why_bg": "Парите са неброими, значи „a little“.",
+    "category": "Countable or not",
+    "grammar": "quantifiers"
+  },
+  {
+    "wrong": "Their price is the same like ours.",
+    "right": "Their price is the same as ours.",
+    "why": "'The same as' is fixed. 'The same like' does not exist.",
+    "why_bg": "„The same as“ е устойчиво. „The same like“ не съществува.",
+    "category": "Comparisons",
+    "grammar": "as-as-comparisons"
+  },
+  {
+    "wrong": "The new system is very faster.",
+    "right": "The new system is much faster.",
+    "why": "'Very' doesn't go with a comparative. Use much, far or a lot.",
+    "why_bg": "„Very“ не върви със сравнителна степен. Ползва се much, far или a lot.",
+    "category": "Comparisons",
+    "grammar": "as-as-comparisons"
   }
 ]

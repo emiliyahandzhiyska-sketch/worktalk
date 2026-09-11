@@ -444,6 +444,80 @@
     ]
   },
   {
+    "id": "question-tags",
+    "category": "Questions & word order",
+    "title": "Question Tags",
+    "level": "B1",
+    "rule_en": "A question tag turns a statement into a check: 'You sent it, didn't you?'. A positive sentence takes a negative tag and the other way round: 'She's late, isn't she?', 'He isn't coming, is he?'. The tag copies the auxiliary from the sentence, or uses 'do' when there isn't one: 'You work here, don't you?'. Bulgarian uses 'нали' for all of them, which is why the English version gets forgotten.",
+    "rule_bg": "Опашатият въпрос превръща твърдението в проверка: „You sent it, didn't you?“. Положително изречение взима отрицателна опашка и обратно: „She's late, isn't she?“, „He isn't coming, is he?“. Опашката копира спомагателния глагол от изречението, а ако няма такъв, ползва „do“: „You work here, don't you?“. Българският ползва „нали“ за всички, затова английският вариант се забравя.",
+    "examples": [
+      {
+        "en": "You sent the invoice, didn't you?",
+        "bg": "Изпрати фактурата, нали?"
+      },
+      {
+        "en": "She isn't coming to the meeting, is she?",
+        "bg": "Тя няма да дойде на срещата, нали?"
+      },
+      {
+        "en": "They work in the Varna office, don't they?",
+        "bg": "Работят във варненския офис, нали?"
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "You're coming tomorrow, ___?",
+        "options": [
+          "aren't you",
+          "don't you"
+        ],
+        "correct": 0,
+        "why": "The sentence uses 'are', so the tag uses 'aren't'.",
+        "why_bg": "Изречението е с „are“, значи опашката е с „aren't“."
+      },
+      {
+        "sentence": "She works here, ___?",
+        "options": [
+          "doesn't she",
+          "isn't she"
+        ],
+        "correct": 0,
+        "why": "There is no auxiliary in the sentence, so the tag falls back on 'does'.",
+        "why_bg": "В изречението няма спомагателен глагол, затова опашката ползва „does“."
+      },
+      {
+        "sentence": "He didn't call, ___?",
+        "options": [
+          "did he",
+          "didn't he"
+        ],
+        "correct": 0,
+        "why": "A negative sentence takes a positive tag.",
+        "why_bg": "Отрицателно изречение взима положителна опашка."
+      },
+      {
+        "sentence": "They've finished, ___?",
+        "options": [
+          "haven't they",
+          "didn't they"
+        ],
+        "correct": 0,
+        "why": "The tag copies the auxiliary, which here is 'have'.",
+        "why_bg": "Опашката копира спомагателния глагол, който тук е „have“."
+      },
+      {
+        "sentence": "It's the right file, ___?",
+        "options": [
+          "isn't it",
+          "no"
+        ],
+        "correct": 0,
+        "why": "English needs a full tag. 'No?' is a direct translation of 'нали?'.",
+        "why_bg": "Английският иска пълна опашка. „No?“ е буквален превод на „нали?“."
+      }
+    ]
+  },
+  {
     "id": "can-ability-permission",
     "category": "Modals",
     "title": "CAN for Ability and Permission",
@@ -588,6 +662,154 @@
         "correct": 0,
         "why": "'Would like' takes 'to' before the verb, unlike 'can' and 'could'.",
         "why_bg": "„Would like“ иска „to“ пред глагола, за разлика от „can“ и „could“."
+      }
+    ]
+  },
+  {
+    "id": "must-have-to",
+    "category": "Modals",
+    "title": "MUST, HAVE TO and DON'T HAVE TO",
+    "level": "B1",
+    "rule_en": "'Must' and 'have to' both say something is necessary: 'I must finish this today', 'I have to finish this today'. 'Must' usually comes from the speaker, 'have to' from a rule or the situation. The negatives are completely different: 'You mustn't send it' means it is forbidden, while 'You don't have to send it' means it is optional. 'Must' has no past form, so the past is 'had to'.",
+    "rule_bg": "„Must“ и „have to“ казват, че нещо е необходимо: „I must finish this today“, „I have to finish this today“. „Must“ обикновено идва от говорещия, „have to“ от правило или обстоятелства. Отрицанията са напълно различни: „You mustn't send it“ значи забранено е, а „You don't have to send it“ значи не е задължително. „Must“ няма минало време, затова в минало е „had to“.",
+    "examples": [
+      {
+        "en": "I have to be in the office by nine. The client must sign before Friday.",
+        "bg": "Трябва да съм в офиса до девет. Клиентът трябва да подпише преди петък."
+      },
+      {
+        "en": "You don't have to come to the call, but you mustn't miss the deadline.",
+        "bg": "Не е задължително да идваш на разговора, но не бива да пропускаш срока."
+      },
+      {
+        "en": "We had to cancel the trip because the flight was full.",
+        "bg": "Трябваше да отменим пътуването, защото полетът беше пълен."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "You ___ tell anyone, it's confidential.",
+        "options": [
+          "mustn't",
+          "don't have to"
+        ],
+        "correct": 0,
+        "why": "This is a prohibition, so 'mustn't'. 'Don't have to' would make telling people merely optional.",
+        "why_bg": "Това е забрана, значи „mustn't“. „Don't have to“ би значело, че казването е по избор."
+      },
+      {
+        "sentence": "You ___ come tomorrow, we can manage.",
+        "options": [
+          "don't have to",
+          "mustn't"
+        ],
+        "correct": 0,
+        "why": "Nothing is forbidden here, it simply isn't necessary.",
+        "why_bg": "Тук нищо не е забранено, просто не е необходимо."
+      },
+      {
+        "sentence": "We ___ cancel the meeting last week.",
+        "options": [
+          "had to",
+          "must"
+        ],
+        "correct": 0,
+        "why": "'Must' has no past form. In the past it becomes 'had to'.",
+        "why_bg": "„Must“ няма минало време. В минало става „had to“."
+      },
+      {
+        "sentence": "I must ___ this before five.",
+        "options": [
+          "finish",
+          "to finish"
+        ],
+        "correct": 0,
+        "why": "'Must' is a modal, so no 'to' after it. 'Have to' is the one that keeps its 'to'.",
+        "why_bg": "„Must“ е модален, значи без „to“ след него. „Have to“ е този, който запазва „to“."
+      },
+      {
+        "sentence": "Everyone ___ wear a badge in the building.",
+        "options": [
+          "has to",
+          "have to"
+        ],
+        "correct": 0,
+        "why": "'Everyone' is singular, so 'has to'.",
+        "why_bg": "„Everyone“ е в единствено число, значи „has to“."
+      }
+    ]
+  },
+  {
+    "id": "should-might",
+    "category": "Modals",
+    "title": "SHOULD and MIGHT: Advice and Possibility",
+    "level": "B1",
+    "rule_en": "'Should' gives advice or says what the right thing is: 'You should call them first'. 'Might', 'may' and 'could' say something is possible without being certain: 'It might rain', 'She may be late'. None of them takes 'to' and none of them adds -s. For the past, add 'have': 'You should have called', 'She might have forgotten'.",
+    "rule_bg": "„Should“ дава съвет или казва кое е правилното: „You should call them first“. „Might“, „may“ и „could“ казват, че нещо е възможно, без да е сигурно: „It might rain“, „She may be late“. Никой от тях не иска „to“ и никой не добавя -s. За минало се добавя „have“: „You should have called“, „She might have forgotten“.",
+    "examples": [
+      {
+        "en": "You should send it today. They might close early on Friday.",
+        "bg": "Трябва да го изпратиш днес. Може да затворят по-рано в петък."
+      },
+      {
+        "en": "She's not answering. She may be in a meeting.",
+        "bg": "Не отговаря. Може да е на среща."
+      },
+      {
+        "en": "You should have told me. I could have helped.",
+        "bg": "Трябваше да ми кажеш. Можех да помогна."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "You ___ check the figures before you send them.",
+        "options": [
+          "should",
+          "should to"
+        ],
+        "correct": 0,
+        "why": "'Should' is a modal, so the verb after it has no 'to'.",
+        "why_bg": "„Should“ е модален, значи глаголът след него е без „to“."
+      },
+      {
+        "sentence": "He ___ be in the office, his car is outside.",
+        "options": [
+          "might",
+          "might to"
+        ],
+        "correct": 0,
+        "why": "Same rule: modals take the bare verb.",
+        "why_bg": "Същото правило: модалните искат глагол без „to“."
+      },
+      {
+        "sentence": "She ___ know the answer, ask her.",
+        "options": [
+          "might",
+          "mights"
+        ],
+        "correct": 0,
+        "why": "Modal verbs never add -s.",
+        "why_bg": "Модалните глаголи никога не добавят -s."
+      },
+      {
+        "sentence": "You ___ told me about the change.",
+        "options": [
+          "should have",
+          "should"
+        ],
+        "correct": 0,
+        "why": "For advice about the past, use 'should have' plus the third form.",
+        "why_bg": "За съвет относно миналото: „should have“ плюс трета форма."
+      },
+      {
+        "sentence": "I'm not sure, but it ___ be ready by Friday.",
+        "options": [
+          "might",
+          "must"
+        ],
+        "correct": 0,
+        "why": "'Might' expresses uncertainty. 'Must' here would claim you are sure.",
+        "why_bg": "„Might“ изразява несигурност. „Must“ тук би значело, че си сигурен."
       }
     ]
   },
@@ -1036,6 +1258,228 @@
     ]
   },
   {
+    "id": "present-perfect-continuous",
+    "category": "Tenses",
+    "title": "Present Perfect Continuous",
+    "level": "B1",
+    "rule_en": "Use 'have been + -ing' for an activity that started in the past and is still going, when you want to stress how long it has been going on: 'I've been waiting for an hour'. Compare the present perfect simple, which stresses the result: 'I've written three emails'. State verbs like know, be and have don't take this form.",
+    "rule_bg": "„Have been + -ing“ за дейност, започнала в миналото и още продължаваща, когато искаш да подчертаеш колко дълго тече: „I've been waiting for an hour“. Сравни с present perfect simple, който подчертава резултата: „I've written three emails“. Глаголи за състояние като know, be и have не се ползват в тази форма.",
+    "examples": [
+      {
+        "en": "I've been working here since 2020.",
+        "bg": "Работя тук от 2020."
+      },
+      {
+        "en": "She's been trying to reach you all morning.",
+        "bg": "Тя се опитва да се свърже с теб цяла сутрин."
+      },
+      {
+        "en": "We've been waiting for their answer for three weeks.",
+        "bg": "Чакаме отговора им от три седмици."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "I ___ here since 2020.",
+        "options": [
+          "have been working",
+          "am working"
+        ],
+        "correct": 0,
+        "why": "'Since 2020' means it started then and continues, which needs a perfect form.",
+        "why_bg": "„Since 2020“ значи започнало тогава и продължава, което иска перфектна форма."
+      },
+      {
+        "sentence": "She ___ you all morning.",
+        "options": [
+          "has been calling",
+          "is calling"
+        ],
+        "correct": 0,
+        "why": "'All morning' covers a stretch running up to now, so the present perfect continuous.",
+        "why_bg": "„All morning“ покрива отрязък до сега, значи present perfect continuous."
+      },
+      {
+        "sentence": "I ___ him for years.",
+        "options": [
+          "have known",
+          "have been knowing"
+        ],
+        "correct": 0,
+        "why": "'Know' is a state verb and has no continuous form.",
+        "why_bg": "„Know“ е глагол за състояние и няма продължителна форма."
+      },
+      {
+        "sentence": "We've ___ waiting for two hours.",
+        "options": [
+          "been",
+          "being"
+        ],
+        "correct": 0,
+        "why": "The form is have + been + -ing. 'Being' is a different word.",
+        "why_bg": "Формата е have + been + -ing. „Being“ е друга дума."
+      },
+      {
+        "sentence": "How long ___ you been learning English?",
+        "options": [
+          "have",
+          "are"
+        ],
+        "correct": 0,
+        "why": "The question starts with 'have', because the form is built on 'have been'.",
+        "why_bg": "Въпросът започва с „have“, защото формата е изградена върху „have been“."
+      }
+    ]
+  },
+  {
+    "id": "used-to",
+    "category": "Tenses",
+    "title": "USED TO for Past Habits",
+    "level": "B1",
+    "rule_en": "'Used to' describes something that was true in the past and isn't now: 'I used to work in Sofia'. In questions and negatives it loses the -d, because 'did' carries the past: 'Did you use to work there?', 'I didn't use to like coffee'. Don't confuse it with 'be used to', which means being accustomed to something: 'I'm used to early meetings'.",
+    "rule_bg": "„Used to“ описва нещо, което е било вярно в миналото, но вече не е: „I used to work in Sofia“. Във въпроси и отрицания губи -d, защото „did“ носи миналото: „Did you use to work there?“, „I didn't use to like coffee“. Не го бъркай с „be used to“, което значи свикнал съм с нещо: „I'm used to early meetings“.",
+    "examples": [
+      {
+        "en": "I used to travel every week, but not since the new job.",
+        "bg": "Пътувах всяка седмица, но не и след новата работа."
+      },
+      {
+        "en": "Did you use to work with them before?",
+        "bg": "Работил ли си с тях преди?"
+      },
+      {
+        "en": "I'm used to the noise now. It took a month.",
+        "bg": "Вече съм свикнал с шума. Отне месец."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "I ___ work in Sofia, but I moved in 2019.",
+        "options": [
+          "used to",
+          "use to"
+        ],
+        "correct": 0,
+        "why": "In a positive sentence it keeps the -d.",
+        "why_bg": "В положително изречение запазва -d."
+      },
+      {
+        "sentence": "___ you use to live there?",
+        "options": [
+          "Did",
+          "Do"
+        ],
+        "correct": 0,
+        "why": "It is about the past, so the question takes 'did'.",
+        "why_bg": "Става дума за миналото, значи въпросът е с „did“."
+      },
+      {
+        "sentence": "I didn't ___ like coffee.",
+        "options": [
+          "use to",
+          "used to"
+        ],
+        "correct": 0,
+        "why": "'Didn't' already carries the past, so the -d disappears.",
+        "why_bg": "„Didn't“ вече носи миналото, затова -d изчезва."
+      },
+      {
+        "sentence": "I'm ___ to working from home now.",
+        "options": [
+          "used",
+          "use"
+        ],
+        "correct": 0,
+        "why": "'Be used to' means accustomed, and it keeps the -d.",
+        "why_bg": "„Be used to“ значи свикнал и запазва -d."
+      },
+      {
+        "sentence": "She's used to ___ early.",
+        "options": [
+          "starting",
+          "start"
+        ],
+        "correct": 0,
+        "why": "After 'be used to' the verb takes -ing, because that 'to' is a preposition.",
+        "why_bg": "След „be used to“ глаголът е с -ing, защото това „to“ е предлог."
+      }
+    ]
+  },
+  {
+    "id": "second-conditional",
+    "category": "Tenses",
+    "title": "Second Conditional (unreal situations)",
+    "level": "B1",
+    "rule_en": "Use the second conditional for something imaginary or unlikely: 'If I had more time, I would learn Spanish'. The form is if + past simple, then would + verb. The past tense here says nothing about the past, it signals that the situation is not real. 'If I would have time' is the most common Bulgarian mistake: 'would' never goes in the 'if' half.",
+    "rule_bg": "Второ условно за нещо въображаемо или малко вероятно: „If I had more time, I would learn Spanish“. Формата е if + минало просто, после would + глагол. Миналото време тук не говори за миналото, а сигнализира, че ситуацията не е реална. „If I would have time“ е най-честата българска грешка: „would“ никога не стои в частта с „if“.",
+    "examples": [
+      {
+        "en": "If we had a bigger budget, we would hire two more people.",
+        "bg": "Ако имахме по-голям бюджет, щяхме да наемем още двама души."
+      },
+      {
+        "en": "What would you do if the client said no?",
+        "bg": "Какво би направил, ако клиентът откаже?"
+      },
+      {
+        "en": "If I were you, I'd ask for the money upfront.",
+        "bg": "На твое място бих поискал парите предварително."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "If I ___ more time, I would help you.",
+        "options": [
+          "had",
+          "would have"
+        ],
+        "correct": 0,
+        "why": "'Would' never goes in the 'if' half. The past simple does.",
+        "why_bg": "„Would“ никога не стои в частта с „if“. Там е минало просто."
+      },
+      {
+        "sentence": "If we lowered the price, we ___ sell more.",
+        "options": [
+          "would",
+          "will"
+        ],
+        "correct": 0,
+        "why": "The result half of a second conditional takes 'would', not 'will'.",
+        "why_bg": "Частта с резултата при второ условно е с „would“, не с „will“."
+      },
+      {
+        "sentence": "If I ___ you, I'd take the job.",
+        "options": [
+          "were",
+          "am"
+        ],
+        "correct": 0,
+        "why": "'If I were you' is the fixed phrase for giving advice.",
+        "why_bg": "„If I were you“ е устойчивият израз за даване на съвет."
+      },
+      {
+        "sentence": "She would call you if she ___ your number.",
+        "options": [
+          "knew",
+          "knows"
+        ],
+        "correct": 0,
+        "why": "The imaginary situation takes the past simple, whichever half it appears in.",
+        "why_bg": "Въображаемата ситуация е в минало просто, в която и половина да се появи."
+      },
+      {
+        "sentence": "If the office ___ closer, I would walk to work.",
+        "options": [
+          "was",
+          "will be"
+        ],
+        "correct": 0,
+        "why": "Unreal present, so the past simple. 'Will be' belongs to the first conditional.",
+        "why_bg": "Нереално сегашно, значи минало просто. „Will be“ е за първо условно."
+      }
+    ]
+  },
+  {
     "id": "future-forms",
     "category": "Tenses",
     "title": "Future: WILL, GOING TO, Present Continuous",
@@ -1180,6 +1624,228 @@
         "correct": 0,
         "why": "The 'if' half stays in the present even when the main half is negative.",
         "why_bg": "Частта с „if“ остава в сегашно дори когато главната част е отрицателна."
+      }
+    ]
+  },
+  {
+    "id": "passive-voice",
+    "category": "Sentence patterns",
+    "title": "The Passive: IS DONE and WAS DONE",
+    "level": "B1",
+    "rule_en": "Use the passive when what happened matters more than who did it: 'The report was sent yesterday'. The form is be + the third form of the verb: is sent, was sent, has been sent. To name the person, add 'by': 'The report was written by Maria'. English uses the passive far more than Bulgarian, especially in business writing.",
+    "rule_bg": "Страдателен залог, когато е по-важно какво е станало, отколкото кой го е направил: „The report was sent yesterday“. Формата е be + трета форма на глагола: is sent, was sent, has been sent. За да назовеш човека, добавяш „by“: „The report was written by Maria“. Английският ползва страдателен залог много повече от българския, особено в бизнес писането.",
+    "examples": [
+      {
+        "en": "The invoices are sent on the first of every month.",
+        "bg": "Фактурите се изпращат на първо число всеки месец."
+      },
+      {
+        "en": "The contract was signed last Friday by both sides.",
+        "bg": "Договорът беше подписан миналия петък от двете страни."
+      },
+      {
+        "en": "Your order has been dispatched and will arrive on Tuesday.",
+        "bg": "Поръчката ви е изпратена и ще пристигне във вторник."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "The report ___ yesterday.",
+        "options": [
+          "was sent",
+          "was send"
+        ],
+        "correct": 0,
+        "why": "The passive needs the third form: send, sent, sent.",
+        "why_bg": "Страдателният иска трета форма: send, sent, sent."
+      },
+      {
+        "sentence": "The invoices ___ every Monday.",
+        "options": [
+          "are checked",
+          "are check"
+        ],
+        "correct": 0,
+        "why": "Be plus the third form. 'Are check' is not a verb form at all.",
+        "why_bg": "Be плюс трета форма. „Are check“ не е никаква глаголна форма."
+      },
+      {
+        "sentence": "This office ___ in 2018.",
+        "options": [
+          "was built",
+          "built"
+        ],
+        "correct": 0,
+        "why": "The office didn't build anything, so the passive.",
+        "why_bg": "Офисът не е построил нищо, значи страдателен залог."
+      },
+      {
+        "sentence": "The decision ___ next week.",
+        "options": [
+          "will be made",
+          "will be make"
+        ],
+        "correct": 0,
+        "why": "After 'be' comes the third form: make, made, made.",
+        "why_bg": "След „be“ идва трета форма: make, made, made."
+      },
+      {
+        "sentence": "The contract was signed ___ both sides.",
+        "options": [
+          "by",
+          "from"
+        ],
+        "correct": 0,
+        "why": "The passive names the doer with 'by'. 'From' is a translation of 'от'.",
+        "why_bg": "Страдателният назовава извършителя с „by“. „From“ е превод на „от“."
+      }
+    ]
+  },
+  {
+    "id": "relative-clauses",
+    "category": "Sentence patterns",
+    "title": "Relative Clauses: WHO, WHICH, THAT, WHERE",
+    "level": "B1",
+    "rule_en": "Use 'who' for people, 'which' for things, 'where' for places, and 'that' for either: 'the colleague who called', 'the file which is missing', 'the office where we met'. Don't repeat the subject: 'the man who he called me' should be 'the man who called me'. Bulgarian allows the extra pronoun, English does not.",
+    "rule_bg": "„Who“ за хора, „which“ за неща, „where“ за места, а „that“ и за двете: „the colleague who called“, „the file which is missing“, „the office where we met“. Не повтаряй подлога: „the man who he called me“ трябва да е „the man who called me“. Българският допуска допълнителното местоимение, английският не.",
+    "examples": [
+      {
+        "en": "The colleague who sent the email is on holiday.",
+        "bg": "Колегата, който изпрати имейла, е в отпуск."
+      },
+      {
+        "en": "This is the report which the client asked for.",
+        "bg": "Това е докладът, който клиентът поиска."
+      },
+      {
+        "en": "The room where we met last time is booked.",
+        "bg": "Залата, в която се срещнахме миналия път, е заета."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "The woman ___ called is from the bank.",
+        "options": [
+          "who",
+          "which"
+        ],
+        "correct": 0,
+        "why": "'Who' for people, 'which' for things.",
+        "why_bg": "„Who“ за хора, „which“ за неща."
+      },
+      {
+        "sentence": "This is the file ___ was missing.",
+        "options": [
+          "which",
+          "who"
+        ],
+        "correct": 0,
+        "why": "A file is a thing, so 'which' or 'that'.",
+        "why_bg": "Файлът е нещо, значи „which“ или „that“."
+      },
+      {
+        "sentence": "That's the office ___ she works.",
+        "options": [
+          "where",
+          "which"
+        ],
+        "correct": 0,
+        "why": "'Where' for a place something happens in.",
+        "why_bg": "„Where“ за място, в което се случва нещо."
+      },
+      {
+        "sentence": "The man who ___ me was very polite.",
+        "options": [
+          "called",
+          "he called"
+        ],
+        "correct": 0,
+        "why": "'Who' is already the subject. Adding 'he' says it twice.",
+        "why_bg": "„Who“ вече е подлогът. Добавянето на „he“ го казва два пъти."
+      },
+      {
+        "sentence": "The client ___ we met yesterday has signed.",
+        "options": [
+          "that",
+          "what"
+        ],
+        "correct": 0,
+        "why": "'What' never introduces a relative clause in English. Use that, who or which.",
+        "why_bg": "„What“ никога не въвежда относително изречение на английски. Ползва се that, who или which."
+      }
+    ]
+  },
+  {
+    "id": "reported-speech",
+    "category": "Sentence patterns",
+    "title": "Reported Speech",
+    "level": "B1",
+    "rule_en": "When you report what somebody said, the tense usually steps back one: 'I am busy' becomes 'He said he was busy'; 'I will call' becomes 'She said she would call'. Pronouns and time words shift too: today becomes that day, tomorrow becomes the next day. After 'say' there is no person; after 'tell' there is: 'He said that...', 'He told me that...'.",
+    "rule_bg": "Когато предаваш чужди думи, времето обикновено отстъпва с една стъпка назад: „I am busy“ става „He said he was busy“; „I will call“ става „She said she would call“. Местоименията и времевите думи също се местят: today става that day, tomorrow става the next day. След „say“ няма човек, след „tell“ има: „He said that...“, „He told me that...“.",
+    "examples": [
+      {
+        "en": "'I'm in a meeting.' becomes: He said he was in a meeting.",
+        "bg": "„На среща съм.“ става: Той каза, че е на среща."
+      },
+      {
+        "en": "'We will send it tomorrow.' becomes: They said they would send it the next day.",
+        "bg": "„Ще го изпратим утре.“ става: Казаха, че ще го изпратят на следващия ден."
+      },
+      {
+        "en": "She told me she had already spoken to the client.",
+        "bg": "Тя ми каза, че вече е говорила с клиента."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "He said he ___ busy.",
+        "options": [
+          "was",
+          "is"
+        ],
+        "correct": 0,
+        "why": "The tense steps back one: am becomes was.",
+        "why_bg": "Времето отстъпва с една стъпка: am става was."
+      },
+      {
+        "sentence": "She said she ___ call me back.",
+        "options": [
+          "would",
+          "will"
+        ],
+        "correct": 0,
+        "why": "'Will' becomes 'would' in reported speech.",
+        "why_bg": "„Will“ става „would“ в непряка реч."
+      },
+      {
+        "sentence": "He ___ me that the price had changed.",
+        "options": [
+          "told",
+          "said"
+        ],
+        "correct": 0,
+        "why": "There is a person straight after the verb, so 'told'.",
+        "why_bg": "Веднага след глагола има човек, значи „told“."
+      },
+      {
+        "sentence": "They said they ___ the invoice the week before.",
+        "options": [
+          "had sent",
+          "have sent"
+        ],
+        "correct": 0,
+        "why": "The present perfect steps back to the past perfect.",
+        "why_bg": "Present perfect отстъпва към past perfect."
+      },
+      {
+        "sentence": "She ___ that the meeting was cancelled.",
+        "options": [
+          "said",
+          "told"
+        ],
+        "correct": 0,
+        "why": "No person follows, so 'said'.",
+        "why_bg": "След него не идва човек, значи „said“."
       }
     ]
   },
@@ -1402,6 +2068,80 @@
         "correct": 0,
         "why": "'Look forward to' is fixed, and that 'to' is a preposition, so a verb after it takes -ing: looking forward to hearing.",
         "why_bg": "„Look forward to“ е устойчиво, а „to“ тук е предлог, затова глагол след него е с -ing: looking forward to hearing."
+      }
+    ]
+  },
+  {
+    "id": "gerund-infinitive",
+    "category": "Verb patterns",
+    "title": "Verb + -ING or Verb + TO",
+    "level": "B1",
+    "rule_en": "Some verbs are followed by -ing: enjoy, finish, avoid, suggest, mind, keep. Others take 'to': want, need, decide, hope, agree, offer, plan. A few take either with the same meaning: start, begin, continue. After a preposition the verb always takes -ing: 'interested in working', 'before sending'. There is no rule behind the lists, they have to be learned.",
+    "rule_bg": "След някои глаголи идва -ing: enjoy, finish, avoid, suggest, mind, keep. След други идва „to“: want, need, decide, hope, agree, offer, plan. Няколко приемат и двете с еднакво значение: start, begin, continue. След предлог глаголът винаги е с -ing: „interested in working“, „before sending“. Зад списъците няма правило, трябва да се научат.",
+    "examples": [
+      {
+        "en": "I enjoy working with them, and I'd like to continue next year.",
+        "bg": "Харесва ми да работя с тях и бих искал да продължа догодина."
+      },
+      {
+        "en": "She suggested meeting on Thursday, but I need to check my calendar.",
+        "bg": "Тя предложи да се срещнем в четвъртък, но трябва да проверя календара си."
+      },
+      {
+        "en": "We finished reviewing the contract before sending it.",
+        "bg": "Приключихме с прегледа на договора, преди да го изпратим."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "I enjoy ___ with this team.",
+        "options": [
+          "working",
+          "to work"
+        ],
+        "correct": 0,
+        "why": "'Enjoy' is always followed by -ing.",
+        "why_bg": "След „enjoy“ винаги идва -ing."
+      },
+      {
+        "sentence": "We decided ___ the offer.",
+        "options": [
+          "to accept",
+          "accepting"
+        ],
+        "correct": 0,
+        "why": "'Decide' takes 'to'.",
+        "why_bg": "„Decide“ иска „to“."
+      },
+      {
+        "sentence": "She suggested ___ the meeting.",
+        "options": [
+          "postponing",
+          "to postpone"
+        ],
+        "correct": 0,
+        "why": "'Suggest' takes -ing, even though the Bulgarian translation uses 'да'.",
+        "why_bg": "„Suggest“ иска -ing, въпреки че българският превод е с „да“."
+      },
+      {
+        "sentence": "I'm interested in ___ more about the role.",
+        "options": [
+          "learning",
+          "learn"
+        ],
+        "correct": 0,
+        "why": "After a preposition the verb always takes -ing.",
+        "why_bg": "След предлог глаголът винаги е с -ing."
+      },
+      {
+        "sentence": "He offered ___ me a lift.",
+        "options": [
+          "to give",
+          "giving"
+        ],
+        "correct": 0,
+        "why": "'Offer' takes 'to'.",
+        "why_bg": "„Offer“ иска „to“."
       }
     ]
   },
@@ -1776,6 +2516,80 @@
     ]
   },
   {
+    "id": "quantifiers",
+    "category": "Countable or not",
+    "title": "SOME, ANY, A FEW and A LITTLE",
+    "level": "B1",
+    "rule_en": "'Some' goes in positive sentences and in offers: 'I have some questions', 'Would you like some coffee?'. 'Any' goes in negatives and most questions: 'I don't have any time', 'Do you have any questions?'. 'A few' is for countable things and 'a little' for uncountable: a few emails, a little time. Drop the 'a' and the meaning turns negative: 'few people came' means almost nobody.",
+    "rule_bg": "„Some“ в положителни изречения и в предложения: „I have some questions“, „Would you like some coffee?“. „Any“ в отрицания и повечето въпроси: „I don't have any time“, „Do you have any questions?“. „A few“ за броими неща, „a little“ за неброими: a few emails, a little time. Махнеш ли „a“, значението става отрицателно: „few people came“ значи почти никой.",
+    "examples": [
+      {
+        "en": "I have some good news and a few questions.",
+        "bg": "Имам добри новини и няколко въпроса."
+      },
+      {
+        "en": "We don't have any information yet.",
+        "bg": "Още нямаме никаква информация."
+      },
+      {
+        "en": "Give me a little time and I'll have an answer.",
+        "bg": "Дай ми малко време и ще имам отговор."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "I don't have ___ time today.",
+        "options": [
+          "any",
+          "some"
+        ],
+        "correct": 0,
+        "why": "A negative sentence takes 'any'.",
+        "why_bg": "Отрицателно изречение иска „any“."
+      },
+      {
+        "sentence": "Would you like ___ coffee?",
+        "options": [
+          "some",
+          "any"
+        ],
+        "correct": 0,
+        "why": "Offers take 'some', even though they are questions.",
+        "why_bg": "Предложенията са със „some“, макар да са въпроси."
+      },
+      {
+        "sentence": "I've got ___ emails to answer.",
+        "options": [
+          "a few",
+          "a little"
+        ],
+        "correct": 0,
+        "why": "Emails are countable, so 'a few'.",
+        "why_bg": "Имейлите са броими, значи „a few“."
+      },
+      {
+        "sentence": "We have ___ money left in the budget.",
+        "options": [
+          "a little",
+          "a few"
+        ],
+        "correct": 0,
+        "why": "Money is uncountable, so 'a little'.",
+        "why_bg": "Парите са неброими, значи „a little“."
+      },
+      {
+        "sentence": "___ people came, so we cancelled.",
+        "options": [
+          "Few",
+          "A few"
+        ],
+        "correct": 0,
+        "why": "Without 'a', 'few' means almost none. 'A few' would have meant enough to continue.",
+        "why_bg": "Без „a“, „few“ значи почти никой. „A few“ би значело достатъчно, за да продължим."
+      }
+    ]
+  },
+  {
     "id": "comparatives-superlatives",
     "category": "Comparisons",
     "title": "Comparatives and Superlatives",
@@ -1846,6 +2660,80 @@
         "correct": 0,
         "why": "'Worst' is the superlative of 'bad' and needs no 'most'.",
         "why_bg": "„Worst“ е превъзходната степен на „bad“ и не иска „most“."
+      }
+    ]
+  },
+  {
+    "id": "as-as-comparisons",
+    "category": "Comparisons",
+    "title": "AS ... AS and Other Comparison Patterns",
+    "level": "B1",
+    "rule_en": "'As ... as' says two things are equal: 'This offer is as good as the last one'. The negative says they are not: 'It isn't as expensive as I thought'. Use 'the same as' for identical things, and 'different from' rather than 'different than'. To show how big the difference is, add much, far or a bit: 'much better', 'a bit cheaper'.",
+    "rule_bg": "„As ... as“ казва, че две неща са равни: „This offer is as good as the last one“. Отрицанието казва, че не са: „It isn't as expensive as I thought“. „The same as“ за еднакви неща, а „different from“, не „different than“. За да покажеш колко голяма е разликата, добавяш much, far или a bit: „much better“, „a bit cheaper“.",
+    "examples": [
+      {
+        "en": "This supplier is as reliable as the old one, and a bit cheaper.",
+        "bg": "Този доставчик е толкова надежден, колкото стария, и малко по-евтин."
+      },
+      {
+        "en": "It wasn't as difficult as we expected.",
+        "bg": "Не беше толкова трудно, колкото очаквахме."
+      },
+      {
+        "en": "Their offer is the same as ours, but the delivery time is different from theirs.",
+        "bg": "Офертата им е същата като нашата, но срокът на доставка е различен от техния."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "This year was ___ good as last year.",
+        "options": [
+          "as",
+          "so"
+        ],
+        "correct": 0,
+        "why": "The pattern is as + adjective + as.",
+        "why_bg": "Моделът е as + прилагателно + as."
+      },
+      {
+        "sentence": "It isn't ___ expensive as I thought.",
+        "options": [
+          "as",
+          "more"
+        ],
+        "correct": 0,
+        "why": "The negative keeps the same 'as ... as' frame.",
+        "why_bg": "Отрицанието запазва същата рамка „as ... as“."
+      },
+      {
+        "sentence": "Their price is the same ___ ours.",
+        "options": [
+          "as",
+          "like"
+        ],
+        "correct": 0,
+        "why": "'The same as' is fixed. 'The same like' does not exist.",
+        "why_bg": "„The same as“ е устойчиво. „The same like“ не съществува."
+      },
+      {
+        "sentence": "This version is different ___ the one you sent.",
+        "options": [
+          "from",
+          "than"
+        ],
+        "correct": 0,
+        "why": "'Different from' is the standard. 'Different than' appears in American English and is safer avoided.",
+        "why_bg": "„Different from“ е стандартът. „Different than“ се среща в американски английски и е по-добре да се избягва."
+      },
+      {
+        "sentence": "The new system is ___ faster than the old one.",
+        "options": [
+          "much",
+          "very"
+        ],
+        "correct": 0,
+        "why": "'Very' doesn't go with a comparative. Use much, far or a lot.",
+        "why_bg": "„Very“ не върви със сравнителна степен. Ползва се much, far или a lot."
       }
     ]
   },
