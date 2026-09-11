@@ -100,6 +100,16 @@
     "readings": "readings-it.json"
   },
   {
+    "id": "techsupport",
+    "name": "Technical Support English",
+    "icon": "🛠️",
+    "group": "Departments",
+    "tagline": "Tickets, faults, remote fixes, calm callers.",
+    "words": "words-techsupport.json",
+    "exercises": "exercises-techsupport.json",
+    "readings": "readings-techsupport.json"
+  },
+  {
     "id": "legal",
     "name": "Legal English",
     "icon": "⚖️",

@@ -393,6 +393,45 @@
     }
   ],
 
+  "techsupport": [
+    {
+      "title": "Before you reinstall anything",
+      "level": "B1",
+      "setting": "A user calls the helpdesk because the accounting program keeps closing itself.",
+      "speakers": { "A": "Nina", "B": "Support" },
+      "lines": [
+        { "s": "A", "t": "Good morning. The accounting program won't open. It just closes again." },
+        { "s": "B", "t": "Let's see why. Does anything appear on the screen before it closes?" },
+        { "s": "A", "t": "A grey box with numbers. I clicked it away." },
+        { "s": "B", "t": "Next time read me the code before you close it, including the letters." },
+        { "s": "A", "t": "It's back. E dash four zero one one." },
+        { "s": "B", "t": "Thank you. Bear with me while I check that code." },
+        { "s": "A", "t": "Should I reinstall it? A colleague told me to reinstall it." },
+        { "s": "B", "t": "Hold on. Log out and back in first. That clears this one more often than it should." },
+        { "s": "A", "t": "It's open. I feel a bit silly now." },
+        { "s": "B", "t": "Twenty people a month hit this. I'm documenting the fix so the next one gets an answer in a minute." }
+      ]
+    },
+    {
+      "title": "Fourth time this month",
+      "level": "B2",
+      "setting": "An agent hands a repeat problem to the team lead at shift handover.",
+      "speakers": { "A": "Agent", "B": "Team lead" },
+      "lines": [
+        { "s": "A", "t": "Ticket 8842. The Varna office lost the shared drive again this morning." },
+        { "s": "B", "t": "Again? How many is that now?" },
+        { "s": "A", "t": "Fourth time this month. Same three users, always before nine." },
+        { "s": "B", "t": "Then it's a recurring issue, and we've been treating it as four separate ones." },
+        { "s": "A", "t": "I gave them the temporary fix. They map the drive by hand and carry on." },
+        { "s": "B", "t": "Good for this morning. Write it in the notes as a workaround, then escalate to second line." },
+        { "s": "A", "t": "Do I attach all four tickets?" },
+        { "s": "B", "t": "All four. One ticket looks like bad luck. Four looks like a cause." },
+        { "s": "A", "t": "What goes in the internal note?" },
+        { "s": "B", "t": "Times, usernames, and what you already tried. Then give the users a progress update at eleven, even if nothing has changed." }
+      ]
+    }
+  ],
+
   "legal": [
     {
       "title": "Clause 14",

@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The user was right",
+    "level": "B1",
+    "text": "A woman in accounts reported that her computer was slow every afternoon. She wrote the time in the ticket: after three o'clock.\n\nThree engineers looked at it. All three tested in the morning, found a healthy machine, and closed the ticket with the same three words: no fault found.\n\nShe raised it a fourth time. This time someone walked upstairs at 15:30 and watched her work. The machine took nine seconds to open a spreadsheet.\n\nThe backup software started at 15:00 and used almost everything the computer had. It had been set that way two years earlier by a person who no longer worked there.\n\nThe fix took four minutes. The backup now runs at seven in the evening.\n\nThe engineer's internal note is one line, and the team still quotes it. She told us when it happened in the first ticket, and we tested at a time she never complained about.",
+    "questions": [
+      { "q": "Why did the first three engineers find nothing?", "options": ["They tested in the morning, when the problem wasn't happening", "The computer was already repaired", "She described the problem badly", "They never opened the ticket"], "correct": 0 },
+      { "q": "What was actually slowing the machine down?", "options": ["Backup software starting at 15:00", "A virus in a shared folder", "An old printer driver", "Too many open spreadsheets"], "correct": 0 },
+      { "q": "What does 'no fault found' mean here?", "options": ["Testing showed nothing wrong with the machine", "The user refused the repair", "The fault was fixed on the spot", "The machine was replaced"], "correct": 0 },
+      { "q": "What is the main lesson of the story?", "options": ["Test at the time the user says the problem happens", "Close tickets faster", "Replace old computers sooner", "Ask users to write longer tickets"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Eleven seconds under target",
+    "level": "B2",
+    "text": "For two years the support team was measured on one number: average handling time. The target was six minutes. They finished most months eleven seconds under it, and the manager put the figure on a slide every quarter.\n\nThe same twenty-odd people kept calling back. Nobody counted them, because nobody was asked to.\n\nA new manager changed the measure to something harder to hit: the percentage of tickets that stayed closed for thirty days. Handling time disappeared from the wall.\n\nWithin a month the average call was ninety seconds longer. Engineers were asking a second question, checking the fix with the caller still on the line, and writing an internal note that the next person could actually use.\n\nRepeat contacts fell by a third over the quarter. The knowledge base grew by 140 articles, most of them written by two people who had always wanted to and had never had the time.\n\nThe new manager is careful about what she says in public. Her line to the team was blunter. You will get whatever you measure, so measure the thing you actually want.",
+    "questions": [
+      { "q": "What was the team originally measured on?", "options": ["How long each call lasted on average", "How many tickets stayed closed", "Customer satisfaction scores", "The number of articles written"], "correct": 0 },
+      { "q": "What happened to call length after the change?", "options": ["It rose by about ninety seconds", "It fell by eleven seconds", "It stayed the same", "It doubled"], "correct": 0 },
+      { "q": "Why did repeat contacts fall?", "options": ["Problems were checked and documented properly before closing", "The team hired more engineers", "Customers were charged for second calls", "The old system was replaced"], "correct": 0 },
+      { "q": "What does the manager's line about measuring mean?", "options": ["Targets shape behaviour, so the wrong target produces the wrong work", "Measurement should be avoided", "Only managers should see the numbers", "Speed is the only useful measure"], "correct": 0 }
+    ]
+  }
+]

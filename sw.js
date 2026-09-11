@@ -1,7 +1,7 @@
 // WorkTalk service worker: network first, cache fallback.
 // Updates arrive immediately when online; the app still opens offline.
 
-const CACHE = 'worktalk-v14';
+const CACHE = 'worktalk-v15';
 
 const CORE = [
   '.',
@@ -47,6 +47,7 @@ const CORE = [
   'words-accounting.json', 'exercises-accounting.json', 'readings-accounting.json',
   'words-administration.json', 'exercises-administration.json', 'readings-administration.json',
   'words-it.json', 'exercises-it.json', 'readings-it.json',
+  'words-techsupport.json', 'exercises-techsupport.json', 'readings-techsupport.json',
   'words-customerservice.json', 'exercises-customerservice.json', 'readings-customerservice.json',
   'words-nutrition.json', 'exercises-nutrition.json', 'readings-nutrition.json',
   'words-lifestyle.json', 'exercises-lifestyle.json', 'readings-lifestyle.json',

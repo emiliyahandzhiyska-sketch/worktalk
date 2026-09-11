@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "We sorted the new problems by how urgent they were.", "key": "TRIAGE", "model": "We triaged the new tickets.", "accept": ["triage", "triaged"] },
+    { "original": "Give this problem to Mila to handle.", "key": "ASSIGN", "model": "Assign the ticket to Mila.", "accept": ["assign"] },
+    { "original": "The fault only happens sometimes.", "key": "INTERMITTENT", "model": "The fault is intermittent.", "accept": ["intermittent"] },
+    { "original": "I couldn't make the same problem happen on my machine.", "key": "REPLICATE", "model": "I couldn't replicate the issue.", "accept": ["replicate"] },
+    { "original": "Tell me the exact actions that make it appear.", "key": "STEPS", "model": "Send me the steps to reproduce.", "accept": ["steps to reproduce", "steps"] },
+    { "original": "Please wait a moment while I open your account.", "key": "BEAR", "model": "Bear with me while I open your account.", "accept": ["bear with me"] },
+    { "original": "Switch the router off, wait, then switch it on again.", "key": "CYCLE", "model": "Power cycle the router.", "accept": ["power cycle", "cycle"] },
+    { "original": "I guided him through the setup one step at a time.", "key": "WALKED", "model": "I walked him through the setup.", "accept": ["walked him through", "walked", "walk"] },
+    { "original": "Pass it to the more specialised team.", "key": "ESCALATE", "model": "Escalate it to second line.", "accept": ["escalate"] },
+    { "original": "This works for now, until the real solution is ready.", "key": "TEMPORARY", "model": "It's a temporary fix.", "accept": ["temporary fix", "temporary"] },
+    { "original": "The same problem has come back four times this month.", "key": "RECURRING", "model": "It's a recurring issue.", "accept": ["recurring issue", "recurring"] },
+    { "original": "Say the same thing again in different words.", "key": "REPHRASE", "model": "Rephrase it.", "accept": ["rephrase"] },
+    { "original": "Explain it without any technical words.", "key": "PLAIN", "model": "Explain it in plain English.", "accept": ["plain english", "plain"] },
+    { "original": "Contact the supplier again to get an answer.", "key": "CHASE", "model": "Chase up the supplier.", "accept": ["chase up", "chase"] },
+    { "original": "Write down what you did so the next person can repeat it.", "key": "DOCUMENT", "model": "Document the fix.", "accept": ["document"] },
+    { "original": "Record in the system that the problem has been solved.", "key": "RESOLVED", "model": "Mark it as resolved.", "accept": ["mark it as resolved", "as resolved", "resolved"] }
+  ],
+  "word_formation": [
+    { "sentence": "The ticket needs your ___ before it can be closed.", "base": "APPROVE", "accept": ["approval"] },
+    { "sentence": "Her ___ of the error was clear enough to act on.", "base": "EXPLAIN", "accept": ["explanation"] },
+    { "sentence": "The user was ___ with the way the call was handled.", "base": "SATISFY", "accept": ["satisfied"] },
+    { "sentence": "We need a ___ solution, not another temporary one.", "base": "LAST", "accept": ["lasting"] },
+    { "sentence": "The fault happens ___, usually late in the afternoon.", "base": "OCCASION", "accept": ["occasionally"] },
+    { "sentence": "We apologise for the ___ this has caused.", "base": "CONVENIENT", "accept": ["inconvenience"] },
+    { "sentence": "Please be ___ when you describe what you see on screen.", "base": "SPECIFY", "accept": ["specific"] },
+    { "sentence": "The ___ was completed remotely in four minutes.", "base": "INSTALL", "accept": ["installation"] },
+    { "sentence": "Her ___ on the phone made the call much shorter.", "base": "PATIENT", "accept": ["patience"] },
+    { "sentence": "The old driver caused the ___.", "base": "FAIL", "accept": ["failure"] },
+    { "sentence": "He gave a short ___ of everything he had already tried.", "base": "SUMMARISE", "accept": ["summary"] },
+    { "sentence": "The message was ___ for a non-technical reader.", "base": "CONFUSE", "accept": ["confusing"] },
+    { "sentence": "Every action is recorded for ___.", "base": "SECURE", "accept": ["security"] },
+    { "sentence": "She handled the angry caller ___.", "base": "CALM", "accept": ["calmly"] },
+    { "sentence": "The ___ to the ticket arrived in nine minutes.", "base": "RESPOND", "accept": ["response"] },
+    { "sentence": "The instructions were written very ___.", "base": "CLEAR", "accept": ["clearly"] }
+  ]
+}
