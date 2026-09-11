@@ -1,5 +1,745 @@
 [
   {
+    "id": "to-be-there-is",
+    "category": "Basics",
+    "title": "TO BE and THERE IS / THERE ARE",
+    "level": "A2",
+    "rule_en": "'Be' is the verb behind am, is and are: I am, he is, we are. English needs it even where Bulgarian leaves it out: 'She is a doctor', never 'She doctor'. To say that something exists, use 'there is' for one thing and 'there are' for more than one: 'There is a problem', 'There are two problems'.",
+    "rule_bg": "„Be“ е глаголът зад am, is и are: I am, he is, we are. Английският го иска дори там, където българският го пропуска: „She is a doctor“, никога „She doctor“. За съществуване: „there is“ за едно нещо, „there are“ за повече от едно: „There is a problem“, „There are two problems“.",
+    "examples": [
+      {
+        "en": "I am from Plovdiv. My colleagues are from Sofia.",
+        "bg": "Аз съм от Пловдив. Колегите ми са от София."
+      },
+      {
+        "en": "There is one meeting room free, but there are three people waiting.",
+        "bg": "Има една свободна зала, но чакат трима души."
+      },
+      {
+        "en": "She is thirty. She isn't the manager, she's the owner.",
+        "bg": "Тя е на тридесет. Не е управителят, тя е собственикът."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "My colleagues ___ in the meeting.",
+        "options": [
+          "are",
+          "is"
+        ],
+        "correct": 0,
+        "why": "'Colleagues' is plural, so 'are'.",
+        "why_bg": "„Colleagues“ е множествено число, значи „are“."
+      },
+      {
+        "sentence": "___ a problem with the invoice.",
+        "options": [
+          "There is",
+          "It has"
+        ],
+        "correct": 0,
+        "why": "English says 'there is' for something that exists. 'It has' is a translation of 'има'.",
+        "why_bg": "На английски съществуването е с „there is“. „It has“ е превод на „има“."
+      },
+      {
+        "sentence": "___ three emails in your inbox.",
+        "options": [
+          "There is",
+          "There are"
+        ],
+        "correct": 1,
+        "why": "Three emails is more than one, so 'there are'.",
+        "why_bg": "Три имейла са повече от едно, значи „there are“."
+      },
+      {
+        "sentence": "My office ___ on the third floor.",
+        "options": [
+          "is",
+          "has"
+        ],
+        "correct": 0,
+        "why": "Location takes 'be': the office is on the third floor.",
+        "why_bg": "Местоположението е с „be“: офисът е на третия етаж."
+      },
+      {
+        "sentence": "___ any questions?",
+        "options": [
+          "Are there",
+          "Have there"
+        ],
+        "correct": 0,
+        "why": "The question form of 'there are' just swaps the two words: are there.",
+        "why_bg": "Въпросителната форма на „there are“ разменя двете думи: are there."
+      }
+    ]
+  },
+  {
+    "id": "articles",
+    "category": "Basics",
+    "title": "A, AN and THE",
+    "level": "A2",
+    "rule_en": "Use 'a' before a consonant sound and 'an' before a vowel sound: a report, an email, an hour. Use 'a/an' the first time you mention a countable thing, and 'the' after that, or whenever both of you know which one you mean: 'I sent a proposal. The proposal is 40 pages.' Bulgarian has no separate word for 'a', which is why it is the article that goes missing most often.",
+    "rule_bg": "„A“ пред съгласен звук, „an“ пред гласен звук: a report, an email, an hour. „A/an“ при първо споменаване на нещо броимо, „the“ след това или когато и двамата знаете за кое става дума: „I sent a proposal. The proposal is 40 pages.“ Българският няма отделна дума за „a“, затова точно този член се изпуска най-често.",
+    "examples": [
+      {
+        "en": "I have a meeting at ten. The meeting is with the new client.",
+        "bg": "Имам среща в десет. Срещата е с новия клиент."
+      },
+      {
+        "en": "She's an accountant. She works for a company in Burgas.",
+        "bg": "Тя е счетоводител. Работи за фирма в Бургас."
+      },
+      {
+        "en": "It takes an hour by car, and the car is in the garage.",
+        "bg": "Отнема час с кола, а колата е в гаража."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "I need ___ new laptop.",
+        "options": [
+          "a",
+          "the"
+        ],
+        "correct": 0,
+        "why": "First mention of one countable thing, so 'a'.",
+        "why_bg": "Първо споменаване на едно броимо нещо, значи „a“."
+      },
+      {
+        "sentence": "She's ___ engineer.",
+        "options": [
+          "a",
+          "an"
+        ],
+        "correct": 1,
+        "why": "'Engineer' starts with a vowel sound, so 'an'.",
+        "why_bg": "„Engineer“ започва с гласен звук, значи „an“."
+      },
+      {
+        "sentence": "The meeting lasted ___ hour.",
+        "options": [
+          "a",
+          "an"
+        ],
+        "correct": 1,
+        "why": "The h in 'hour' is silent, so the word begins with a vowel sound. The sound decides, not the letter.",
+        "why_bg": "Буквата h в „hour“ не се чете, значи думата започва с гласен звук. Решава звукът, не буквата."
+      },
+      {
+        "sentence": "I sent you a file yesterday. Did you open ___ file?",
+        "options": [
+          "a",
+          "the"
+        ],
+        "correct": 1,
+        "why": "Second mention, and you both know which file, so 'the'.",
+        "why_bg": "Второ споменаване и двамата знаете кой файл, значи „the“."
+      },
+      {
+        "sentence": "He is ___ manager of our Varna office.",
+        "options": [
+          "a",
+          "the"
+        ],
+        "correct": 1,
+        "why": "There is only one manager of that office, so 'the'.",
+        "why_bg": "Управителят на този офис е само един, значи „the“."
+      }
+    ]
+  },
+  {
+    "id": "plural-nouns",
+    "category": "Basics",
+    "title": "Plural Nouns",
+    "level": "A2",
+    "rule_en": "Most nouns add -s: report, reports. Words ending in -s, -sh, -ch or -x add -es: box, boxes. A consonant plus -y becomes -ies: company, companies. Some plurals change completely: person/people, child/children, man/men, woman/women. And some English nouns have no plural at all: information, advice, news, money, furniture.",
+    "rule_bg": "Повечето съществителни добавят -s: report, reports. Думи на -s, -sh, -ch или -x добавят -es: box, boxes. Съгласна плюс -y става -ies: company, companies. Някои форми се променят напълно: person/people, child/children, man/men, woman/women. А някои английски съществителни изобщо нямат множествено число: information, advice, news, money, furniture.",
+    "examples": [
+      {
+        "en": "We work with six companies and about forty people.",
+        "bg": "Работим с шест фирми и около четиридесет души."
+      },
+      {
+        "en": "I need two boxes and three copies of the contract.",
+        "bg": "Трябват ми две кутии и три копия от договора."
+      },
+      {
+        "en": "The information is on the website, and the news is good.",
+        "bg": "Информацията е на сайта, а новината е добра."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "We have three ___ in Bulgaria.",
+        "options": [
+          "companys",
+          "companies"
+        ],
+        "correct": 1,
+        "why": "A consonant before -y turns it into -ies: company, companies.",
+        "why_bg": "Съгласна пред -y я превръща в -ies: company, companies."
+      },
+      {
+        "sentence": "There are twelve ___ in the room.",
+        "options": [
+          "persons",
+          "people"
+        ],
+        "correct": 1,
+        "why": "'People' is the normal plural of 'person'. 'Persons' appears only in legal writing.",
+        "why_bg": "„People“ е нормалното множествено на „person“. „Persons“ се среща само в юридически текстове."
+      },
+      {
+        "sentence": "I sent two ___ to the warehouse.",
+        "options": [
+          "boxs",
+          "boxes"
+        ],
+        "correct": 1,
+        "why": "Words ending in -x add -es.",
+        "why_bg": "Думи на -x добавят -es."
+      },
+      {
+        "sentence": "Three ___ are waiting at reception.",
+        "options": [
+          "womans",
+          "women"
+        ],
+        "correct": 1,
+        "why": "Woman becomes women. The spelling barely changes, but the sound does.",
+        "why_bg": "Woman става women. Правописът се променя минимално, но звукът — не."
+      },
+      {
+        "sentence": "She gave me a lot of useful ___.",
+        "options": [
+          "informations",
+          "information"
+        ],
+        "correct": 1,
+        "why": "'Information' has no plural in English, however normal 'информации' sounds in Bulgarian.",
+        "why_bg": "„Information“ няма множествено число на английски, колкото и нормално да звучи „информации“."
+      }
+    ]
+  },
+  {
+    "id": "have-got",
+    "category": "Basics",
+    "title": "HAVE and HAVE GOT",
+    "level": "A2",
+    "rule_en": "'I have a car' and 'I've got a car' mean the same thing. 'Have got' is more common in speech, 'have' in writing. The question and the negative differ: 'Do you have a minute?' but 'Have you got a minute?'. In the past only 'had' works: 'I had a meeting', never 'I had got'.",
+    "rule_bg": "„I have a car“ и „I've got a car“ значат едно и също. „Have got“ е по-често в говора, „have“ в писането. Въпросът и отрицанието са различни: „Do you have a minute?“, но „Have you got a minute?“. В минало време работи само „had“: „I had a meeting“, никога „I had got“.",
+    "examples": [
+      {
+        "en": "I've got two meetings today. Do you have time at four?",
+        "bg": "Имам две срещи днес. Имаш ли време в четири?"
+      },
+      {
+        "en": "She hasn't got the file. She doesn't have access to that folder.",
+        "bg": "Тя няма файла. Няма достъп до тази папка."
+      },
+      {
+        "en": "We had a problem last week, but it's solved now.",
+        "bg": "Имахме проблем миналата седмица, но вече е решен."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "___ you got a pen?",
+        "options": [
+          "Have",
+          "Do"
+        ],
+        "correct": 0,
+        "why": "With 'got' the question starts with 'have'. Without it you would say 'Do you have a pen?'.",
+        "why_bg": "С „got“ въпросът започва с „have“. Без него: „Do you have a pen?“."
+      },
+      {
+        "sentence": "___ you have a minute?",
+        "options": [
+          "Do",
+          "Are"
+        ],
+        "correct": 0,
+        "why": "'Have' on its own behaves like any normal verb, so the question takes 'do'.",
+        "why_bg": "Самостоятелното „have“ се държи като нормален глагол, затова въпросът е с „do“."
+      },
+      {
+        "sentence": "I ___ a meeting yesterday at three.",
+        "options": [
+          "had",
+          "had got"
+        ],
+        "correct": 0,
+        "why": "'Have got' has no past form. In the past it is simply 'had'.",
+        "why_bg": "„Have got“ няма минало време. В минало е просто „had“."
+      },
+      {
+        "sentence": "She ___ have access to the system.",
+        "options": [
+          "doesn't",
+          "hasn't"
+        ],
+        "correct": 0,
+        "why": "Without 'got', the negative is 'doesn't have'.",
+        "why_bg": "Без „got“ отрицанието е „doesn't have“."
+      },
+      {
+        "sentence": "We ___ got three offices.",
+        "options": [
+          "have",
+          "are"
+        ],
+        "correct": 0,
+        "why": "'Have got' always starts with have, never with be.",
+        "why_bg": "„Have got“ винаги започва с „have“, никога с „be“."
+      }
+    ]
+  },
+  {
+    "id": "question-forms",
+    "category": "Questions & word order",
+    "title": "Questions with DO, DOES and DID",
+    "level": "A2",
+    "rule_en": "English builds most questions with a helper: 'Do you work here?', 'Does she speak English?', 'Did they call?'. The helper carries the tense, so the main verb goes back to its basic form: 'Does he work?', never 'Does he works?'. Bulgarian has no helper verb in questions, which is exactly why it goes missing: 'What means this word?' should be 'What does this word mean?'. With 'be' there is no helper at all, the two words simply swap: 'Are you ready?'.",
+    "rule_bg": "Английският прави повечето въпроси със спомагателен глагол: „Do you work here?“, „Does she speak English?“, „Did they call?“. Спомагателният носи времето, затова главният глагол се връща в основната си форма: „Does he work?“, никога „Does he works?“. В българския няма спомагателен глагол във въпроса и точно затова изчезва: „What means this word?“ трябва да е „What does this word mean?“. С „be“ няма спомагателен изобщо, двете думи просто си разменят местата: „Are you ready?“.",
+    "examples": [
+      {
+        "en": "What does this word mean? I can't find it in the dictionary.",
+        "bg": "Какво значи тази дума? Не мога да я намеря в речника."
+      },
+      {
+        "en": "Did you send the invoice yesterday?",
+        "bg": "Изпрати ли фактурата вчера?"
+      },
+      {
+        "en": "Where do they work? And are they free on Thursday?",
+        "bg": "Къде работят? И свободни ли са в четвъртък?"
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "What ___ this word mean?",
+        "options": [
+          "does",
+          "means"
+        ],
+        "correct": 0,
+        "why": "The helper carries the tense, so the main verb stays in its basic form: does ... mean.",
+        "why_bg": "Спомагателният носи времето, затова главният глагол остава в основна форма: does ... mean."
+      },
+      {
+        "sentence": "Where ___ she work?",
+        "options": [
+          "does",
+          "do"
+        ],
+        "correct": 0,
+        "why": "She, he and it take 'does'.",
+        "why_bg": "She, he и it искат „does“."
+      },
+      {
+        "sentence": "___ you call the client yesterday?",
+        "options": [
+          "Did",
+          "Do"
+        ],
+        "correct": 0,
+        "why": "Yesterday is the past, so the helper is 'did'.",
+        "why_bg": "Вчера е минало, значи спомагателният е „did“."
+      },
+      {
+        "sentence": "Does he ___ in Plovdiv?",
+        "options": [
+          "live",
+          "lives"
+        ],
+        "correct": 0,
+        "why": "'Does' already carries the -s. The main verb never repeats it.",
+        "why_bg": "„Does“ вече носи -s. Главният глагол не го повтаря."
+      },
+      {
+        "sentence": "___ you ready to start?",
+        "options": [
+          "Are",
+          "Do"
+        ],
+        "correct": 0,
+        "why": "With 'be' there is no helper. The verb and the subject just swap places.",
+        "why_bg": "С „be“ няма спомагателен. Глаголът и подлогът просто си разменят местата."
+      }
+    ]
+  },
+  {
+    "id": "adverbs-of-frequency",
+    "category": "Questions & word order",
+    "title": "Adverbs of Frequency and Where They Go",
+    "level": "A2",
+    "rule_en": "Always, usually, often, sometimes, rarely and never say how often. They go before the main verb: 'I always check my email', but after 'be': 'I am always late'. 'Never' already makes the sentence negative, so 'I don't never' is wrong. Longer expressions like 'every day' or 'twice a week' go at the end of the sentence.",
+    "rule_bg": "Always, usually, often, sometimes, rarely и never казват колко често. Стоят пред главния глагол: „I always check my email“, но след „be“: „I am always late“. „Never“ вече прави изречението отрицателно, затова „I don't never“ е грешно. По-дълги изрази като „every day“ или „twice a week“ отиват накрая на изречението.",
+    "examples": [
+      {
+        "en": "I usually start at eight, but I'm never in the office before seven.",
+        "bg": "Обикновено започвам в осем, но никога не съм в офиса преди седем."
+      },
+      {
+        "en": "She often works from home. She goes to Sofia twice a month.",
+        "bg": "Тя често работи от вкъщи. Ходи в София два пъти месечно."
+      },
+      {
+        "en": "We rarely have meetings on Friday.",
+        "bg": "Рядко имаме срещи в петък."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "I ___ my email before nine.",
+        "options": [
+          "always check",
+          "check always"
+        ],
+        "correct": 0,
+        "why": "The adverb goes before the main verb.",
+        "why_bg": "Наречието стои пред главния глагол."
+      },
+      {
+        "sentence": "She ___ late for meetings.",
+        "options": [
+          "is never",
+          "never is"
+        ],
+        "correct": 0,
+        "why": "With 'be' the adverb goes after the verb, not before it.",
+        "why_bg": "С „be“ наречието идва след глагола, не пред него."
+      },
+      {
+        "sentence": "We ___ have lunch at one.",
+        "options": [
+          "usually",
+          "use to"
+        ],
+        "correct": 0,
+        "why": "'Usually' is the adverb. 'Used to' describes a past habit that has stopped.",
+        "why_bg": "„Usually“ е наречието. „Used to“ описва минал навик, който е спрял."
+      },
+      {
+        "sentence": "I ___ answer the phone after six.",
+        "options": [
+          "never",
+          "don't never"
+        ],
+        "correct": 0,
+        "why": "'Never' is already negative. Two negatives cancel each other out in English.",
+        "why_bg": "„Never“ вече е отрицание. Две отрицания в английския се унищожават."
+      },
+      {
+        "sentence": "He ___ answers his phone after eight.",
+        "options": [
+          "rarely",
+          "rare"
+        ],
+        "correct": 0,
+        "why": "'Rarely' is the adverb. 'Rare' is the adjective: a rare mistake.",
+        "why_bg": "„Rarely“ е наречието. „Rare“ е прилагателното: a rare mistake."
+      }
+    ]
+  },
+  {
+    "id": "can-ability-permission",
+    "category": "Modals",
+    "title": "CAN for Ability and Permission",
+    "level": "A2",
+    "rule_en": "'Can' covers what you are able to do and what you are allowed to do: 'I can drive', 'You can leave early today'. It never takes 'to' after it and never adds -s: 'He can speak', not 'He can to speak' or 'He cans'. The negative is 'can't' and the question is 'Can I...?', with no 'do' in front.",
+    "rule_bg": "„Can“ покрива какво можеш и какво ти е позволено: „I can drive“, „You can leave early today“. След него никога няма „to“ и никога не се добавя -s: „He can speak“, не „He can to speak“ или „He cans“. Отрицанието е „can't“, а въпросът е „Can I...?“, без „do“ отпред.",
+    "examples": [
+      {
+        "en": "She can speak three languages, but she can't drive.",
+        "bg": "Тя говори три езика, но не може да шофира."
+      },
+      {
+        "en": "Can I use this room for an hour?",
+        "bg": "Може ли да ползвам тази зала за час?"
+      },
+      {
+        "en": "We can't send the invoice until Friday.",
+        "bg": "Не можем да изпратим фактурата преди петък."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "He ___ speak German.",
+        "options": [
+          "can",
+          "cans"
+        ],
+        "correct": 0,
+        "why": "Modal verbs never take -s, whoever the subject is.",
+        "why_bg": "Модалните глаголи никога не взимат -s, независимо кой е подлогът."
+      },
+      {
+        "sentence": "I can ___ the report by Tuesday.",
+        "options": [
+          "finish",
+          "to finish"
+        ],
+        "correct": 0,
+        "why": "After 'can' the verb has no 'to'.",
+        "why_bg": "След „can“ глаголът е без „to“."
+      },
+      {
+        "sentence": "___ I ask a question?",
+        "options": [
+          "Can",
+          "Do can"
+        ],
+        "correct": 0,
+        "why": "Modals form their own questions. There is no 'do' in front.",
+        "why_bg": "Модалните глаголи образуват въпроса сами. Няма „do“ отпред."
+      },
+      {
+        "sentence": "She ___ come to the meeting, she's ill.",
+        "options": [
+          "can't",
+          "doesn't can"
+        ],
+        "correct": 0,
+        "why": "The negative is 'can't'. 'Doesn't can' does not exist.",
+        "why_bg": "Отрицанието е „can't“. „Doesn't can“ не съществува."
+      },
+      {
+        "sentence": "You ___ park here, it's for customers only.",
+        "options": [
+          "can't",
+          "not can"
+        ],
+        "correct": 0,
+        "why": "'Not' goes after the modal, never before it.",
+        "why_bg": "„Not“ идва след модалния глагол, никога преди него."
+      }
+    ]
+  },
+  {
+    "id": "polite-requests",
+    "category": "Modals",
+    "title": "Polite Requests: COULD, WOULD, MAY",
+    "level": "A2",
+    "rule_en": "In English politeness lives in the grammar, not only in the tone of voice. 'Could you send it?' is softer than 'Can you send it?', and much softer than 'Send it.' Use 'Would you like...?' to offer something, 'Could you...?' to ask someone to do something, and 'May I...?' for permission in a formal setting. A direct imperative that sounds ordinary in Bulgarian can sound abrupt in English.",
+    "rule_bg": "На английски учтивостта е в граматиката, не само в тона. „Could you send it?“ е по-меко от „Can you send it?“ и много по-меко от „Send it.“ „Would you like...?“ за предложение, „Could you...?“ за молба, „May I...?“ за формално разрешение. Директна повелителна форма, която на български звучи нормално, на английски може да прозвучи рязко.",
+    "examples": [
+      {
+        "en": "Could you send me the figures before the meeting?",
+        "bg": "Може ли да ми пратиш числата преди срещата?"
+      },
+      {
+        "en": "Would you like some coffee while you wait?",
+        "bg": "Искате ли кафе, докато чакате?"
+      },
+      {
+        "en": "May I ask who is calling?",
+        "bg": "Може ли да попитам кой се обажда?"
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "___ you help me with this file?",
+        "options": [
+          "Could",
+          "Do"
+        ],
+        "correct": 0,
+        "why": "'Could you' is the standard polite request.",
+        "why_bg": "„Could you“ е стандартната учтива молба."
+      },
+      {
+        "sentence": "___ you like a coffee?",
+        "options": [
+          "Would",
+          "Do"
+        ],
+        "correct": 0,
+        "why": "'Would you like' offers something now. 'Do you like' asks about taste in general.",
+        "why_bg": "„Would you like“ предлага нещо сега. „Do you like“ пита за вкус изобщо."
+      },
+      {
+        "sentence": "Could you ___ me the report?",
+        "options": [
+          "send",
+          "to send"
+        ],
+        "correct": 0,
+        "why": "'Could' is a modal, so there is no 'to' after it.",
+        "why_bg": "„Could“ е модален глагол, значи без „to“ след него."
+      },
+      {
+        "sentence": "___ I leave a message?",
+        "options": [
+          "May",
+          "Do"
+        ],
+        "correct": 0,
+        "why": "'May I' asks permission formally. 'Can I' works too, just less formally.",
+        "why_bg": "„May I“ иска разрешение формално. „Can I“ също става, просто е по-неформално."
+      },
+      {
+        "sentence": "I'd like ___ a question.",
+        "options": [
+          "to ask",
+          "ask"
+        ],
+        "correct": 0,
+        "why": "'Would like' takes 'to' before the verb, unlike 'can' and 'could'.",
+        "why_bg": "„Would like“ иска „to“ пред глагола, за разлика от „can“ и „could“."
+      }
+    ]
+  },
+  {
+    "id": "past-simple-basics",
+    "category": "Tenses",
+    "title": "Past Simple: Regular and Irregular",
+    "level": "A2",
+    "rule_en": "Regular verbs add -ed: worked, called, finished. Irregular verbs change: go/went, send/sent, take/took, have/had. In questions and negatives the tense moves onto 'did', so the main verb goes back to its basic form: 'Did you go?', 'I didn't go', never 'I didn't went'. Time expressions like yesterday, last week and in 2019 all take the past simple.",
+    "rule_bg": "Правилните глаголи добавят -ed: worked, called, finished. Неправилните се променят: go/went, send/sent, take/took, have/had. Във въпроси и отрицания времето минава върху „did“, а главният глагол се връща в основна форма: „Did you go?“, „I didn't go“, никога „I didn't went“. Изрази като yesterday, last week и in 2019 винаги искат минало просто.",
+    "examples": [
+      {
+        "en": "I sent the file yesterday and she called me an hour later.",
+        "bg": "Изпратих файла вчера и тя ми се обади час по-късно."
+      },
+      {
+        "en": "We didn't go to the conference last year.",
+        "bg": "Не отидохме на конференцията миналата година."
+      },
+      {
+        "en": "Did you speak to the client on Monday?",
+        "bg": "Говори ли с клиента в понеделник?"
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "I ___ the report last night.",
+        "options": [
+          "finished",
+          "finish"
+        ],
+        "correct": 0,
+        "why": "'Last night' is finished time, so the past simple.",
+        "why_bg": "„Last night“ е завършено време, значи минало просто."
+      },
+      {
+        "sentence": "She ___ to Varna on Tuesday.",
+        "options": [
+          "went",
+          "goed"
+        ],
+        "correct": 0,
+        "why": "'Go' is irregular: go, went, gone. There is no 'goed'.",
+        "why_bg": "„Go“ е неправилен: go, went, gone. „Goed“ не съществува."
+      },
+      {
+        "sentence": "I didn't ___ the email.",
+        "options": [
+          "receive",
+          "received"
+        ],
+        "correct": 0,
+        "why": "'Didn't' already carries the past. The main verb returns to its basic form.",
+        "why_bg": "„Didn't“ вече носи миналото. Главният глагол се връща в основна форма."
+      },
+      {
+        "sentence": "___ you call him yesterday?",
+        "options": [
+          "Did",
+          "Do"
+        ],
+        "correct": 0,
+        "why": "Yesterday is past, so the question takes 'did'.",
+        "why_bg": "Вчера е минало, значи въпросът е с „did“."
+      },
+      {
+        "sentence": "We ___ the contract in 2019.",
+        "options": [
+          "signed",
+          "have signed"
+        ],
+        "correct": 0,
+        "why": "A year that is over takes the past simple, never the present perfect.",
+        "why_bg": "Отминала година иска минало просто, никога present perfect."
+      }
+    ]
+  },
+  {
+    "id": "going-to",
+    "category": "Tenses",
+    "title": "GOING TO for Plans",
+    "level": "A2",
+    "rule_en": "Use 'going to' for something you have already decided: 'I'm going to call him this afternoon'. The form is be + going to + verb, so the am, is or are is never optional: 'She is going to start', not 'She going to start'. For a decision you make while you are speaking, use 'will' instead.",
+    "rule_bg": "„Going to“ е за нещо, което вече си решил: „I'm going to call him this afternoon“. Формата е be + going to + глагол, значи am, is или are никога не се пропуска: „She is going to start“, не „She going to start“. За решение, взето в момента на говорене, ползвай „will“.",
+    "examples": [
+      {
+        "en": "We're going to open a second office next year.",
+        "bg": "Ще отворим втори офис догодина."
+      },
+      {
+        "en": "She isn't going to accept that price.",
+        "bg": "Тя няма да приеме тази цена."
+      },
+      {
+        "en": "Are you going to join the call at three?",
+        "bg": "Ще се включиш ли в разговора в три?"
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "I ___ going to call the client.",
+        "options": [
+          "am",
+          "will"
+        ],
+        "correct": 0,
+        "why": "'Going to' always needs am, is or are in front of it.",
+        "why_bg": "„Going to“ винаги иска am, is или are пред себе си."
+      },
+      {
+        "sentence": "She's going to ___ the contract tomorrow.",
+        "options": [
+          "sign",
+          "signing"
+        ],
+        "correct": 0,
+        "why": "After 'going to' comes the basic form of the verb.",
+        "why_bg": "След „going to“ идва основната форма на глагола."
+      },
+      {
+        "sentence": "___ you going to come to the meeting?",
+        "options": [
+          "Are",
+          "Do"
+        ],
+        "correct": 0,
+        "why": "The question uses 'be', because 'going to' is built on 'be'.",
+        "why_bg": "Въпросът е с „be“, защото „going to“ е изградено върху „be“."
+      },
+      {
+        "sentence": "They ___ going to accept the offer.",
+        "options": [
+          "aren't",
+          "don't"
+        ],
+        "correct": 0,
+        "why": "The negative also lands on 'be': aren't going to.",
+        "why_bg": "И отрицанието пада върху „be“: aren't going to."
+      },
+      {
+        "sentence": "The phone is ringing. I ___ answer it.",
+        "options": [
+          "'ll",
+          "'m going to"
+        ],
+        "correct": 0,
+        "why": "You decided this second, so 'will'. 'Going to' would mean you planned it earlier.",
+        "why_bg": "Решаваш в тази секунда, значи „will“. „Going to“ би значело, че си го планирал по-рано."
+      }
+    ]
+  },
+  {
     "id": "present-simple-vs-continuous",
     "category": "Tenses",
     "title": "Present Simple vs Present Continuous",
@@ -444,6 +1184,80 @@
     ]
   },
   {
+    "id": "prepositions-place",
+    "category": "Prepositions",
+    "title": "Prepositions of Place: IN, ON, AT",
+    "level": "A2",
+    "rule_en": "'In' for something enclosed: in the office, in Plovdiv, in the drawer. 'On' for a surface: on the desk, on the second floor, on the wall. 'At' for a point or an activity: at the door, at work, at the bus stop. Two that catch Bulgarian speakers: you are in a car but on a bus, and something is in a picture, not on it.",
+    "rule_bg": "„In“ за нещо затворено: in the office, in Plovdiv, in the drawer. „On“ за повърхност: on the desk, on the second floor, on the wall. „At“ за точка или дейност: at the door, at work, at the bus stop. Две, които хващат българите: човек е „in a car“, но „on a bus“, а нещо е „in a picture“, не „on“.",
+    "examples": [
+      {
+        "en": "The contract is on my desk, in the blue folder.",
+        "bg": "Договорът е на бюрото ми, в синята папка."
+      },
+      {
+        "en": "She's at work until six. Her office is on the third floor.",
+        "bg": "Тя е на работа до шест. Офисът ѝ е на третия етаж."
+      },
+      {
+        "en": "I'm on the bus, I'll call you in twenty minutes.",
+        "bg": "В автобуса съм, ще ти звънна след двадесет минути."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "The file is ___ my desk.",
+        "options": [
+          "on",
+          "in"
+        ],
+        "correct": 0,
+        "why": "A desk is a surface, so 'on'.",
+        "why_bg": "Бюрото е повърхност, значи „on“."
+      },
+      {
+        "sentence": "She's ___ the meeting room.",
+        "options": [
+          "in",
+          "on"
+        ],
+        "correct": 0,
+        "why": "A room encloses you, so 'in'.",
+        "why_bg": "Стаята те обгражда, значи „in“."
+      },
+      {
+        "sentence": "I'm ___ the bus, I'll be there in ten minutes.",
+        "options": [
+          "on",
+          "in"
+        ],
+        "correct": 0,
+        "why": "English says on a bus, on a train and on a plane, but in a car and in a taxi.",
+        "why_bg": "На английски: on a bus, on a train, on a plane, но in a car и in a taxi."
+      },
+      {
+        "sentence": "He's waiting ___ the door.",
+        "options": [
+          "at",
+          "in"
+        ],
+        "correct": 0,
+        "why": "'At' marks a point rather than a space you are inside.",
+        "why_bg": "„At“ бележи точка, не пространство, в което си."
+      },
+      {
+        "sentence": "You can see the new logo ___ the picture.",
+        "options": [
+          "in",
+          "on"
+        ],
+        "correct": 0,
+        "why": "Things are in a picture in English. 'On the picture' is a direct translation.",
+        "why_bg": "На английски нещата са „in a picture“. „On the picture“ е буквален превод."
+      }
+    ]
+  },
+  {
     "id": "prepositions-time-transport",
     "category": "Prepositions",
     "title": "Prepositions of Time and Transport",
@@ -810,6 +1624,80 @@
         "correct": 1,
         "why": "'Realize' means to understand something suddenly. For 'реализирам' use complete or carry out.",
         "why_bg": "„Realize“ значи осъзнавам. За „реализирам“ ползвай „complete“ или „carry out“."
+      }
+    ]
+  },
+  {
+    "id": "much-many",
+    "category": "Countable or not",
+    "title": "MUCH, MANY and A LOT OF",
+    "level": "A2",
+    "rule_en": "'Many' goes with things you can count: many emails, many people. 'Much' goes with things you cannot: much time, much money. 'A lot of' works with both and sounds natural anywhere. In positive sentences 'much' sounds odd on its own, so 'I have a lot of work' beats 'I have much work'.",
+    "rule_bg": "„Many“ върви с броими неща: many emails, many people. „Much“ с неброими: much time, much money. „A lot of“ върви и с двете и звучи естествено навсякъде. В положителни изречения самостоятелното „much“ звучи странно, затова „I have a lot of work“ е по-добре от „I have much work“.",
+    "examples": [
+      {
+        "en": "I don't have much time, but I have a lot of questions.",
+        "bg": "Нямам много време, но имам много въпроси."
+      },
+      {
+        "en": "How many people are coming? And how much does it cost?",
+        "bg": "Колко души идват? И колко струва?"
+      },
+      {
+        "en": "There isn't much information on their website.",
+        "bg": "На сайта им няма много информация."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "How ___ emails did you get?",
+        "options": [
+          "many",
+          "much"
+        ],
+        "correct": 0,
+        "why": "Emails can be counted, so 'many'.",
+        "why_bg": "Имейлите се броят, значи „many“."
+      },
+      {
+        "sentence": "I don't have ___ time today.",
+        "options": [
+          "much",
+          "many"
+        ],
+        "correct": 0,
+        "why": "Time is uncountable, so 'much'.",
+        "why_bg": "Времето е неброимо, значи „much“."
+      },
+      {
+        "sentence": "She has ___ experience in sales.",
+        "options": [
+          "a lot of",
+          "many"
+        ],
+        "correct": 0,
+        "why": "'Experience' is uncountable here, so 'many' is impossible. 'A lot of' fits.",
+        "why_bg": "„Experience“ тук е неброимо, значи „many“ е невъзможно. „A lot of“ пасва."
+      },
+      {
+        "sentence": "How ___ does the licence cost?",
+        "options": [
+          "much",
+          "many"
+        ],
+        "correct": 0,
+        "why": "Money is uncountable, so a price is asked with 'how much'.",
+        "why_bg": "Парите са неброими, затова цената се пита с „how much“."
+      },
+      {
+        "sentence": "There are ___ people in the meeting room.",
+        "options": [
+          "a lot of",
+          "much"
+        ],
+        "correct": 0,
+        "why": "People are countable, and 'much' never goes with countable nouns.",
+        "why_bg": "Хората са броими, а „much“ никога не върви с броими съществителни."
       }
     ]
   },

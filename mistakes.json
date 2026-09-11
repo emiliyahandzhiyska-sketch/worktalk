@@ -28,21 +28,24 @@
     "right": "What do you call this in English?",
     "why": "The question word is 'what', not 'how'.",
     "why_bg": "Въпросът е с „what“, не с „how“, макар че на български казваме „как“.",
-    "category": "Questions & word order"
+    "category": "Questions & word order",
+    "grammar": "question-forms"
   },
   {
     "wrong": "What means this word?",
     "right": "What does this word mean?",
     "why": "Questions in the present simple need 'do' or 'does'.",
     "why_bg": "Въпросите в сегашно просто време искат „do/does“.",
-    "category": "Questions & word order"
+    "category": "Questions & word order",
+    "grammar": "question-forms"
   },
   {
     "wrong": "How it looks?",
     "right": "How does it look?",
     "why": "Same rule: add 'does' and keep the verb in the base form.",
     "why_bg": "Същото правило: „does“ плюс глагол в основна форма.",
-    "category": "Questions & word order"
+    "category": "Questions & word order",
+    "grammar": "question-forms"
   },
   {
     "wrong": "Can you say me the price?",
@@ -547,5 +550,189 @@
     "why_bg": "„Going to“ е за план, който вече е направен.",
     "category": "Tenses",
     "grammar": "future-forms"
+  },
+  {
+    "wrong": "In our office have five people.",
+    "right": "In our office there are five people.",
+    "why": "English needs 'there is' or 'there are' for something that exists. 'Have' with no subject comes from the Bulgarian 'има'.",
+    "why_bg": "Английският иска „there is“ или „there are“ за съществуване. „Have“ без подлог идва от „има“.",
+    "category": "Basics",
+    "grammar": "to-be-there-is"
+  },
+  {
+    "wrong": "We are 12 people in the team.",
+    "right": "There are 12 of us in the team.",
+    "why": "'We are 12 people' is a word-for-word translation. English says 'there are 12 of us'.",
+    "why_bg": "„We are 12 people“ е буквален превод. На английски е „there are 12 of us“.",
+    "category": "Basics",
+    "grammar": "to-be-there-is"
+  },
+  {
+    "wrong": "I am teacher.",
+    "right": "I am a teacher.",
+    "why": "Jobs take 'a' in English: a teacher, an engineer, a lawyer.",
+    "why_bg": "Професиите на английски искат „a“: a teacher, an engineer, a lawyer.",
+    "category": "Basics",
+    "grammar": "articles"
+  },
+  {
+    "wrong": "She works in bank.",
+    "right": "She works in a bank.",
+    "why": "A countable thing mentioned for the first time takes \"a\".",
+    "why_bg": "Броимо нещо, споменато за първи път, иска „a“.",
+    "category": "Basics",
+    "grammar": "articles"
+  },
+  {
+    "wrong": "We have two childs.",
+    "right": "We have two children.",
+    "why": "Child becomes children, not childs.",
+    "why_bg": "Child става children, не childs.",
+    "category": "Basics",
+    "grammar": "plural-nouns"
+  },
+  {
+    "wrong": "There were many peoples at the event.",
+    "right": "There were many people at the event.",
+    "why": "'People' is already plural. 'Peoples' means different nations.",
+    "why_bg": "„People“ вече е множествено число. „Peoples“ значи различни народи.",
+    "category": "Basics",
+    "grammar": "plural-nouns"
+  },
+  {
+    "wrong": "Do you have got a minute?",
+    "right": "Have you got a minute?",
+    "why": "Use either 'Do you have' or 'Have you got'. Never both at once.",
+    "why_bg": "Или „Do you have“, или „Have you got“. Никога двете заедно.",
+    "category": "Basics",
+    "grammar": "have-got"
+  },
+  {
+    "wrong": "I had got a meeting yesterday.",
+    "right": "I had a meeting yesterday.",
+    "why": "'Have got' has no past form. In the past it is simply 'had'.",
+    "why_bg": "„Have got“ няма минало време. В минало е просто „had“.",
+    "category": "Basics",
+    "grammar": "have-got"
+  },
+  {
+    "wrong": "Does he works in Sofia?",
+    "right": "Does he work in Sofia?",
+    "why": "'Does' already carries the -s, so the main verb stays in its basic form.",
+    "why_bg": "„Does“ вече носи -s, затова главният глагол остава в основна форма.",
+    "category": "Questions & word order",
+    "grammar": "question-forms"
+  },
+  {
+    "wrong": "I go always to the office by bus.",
+    "right": "I always go to the office by bus.",
+    "why": "The adverb goes before the main verb, not after it.",
+    "why_bg": "Наречието стои пред главния глагол, не след него.",
+    "category": "Questions & word order",
+    "grammar": "adverbs-of-frequency"
+  },
+  {
+    "wrong": "I don't never work at weekends.",
+    "right": "I never work at weekends.",
+    "why": "'Never' is already negative. Two negatives cancel each other out in English.",
+    "why_bg": "„Never“ вече е отрицание. Две отрицания в английския се унищожават.",
+    "category": "Questions & word order",
+    "grammar": "adverbs-of-frequency"
+  },
+  {
+    "wrong": "He can to help you tomorrow.",
+    "right": "He can help you tomorrow.",
+    "why": "There is no 'to' after a modal verb.",
+    "why_bg": "След модален глагол няма „to“.",
+    "category": "Modals",
+    "grammar": "can-ability-permission"
+  },
+  {
+    "wrong": "She cans speak French.",
+    "right": "She can speak French.",
+    "why": "Modal verbs never add -s, whoever the subject is.",
+    "why_bg": "Модалните глаголи никога не добавят -s, независимо кой е подлогът.",
+    "category": "Modals",
+    "grammar": "can-ability-permission"
+  },
+  {
+    "wrong": "I want that you send me the file.",
+    "right": "Could you send me the file?",
+    "why": "'I want that you...' is a direct translation. English asks with 'Could you...'.",
+    "why_bg": "„I want that you...“ е буквален превод. На английски молбата е „Could you...“.",
+    "category": "Modals",
+    "grammar": "polite-requests"
+  },
+  {
+    "wrong": "Give me the report.",
+    "right": "Could you give me the report?",
+    "why": "A bare imperative sounds abrupt in English, even between colleagues.",
+    "why_bg": "Гола повелителна форма звучи рязко на английски, дори между колеги.",
+    "category": "Modals",
+    "grammar": "polite-requests"
+  },
+  {
+    "wrong": "Yesterday I go to the office early.",
+    "right": "Yesterday I went to the office early.",
+    "why": "Yesterday is finished time, so the past simple.",
+    "why_bg": "Вчера е завършено време, значи минало просто.",
+    "category": "Tenses",
+    "grammar": "past-simple-basics"
+  },
+  {
+    "wrong": "Did you went to the meeting?",
+    "right": "Did you go to the meeting?",
+    "why": "'Did' carries the past, so the main verb returns to its basic form.",
+    "why_bg": "„Did“ носи миналото, затова главният глагол се връща в основна форма.",
+    "category": "Tenses",
+    "grammar": "past-simple-basics"
+  },
+  {
+    "wrong": "I going to call him this afternoon.",
+    "right": "I'm going to call him this afternoon.",
+    "why": "'Going to' always needs am, is or are in front of it.",
+    "why_bg": "„Going to“ винаги иска am, is или are пред себе си.",
+    "category": "Tenses",
+    "grammar": "going-to"
+  },
+  {
+    "wrong": "We are going to signing the contract.",
+    "right": "We are going to sign the contract.",
+    "why": "After 'going to' comes the basic form of the verb.",
+    "why_bg": "След „going to“ идва основната форма на глагола.",
+    "category": "Tenses",
+    "grammar": "going-to"
+  },
+  {
+    "wrong": "How much emails did you send?",
+    "right": "How many emails did you send?",
+    "why": "Emails can be counted, so \"many\".",
+    "why_bg": "Имейлите се броят, значи „many“.",
+    "category": "Countable or not",
+    "grammar": "much-many"
+  },
+  {
+    "wrong": "I have much work today.",
+    "right": "I have a lot of work today.",
+    "why": "In a positive sentence 'much' sounds odd on its own. Use 'a lot of'.",
+    "why_bg": "В положително изречение самостоятелното „much“ звучи странно. Ползвай „a lot of“.",
+    "category": "Countable or not",
+    "grammar": "much-many"
+  },
+  {
+    "wrong": "The report is in my desk.",
+    "right": "The report is on my desk.",
+    "why": "A desk is a surface, so \"on\".",
+    "why_bg": "Бюрото е повърхност, значи „on“.",
+    "category": "Prepositions",
+    "grammar": "prepositions-place"
+  },
+  {
+    "wrong": "She is in work until six.",
+    "right": "She is at work until six.",
+    "why": "'At work' is fixed, like at home and at school.",
+    "why_bg": "„At work“ е устойчиво, като at home и at school.",
+    "category": "Prepositions",
+    "grammar": "prepositions-place"
   }
 ]
