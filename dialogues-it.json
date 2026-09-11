@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Roll back first",
+    "level": "B2",
+    "setting": "A release breaks saved settings four minutes after going live.",
+    "speakers": {"A":"Support","B":"Engineer"},
+    "lines": [
+      {"s":"A","t":"Nine emails in four minutes. People log in and their settings are empty."},
+      {"s":"B","t":"Rolling back now. I'll look at the cause afterwards."},
+      {"s":"A","t":"Don't you want to find the bug first?"},
+      {"s":"B","t":"Not while customers are affected. Restore service, then investigate."},
+      {"s":"A","t":"How long will the roll back take?"},
+      {"s":"B","t":"About ten minutes. Tell people it's a known issue and we're on it."},
+      {"s":"A","t":"Done. Any idea what caused it?"},
+      {"s":"B","t":"A migration renamed a column and the back end still asks for the old name."},
+      {"s":"A","t":"The tests didn't catch that?"},
+      {"s":"B","t":"They used fresh accounts with no saved settings. That changes today."}
+    ]
+  },
+  {
+    "title": "The suspicious attachment",
+    "level": "B1",
+    "setting": "Someone in accounts opened a file that shouldn't have been opened.",
+    "speakers": {"A":"Employee","B":"IT manager"},
+    "lines": [
+      {"s":"A","t":"I think I've done something bad. I opened an invoice attachment."},
+      {"s":"B","t":"Is your computer still connected to the network?"},
+      {"s":"A","t":"Yes."},
+      {"s":"B","t":"Unplug the cable now, and turn off the wifi. Don't shut it down."},
+      {"s":"A","t":"Done. Some files have strange names now."},
+      {"s":"B","t":"That's ransomware. The backups ran at two this morning, so we're fine."},
+      {"s":"A","t":"I'm really sorry."},
+      {"s":"B","t":"The email copied a real supplier exactly. You're not the first."},
+      {"s":"A","t":"What happens now?"},
+      {"s":"B","t":"I restore from backup, and I tell everyone what to look for. No lecture."}
+    ]
+  }
+]

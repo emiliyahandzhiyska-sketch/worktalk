@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Why the ad failed",
+    "level": "B2",
+    "setting": "Reviewing a campaign that got clicks but no leads.",
+    "speakers": {"A":"Director","B":"Marketer"},
+    "lines": [
+      {"s":"A","t":"Fifty thousand impressions and four leads. What went wrong?"},
+      {"s":"B","t":"The click-through rate was fine. The landing page lost them."},
+      {"s":"A","t":"What's on it?"},
+      {"s":"B","t":"Our history, our team, three paragraphs about quality."},
+      {"s":"A","t":"And the call to action?"},
+      {"s":"B","t":"At the bottom. It says 'Learn more', which asks for nothing."},
+      {"s":"A","t":"So the ad promised a solution and the page talked about us."},
+      {"s":"B","t":"Exactly. I'd rewrite it around one pain point and one action."},
+      {"s":"A","t":"Do that, and let's A/B test two headlines before we spend more."},
+      {"s":"B","t":"Agreed. Same budget, two weeks, then we compare conversion rates."}
+    ]
+  },
+  {
+    "title": "Planning the content calendar",
+    "level": "B1",
+    "setting": "Two colleagues plan next month's posts.",
+    "speakers": {"A":"Vesela","B":"Marto"},
+    "lines": [
+      {"s":"A","t":"We need the content calendar for October by Friday."},
+      {"s":"B","t":"How many posts a week are we doing now?"},
+      {"s":"A","t":"Three. Two useful, one behind the scenes."},
+      {"s":"B","t":"The behind the scenes ones get the most engagement, by far."},
+      {"s":"A","t":"Then let's make it two of those and one offer."},
+      {"s":"B","t":"What about the lead magnet? It's been the same PDF since spring."},
+      {"s":"A","t":"Good point. A fresh one would give us something to talk about."},
+      {"s":"B","t":"I'll draft it. Something short, ten email templates maybe."},
+      {"s":"A","t":"Perfect. That's evergreen content, we can use it all year."},
+      {"s":"B","t":"I'll have a draft by Wednesday so you can review it."}
+    ]
+  }
+]

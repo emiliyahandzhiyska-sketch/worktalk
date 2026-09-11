@@ -1,0 +1,40 @@
+[
+  {
+    "title": "The angry caller",
+    "level": "B1",
+    "setting": "A customer has been transferred twice and is losing patience.",
+    "speakers": {"A":"Customer","B":"Vesela"},
+    "lines": [
+      {"s":"A","t":"This is the third time I've explained this. Nobody has called me back."},
+      {"s":"B","t":"You've told this story three times already, and that's our fault, not yours."},
+      {"s":"A","t":"Well. Thank you for saying that."},
+      {"s":"B","t":"Let me take ownership of it now. Could you give me your order number?"},
+      {"s":"A","t":"It's WT four four nine one."},
+      {"s":"B","t":"Thank you. I can see it. The delivery is four days late, with no update sent."},
+      {"s":"A","t":"So when will it actually arrive?"},
+      {"s":"B","t":"Thursday is realistic. I could say Wednesday, but I'd rather be honest."},
+      {"s":"A","t":"I appreciate that."},
+      {"s":"B","t":"I'll send the tracking number now, and I'll call you myself if anything changes."},
+      {"s":"A","t":"That's all I wanted from the start, really."}
+    ]
+  },
+  {
+    "title": "A refund request",
+    "level": "B1",
+    "setting": "A customer wants money back outside the returns policy.",
+    "speakers": {"A":"Customer","B":"Agent"},
+    "lines": [
+      {"s":"A","t":"I'd like a refund. The course wasn't what I expected."},
+      {"s":"B","t":"I'm sorry to hear that. May I ask what was different?"},
+      {"s":"A","t":"I thought it was one to one. It's a group of eight."},
+      {"s":"B","t":"I understand. Could I check when you enrolled?"},
+      {"s":"A","t":"About six weeks ago."},
+      {"s":"B","t":"Our returns policy covers thirty days, so a full refund isn't possible."},
+      {"s":"A","t":"That's disappointing."},
+      {"s":"B","t":"It is. What I can do is move you to the one-to-one track and credit what you've used."},
+      {"s":"A","t":"So I'd only pay the difference?"},
+      {"s":"B","t":"Exactly. Shall I check availability for next month?"},
+      {"s":"A","t":"Yes, please. That's a fair solution."}
+    ]
+  }
+]

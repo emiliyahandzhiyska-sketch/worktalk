@@ -1,0 +1,40 @@
+[
+  {
+    "title": "It's too expensive",
+    "level": "B2",
+    "setting": "A salesperson meets a price objection on the fourth call.",
+    "speakers": {"A":"Client","B":"Kalin"},
+    "lines": [
+      {"s":"A","t":"We like the programme, but honestly, it's too expensive."},
+      {"s":"B","t":"Too expensive compared to what?"},
+      {"s":"A","t":"Compared to doing nothing, I suppose. We tried training two years ago."},
+      {"s":"B","t":"And what happened?"},
+      {"s":"A","t":"People stopped attending after three weeks. We paid for the whole thing."},
+      {"s":"B","t":"So the real question isn't price. It's whether it will happen this time."},
+      {"s":"A","t":"That's fair."},
+      {"s":"B","t":"Then let's start with one department, and tie the rest to attendance."},
+      {"s":"A","t":"Meaning if attendance drops, we stop?"},
+      {"s":"B","t":"No penalty. If it works, we continue. Would that be easier to approve?"},
+      {"s":"A","t":"Considerably. Send it that way and I'll walk it through myself."}
+    ]
+  },
+  {
+    "title": "Qualifying the lead",
+    "level": "B1",
+    "setting": "A first call with a company that downloaded a guide.",
+    "speakers": {"A":"Salesperson","B":"HR contact"},
+    "lines": [
+      {"s":"A","t":"Thanks for making time. You downloaded our assessment guide last week."},
+      {"s":"B","t":"Yes, I was curious. We have people who struggle on calls in English."},
+      {"s":"A","t":"How many people, roughly?"},
+      {"s":"B","t":"Maybe twenty in customer service."},
+      {"s":"A","t":"And is there a budget for training this year?"},
+      {"s":"B","t":"There's a training budget, but I don't control it."},
+      {"s":"A","t":"Who does?"},
+      {"s":"B","t":"The operations director. She signs off anything over five thousand."},
+      {"s":"A","t":"Would it help if I prepared a short summary you could forward to her?"},
+      {"s":"B","t":"That would help a lot. One page, if possible."},
+      {"s":"A","t":"One page it is. I'll send it today and follow up on Thursday."}
+    ]
+  }
+]

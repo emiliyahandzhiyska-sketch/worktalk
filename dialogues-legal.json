@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Clause 14",
+    "level": "B2",
+    "setting": "A client and legal counsel discuss a late delivery.",
+    "speakers": {"A":"Client","B":"Counsel"},
+    "lines": [
+      {"s":"A","t":"They're six weeks late. I want to cancel and claim damages."},
+      {"s":"B","t":"They'll argue force majeure. The factory flooded."},
+      {"s":"A","t":"So we're stuck?"},
+      {"s":"B","t":"Not necessarily. Clause 14 requires written notice within forty-eight hours."},
+      {"s":"A","t":"And they said nothing for eleven days."},
+      {"s":"B","t":"That's the point that matters. The delay might be excusable, the silence isn't."},
+      {"s":"A","t":"Do we go to court?"},
+      {"s":"B","t":"I'd settle out of court. Litigation costs more than the invoice."},
+      {"s":"A","t":"What would a fair settlement look like?"},
+      {"s":"B","t":"A credit against the next order, and we amend the notice clause."}
+    ]
+  },
+  {
+    "title": "Sign first, talk second",
+    "level": "B1",
+    "setting": "A founder learns why the NDA didn't protect them.",
+    "speakers": {"A":"Founder","B":"Lawyer"},
+    "lines": [
+      {"s":"A","t":"They launched a copy of our pricing model. Can we sue?"},
+      {"s":"B","t":"When did you sign the non-disclosure agreement?"},
+      {"s":"A","t":"In May."},
+      {"s":"B","t":"And when did you explain the model to them?"},
+      {"s":"A","t":"March. Two friendly meetings."},
+      {"s":"B","t":"Then it sits outside the agreement. The NDA only covers what came after."},
+      {"s":"A","t":"Isn't the model our intellectual property?"},
+      {"s":"B","t":"A business idea usually isn't. A patent or copyright would be."},
+      {"s":"A","t":"That's an expensive lesson."},
+      {"s":"B","t":"One sentence long. Sign first, talk second."}
+    ]
+  }
+]

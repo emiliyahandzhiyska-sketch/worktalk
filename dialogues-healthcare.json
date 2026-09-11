@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Two minutes at the bedside",
+    "level": "B1",
+    "setting": "A junior doctor asks a patient why he has stopped eating.",
+    "speakers": {"A":"Doctor","B":"Mr Kolev"},
+    "lines": [
+      {"s":"A","t":"Good morning. I noticed you haven't eaten since yesterday."},
+      {"s":"B","t":"I'm not very hungry."},
+      {"s":"A","t":"Your tests are all normal, so I wondered if something else was wrong."},
+      {"s":"B","t":"It's silly, really."},
+      {"s":"A","t":"Tell me anyway. I have two minutes and nowhere else to be."},
+      {"s":"B","t":"If I eat, I'll need the toilet. I can't reach it on my own."},
+      {"s":"A","t":"And you didn't want to trouble the nurses."},
+      {"s":"B","t":"They're busy. So I thought I'd manage until I go home."},
+      {"s":"A","t":"Let me move your call bell closer, and I'll tell the ward."},
+      {"s":"B","t":"That's all it takes? Then I'll have lunch."}
+    ]
+  },
+  {
+    "title": "The waiting list",
+    "level": "B2",
+    "setting": "A manager shows a consultant why capacity is being lost.",
+    "speakers": {"A":"Manager","B":"Consultant"},
+    "lines": [
+      {"s":"A","t":"The waiting list is nine months. You asked for two more staff."},
+      {"s":"B","t":"Because we can't see enough patients."},
+      {"s":"A","t":"Eighteen per cent of appointments are no-shows."},
+      {"s":"B","t":"That's higher than I thought."},
+      {"s":"A","t":"And twelve per cent arrive without a referral, so they're turned away."},
+      {"s":"B","t":"Almost a third of the capacity, before anyone is treated."},
+      {"s":"A","t":"A text message two days before, and a check when booking."},
+      {"s":"B","t":"And a short-notice list for slots that open up."},
+      {"s":"A","t":"Exactly. No new staff, no new equipment."},
+      {"s":"B","t":"I've been treating a process problem as a resource problem for three years."}
+    ]
+  }
+]

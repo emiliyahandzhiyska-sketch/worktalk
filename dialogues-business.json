@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Getting buy-in",
+    "level": "B2",
+    "setting": "Two managers discuss a restructure before presenting it.",
+    "speakers": {"A":"Petar","B":"Nadia"},
+    "lines": [
+      {"s":"A","t":"Before we take this to the board, we need buy-in from the regional heads."},
+      {"s":"B","t":"All four of them? Two will push back hard."},
+      {"s":"A","t":"Probably. What's their main objection?"},
+      {"s":"B","t":"Headcount. They think restructuring is a word for cutting jobs."},
+      {"s":"A","t":"It isn't, and we should say that in plain language at the town hall."},
+      {"s":"B","t":"Then we need numbers. How many roles actually change?"},
+      {"s":"A","t":"Eleven people get a new line manager. Nobody is made redundant."},
+      {"s":"B","t":"Say exactly that. Vague answers are what start the rumours."},
+      {"s":"A","t":"Agreed. I'll put it on one slide and take questions for as long as they last."},
+      {"s":"B","t":"Good. And get sign-off from HR before Thursday."}
+    ]
+  },
+  {
+    "title": "The counteroffer",
+    "level": "B2",
+    "setting": "A supplier responds to a client's much lower offer.",
+    "speakers": {"A":"Client","B":"Supplier"},
+    "lines": [
+      {"s":"A","t":"We've reviewed your quote. Our counteroffer is 38% lower."},
+      {"s":"B","t":"That's a big gap. Can I ask what's driving the number?"},
+      {"s":"A","t":"Procurement has a fixed budget for this category."},
+      {"s":"B","t":"Understood. At that price I'd be taking teachers off profitable work."},
+      {"s":"A","t":"So it's a no?"},
+      {"s":"B","t":"It's a different yes. Three locations instead of nine, at our rate."},
+      {"s":"A","t":"A pilot, effectively."},
+      {"s":"B","t":"Exactly. With an option to extend if the results hold."},
+      {"s":"A","t":"I'll take that back to the team. It might get through faster, actually."},
+      {"s":"B","t":"Take your time. The offer stands until the end of the quarter."}
+    ]
+  }
+]

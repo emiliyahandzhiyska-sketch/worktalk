@@ -7,7 +7,8 @@
     "tagline": "Meetings, email, deadlines, office life.",
     "words": "words.json",
     "exercises": "exercises.json",
-    "readings": "readings-workplace.json"
+    "readings": "readings-workplace.json",
+    "dialogues": "dialogues-workplace.json"
   },
   {
     "id": "business",
@@ -17,7 +18,8 @@
     "tagline": "Strategy, HR, negotiation, corporate life.",
     "words": "words-business.json",
     "exercises": "exercises-business.json",
-    "readings": "readings-business.json"
+    "readings": "readings-business.json",
+    "dialogues": "dialogues-business.json"
   },
   {
     "id": "sales",
@@ -27,7 +29,8 @@
     "tagline": "Prospecting, pitching, objections, closing.",
     "words": "words-sales.json",
     "exercises": "exercises-sales.json",
-    "readings": "readings-sales.json"
+    "readings": "readings-sales.json",
+    "dialogues": "dialogues-sales.json"
   },
   {
     "id": "marketing",
@@ -37,7 +40,8 @@
     "tagline": "Campaigns, funnels, metrics, client talk.",
     "words": "words-marketing.json",
     "exercises": "exercises-marketing.json",
-    "readings": "readings-marketing.json"
+    "readings": "readings-marketing.json",
+    "dialogues": "dialogues-marketing.json"
   },
   {
     "id": "customerservice",
@@ -47,7 +51,8 @@
     "tagline": "Complaints, calls, refunds, keeping people.",
     "words": "words-customerservice.json",
     "exercises": "exercises-customerservice.json",
-    "readings": "readings-customerservice.json"
+    "readings": "readings-customerservice.json",
+    "dialogues": "dialogues-customerservice.json"
   },
   {
     "id": "hr",
@@ -57,7 +62,8 @@
     "tagline": "Hiring, contracts, leave, people problems.",
     "words": "words-hr.json",
     "exercises": "exercises-hr.json",
-    "readings": "readings-hr.json"
+    "readings": "readings-hr.json",
+    "dialogues": "dialogues-hr.json"
   },
   {
     "id": "finance",
@@ -67,7 +73,8 @@
     "tagline": "Cash flow, invoices, budgets, reporting.",
     "words": "words-finance.json",
     "exercises": "exercises-finance.json",
-    "readings": "readings-finance.json"
+    "readings": "readings-finance.json",
+    "dialogues": "dialogues-finance.json"
   },
   {
     "id": "accounting",
@@ -77,7 +84,8 @@
     "tagline": "Ledgers, reconciliation, accruals, reporting.",
     "words": "words-accounting.json",
     "exercises": "exercises-accounting.json",
-    "readings": "readings-accounting.json"
+    "readings": "readings-accounting.json",
+    "dialogues": "dialogues-accounting.json"
   },
   {
     "id": "administration",
@@ -87,7 +95,8 @@
     "tagline": "Scheduling, records, supplies, office support.",
     "words": "words-administration.json",
     "exercises": "exercises-administration.json",
-    "readings": "readings-administration.json"
+    "readings": "readings-administration.json",
+    "dialogues": "dialogues-administration.json"
   },
   {
     "id": "it",
@@ -97,7 +106,8 @@
     "tagline": "Systems, bugs, releases, data, security.",
     "words": "words-it.json",
     "exercises": "exercises-it.json",
-    "readings": "readings-it.json"
+    "readings": "readings-it.json",
+    "dialogues": "dialogues-it.json"
   },
   {
     "id": "techsupport",
@@ -107,7 +117,8 @@
     "tagline": "Tickets, faults, remote fixes, calm callers.",
     "words": "words-techsupport.json",
     "exercises": "exercises-techsupport.json",
-    "readings": "readings-techsupport.json"
+    "readings": "readings-techsupport.json",
+    "dialogues": "dialogues-techsupport.json"
   },
   {
     "id": "legal",
@@ -117,7 +128,8 @@
     "tagline": "Contracts, compliance, disputes, company law.",
     "words": "words-legal.json",
     "exercises": "exercises-legal.json",
-    "readings": "readings-legal.json"
+    "readings": "readings-legal.json",
+    "dialogues": "dialogues-legal.json"
   },
   {
     "id": "healthcare",
@@ -127,7 +139,8 @@
     "tagline": "Patients, treatment, hospital and admin.",
     "words": "words-healthcare.json",
     "exercises": "exercises-healthcare.json",
-    "readings": "readings-healthcare.json"
+    "readings": "readings-healthcare.json",
+    "dialogues": "dialogues-healthcare.json"
   },
   {
     "id": "hospitality",
@@ -137,7 +150,8 @@
     "tagline": "Front desk, restaurant, guests, tours.",
     "words": "words-hospitality.json",
     "exercises": "exercises-hospitality.json",
-    "readings": "readings-hospitality.json"
+    "readings": "readings-hospitality.json",
+    "dialogues": "dialogues-hospitality.json"
   },
   {
     "id": "technical",
@@ -147,7 +161,8 @@
     "tagline": "Specs, production, faults, safety, delivery.",
     "words": "words-technical.json",
     "exercises": "exercises-technical.json",
-    "readings": "readings-technical.json"
+    "readings": "readings-technical.json",
+    "dialogues": "dialogues-technical.json"
   },
   {
     "id": "sport",
@@ -157,7 +172,8 @@
     "tagline": "Training, matches, results, staying fit.",
     "words": "words-sport.json",
     "exercises": "exercises-sport.json",
-    "readings": "readings-sport.json"
+    "readings": "readings-sport.json",
+    "dialogues": "dialogues-sport.json"
   },
   {
     "id": "nutrition",
@@ -167,7 +183,8 @@
     "tagline": "Food choices, labels, habits, weight.",
     "words": "words-nutrition.json",
     "exercises": "exercises-nutrition.json",
-    "readings": "readings-nutrition.json"
+    "readings": "readings-nutrition.json",
+    "dialogues": "dialogues-nutrition.json"
   },
   {
     "id": "lifestyle",
@@ -177,6 +194,7 @@
     "tagline": "Routines, sleep, screens, balance, growth.",
     "words": "words-lifestyle.json",
     "exercises": "exercises-lifestyle.json",
-    "readings": "readings-lifestyle.json"
+    "readings": "readings-lifestyle.json",
+    "dialogues": "dialogues-lifestyle.json"
   }
 ]

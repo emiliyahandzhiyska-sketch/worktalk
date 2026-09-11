@@ -53,7 +53,7 @@ let words = [];
 let exercises = { transformations: [], word_formation: [] };
 let readings = [];
 let mistakes = [];  // shared across every topic
-let dialogues = {}; // keyed by deck id
+let dialogues = []; // the current deck's dialogues, loaded with it
 let grammar = [];   // shared grammar points, independent of any topic
 let grammarTopic = null; // { point, index, score, checked }, null = showing the menu
 let enrich = {};    // phrase -> { l: level, c: [collocations] }
@@ -89,14 +89,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('ctaLink').href = BRAND.ctaUrl;
 
   try {
-    const [dRes, mRes, gRes, eRes, grRes] = await Promise.all([
-      fetch('decks.json'), fetch('mistakes.json'), fetch('dialogues.json'), fetch('enrich.json'),
+    // Dialogues are not here: they load with their own deck, so opening the
+    // app doesn't download the dialogues of seventeen topics nobody asked for.
+    const [dRes, mRes, eRes, grRes] = await Promise.all([
+      fetch('decks.json'), fetch('mistakes.json'), fetch('enrich.json'),
       fetch('grammar.json')
     ]);
     if (!dRes.ok) throw new Error(dRes.statusText);
     decks = await dRes.json();
     mistakes = mRes.ok ? await mRes.json() : [];
-    dialogues = gRes.ok ? await gRes.json() : {};
     enrich = eRes.ok ? await eRes.json() : {};
     grammar = grRes.ok ? await grRes.json() : [];
 
@@ -250,8 +251,8 @@ async function loadDeck(id) {
   localStorage.setItem(DECK_KEY, id);
   const d = decks.find(x => x.id === id);
 
-  const [wRes, eRes, rRes] = await Promise.all([
-    fetch(d.words), fetch(d.exercises), fetch(d.readings)
+  const [wRes, eRes, rRes, gRes] = await Promise.all([
+    fetch(d.words), fetch(d.exercises), fetch(d.readings), fetch(d.dialogues)
   ]);
   if (!wRes.ok || !eRes.ok) throw new Error('deck load failed');
   words = await wRes.json();
@@ -261,8 +262,9 @@ async function loadDeck(id) {
     return extra ? { ...w, level: extra.l, collocations: extra.c || [] } : w;
   });
   exercises = await eRes.json();
-  // Readings are optional: a deck without them simply hides the mode
+  // Readings and dialogues are optional: a deck without them hides the mode
   readings = rRes.ok ? await rRes.json() : [];
+  dialogues = gRes.ok ? await gRes.json() : [];
 
   // The report needs deck size and last-used date for decks that aren't loaded
   localStorage.setItem(sKey('size'), String(words.length));
@@ -2292,7 +2294,7 @@ function speakAs(text, speaker, onDone) {
 }
 
 function dialoguesForDeck() {
-  return dialogues[deckId] || [];
+  return dialogues;
 }
 
 function renderDialogueList() {

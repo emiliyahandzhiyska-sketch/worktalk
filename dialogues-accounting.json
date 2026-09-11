@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Forty-eight euro",
+    "level": "B2",
+    "setting": "A supervisor asks a bookkeeper not to write off a small difference.",
+    "speakers": {"A":"Bookkeeper","B":"Supervisor"},
+    "lines": [
+      {"s":"A","t":"The bank reconciliation is out by forty-eight euro. Everything else matches."},
+      {"s":"B","t":"What were you going to do with it?"},
+      {"s":"A","t":"Post an adjustment. It's below materiality and it's Friday."},
+      {"s":"B","t":"Give it thirty minutes first. Where does the forty-eight come from?"},
+      {"s":"A","t":"A courier charge. It's in the purchase ledger and in office costs."},
+      {"s":"B","t":"So it's a duplicate. Have you looked for others from that supplier?"},
+      {"s":"A","t":"Not yet. Give me a moment... there are eleven more across the year."},
+      {"s":"B","t":"Which means costs are overstated and profit is understated."},
+      {"s":"A","t":"One thousand three hundred and forty euro in total."},
+      {"s":"B","t":"Small differences are rarely small. Write a note for the file."}
+    ]
+  },
+  {
+    "title": "Why December looks bad",
+    "level": "B2",
+    "setting": "Explaining non-cash adjustments to a director.",
+    "speakers": {"A":"Director","B":"Accountant"},
+    "lines": [
+      {"s":"A","t":"November showed nine thousand profit. December shows almost nothing."},
+      {"s":"B","t":"Three things landed in December, and none of them are cash."},
+      {"s":"A","t":"Go on."},
+      {"s":"B","t":"The annual insurance was posted in full instead of as a prepayment."},
+      {"s":"A","t":"So it should be spread over twelve months."},
+      {"s":"B","t":"Yes. Second, a provision for the disputed invoice."},
+      {"s":"A","t":"And the third?"},
+      {"s":"B","t":"Depreciation on the new equipment started. Seven hundred a month."},
+      {"s":"A","t":"So the bank balance is actually fine."},
+      {"s":"B","t":"Higher than November. Always ask what moved that isn't cash."}
+    ]
+  }
+]
