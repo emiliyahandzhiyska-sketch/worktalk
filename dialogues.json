@@ -431,6 +431,63 @@
       ]
     },
     {
+      "title": "Monday, sixty tickets",
+      "level": "B2",
+      "focus": "Tickets & triage",
+      "setting": "A team lead divides the weekend's queue between four people.",
+      "speakers": { "A": "Vera", "B": "Martin" },
+      "lines": [
+        { "s": "A", "t": "Sixty in the ticket queue and four of us. We triage before anyone starts answering." },
+        { "s": "B", "t": "Half of them are marked high priority." },
+        { "s": "A", "t": "Priority level is what the user feels. Severity is what it does to the business." },
+        { "s": "B", "t": "So the warehouse being offline beats one broken mouse." },
+        { "s": "A", "t": "Assign that ticket to yourself and start now." },
+        { "s": "B", "t": "What about the service level agreement? We're at three hours on some of these." },
+        { "s": "A", "t": "The agreement gives us four hours to respond. Respond, not solve." },
+        { "s": "B", "t": "Ticket 9101 is back. Same person, same error, closed on Friday." },
+        { "s": "A", "t": "Someone closed it too early. Reopen the ticket and escalate to second line." },
+        { "s": "B", "t": "Doing it now. And I'll call him myself, so he doesn't hear it from the system." }
+      ]
+    },
+    {
+      "title": "Nobody else can see it",
+      "level": "B2",
+      "focus": "Finding the problem",
+      "setting": "Two engineers work out why a fault appears for three people and nobody else.",
+      "speakers": { "A": "Kalina", "B": "Deyan" },
+      "lines": [
+        { "s": "A", "t": "I can't replicate the issue. It works every time on my machine." },
+        { "s": "B", "t": "How many affected users?" },
+        { "s": "A", "t": "Three. All in the Burgas office, all before nine in the morning." },
+        { "s": "B", "t": "That narrows it down more than anything else in the ticket." },
+        { "s": "A", "t": "The symptom is the same every time. The page loads, then goes blank." },
+        { "s": "B", "t": "Do we have an error code?" },
+        { "s": "A", "t": "Only one of them wrote it down. E dash five zero three." },
+        { "s": "B", "t": "So it's intermittent and the time of day is the pattern. Ask them for the steps to reproduce before they start work tomorrow." },
+        { "s": "A", "t": "You think it's the backup again?" },
+        { "s": "B", "t": "Maybe. We isolate the cause by turning one thing off at a time, and we start with whatever runs at 08:45." }
+      ]
+    },
+    {
+      "title": "Her first day from home",
+      "level": "B1",
+      "focus": "Guiding the user",
+      "setting": "Support helps a colleague who cannot get into anything on her first day working from home.",
+      "speakers": { "A": "Petya", "B": "Yana" },
+      "lines": [
+        { "s": "A", "t": "It's my first day working from home and I can't get into anything." },
+        { "s": "B", "t": "I'll walk you through it step by step. None of it is difficult." },
+        { "s": "A", "t": "The login screen says my password is wrong." },
+        { "s": "B", "t": "I'm doing a password reset now. You'll get a text in about ten seconds." },
+        { "s": "A", "t": "That worked. But the printer still isn't there." },
+        { "s": "B", "t": "Can you screen share, or shall I start a remote session?" },
+        { "s": "A", "t": "I don't know how to screen share." },
+        { "s": "B", "t": "Then I'll take the remote session. You'll see the mouse moving on its own, and that's me." },
+        { "s": "A", "t": "There's a yellow triangle on the printer now." },
+        { "s": "B", "t": "Old driver. I'll reinstall it, then power cycle the printer: off, thirty seconds, on. If anything looks strange later, log out and back in before you call me." }
+      ]
+    },
+    {
       "title": "Write it for Nina",
       "level": "B2",
       "focus": "Explaining clearly",
@@ -447,6 +504,63 @@
         { "s": "B", "t": "Three lines. What changes, when it happens, and what they have to do. In plain English." },
         { "s": "A", "t": "Let me rephrase it and send it back to you." },
         { "s": "B", "t": "Do that. And check understanding before Friday. Ask two non-technical people to tell you what they'll have to do." }
+      ]
+    },
+    {
+      "title": "Since eight this morning",
+      "level": "B1",
+      "focus": "Managing the caller",
+      "setting": "A customer has been waiting all day for the order system to come back.",
+      "speakers": { "A": "Mr Ivanov", "B": "Georgi" },
+      "lines": [
+        { "s": "A", "t": "Your order system has been down since eight this morning. Eight." },
+        { "s": "B", "t": "I apologise for the inconvenience. Bear with me while I open your account." },
+        { "s": "A", "t": "I've been told 'bear with me' four times today." },
+        { "s": "B", "t": "Then I'll say something useful instead. It's with the supplier and I'm going to chase them up now, while you stay on the line." },
+        { "s": "A", "t": "Go on, then." },
+        { "s": "B", "t": "They have an engineer on it. He says two hours." },
+        { "s": "A", "t": "Two hours is what they said at ten o'clock." },
+        { "s": "B", "t": "I'll look into what changed and give you a progress update at one, whether there's news or not." },
+        { "s": "A", "t": "And if there isn't?" },
+        { "s": "B", "t": "Then I put it in writing, with all the times, and you take that to whoever you need to." }
+      ]
+    },
+    {
+      "title": "The lid and the meeting room",
+      "level": "B2",
+      "focus": "Fixes & outcomes",
+      "setting": "A laptop comes back from the workshop for the third time with nothing wrong with it.",
+      "speakers": { "A": "Boyan", "B": "Vera" },
+      "lines": [
+        { "s": "A", "t": "The laptop from reception is back. Third visit, and the workshop says no fault found again." },
+        { "s": "B", "t": "Three visits and a healthy machine. What does she actually do when it happens?" },
+        { "s": "A", "t": "Closes the lid, walks to the meeting room, opens it. Black screen." },
+        { "s": "B", "t": "Nobody tested that, because nobody walked anywhere." },
+        { "s": "A", "t": "Someone wrote 'user error' in the notes on the second visit." },
+        { "s": "B", "t": "Take it out. This is a recurring issue and we've marked it as resolved three times." },
+        { "s": "A", "t": "I gave her a temporary fix. She restarts it when she gets to the room." },
+        { "s": "B", "t": "Which she'll still be doing in a year unless someone finishes the job." },
+        { "s": "A", "t": "So where's the permanent fix?" },
+        { "s": "B", "t": "In whatever happens to that machine between two rooms. And don't mark it as resolved until she says it's fine, not the workshop." }
+      ]
+    },
+    {
+      "title": "Two weeks off",
+      "level": "B1",
+      "focus": "Records & handover",
+      "setting": "An engineer hands over his open tickets before going on holiday.",
+      "speakers": { "A": "Emil", "B": "Dessy" },
+      "lines": [
+        { "s": "A", "t": "I'm off for two weeks from Friday. What do you need from me?" },
+        { "s": "B", "t": "The three tickets you're holding. Who do I pass them on to?" },
+        { "s": "A", "t": "Two go to Martin. The third needs someone who knows the old payroll system." },
+        { "s": "B", "t": "That's nobody, which is why it's still open." },
+        { "s": "A", "t": "I'll document the fix I used last time. Four steps, and one of them makes no sense." },
+        { "s": "B", "t": "Put that one in an internal note with the reason. Otherwise somebody skips it." },
+        { "s": "A", "t": "Does the customer see any of this?" },
+        { "s": "B", "t": "The internal note is for us. The write-up they get is three lines: what happened, what we did, what to do if it comes back." },
+        { "s": "A", "t": "And the changes I made on the server?" },
+        { "s": "B", "t": "The audit trail has them, but it won't say why. Write the why down while you still remember it, then go and enjoy your holiday." }
       ]
     }
   ],
