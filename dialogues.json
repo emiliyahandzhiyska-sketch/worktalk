@@ -429,6 +429,25 @@
         { "s": "A", "t": "What goes in the internal note?" },
         { "s": "B", "t": "Times, usernames, and what you already tried. Then give the users a progress update at eleven, even if nothing has changed." }
       ]
+    },
+    {
+      "title": "Write it for Nina",
+      "level": "B2",
+      "focus": "Explaining clearly",
+      "setting": "An engineer asks a colleague to check the message he is about to send to the whole company.",
+      "speakers": { "A": "Deyan", "B": "Rada" },
+      "lines": [
+        { "s": "A", "t": "Can you read this before I send it to everyone? Two minutes." },
+        { "s": "B", "t": "'We are deprecating the legacy VPN client ahead of the migration window.' What does that mean?" },
+        { "s": "A", "t": "The old VPN stops working on Friday. Everyone installs the new one." },
+        { "s": "B", "t": "Then write that. What you've got is jargon from the first word." },
+        { "s": "A", "t": "It's accurate, though." },
+        { "s": "B", "t": "Accurate and useless. Your end user is Nina in accounts, not another engineer." },
+        { "s": "A", "t": "All right. How would you break it down?" },
+        { "s": "B", "t": "Three lines. What changes, when it happens, and what they have to do. In plain English." },
+        { "s": "A", "t": "Let me rephrase it and send it back to you." },
+        { "s": "B", "t": "Do that. And check understanding before Friday. Ask two non-technical people to tell you what they'll have to do." }
+      ]
     }
   ],
 

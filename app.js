@@ -2313,7 +2313,8 @@ function renderDialogueList() {
               class="w-full text-left px-4 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:border-brand-500 transition-colors">
               <span class="block font-bold text-sm">${d.title}</span>
               <span class="block text-xs text-slate-500 dark:text-slate-400 mt-0.5">${d.setting}</span>
-              <span class="inline-block mt-1.5 text-[10px] font-bold uppercase tracking-widest text-brand-500">Level ${d.level} · ${d.lines.length} lines</span>
+              <span class="inline-block mt-1.5 text-[10px] font-bold uppercase tracking-widest text-brand-500">Level ${d.level} · ${d.lines.length} lines${
+                d.focus ? ` · ${d.focus}` : ''}</span>
             </button>`).join('')}
         </div>`
         : '<p class="text-sm text-slate-500 dark:text-slate-400">No dialogues for this topic yet.</p>'}
