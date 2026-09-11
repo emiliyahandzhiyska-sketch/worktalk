@@ -34,5 +34,146 @@
       {"s":"A","t":"Three days late."},
       {"s":"B","t":"In writing, agreed by the client, with the as-built drawings complete."}
     ]
+  },
+  {
+    "title": "Half a millimetre",
+    "level": "B2",
+    "focus": "Design & specs",
+    "setting": "Parts have arrived built to a drawing that was replaced in March.",
+    "speakers": {"A":"Rangel","B":"Ivelina"},
+    "lines": [
+      {"s":"A","t":"The specification says 40 millimetres, plus or minus nought point one."},
+      {"s":"B","t":"And the parts that arrived?"},
+      {"s":"A","t":"Half a millimetre out. Outside tolerance on every single one."},
+      {"s":"B","t":"Check which drawing they worked from."},
+      {"s":"A","t":"That's the problem. They used the blueprint from the prototype."},
+      {"s":"B","t":"Which dimension changed between the two?"},
+      {"s":"A","t":"The mounting hole. It moved when we made the frame load-bearing."},
+      {"s":"B","t":"So they built to a drawing we superseded in March."},
+      {"s":"A","t":"Our number was on both versions. That part is ours to fix."},
+      {"s":"B","t":"One drawing number, one version, and the old one goes in the bin today."},
+      {"s":"A","t":"I'll redo the feasibility study for the second frame while we're here, because the same mistake is waiting in it."}
+    ]
+  },
+  {
+    "title": "The machine that sets the pace",
+    "level": "B2",
+    "focus": "Manufacturing",
+    "setting": "The line has to produce more and one machine decides everything.",
+    "speakers": {"A":"Ivelina","B":"Rangel"},
+    "lines": [
+      {"s":"A","t":"We need to scale up to 900 units a month."},
+      {"s":"B","t":"The line does 640 in a good week."},
+      {"s":"A","t":"Where's the bottleneck?"},
+      {"s":"B","t":"The paint booth. Everything before it waits and everything after it starves."},
+      {"s":"A","t":"So throughput is decided by one machine."},
+      {"s":"B","t":"It always is. A second booth costs 60,000 and eleven weeks of lead time."},
+      {"s":"A","t":"And the yield?"},
+      {"s":"B","t":"94%. Almost every failure traces back to one component supplier."},
+      {"s":"A","t":"Which batch?"},
+      {"s":"B","t":"Everything from June. I've quarantined what's left of it."},
+      {"s":"A","t":"Then order the booth, change the supplier, and touch nothing on the assembly line until both are settled."}
+    ]
+  },
+  {
+    "title": "Sunday morning, on purpose",
+    "level": "B2",
+    "focus": "Maintenance & faults",
+    "setting": "A line that has stopped three times this month.",
+    "speakers": {"A":"Simeon","B":"Ivelina"},
+    "lines": [
+      {"s":"A","t":"Line two has stopped again. Third time this month."},
+      {"s":"B","t":"How much downtime?"},
+      {"s":"A","t":"Forty minutes today. Two hours last Tuesday."},
+      {"s":"B","t":"Have you found the root cause, or are we still guessing?"},
+      {"s":"A","t":"I've spent two days troubleshooting it. I've ruled out the motor and the sensor."},
+      {"s":"B","t":"So which is it?"},
+      {"s":"A","t":"The belt shows wear and tear beyond its hours. The controller reads fine every time I calibrate it."},
+      {"s":"B","t":"Then it's the belt, and the fault has been building for weeks."},
+      {"s":"A","t":"I can work around it by running slower until Sunday."},
+      {"s":"B","t":"Do that, then shut down the line on Sunday morning and change it properly."},
+      {"s":"A","t":"While it's off, I'd overhaul the gearbox as well. It's twelve years old."},
+      {"s":"B","t":"Do the overhaul. And if there's a defect in the new belt, I want to hear about it before it's fitted."},
+      {"s":"A","t":"Agreed. After this the whole line goes on preventive maintenance, and we retrofit the newer controller in the spring."}
+    ]
+  },
+  {
+    "title": "Eleven items on the list",
+    "level": "B2",
+    "focus": "Project delivery",
+    "setting": "A new line is nearly finished and the client is counting.",
+    "speakers": {"A":"Rangel","B":"Mr Dimov"},
+    "lines": [
+      {"s":"A","t":"We're ready to commission the new line on the 14th."},
+      {"s":"B","t":"And the punch list?"},
+      {"s":"A","t":"Eleven items. Nine of them are paint and labels."},
+      {"s":"B","t":"The other two?"},
+      {"s":"A","t":"A guard that needs moving, and a cable route the subcontractor did his own way."},
+      {"s":"B","t":"Then the contractor fixes both before I sign off on anything."},
+      {"s":"A","t":"Understood. Can we do the site visit on the 12th?"},
+      {"s":"B","t":"Bring the as-built drawings. The last project was handed over with drawings from the tender."},
+      {"s":"A","t":"These are marked up every week."},
+      {"s":"B","t":"Good. And the old line?"},
+      {"s":"A","t":"We decommission it after two weeks of parallel running, and not a day before."},
+      {"s":"B","t":"Then the handover is the 28th, with every item on that list closed."}
+    ]
+  },
+  {
+    "title": "Rust in the wrong place",
+    "level": "B1",
+    "focus": "Materials",
+    "setting": "A frame that has spent six winters outdoors.",
+    "speakers": {"A":"Simeon","B":"Rangel"},
+    "lines": [
+      {"s":"A","t":"There's corrosion on the frame near the weld."},
+      {"s":"B","t":"How deep?"},
+      {"s":"A","t":"Surface, so far. It's been outside for six winters."},
+      {"s":"B","t":"Which is two winters longer than it was built for."},
+      {"s":"A","t":"Is it still safe?"},
+      {"s":"B","t":"We'll run a stress test before anybody stands on it."},
+      {"s":"A","t":"And if it fails?"},
+      {"s":"B","t":"We replace it. Repeated loading causes fatigue, and fatigue gives no warning before it breaks."},
+      {"s":"A","t":"The new one should be a different material."},
+      {"s":"B","t":"Something durable outdoors, even at a higher price. This one was chosen for a warehouse and it's been living in a field."}
+    ]
+  },
+  {
+    "title": "One in fifty",
+    "level": "B1",
+    "focus": "Quality & standards",
+    "setting": "The checks find nothing and the customer keeps finding something.",
+    "speakers": {"A":"Ivelina","B":"Rangel"},
+    "lines": [
+      {"s":"A","t":"Quality control is checking one in fifty."},
+      {"s":"B","t":"And finding nothing, which is why nobody wants to change it."},
+      {"s":"A","t":"The customer found two faulty units last month."},
+      {"s":"B","t":"Out of how many?"},
+      {"s":"A","t":"Four hundred."},
+      {"s":"B","t":"So one in fifty isn't catching it. Go to one in twenty for a month."},
+      {"s":"A","t":"That's more hours."},
+      {"s":"B","t":"Fewer hours than a recall. And the standard they quote in the contract is stricter than the one we work to."},
+      {"s":"A","t":"I'll get a copy of it today."},
+      {"s":"B","t":"Read it properly, and back up the test results somewhere other than that one laptop."}
+    ]
+  },
+  {
+    "title": "It could have been his hand",
+    "level": "B2",
+    "focus": "Safety",
+    "setting": "Nobody was hurt, which is exactly why it matters.",
+    "speakers": {"A":"Ivelina","B":"Simeon"},
+    "lines": [
+      {"s":"A","t":"Somebody reported a near miss on the press yesterday."},
+      {"s":"B","t":"Nobody was hurt."},
+      {"s":"A","t":"Which is exactly why I want to hear about it today."},
+      {"s":"B","t":"He reached in while it was still moving."},
+      {"s":"A","t":"Then the hazard is the machine, and the habit is the reason."},
+      {"s":"B","t":"He's done it that way for eleven years."},
+      {"s":"A","t":"Eleven years of being lucky. Does that press have a lockout?"},
+      {"s":"B","t":"It has one. Using it costs ninety seconds."},
+      {"s":"A","t":"Then ninety seconds is the rule, and I'll say it to everybody myself."},
+      {"s":"B","t":"The risk assessment for that area is two years old."},
+      {"s":"A","t":"Rewrite it this week, and check that everyone on that line actually wears the PPE we bought in January."}
+    ]
   }
 ]

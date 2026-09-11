@@ -34,5 +34,119 @@
       {"s":"A","t":"What happens now?"},
       {"s":"B","t":"I restore from backup, and I tell everyone what to look for. No lecture."}
     ]
+  },
+  {
+    "title": "Forty minutes",
+    "level": "B2",
+    "focus": "Systems & infrastructure",
+    "setting": "After an outage, an engineer and her manager argue about hardware.",
+    "speakers": {"A":"Iva","B":"Todor"},
+    "lines": [
+      {"s":"A","t":"The outage lasted forty minutes. Every user in Europe."},
+      {"s":"B","t":"What actually broke?"},
+      {"s":"A","t":"The server ran out of disk at two in the morning. A reboot brought it back."},
+      {"s":"B","t":"And the uptime we promise?"},
+      {"s":"A","t":"99.9% gives us 43 minutes a month. We spent all of it on Tuesday."},
+      {"s":"B","t":"Is this the load, or the machine?"},
+      {"s":"A","t":"The machine. Latency had been climbing for a week before it fell over."},
+      {"s":"B","t":"The board keeps asking about the cloud."},
+      {"s":"A","t":"The cloud solves the hardware. It won't clear a cache nobody has looked at since March."},
+      {"s":"B","t":"Then price both, the cloud and staying on-premise with new machines. Numbers, not opinions."}
+    ]
+  },
+  {
+    "title": "The last day of the month",
+    "level": "B2",
+    "focus": "Bugs & support",
+    "setting": "Support and a developer finally catch a fault that only appears on certain dates.",
+    "speakers": {"A":"Rali","B":"Ognyan"},
+    "lines": [
+      {"s":"A","t":"Three people say the app crashes when they open two large files."},
+      {"s":"B","t":"Send me the exact error message, not a description of it."},
+      {"s":"A","t":"Screenshot attached. On my machine it doesn't crash, it freezes."},
+      {"s":"B","t":"Those are two different things, and the difference tells me where to look."},
+      {"s":"A","t":"Is it a known issue?"},
+      {"s":"B","t":"The bug only appears when the date is the last day of the month. We've known since June."},
+      {"s":"A","t":"So why is it still here?"},
+      {"s":"B","t":"Because I could never reproduce the bug on demand. Today is the thirty-first."},
+      {"s":"A","t":"What do you need from me?"},
+      {"s":"B","t":"Raise a ticket with the log file attached, and I'll debug it while the calendar is helping."}
+    ]
+  },
+  {
+    "title": "Never on a Friday",
+    "level": "B2",
+    "focus": "Releases & deployment",
+    "setting": "A developer wants to release a security fix at four o'clock on a Friday.",
+    "speakers": {"A":"Milen","B":"Iva"},
+    "lines": [
+      {"s":"A","t":"The patch is ready. Can I deploy at four?"},
+      {"s":"B","t":"On a Friday?"},
+      {"s":"A","t":"It worked in the staging environment."},
+      {"s":"B","t":"That is the most famous sentence in this industry."},
+      {"s":"A","t":"It's a security fix. It shouldn't sit until Monday."},
+      {"s":"B","t":"Then it's a hotfix and we treat it like one. Who is here until eight?"},
+      {"s":"A","t":"Me and Rali."},
+      {"s":"B","t":"Good. Roll out to 10% first, watch production for an hour, then the rest."},
+      {"s":"A","t":"And if it misbehaves?"},
+      {"s":"B","t":"You roll back first and investigate afterwards. Write the release notes now, while you still remember what changed."}
+    ]
+  },
+  {
+    "title": "Your first week",
+    "level": "B1",
+    "focus": "Development",
+    "setting": "A senior developer explains how the team works to someone who started on Monday.",
+    "speakers": {"A":"Ognyan","B":"Nadya"},
+    "lines": [
+      {"s":"A","t":"Clone the repository and read the setup file before you write anything."},
+      {"s":"B","t":"Where does the work actually happen?"},
+      {"s":"A","t":"The front end is what people see. The back end is where your first month will be."},
+      {"s":"B","t":"What are the rules about commits?"},
+      {"s":"A","t":"Small ones with clear messages. Version control is how we see who changed what, and when."},
+      {"s":"B","t":"Do I merge my own work?"},
+      {"s":"A","t":"After code review. Somebody reads it, then it goes in."},
+      {"s":"B","t":"And my first task?"},
+      {"s":"A","t":"The integration with the payment provider. Their API returns everything in a format we convert ourselves."},
+      {"s":"B","t":"Then I'll read their documentation before I write a line."}
+    ]
+  },
+  {
+    "title": "The weekend nobody is working",
+    "level": "B1",
+    "focus": "Data",
+    "setting": "Two colleagues plan a migration for the weekend.",
+    "speakers": {"A":"Iva","B":"Todor"},
+    "lines": [
+      {"s":"A","t":"We migrate the old records this weekend, when nobody is working."},
+      {"s":"B","t":"How much is coming across?"},
+      {"s":"A","t":"400,000 rows out of the legacy system that runs payroll."},
+      {"s":"B","t":"The one nobody dares touch."},
+      {"s":"A","t":"That one. Everything lands in the new database by Sunday evening."},
+      {"s":"B","t":"Do we back up first?"},
+      {"s":"A","t":"We back up nightly. On Friday I'll take an extra copy and restore it somewhere safe, so we know it works."},
+      {"s":"B","t":"A backup nobody has restored is a hope."},
+      {"s":"A","t":"Which is why I test it. One query on the new database took twelve seconds yesterday."},
+      {"s":"B","t":"Twelve seconds is eleven too many. Fix that before Saturday."}
+    ]
+  },
+  {
+    "title": "Two people, on purpose",
+    "level": "B2",
+    "focus": "Security & access",
+    "setting": "A manager asks what has changed since the company nearly lost its files.",
+    "speakers": {"A":"Todor","B":"Iva"},
+    "lines": [
+      {"s":"A","t":"After last month, the board wants to know what we've changed."},
+      {"s":"B","t":"Two-factor authentication is mandatory on every account now."},
+      {"s":"A","t":"And the email that started it?"},
+      {"s":"B","t":"Phishing. It copied our invoice template exactly, and the malware came as invoice_final.pdf.exe."},
+      {"s":"A","t":"Did anything leave the building?"},
+      {"s":"B","t":"No data breach. We'd have had 72 hours to report one."},
+      {"s":"A","t":"Who can change things now?"},
+      {"s":"B","t":"Two people have admin rights, and that's on purpose. Everyone else gets permissions for what they actually do."},
+      {"s":"A","t":"And the data itself?"},
+      {"s":"B","t":"Encryption in transit and at rest, both. The firewall handles the rest, and nobody sends credentials by email, even internally."}
+    ]
   }
 ]

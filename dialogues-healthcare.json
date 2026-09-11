@@ -34,5 +34,146 @@
       {"s":"A","t":"Exactly. No new staff, no new equipment."},
       {"s":"B","t":"I've been treating a process problem as a resource problem for three years."}
     ]
+  },
+  {
+    "title": "Since Thursday",
+    "level": "B1",
+    "focus": "Patients & symptoms",
+    "setting": "A patient describes four days of illness in the wrong order.",
+    "speakers": {"A":"Mr Kolev","B":"Dr Ilieva"},
+    "lines": [
+      {"s":"A","t":"It started on Thursday. I think I've come down with something."},
+      {"s":"B","t":"Tell me the symptoms in the order they appeared."},
+      {"s":"A","t":"Headache first, then the cough, then a temperature last night."},
+      {"s":"B","t":"Is the cough new, or is it the chronic one we talked about in winter?"},
+      {"s":"A","t":"This one is different. It came on suddenly."},
+      {"s":"B","t":"So it's acute. Your medical history says the same thing happened in February."},
+      {"s":"A","t":"Twice a year, every year."},
+      {"s":"B","t":"That pattern matters more than this week does. Are you allergic to anything?"},
+      {"s":"A","t":"Penicillin, I think. My mother says so."},
+      {"s":"B","t":"Then we check it properly before any diagnosis turns into a prescription. 'I think' isn't good enough with penicillin."}
+    ]
+  },
+  {
+    "title": "Before we guess",
+    "level": "B1",
+    "focus": "Tests & procedures",
+    "setting": "A reading was high twice and the patient has an explanation ready.",
+    "speakers": {"A":"Dr Ilieva","B":"Mr Kolev"},
+    "lines": [
+      {"s":"A","t":"Before we guess at anything, I'd like to run some tests."},
+      {"s":"B","t":"Is something wrong?"},
+      {"s":"A","t":"Probably nothing. Your blood pressure was high both times I took it."},
+      {"s":"B","t":"It's always high at the doctor's."},
+      {"s":"A","t":"That happens to a lot of people. So we'll take your blood pressure at home, twice a day for a week."},
+      {"s":"B","t":"And the rest?"},
+      {"s":"A","t":"A blood test tomorrow morning, before you eat anything."},
+      {"s":"B","t":"My brother had a scan for this."},
+      {"s":"A","t":"A scan answers a different question. We start with the blood test and see what it tells us."},
+      {"s":"B","t":"How long for the results?"},
+      {"s":"A","t":"Four days. If anything needs attention sooner, you'll hear from me the same day."}
+    ]
+  },
+  {
+    "title": "You're due",
+    "level": "B1",
+    "focus": "Prevention",
+    "setting": "A nurse persuades a healthy patient to come in anyway.",
+    "speakers": {"A":"Nurse Vanya","B":"Mrs Todorova"},
+    "lines": [
+      {"s":"A","t":"You're due for two things. A check-up, and the flu vaccination."},
+      {"s":"B","t":"I feel perfectly well."},
+      {"s":"A","t":"That's the best time to come."},
+      {"s":"B","t":"Is the vaccination necessary at my age?"},
+      {"s":"A","t":"At your age it matters more than it did at forty."},
+      {"s":"B","t":"And the check-up?"},
+      {"s":"A","t":"Twenty minutes. Blood pressure, weight, a few questions, and a blood test if anything looks unusual."},
+      {"s":"B","t":"My neighbour says the screening letter is only paperwork."},
+      {"s":"A","t":"Your neighbour's screening letter found something early two years ago, which is why she's still here complaining about paperwork."},
+      {"s":"B","t":"Put me down for Thursday."}
+    ]
+  },
+  {
+    "title": "Finish the course",
+    "level": "B2",
+    "focus": "Treatment",
+    "setting": "A patient who always stops taking medicine as soon as he feels better.",
+    "speakers": {"A":"Dr Marinov","B":"Mr Kolev"},
+    "lines": [
+      {"s":"A","t":"The infection is bacterial, so antibiotics will help."},
+      {"s":"B","t":"For how long?"},
+      {"s":"A","t":"Seven days. The prescription is ready at the desk, and the dosage is on the box: one tablet, three times a day, with food."},
+      {"s":"B","t":"I usually stop when I feel better."},
+      {"s":"A","t":"That's how the next infection becomes harder to treat. Finish the course."},
+      {"s":"B","t":"Any side effects?"},
+      {"s":"A","t":"Some people feel sick for the first two days. If a rash appears, stop and call me."},
+      {"s":"B","t":"And for the pain?"},
+      {"s":"A","t":"A painkiller when you need one. Once it wears off after four hours you can take another."},
+      {"s":"B","t":"The surgeon mentioned an operation."},
+      {"s":"A","t":"If the antibiotics work, nobody has to operate on anything. Surgery is the plan we'd rather not reach for."},
+      {"s":"B","t":"And if you do reach for it?"},
+      {"s":"A","t":"Two nights in hospital, physiotherapy afterwards, and a rehabilitation programme for six weeks. People your age recover well, and the injection you had today buys us time to decide."}
+    ]
+  },
+  {
+    "title": "Bed eleven",
+    "level": "B2",
+    "focus": "Hospital & staff",
+    "setting": "A handover at the end of a shift, with a frightened relative waiting.",
+    "speakers": {"A":"Nurse Vanya","B":"Dr Marinov"},
+    "lines": [
+      {"s":"A","t":"Bed eleven on the ward. He came in at four this morning."},
+      {"s":"B","t":"Who admitted him?"},
+      {"s":"A","t":"His GP sent him in, and triage put him near the front."},
+      {"s":"B","t":"Is he staying, or is he an outpatient?"},
+      {"s":"A","t":"Staying. The consultant sees him at eleven."},
+      {"s":"B","t":"Which consultant?"},
+      {"s":"A","t":"Dr Petrova. She's on call until eight tonight."},
+      {"s":"B","t":"Then she'll be asleep at eleven."},
+      {"s":"A","t":"She's doing the ward round anyway. My shift ends at seven, so I'll hand him over to Rada."},
+      {"s":"B","t":"Tell her about the daughter. She's frightened and she keeps asking everybody the same question."},
+      {"s":"A","t":"I've explained it twice already."},
+      {"s":"B","t":"Explain it a third time, slowly. Bedside manner is most of what she'll remember about this week, and we can't discharge him until somebody at home understands the medication."}
+    ]
+  },
+  {
+    "title": "Somebody call an ambulance",
+    "level": "B1",
+    "focus": "Emergency",
+    "setting": "A man has collapsed in a corridor and two people are deciding what to do.",
+    "speakers": {"A":"Colleague","B":"Nurse Vanya"},
+    "lines": [
+      {"s":"A","t":"He's on the floor in the corridor and he isn't answering me."},
+      {"s":"B","t":"Call an ambulance now. Say the address twice and don't hang up."},
+      {"s":"A","t":"Should I move him?"},
+      {"s":"B","t":"Leave him where he is. Is he breathing?"},
+      {"s":"A","t":"I can't tell."},
+      {"s":"B","t":"Put your ear next to his mouth and watch his chest. Ten seconds."},
+      {"s":"A","t":"Nothing."},
+      {"s":"B","t":"Then I start CPR and you keep the line open. Tell them it's life-threatening, in exactly those words."},
+      {"s":"A","t":"The first aid box is in the kitchen."},
+      {"s":"B","t":"Leave it. Send somebody to the front door so the crew from A&E find us in seconds instead of minutes."}
+    ]
+  },
+  {
+    "title": "The letter that never came",
+    "level": "B2",
+    "focus": "Admin & insurance",
+    "setting": "Six weeks after an appointment, nobody has been in touch.",
+    "speakers": {"A":"Mrs Todorova","B":"Milena"},
+    "lines": [
+      {"s":"A","t":"I was told I'd get a referral six weeks ago."},
+      {"s":"B","t":"Let me open your patient record."},
+      {"s":"A","t":"Nobody has called me."},
+      {"s":"B","t":"The referral went out on the 9th. You're on the waiting list at the hospital, position fourteen."},
+      {"s":"A","t":"Fourteen. How long is that?"},
+      {"s":"B","t":"About three months for that clinic."},
+      {"s":"A","t":"And with health insurance?"},
+      {"s":"B","t":"Three weeks, if your policy covers it. Bring the card and we'll check together."},
+      {"s":"A","t":"I also need something for work."},
+      {"s":"B","t":"A sick note for the days you've already missed, and the doctor signs it today."},
+      {"s":"A","t":"My sick leave runs out at the end of the month."},
+      {"s":"B","t":"Then let's book the follow-up appointment now, before the book fills. And nothing happens here without informed consent, so read whatever you sign."}
+    ]
   }
 ]

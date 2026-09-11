@@ -34,5 +34,138 @@
       {"s":"A","t":"I'll take that back to the team. It might get through faster, actually."},
       {"s":"B","t":"Take your time. The offer stands until the end of the quarter."}
     ]
+  },
+  {
+    "title": "The org chart nobody has seen",
+    "level": "B2",
+    "focus": "Strategy & structure",
+    "setting": "Two directors prepare an answer for the board before December.",
+    "speakers": {"A":"Anton","B":"Stefka"},
+    "lines": [
+      {"s":"A","t":"The board of directors wants an answer before December."},
+      {"s":"B","t":"Which answer? The merger, or the restructure?"},
+      {"s":"A","t":"Both are on the table. The acquisition would give us 9% market share overnight."},
+      {"s":"B","t":"And two headquarters, four hundred kilometres apart."},
+      {"s":"A","t":"That's the part nobody ever costs properly."},
+      {"s":"B","t":"Have you drawn the new org chart?"},
+      {"s":"A","t":"Twice. Both versions have people reporting to two managers."},
+      {"s":"B","t":"Then it isn't finished. What do we tell the stakeholders?"},
+      {"s":"A","t":"That we're looking at growth, which is true, and that nobody is being downsized, which I hope is true."},
+      {"s":"B","t":"Leave the second one out. Our competitive advantage is that people stay here nine years. Say what you know, and say when you'll know the rest."}
+    ]
+  },
+  {
+    "title": "Four months in",
+    "level": "B2",
+    "focus": "HR & people",
+    "setting": "HR and the operations director go through the people decisions due this month.",
+    "speakers": {"A":"Lily","B":"Anton"},
+    "lines": [
+      {"s":"A","t":"Nadya's probation period ends on the 30th."},
+      {"s":"B","t":"Her line manager says she's the best hire this year."},
+      {"s":"A","t":"Then write it in the performance review, because she'll read it."},
+      {"s":"B","t":"What about the job description? She's doing more than it says."},
+      {"s":"A","t":"Rewrite it now, before somebody argues about pay later."},
+      {"s":"B","t":"And the headcount for next year?"},
+      {"s":"A","t":"Two more, if the budget holds. One of them should be a direct report for Kiril."},
+      {"s":"B","t":"Kiril has eleven. That's a queue, not a team."},
+      {"s":"A","t":"Which brings us to succession planning, because he's the only person who knows the Varna contracts."},
+      {"s":"B","t":"Then fix the onboarding for the next two. Last year we paid severance to somebody we should have promoted, and I'd rather not repeat that."}
+    ]
+  },
+  {
+    "title": "In house or not",
+    "level": "B2",
+    "focus": "Operations",
+    "setting": "A director and a project lead decide what the company should stop doing itself.",
+    "speakers": {"A":"Anton","B":"Georgi"},
+    "lines": [
+      {"s":"A","t":"Procurement wants to run a tender for the cleaning contract."},
+      {"s":"B","t":"For cleaning? That's three months of paperwork."},
+      {"s":"A","t":"It's the rule above forty thousand."},
+      {"s":"B","t":"Fine. And the software support, do we outsource that too?"},
+      {"s":"A","t":"That one I'd keep in house."},
+      {"s":"B","t":"Because of cost?"},
+      {"s":"A","t":"Because of speed. A vendor with a service level agreement answers in four hours. Our own person answers in four minutes."},
+      {"s":"B","t":"Four minutes when he's here."},
+      {"s":"A","t":"Which is the honest argument against me, and it's why we're having this conversation."},
+      {"s":"B","t":"Write both options down with real numbers. Let the tender settle the cleaning while we argue about the software."}
+    ]
+  },
+  {
+    "title": "Two more small things",
+    "level": "B2",
+    "focus": "Projects",
+    "setting": "A client keeps adding requests that are each too small to refuse.",
+    "speakers": {"A":"Georgi","B":"Stefka"},
+    "lines": [
+      {"s":"A","t":"The client has asked for two more small things."},
+      {"s":"B","t":"How small?"},
+      {"s":"A","t":"Two days each. That's the fourth 'small thing' this month."},
+      {"s":"B","t":"Then it's scope creep and we name it out loud."},
+      {"s":"A","t":"The scope was agreed in March."},
+      {"s":"B","t":"Go back to the business case. If the extras serve the same goal, price them and move a milestone. If they don't, they wait."},
+      {"s":"A","t":"They don't. They're somebody's personal preference."},
+      {"s":"B","t":"Then say so politely and show them the roadmap."},
+      {"s":"A","t":"And the deliverable for the 30th?"},
+      {"s":"B","t":"Unchanged. Two small things do not move a date that eleven people are planning around."}
+    ]
+  },
+  {
+    "title": "Against what",
+    "level": "B1",
+    "focus": "Performance",
+    "setting": "Sales are down and the board will want a reason.",
+    "speakers": {"A":"Stefka","B":"Anton"},
+    "lines": [
+      {"s":"A","t":"Sales are down 6% on last year."},
+      {"s":"B","t":"Against what benchmark?"},
+      {"s":"A","t":"Against our own target, which we set in a very good month."},
+      {"s":"B","t":"And against the market?"},
+      {"s":"A","t":"The market is down 11%."},
+      {"s":"B","t":"So the market is having a worse year than we are, and the target was the optimistic part."},
+      {"s":"A","t":"The board will still ask why we missed it."},
+      {"s":"B","t":"Then show both numbers on the same page. One KPI with nothing to compare it to tells nobody anything."},
+      {"s":"A","t":"And next year's target?"},
+      {"s":"B","t":"Set it against what the market actually does. Our best quarter ever is a bad place to start from, and anyone measured that way underperforms on paper."}
+    ]
+  },
+  {
+    "title": "Nobody reads it",
+    "level": "B2",
+    "focus": "Culture & comms",
+    "setting": "Planning the company meeting, and what people will really turn up for.",
+    "speakers": {"A":"Lily","B":"Stefka"},
+    "lines": [
+      {"s":"A","t":"The town hall is on the 12th. Do you want the mission statement on the first slide?"},
+      {"s":"B","t":"Does anybody read it?"},
+      {"s":"A","t":"Honestly, no. People quote the coffee machine rule far more often."},
+      {"s":"B","t":"Then that's the corporate culture. The real one."},
+      {"s":"A","t":"The agenda has hybrid work on it. That's what they'll come for."},
+      {"s":"B","t":"Then put it first and give it twenty minutes."},
+      {"s":"A","t":"I need sign-off from you before the agenda goes out."},
+      {"s":"B","t":"You have it. Who's taking the minutes?"},
+      {"s":"A","t":"Nadya. And if anyone asks something we can't answer, I'll escalate it and reply within the week."},
+      {"s":"B","t":"Say that out loud in the room. One honest 'I don't know yet' buys more buy-in than a slide with our values on it."}
+    ]
+  },
+  {
+    "title": "The number you'd walk away at",
+    "level": "B2",
+    "focus": "Negotiation",
+    "setting": "A price has come back lower than asked and a counteroffer is due.",
+    "speakers": {"A":"Anton","B":"Stefka"},
+    "lines": [
+      {"s":"A","t":"They came back at eighteen. We asked twenty-two."},
+      {"s":"B","t":"What's your counteroffer?"},
+      {"s":"A","t":"Twenty-one, with the training included."},
+      {"s":"B","t":"Before you send it, tell me the number you'd walk away at."},
+      {"s":"A","t":"Nineteen."},
+      {"s":"B","t":"Then say nineteen out loud now, to me, so you don't discover it at half past six on a Friday."},
+      {"s":"A","t":"What's our leverage?"},
+      {"s":"B","t":"They've told two of their own clients we start in April. That's leverage, and it disappears the day they sign with somebody else."},
+      {"s":"A","t":"So do I push, or do I close the deal?"},
+      {"s":"B","t":"Negotiate the training, hold the price, and give them something they can announce. A win-win that both sides can explain internally closes faster than a better number."}
+    ]
   }
 ]

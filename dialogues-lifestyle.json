@@ -34,5 +34,165 @@
       {"s":"A","t":"And if people are offended?"},
       {"s":"B","t":"Then you'll know. My guess is nobody will be, and that will annoy you."}
     ]
+  },
+  {
+    "title": "Day nine",
+    "level": "B1",
+    "focus": "Routines & habits",
+    "setting": "Nine good days, then a weekend.",
+    "speakers": {"A":"Dessi","B":"Yordan"},
+    "lines": [
+      {"s":"A","t":"Nine days of running, then I missed Thursday and Friday."},
+      {"s":"B","t":"So you've fallen off the wagon."},
+      {"s":"A","t":"Completely."},
+      {"s":"B","t":"After two days? That's a weekend."},
+      {"s":"A","t":"It always starts like this."},
+      {"s":"B","t":"Then get back on track on Monday and stop counting from one."},
+      {"s":"A","t":"The counting is what keeps me going."},
+      {"s":"B","t":"Until it doesn't. Build a habit around something already fixed in your daily routine, like coffee."},
+      {"s":"A","t":"Run before coffee, you mean."},
+      {"s":"B","t":"And stick to it on the bad days by going for ten minutes instead of forty. Ten minutes still counts."}
+    ]
+  },
+  {
+    "title": "Midnight is not late",
+    "level": "B2",
+    "focus": "Rest & sleep",
+    "setting": "Somebody who has described himself as a night owl for twenty years.",
+    "speakers": {"A":"Yordan","B":"Dessi"},
+    "lines": [
+      {"s":"A","t":"I'm a night owl. I always have been."},
+      {"s":"B","t":"What time do you actually stop working?"},
+      {"s":"A","t":"Midnight, usually. Then I can't sleep until two."},
+      {"s":"B","t":"The screen at midnight is doing half of that."},
+      {"s":"A","t":"I oversleep every Saturday to make up for it."},
+      {"s":"B","t":"And you feel worse on Sunday."},
+      {"s":"A","t":"Always."},
+      {"s":"B","t":"Have a lie-in of two hours and you're fine. Five hours moves your whole week."},
+      {"s":"A","t":"So what do I do?"},
+      {"s":"B","t":"Wind down for an hour. Something boring, something on paper. You can't unwind with a laptop open."},
+      {"s":"A","t":"That's the sleep hygiene thing everybody talks about."},
+      {"s":"B","t":"It's dull and it works. Get an early night twice this week and see whether you feel well rested by Friday."},
+      {"s":"A","t":"And the downtime at weekends?"},
+      {"s":"B","t":"Protect it. You can't recharge in the gaps between things, and you've been trying to for a year."}
+    ]
+  },
+  {
+    "title": "Four hours and eleven minutes",
+    "level": "B1",
+    "focus": "Digital life",
+    "setting": "The weekly screen report arrives and it is worse than expected.",
+    "speakers": {"A":"Dessi","B":"Yordan"},
+    "lines": [
+      {"s":"A","t":"My phone says four hours and eleven minutes yesterday."},
+      {"s":"B","t":"Of screen time?"},
+      {"s":"A","t":"Outside work. That's the frightening part."},
+      {"s":"B","t":"Where does it go?"},
+      {"s":"A","t":"News, mostly. At night, in bed."},
+      {"s":"B","t":"That's doomscrolling, and it has a name because everybody does it."},
+      {"s":"A","t":"Should I do a digital detox? A friend went a week without a phone."},
+      {"s":"B","t":"A week is a holiday. Turn off every notification except calls, and that's most of the battle won."},
+      {"s":"A","t":"Even messages?"},
+      {"s":"B","t":"Especially messages. Then unplug after ten at night and leave the phone in another room, so picking it up is a decision instead of a reflex."}
+    ]
+  },
+  {
+    "title": "You said yes again",
+    "level": "B2",
+    "focus": "Wellbeing",
+    "setting": "A fourth weekend in a row given away to other people.",
+    "speakers": {"A":"Yordan","B":"Dessi"},
+    "lines": [
+      {"s":"A","t":"You said yes to the Saturday thing."},
+      {"s":"B","t":"I know."},
+      {"s":"A","t":"That's the fourth weekend in a row."},
+      {"s":"B","t":"I feel overwhelmed just reading my own calendar."},
+      {"s":"A","t":"Then you have to learn to say no, and say it early."},
+      {"s":"B","t":"It sounds rude when I say it."},
+      {"s":"A","t":"'I can't this time' is a complete sentence. Nobody has ever needed the reason."},
+      {"s":"B","t":"I don't even have the headspace to work out what I want."},
+      {"s":"A","t":"Which is why you set boundaries in advance. One weekend a month is yours before anybody asks for it."},
+      {"s":"B","t":"Me time sounds so self-indulgent."},
+      {"s":"A","t":"Call it whatever you like. Self-care is a silly phrase for something people our age need in order to keep working."},
+      {"s":"B","t":"So I make time for myself, slow down, and stop trying to manage stress by adding things to the list."}
+    ]
+  },
+  {
+    "title": "We cancel every time",
+    "level": "B1",
+    "focus": "Free time",
+    "setting": "Two friends who arrange things and then don't do them.",
+    "speakers": {"A":"Dessi","B":"Yordan"},
+    "lines": [
+      {"s":"A","t":"We make plans and then somebody cancels them."},
+      {"s":"B","t":"Usually me."},
+      {"s":"A","t":"Usually both of us."},
+      {"s":"B","t":"It's easier to cancel plans than to explain that I'm tired."},
+      {"s":"A","t":"Then let's make it smaller. Coffee on Saturday morning, one hour."},
+      {"s":"B","t":"That I would keep."},
+      {"s":"A","t":"And I want to catch up with Rada properly, in person."},
+      {"s":"B","t":"Then see her without the children for once. An hour of quality time beats an afternoon of shouting."},
+      {"s":"A","t":"I've also been thinking about picking up a hobby again."},
+      {"s":"B","t":"The pottery?"},
+      {"s":"A","t":"Or I could volunteer at the shelter on Sundays. It's the one place I socialise where nobody is checking a phone."}
+    ]
+  },
+  {
+    "title": "Two hundred leva in a box",
+    "level": "B1",
+    "focus": "Home & money",
+    "setting": "Three weekends of clearing out, and what came of it.",
+    "speakers": {"A":"Yordan","B":"Dessi"},
+    "lines": [
+      {"s":"A","t":"I sold four boxes of things I'd forgotten I owned."},
+      {"s":"B","t":"How much?"},
+      {"s":"A","t":"Two hundred leva. And the flat feels twice the size."},
+      {"s":"B","t":"So the declutter worked."},
+      {"s":"A","t":"It started as a spring clean and it took three weekends."},
+      {"s":"B","t":"What are you doing with the money?"},
+      {"s":"A","t":"Saving up for a proper desk. The kitchen table is destroying my back."},
+      {"s":"B","t":"Does the translation work still bring anything in?"},
+      {"s":"A","t":"It's a side hustle rather than a salary. Three hundred a month, sometimes."},
+      {"s":"B","t":"That's enough to live within your means without counting every coffee."}
+    ]
+  },
+  {
+    "title": "An hour each way",
+    "level": "B2",
+    "focus": "Work & life",
+    "setting": "Ten hours a week on a bus, and an offer to move.",
+    "speakers": {"A":"Dessi","B":"Yordan"},
+    "lines": [
+      {"s":"A","t":"The commute is an hour each way now."},
+      {"s":"B","t":"Ten hours a week."},
+      {"s":"A","t":"I work from home on Tuesdays and Thursdays, which helps."},
+      {"s":"B","t":"Does it? You start at seven on those days."},
+      {"s":"A","t":"Because I can."},
+      {"s":"B","t":"And you never switch off, because the laptop lives in the kitchen."},
+      {"s":"A","t":"I take a break at lunch."},
+      {"s":"B","t":"You eat at the desk. I've watched you do it."},
+      {"s":"A","t":"They've offered me the Varna office."},
+      {"s":"B","t":"Would you relocate?"},
+      {"s":"A","t":"Maybe. It takes a year to settle in anywhere, and I'd rather spend that year settling in than sitting on a bus."}
+    ]
+  },
+  {
+    "title": "Say it out loud",
+    "level": "B2",
+    "focus": "Growth",
+    "setting": "Eleven resolutions in January and none of them left by March.",
+    "speakers": {"A":"Yordan","B":"Dessi"},
+    "lines": [
+      {"s":"A","t":"I set goals every January and forget them by March."},
+      {"s":"B","t":"How many?"},
+      {"s":"A","t":"Eleven, this year."},
+      {"s":"B","t":"There's the problem. Eleven goals is a wish list."},
+      {"s":"A","t":"So one?"},
+      {"s":"B","t":"One that changes something, and one that frightens you slightly."},
+      {"s":"A","t":"The presentation in English at the conference."},
+      {"s":"B","t":"That's exactly it. You'd step out of your comfort zone, badly, in front of people."},
+      {"s":"A","t":"Which is what I'm afraid of."},
+      {"s":"B","t":"Personal growth is mostly a series of things you did badly the first time. Say yes now, while it's still far away."}
+    ]
   }
 ]

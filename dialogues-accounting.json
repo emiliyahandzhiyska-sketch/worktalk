@@ -34,5 +34,165 @@
       {"s":"A","t":"So the bank balance is actually fine."},
       {"s":"B","t":"Higher than November. Always ask what moved that isn't cash."}
     ]
+  },
+  {
+    "title": "Both sides, every time",
+    "level": "B1",
+    "focus": "Bookkeeping",
+    "setting": "A junior accountant has recorded the same thing twice.",
+    "speakers": {"A":"Rumen","B":"Vesela"},
+    "lines": [
+      {"s":"A","t":"I've posted an entry twice by mistake."},
+      {"s":"B","t":"Then post a reversing journal entry. Never delete anything in the general ledger."},
+      {"s":"A","t":"Why not simply remove it?"},
+      {"s":"B","t":"Because the history has to show what happened. Bookkeeping is a record, and records don't get tidied."},
+      {"s":"A","t":"Which side does the payment go on?"},
+      {"s":"B","t":"Money arriving in the bank account is a debit there. The credit goes to the customer's account."},
+      {"s":"A","t":"Double-entry still confuses me after three months."},
+      {"s":"B","t":"Everything is written twice, in two places, and the two have to agree. That's the whole idea."},
+      {"s":"A","t":"And where do I find the right account code?"},
+      {"s":"B","t":"The chart of accounts. Print it, keep it beside you, and in a month you'll know the ones you use daily."},
+      {"s":"A","t":"How many are there?"},
+      {"s":"B","t":"Two hundred. You'll use eleven."}
+    ]
+  },
+  {
+    "title": "Close by the fifth",
+    "level": "B2",
+    "focus": "Reporting",
+    "setting": "The monthly accounts always arrive too late to be useful.",
+    "speakers": {"A":"Vesela","B":"Rumen"},
+    "lines": [
+      {"s":"A","t":"Month-end close has to finish by the fifth working day."},
+      {"s":"B","t":"We've never managed it before the ninth."},
+      {"s":"A","t":"Which is why the management accounts arrive when nobody can act on them."},
+      {"s":"B","t":"What holds it up?"},
+      {"s":"A","t":"The trial balance. Two cost centres never post on time."},
+      {"s":"B","t":"Marketing and the Varna site."},
+      {"s":"A","t":"Then chase those two on the second, instead of the seventh."},
+      {"s":"B","t":"And the variance report?"},
+      {"s":"A","t":"Plan against actual, by cost centre, on one page. Anything over 10% gets a sentence explaining it."},
+      {"s":"B","t":"Gross profit is up and net profit is flat again."},
+      {"s":"A","t":"That's the line the owner stops at. EBITDA looks kinder, and he'll ask why we show both."},
+      {"s":"B","t":"Because the interest on the loan is real money."},
+      {"s":"A","t":"Exactly. Capex belongs in the year-end report. Opex belongs in every single month."}
+    ]
+  },
+  {
+    "title": "Eleven leva",
+    "level": "B1",
+    "focus": "Reconciliation",
+    "setting": "A small difference that somebody wants to round away.",
+    "speakers": {"A":"Rumen","B":"Vesela"},
+    "lines": [
+      {"s":"A","t":"The bank reconciliation is out by eleven leva."},
+      {"s":"B","t":"In which direction?"},
+      {"s":"A","t":"We show eleven more than the bank does."},
+      {"s":"B","t":"Then something was recorded twice, or a fee wasn't recorded at all."},
+      {"s":"A","t":"It's eleven leva. Can I not just adjust it?"},
+      {"s":"B","t":"No. A discrepancy of eleven today is a discrepancy of eleven thousand in June, and you'll have no idea where it began."},
+      {"s":"A","t":"So I go through the statement line by line."},
+      {"s":"B","t":"Start with last week, and look for two identical amounts."},
+      {"s":"A","t":"Found it. A card fee posted twice."},
+      {"s":"B","t":"Good. Reconcile it properly and we balance the books without anybody inventing a number."}
+    ]
+  },
+  {
+    "title": "Ninety days and counting",
+    "level": "B2",
+    "focus": "Receivables",
+    "setting": "Three customers have stopped paying and one of them has a point.",
+    "speakers": {"A":"Vesela","B":"Rumen"},
+    "lines": [
+      {"s":"A","t":"Print the aged debtors report before the meeting."},
+      {"s":"B","t":"Three customers are over ninety days."},
+      {"s":"A","t":"Which is where credit control stops being polite."},
+      {"s":"B","t":"One of them disputes the amount. He says we charged for a delivery he refused."},
+      {"s":"A","t":"If he's right, issue a credit note today and stop arguing about it."},
+      {"s":"B","t":"And the other two?"},
+      {"s":"A","t":"Phone calls. An email is very easy to leave unopened."},
+      {"s":"B","t":"The one from Ruse looks like a bad debt."},
+      {"s":"A","t":"It probably is. We don't write it off while there's still an address and a phone number."},
+      {"s":"B","t":"I'll update the sales ledger after each call so the report is true tomorrow morning."}
+    ]
+  },
+  {
+    "title": "The insurance paid in January",
+    "level": "B2",
+    "focus": "Adjustments",
+    "setting": "Costs that happened in one month and were paid in another.",
+    "speakers": {"A":"Rumen","B":"Vesela"},
+    "lines": [
+      {"s":"A","t":"We paid the whole year's insurance in January."},
+      {"s":"B","t":"Then it's a prepayment. One twelfth belongs to each month."},
+      {"s":"A","t":"So January doesn't carry the whole cost."},
+      {"s":"B","t":"On a cash basis it would. We use accruals, so a cost sits in the month it covers."},
+      {"s":"A","t":"What about the electricity bill that hasn't arrived?"},
+      {"s":"B","t":"Put in an accrual for the estimate. The electricity was used in March whether the paper turned up or not."},
+      {"s":"A","t":"And the van?"},
+      {"s":"B","t":"Depreciation over five years. The software licence gets amortisation over three."},
+      {"s":"A","t":"The court case the lawyer mentioned?"},
+      {"s":"B","t":"A provision, if it's likely and we can estimate it. Merely possible isn't enough."},
+      {"s":"A","t":"And the old stock in the back room?"},
+      {"s":"B","t":"A write-down to what it's actually worth. Whatever is left we carry forward into next year and look at it again."}
+    ]
+  },
+  {
+    "title": "What we own by Friday",
+    "level": "B1",
+    "focus": "Assets & liabilities",
+    "setting": "The bank has asked for a list of everything the company owns and owes.",
+    "speakers": {"A":"Vesela","B":"Rumen"},
+    "lines": [
+      {"s":"A","t":"The bank wants a list of what we own and what we owe."},
+      {"s":"B","t":"Start with the fixed assets?"},
+      {"s":"A","t":"Vans, machines, the kitchen. Everything we use for years."},
+      {"s":"B","t":"At what value?"},
+      {"s":"A","t":"Net book value. Original cost, minus the depreciation so far."},
+      {"s":"B","t":"And the stock?"},
+      {"s":"A","t":"That's a current asset, and the inventory valuation has to be honest. Nobody is paying full price for those 2019 boxes."},
+      {"s":"B","t":"What counts as a current liability?"},
+      {"s":"A","t":"Anything due within a year. Supplier invoices, the VAT, the short part of the loan."},
+      {"s":"B","t":"Then I'll build both lists from the ledger and mark anything I'm unsure about instead of guessing."}
+    ]
+  },
+  {
+    "title": "Forty leva and a coat pocket",
+    "level": "B1",
+    "focus": "Payables",
+    "setting": "The cash box is short and somebody has the receipt at home.",
+    "speakers": {"A":"Rumen","B":"Vesela"},
+    "lines": [
+      {"s":"A","t":"Petty cash is forty leva short."},
+      {"s":"B","t":"Since when?"},
+      {"s":"A","t":"Since somebody bought biscuits and left the receipt in a coat pocket."},
+      {"s":"B","t":"Then the coat comes back, or the money does. Either is fine."},
+      {"s":"A","t":"It's forty leva."},
+      {"s":"B","t":"It's forty leva every month for a year. Nobody notices until the auditor does."},
+      {"s":"A","t":"Do I reimburse him without the receipt?"},
+      {"s":"B","t":"Once, with a note saying why. After that, no receipt, no payment."},
+      {"s":"A","t":"And the supplier invoices?"},
+      {"s":"B","t":"Into the purchase ledger the day they arrive. A bill you haven't recorded is a surprise waiting for you."}
+    ]
+  },
+  {
+    "title": "Show me how you got there",
+    "level": "B2",
+    "focus": "Audit & compliance",
+    "setting": "An auditor picks one number and follows it backwards.",
+    "speakers": {"A":"Boris","B":"Vesela"},
+    "lines": [
+      {"s":"A","t":"This figure here. Show me how you reached it."},
+      {"s":"B","t":"There's an audit trail behind every number in that report."},
+      {"s":"A","t":"Then take me from the total back to a single invoice."},
+      {"s":"B","t":"Total, ledger, journal entry, invoice. Four steps, and the supporting documentation is scanned."},
+      {"s":"A","t":"What about the eleven leva difference in March?"},
+      {"s":"B","t":"Below materiality, and documented anyway, because I'd rather explain it now than remember it in a year."},
+      {"s":"A","t":"That's the right answer."},
+      {"s":"B","t":"We follow the accounting standards on the accruals and I can show you the working for each one."},
+      {"s":"A","t":"And the statutory accounts?"},
+      {"s":"B","t":"Filed on the 28th, three weeks early, for the first time in this company's history."},
+      {"s":"A","t":"Then this will be a short audit."}
+    ]
   }
 ]

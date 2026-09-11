@@ -34,5 +34,129 @@
       {"s":"A","t":"You really think we can do this."},
       {"s":"B","t":"I think underdogs play better without pressure. Go and enjoy it."}
     ]
+  },
+  {
+    "title": "Six weeks in",
+    "level": "B1",
+    "focus": "Gym & fitness",
+    "setting": "Somebody who has been training for six weeks and can't feel the difference.",
+    "speakers": {"A":"Ivan","B":"Petya"},
+    "lines": [
+      {"s":"A","t":"Six weeks with a personal trainer and I still can't run for the bus."},
+      {"s":"B","t":"How many times a week are you working out?"},
+      {"s":"A","t":"Twice, more or less."},
+      {"s":"B","t":"Twice is where you keep fit. Three times is where you get in shape."},
+      {"s":"A","t":"I was badly out of shape in January."},
+      {"s":"B","t":"You were, and you aren't now. Your endurance has doubled and you haven't noticed."},
+      {"s":"A","t":"It doesn't feel like it."},
+      {"s":"B","t":"It never does from the inside. How many reps on the last set?"},
+      {"s":"A","t":"Twelve. In January it was six."},
+      {"s":"B","t":"There's your answer. Do you warm up properly?"},
+      {"s":"A","t":"Five minutes, usually."},
+      {"s":"B","t":"Ten, and cool down for five afterwards. That's where people your age stop getting injured."},
+      {"s":"A","t":"And if I want to build muscle rather than only lift weights?"},
+      {"s":"B","t":"Heavier, fewer reps, and eat properly. Stamina comes from the running, and the two don't fight each other."}
+    ]
+  },
+  {
+    "title": "Two-all at eighty-nine",
+    "level": "B1",
+    "focus": "Results & scores",
+    "setting": "Two friends the morning after a match that ended level.",
+    "speakers": {"A":"Ivan","B":"Mitko"},
+    "lines": [
+      {"s":"A","t":"Did you see it?"},
+      {"s":"B","t":"Two-all, I heard."},
+      {"s":"A","t":"They equalised in the eighty-ninth minute."},
+      {"s":"B","t":"So it's a draw."},
+      {"s":"A","t":"A draw that feels like a loss. We were the underdog and we nearly won."},
+      {"s":"B","t":"Better than last month, when they thrashed you five-nil."},
+      {"s":"A","t":"Don't remind me."},
+      {"s":"B","t":"Where does that leave the league table?"},
+      {"s":"A","t":"Fourth. Two points behind, and the runner-up place is still possible."},
+      {"s":"B","t":"Who scored?"},
+      {"s":"A","t":"Kolev, twice. That's his personal best for a season, and it's only March."},
+      {"s":"B","t":"Then a narrow win on Saturday and you beat them on goal difference."}
+    ]
+  },
+  {
+    "title": "I gave it up at nineteen",
+    "level": "B1",
+    "focus": "Talking about sport",
+    "setting": "One friend tries to get another back into a sport she stopped playing.",
+    "speakers": {"A":"Petya","B":"Ivan"},
+    "lines": [
+      {"s":"A","t":"Did you ever play anything seriously?"},
+      {"s":"B","t":"Volleyball, until I was nineteen. Then I gave it up."},
+      {"s":"A","t":"Why?"},
+      {"s":"B","t":"University, a job, the usual reasons people stop."},
+      {"s":"A","t":"Would you take up a sport again?"},
+      {"s":"B","t":"At forty-three? Everybody there would be twenty."},
+      {"s":"A","t":"There's a league on Tuesdays where the youngest player is thirty-eight."},
+      {"s":"B","t":"That changes it."},
+      {"s":"A","t":"It's a level playing field once nobody can jump any more."},
+      {"s":"B","t":"Then send me the details before I talk myself out of it."}
+    ]
+  },
+  {
+    "title": "Nine men and thirty minutes",
+    "level": "B2",
+    "focus": "Team sports",
+    "setting": "Planning for an away match with two players missing.",
+    "speakers": {"A":"Stamen","B":"Rosi"},
+    "lines": [
+      {"s":"A","t":"Who's in the line-up on Saturday?"},
+      {"s":"B","t":"The same eleven, if Kolev is fit."},
+      {"s":"A","t":"And the rest of the squad?"},
+      {"s":"B","t":"Two are out injured, one is suspended after being sent off last week."},
+      {"s":"A","t":"That foul was never a red card."},
+      {"s":"B","t":"The referee thought otherwise and nobody asked us."},
+      {"s":"A","t":"It's an away game, so we'll be under pressure from kick-off."},
+      {"s":"B","t":"Without home advantage, and their ground holds twelve thousand."},
+      {"s":"A","t":"Then we train hard on Thursday, and I'll coach the back four myself."},
+      {"s":"B","t":"And if it goes to extra time?"},
+      {"s":"A","t":"Then the fitness work in January pays for itself."},
+      {"s":"B","t":"There's a warm-up match on Tuesday against the under-21s."},
+      {"s":"A","t":"Use it. Everybody plays forty-five minutes and nobody gets hurt. Keep it level until half-time and the crowd turns on them."},
+      {"s":"B","t":"I'll confirm the fixture with them this afternoon."}
+    ]
+  },
+  {
+    "title": "Three weeks, not three days",
+    "level": "B1",
+    "focus": "Health & injury",
+    "setting": "The same leg, injured twice in two months.",
+    "speakers": {"A":"Ivan","B":"Petya"},
+    "lines": [
+      {"s":"A","t":"I pulled a muscle on Saturday."},
+      {"s":"B","t":"Which one?"},
+      {"s":"A","t":"The back of the thigh. And I sprained my ankle in February."},
+      {"s":"B","t":"Same leg?"},
+      {"s":"A","t":"Same leg."},
+      {"s":"B","t":"Then you aren't resting enough. How many rest days a week?"},
+      {"s":"A","t":"One, if I remember."},
+      {"s":"B","t":"Two, and they go in the calendar like a meeting. People who train seven days burn out by June."},
+      {"s":"A","t":"How long am I out for?"},
+      {"s":"B","t":"Three weeks, and you'll want to come back after ten days. Recover properly or you'll be out injured again in April."}
+    ]
+  },
+  {
+    "title": "The season ticket",
+    "level": "B1",
+    "focus": "Watching & fans",
+    "setting": "One friend goes to the stadium, the other watches at home.",
+    "speakers": {"A":"Mitko","B":"Ivan"},
+    "lines": [
+      {"s":"A","t":"I've had a season ticket for nine years."},
+      {"s":"B","t":"Even when they were terrible?"},
+      {"s":"A","t":"Especially then. You support a team, you don't rent it."},
+      {"s":"B","t":"I usually just catch the game on television."},
+      {"s":"A","t":"It's a different thing in the stadium. You can hear what the players shout at each other."},
+      {"s":"B","t":"And when you can't go?"},
+      {"s":"A","t":"I watch the highlights at eleven and pretend I don't know the result."},
+      {"s":"B","t":"Does that work?"},
+      {"s":"A","t":"Somebody always texts me. Every supporter has one friend who ruins it."},
+      {"s":"B","t":"Then put your phone away for ninety minutes, the way you do in the stadium."}
+    ]
   }
 ]

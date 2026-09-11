@@ -34,5 +34,109 @@
       {"s":"A","t":"Perfect. That's evergreen content, we can use it all year."},
       {"s":"B","t":"I'll have a draft by Wednesday so you can review it."}
     ]
+  },
+  {
+    "title": "Who it's really for",
+    "level": "B2",
+    "focus": "Strategy",
+    "setting": "A founder and a marketer narrow down an audience that is far too wide.",
+    "speakers": {"A":"Denitsa","B":"Silvia"},
+    "lines": [
+      {"s":"A","t":"Our target audience is small business owners."},
+      {"s":"B","t":"In Bulgaria that's 300,000 people. Who is it really for?"},
+      {"s":"A","t":"Owners of firms with five to twenty staff who still do their own invoicing."},
+      {"s":"B","t":"That's a niche, and now we can write to them."},
+      {"s":"A","t":"Doesn't that limit us?"},
+      {"s":"B","t":"It makes you findable. What's their pain point?"},
+      {"s":"A","t":"Spending Sunday evening on paperwork."},
+      {"s":"B","t":"Then there's your value proposition in one sentence: get your Sunday back."},
+      {"s":"A","t":"And our unique selling point?"},
+      {"s":"B","t":"Nobody else here connects to the Bulgarian tax system. That's the positioning, and it's a fact rather than an adjective."},
+      {"s":"A","t":"Where does brand voice come into it?"},
+      {"s":"B","t":"In how you say all of it. Do the market research first, follow one customer journey from advert to paid invoice, and write the way they talk at that desk on a Sunday. Brand awareness comes from being recognisable, and you can't be recognisable to everyone."}
+    ]
+  },
+  {
+    "title": "Two hundred clicks, three sign-ups",
+    "level": "B2",
+    "focus": "Ads & funnels",
+    "setting": "The advertising is working and the page behind it is not.",
+    "speakers": {"A":"Emil","B":"Silvia"},
+    "lines": [
+      {"s":"A","t":"The paid ads are working. Two hundred clicks last week."},
+      {"s":"B","t":"And three sign-ups."},
+      {"s":"A","t":"The click-through rate is up 40%."},
+      {"s":"B","t":"So the advert is doing its job and the landing page is losing them."},
+      {"s":"A","t":"That page has everything on it."},
+      {"s":"B","t":"That's the problem. One page, one goal. What's the call to action?"},
+      {"s":"A","t":"'Learn more'."},
+      {"s":"B","t":"'Learn more' asks for nothing. Try 'See your first invoice in two minutes'."},
+      {"s":"A","t":"I'll run A/B testing on the two."},
+      {"s":"B","t":"Do that, and measure the conversion rate rather than the clicks. Lead generation that stops at the click costs money and returns nothing."},
+      {"s":"A","t":"Then I'll report the return on investment per sign-up, and we'll see which part of the sales funnel is broken."}
+    ]
+  },
+  {
+    "title": "Forty people left",
+    "level": "B1",
+    "focus": "Email marketing",
+    "setting": "An email went out and part of the list went away.",
+    "speakers": {"A":"Emil","B":"Silvia"},
+    "lines": [
+      {"s":"A","t":"Forty people clicked unsubscribe after the last newsletter."},
+      {"s":"B","t":"Out of how many?"},
+      {"s":"A","t":"Two thousand. The open rate was 19%."},
+      {"s":"B","t":"That's survivable. What was in it?"},
+      {"s":"A","t":"Three product announcements."},
+      {"s":"B","t":"There's your answer. They joined for a checklist and we sent them a press release."},
+      {"s":"A","t":"The lead magnet was 'Ten invoice mistakes'."},
+      {"s":"B","t":"Then keep writing about invoice mistakes. One useful thing, one link, once a fortnight."},
+      {"s":"A","t":"And the announcements?"},
+      {"s":"B","t":"At the bottom, in one line. The forty who left did us a favour by being honest."}
+    ]
+  },
+  {
+    "title": "The post that worked",
+    "level": "B2",
+    "focus": "Content & social",
+    "setting": "One post in March outperformed everything else, and nobody is sure why.",
+    "speakers": {"A":"Silvia","B":"Emil"},
+    "lines": [
+      {"s":"A","t":"One post did more than everything else in March."},
+      {"s":"B","t":"The one about the invoice mistake?"},
+      {"s":"A","t":"Reach of 40,000, and the engagement was six times our average."},
+      {"s":"B","t":"Impressions were higher still, because people came back to read the comments."},
+      {"s":"A","t":"Why did that one go viral and the other eleven sink?"},
+      {"s":"B","t":"Because it was storytelling. A real client, a real number, and one sentence of copywriting at the top."},
+      {"s":"A","t":"The headline was 'I lost 4,000 leva to a typo'."},
+      {"s":"B","t":"That's a headline. Our tagline hasn't done that in three years."},
+      {"s":"A","t":"Can we repeat it on demand?"},
+      {"s":"B","t":"Nobody can. But it's evergreen content, so it keeps pulling organic traffic every month."},
+      {"s":"A","t":"Should we use an influencer to create buzz for the launch?"},
+      {"s":"B","t":"One who actually runs a small business. And skip the giveaway, or we'll collect two thousand emails from people who want a free mug."},
+      {"s":"A","t":"Then it all goes in the content calendar and we stop guessing every Monday morning."}
+    ]
+  },
+  {
+    "title": "Before anyone else",
+    "level": "B2",
+    "focus": "Sales & clients",
+    "setting": "Planning a launch around the people who have already been waiting.",
+    "speakers": {"A":"Denitsa","B":"Silvia"},
+    "lines": [
+      {"s":"A","t":"The product launch is the 3rd of October."},
+      {"s":"B","t":"Do a soft launch first, with the twenty people on the waiting list."},
+      {"s":"A","t":"They've been waiting since June."},
+      {"s":"B","t":"Which is why they'll forgive the rough edges. Give them an early bird price and ask for a testimonial after two weeks."},
+      {"s":"A","t":"Do we still offer a free trial?"},
+      {"s":"B","t":"Fourteen days, and you call on day three. That one call decides customer retention for the year."},
+      {"s":"A","t":"Our churn last year was 30%."},
+      {"s":"B","t":"Most of it in month one, from people who never finished setting it up."},
+      {"s":"A","t":"So the call is the fix."},
+      {"s":"B","t":"The call, and one case study about somebody exactly like them. That's social proof they can check themselves."},
+      {"s":"A","t":"And selling more to the ones who stay?"},
+      {"s":"B","t":"Upsell the bigger plan once they've outgrown the small one. Cross-sell the training to anyone who asks the same question twice."},
+      {"s":"A","t":"Then the twenty on the list get a referral link, because they know other people with the same Sunday problem."}
+    ]
   }
 ]

@@ -34,5 +34,150 @@
       {"s":"A","t":"That's an expensive lesson."},
       {"s":"B","t":"One sentence long. Sign first, talk second."}
     ]
+  },
+  {
+    "title": "The version they sent back",
+    "level": "B2",
+    "focus": "Contracts",
+    "setting": "A supplier has returned the contract with four quiet changes in it.",
+    "speakers": {"A":"Nedyalka","B":"Radoslav"},
+    "lines": [
+      {"s":"A","t":"They've sent the contract back with four changes."},
+      {"s":"B","t":"Which clause worries you most?"},
+      {"s":"A","t":"The termination clause. They want thirty days, we asked for ninety."},
+      {"s":"B","t":"A thirty-day notice period on a two-year supply contract is very short."},
+      {"s":"A","t":"They call it flexibility."},
+      {"s":"B","t":"Then amend it to sixty and give one sentence of reason."},
+      {"s":"A","t":"They've also added force majeure covering 'supplier difficulties'."},
+      {"s":"B","t":"Force majeure means floods and wars. A late lorry is ordinary business."},
+      {"s":"A","t":"And the governing law?"},
+      {"s":"B","t":"Bulgarian. If it says English law, everything they do wrong costs you a London solicitor."},
+      {"s":"A","t":"What about the waiver they slipped into the terms and conditions?"},
+      {"s":"B","t":"Take it out. Give up a right once and you'll be asked to give it up every year after."},
+      {"s":"A","t":"So until this is signed, everything stays subject to contract?"},
+      {"s":"B","t":"Correct. Nothing is binding yet, any promise made this week is void unless it's in the document, and every breach of contract argument starts with what's written."}
+    ]
+  },
+  {
+    "title": "Before you write back",
+    "level": "B1",
+    "focus": "Everyday legal talk",
+    "setting": "A two-line email that could turn into something larger.",
+    "speakers": {"A":"Nedyalka","B":"Radoslav"},
+    "lines": [
+      {"s":"A","t":"Can I answer their email myself?"},
+      {"s":"B","t":"Write it, then send it to me before it goes."},
+      {"s":"A","t":"It's two lines."},
+      {"s":"B","t":"Two lines is how most disputes start."},
+      {"s":"A","t":"Should I mark it 'without prejudice'?"},
+      {"s":"B","t":"Only if you're making an offer to settle. It keeps the letter out of evidence later."},
+      {"s":"A","t":"And if I only want to sound reasonable?"},
+      {"s":"B","t":"Then say you're acting in good faith, and mean it. Both sides can read that phrase in court."},
+      {"s":"A","t":"Do we need legal counsel for something this small?"},
+      {"s":"B","t":"You have legal counsel. I'll draft a contract variation this afternoon, and then we can enforce something clear instead of arguing about an email."}
+    ]
+  },
+  {
+    "title": "Who pays if it falls",
+    "level": "B2",
+    "focus": "Risk & liability",
+    "setting": "A contractor wants a very wide promise before starting work.",
+    "speakers": {"A":"Stoyan","B":"Radoslav"},
+    "lines": [
+      {"s":"A","t":"If the scaffolding fails, who pays?"},
+      {"s":"B","t":"Whoever was careless. That's negligence, and it follows the facts more than the paperwork."},
+      {"s":"A","t":"The contract says they're liable for anything on site."},
+      {"s":"B","t":"It says they carry the liability. A court will still ask who actually failed to check it."},
+      {"s":"A","t":"So we could still be in it."},
+      {"s":"B","t":"If our own people signed off the inspection, yes."},
+      {"s":"A","t":"They want an indemnity from us for delays."},
+      {"s":"B","t":"For delays we cause, fine. For anything at all, no. An open indemnity is a blank cheque with your signature on it."},
+      {"s":"A","t":"What do I say to them?"},
+      {"s":"B","t":"That we're liable for our own work and that's where it ends. It's a normal position and they'll expect it."}
+    ]
+  },
+  {
+    "title": "Four years of it",
+    "level": "B2",
+    "focus": "Court & disputes",
+    "setting": "A threat arrives over an invoice from 2021.",
+    "speakers": {"A":"Stoyan","B":"Radoslav"},
+    "lines": [
+      {"s":"A","t":"They're threatening to sue."},
+      {"s":"B","t":"Over the invoice from 2021?"},
+      {"s":"A","t":"That one."},
+      {"s":"B","t":"Then check the statute of limitations before anybody panics. There may be nothing left to bring."},
+      {"s":"A","t":"And if there is?"},
+      {"s":"B","t":"They'd be the claimant, we'd be the defendant, and litigation would take three years."},
+      {"s":"A","t":"What would they ask for?"},
+      {"s":"B","t":"Damages of about ninety thousand. They'd get considerably less."},
+      {"s":"A","t":"Can we avoid a hearing altogether?"},
+      {"s":"B","t":"The contract sends disputes to arbitration, which is faster and private."},
+      {"s":"A","t":"I'd rather settle out of court."},
+      {"s":"B","t":"So would they. Nobody enjoys giving testimony about an email they wrote four years ago."},
+      {"s":"A","t":"And if the verdict goes against us?"},
+      {"s":"B","t":"We can appeal, and that costs another year. Which is the real argument for settling in March."}
+    ]
+  },
+  {
+    "title": "The list in the drawer",
+    "level": "B2",
+    "focus": "Compliance",
+    "setting": "Marketing has two thousand email addresses and no idea where they came from.",
+    "speakers": {"A":"Nedyalka","B":"Radoslav"},
+    "lines": [
+      {"s":"A","t":"Marketing has a list of two thousand email addresses in a drawer."},
+      {"s":"B","t":"On paper?"},
+      {"s":"A","t":"On a memory stick, in a drawer."},
+      {"s":"B","t":"Then we have a data protection problem, and the drawer is the smallest part of it."},
+      {"s":"A","t":"Where did the list come from?"},
+      {"s":"B","t":"That's the question the regulator asks first. Nobody collects personal data and decides afterwards why."},
+      {"s":"A","t":"The new supplier wants access to our customer records as well."},
+      {"s":"B","t":"Not before a non-disclosure agreement, and not without knowing where they store it."},
+      {"s":"A","t":"They say everything is confidential."},
+      {"s":"B","t":"Everyone says that. We comply with the regulation by writing down what we hold, why we hold it, and for how long."},
+      {"s":"A","t":"So compliance is a document."},
+      {"s":"B","t":"Compliance is a habit. The document is the part you can show somebody."}
+    ]
+  },
+  {
+    "title": "Before you sign for us",
+    "level": "B2",
+    "focus": "Company law",
+    "setting": "A director will be abroad in the week the papers have to be signed.",
+    "speakers": {"A":"Stoyan","B":"Radoslav"},
+    "lines": [
+      {"s":"A","t":"I'm in Vienna next week and the papers need signing here."},
+      {"s":"B","t":"Then give somebody a power of attorney, limited to this transaction."},
+      {"s":"A","t":"Can't I email my approval?"},
+      {"s":"B","t":"The bank won't take it. And the articles of association say two directors sign anything over fifty thousand."},
+      {"s":"A","t":"What about the new company we're setting up?"},
+      {"s":"B","t":"It'll be a subsidiary, wholly owned. Same rules, separate accounts."},
+      {"s":"A","t":"Do we need anything from the board?"},
+      {"s":"B","t":"A board resolution, dated before the signing rather than after it."},
+      {"s":"A","t":"And my brother's twenty per cent?"},
+      {"s":"B","t":"That belongs in a shareholder agreement, written while everybody still likes each other."},
+      {"s":"A","t":"And before we buy the Plovdiv business?"},
+      {"s":"B","t":"Due diligence. Six weeks of it, because I'd rather find the problem than inherit it."}
+    ]
+  },
+  {
+    "title": "The logo somebody drew",
+    "level": "B1",
+    "focus": "IP & rights",
+    "setting": "Nobody checked who owns the company's own logo.",
+    "speakers": {"A":"Nedyalka","B":"Radoslav"},
+    "lines": [
+      {"s":"A","t":"A freelancer designed our logo in 2019. Do we own it?"},
+      {"s":"B","t":"Only if the contract says so. Otherwise the copyright stayed with him."},
+      {"s":"A","t":"He was paid."},
+      {"s":"B","t":"Payment buys the work. Intellectual property moves only when somebody writes it down."},
+      {"s":"A","t":"So what do we do?"},
+      {"s":"B","t":"Write to him, politely, and agree a transfer or a licence. Most people say yes."},
+      {"s":"A","t":"Should we register it as a trademark?"},
+      {"s":"B","t":"The name first, then the logo. A trademark stops somebody opening the same shop next door under your name."},
+      {"s":"A","t":"And the machine Georgi modified?"},
+      {"s":"B","t":"If it's genuinely new there may be a patent in it. Tell him to stop describing it publicly until we've asked."}
+    ]
   }
 ]

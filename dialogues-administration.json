@@ -34,5 +34,143 @@
       {"s":"A","t":"Exactly. And the spreadsheet and timetable can pull from one source."},
       {"s":"B","t":"Do it. Send me the new workflow on one page."}
     ]
+  },
+  {
+    "title": "Two at eleven",
+    "level": "B1",
+    "focus": "Scheduling",
+    "setting": "A manager has booked himself into the same hour twice.",
+    "speakers": {"A":"Petar","B":"Galya"},
+    "lines": [
+      {"s":"A","t":"He's double-booked at eleven. Two different people, same slot."},
+      {"s":"B","t":"Who booked the second one?"},
+      {"s":"A","t":"He did, from his phone, while he was sitting in the first meeting."},
+      {"s":"B","t":"Of course he did. Which one do we reschedule?"},
+      {"s":"A","t":"The internal one. The client has driven from Sofia."},
+      {"s":"B","t":"Offer the internal one three times rather than one. People say yes faster when they choose."},
+      {"s":"A","t":"And his diary management in general?"},
+      {"s":"B","t":"Block out time on Tuesday and Thursday mornings. Nothing goes in there."},
+      {"s":"A","t":"He'll fill it himself within a week."},
+      {"s":"B","t":"Then block it out again, and tell him what happened at eleven o'clock today."}
+    ]
+  },
+  {
+    "title": "Did it arrive",
+    "level": "B1",
+    "focus": "Correspondence",
+    "setting": "A contract has gone out and nobody has confirmed anything.",
+    "speakers": {"A":"Galya","B":"Petar"},
+    "lines": [
+      {"s":"A","t":"Did the contract go out?"},
+      {"s":"B","t":"By courier yesterday, and by registered post this morning."},
+      {"s":"A","t":"Both?"},
+      {"s":"B","t":"Both. Last time the courier lost one and nobody could prove anything."},
+      {"s":"A","t":"Sensible. Did they acknowledge receipt?"},
+      {"s":"B","t":"Not yet. I'll ring them at eleven."},
+      {"s":"A","t":"Then circulate the new policy to the whole office while you wait."},
+      {"s":"B","t":"Which distribution list? The old one still has three people who left in spring."},
+      {"s":"A","t":"Fix the list first, then send. The policy goes as an attachment, with a two-line memo in the email itself."},
+      {"s":"B","t":"And the meeting on the 3rd?"},
+      {"s":"A","t":"You minute the meeting, I'll chair it. My out of office is on from Thursday, so anything urgent comes to you."}
+    ]
+  },
+  {
+    "title": "Everything is urgent",
+    "level": "B2",
+    "focus": "Office support",
+    "setting": "A new assistant has been handed a list where every line is marked urgent.",
+    "speakers": {"A":"Vania","B":"Galya"},
+    "lines": [
+      {"s":"A","t":"Everything on this list is marked urgent."},
+      {"s":"B","t":"Then prioritise it yourself, because whoever wrote it didn't."},
+      {"s":"A","t":"How?"},
+      {"s":"B","t":"Two questions. Who is waiting, and what stops if you don't do it?"},
+      {"s":"A","t":"The travel booking stops three people flying on Monday."},
+      {"s":"B","t":"That's first. What's the turn around on the supplier forms?"},
+      {"s":"A","t":"Two days, they said, and I've chased them up twice."},
+      {"s":"B","t":"Then they can wait until Thursday. Keep on top of the to-do list and the petty admin stops feeling like a wave."},
+      {"s":"A","t":"I'm also covering for Petar next week."},
+      {"s":"B","t":"Cover for him on the diary and the post. Leave the rest, and liaise with the finance team so they know who to ask."},
+      {"s":"A","t":"Do I coordinate the induction as well?"},
+      {"s":"B","t":"That's a back office workflow and it's written down. Follow it, and change nothing in your first month."}
+    ]
+  },
+  {
+    "title": "The blue folder",
+    "level": "B1",
+    "focus": "Records",
+    "setting": "Where things are kept, and what happens to them afterwards.",
+    "speakers": {"A":"Vania","B":"Galya"},
+    "lines": [
+      {"s":"A","t":"Where does a signed contract actually live?"},
+      {"s":"B","t":"Scanned into the filing system, and the hard copy in the blue folder."},
+      {"s":"A","t":"Both?"},
+      {"s":"B","t":"Both. The scan is for finding things. The paper is for lawyers."},
+      {"s":"A","t":"And when it's finished?"},
+      {"s":"B","t":"We archive it after two years. Nothing leaves this office without a date on it."},
+      {"s":"A","t":"There's a stack of old payslips on the shelf."},
+      {"s":"B","t":"That's confidential waste. You shred those, they never go in the paper bin."},
+      {"s":"A","t":"Understood. And the new supplier list?"},
+      {"s":"B","t":"Use the template. Data entry into the spreadsheet, then somebody senior has to sign off a document like that before it goes anywhere."},
+      {"s":"A","t":"And if somebody asks me later whether we still have it?"},
+      {"s":"B","t":"If it's on file you can say yes in ten seconds. Record keeping is only worth anything when finding things is fast."}
+    ]
+  },
+  {
+    "title": "We run out of paper on Fridays",
+    "level": "B1",
+    "focus": "Supplies & facilities",
+    "setting": "The stationery cupboard empties on the same day every week.",
+    "speakers": {"A":"Petar","B":"Galya"},
+    "lines": [
+      {"s":"A","t":"We've run low on paper again."},
+      {"s":"B","t":"It happens every Friday, which means somebody prints their whole week on a Friday."},
+      {"s":"A","t":"Do I raise a purchase order?"},
+      {"s":"B","t":"For office supplies under a hundred leva, no. Over that, yes, and get it signed."},
+      {"s":"A","t":"The printer on the second floor is making a noise."},
+      {"s":"B","t":"Put in a maintenance request today. Otherwise it breaks on the morning of the audit."},
+      {"s":"A","t":"And the stock take?"},
+      {"s":"B","t":"The 30th. Two people, one counting and one writing, and nobody counts their own cupboard."},
+      {"s":"A","t":"What else counts as facilities?"},
+      {"s":"B","t":"Heating, the lift, the coffee machine, and anything anyone complains about twice."}
+    ]
+  },
+  {
+    "title": "The first ten minutes",
+    "level": "B1",
+    "focus": "Visitors & front desk",
+    "setting": "Monday morning at the front desk, with two new people starting.",
+    "speakers": {"A":"Galya","B":"Vania"},
+    "lines": [
+      {"s":"A","t":"You're on reception on Monday morning."},
+      {"s":"B","t":"What do I actually do?"},
+      {"s":"A","t":"Everyone who isn't staff has to sign in, take a visitor badge, and wait for somebody to come down."},
+      {"s":"B","t":"Even when they're expected?"},
+      {"s":"A","t":"Especially then. Same rule for the client and for the man who fixes the coffee machine."},
+      {"s":"B","t":"And the two new starters?"},
+      {"s":"A","t":"Their induction begins at nine. Badges, a tour, and where the fire exit is before anything else."},
+      {"s":"B","t":"Should I give them the handbook?"},
+      {"s":"A","t":"Give them coffee and a laptop first. The handbook can wait until eleven."},
+      {"s":"B","t":"So the first ten minutes is what they'll actually remember."}
+    ]
+  },
+  {
+    "title": "Munich on Tuesday",
+    "level": "B1",
+    "focus": "Travel & expenses",
+    "setting": "Three people are flying and one of them is driving.",
+    "speakers": {"A":"Petar","B":"Galya"},
+    "lines": [
+      {"s":"A","t":"Three people to Munich on Tuesday. Do I book travel for all of them together?"},
+      {"s":"B","t":"One booking, one reference. It's far easier when a flight is cancelled."},
+      {"s":"A","t":"They want different return dates."},
+      {"s":"B","t":"Then three bookings. Ask once, in writing, so nobody changes their mind on Monday."},
+      {"s":"A","t":"What's the per diem for Germany?"},
+      {"s":"B","t":"Fifty euros a day, and they don't have to keep receipts for it."},
+      {"s":"A","t":"Nikolay is driving."},
+      {"s":"B","t":"Then he claims mileage rather than a train ticket. The rate is in the policy."},
+      {"s":"A","t":"When are the expense reports due?"},
+      {"s":"B","t":"Within two weeks of coming back. After that finance asks me, I ask them, and everybody has forgotten."}
+    ]
   }
 ]

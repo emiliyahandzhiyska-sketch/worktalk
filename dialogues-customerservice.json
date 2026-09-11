@@ -36,5 +36,214 @@
       {"s":"B","t":"Exactly. Shall I check availability for next month?"},
       {"s":"A","t":"Yes, please. That's a fair solution."}
     ]
+  },
+  {
+    "title": "Between nine and ten",
+    "level": "B1",
+    "focus": "Contacts & channels",
+    "setting": "A team lead and an agent look at where the work actually arrives from.",
+    "speakers": {"A":"Dimitar","B":"Yoana"},
+    "lines": [
+      {"s":"A","t":"Where are the enquiries coming from now?"},
+      {"s":"B","t":"Half by phone, half by live chat. Chat has doubled since March."},
+      {"s":"A","t":"And the call queue in the morning?"},
+      {"s":"B","t":"Nine to ten is the worst hour of the week. Fourteen people waiting at one point."},
+      {"s":"A","t":"What happens out of hours?"},
+      {"s":"B","t":"They get a message saying we open at eight, and most of them write anyway."},
+      {"s":"A","t":"Do we answer those first?"},
+      {"s":"B","t":"We should. An enquiry sent at eleven at night still expects an answer by nine."},
+      {"s":"A","t":"Then move one person from the phones to chat between nine and ten."},
+      {"s":"B","t":"That empties the call queue and nobody loses anything. I'll try it on Monday."}
+    ]
+  },
+  {
+    "title": "Don't transfer me again",
+    "level": "B1",
+    "focus": "Phone skills",
+    "setting": "A customer has already been passed between three people.",
+    "speakers": {"A":"Mrs Koleva","B":"Elica"},
+    "lines": [
+      {"s":"A","t":"I've been transferred three times already."},
+      {"s":"B","t":"Then I won't transfer a call again today. Tell me the whole thing from the start."},
+      {"s":"A","t":"My order never arrived and nobody can say where it is."},
+      {"s":"B","t":"I need two minutes with the warehouse. May I put you on hold, or would you prefer a callback?"},
+      {"s":"A","t":"How long is the callback?"},
+      {"s":"B","t":"Within the hour, from me, on this number."},
+      {"s":"A","t":"Then hold. I don't trust callbacks."},
+      {"s":"B","t":"Fair enough. I'll come back every thirty seconds so you know I'm still here."},
+      {"s":"A","t":"Nobody has ever done that."},
+      {"s":"B","t":"It costs me nothing and it stops you wondering whether the line has died."}
+    ]
+  },
+  {
+    "title": "The number on the wall",
+    "level": "B2",
+    "focus": "Metrics & standards",
+    "setting": "Two colleagues work out why good figures and unhappy customers arrive together.",
+    "speakers": {"A":"Dimitar","B":"Yoana"},
+    "lines": [
+      {"s":"A","t":"Our average wait time is ninety seconds. That's the number on the wall."},
+      {"s":"B","t":"And the response time on email?"},
+      {"s":"A","t":"Four hours, against a service standard of six. We look excellent on paper."},
+      {"s":"B","t":"Then why does the satisfaction survey keep saying otherwise?"},
+      {"s":"A","t":"Because first contact resolution is 48%. Half of them call us twice."},
+      {"s":"B","t":"So we answer quickly and solve slowly."},
+      {"s":"A","t":"Resolution time is the number nobody put on the wall."},
+      {"s":"B","t":"Can we measure it per person?"},
+      {"s":"A","t":"I'd rather measure it per problem. People aren't the reason the same fault keeps coming back."},
+      {"s":"B","t":"Then put resolution time next to wait time and watch what everyone starts doing differently."}
+    ]
+  },
+  {
+    "title": "The second letter",
+    "level": "B1",
+    "focus": "Complaints",
+    "setting": "The same customer writes for a second time, angrier than before.",
+    "speakers": {"A":"Yoana","B":"Dimitar"},
+    "lines": [
+      {"s":"A","t":"Second complaint from the same customer. Same problem, angrier."},
+      {"s":"B","t":"What did we say the first time?"},
+      {"s":"A","t":"That we were sorry and somebody would be in touch."},
+      {"s":"B","t":"And was anybody?"},
+      {"s":"A","t":"No."},
+      {"s":"B","t":"So her second letter is really about being ignored."},
+      {"s":"A","t":"How do I answer it?"},
+      {"s":"B","t":"Good complaint handling is boring. Say what happened, say what you'll do, give a date, then do it on that date."},
+      {"s":"A","t":"No apology?"},
+      {"s":"B","t":"One, at the top, in your own words. Then get to the date."}
+    ]
+  },
+  {
+    "title": "The shouting stops",
+    "level": "B2",
+    "focus": "Handling people",
+    "setting": "A team lead goes through a difficult call with the agent who took it.",
+    "speakers": {"A":"Elica","B":"Dimitar"},
+    "lines": [
+      {"s":"A","t":"He shouted for four minutes. I couldn't get a word in."},
+      {"s":"B","t":"You didn't need one. What did you do first?"},
+      {"s":"A","t":"I let him finish, then said I understood why he was angry."},
+      {"s":"B","t":"That's acknowledge and empathise, and it's most of how you de-escalate a difficult customer."},
+      {"s":"A","t":"Then he asked who was responsible."},
+      {"s":"B","t":"And?"},
+      {"s":"A","t":"I said I was. I'd rather take ownership than explain our departments to him."},
+      {"s":"B","t":"Correct. What did you promise?"},
+      {"s":"A","t":"Thursday. I think I can do it by Tuesday."},
+      {"s":"B","t":"Under-promise and over-deliver, then. Apologise sincerely once, manage expectations honestly, and keep the customer informed even when nothing has moved."}
+    ]
+  },
+  {
+    "title": "Fifteen euros",
+    "level": "B2",
+    "focus": "Resolution",
+    "setting": "A part is stuck in Poland and the customer has already waited nine days.",
+    "speakers": {"A":"Yoana","B":"Dimitar"},
+    "lines": [
+      {"s":"A","t":"I can't resolve this issue today. The part comes from Poland."},
+      {"s":"B","t":"What have you told her?"},
+      {"s":"A","t":"Eleven days. She's already waited nine."},
+      {"s":"B","t":"Is there something she can work around in the meantime?"},
+      {"s":"A","t":"She can use the old one. It's slower."},
+      {"s":"B","t":"Then lend her a new one until the part lands. A goodwill gesture worth fifteen euros, on a customer worth four hundred."},
+      {"s":"A","t":"Do I escalate the case as well?"},
+      {"s":"B","t":"Escalate it to the supplier. Inside this building everything is working."},
+      {"s":"A","t":"And the case notes?"},
+      {"s":"B","t":"Write them as though somebody else reads them tomorrow, because somebody will. Don't close the case until the part is in her hands."}
+    ]
+  },
+  {
+    "title": "Fourteen months",
+    "level": "B1",
+    "focus": "Returns & refunds",
+    "setting": "A customer brings back something he bought over a year ago.",
+    "speakers": {"A":"Mr Petrov","B":"Elica"},
+    "lines": [
+      {"s":"A","t":"It stopped working. I bought it here fourteen months ago."},
+      {"s":"B","t":"Do you have the proof of purchase?"},
+      {"s":"A","t":"Somewhere. Is it too late?"},
+      {"s":"B","t":"The warranty runs two years, so no. Our returns policy is thirty days, and a warranty is a separate thing."},
+      {"s":"A","t":"Nobody explained that on the phone."},
+      {"s":"B","t":"They should have. Would you like a repair, a replacement, or an exchange for the newer model?"},
+      {"s":"A","t":"What's the difference in price?"},
+      {"s":"B","t":"An exchange for the same model costs you nothing. The newer one is twenty euros more."},
+      {"s":"A","t":"And how long does it take?"},
+      {"s":"B","t":"A replacement from stock today, if you find that receipt. Check your email, most people buy online and forget."}
+    ]
+  },
+  {
+    "title": "Where is it, actually",
+    "level": "B1",
+    "focus": "Orders & delivery",
+    "setting": "Two of three items arrived and nobody told the customer about the third.",
+    "speakers": {"A":"Mr Georgiev","B":"Yoana"},
+    "lines": [
+      {"s":"A","t":"My order was supposed to arrive on Tuesday."},
+      {"s":"B","t":"Can you give me the order number? It starts with two letters."},
+      {"s":"A","t":"BG four four one nine."},
+      {"s":"B","t":"Thank you. This is a delayed delivery, and I can see exactly why."},
+      {"s":"A","t":"Go on."},
+      {"s":"B","t":"Two of the three items shipped. The third went out of stock the same morning you ordered."},
+      {"s":"A","t":"So where is it now?"},
+      {"s":"B","t":"On backorder, reaching us on the fourteenth. Nobody told you, and that part is our mistake."},
+      {"s":"A","t":"I'd rather have the two now."},
+      {"s":"B","t":"They're already moving. Here's the tracking number, and I'll call you myself on the fourteenth."}
+    ]
+  },
+  {
+    "title": "It's her account",
+    "level": "B1",
+    "focus": "Accounts & security",
+    "setting": "A husband calls about his wife's account while she is at work.",
+    "speakers": {"A":"Caller","B":"Elica"},
+    "lines": [
+      {"s":"A","t":"I'm calling about my wife's account. She's at work all day."},
+      {"s":"B","t":"I understand that's inconvenient, and I still have to verify identity before I change anything."},
+      {"s":"A","t":"I know her address, her phone number, everything."},
+      {"s":"B","t":"The account holder is your wife, so the security question has to be answered by her."},
+      {"s":"A","t":"This is ridiculous."},
+      {"s":"B","t":"It's the same rule that stops a stranger calling about your account."},
+      {"s":"A","t":"Fine. What can you tell me?"},
+      {"s":"B","t":"That nothing is wrong with the account, and what she'll need when she calls."},
+      {"s":"A","t":"Which is?"},
+      {"s":"B","t":"Two minutes and the answer to one question. I'll put a note on the file so she doesn't start from the beginning."}
+    ]
+  },
+  {
+    "title": "The article nobody could find",
+    "level": "B1",
+    "focus": "Self-service",
+    "setting": "Forty calls a month about a setting that is already documented.",
+    "speakers": {"A":"Dimitar","B":"Yoana"},
+    "lines": [
+      {"s":"A","t":"Forty calls this month about one setting."},
+      {"s":"B","t":"There's a knowledge base article about that setting. I wrote it."},
+      {"s":"A","t":"Then why is the phone ringing?"},
+      {"s":"B","t":"Because it's called 'Configuration parameters' and nobody searches for that."},
+      {"s":"A","t":"What would they search for?"},
+      {"s":"B","t":"'Change my email address'. That's what they actually want."},
+      {"s":"A","t":"Rename it, then. What about the FAQ page?"},
+      {"s":"B","t":"Eleven questions, and four of them nobody has ever asked."},
+      {"s":"A","t":"Replace those four with the four we answer every day."},
+      {"s":"B","t":"Then self-service works for the people who prefer it, and the phone is free for the people who don't."}
+    ]
+  },
+  {
+    "title": "Six years, then nothing",
+    "level": "B2",
+    "focus": "Retention",
+    "setting": "A customer who ordered every month for six years stopped in January.",
+    "speakers": {"A":"Dimitar","B":"Elica"},
+    "lines": [
+      {"s":"A","t":"She ordered every month for six years, then stopped in January."},
+      {"s":"B","t":"Did anyone ask her why?"},
+      {"s":"A","t":"Nobody. We only send the feedback form after a complaint."},
+      {"s":"B","t":"So we hear from the angry ones and never from the ones who quietly leave."},
+      {"s":"A","t":"Call her."},
+      {"s":"B","t":"And say what? 'Come back'?"},
+      {"s":"A","t":"Ask what changed. A loyal customer who leaves usually has one specific reason and will tell you in a sentence."},
+      {"s":"B","t":"And if the reason is us?"},
+      {"s":"A","t":"Then you've learned something worth more than the order. You win back a customer by fixing the thing. A discount only delays the next goodbye."},
+      {"s":"B","t":"I'll call her, and the other eleven repeat customers who stopped this year."}
+    ]
   }
 ]

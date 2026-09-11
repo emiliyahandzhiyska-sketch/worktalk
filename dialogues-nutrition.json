@@ -34,5 +34,188 @@
       {"s":"A","t":"And the ingredients?"},
       {"s":"B","t":"Listed by quantity. If sugar is in the first three, you know what you're buying."}
     ]
+  },
+  {
+    "title": "Look at the plate",
+    "level": "B1",
+    "focus": "Eating well",
+    "setting": "Somebody eats the right food and nothing changes.",
+    "speakers": {"A":"Mira","B":"Rada"},
+    "lines": [
+      {"s":"A","t":"I eat well. I don't understand why nothing changes."},
+      {"s":"B","t":"Tell me what was on the plate last night."},
+      {"s":"A","t":"Chicken, rice, salad. That's a balanced diet, isn't it?"},
+      {"s":"B","t":"It is. How much rice?"},
+      {"s":"A","t":"Two thirds of the plate."},
+      {"s":"B","t":"Then the food is right and the portion size is doing the damage."},
+      {"s":"A","t":"So now I have to weigh everything."},
+      {"s":"B","t":"For two weeks, and then you'll know what 80 grams looks like. Portion control is a skill and it takes a fortnight."},
+      {"s":"A","t":"That's manageable."},
+      {"s":"B","t":"And drink water with every meal. Most people who stay hydrated eat less without trying to."}
+    ]
+  },
+  {
+    "title": "Counting the wrong thing",
+    "level": "B2",
+    "focus": "Nutrients",
+    "setting": "Three months of counting calories and constant tiredness.",
+    "speakers": {"A":"Anton","B":"Rada"},
+    "lines": [
+      {"s":"A","t":"I've counted every calorie for three months."},
+      {"s":"B","t":"And?"},
+      {"s":"A","t":"I'm tired all the time."},
+      {"s":"B","t":"A calorie tells you about energy. It says nothing about the nutrients."},
+      {"s":"A","t":"Meaning?"},
+      {"s":"B","t":"Nine hundred calories of biscuits and nine hundred of fish do different things to you."},
+      {"s":"A","t":"How much protein should I be having?"},
+      {"s":"B","t":"Roughly your weight in grams if you're training. Carbohydrate isn't the enemy either, it's what your legs run on."},
+      {"s":"A","t":"And fat?"},
+      {"s":"B","t":"Limit the saturated fat. Your body needs the rest."},
+      {"s":"A","t":"Should I take a supplement?"},
+      {"s":"B","t":"Vitamin D in winter, in this country, yes. The rest you'd get from food, and fibre is the one almost everybody is short of."}
+    ]
+  },
+  {
+    "title": "Tuesday is the hard one",
+    "level": "B1",
+    "focus": "Food choices",
+    "setting": "Six days of the week are fine and one is not.",
+    "speakers": {"A":"Mira","B":"Rada"},
+    "lines": [
+      {"s":"A","t":"Monday and Sunday are fine. Tuesday I get home at eight."},
+      {"s":"B","t":"And what happens at eight?"},
+      {"s":"A","t":"A ready meal, or we order a takeaway."},
+      {"s":"B","t":"How often do you eat out as well?"},
+      {"s":"A","t":"Twice a week, maybe."},
+      {"s":"B","t":"So four meals a week are outside your control, and you're judging yourself on the other seventeen."},
+      {"s":"A","t":"Then Tuesday is the problem."},
+      {"s":"B","t":"Tuesday is the one to solve. Cook something home-cooked on Sunday that reheats well."},
+      {"s":"A","t":"My husband won't eat anything plant-based."},
+      {"s":"B","t":"Then don't call it that. Put lentils into something he already likes."},
+      {"s":"A","t":"And the bread?"},
+      {"s":"B","t":"Wholegrain where you can. Processed food isn't forbidden, it's simply most of what's in the cupboard right now."}
+    ]
+  },
+  {
+    "title": "It isn't a preference",
+    "level": "B1",
+    "focus": "Restrictions",
+    "setting": "Ordering in a restaurant, and being taken seriously.",
+    "speakers": {"A":"Mira","B":"Kiro"},
+    "lines": [
+      {"s":"A","t":"Is the soup dairy-free?"},
+      {"s":"B","t":"I'll check with the kitchen."},
+      {"s":"A","t":"Thank you. I'm lactose intolerant, so a little cream matters."},
+      {"s":"B","t":"Is that an allergy or a preference?"},
+      {"s":"A","t":"Somewhere between. It won't send me to hospital, and the evening is over."},
+      {"s":"B","t":"Understood. I'll treat it the same way I'd treat an allergy."},
+      {"s":"A","t":"That's the right answer, and not everybody gives it."},
+      {"s":"B","t":"My sister is gluten-free. I've heard what people say to her."},
+      {"s":"A","t":"'A little bit won't hurt.'"},
+      {"s":"B","t":"Every single time. I'll bring the list of what the kitchen can actually do."}
+    ]
+  },
+  {
+    "title": "The low-fat yoghurt",
+    "level": "B1",
+    "focus": "Labels & shopping",
+    "setting": "The healthy-looking product turns out to be something else.",
+    "speakers": {"A":"Anton","B":"Rada"},
+    "lines": [
+      {"s":"A","t":"I bought the low-fat yoghurt, like you said."},
+      {"s":"B","t":"Turn it over and read the food label."},
+      {"s":"A","t":"Sugar, 14 grams."},
+      {"s":"B","t":"In 100 grams of yoghurt. That's most of a child's recommended daily amount."},
+      {"s":"A","t":"But it's low-fat."},
+      {"s":"B","t":"Take the fat out and something has to make it taste of something."},
+      {"s":"A","t":"So the sugar content is what I should be reading."},
+      {"s":"B","t":"Added sugar especially. Fruit brings its own, and that's a different thing."},
+      {"s":"A","t":"How do I tell them apart?"},
+      {"s":"B","t":"The ingredients list. If sugar appears in the first three, put it back on the shelf."},
+      {"s":"A","t":"I'll write a shopping list and stop deciding in the shop."}
+    ]
+  },
+  {
+    "title": "Cut out or cut down",
+    "level": "B2",
+    "focus": "Changing habits",
+    "setting": "Eleven days without sugar and a familiar ending approaching.",
+    "speakers": {"A":"Mira","B":"Rada"},
+    "lines": [
+      {"s":"A","t":"I've cut out sugar completely. Eleven days."},
+      {"s":"B","t":"How do you feel?"},
+      {"s":"A","t":"Furious."},
+      {"s":"B","t":"Which is why it won't last. What happened the last time?"},
+      {"s":"A","t":"Nine days, then a whole cake."},
+      {"s":"B","t":"Then cut down on it instead. Sugar in your coffee, fine. A dessert on Saturday, fine."},
+      {"s":"A","t":"That feels like failing."},
+      {"s":"B","t":"A sustainable habit is one you'll still have in March. Eleven furious days is something else."},
+      {"s":"A","t":"So everything in moderation."},
+      {"s":"B","t":"Everything except the things you genuinely can't stop at one of. Those you leave in the shop."},
+      {"s":"A","t":"And the meal prep?"},
+      {"s":"B","t":"Sunday, two hours, four lunches. A treat stops being dangerous once there's food in the fridge."}
+    ]
+  },
+  {
+    "title": "Nothing until four",
+    "level": "B2",
+    "focus": "Eating patterns",
+    "setting": "A day with no lunch and a difficult evening.",
+    "speakers": {"A":"Rada","B":"Mira"},
+    "lines": [
+      {"s":"A","t":"Talk me through yesterday."},
+      {"s":"B","t":"Coffee at seven. Then nothing until four."},
+      {"s":"A","t":"So you skipped two meals."},
+      {"s":"B","t":"I wasn't hungry. My appetite has been strange lately."},
+      {"s":"A","t":"And at four?"},
+      {"s":"B","t":"Everything in the kitchen."},
+      {"s":"A","t":"That's what happens. Skip a meal and the body collects the difference with interest."},
+      {"s":"B","t":"I know I overeat in the evening."},
+      {"s":"A","t":"Is it hunger, or is it the end of the day?"},
+      {"s":"B","t":"The end of the day, mostly. It's comfort eating and I know it while I'm doing it."},
+      {"s":"A","t":"Then eat a proper lunch, keep a snack in your bag, and when you crave something at nine, sit down and eat it at the table."},
+      {"s":"B","t":"Mindful eating, you mean."},
+      {"s":"A","t":"Slowly, without a screen. Half of it disappears while you're looking at your phone and your body never registers it."}
+    ]
+  },
+  {
+    "title": "Four kilos, four times",
+    "level": "B2",
+    "focus": "Weight & goals",
+    "setting": "The same four kilos, lost and found, four years running.",
+    "speakers": {"A":"Mira","B":"Rada"},
+    "lines": [
+      {"s":"A","t":"I've lost four kilos four times."},
+      {"s":"B","t":"And put on weight in between each one."},
+      {"s":"A","t":"Every time."},
+      {"s":"B","t":"That's yo-yo dieting, and it's harder on you than the four kilos ever were."},
+      {"s":"A","t":"The last one was a fad diet. Six weeks, no bread."},
+      {"s":"B","t":"And what happened in week seven?"},
+      {"s":"A","t":"Bread."},
+      {"s":"B","t":"You already know how to lose weight. You've done it four times."},
+      {"s":"A","t":"Keeping it off is the part I've never managed."},
+      {"s":"B","t":"Which has a slower, duller answer. Watch what you eat, without a rule that ends in April."},
+      {"s":"A","t":"Nobody sells that in a book."},
+      {"s":"B","t":"Nobody can. It's the same twelve sentences every time, and they're free."}
+    ]
+  },
+  {
+    "title": "Slow metabolism",
+    "level": "B2",
+    "focus": "How the body works",
+    "setting": "The most popular explanation in the world, examined.",
+    "speakers": {"A":"Anton","B":"Rada"},
+    "lines": [
+      {"s":"A","t":"My problem is a slow metabolism. It runs in the family."},
+      {"s":"B","t":"Possibly. It's also the most popular explanation in the world."},
+      {"s":"A","t":"You don't believe me."},
+      {"s":"B","t":"I believe metabolism varies. Between two people your size, the difference is smaller than one pastry a day."},
+      {"s":"A","t":"That's depressing."},
+      {"s":"B","t":"It's good news, because a pastry is something you can change."},
+      {"s":"A","t":"I get very tired after lunch."},
+      {"s":"B","t":"What's in the lunch?"},
+      {"s":"A","t":"Bread, usually. A sandwich."},
+      {"s":"B","t":"Then your blood sugar climbs and drops and the afternoon happens. Add protein, add fibre, and give your gut health a month of that before you decide anything. Food takes time to digest and habits take longer."}
+    ]
   }
 ]

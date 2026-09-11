@@ -36,5 +36,157 @@
       {"s":"B","t":"That would help a lot. One page, if possible."},
       {"s":"A","t":"One page it is. I'll send it today and follow up on Thursday."}
     ]
+  },
+  {
+    "title": "The person who answers",
+    "level": "B2",
+    "focus": "Prospecting",
+    "setting": "A sales manager goes through yesterday's calls with a rep.",
+    "speakers": {"A":"Valya","B":"Rosen"},
+    "lines": [
+      {"s":"A","t":"How many did you call yesterday?"},
+      {"s":"B","t":"Thirty. Four conversations."},
+      {"s":"A","t":"That's a cold call list. Where do the warm leads come from?"},
+      {"s":"B","t":"The webinar. Eleven prospects gave us a real email address."},
+      {"s":"A","t":"Then warm up a lead properly before you ring. Read what they downloaded."},
+      {"s":"B","t":"The problem is the gatekeeper. I never get past her."},
+      {"s":"A","t":"She isn't the obstacle you think. Ask her who owns the decision and she'll usually tell you."},
+      {"s":"B","t":"And if the decision maker isn't the budget holder?"},
+      {"s":"A","t":"Then you have two conversations. That's what prospecting looks like in any company over fifty people."},
+      {"s":"B","t":"So I qualify a lead first, and the demo comes after that."}
+    ]
+  },
+  {
+    "title": "Twelve deals, four real",
+    "level": "B2",
+    "focus": "Pipeline & process",
+    "setting": "Monday morning, and the numbers on the screen do not match reality.",
+    "speakers": {"A":"Valya","B":"Nikolay"},
+    "lines": [
+      {"s":"A","t":"Your sales pipeline says twelve deals. How many are real?"},
+      {"s":"B","t":"Four."},
+      {"s":"A","t":"Then fix the CRM today. A pipeline review built on fiction wastes everybody's Monday."},
+      {"s":"B","t":"Some of them I just haven't touched in a while."},
+      {"s":"A","t":"How long is our sales cycle?"},
+      {"s":"B","t":"Nine weeks, roughly."},
+      {"s":"A","t":"And the last touchpoint on the ones you called real?"},
+      {"s":"B","t":"Two of them, June."},
+      {"s":"A","t":"Then they're gone. Move them out and book a discovery call with the ones still breathing."},
+      {"s":"B","t":"I'll make the follow-up calls this afternoon, and the demo for Burgas is Thursday."}
+    ]
+  },
+  {
+    "title": "Forty seconds in a lift",
+    "level": "B1",
+    "focus": "Pitching",
+    "setting": "A rep has fifteen minutes with a client and twenty slides.",
+    "speakers": {"A":"Rosen","B":"Valya"},
+    "lines": [
+      {"s":"A","t":"They gave me fifteen minutes on Thursday."},
+      {"s":"B","t":"Then your pitch is eight minutes and the rest belongs to them."},
+      {"s":"A","t":"I have twenty slides."},
+      {"s":"B","t":"You have four. What's your elevator pitch?"},
+      {"s":"A","t":"We help mid-size firms cut invoice processing from six days to one."},
+      {"s":"B","t":"That's good. Say it in the first forty seconds, then stop talking."},
+      {"s":"A","t":"And if they look unconvinced?"},
+      {"s":"B","t":"Walk the client through one real example, slowly. A soft sell with a real number beats a hard sell with twenty slides."},
+      {"s":"A","t":"Nobody enjoys the hard sell anyway."},
+      {"s":"B","t":"People don't mind being sold to. They mind being talked at for fifteen minutes."}
+    ]
+  },
+  {
+    "title": "Too expensive",
+    "level": "B2",
+    "focus": "Objections",
+    "setting": "A rep reports that the objection is price, as always.",
+    "speakers": {"A":"Nikolay","B":"Valya"},
+    "lines": [
+      {"s":"A","t":"Their objection is price. It's always price."},
+      {"s":"B","t":"Is it? Or is that the polite version?"},
+      {"s":"A","t":"He said 'it's too expensive' and went quiet."},
+      {"s":"B","t":"That's usually a stall. Ask him what he's comparing it to."},
+      {"s":"A","t":"And if he pushes back again?"},
+      {"s":"B","t":"Then you handle the objection with a question. A discount is the last thing you reach for, if ever."},
+      {"s":"A","t":"What question?"},
+      {"s":"B","t":"'If the price were right, would you be starting in March?' His answer tells you whether price is the real issue."},
+      {"s":"A","t":"And if he says no?"},
+      {"s":"B","t":"Then price was never the deal breaker, and you've saved yourself three weeks of chasing."}
+    ]
+  },
+  {
+    "title": "The pen was already out",
+    "level": "B2",
+    "focus": "Closing",
+    "setting": "A client asked about timing and the rep sent an email instead.",
+    "speakers": {"A":"Valya","B":"Rosen"},
+    "lines": [
+      {"s":"A","t":"How did Burgas end?"},
+      {"s":"B","t":"She asked how quickly we could start."},
+      {"s":"A","t":"That's a buying signal, and you walked past it."},
+      {"s":"B","t":"I sent a summary email instead."},
+      {"s":"A","t":"When somebody asks about timing, try a trial close. 'If we start on the 3rd, does that work for your team?'"},
+      {"s":"B","t":"It felt pushy."},
+      {"s":"A","t":"It's a question, and she raised the date herself."},
+      {"s":"B","t":"So how do I close the sale without inventing urgency?"},
+      {"s":"A","t":"Use the urgency she already has. Her system stops being supported in May, and she told you that in the first meeting."},
+      {"s":"B","t":"Then I'll ask her to sign on the dotted line this month, and we cross the line on a deal that started in February."}
+    ]
+  },
+  {
+    "title": "The one we lost in May",
+    "level": "B2",
+    "focus": "Targets & results",
+    "setting": "A quarterly review of one rep's numbers.",
+    "speakers": {"A":"Valya","B":"Nikolay"},
+    "lines": [
+      {"s":"A","t":"You hit target in three of the last four quarters."},
+      {"s":"B","t":"The fourth one still annoys me."},
+      {"s":"A","t":"Your win rate is 31%, which is above the team."},
+      {"s":"B","t":"And my deal size is below it."},
+      {"s":"A","t":"That's the honest problem. More small deals, more work, same commission."},
+      {"s":"B","t":"So I should chase bigger companies."},
+      {"s":"A","t":"Chase companies with a budget holder in the room. Size follows."},
+      {"s":"B","t":"What about the lost deal in May? I still don't know why."},
+      {"s":"A","t":"Call him and ask. People tell you the truth once there's nothing left to sell them."},
+      {"s":"B","t":"And if we lost on price, I'll stop discounting to reach quota next time."}
+    ]
+  },
+  {
+    "title": "Three hundred kilometres",
+    "level": "B1",
+    "focus": "Accounts",
+    "setting": "A rep's area has grown and one client has gone quiet.",
+    "speakers": {"A":"Rosen","B":"Valya"},
+    "lines": [
+      {"s":"A","t":"My territory now runs from Ruse to Burgas."},
+      {"s":"B","t":"Three hundred kilometres and eleven clients."},
+      {"s":"A","t":"Two of them are key accounts. The rest I see twice a year."},
+      {"s":"B","t":"How many renewals fall before March?"},
+      {"s":"A","t":"Four. Three will sign, one has gone quiet."},
+      {"s":"B","t":"Quiet before a renewal usually means somebody else has called them."},
+      {"s":"A","t":"Should I drive out and see him?"},
+      {"s":"B","t":"Go this week. Keeping him costs less than trying to win back a customer in June."},
+      {"s":"A","t":"And if he's already decided?"},
+      {"s":"B","t":"Then you'll know why, and so will the next account manager who takes that client."}
+    ]
+  },
+  {
+    "title": "Eleven pages",
+    "level": "B2",
+    "focus": "Proposals",
+    "setting": "A formal tender arrives with forty questions attached.",
+    "speakers": {"A":"Nikolay","B":"Valya"},
+    "lines": [
+      {"s":"A","t":"Their request for proposal is forty questions long."},
+      {"s":"B","t":"How much of it matters?"},
+      {"s":"A","t":"Six questions. The rest is procurement protecting itself."},
+      {"s":"B","t":"Answer all forty, and put the six on the first page."},
+      {"s":"A","t":"My proposal runs to eleven pages."},
+      {"s":"B","t":"Make the scope of work exact. Most arguments in month three begin in a vague sentence in month one."},
+      {"s":"A","t":"They'll ask for a discount."},
+      {"s":"B","t":"They always do. Hold the price and change what's included."},
+      {"s":"A","t":"Isn't that the same thing?"},
+      {"s":"B","t":"Value-based pricing sets the number by what it's worth to them. A no-brainer offer is one where they can see that for themselves."}
+    ]
   }
 ]

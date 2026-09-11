@@ -34,5 +34,147 @@
       {"s":"A","t":"And no discount before the scope is clear."},
       {"s":"B","t":"Agreed. I'll put it in the template so nobody forgets."}
     ]
+  },
+  {
+    "title": "Profitable and empty",
+    "level": "B2",
+    "focus": "Cash & budgets",
+    "setting": "The accounts show a profit and the bank account disagrees.",
+    "speakers": {"A":"Krasi","B":"Milena"},
+    "lines": [
+      {"s":"A","t":"We're profitable and the bank account is empty."},
+      {"s":"B","t":"Profit and cash flow are two different stories, and yours are three months apart."},
+      {"s":"A","t":"How bad is it?"},
+      {"s":"B","t":"You're 14% over budget on overheads, and the rent went up in January."},
+      {"s":"A","t":"Rent is a fixed cost. I can't touch it."},
+      {"s":"B","t":"The variable costs are where you have choices. Deliveries, packaging, overtime."},
+      {"s":"A","t":"Give me a ballpark figure. How much has to go?"},
+      {"s":"B","t":"Eleven thousand a month. Run the numbers yourself tonight and you'll reach the same figure."},
+      {"s":"A","t":"So we tighten the belt until June."},
+      {"s":"B","t":"Until the March invoices land. Cut costs where customers never see it, and stop discounting to win work you can't finance."},
+      {"s":"A","t":"That last one stung."},
+      {"s":"B","t":"It was meant to. A budget you write in January and never open again is a wish."}
+    ]
+  },
+  {
+    "title": "The number at the bottom",
+    "level": "B2",
+    "focus": "Profit & loss",
+    "setting": "Sales have grown and the owner cannot feel the difference.",
+    "speakers": {"A":"Krasi","B":"Milena"},
+    "lines": [
+      {"s":"A","t":"Revenue is up 18% on last year."},
+      {"s":"B","t":"And the bottom line?"},
+      {"s":"A","t":"Almost exactly where it was."},
+      {"s":"B","t":"Then your profit margin has fallen. You're selling more and keeping less of it."},
+      {"s":"A","t":"Turnover is what people ask about at conferences."},
+      {"s":"B","t":"Turnover is what you tell them. The bottom line is what you take home."},
+      {"s":"A","t":"When do we break even on the new branch?"},
+      {"s":"B","t":"The break-even point is 340 covers a month. You're at 290."},
+      {"s":"A","t":"So it's in the red."},
+      {"s":"B","t":"Fifty covers away from being in the black, which is two more tables a day."},
+      {"s":"A","t":"That sounds achievable when you put it like that."},
+      {"s":"B","t":"It's the same number I've been writing down since November. Today it fitted on one line."}
+    ]
+  },
+  {
+    "title": "The one that will never pay",
+    "level": "B1",
+    "focus": "Accounting",
+    "setting": "An old unpaid invoice is making the accounts look healthier than they are.",
+    "speakers": {"A":"Zhivko","B":"Milena"},
+    "lines": [
+      {"s":"A","t":"The invoice from that company in Ruse is fourteen months old."},
+      {"s":"B","t":"They closed in March."},
+      {"s":"A","t":"Then we write it off. It sits in accounts receivable making everything look better than it is."},
+      {"s":"B","t":"How much?"},
+      {"s":"A","t":"Four thousand two hundred."},
+      {"s":"B","t":"Write it off this quarter, so the income statement tells the truth."},
+      {"s":"A","t":"And the balance sheet?"},
+      {"s":"B","t":"Cleaner without it. What's sitting in accounts payable?"},
+      {"s":"A","t":"Eleven suppliers, all within terms."},
+      {"s":"B","t":"Keep it that way. A company that pays on time gets answered on time."}
+    ]
+  },
+  {
+    "title": "Sixty days, they said",
+    "level": "B2",
+    "focus": "Payments & clients",
+    "setting": "A good client who has never once paid on schedule.",
+    "speakers": {"A":"Milena","B":"Krasi"},
+    "lines": [
+      {"s":"A","t":"This invoice is ninety days overdue."},
+      {"s":"B","t":"Their payment terms say sixty."},
+      {"s":"A","t":"Which they agreed to and have never once met."},
+      {"s":"B","t":"Do I chase the invoice again?"},
+      {"s":"A","t":"Somebody chases it every week. Change the arrangement instead of the reminder."},
+      {"s":"B","t":"Meaning what?"},
+      {"s":"A","t":"Upfront payment of 30% on the next job, or a deposit before we order materials."},
+      {"s":"B","t":"They'll try to bargain me down. They always do."},
+      {"s":"A","t":"Then build the discount into the quote so you have something to give away."},
+      {"s":"B","t":"And if they ask for a refund on the last job?"},
+      {"s":"A","t":"They won't. They're slow payers who like the work."},
+      {"s":"B","t":"Slow costs us the interest on the money we borrowed to do their work."}
+    ]
+  },
+  {
+    "title": "Borrow or sell",
+    "level": "B2",
+    "focus": "Growth & investment",
+    "setting": "Two hundred thousand is needed and there are only two ways to get it.",
+    "speakers": {"A":"Krasi","B":"Milena"},
+    "lines": [
+      {"s":"A","t":"To open the second site I need two hundred thousand."},
+      {"s":"B","t":"Borrow it, or sell part of the company. Those are the two doors."},
+      {"s":"A","t":"What's the interest rate now?"},
+      {"s":"B","t":"Around 8%. The loan is repaid over five years and the debt sits on your balance sheet the whole time."},
+      {"s":"A","t":"And the other door?"},
+      {"s":"B","t":"You give away equity. No repayments, and a shareholder who expects a dividend and a say."},
+      {"s":"A","t":"I'd rather owe a bank than explain myself at a meeting."},
+      {"s":"B","t":"Then borrow, and leave your working capital alone. That's the money that pays wages in a slow month."},
+      {"s":"A","t":"What's the return on investment on the second site?"},
+      {"s":"B","t":"On your numbers, 22 months. On mine, three years."},
+      {"s":"A","t":"Why the difference?"},
+      {"s":"B","t":"You counted the first site as a cash cow that funds the second, and it has been quietly slowing since spring."}
+    ]
+  },
+  {
+    "title": "Three weeks of paper",
+    "level": "B1",
+    "focus": "Reporting",
+    "setting": "The auditors arrive on the 14th.",
+    "speakers": {"A":"Zhivko","B":"Milena"},
+    "lines": [
+      {"s":"A","t":"The audit starts on the 14th."},
+      {"s":"B","t":"Which quarter are they looking at?"},
+      {"s":"A","t":"All four. It's the whole fiscal year."},
+      {"s":"B","t":"Then I want everything in one folder by Friday."},
+      {"s":"A","t":"The forecast for next year as well?"},
+      {"s":"B","t":"They won't ask for it. I want it anyway, while the numbers are still in my head."},
+      {"s":"A","t":"Year on year we're up in three months and down in nine."},
+      {"s":"B","t":"That's the sentence that goes at the top of the report."},
+      {"s":"A","t":"Nobody reads past the first page."},
+      {"s":"B","t":"Which is why the first page should hold the thing you'd least like to explain."}
+    ]
+  },
+  {
+    "title": "Keep the receipt",
+    "level": "B1",
+    "focus": "Tax",
+    "setting": "An expense claim arrives with more items than receipts.",
+    "speakers": {"A":"Zhivko","B":"Krasi"},
+    "lines": [
+      {"s":"A","t":"Your expense claim has eleven items and four receipts."},
+      {"s":"B","t":"The rest were card payments. It's all on the statement."},
+      {"s":"A","t":"A statement shows the amount. It doesn't show what you bought or the VAT on it."},
+      {"s":"B","t":"Is a lunch tax-deductible?"},
+      {"s":"A","t":"With a client, sometimes. Alone in an airport, no."},
+      {"s":"B","t":"That's the one I was hoping about."},
+      {"s":"A","t":"Everybody hopes about that one."},
+      {"s":"B","t":"When is the tax return due?"},
+      {"s":"A","t":"The 31st, and I'd like your receipts three weeks before that rather than the night before."},
+      {"s":"B","t":"And payroll?"},
+      {"s":"A","t":"Payroll runs on the 25th whatever else is happening. That date has never moved in nine years."}
+    ]
   }
 ]

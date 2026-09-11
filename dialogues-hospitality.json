@@ -34,5 +34,130 @@
       {"s":"A","t":"You've done this before."},
       {"s":"B","t":"Every allergy gets read back twice. It takes eight seconds and it matters."}
     ]
+  },
+  {
+    "title": "Overbooked by three",
+    "level": "B2",
+    "focus": "Front desk",
+    "setting": "Three more guests than rooms, and someone has to be told.",
+    "speakers": {"A":"Dani","B":"Veska"},
+    "lines": [
+      {"s":"A","t":"We're overbooked by three rooms tonight."},
+      {"s":"B","t":"How did that happen?"},
+      {"s":"A","t":"Two walk-ins at six, and the coach party arrived complete. Usually one reservation turns into a no-show."},
+      {"s":"B","t":"Who has checked in already?"},
+      {"s":"A","t":"Everyone except the three late arrivals."},
+      {"s":"B","t":"Then those three are the ones we phone. Not the family, and not the man who's here every month."},
+      {"s":"A","t":"The couple with the booking reference ending 40. They arrive at ten."},
+      {"s":"B","t":"Put them in the Rila, upgrade them to a suite there, and make the transfer complimentary."},
+      {"s":"A","t":"That costs us ninety leva."},
+      {"s":"B","t":"A guest turned away badly costs us four years. Have the concierge arrange the taxi personally."},
+      {"s":"A","t":"And tomorrow?"},
+      {"s":"B","t":"We're fully booked again, so a room has to be free by noon. Whoever agrees to check out early gets a coffee and a thank you."}
+    ]
+  },
+  {
+    "title": "Room 214",
+    "level": "B1",
+    "focus": "Rooms & housekeeping",
+    "setting": "One room got missed on a full day.",
+    "speakers": {"A":"Veska","B":"Dani"},
+    "lines": [
+      {"s":"A","t":"Room 214 says the amenities weren't replaced."},
+      {"s":"B","t":"Housekeeping did that floor at eleven."},
+      {"s":"A","t":"Then somebody skipped one room, which happens on a full day."},
+      {"s":"B","t":"Shall I send someone up?"},
+      {"s":"A","t":"Now, with the missing items and an apology at the door."},
+      {"s":"B","t":"She also asked about room service after ten."},
+      {"s":"A","t":"The kitchen closes at ten thirty. Tell her honestly and offer the bar menu until midnight."},
+      {"s":"B","t":"And the turndown service?"},
+      {"s":"A","t":"Top floor only, and only while guests are out. Never knock at nine at night on somebody's holiday."},
+      {"s":"B","t":"Understood. I'll take the towels up myself."}
+    ]
+  },
+  {
+    "title": "November at the same price",
+    "level": "B2",
+    "focus": "Rates & packages",
+    "setting": "The hotel is full in August and empty in November.",
+    "speakers": {"A":"Veska","B":"Marto"},
+    "lines": [
+      {"s":"A","t":"Our occupancy rate in November was 38%."},
+      {"s":"B","t":"And in August?"},
+      {"s":"A","t":"Ninety-four. Peak season pays for the rest of the year."},
+      {"s":"B","t":"So the off season is the problem."},
+      {"s":"A","t":"The problem is charging off season prices without changing what's in the offer."},
+      {"s":"B","t":"What would you change?"},
+      {"s":"A","t":"Half board included instead of a discount. Full board for anyone staying five nights."},
+      {"s":"B","t":"That's a package deal, and it costs us less than dropping the rate."},
+      {"s":"A","t":"And the restaurant is empty in November anyway."},
+      {"s":"B","t":"All-inclusive as well?"},
+      {"s":"A","t":"No. That brings people who never leave the hotel, and the town needs them too."},
+      {"s":"B","t":"Then push the loyalty programme at the same time, and keep two of the seasonal staff through the winter."}
+    ]
+  },
+  {
+    "title": "Table nine",
+    "level": "B2",
+    "focus": "Restaurant & bar",
+    "setting": "Eighty-four covers booked and one table with a serious allergy.",
+    "speakers": {"A":"Marto","B":"Kiro"},
+    "lines": [
+      {"s":"A","t":"How many covers tonight?"},
+      {"s":"B","t":"Eighty-four booked. Peak times are seven to nine, as always."},
+      {"s":"A","t":"Then front of house needs four people at seven, not three."},
+      {"s":"B","t":"Table nine has dietary requirements."},
+      {"s":"A","t":"Which ones?"},
+      {"s":"B","t":"One serious nut allergy."},
+      {"s":"A","t":"Then you tell the kitchen yourself, out loud, and you watch that plate leave back of house."},
+      {"s":"B","t":"I've taken the order and written it down."},
+      {"s":"A","t":"Write it and say it. Paper doesn't hear you."},
+      {"s":"B","t":"They'll want to split the bill. Six people from three companies."},
+      {"s":"A","t":"Then ask before dessert rather than after, and check the service charge is explained on the menu."},
+      {"s":"B","t":"And last orders?"},
+      {"s":"A","t":"Ten thirty, said politely at ten fifteen, so nobody feels pushed out of the door."}
+    ]
+  },
+  {
+    "title": "The room above the kitchen",
+    "level": "B2",
+    "focus": "Guest problems",
+    "setting": "Three bad nights that nobody heard about until checkout.",
+    "speakers": {"A":"Dani","B":"Veska"},
+    "lines": [
+      {"s":"A","t":"A guest complaint from 305. Noise from the kitchen extractor, three nights running."},
+      {"s":"B","t":"Three nights, and she's telling us now?"},
+      {"s":"A","t":"She says she didn't want to be difficult."},
+      {"s":"B","t":"Those are the ones we lose without ever knowing why."},
+      {"s":"A","t":"What do I offer?"},
+      {"s":"B","t":"Move her tonight, apologise for the inconvenience once, and compensate her for the three nights."},
+      {"s":"A","t":"A voucher, or a refund?"},
+      {"s":"B","t":"Ask her. A refund if she's leaving, a voucher if she's coming back."},
+      {"s":"A","t":"And the man in 210 who's complained about everything since Monday?"},
+      {"s":"B","t":"High maintenance, and still a guest. Solve what's solvable and stop apologising for the weather."},
+      {"s":"A","t":"He left a jacket in the restaurant, by the way."},
+      {"s":"B","t":"Lost property, logged and labelled. Then go the extra mile for a guest who's easy to please, because those are the ones who come back."}
+    ]
+  },
+  {
+    "title": "The seven o'clock transfer",
+    "level": "B1",
+    "focus": "Tours & travel",
+    "setting": "A guest checks tomorrow's plan at the concierge desk.",
+    "speakers": {"A":"Mrs Brown","B":"Dani"},
+    "lines": [
+      {"s":"A","t":"Can you look at our itinerary for tomorrow?"},
+      {"s":"B","t":"Of course. The transfer to the airport is at seven."},
+      {"s":"A","t":"That's very early."},
+      {"s":"B","t":"Your flight is at ten, there's a layover in Vienna, and the desk closes at nine."},
+      {"s":"A","t":"And today?"},
+      {"s":"B","t":"The guided tour leaves at ten from the front steps. Two hours, four landmarks, and the guide's English is excellent."},
+      {"s":"A","t":"My husband would rather go sightseeing on his own."},
+      {"s":"B","t":"Then here's a map with the same four places and their opening times."},
+      {"s":"A","t":"Can we print our boarding passes here?"},
+      {"s":"B","t":"At the desk, any time before six tomorrow."},
+      {"s":"A","t":"We'll be exhausted. It's a five-hour difference."},
+      {"s":"B","t":"Jet lag is easier if you stay up until ten tonight. Everybody tells you to sleep early, and it makes the second day worse."}
+    ]
   }
 ]

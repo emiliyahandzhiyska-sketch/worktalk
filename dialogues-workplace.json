@@ -34,5 +34,121 @@
       {"s":"A","t":"Of course. I'll set up a short call for Friday."},
       {"s":"B","t":"Perfect. Then I can hit the ground running."}
     ]
+  },
+  {
+    "title": "Nine people, one hour",
+    "level": "B2",
+    "focus": "Meetings",
+    "setting": "A project meeting with more people in it than decisions to make.",
+    "speakers": {"A":"Radost","B":"Kiril"},
+    "lines": [
+      {"s":"A","t":"Let's kick off. Two minutes of small talk and then we get down to business."},
+      {"s":"B","t":"That's the shortest break the ice I've ever been given."},
+      {"s":"A","t":"Nine people, one hour. I'd rather cut to the chase."},
+      {"s":"B","t":"Fine. Are we going over the whole plan or just the budget?"},
+      {"s":"A","t":"The budget. On everything else we're already on the same page."},
+      {"s":"B","t":"Then somebody should bring up the elephant in the room. We're two people short."},
+      {"s":"A","t":"Say it properly, so it goes in the notes."},
+      {"s":"B","t":"We planned this for six people and four are available. In a nutshell, the date moves or the scope does."},
+      {"s":"A","t":"Does anyone want to weigh in?"},
+      {"s":"B","t":"Mira has been on the fence since Monday. Mira, speak up."},
+      {"s":"A","t":"She just did, in chat. She and Deyan don't see eye to eye on the order of the work."},
+      {"s":"B","t":"Then those two take it offline and come back with one answer on Thursday."},
+      {"s":"A","t":"We haven't touched on the budget for the extra week."},
+      {"s":"B","t":"Off the top of my head, eleven thousand. Don't quote me on that."},
+      {"s":"A","t":"Run the real figure by Radost before Thursday."},
+      {"s":"B","t":"I'll touch base with her tomorrow and circle back to the group on Friday."},
+      {"s":"A","t":"Do we need a session to brainstorm alternatives?"},
+      {"s":"B","t":"Not a whole session. I'll bounce a few ideas off Kiril over coffee and bring you two options."},
+      {"s":"A","t":"And if the supplier is late again?"},
+      {"s":"B","t":"We play it by ear. Long story short, the big picture hasn't changed: we ship in April, or we ship badly."},
+      {"s":"A","t":"Anybody want to chime in before I wrap up?"},
+      {"s":"B","t":"Just read back the action items. The takeaways can go in the email, and the bottom line is Thursday."}
+    ]
+  },
+  {
+    "title": "Reply all",
+    "level": "B1",
+    "focus": "Email",
+    "setting": "Somebody has sent a client thread more than they meant to.",
+    "speakers": {"A":"Boyan","B":"Mira"},
+    "lines": [
+      {"s":"A","t":"Quick heads up. I hit reply all."},
+      {"s":"B","t":"On the client thread?"},
+      {"s":"A","t":"On the client thread. With a typo in the first line."},
+      {"s":"B","t":"Did anyone get back to you?"},
+      {"s":"A","t":"Their project manager, in four minutes, being very kind about it."},
+      {"s":"B","t":"Then it's survivable. Did you cc anyone internally?"},
+      {"s":"A","t":"I looped Radost in, because she signs off on anything they see."},
+      {"s":"B","t":"Good. Keep me posted if they raise it again, and keep Radost in the loop."},
+      {"s":"A","t":"Should I reach out and apologise properly?"},
+      {"s":"B","t":"One line, to him only. Then proofread the next one before it goes."},
+      {"s":"A","t":"I'll double-check everything for a month."},
+      {"s":"B","t":"You'll double-check for a week and then forget, like the rest of us. Follow up on the actual question they asked, because that's still unanswered, and follow through on the date you give them."}
+    ]
+  },
+  {
+    "title": "Six o'clock",
+    "level": "B1",
+    "focus": "Teamwork & office",
+    "setting": "A manager and a team lead talk about two people on the way out of the door.",
+    "speakers": {"A":"Radost","B":"Kiril"},
+    "lines": [
+      {"s":"A","t":"It's six. Let's call it a day."},
+      {"s":"B","t":"One thing first. Nadya is ready to take the lead on the Varna account."},
+      {"s":"A","t":"She's been here four months."},
+      {"s":"B","t":"She learned the ropes faster than anyone I've had, and she got up to speed on the contracts in a fortnight."},
+      {"s":"A","t":"And Boyan?"},
+      {"s":"B","t":"He dropped the ball twice this month. Both times on something he'd promised."},
+      {"s":"A","t":"Is he pulling his weight otherwise?"},
+      {"s":"B","t":"He's a team player and he goes the extra mile whenever anyone asks. He can't say no, so he agrees to everything and finishes half."},
+      {"s":"A","t":"Then teach him to say no before you ask him to step up on anything else."},
+      {"s":"B","t":"Tomorrow. Now it really is six."}
+    ]
+  },
+  {
+    "title": "Back to the drawing board",
+    "level": "B2",
+    "focus": "Problem solving",
+    "setting": "Six weeks of effort and the numbers have not moved.",
+    "speakers": {"A":"Mira","B":"Kiril"},
+    "lines": [
+      {"s":"A","t":"Six weeks, and the numbers haven't moved."},
+      {"s":"B","t":"Nothing we tried moved the needle?"},
+      {"s":"A","t":"One thing. The rest was trial and error, mostly error."},
+      {"s":"B","t":"Then it's back to the drawing board on the big idea. What's the quick win?"},
+      {"s":"A","t":"Answering the phone before five rings. Low-hanging fruit, and a no-brainer."},
+      {"s":"B","t":"Do that on Monday and get the ball rolling while we figure out the rest."},
+      {"s":"A","t":"We still have to deal with the booking system."},
+      {"s":"B","t":"Can you sort it out, or do we need the supplier?"},
+      {"s":"A","t":"There's a workaround. It's ugly and it works."},
+      {"s":"B","t":"Use it while we nail down a real answer. What's plan B if the supplier says no?"},
+      {"s":"A","t":"We come up with something ourselves, which costs three weeks."},
+      {"s":"B","t":"Then iron out the details this week. My rule of thumb is never to cut corners on the part customers touch."},
+      {"s":"A","t":"Agreed. I'll send you the game plan tonight, and then the ball is in your court on the budget."}
+    ]
+  },
+  {
+    "title": "Crunch time",
+    "level": "B2",
+    "focus": "Tasks & deadlines",
+    "setting": "A manager asks for an honest answer about what will actually be finished.",
+    "speakers": {"A":"Radost","B":"Boyan"},
+    "lines": [
+      {"s":"A","t":"Where are we? Honestly."},
+      {"s":"B","t":"Two things on track, one running behind, one up in the air."},
+      {"s":"A","t":"Which one is behind schedule?"},
+      {"s":"B","t":"The catalogue. I've been putting it off because it's time-consuming and nobody chases it."},
+      {"s":"A","t":"And the one up in the air?"},
+      {"s":"B","t":"The Plovdiv visit. I'd pencil it in for the 14th and call it off on Friday if the numbers don't arrive."},
+      {"s":"A","t":"Fine. What's on your plate this week?"},
+      {"s":"B","t":"Too much. I'm filling in for Kiril, and I took on the supplier forms on short notice."},
+      {"s":"A","t":"Do you have the bandwidth for the catalogue as well?"},
+      {"s":"B","t":"No. Something gets put on hold, or somebody takes it over."},
+      {"s":"A","t":"Then hand the forms over to Nadya. She can fill them out and set up the meeting."},
+      {"s":"B","t":"That helps. If I stop juggling three things I'll stop getting sidetracked."},
+      {"s":"A","t":"Put together a list of what's in the pipeline and keep track of the dates in one place. And make time for the catalogue on Tuesday, before anything else."},
+      {"s":"B","t":"Then if we run out of time in March it's crunch time we saw coming. I've had enough of finishing at the last minute, down to the wire, every quarter."}
+    ]
   }
 ]

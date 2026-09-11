@@ -34,5 +34,146 @@
       {"s":"A","t":"I can put that together this week."},
       {"s":"B","t":"Do that, and I'll take it to the head of department in the next cycle."}
     ]
+  },
+  {
+    "title": "Ninety applicants",
+    "level": "B2",
+    "focus": "Recruitment",
+    "setting": "One open job has produced far more applications than anyone can read.",
+    "speakers": {"A":"Pavel","B":"Katya"},
+    "lines": [
+      {"s":"A","t":"Ninety applicants for one vacancy."},
+      {"s":"B","t":"Because the job posting says 'competitive salary' and nothing else."},
+      {"s":"A","t":"We never put numbers in."},
+      {"s":"B","t":"Then we get ninety people, and eighty of them want a different job."},
+      {"s":"A","t":"How do we cut it down?"},
+      {"s":"B","t":"A fifteen-minute screening call each. That gets us to a shortlist of six by Friday."},
+      {"s":"A","t":"And then?"},
+      {"s":"B","t":"A competency-based interview. Ask what they actually did last March. Hypothetical questions get hypothetical answers."},
+      {"s":"A","t":"Everybody says they're a team player."},
+      {"s":"B","t":"So ask about the last time they disagreed with a manager. Then a reference check before the offer letter goes anywhere."},
+      {"s":"A","t":"And if our first choice says no?"},
+      {"s":"B","t":"We go to the second name. That's why you interview six and not two, and why the hire is decided before anyone celebrates."}
+    ]
+  },
+  {
+    "title": "What's actually in it",
+    "level": "B2",
+    "focus": "Contracts & pay",
+    "setting": "A new employee reads the paperwork before signing it.",
+    "speakers": {"A":"Ivo","B":"Katya"},
+    "lines": [
+      {"s":"A","t":"Before I sign, can we go through the contract of employment?"},
+      {"s":"B","t":"Of course. It's permanent. The fixed-term contract we discussed in July is off the table."},
+      {"s":"A","t":"What's in the benefits package?"},
+      {"s":"B","t":"Pension scheme from day one, health insurance after probation, twenty-five days of holiday."},
+      {"s":"A","t":"And overtime?"},
+      {"s":"B","t":"Paid at 150%, or taken as time off. Most people here take the time."},
+      {"s":"A","t":"Is there a bonus?"},
+      {"s":"B","t":"Once a year, tied to the company result. I'd rather you didn't plan your life around it."},
+      {"s":"A","t":"When is a pay rise discussed?"},
+      {"s":"B","t":"At twelve months, in writing, with your manager."},
+      {"s":"A","t":"And if something looks wrong on my payslip?"},
+      {"s":"B","t":"You come to me that week. We had a temp last year who said nothing for four months, and putting it right took longer than it should have."}
+    ]
+  },
+  {
+    "title": "Nobody takes it",
+    "level": "B1",
+    "focus": "Absence & leave",
+    "setting": "A department with suspiciously low absence figures.",
+    "speakers": {"A":"Katya","B":"Pavel"},
+    "lines": [
+      {"s":"A","t":"Your team's absence rate is the lowest in the company."},
+      {"s":"B","t":"That sounds like good news."},
+      {"s":"A","t":"Four of them have annual leave they haven't touched since last summer."},
+      {"s":"B","t":"They keep saying they'll take it later."},
+      {"s":"A","t":"Later is how people end up owed six weeks in December."},
+      {"s":"B","t":"What about Mira's parental leave?"},
+      {"s":"A","t":"It starts in March and she's back in October. We'll need a temp from February."},
+      {"s":"B","t":"And Stoyan has been ill twice this month."},
+      {"s":"A","t":"Sick pay covers him, and nobody should be at a desk with a fever."},
+      {"s":"B","t":"Then I'll put flexitime in writing for the whole team, and anyone who works a Saturday takes time off in lieu the week after."}
+    ]
+  },
+  {
+    "title": "The survey nobody answered",
+    "level": "B2",
+    "focus": "Retention & culture",
+    "setting": "People are leaving and the official figures say everyone is happy.",
+    "speakers": {"A":"Katya","B":"Pavel"},
+    "lines": [
+      {"s":"A","t":"Staff turnover is 22%. Last year it was 12%."},
+      {"s":"B","t":"And the engagement survey says everyone is fine."},
+      {"s":"A","t":"Eleven per cent answered it."},
+      {"s":"B","t":"Then it tells us one thing only: people don't trust it."},
+      {"s":"A","t":"Who left?"},
+      {"s":"B","t":"Four from your department. Two said workload, one said burnout, one said nothing at all."},
+      {"s":"A","t":"Retention costs less than hiring. I say it in every meeting."},
+      {"s":"B","t":"And the meeting is where it stops. What changed after the last survey?"},
+      {"s":"A","t":"Nothing anybody could see."},
+      {"s":"B","t":"Then start with one visible thing. Work-life balance improves the day somebody senior leaves at five."},
+      {"s":"A","t":"And the equal opportunities training?"},
+      {"s":"B","t":"Do it properly or leave it alone. Diversity and inclusion on a slide with nothing behind it damages job satisfaction faster than silence does."}
+    ]
+  },
+  {
+    "title": "Two weeks after the promotion",
+    "level": "B1",
+    "focus": "Leaving",
+    "setting": "Somebody resigns immediately after being given a bigger job.",
+    "speakers": {"A":"Pavel","B":"Katya"},
+    "lines": [
+      {"s":"A","t":"Ivo handed in his notice this morning."},
+      {"s":"B","t":"Was it a surprise?"},
+      {"s":"A","t":"Completely. He'd just been given the Varna project."},
+      {"s":"B","t":"Then his resignation is telling us something, and the exit interview is where we find out what."},
+      {"s":"A","t":"Will he be honest?"},
+      {"s":"B","t":"More honest than he's been in a year. Ask what nearly kept him here."},
+      {"s":"A","t":"Should I try to match the offer?"},
+      {"s":"B","t":"Only if you'd have paid it last month, before he resigned."},
+      {"s":"A","t":"And the position itself?"},
+      {"s":"B","t":"It stays open. Redundancy means the job disappears, dismissal means we ended it, and neither applies here. Somebody got a better offer."}
+    ]
+  },
+  {
+    "title": "Three pages, handwritten",
+    "level": "B2",
+    "focus": "Employee relations",
+    "setting": "A formal complaint arrives about a supervisor, with a second problem behind it.",
+    "speakers": {"A":"Pavel","B":"Katya"},
+    "lines": [
+      {"s":"A","t":"Somebody has raised a grievance against a supervisor."},
+      {"s":"B","t":"In writing, or in conversation?"},
+      {"s":"A","t":"In writing. Three pages."},
+      {"s":"B","t":"Then the disciplinary procedure starts today and we follow every step of it."},
+      {"s":"A","t":"Does that mean somebody is guilty?"},
+      {"s":"B","t":"It means we investigate. Half of these end with nobody at fault."},
+      {"s":"A","t":"And if it is misconduct?"},
+      {"s":"B","t":"A written warning stays on file for twelve months, and the code of conduct says what happens if it repeats."},
+      {"s":"A","t":"He also forwarded an email to the regulator."},
+      {"s":"B","t":"That's whistleblowing and it's protected. Nothing about his job changes because of it, and if anything does, we have a far bigger problem than the original complaint."},
+      {"s":"A","t":"Understood. Where do I start?"},
+      {"s":"B","t":"You don't. I do, because you manage the supervisor."}
+    ]
+  },
+  {
+    "title": "Where does this go",
+    "level": "B1",
+    "focus": "Training & growth",
+    "setting": "An employee asks what the next three years look like.",
+    "speakers": {"A":"Ivo","B":"Katya"},
+    "lines": [
+      {"s":"A","t":"I want to know where this job goes in three years."},
+      {"s":"B","t":"Then let's draw the career path and see whether it exists here."},
+      {"s":"A","t":"That sounds like it might not."},
+      {"s":"B","t":"It might not, and I'd rather you heard that from me than worked it out slowly."},
+      {"s":"A","t":"What's missing?"},
+      {"s":"B","t":"Two things. You've never managed anyone, and you don't read financial reports."},
+      {"s":"A","t":"So that's the skills gap."},
+      {"s":"B","t":"That's all of it. Learning and development covers a course for the second one."},
+      {"s":"A","t":"And the first?"},
+      {"s":"B","t":"A mentor, somebody two steps ahead of you. We can upskill you where you are, or reskill you for a different role if that's what you'd rather have."}
+    ]
   }
 ]
