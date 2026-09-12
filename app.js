@@ -1176,6 +1176,37 @@ function cefrBarsHtml(counts, total) {
     </div>`;
 }
 
+// Grammar sits outside the topics, so the report has to collect it separately.
+// A point counts as covered once any round has been finished cleanly, and as
+// shaky when a round has been attempted and never got there.
+function collectGrammar() {
+  const best = grammarBest();
+  const touched = grammar.filter(g => grammarRounds(g).some(r => best[r.key] !== undefined));
+  const byLevel = { A2: { done: 0, of: 0 }, B1: { done: 0, of: 0 }, B2: { done: 0, of: 0 } };
+  for (const g of grammar) {
+    if (!byLevel[g.level]) continue;
+    byLevel[g.level].of++;
+    if (grammarRoundsClean(g) === grammarRounds(g).length) byLevel[g.level].done++;
+  }
+  const shaky = touched
+    .map(g => {
+      const rounds = grammarRounds(g);
+      const tried = rounds.filter(r => best[r.key] !== undefined);
+      const got = tried.reduce((n, r) => n + best[r.key], 0);
+      const of = tried.reduce((n, r) => n + r.count, 0);
+      return { title: g.title, level: g.level, pct: of ? Math.round(got / of * 100) : 0, clean: grammarRoundsClean(g), rounds: rounds.length };
+    })
+    .sort((a, b) => a.pct - b.pct);
+  return {
+    touched: touched.length,
+    total: grammar.length,
+    mastered: grammar.filter(g => grammarRoundsClean(g) === grammarRounds(g).length).length,
+    byLevel,
+    weakest: shaky.filter(s => s.pct < 80).slice(0, 4),
+    strongest: shaky.filter(s => s.clean === s.rounds).slice(-4).reverse()
+  };
+}
+
 function openReport() {
   const rows = collectReport();
   const badges = earnedBadges();
@@ -1203,9 +1234,30 @@ function openReport() {
     tile(rows.length, 'topics started') +
     tile(getStreak(), 'day streak');
 
+  const gr = collectGrammar();
+  const grammarBlock = gr.touched ? `
+    <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mt-6 mb-2">Grammar</p>
+    <div class="rounded-xl border border-slate-200 p-4 text-xs leading-relaxed mb-6">
+      <p class="mb-2"><b>${gr.mastered} of ${gr.total} points complete</b>, ${gr.touched} started.</p>
+      <p class="mb-2">
+        ${Object.entries(gr.byLevel).map(([lvl, v]) =>
+          `<span class="inline-block mr-3">${lvl}: <b>${v.done}/${v.of}</b></span>`).join('')}
+      </p>
+      ${gr.weakest.length ? `
+        <p class="mb-1"><b>Needs another pass:</b>
+          ${gr.weakest.map(s => `${s.title} (${s.level}, ${s.pct}%)`).join('; ')}</p>` : ''}
+      ${gr.strongest.length ? `
+        <p class="text-emerald-600">✓ Clean on every round:
+          ${gr.strongest.map(s => s.title).join('; ')}</p>` : ''}
+    </div>` : '';
+
+  // Grammar lives outside the topics, so somebody who has only done grammar
+  // still gets a report rather than "nothing recorded yet".
   if (!rows.length) {
-    document.getElementById('reportBody').innerHTML =
-      '<p class="text-sm text-slate-500">No practice recorded yet. Open a topic and master a few cards first.</p>';
+    document.getElementById('reportBody').innerHTML = grammarBlock +
+      `<p class="text-sm text-slate-500">${gr.touched
+        ? 'No topic cards mastered yet. Open a topic and work through a few cards to fill in the rest of this report.'
+        : 'No practice recorded yet. Open a topic and master a few cards first.'}</p>`;
     document.getElementById('reportModal').classList.remove('hidden');
     return;
   }
@@ -1276,7 +1328,7 @@ function openReport() {
     </div>`;
 
   document.getElementById('reportBody').innerHTML =
-    (cefr.total ? cefrBarsHtml(cefr.counts, cefr.total) : '') + table + focus;
+    (cefr.total ? cefrBarsHtml(cefr.counts, cefr.total) : '') + table + grammarBlock + focus;
   document.getElementById('reportModal').classList.remove('hidden');
 }
 
@@ -1305,6 +1357,18 @@ function reportAsText() {
     lines.push('', 'CEFR level of mastered phrases:');
     for (const [lvl, n] of Object.entries(cefr.counts)) {
       if (n) lines.push(`  ${lvl}: ${n} (${Math.round(n / cefr.total * 100)}%)`);
+    }
+  }
+
+  const gr = collectGrammar();
+  if (gr.touched) {
+    lines.push('', `Grammar: ${gr.mastered}/${gr.total} points complete, ${gr.touched} started`);
+    lines.push('  ' + Object.entries(gr.byLevel).map(([lvl, v]) => `${lvl} ${v.done}/${v.of}`).join('  '));
+    if (gr.weakest.length) {
+      lines.push('  needs another pass: ' + gr.weakest.map(s => `${s.title} (${s.level}, ${s.pct}%)`).join('; '));
+    }
+    if (gr.strongest.length) {
+      lines.push('  clean on every round: ' + gr.strongest.map(s => s.title).join('; '));
     }
   }
 
