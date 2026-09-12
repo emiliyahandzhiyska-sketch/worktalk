@@ -2161,7 +2161,13 @@ function renderGrammarMenu() {
                 <span class="block font-bold text-sm">${g.title}</span>
                 <span class="block text-[10px] font-bold uppercase tracking-widest text-brand-500 mt-1">Level ${g.level}</span>
               </span>
-              ${best[g.id] !== undefined ? `<span class="text-xs font-semibold text-brand-500 whitespace-nowrap">Best: ${best[g.id]}/${g.exercises.length}</span>` : ''}
+              ${(() => {
+                const rounds = grammarRounds(g);
+                const clean = grammarRoundsClean(g);
+                if (!rounds.some(r => best[r.key] !== undefined)) return '';
+                return `<span class="text-xs font-bold whitespace-nowrap ${clean === rounds.length
+                  ? 'text-emerald-500' : 'text-brand-500'}">${clean === rounds.length ? '🏆 ' : ''}${clean}/${rounds.length} rounds</span>`;
+              })()}
             </button>`).join('')}
         </div>`).join('')}
       ${shown.length ? '' : '<p class="text-sm text-slate-500 dark:text-slate-400">Nothing at this level yet.</p>'}
@@ -2227,13 +2233,48 @@ function renderGrammarExplanation() {
           </div>`).join('')}
       </div>
 
-      <button onclick="startGrammarQuiz()" class="w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Start the ${point.exercises.length}-question check →</button>
-      ${mistakesForPoint(point).length ? `
-        <button onclick="startGrammarMistakes()"
-          class="w-full mt-2.5 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 font-bold text-sm hover:border-brand-500 transition-colors">
-          🚫 Spot the mistake · ${mistakesForPoint(point).length} Bulgarian traps
-        </button>` : ''}
+      <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mt-5 mb-2">Practice · ${grammarRoundTotal(point)} questions</p>
+      <div class="space-y-2.5">
+        ${grammarRounds(point).map((rd, i) => {
+          const best = grammarBest()[rd.key];
+          const done = best === rd.count;
+          return `
+          <button onclick="${rd.start}()"
+            class="w-full text-left px-4 py-3.5 rounded-xl border transition-colors flex items-center gap-3 ${i === 0
+              ? 'border-brand-500 bg-brand-500 text-white hover:bg-brand-600'
+              : 'border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:border-brand-500'}">
+            <span class="text-xl">${rd.icon}</span>
+            <span class="flex-1">
+              <span class="block font-bold text-sm">${rd.title}</span>
+              <span class="block text-xs ${i === 0 ? 'text-white/75' : 'text-slate-500 dark:text-slate-400'}">${rd.desc}</span>
+            </span>
+            <span class="text-xs font-bold whitespace-nowrap ${i === 0 ? 'text-white/90' : 'text-brand-500'}">${
+              best === undefined ? rd.count : `${done ? '✓ ' : ''}${best}/${rd.count}`}</span>
+          </button>`; }).join('')}
+      </div>
     </div>`;
+}
+
+// The four ways to practise one point. Rounds with nothing behind them
+// (a point with no traps) simply don't appear.
+function grammarRounds(point) {
+  const traps = mistakesForPoint(point).length;
+  return [
+    { key: point.id, icon: '🧩', title: 'Choose the right form', desc: 'Pick one of two answers', count: point.exercises.length, start: 'startGrammarQuiz' },
+    { key: point.id + ':typing', icon: '⌨️', title: 'Type it yourself', desc: 'Same sentences, no options to pick from', count: point.exercises.length, start: 'startGrammarTyping' },
+    ...(traps ? [{ key: point.id + ':mistakes', icon: '🚫', title: 'Spot the mistake', desc: `${traps} Bulgarian trap${traps > 1 ? 's' : ''}`, count: traps, start: 'startGrammarMistakes' }] : []),
+    { key: point.id + ':translate', icon: '🇧🇬', title: 'Translate from Bulgarian', desc: 'The examples, back to front', count: point.examples.length, start: 'startGrammarTranslate' }
+  ];
+}
+
+function grammarRoundTotal(point) {
+  return grammarRounds(point).reduce((n, r) => n + r.count, 0);
+}
+
+// How many of a point's rounds have been finished without a single slip.
+function grammarRoundsClean(point) {
+  const best = grammarBest();
+  return grammarRounds(point).filter(r => best[r.key] === r.count).length;
 }
 
 function startGrammarQuiz() {
@@ -2243,6 +2284,71 @@ function startGrammarQuiz() {
   grammarTopic.score = 0;
   grammarTopic.checked = false;
   renderGrammarQuestion();
+}
+
+// The same five sentences with the options taken away. Choosing between two
+// answers is recognition; typing one is production, and it is much harder.
+function startGrammarTyping() {
+  const point = grammarTopic.point;
+  grammarTopic.items = shuffle(point.exercises.map(e => ({
+    sentence: e.sentence,
+    answer: e.options[e.correct],
+    typed: true,
+    why: e.why,
+    why_bg: e.why_bg
+  })));
+  grammarTopic.mode = 'typing';
+  grammarTopic.index = 0;
+  grammarTopic.score = 0;
+  grammarTopic.checked = false;
+  renderGrammarQuestion();
+}
+
+// The examples, back to front: the Bulgarian is the question and the English
+// is the answer. Nothing new is invented, the sentences are the ones above.
+function startGrammarTranslate() {
+  const point = grammarTopic.point;
+  grammarTopic.items = shuffle(point.examples.map(ex => ({
+    prompt: ex.bg,
+    answer: ex.en,
+    typed: true,
+    translate: true
+  })));
+  grammarTopic.mode = 'translate';
+  grammarTopic.index = 0;
+  grammarTopic.score = 0;
+  grammarTopic.checked = false;
+  renderGrammarQuestion();
+}
+
+// Typed answers are checked loosely on purpose: punctuation, capitals and
+// contractions shouldn't decide whether somebody understood the grammar.
+// A translation counts when every content word of the model is in there.
+function grammarTypedCorrect(it, raw) {
+  const said = normalize(raw).replace(/[’']/g, '');
+  const want = normalize(it.answer).replace(/[’']/g, '');
+  if (!said) return false;
+  if (said === want) return true;
+  if (!it.translate) return false;
+  const skip = new Set(['a', 'an', 'the', 'to', 'of', 'and', 'is', 'are', 'am', 'be', 'in', 'on', 'at', 'it', 'that', 'this']);
+  const words = want.split(' ').filter(w => w.length > 2 && !skip.has(w));
+  if (!words.length) return said === want;
+  return words.every(w => said.includes(w.replace(/(ing|ed|s)$/, '')));
+}
+
+function grammarCheckTyped() {
+  if (grammarTopic.checked) return;
+  const input = document.getElementById('grammarAnswer');
+  if (!input.value.trim()) return;
+  grammarTopic.checked = true;
+  const it = grammarTopic.items[grammarTopic.index];
+  const correct = grammarTypedCorrect(it, input.value);
+  if (correct) grammarTopic.score++;
+  input.disabled = true;
+  input.className += correct
+    ? ' !border-emerald-500 !bg-emerald-50 dark:!bg-emerald-900/30'
+    : ' !border-rose-500 !bg-rose-50 dark:!bg-rose-900/25';
+  showGrammarFeedback(correct, it, `<p class="text-sm mb-1"><span class="text-slate-500 dark:text-slate-400">Answer:</span> <b>${it.answer}</b></p>`);
 }
 
 // Same screen, different questions: pick the correct sentence out of the
@@ -2265,17 +2371,28 @@ function startGrammarMistakes() {
   renderGrammarQuestion();
 }
 
+const GRAMMAR_ROUND_ICON = { rule: '', typing: '⌨️ ', mistakes: '🚫 ', translate: '🇧🇬 ' };
+
 function renderGrammarQuestion() {
   const { point, items, index, mode } = grammarTopic;
   const it = items[index];
   grammarTopic.checked = false;
 
-  document.getElementById('grammarBox').innerHTML = `
-    <div class="fade-in">
-      <div class="flex items-center justify-between mb-4">
-        <span class="text-xs font-bold text-brand-500">${mode === 'mistakes' ? '🚫 ' : ''}${point.title}</span>
-        <span class="text-xs text-slate-500 dark:text-slate-400">${index + 1} / ${items.length} · Score: ${grammarTopic.score}</span>
-      </div>
+  const head = `
+    <div class="flex items-center justify-between mb-4">
+      <span class="text-xs font-bold text-brand-500">${GRAMMAR_ROUND_ICON[mode] || ''}${point.title}</span>
+      <span class="text-xs text-slate-500 dark:text-slate-400">${index + 1} / ${items.length} · Score: ${grammarTopic.score}</span>
+    </div>`;
+
+  const body = it.typed ? `
+      ${it.translate ? '<p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-2">Say this in English</p>' : ''}
+      <p class="text-lg leading-relaxed mb-5">${it.translate ? it.prompt : it.sentence}</p>
+      <input id="grammarAnswer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"
+        placeholder="${it.translate ? 'Type the English sentence' : 'Type the missing words'}"
+        onkeydown="if(event.key==='Enter')grammarCheckTyped()"
+        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:outline-none focus:border-brand-500 mb-3">
+      <button onclick="grammarCheckTyped()" class="w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Check</button>`
+    : `
       <p class="text-lg leading-relaxed mb-5">${it.sentence}</p>
       <div class="space-y-2.5">
         ${it.options.map((opt, i) => `
@@ -2283,9 +2400,11 @@ function renderGrammarQuestion() {
             class="opt-btn w-full text-left px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm font-medium hover:border-brand-500 dark:hover:border-brand-500 transition-colors">
             ${opt}
           </button>`).join('')}
-      </div>
-      <div id="grammarFeedback" class="mt-3"></div>
-    </div>`;
+      </div>`;
+
+  document.getElementById('grammarBox').innerHTML =
+    `<div class="fade-in">${head}${body}<div id="grammarFeedback" class="mt-3"></div></div>`;
+  if (it.typed) document.getElementById('grammarAnswer').focus();
 }
 
 function grammarAnswer(i) {
@@ -2302,18 +2421,25 @@ function grammarAnswer(i) {
     else if (idx === i) btn.className += ' !bg-rose-100 dark:!bg-rose-900/40 !border-rose-500';
   });
 
-  // The moment right after answering is when the reason actually lands, so
-  // a wrong answer opens the Bulgarian straight away and a right one offers it.
+  showGrammarFeedback(correct, it);
+}
+
+// The moment right after answering is when the reason actually lands, so
+// a wrong answer opens the Bulgarian straight away and a right one offers it.
+function showGrammarFeedback(correct, it, extra = '') {
   const why = it.why ? `
-    <div class="mt-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
       <p class="text-sm leading-relaxed">${it.why}</p>
       ${it.why_bg ? `
         <button onclick="document.getElementById('whyBg').classList.toggle('hidden')"
           class="text-xs font-semibold text-brand-500 mt-2">🇧🇬 На български</button>
-        <p id="whyBg" class="${correct ? 'hidden ' : ''}text-sm leading-relaxed text-slate-600 dark:text-slate-300 mt-2">${it.why_bg}</p>` : ''}
+        <p id="whyBg" class="${correct ? 'hidden ' : ''}text-sm leading-relaxed text-slate-600 dark:text-slate-300 mt-2">${it.why_bg}</p>` : ''}` : '';
+
+  const panel = (extra || why) ? `
+    <div class="mt-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+      ${extra}${why}
     </div>` : '';
 
-  document.getElementById('grammarFeedback').innerHTML = why + `
+  document.getElementById('grammarFeedback').innerHTML = panel + `
     <button onclick="grammarNext()" class="w-full mt-3 py-2.5 rounded-xl bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 font-bold text-sm">
       ${correct ? 'Correct! Continue →' : 'Continue →'}
     </button>`;
@@ -2325,35 +2451,45 @@ function grammarNext() {
   else renderGrammarEnd();
 }
 
+const GRAMMAR_ROUND_KEY = { rule: '', typing: ':typing', mistakes: ':mistakes', translate: ':translate' };
+
 function renderGrammarEnd() {
   const { point, score, items, mode } = grammarTopic;
   const total = items.length;
-  // The two rounds are scored separately, so a good rules score isn't
-  // overwritten by a first attempt at the mistakes.
-  const bestKey = mode === 'mistakes' ? `${point.id}:mistakes` : point.id;
+  // Every round keeps its own best, so a first attempt at the typing
+  // doesn't overwrite a clean score on the multiple choice.
+  const bestKey = point.id + GRAMMAR_ROUND_KEY[mode];
   const prevBest = grammarBest()[bestKey];
   const isRecord = prevBest === undefined || score > prevBest;
   saveGrammarBest(bestKey, score);
   markDayDone();
 
-  const msg =
-    score === total ? 'Perfect. That rule is yours now. 🏆' :
-    score >= total * 0.7 ? 'Strong result. One more pass and it will stick.' :
-    'Good practice. Reread the rule above and try again.';
+  const rounds = grammarRounds(point);
+  const clean = grammarRoundsClean(point);
+  const mastered = clean === rounds.length;
 
-  const mistakeCount = mistakesForPoint(point).length;
-  const nextRound = mode === 'rule' && mistakeCount
-    ? `<button onclick="startGrammarMistakes()" class="px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">🚫 Spot the mistake</button>`
-    : `<button onclick="${mode === 'mistakes' ? 'startGrammarMistakes' : 'startGrammarQuiz'}()" class="px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Try again</button>`;
+  const msg = mastered ? 'Every round on this point is clean. 🏆'
+    : score === total ? 'Perfect round. One more to go on this point.'
+    : score >= total * 0.7 ? 'Strong result. One more pass and it will stick.'
+    : 'Good practice. Reread the rule above and try again.';
+
+  // Offer the first round that hasn't been finished cleanly yet, so the
+  // point walks a learner through all of it without them choosing each time.
+  const best = grammarBest();
+  const nextRound = rounds.find(r => best[r.key] !== r.count);
+  const nextButton = nextRound
+    ? `<button onclick="${nextRound.start}()" class="px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">${nextRound.icon} ${nextRound.title}</button>`
+    : `<button onclick="startGrammarQuiz()" class="px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Go round again</button>`;
 
   document.getElementById('grammarBox').innerHTML = `
     <div class="text-center py-6 fade-in">
-      <p class="text-4xl mb-3">${score >= total * 0.7 ? '🎉' : '💪'}</p>
+      <p class="text-4xl mb-3">${mastered ? '🏆' : score >= total * 0.7 ? '🎉' : '💪'}</p>
       <h2 class="text-xl font-extrabold mb-2">${point.title}: ${score} / ${total}</h2>
       ${isRecord ? '<p class="text-sm font-semibold text-emerald-500 mb-2">New personal best!</p>' : ''}
+      <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">${clean} of ${rounds.length} rounds clean</p>
       <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">${msg}</p>
       <div class="flex flex-wrap gap-2 justify-center">
-        ${nextRound}
+        ${nextButton}
         <button onclick="renderGrammarExplanation()" class="px-6 py-3 rounded-xl bg-slate-200 dark:bg-slate-800 font-bold text-sm hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">Read the rule</button>
         <button onclick="renderGrammarMenu()" class="px-6 py-3 rounded-xl bg-slate-200 dark:bg-slate-800 font-bold text-sm hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">All grammar</button>
       </div>
