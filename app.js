@@ -992,17 +992,94 @@ const ENCOURAGEMENTS = [
   { en: "Come back after a break without apologising to yourself.", bg: "Върни се след пауза, без да се извиняваш на себе си." },
   { en: "Perfect grammar in your head helps nobody. Say it out loud.", bg: "Перфектната граматика в главата ти не помага на никого. Кажи я на глас." },
   { en: "Native speakers also say \"how do you call this?\" sometimes.", bg: "И носителите на езика понякога казват „как се казваше това“." },
-  { en: "Small steps are the only kind that actually get taken.", bg: "Малките стъпки са единствените, които наистина се правят." }
+  { en: "Small steps are the only kind that actually get taken.", bg: "Малките стъпки са единствените, които наистина се правят." },
+
+  { en: "Understanding a fast speaker is a separate skill, and it arrives later than speaking.", bg: "Да разбираш бързо говорещ е отделно умение и идва по-късно от говоренето." },
+  { en: "Watch one episode with English subtitles. That counts as practice.", bg: "Гледай един епизод с английски субтитри. Това се брои за упражнение." },
+  { en: "If you catch 70% of a call, you can do the call.", bg: "Ако хващаш 70% от разговора, можеш да го проведеш." },
+  { en: "The Scottish colleague is hard for everyone, including the English ones.", bg: "Шотландският колега е труден за всички, включително за англичаните." },
+  { en: "Listen to the same two minutes three times. The third time is different.", bg: "Слушай едни и същи две минути три пъти. Третият е различен." },
+  { en: "Phone calls are the hardest. Nobody warns you, so consider yourself warned.", bg: "Телефонните разговори са най-трудни. Никой не предупреждава, така че смятай се за предупреден." },
+  { en: "On a video call you can read faces. That's half the meaning handed back to you.", bg: "На видеоразговор виждаш лицата. Това ти връща половината смисъл." },
+  { en: "Turn your camera on. People listen more patiently to a face.", bg: "Пусни камерата. Хората слушат по-търпеливо лице." },
+  { en: "\"Sorry, the line is bad\" buys you three seconds. Use them.", bg: "„Sorry, the line is bad“ ти печели три секунди. Използвай ги." },
+  { en: "\"What do you mean by that?\" is a full sentence and a professional one.", bg: "„What do you mean by that?“ е цяло изречение, и то професионално." },
+  { en: "Ask for the spelling. Names are hard in every language.", bg: "Помоли да ти го продиктуват буква по буква. Имената са трудни на всеки език." },
+  { en: "\"Let me check I understood\" makes you sound careful, not lost.", bg: "„Let me check I understood“ те прави да звучиш внимателен, не изгубен." },
+  { en: "Repeat the number back. Everyone does it, and it prevents disasters.", bg: "Повтори числото на глас. Всички го правят и това предотвратява беди." },
+  { en: "The day you stop translating is the day your sentences get shorter.", bg: "В деня, в който спреш да превеждаш наум, изреченията ти се скъсяват." },
+  { en: "If a sentence is hard to say, say a simpler one. That is a skill.", bg: "Ако едно изречение е трудно за казване, кажи по-просто. Това е умение." },
+  { en: "Thinking in English starts with three words, not three paragraphs.", bg: "Мисленето на английски започва с три думи, не с три абзаца." },
+  { en: "Read your email out loud before sending. Your ear catches what your eye skips.", bg: "Прочети имейла на глас, преди да го изпратиш. Ухото хваща това, което окото прескача." },
+  { en: "Short sentences read as confident. Long ones read as unsure.", bg: "Късите изречения звучат уверено. Дългите звучат несигурно." },
+  { en: "Copy the phrasing from an email you admired. That's how everyone learns.", bg: "Копирай израза от имейл, който ти е харесал. Така се учат всички." },
+  { en: "Write it in Bulgarian first if that helps. Then write it again.", bg: "Напиши го първо на български, ако това помага. После го напиши пак." },
+  { en: "Prepare one sentence before the meeting. You'll use it and the room changes.", bg: "Подготви едно изречение преди срещата. Ще го използваш и залата се променя." },
+  { en: "Interrupting politely is a skill with four words: \"Can I come in here?\"", bg: "Учтивото прекъсване е умение от четири думи: „Can I come in here?“" },
+  { en: "Disagreeing in English also takes four: \"I see it differently.\"", bg: "Несъгласието на английски също иска четири: „I see it differently.“" },
+  { en: "Speak in the first ten minutes. After that the silence gets heavier.", bg: "Говори в първите десет минути. После мълчанието натежава." },
+  { en: "Volunteer to take the notes. You'll listen harder and nobody minds.", bg: "Предложи да водиш бележките. Ще слушаш по-внимателно и никой няма против." },
+  { en: "You avoid about twenty words. Those twenty are your next month.", bg: "Избягваш някакви двадесет думи. Тези двадесет са следващият ти месец." },
+  { en: "A word you can recognise is not yet a word you own.", bg: "Дума, която разпознаваш, още не е твоя дума." },
+  { en: "Learn the phrase, not the word. Words arrive in company.", bg: "Учи израза, не думата. Думите идват с компания." },
+  { en: "Look it up twice and it's yours. Look it up once and it's a visitor.", bg: "Провери я два пъти и е твоя. Веднъж и ти е гост." },
+  { en: "One phrase you actually say beats ten you underlined.", bg: "Една фраза, която наистина казваш, бие десет подчертани." },
+  { en: "In a year you'll be someone who speaks English. Start acting like it now.", bg: "След година ще си човек, който говори английски. Започни да се държиш така отсега." },
+  { en: "Fluency arrives as a long series of slightly better days.", bg: "Свободният език идва като дълга поредица от малко по-добри дни." },
+  { en: "The version of you in six months is being built this week.", bg: "Версията ти отпреди шест месеца се строи точно тази седмица." },
+  { en: "You're learning your job in English, which is a much smaller thing than English.", bg: "Учиш работата си на английски, а това е далеч по-малко нещо от английския." },
+  { en: "English is the cheapest raise most people never take.", bg: "Английският е най-евтиното повишение, което повечето хора не взимат." },
+  { en: "The job you want is already written in English. Go and read it.", bg: "Обявата за работата, която искаш, вече е на английски. Иди и я прочети." },
+  { en: "Interviews reward preparation more than talent. Prepare five answers.", bg: "Интервютата възнаграждават подготовката повече от таланта. Подготви пет отговора." },
+  { en: "Put this where your phone already lives. Habits grow next to habits.", bg: "Сложи го там, където телефонът ти вече стои. Навиците растат до навици." },
+  { en: "Practise at the same time each day and you'll stop deciding whether to.", bg: "Учи по едно и също време всеки ден и ще спреш да решаваш дали." },
+  { en: "Two minutes before your coffee. That's the whole plan.", bg: "Две минути преди кафето. Това е целият план." },
+  { en: "Don't plan an hour. Plan the first two minutes.", bg: "Не планирай час. Планирай първите две минути." },
+  { en: "Streaks matter until they break. Then start a new one the same day.", bg: "Поредицата има значение, докато не се скъса. Тогава започни нова същия ден." },
+  { en: "Feeling stupid in a second language is normal and temporary.", bg: "Да се чувстваш глупаво на втори език е нормално и временно." },
+  { en: "Your English is better than their Bulgarian. Remember that in the room.", bg: "Твоят английски е по-добър от техния български. Помни го, като влезеш в залата." },
+  { en: "The blank moment happens to everyone. Say \"one second\" and breathe.", bg: "Празният момент се случва на всеки. Кажи „one second“ и дишай." },
+  { en: "Nobody has ever been fired over a preposition.", bg: "Никой не е бил уволнен заради предлог." },
+  { en: "Being nervous means the outcome matters to you. That's useful information.", bg: "Притеснението значи, че резултатът ти пука. Това е полезна информация." },
+  { en: "You survived the last difficult call. This one works the same way.", bg: "Преживя миналия труден разговор. Този работи по същия начин." },
+  { en: "Grammar gets noticed when it's wrong. When it's right, nobody sees it.", bg: "Граматиката се забелязва, когато е сбъркана. Когато е вярна, никой не я вижда." },
+  { en: "One rule at a time. Five rules at once is reading, not learning.", bg: "По едно правило. Пет наведнъж е четене, не учене." },
+  { en: "The tense you keep getting wrong is the one you use most. Good sign.", bg: "Времето, което постоянно бъркаш, е това, което ползваш най-много. Добър знак." },
+  { en: "Learn why it's wrong and you'll stop making it wrong.", bg: "Научи защо е грешно и ще спреш да го грешиш." },
+  { en: "Half your mistakes are Bulgarian wearing English clothes. Those are fixable.", bg: "Половината ти грешки са български в английски дрехи. Точно те са поправими." },
+  { en: "Word order is where Bulgarian shows through. Fix that and you sound fluent.", bg: "Словоредът е мястото, където българският прозира. Оправи го и звучиш свободно." },
+  { en: "Articles will take a year. Let them take a year.", bg: "Членуването ще отнеме година. Нека му отнеме година." },
+  { en: "Count the calls you didn't dread. That's the real measure.", bg: "Брой разговорите, от които не те е било страх. Това е истинската мярка." },
+  { en: "The first time you dream in English, tell somebody. It's a real milestone.", bg: "Първия път, когато сънуваш на английски, кажи на някого. Това е истински етап." },
+  { en: "You just did something today that most people postpone.", bg: "Току-що направи нещо, което повечето хора отлагат." },
+  { en: "Notice the word you used without thinking. That one is finished.", bg: "Забележи думата, която си използвал, без да мислиш. Тази вече е научена." },
+  { en: "Close this now if you want. You came, and that was the hard part.", bg: "Затвори го сега, ако искаш. Дойде, а това беше трудното." }
 ];
 
-function encouragementOfTheDay() {
-  const d = new Date();
-  const dayNumber = Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000);
-  return ENCOURAGEMENTS[dayNumber % ENCOURAGEMENTS.length];
+const ENCOURAGE_BAG_KEY = 'worktalk_encouragement_bag';
+let sessionEncouragement = null;
+
+// A fresh line every time the app is opened, drawn from a shuffled bag so
+// nothing can repeat until all of them have been seen. It stays put for the
+// rest of the session, so switching topic doesn't make the card flicker.
+function encouragementOfTheSession() {
+  if (sessionEncouragement) return sessionEncouragement;
+
+  let state = readJson(ENCOURAGE_BAG_KEY, '{}');
+  // Rebuild when the bag is empty, malformed, or written for an older,
+  // shorter list, which is what happens the first time new lines ship.
+  if (!Array.isArray(state.bag) || !state.bag.length || state.size !== ENCOURAGEMENTS.length) {
+    state = { size: ENCOURAGEMENTS.length, bag: shuffle(ENCOURAGEMENTS.map((_, i) => i)) };
+  }
+  const index = state.bag.pop();
+  try { localStorage.setItem(ENCOURAGE_BAG_KEY, JSON.stringify(state)); } catch {}
+
+  sessionEncouragement = ENCOURAGEMENTS[index] || ENCOURAGEMENTS[0];
+  return sessionEncouragement;
 }
 
 function renderMotivation() {
-  const e = encouragementOfTheDay();
+  const e = encouragementOfTheSession();
   document.getElementById('motivationCard').innerHTML = `
     <div class="bg-brand-50 dark:bg-slate-900 border border-brand-100 dark:border-slate-800 rounded-2xl p-4">
       <p class="text-sm font-semibold leading-snug text-brand-700 dark:text-brand-100">💡 ${e.en}</p>
