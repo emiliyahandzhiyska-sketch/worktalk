@@ -2199,6 +2199,25 @@ function renderGrammarExplanation() {
         class="text-xs font-semibold text-brand-500 mb-3">🇧🇬 Правилото на български</button>
       <p id="grammarRuleBg" class="hidden text-sm leading-relaxed text-slate-600 dark:text-slate-300 mb-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800">${point.rule_bg}</p>
 
+      ${point.form ? `
+        <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mt-4 mb-2">The form</p>
+        <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden mb-4">
+          ${point.form.map((row, i) => `
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3 px-3 py-2.5 ${
+              i ? 'border-t border-slate-200 dark:border-slate-700' : ''} ${
+              i % 2 ? 'bg-slate-50 dark:bg-slate-800/50' : ''}">
+              <span class="text-[11px] font-bold text-brand-500 sm:w-40 sm:shrink-0">${row.label}</span>
+              <span class="text-sm">${row.value}</span>
+            </div>`).join('')}
+        </div>` : ''}
+
+      ${point.signals ? `
+        <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mt-4 mb-2">Words that point at it</p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          ${point.signals.map(s => `
+            <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">${s}</span>`).join('')}
+        </div>` : ''}
+
       <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mt-4 mb-2">Examples</p>
       <div class="space-y-2 mb-5">
         ${point.examples.map(ex => `

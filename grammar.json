@@ -6,6 +6,24 @@
     "level": "A2",
     "rule_en": "'Be' is the verb behind am, is and are: I am, he is, we are. English needs it even where Bulgarian leaves it out: 'She is a doctor', never 'She doctor'. To say that something exists, use 'there is' for one thing and 'there are' for more than one: 'There is a problem', 'There are two problems'.",
     "rule_bg": "„Be“ е глаголът зад am, is и are: I am, he is, we are. Английският го иска дори там, където българският го пропуска: „She is a doctor“, никога „She doctor“. За съществуване: „there is“ за едно нещо, „there are“ за повече от едно: „There is a problem“, „There are two problems“.",
+    "form": [
+      {
+        "label": "Positive",
+        "value": "I am · you are · he/she/it is · we/they are"
+      },
+      {
+        "label": "Negative",
+        "value": "I'm not · you aren't · he isn't · we aren't"
+      },
+      {
+        "label": "Question",
+        "value": "Am I? · Are you? · Is he?"
+      },
+      {
+        "label": "Exists",
+        "value": "There is one room · There are two rooms"
+      }
+    ],
     "examples": [
       {
         "en": "I am from Plovdiv. My colleagues are from Sofia.",
@@ -80,6 +98,24 @@
     "level": "A2",
     "rule_en": "Use 'a' before a consonant sound and 'an' before a vowel sound: a report, an email, an hour. Use 'a/an' the first time you mention a countable thing, and 'the' after that, or whenever both of you know which one you mean: 'I sent a proposal. The proposal is 40 pages.' Bulgarian has no separate word for 'a', which is why it is the article that goes missing most often.",
     "rule_bg": "„A“ пред съгласен звук, „an“ пред гласен звук: a report, an email, an hour. „A/an“ при първо споменаване на нещо броимо, „the“ след това или когато и двамата знаете за кое става дума: „I sent a proposal. The proposal is 40 pages.“ Българският няма отделна дума за „a“, затова точно този член се изпуска най-често.",
+    "form": [
+      {
+        "label": "a + consonant sound",
+        "value": "a report · a client · a European partner"
+      },
+      {
+        "label": "an + vowel sound",
+        "value": "an email · an hour · an offer"
+      },
+      {
+        "label": "the",
+        "value": "the report you sent · the manager · the third floor"
+      },
+      {
+        "label": "no article",
+        "value": "I like coffee · She works in marketing"
+      }
+    ],
     "examples": [
       {
         "en": "I have a meeting at ten. The meeting is with the new client.",
@@ -154,6 +190,28 @@
     "level": "A2",
     "rule_en": "Most nouns add -s: report, reports. Words ending in -s, -sh, -ch or -x add -es: box, boxes. A consonant plus -y becomes -ies: company, companies. Some plurals change completely: person/people, child/children, man/men, woman/women. And some English nouns have no plural at all: information, advice, news, money, furniture.",
     "rule_bg": "Повечето съществителни добавят -s: report, reports. Думи на -s, -sh, -ch или -x добавят -es: box, boxes. Съгласна плюс -y става -ies: company, companies. Някои форми се променят напълно: person/people, child/children, man/men, woman/women. А някои английски съществителни изобщо нямат множествено число: information, advice, news, money, furniture.",
+    "form": [
+      {
+        "label": "+ s",
+        "value": "report → reports · client → clients"
+      },
+      {
+        "label": "+ es after s, sh, ch, x",
+        "value": "box → boxes · watch → watches"
+      },
+      {
+        "label": "consonant + y → ies",
+        "value": "company → companies · country → countries"
+      },
+      {
+        "label": "irregular",
+        "value": "person → people · child → children · man → men"
+      },
+      {
+        "label": "no plural",
+        "value": "information · advice · news · furniture · money"
+      }
+    ],
     "examples": [
       {
         "en": "We work with six companies and about forty people.",
@@ -228,6 +286,20 @@
     "level": "A2",
     "rule_en": "'I have a car' and 'I've got a car' mean the same thing. 'Have got' is more common in speech, 'have' in writing. The question and the negative differ: 'Do you have a minute?' but 'Have you got a minute?'. In the past only 'had' works: 'I had a meeting', never 'I had got'.",
     "rule_bg": "„I have a car“ и „I've got a car“ значат едно и също. „Have got“ е по-често в говора, „have“ в писането. Въпросът и отрицанието са различни: „Do you have a minute?“, но „Have you got a minute?“. В минало време работи само „had“: „I had a meeting“, никога „I had got“.",
+    "form": [
+      {
+        "label": "have got",
+        "value": "I've got · she hasn't got · Have you got?"
+      },
+      {
+        "label": "have",
+        "value": "I have · she doesn't have · Do you have?"
+      },
+      {
+        "label": "past (both)",
+        "value": "I had · I didn't have · Did you have?"
+      }
+    ],
     "examples": [
       {
         "en": "I've got two meetings today. Do you have time at four?",
@@ -302,6 +374,24 @@
     "level": "A2",
     "rule_en": "English builds most questions with a helper: 'Do you work here?', 'Does she speak English?', 'Did they call?'. The helper carries the tense, so the main verb goes back to its basic form: 'Does he work?', never 'Does he works?'. Bulgarian has no helper verb in questions, which is exactly why it goes missing: 'What means this word?' should be 'What does this word mean?'. With 'be' there is no helper at all, the two words simply swap: 'Are you ready?'.",
     "rule_bg": "Английският прави повечето въпроси със спомагателен глагол: „Do you work here?“, „Does she speak English?“, „Did they call?“. Спомагателният носи времето, затова главният глагол се връща в основната си форма: „Does he work?“, никога „Does he works?“. В българския няма спомагателен глагол във въпроса и точно затова изчезва: „What means this word?“ трябва да е „What does this word mean?“. С „be“ няма спомагателен изобщо, двете думи просто си разменят местата: „Are you ready?“.",
+    "form": [
+      {
+        "label": "do",
+        "value": "Do I/you/we/they work here?"
+      },
+      {
+        "label": "does",
+        "value": "Does he/she/it work here?"
+      },
+      {
+        "label": "did",
+        "value": "Did you work here? (everyone, past)"
+      },
+      {
+        "label": "be: no helper",
+        "value": "Are you ready? · Was she late?"
+      }
+    ],
     "examples": [
       {
         "en": "What does this word mean? I can't find it in the dictionary.",
@@ -376,6 +466,28 @@
     "level": "A2",
     "rule_en": "Always, usually, often, sometimes, rarely and never say how often. They go before the main verb: 'I always check my email', but after 'be': 'I am always late'. 'Never' already makes the sentence negative, so 'I don't never' is wrong. Longer expressions like 'every day' or 'twice a week' go at the end of the sentence.",
     "rule_bg": "Always, usually, often, sometimes, rarely и never казват колко често. Стоят пред главния глагол: „I always check my email“, но след „be“: „I am always late“. „Never“ вече прави изречението отрицателно, затова „I don't never“ е грешно. По-дълги изрази като „every day“ или „twice a week“ отиват накрая на изречението.",
+    "form": [
+      {
+        "label": "before the main verb",
+        "value": "I always check · she never answers"
+      },
+      {
+        "label": "after be",
+        "value": "I am always late · he is never early"
+      },
+      {
+        "label": "at the end (long ones)",
+        "value": "every day · twice a week · once a month"
+      }
+    ],
+    "signals": [
+      "always",
+      "usually",
+      "often",
+      "sometimes",
+      "rarely",
+      "never"
+    ],
     "examples": [
       {
         "en": "I usually start at eight, but I'm never in the office before seven.",
@@ -450,6 +562,20 @@
     "level": "B1",
     "rule_en": "A question tag turns a statement into a check: 'You sent it, didn't you?'. A positive sentence takes a negative tag and the other way round: 'She's late, isn't she?', 'He isn't coming, is he?'. The tag copies the auxiliary from the sentence, or uses 'do' when there isn't one: 'You work here, don't you?'. Bulgarian uses 'нали' for all of them, which is why the English version gets forgotten.",
     "rule_bg": "Опашатият въпрос превръща твърдението в проверка: „You sent it, didn't you?“. Положително изречение взима отрицателна опашка и обратно: „She's late, isn't she?“, „He isn't coming, is he?“. Опашката копира спомагателния глагол от изречението, а ако няма такъв, ползва „do“: „You work here, don't you?“. Българският ползва „нали“ за всички, затова английският вариант се забравя.",
+    "form": [
+      {
+        "label": "positive → negative tag",
+        "value": "You sent it, didn't you?"
+      },
+      {
+        "label": "negative → positive tag",
+        "value": "He isn't coming, is he?"
+      },
+      {
+        "label": "no auxiliary → do",
+        "value": "She works here, doesn't she?"
+      }
+    ],
     "examples": [
       {
         "en": "You sent the invoice, didn't you?",
@@ -524,6 +650,20 @@
     "level": "A2",
     "rule_en": "'Can' covers what you are able to do and what you are allowed to do: 'I can drive', 'You can leave early today'. It never takes 'to' after it and never adds -s: 'He can speak', not 'He can to speak' or 'He cans'. The negative is 'can't' and the question is 'Can I...?', with no 'do' in front.",
     "rule_bg": "„Can“ покрива какво можеш и какво ти е позволено: „I can drive“, „You can leave early today“. След него никога няма „to“ и никога не се добавя -s: „He can speak“, не „He can to speak“ или „He cans“. Отрицанието е „can't“, а въпросът е „Can I...?“, без „do“ отпред.",
+    "form": [
+      {
+        "label": "Positive",
+        "value": "I can go · he can go (never cans)"
+      },
+      {
+        "label": "Negative",
+        "value": "I can't go · he can't go"
+      },
+      {
+        "label": "Question",
+        "value": "Can I go? (never Do I can)"
+      }
+    ],
     "examples": [
       {
         "en": "She can speak three languages, but she can't drive.",
@@ -598,6 +738,24 @@
     "level": "A2",
     "rule_en": "In English politeness lives in the grammar, not only in the tone of voice. 'Could you send it?' is softer than 'Can you send it?', and much softer than 'Send it.' Use 'Would you like...?' to offer something, 'Could you...?' to ask someone to do something, and 'May I...?' for permission in a formal setting. A direct imperative that sounds ordinary in Bulgarian can sound abrupt in English.",
     "rule_bg": "На английски учтивостта е в граматиката, не само в тона. „Could you send it?“ е по-меко от „Can you send it?“ и много по-меко от „Send it.“ „Would you like...?“ за предложение, „Could you...?“ за молба, „May I...?“ за формално разрешение. Директна повелителна форма, която на български звучи нормално, на английски може да прозвучи рязко.",
+    "form": [
+      {
+        "label": "asking someone",
+        "value": "Could you send it? · Would you mind sending it?"
+      },
+      {
+        "label": "offering",
+        "value": "Would you like a coffee?"
+      },
+      {
+        "label": "permission",
+        "value": "May I ask a question? · Can I ask a question?"
+      },
+      {
+        "label": "what you want",
+        "value": "I'd like to ask a question (to + verb)"
+      }
+    ],
     "examples": [
       {
         "en": "Could you send me the figures before the meeting?",
@@ -672,6 +830,24 @@
     "level": "B1",
     "rule_en": "'Must' and 'have to' both say something is necessary: 'I must finish this today', 'I have to finish this today'. 'Must' usually comes from the speaker, 'have to' from a rule or the situation. The negatives are completely different: 'You mustn't send it' means it is forbidden, while 'You don't have to send it' means it is optional. 'Must' has no past form, so the past is 'had to'.",
     "rule_bg": "„Must“ и „have to“ казват, че нещо е необходимо: „I must finish this today“, „I have to finish this today“. „Must“ обикновено идва от говорещия, „have to“ от правило или обстоятелства. Отрицанията са напълно различни: „You mustn't send it“ значи забранено е, а „You don't have to send it“ значи не е задължително. „Must“ няма минало време, затова в минало е „had to“.",
+    "form": [
+      {
+        "label": "necessary",
+        "value": "I must go · I have to go · he has to go"
+      },
+      {
+        "label": "forbidden",
+        "value": "You mustn't send it"
+      },
+      {
+        "label": "not necessary",
+        "value": "You don't have to send it"
+      },
+      {
+        "label": "past (both)",
+        "value": "I had to go"
+      }
+    ],
     "examples": [
       {
         "en": "I have to be in the office by nine. The client must sign before Friday.",
@@ -746,6 +922,20 @@
     "level": "B1",
     "rule_en": "'Should' gives advice or says what the right thing is: 'You should call them first'. 'Might', 'may' and 'could' say something is possible without being certain: 'It might rain', 'She may be late'. None of them takes 'to' and none of them adds -s. For the past, add 'have': 'You should have called', 'She might have forgotten'.",
     "rule_bg": "„Should“ дава съвет или казва кое е правилното: „You should call them first“. „Might“, „may“ и „could“ казват, че нещо е възможно, без да е сигурно: „It might rain“, „She may be late“. Никой от тях не иска „to“ и никой не добавя -s. За минало се добавя „have“: „You should have called“, „She might have forgotten“.",
+    "form": [
+      {
+        "label": "advice",
+        "value": "You should call · You shouldn't wait"
+      },
+      {
+        "label": "possible",
+        "value": "It might rain · She may be late · He could be right"
+      },
+      {
+        "label": "about the past",
+        "value": "You should have called · She might have forgotten"
+      }
+    ],
     "examples": [
       {
         "en": "You should send it today. They might close early on Friday.",
@@ -820,6 +1010,27 @@
     "level": "A2",
     "rule_en": "Regular verbs add -ed: worked, called, finished. Irregular verbs change: go/went, send/sent, take/took, have/had. In questions and negatives the tense moves onto 'did', so the main verb goes back to its basic form: 'Did you go?', 'I didn't go', never 'I didn't went'. Time expressions like yesterday, last week and in 2019 all take the past simple.",
     "rule_bg": "Правилните глаголи добавят -ed: worked, called, finished. Неправилните се променят: go/went, send/sent, take/took, have/had. Във въпроси и отрицания времето минава върху „did“, а главният глагол се връща в основна форма: „Did you go?“, „I didn't go“, никога „I didn't went“. Изрази като yesterday, last week и in 2019 винаги искат минало просто.",
+    "form": [
+      {
+        "label": "Positive",
+        "value": "I worked · I went · she sent"
+      },
+      {
+        "label": "Negative",
+        "value": "I didn't work · I didn't go"
+      },
+      {
+        "label": "Question",
+        "value": "Did you work? · Did she go?"
+      }
+    ],
+    "signals": [
+      "yesterday",
+      "last week",
+      "in 2019",
+      "two days ago",
+      "then"
+    ],
     "examples": [
       {
         "en": "I sent the file yesterday and she called me an hour later.",
@@ -894,6 +1105,26 @@
     "level": "A2",
     "rule_en": "Use 'going to' for something you have already decided: 'I'm going to call him this afternoon'. The form is be + going to + verb, so the am, is or are is never optional: 'She is going to start', not 'She going to start'. For a decision you make while you are speaking, use 'will' instead.",
     "rule_bg": "„Going to“ е за нещо, което вече си решил: „I'm going to call him this afternoon“. Формата е be + going to + глагол, значи am, is или are никога не се пропуска: „She is going to start“, не „She going to start“. За решение, взето в момента на говорене, ползвай „will“.",
+    "form": [
+      {
+        "label": "Positive",
+        "value": "I'm going to call · she's going to call"
+      },
+      {
+        "label": "Negative",
+        "value": "I'm not going to call · they aren't going to call"
+      },
+      {
+        "label": "Question",
+        "value": "Are you going to call?"
+      }
+    ],
+    "signals": [
+      "tomorrow",
+      "next week",
+      "it's all planned",
+      "this afternoon"
+    ],
     "examples": [
       {
         "en": "We're going to open a second office next year.",
@@ -968,6 +1199,30 @@
     "level": "A2",
     "rule_en": "Use the present simple for routines, facts, and things that are generally true: \"I work in finance.\" Use the present continuous for something happening right now, or a temporary situation around now: \"I'm working from home this week.\"",
     "rule_bg": "Сегашно просто за рутина, факти и трайни неща: „I work in finance.“ Сегашно продължително за нещо, което се случва точно сега или временно, около момента на говорене: „I'm working from home this week.“",
+    "form": [
+      {
+        "label": "Present simple",
+        "value": "I work · he works · I don't work · Does he work?"
+      },
+      {
+        "label": "Present continuous",
+        "value": "I'm working · he's working · Are you working?"
+      },
+      {
+        "label": "state verbs",
+        "value": "know, want, need, understand, believe: simple only"
+      }
+    ],
+    "signals": [
+      "always",
+      "usually",
+      "every day",
+      "never",
+      "now",
+      "at the moment",
+      "this week",
+      "Listen!"
+    ],
     "examples": [
       {
         "en": "She usually checks her email at 8. Right now she's checking a report instead.",
@@ -1042,6 +1297,32 @@
     "level": "B1",
     "rule_en": "Use the present perfect when the time isn't finished, or the exact time doesn't matter: \"I've sent the invoice.\" (it's done, no date given). Use the past simple when the time is specific and finished: \"I sent the invoice yesterday.\"",
     "rule_bg": "Сегашно перфектно, когато моментът не е приключил или точното време не е важно: „I've sent the invoice.“ Минало просто, когато времето е конкретно и приключило: „I sent the invoice yesterday.“",
+    "form": [
+      {
+        "label": "Present perfect",
+        "value": "I have worked · she has sent · Have you been?"
+      },
+      {
+        "label": "Past simple",
+        "value": "I worked · she sent · Did you go?"
+      },
+      {
+        "label": "the difference",
+        "value": "unfinished time vs finished time"
+      }
+    ],
+    "signals": [
+      "ever",
+      "never",
+      "already",
+      "yet",
+      "just",
+      "so far",
+      "yesterday",
+      "last week",
+      "in 2019",
+      "ago"
+    ],
     "examples": [
       {
         "en": "I've worked here for six years. I started in 2020.",
@@ -1116,6 +1397,21 @@
     "level": "B1",
     "rule_en": "Use FOR with a length of time: for five years, for two weeks, for a month. Use SINCE with a starting point: since 2020, since Monday, since I joined.",
     "rule_bg": "FOR с продължителност: for five years, for two weeks. SINCE с начална точка: since 2020, since Monday, since I joined.",
+    "form": [
+      {
+        "label": "for + length",
+        "value": "for three months · for a week · for ten years"
+      },
+      {
+        "label": "since + starting point",
+        "value": "since 2015 · since Monday · since I moved"
+      }
+    ],
+    "signals": [
+      "for",
+      "since",
+      "how long"
+    ],
     "examples": [
       {
         "en": "I've known her for ten years.",
@@ -1190,6 +1486,26 @@
     "level": "B1",
     "rule_en": "Use the past continuous for an action in progress at a point in the past, often interrupted by a shorter action in the past simple: \"I was writing the report when the client called.\"",
     "rule_bg": "Минало продължително за действие, което е било в ход в определен момент в миналото, често прекъснато от по-кратко действие в минало просто: „I was writing the report when the client called.“",
+    "form": [
+      {
+        "label": "the longer action",
+        "value": "I was having lunch · we were reviewing"
+      },
+      {
+        "label": "the short action",
+        "value": "my phone rang · the client called"
+      },
+      {
+        "label": "together",
+        "value": "I was having lunch when my phone rang"
+      }
+    ],
+    "signals": [
+      "when",
+      "while",
+      "as",
+      "at exactly"
+    ],
     "examples": [
       {
         "en": "While she was presenting, the projector stopped working.",
@@ -1264,6 +1580,31 @@
     "level": "B1",
     "rule_en": "Use 'have been + -ing' for an activity that started in the past and is still going, when you want to stress how long it has been going on: 'I've been waiting for an hour'. Compare the present perfect simple, which stresses the result: 'I've written three emails'. State verbs like know, be and have don't take this form.",
     "rule_bg": "„Have been + -ing“ за дейност, започнала в миналото и още продължаваща, когато искаш да подчертаеш колко дълго тече: „I've been waiting for an hour“. Сравни с present perfect simple, който подчертава резултата: „I've written three emails“. Глаголи за състояние като know, be и have не се ползват в тази форма.",
+    "form": [
+      {
+        "label": "Positive",
+        "value": "I have been working · she has been calling"
+      },
+      {
+        "label": "Negative",
+        "value": "I haven't been working"
+      },
+      {
+        "label": "Question",
+        "value": "How long have you been waiting?"
+      },
+      {
+        "label": "state verbs",
+        "value": "know, be, have: no continuous form"
+      }
+    ],
+    "signals": [
+      "for",
+      "since",
+      "all morning",
+      "how long",
+      "lately"
+    ],
     "examples": [
       {
         "en": "I've been working here since 2020.",
@@ -1338,6 +1679,29 @@
     "level": "B1",
     "rule_en": "'Used to' describes something that was true in the past and isn't now: 'I used to work in Sofia'. In questions and negatives it loses the -d, because 'did' carries the past: 'Did you use to work there?', 'I didn't use to like coffee'. Don't confuse it with 'be used to', which means being accustomed to something: 'I'm used to early meetings'.",
     "rule_bg": "„Used to“ описва нещо, което е било вярно в миналото, но вече не е: „I used to work in Sofia“. Във въпроси и отрицания губи -d, защото „did“ носи миналото: „Did you use to work there?“, „I didn't use to like coffee“. Не го бъркай с „be used to“, което значи свикнал съм с нещо: „I'm used to early meetings“.",
+    "form": [
+      {
+        "label": "Positive",
+        "value": "I used to work there"
+      },
+      {
+        "label": "Negative",
+        "value": "I didn't use to like it (no -d)"
+      },
+      {
+        "label": "Question",
+        "value": "Did you use to work there? (no -d)"
+      },
+      {
+        "label": "be used to = accustomed",
+        "value": "I'm used to working early (+ -ing)"
+      }
+    ],
+    "signals": [
+      "before",
+      "in those days",
+      "when I was younger"
+    ],
     "examples": [
       {
         "en": "I used to travel every week, but not since the new job.",
@@ -1412,6 +1776,29 @@
     "level": "B1",
     "rule_en": "Use the second conditional for something imaginary or unlikely: 'If I had more time, I would learn Spanish'. The form is if + past simple, then would + verb. The past tense here says nothing about the past, it signals that the situation is not real. 'If I would have time' is the most common Bulgarian mistake: 'would' never goes in the 'if' half.",
     "rule_bg": "Второ условно за нещо въображаемо или малко вероятно: „If I had more time, I would learn Spanish“. Формата е if + минало просто, после would + глагол. Миналото време тук не говори за миналото, а сигнализира, че ситуацията не е реална. „If I would have time“ е най-честата българска грешка: „would“ никога не стои в частта с „if“.",
+    "form": [
+      {
+        "label": "if half",
+        "value": "If I had more time..."
+      },
+      {
+        "label": "result half",
+        "value": "...I would learn Spanish"
+      },
+      {
+        "label": "never",
+        "value": "If I would have time"
+      },
+      {
+        "label": "fixed phrase",
+        "value": "If I were you, I'd..."
+      }
+    ],
+    "signals": [
+      "if",
+      "imagine",
+      "suppose"
+    ],
     "examples": [
       {
         "en": "If we had a bigger budget, we would hire two more people.",
@@ -1486,6 +1873,26 @@
     "level": "B2",
     "rule_en": "Use WILL for decisions made now and predictions: \"I'll call him.\" Use GOING TO for plans already decided: \"We're going to launch in March.\" Use the present continuous for fixed arrangements with a time and place: \"I'm meeting the client at 3.\"",
     "rule_bg": "WILL за решения, взети в момента, и предвиждания: „I'll call him.“ GOING TO за вече решени планове: „We're going to launch in March.“ Сегашно продължително за уговорени срещи с точно време и място: „I'm meeting the client at 3.“",
+    "form": [
+      {
+        "label": "will",
+        "value": "decided now: I'll answer it"
+      },
+      {
+        "label": "going to",
+        "value": "decided before: we're going to launch"
+      },
+      {
+        "label": "present continuous",
+        "value": "arranged with someone: I'm meeting her at 2"
+      }
+    ],
+    "signals": [
+      "probably",
+      "I think",
+      "next month",
+      "look at those clouds"
+    ],
     "examples": [
       {
         "en": "I think prices will rise next year.",
@@ -1560,6 +1967,26 @@
     "level": "B2",
     "rule_en": "Use the first conditional for real, possible future situations: IF + present simple, ... WILL + base verb. \"If the client agrees, we'll sign tomorrow.\" Never use WILL after IF.",
     "rule_bg": "Първи тип условно изречение за реални, възможни бъдещи ситуации: IF + сегашно просто, ... WILL + основна форма. „If the client agrees, we'll sign tomorrow.“ Никога не се слага WILL след IF.",
+    "form": [
+      {
+        "label": "if half",
+        "value": "If we miss the deadline... (present simple)"
+      },
+      {
+        "label": "result half",
+        "value": "...the client will be angry"
+      },
+      {
+        "label": "never",
+        "value": "If we will miss"
+      }
+    ],
+    "signals": [
+      "if",
+      "when",
+      "as soon as",
+      "unless"
+    ],
     "examples": [
       {
         "en": "If we cut the price, they'll order more.",
@@ -1634,6 +2061,28 @@
     "level": "B1",
     "rule_en": "Use the passive when what happened matters more than who did it: 'The report was sent yesterday'. The form is be + the third form of the verb: is sent, was sent, has been sent. To name the person, add 'by': 'The report was written by Maria'. English uses the passive far more than Bulgarian, especially in business writing.",
     "rule_bg": "Страдателен залог, когато е по-важно какво е станало, отколкото кой го е направил: „The report was sent yesterday“. Формата е be + трета форма на глагола: is sent, was sent, has been sent. За да назовеш човека, добавяш „by“: „The report was written by Maria“. Английският ползва страдателен залог много повече от българския, особено в бизнес писането.",
+    "form": [
+      {
+        "label": "present",
+        "value": "is sent · are checked"
+      },
+      {
+        "label": "past",
+        "value": "was sent · were checked"
+      },
+      {
+        "label": "present perfect",
+        "value": "has been sent · have been checked"
+      },
+      {
+        "label": "future",
+        "value": "will be sent"
+      },
+      {
+        "label": "who did it",
+        "value": "by Maria (never from Maria)"
+      }
+    ],
     "examples": [
       {
         "en": "The invoices are sent on the first of every month.",
@@ -1708,6 +2157,24 @@
     "level": "B1",
     "rule_en": "Use 'who' for people, 'which' for things, 'where' for places, and 'that' for either: 'the colleague who called', 'the file which is missing', 'the office where we met'. Don't repeat the subject: 'the man who he called me' should be 'the man who called me'. Bulgarian allows the extra pronoun, English does not.",
     "rule_bg": "„Who“ за хора, „which“ за неща, „where“ за места, а „that“ и за двете: „the colleague who called“, „the file which is missing“, „the office where we met“. Не повтаряй подлога: „the man who he called me“ трябва да е „the man who called me“. Българският допуска допълнителното местоимение, английският не.",
+    "form": [
+      {
+        "label": "people",
+        "value": "who · that — the colleague who called"
+      },
+      {
+        "label": "things",
+        "value": "which · that — the file which is missing"
+      },
+      {
+        "label": "places",
+        "value": "where — the office where we met"
+      },
+      {
+        "label": "never",
+        "value": "the man who he called me · the report what you sent"
+      }
+    ],
     "examples": [
       {
         "en": "The colleague who sent the email is on holiday.",
@@ -1782,6 +2249,28 @@
     "level": "B1",
     "rule_en": "When you report what somebody said, the tense usually steps back one: 'I am busy' becomes 'He said he was busy'; 'I will call' becomes 'She said she would call'. Pronouns and time words shift too: today becomes that day, tomorrow becomes the next day. After 'say' there is no person; after 'tell' there is: 'He said that...', 'He told me that...'.",
     "rule_bg": "Когато предаваш чужди думи, времето обикновено отстъпва с една стъпка назад: „I am busy“ става „He said he was busy“; „I will call“ става „She said she would call“. Местоименията и времевите думи също се местят: today става that day, tomorrow става the next day. След „say“ няма човек, след „tell“ има: „He said that...“, „He told me that...“.",
+    "form": [
+      {
+        "label": "am / is / are",
+        "value": "→ was / were"
+      },
+      {
+        "label": "present simple",
+        "value": "→ past simple"
+      },
+      {
+        "label": "present perfect",
+        "value": "→ past perfect (had done)"
+      },
+      {
+        "label": "will",
+        "value": "→ would"
+      },
+      {
+        "label": "say vs tell",
+        "value": "He said that... · He told me that..."
+      }
+    ],
     "examples": [
       {
         "en": "'I'm in a meeting.' becomes: He said he was in a meeting.",
@@ -1856,6 +2345,29 @@
     "level": "A2",
     "rule_en": "'In' for something enclosed: in the office, in Plovdiv, in the drawer. 'On' for a surface: on the desk, on the second floor, on the wall. 'At' for a point or an activity: at the door, at work, at the bus stop. Two that catch Bulgarian speakers: you are in a car but on a bus, and something is in a picture, not on it.",
     "rule_bg": "„In“ за нещо затворено: in the office, in Plovdiv, in the drawer. „On“ за повърхност: on the desk, on the second floor, on the wall. „At“ за точка или дейност: at the door, at work, at the bus stop. Две, които хващат българите: човек е „in a car“, но „on a bus“, а нещо е „in a picture“, не „on“.",
+    "form": [
+      {
+        "label": "in — enclosed",
+        "value": "in the office · in Plovdiv · in the drawer"
+      },
+      {
+        "label": "on — a surface",
+        "value": "on the desk · on the third floor · on the wall"
+      },
+      {
+        "label": "at — a point",
+        "value": "at the door · at work · at the bus stop"
+      },
+      {
+        "label": "watch out",
+        "value": "in a car but on a bus · in a picture, not on it"
+      }
+    ],
+    "signals": [
+      "in",
+      "on",
+      "at"
+    ],
     "examples": [
       {
         "en": "The contract is on my desk, in the blue folder.",
@@ -1930,6 +2442,31 @@
     "level": "B1",
     "rule_en": "Use AT for exact times (at 9, at noon), ON for days and dates (on Monday, on 5 May), and IN for longer periods (in June, in 2024, in the morning). For transport, use BY with no article: by bus, by train, by plane — except \"on foot\".",
     "rule_bg": "AT за точен час (at 9, at noon), ON за дни и дати (on Monday, on 5 May), IN за по-дълги периоди (in June, in 2024, in the morning). За транспорт: BY без член: by bus, by train, by plane, с изключение на „on foot“.",
+    "form": [
+      {
+        "label": "at — clock time",
+        "value": "at 9 o'clock · at noon · at the weekend"
+      },
+      {
+        "label": "on — day or date",
+        "value": "on Monday · on 5 May"
+      },
+      {
+        "label": "in — month, year, season",
+        "value": "in April · in 2019 · in the summer"
+      },
+      {
+        "label": "by — transport, deadline",
+        "value": "by train · by Friday"
+      }
+    ],
+    "signals": [
+      "at",
+      "on",
+      "in",
+      "by",
+      "until"
+    ],
     "examples": [
       {
         "en": "The meeting is at 9 on Monday in June.",
@@ -2004,6 +2541,20 @@
     "level": "B2",
     "rule_en": "Some verbs and adjectives are always followed by the same preposition: depend ON, married TO, listen TO, look forward TO, interested IN, good AT. Learn each one as a single phrase, not word by word.",
     "rule_bg": "Някои глаголи и прилагателни винаги вървят с един и същ предлог: depend ON, married TO, listen TO, look forward TO, interested IN, good AT. Учи ги като цял израз, не дума по дума.",
+    "form": [
+      {
+        "label": "verb + preposition",
+        "value": "depend on · answer (no to) · discuss (no about)"
+      },
+      {
+        "label": "adjective + preposition",
+        "value": "interested in · good at · married to"
+      },
+      {
+        "label": "fixed",
+        "value": "look forward to + -ing"
+      }
+    ],
     "examples": [
       {
         "en": "It depends on the client, not of the client.",
@@ -2078,6 +2629,24 @@
     "level": "B1",
     "rule_en": "Some verbs are followed by -ing: enjoy, finish, avoid, suggest, mind, keep. Others take 'to': want, need, decide, hope, agree, offer, plan. A few take either with the same meaning: start, begin, continue. After a preposition the verb always takes -ing: 'interested in working', 'before sending'. There is no rule behind the lists, they have to be learned.",
     "rule_bg": "След някои глаголи идва -ing: enjoy, finish, avoid, suggest, mind, keep. След други идва „to“: want, need, decide, hope, agree, offer, plan. Няколко приемат и двете с еднакво значение: start, begin, continue. След предлог глаголът винаги е с -ing: „interested in working“, „before sending“. Зад списъците няма правило, трябва да се научат.",
+    "form": [
+      {
+        "label": "verb + -ing",
+        "value": "enjoy · finish · avoid · suggest · mind · keep"
+      },
+      {
+        "label": "verb + to",
+        "value": "want · need · decide · hope · agree · offer · plan"
+      },
+      {
+        "label": "either",
+        "value": "start · begin · continue"
+      },
+      {
+        "label": "preposition + -ing",
+        "value": "interested in working · before sending"
+      }
+    ],
     "examples": [
       {
         "en": "I enjoy working with them, and I'd like to continue next year.",
@@ -2152,6 +2721,24 @@
     "level": "B2",
     "rule_en": "\"Agree\" and \"feel\" are already complete verbs — never add \"am\" or \"myself\": I agree (not I am agree), I feel good (not I feel myself good). You SAY something, but you TELL someone something. After modal verbs like must, can, will, use the bare verb with no \"to\".",
     "rule_bg": "„Agree“ и „feel“ вече са пълни глаголи — не се добавя „am“ или „myself“: I agree, I feel good. Казваш нещо (say something), но казваш на някого (tell someone). След модални глаголи (must, can, will) глаголът е без „to“.",
+    "form": [
+      {
+        "label": "tell + person",
+        "value": "tell me · tell him the price"
+      },
+      {
+        "label": "say + no person",
+        "value": "say something · say it to me"
+      },
+      {
+        "label": "modal + bare verb",
+        "value": "must finish (never must to finish)"
+      },
+      {
+        "label": "no reflexive",
+        "value": "I feel good (never I feel myself good)"
+      }
+    ],
     "examples": [
       {
         "en": "I agree with you.",
@@ -2226,6 +2813,16 @@
     "level": "B2",
     "rule_en": "-ING adjectives describe the thing that causes the feeling: a boring meeting. -ED adjectives describe how a person feels: I was bored. The meeting is interesting; I am interested.",
     "rule_bg": "Прилагателните на -ING описват нещото, което предизвиква усещането: a boring meeting. Прилагателните на -ED описват как се чувства човекът: I was bored. Срещата е interesting; аз съм interested.",
+    "form": [
+      {
+        "label": "-ing = the cause",
+        "value": "The film is boring · the news is surprising"
+      },
+      {
+        "label": "-ed = the person",
+        "value": "I am bored · I was surprised"
+      }
+    ],
     "examples": [
       {
         "en": "The presentation was boring, so I felt bored.",
@@ -2374,6 +2971,31 @@
     "level": "A2",
     "rule_en": "'Many' goes with things you can count: many emails, many people. 'Much' goes with things you cannot: much time, much money. 'A lot of' works with both and sounds natural anywhere. In positive sentences 'much' sounds odd on its own, so 'I have a lot of work' beats 'I have much work'.",
     "rule_bg": "„Many“ върви с броими неща: many emails, many people. „Much“ с неброими: much time, much money. „A lot of“ върви и с двете и звучи естествено навсякъде. В положителни изречения самостоятелното „much“ звучи странно, затова „I have a lot of work“ е по-добре от „I have much work“.",
+    "form": [
+      {
+        "label": "many + countable",
+        "value": "many emails · many people"
+      },
+      {
+        "label": "much + uncountable",
+        "value": "much time · much money"
+      },
+      {
+        "label": "a lot of + both",
+        "value": "a lot of work · a lot of questions"
+      },
+      {
+        "label": "questions",
+        "value": "How many people? · How much does it cost?"
+      }
+    ],
+    "signals": [
+      "how many",
+      "how much",
+      "a lot of",
+      "too much",
+      "too many"
+    ],
     "examples": [
       {
         "en": "I don't have much time, but I have a lot of questions.",
@@ -2448,6 +3070,24 @@
     "level": "B1",
     "rule_en": "Information, advice, news, and furniture have no plural in English, even though their Bulgarian equivalents do. Say \"a piece of advice\", not \"an advice\". News and police also take special verb forms: the news IS good; the police ARE investigating.",
     "rule_bg": "Information, advice, news и furniture нямат множествено число на английски, макар че на български имат. Казва се „a piece of advice“, не „an advice“. News и police вървят с особени глаголни форми: the news IS good; the police ARE investigating.",
+    "form": [
+      {
+        "label": "countable",
+        "value": "a report · two reports · How many?"
+      },
+      {
+        "label": "uncountable",
+        "value": "information · advice · news · furniture · How much?"
+      },
+      {
+        "label": "counting the uncountable",
+        "value": "a piece of advice · two pieces of information"
+      },
+      {
+        "label": "odd ones",
+        "value": "news is (singular) · police are (plural)"
+      }
+    ],
     "examples": [
       {
         "en": "I need more information, not more informations.",
@@ -2522,6 +3162,36 @@
     "level": "B1",
     "rule_en": "'Some' goes in positive sentences and in offers: 'I have some questions', 'Would you like some coffee?'. 'Any' goes in negatives and most questions: 'I don't have any time', 'Do you have any questions?'. 'A few' is for countable things and 'a little' for uncountable: a few emails, a little time. Drop the 'a' and the meaning turns negative: 'few people came' means almost nobody.",
     "rule_bg": "„Some“ в положителни изречения и в предложения: „I have some questions“, „Would you like some coffee?“. „Any“ в отрицания и повечето въпроси: „I don't have any time“, „Do you have any questions?“. „A few“ за броими неща, „a little“ за неброими: a few emails, a little time. Махнеш ли „a“, значението става отрицателно: „few people came“ значи почти никой.",
+    "form": [
+      {
+        "label": "some",
+        "value": "positive sentences and offers"
+      },
+      {
+        "label": "any",
+        "value": "negatives and most questions"
+      },
+      {
+        "label": "a few + countable",
+        "value": "a few emails · a few people"
+      },
+      {
+        "label": "a little + uncountable",
+        "value": "a little time · a little money"
+      },
+      {
+        "label": "without a",
+        "value": "few people = almost nobody"
+      }
+    ],
+    "signals": [
+      "some",
+      "any",
+      "a few",
+      "a little",
+      "few",
+      "little"
+    ],
     "examples": [
       {
         "en": "I have some good news and a few questions.",
@@ -2596,6 +3266,24 @@
     "level": "A2",
     "rule_en": "Don't double the comparative or superlative. \"Better\" is already comparative — never \"more better\". \"Best\" is already superlative — never \"most best\". Don't put \"very much\" before an adjective; just use \"very\".",
     "rule_bg": "Не удвоявай сравнителната или превъзходната степен. „Better“ вече е сравнителна степен — никога „more better“. „Best“ вече е превъзходна степен — никога „most best“. Пред прилагателно не се слага „very much“, само „very“.",
+    "form": [
+      {
+        "label": "short adjectives",
+        "value": "tall → taller → the tallest"
+      },
+      {
+        "label": "long adjectives",
+        "value": "expensive → more expensive → the most expensive"
+      },
+      {
+        "label": "irregular",
+        "value": "good → better → best · bad → worse → worst"
+      },
+      {
+        "label": "never",
+        "value": "more better · most best · very much interesting"
+      }
+    ],
     "examples": [
       {
         "en": "This solution is better, not more better.",
@@ -2670,6 +3358,28 @@
     "level": "B1",
     "rule_en": "'As ... as' says two things are equal: 'This offer is as good as the last one'. The negative says they are not: 'It isn't as expensive as I thought'. Use 'the same as' for identical things, and 'different from' rather than 'different than'. To show how big the difference is, add much, far or a bit: 'much better', 'a bit cheaper'.",
     "rule_bg": "„As ... as“ казва, че две неща са равни: „This offer is as good as the last one“. Отрицанието казва, че не са: „It isn't as expensive as I thought“. „The same as“ за еднакви неща, а „different from“, не „different than“. За да покажеш колко голяма е разликата, добавяш much, far или a bit: „much better“, „a bit cheaper“.",
+    "form": [
+      {
+        "label": "equal",
+        "value": "as good as · as expensive as"
+      },
+      {
+        "label": "not equal",
+        "value": "not as expensive as I thought"
+      },
+      {
+        "label": "identical",
+        "value": "the same as (never the same like)"
+      },
+      {
+        "label": "different",
+        "value": "different from (not different than)"
+      },
+      {
+        "label": "size of the gap",
+        "value": "much better · far cheaper · a bit slower"
+      }
+    ],
     "examples": [
       {
         "en": "This supplier is as reliable as the old one, and a bit cheaper.",
@@ -2818,6 +3528,24 @@
     "level": "B2",
     "rule_en": "\"Everybody\", \"everyone\" and \"nobody\" take a singular verb: everybody IS ready. In business English, collective nouns like \"team\" and \"company\" are usually singular too: our team IS working on it.",
     "rule_bg": "„Everybody“, „everyone“ и „nobody“ вървят с глагол в единствено число: everybody IS ready. В бизнес английски „team“ и „company“ също обикновено са в единствено число: our team IS working on it.",
+    "form": [
+      {
+        "label": "singular verb",
+        "value": "everybody is · nobody knows · everyone has"
+      },
+      {
+        "label": "one organisation",
+        "value": "the company is · our team is"
+      },
+      {
+        "label": "always plural",
+        "value": "the police are"
+      },
+      {
+        "label": "looks plural, is singular",
+        "value": "the news is"
+      }
+    ],
     "examples": [
       {
         "en": "Everybody is ready for the call.",
