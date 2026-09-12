@@ -1004,6 +1004,98 @@
     ]
   },
   {
+    "id": "modals-deduction",
+    "category": "Modals",
+    "title": "Modals of Deduction: MUST BE, CAN'T BE",
+    "level": "B2",
+    "rule_en": "These say how sure you are. 'Must be' means you are almost certain it is true: 'He must be in a meeting'. 'Can't be' means you are almost certain it isn't: 'That can't be right'. 'Might be' and 'could be' sit in between. For the past, add 'have': 'She must have forgotten', 'He can't have known'. The opposite of 'must be' is 'can't be', never 'mustn't be'.",
+    "rule_bg": "Тези казват колко си сигурен. „Must be“ значи почти сигурен, че е вярно: „He must be in a meeting“. „Can't be“ значи почти сигурен, че не е: „That can't be right“. „Might be“ и „could be“ са по средата. За миналото се добавя „have“: „She must have forgotten“, „He can't have known“. Обратното на „must be“ е „can't be“, никога „mustn't be“.",
+    "form": [
+      {
+        "label": "almost certain, yes",
+        "value": "must be · must have been"
+      },
+      {
+        "label": "almost certain, no",
+        "value": "can't be · can't have been"
+      },
+      {
+        "label": "possible",
+        "value": "might be · could be · may have been"
+      },
+      {
+        "label": "never",
+        "value": "mustn't be — that means forbidden"
+      }
+    ],
+    "examples": [
+      {
+        "en": "He isn't answering. He must be in a meeting.",
+        "bg": "Не отговаря. Сигурно е на среща."
+      },
+      {
+        "en": "That can't be the final figure, it's far too low.",
+        "bg": "Това не може да е окончателната цифра, твърде ниска е."
+      },
+      {
+        "en": "She must have forgotten. She never misses a deadline.",
+        "bg": "Сигурно е забравила. Никога не изпуска срок."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "He isn't answering. He ___ in a meeting.",
+        "options": [
+          "must be",
+          "must to be"
+        ],
+        "correct": 0,
+        "why": "Modals take the bare verb, so 'must be'.",
+        "why_bg": "Модалните искат глагол без „to“, значи „must be“."
+      },
+      {
+        "sentence": "That ___ right, the numbers don't add up.",
+        "options": [
+          "can't be",
+          "mustn't be"
+        ],
+        "correct": 0,
+        "why": "'Mustn't' means forbidden. For 'I'm sure it isn't', English uses 'can't'.",
+        "why_bg": "„Mustn't“ значи забранено. За „сигурен съм, че не е“ английският ползва „can't“."
+      },
+      {
+        "sentence": "She ___ forgotten, it isn't like her.",
+        "options": [
+          "must have",
+          "must"
+        ],
+        "correct": 0,
+        "why": "About the past, so 'must have' plus the third form.",
+        "why_bg": "За миналото, значи „must have“ плюс трета форма."
+      },
+      {
+        "sentence": "He ___ known, nobody told him.",
+        "options": [
+          "can't have",
+          "couldn't to have"
+        ],
+        "correct": 0,
+        "why": "The past negative deduction is 'can't have' plus the third form.",
+        "why_bg": "Отрицателното предположение за миналото е „can't have“ плюс трета форма."
+      },
+      {
+        "sentence": "I'm not sure. It ___ be a mistake in the system.",
+        "options": [
+          "might",
+          "must"
+        ],
+        "correct": 0,
+        "why": "'Might' matches 'I'm not sure'. 'Must' would claim near certainty.",
+        "why_bg": "„Might“ съответства на „не съм сигурен“. „Must“ би твърдяло почти пълна сигурност."
+      }
+    ]
+  },
+  {
     "id": "past-simple-basics",
     "category": "Tenses",
     "title": "Past Simple: Regular and Irregular",
@@ -2055,6 +2147,389 @@
     ]
   },
   {
+    "id": "past-perfect",
+    "category": "Tenses",
+    "title": "Past Perfect: the earlier past",
+    "level": "B2",
+    "rule_en": "Use the past perfect when one past action happened before another: 'The client had already signed when I called'. The form is had + the third form, the same for every subject. You only need it when the order matters and isn't already obvious; after 'before' and 'after' the order is clear, so the past simple is enough.",
+    "rule_bg": "Past perfect, когато едно минало действие е станало преди друго: „The client had already signed when I called“. Формата е had + трета форма, еднаква за всички лица. Нужен е само когато редът има значение и не е вече очевиден; след „before“ и „after“ редът е ясен, затова минало просто стига.",
+    "form": [
+      {
+        "label": "Positive",
+        "value": "I had sent · she had finished · I'd sent"
+      },
+      {
+        "label": "Negative",
+        "value": "I hadn't sent · they hadn't seen it"
+      },
+      {
+        "label": "Question",
+        "value": "Had you sent it? · What had happened?"
+      },
+      {
+        "label": "with the past simple",
+        "value": "By the time I arrived, it had started"
+      }
+    ],
+    "signals": [
+      "already",
+      "just",
+      "by the time",
+      "before",
+      "after",
+      "never ... before"
+    ],
+    "examples": [
+      {
+        "en": "By the time I arrived, the meeting had already started.",
+        "bg": "Докато стигна, срещата вече беше започнала."
+      },
+      {
+        "en": "She hadn't seen the email, so she didn't know about the change.",
+        "bg": "Не беше видяла имейла, затова не знаеше за промяната."
+      },
+      {
+        "en": "We realised that the supplier had sent the wrong batch.",
+        "bg": "Разбрахме, че доставчикът е изпратил грешната партида."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "By the time I arrived, the meeting ___.",
+        "options": [
+          "had already started",
+          "already started"
+        ],
+        "correct": 0,
+        "why": "Two past events, and the meeting came first, so the earlier one takes the past perfect.",
+        "why_bg": "Две минали събития, а срещата е първото, затова по-ранното е в past perfect."
+      },
+      {
+        "sentence": "She ___ the email, so she didn't know.",
+        "options": [
+          "hadn't seen",
+          "didn't saw"
+        ],
+        "correct": 0,
+        "why": "The negative is hadn't plus the third form. 'Didn't saw' is wrong twice over.",
+        "why_bg": "Отрицанието е hadn't плюс трета форма. „Didn't saw“ греши на две места."
+      },
+      {
+        "sentence": "We ___ already left when they called.",
+        "options": [
+          "had",
+          "have"
+        ],
+        "correct": 0,
+        "why": "The whole story sits in the past, so 'had', not 'have'.",
+        "why_bg": "Цялата случка е в миналото, значи „had“, не „have“."
+      },
+      {
+        "sentence": "___ you finished the report before the meeting?",
+        "options": [
+          "Had",
+          "Did"
+        ],
+        "correct": 0,
+        "why": "The question form of the past perfect starts with 'had'.",
+        "why_bg": "Въпросителната форма на past perfect започва с „had“."
+      },
+      {
+        "sentence": "I called her after I ___ the contract.",
+        "options": [
+          "had read",
+          "have read"
+        ],
+        "correct": 0,
+        "why": "'Have read' would move it into the present. The whole sentence is in the past.",
+        "why_bg": "„Have read“ би го преместило в сегашно. Цялото изречение е в миналото."
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous",
+    "category": "Tenses",
+    "title": "Future Perfect and Future Continuous",
+    "level": "B2",
+    "rule_en": "'Will have done' says something will be finished by a point in the future: 'By Friday we will have signed'. 'Will be doing' says something will be in progress at that moment: 'This time tomorrow I'll be flying'. Both are everywhere in business English, because both are about deadlines and availability.",
+    "rule_bg": "„Will have done“ казва, че нещо ще е завършено до момент в бъдещето: „By Friday we will have signed“. „Will be doing“ казва, че нещо ще тече в този момент: „This time tomorrow I'll be flying“. И двете са навсякъде в бизнес английския, защото и двете са за срокове и заетост.",
+    "form": [
+      {
+        "label": "Future perfect",
+        "value": "will have + third form — will have finished"
+      },
+      {
+        "label": "Future continuous",
+        "value": "will be + -ing — will be working"
+      },
+      {
+        "label": "Negative",
+        "value": "won't have finished · won't be working"
+      },
+      {
+        "label": "Question",
+        "value": "Will you have finished? · Will you be working?"
+      }
+    ],
+    "signals": [
+      "by Friday",
+      "by then",
+      "by the time",
+      "this time tomorrow",
+      "all day"
+    ],
+    "examples": [
+      {
+        "en": "By the end of the quarter we will have opened two new offices.",
+        "bg": "До края на тримесечието ще сме отворили два нови офиса."
+      },
+      {
+        "en": "Don't call at three, I'll be presenting.",
+        "bg": "Не звъни в три, ще представям."
+      },
+      {
+        "en": "Will you have finished the audit by Monday?",
+        "bg": "Ще си приключил ли одита до понеделник?"
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "By Friday we ___ the contract.",
+        "options": [
+          "will have signed",
+          "will sign"
+        ],
+        "correct": 0,
+        "why": "'By Friday' asks about a deadline, so the future perfect.",
+        "why_bg": "„By Friday“ пита за краен срок, значи future perfect."
+      },
+      {
+        "sentence": "This time tomorrow I ___ to Vienna.",
+        "options": [
+          "will be flying",
+          "will fly"
+        ],
+        "correct": 0,
+        "why": "At that exact moment the action will be in progress, so the future continuous.",
+        "why_bg": "В този точен момент действието ще тече, значи future continuous."
+      },
+      {
+        "sentence": "Don't call at three, I ___ a client.",
+        "options": [
+          "will be seeing",
+          "will have seen"
+        ],
+        "correct": 0,
+        "why": "In progress at three, rather than finished by three.",
+        "why_bg": "В развитие в три, а не завършено до три."
+      },
+      {
+        "sentence": "She ___ finished by then.",
+        "options": [
+          "won't have",
+          "won't be"
+        ],
+        "correct": 0,
+        "why": "'Finished' is the third form, so the perfect: won't have finished.",
+        "why_bg": "„Finished“ е трета форма, значи перфект: won't have finished."
+      },
+      {
+        "sentence": "We will have ___ the report by Thursday.",
+        "options": [
+          "written",
+          "wrote"
+        ],
+        "correct": 0,
+        "why": "After 'will have' comes the third form, never the past simple.",
+        "why_bg": "След „will have“ идва трета форма, никога минало просто."
+      }
+    ]
+  },
+  {
+    "id": "third-conditional",
+    "category": "Tenses",
+    "title": "Third Conditional (the past that didn't happen)",
+    "level": "B2",
+    "rule_en": "Use it for a past that turned out differently: 'If we had priced it lower, we would have won the tender'. The form is if + past perfect, then would have + the third form. Both halves describe a past that never happened, which is why the structure so often carries regret or blame. 'If I would have known' is wrong: the 'would' belongs in the other half.",
+    "rule_bg": "За минало, което е станало другояче: „If we had priced it lower, we would have won the tender“. Формата е if + past perfect, после would have + трета форма. И двете части описват минало, което не се е случило, затова конструкцията често носи съжаление или упрек. „If I would have known“ е грешно: „would“ е в другата половина.",
+    "form": [
+      {
+        "label": "if half",
+        "value": "If we had known... (past perfect)"
+      },
+      {
+        "label": "result half",
+        "value": "...we would have called (would have + third form)"
+      },
+      {
+        "label": "Negative",
+        "value": "If they hadn't cancelled, we wouldn't have lost the day"
+      },
+      {
+        "label": "never",
+        "value": "If I would have known"
+      }
+    ],
+    "examples": [
+      {
+        "en": "If we had known about the delay, we would have warned the client.",
+        "bg": "Ако бяхме знаели за закъснението, щяхме да предупредим клиента."
+      },
+      {
+        "en": "She wouldn't have accepted if the price had been higher.",
+        "bg": "Нямаше да приеме, ако цената беше по-висока."
+      },
+      {
+        "en": "If I had read the contract properly, I would have seen clause 14.",
+        "bg": "Ако бях прочел договора внимателно, щях да видя клауза 14."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "If we ___ earlier, we would have caught the flight.",
+        "options": [
+          "had left",
+          "would have left"
+        ],
+        "correct": 0,
+        "why": "'Would' never goes in the 'if' half. There it is the past perfect.",
+        "why_bg": "„Would“ никога не стои в частта с „if“. Там е past perfect."
+      },
+      {
+        "sentence": "If she had called, I ___ her.",
+        "options": [
+          "would have helped",
+          "would help"
+        ],
+        "correct": 0,
+        "why": "A past that didn't happen takes 'would have' plus the third form.",
+        "why_bg": "Минало, което не се е случило, иска „would have“ плюс трета форма."
+      },
+      {
+        "sentence": "They wouldn't have signed if the terms ___ different.",
+        "options": [
+          "had been",
+          "were"
+        ],
+        "correct": 0,
+        "why": "Past perfect in the 'if' half, even when the result half comes first.",
+        "why_bg": "Past perfect в частта с „if“, дори когато резултатът е отпред."
+      },
+      {
+        "sentence": "If I had known, I ___ said anything.",
+        "options": [
+          "wouldn't have",
+          "wouldn't"
+        ],
+        "correct": 0,
+        "why": "The negative still needs 'have' plus the third form.",
+        "why_bg": "И отрицанието иска „have“ плюс трета форма."
+      },
+      {
+        "sentence": "If we had ___ the deadline, the client would have left.",
+        "options": [
+          "missed",
+          "miss"
+        ],
+        "correct": 0,
+        "why": "After 'had' comes the third form.",
+        "why_bg": "След „had“ идва трета форма."
+      }
+    ]
+  },
+  {
+    "id": "wish-if-only",
+    "category": "Tenses",
+    "title": "WISH and IF ONLY",
+    "level": "B2",
+    "rule_en": "'I wish' and 'if only' say you want things to be different. About now, use the past simple: 'I wish I had more time'. About the past, use the past perfect: 'I wish I had taken the job'. About something that annoys you in somebody else, use 'would': 'I wish he would answer his email'. 'I wish I would have' does not exist.",
+    "rule_bg": "„I wish“ и „if only“ казват, че искаш нещата да са различни. За сега — минало просто: „I wish I had more time“. За миналото — past perfect: „I wish I had taken the job“. За нещо, което те дразни у друг човек — „would“: „I wish he would answer his email“. „I wish I would have“ не съществува.",
+    "form": [
+      {
+        "label": "about now",
+        "value": "I wish I had more time (past simple)"
+      },
+      {
+        "label": "about the past",
+        "value": "I wish I had said no (past perfect)"
+      },
+      {
+        "label": "about somebody else",
+        "value": "I wish he would reply (would)"
+      },
+      {
+        "label": "with be",
+        "value": "I wish I were there (were, for every subject)"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I wish I had more time for the proposal.",
+        "bg": "Иска ми се да имах повече време за предложението."
+      },
+      {
+        "en": "I wish I had read the contract before signing it.",
+        "bg": "Иска ми се да бях прочел договора, преди да го подпиша."
+      },
+      {
+        "en": "If only they would answer their emails.",
+        "bg": "Само да отговаряха на имейлите си."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "I wish I ___ more time today.",
+        "options": [
+          "had",
+          "have"
+        ],
+        "correct": 0,
+        "why": "'Wish' about now takes the past simple, even though you mean the present.",
+        "why_bg": "„Wish“ за сега иска минало просто, макар да имаш предвид настоящето."
+      },
+      {
+        "sentence": "I wish I ___ that email yesterday.",
+        "options": [
+          "hadn't sent",
+          "didn't send"
+        ],
+        "correct": 0,
+        "why": "About the past, so the past perfect.",
+        "why_bg": "За миналото, значи past perfect."
+      },
+      {
+        "sentence": "I wish he ___ answer his phone.",
+        "options": [
+          "would",
+          "will"
+        ],
+        "correct": 0,
+        "why": "About somebody else's habit, so 'would'.",
+        "why_bg": "За чужд навик, значи „would“."
+      },
+      {
+        "sentence": "If only I ___ known about the deadline.",
+        "options": [
+          "had",
+          "would have"
+        ],
+        "correct": 0,
+        "why": "'I wish I would have' does not exist. It is 'I wish I had'.",
+        "why_bg": "„I wish I would have“ не съществува. Правилното е „I wish I had“."
+      },
+      {
+        "sentence": "I wish I ___ in Varna right now.",
+        "options": [
+          "were",
+          "am"
+        ],
+        "correct": 0,
+        "why": "'Were' is the standard after wish for every subject, including I and he.",
+        "why_bg": "„Were“ е стандартът след wish за всички лица, включително I и he."
+      }
+    ]
+  },
+  {
     "id": "passive-voice",
     "category": "Sentence patterns",
     "title": "The Passive: IS DONE and WAS DONE",
@@ -2335,6 +2810,578 @@
         "correct": 0,
         "why": "No person follows, so 'said'.",
         "why_bg": "След него не идва човек, значи „said“."
+      }
+    ]
+  },
+  {
+    "id": "causative",
+    "category": "Sentence patterns",
+    "title": "HAVE and GET SOMETHING DONE",
+    "level": "B2",
+    "rule_en": "Use 'have something done' when somebody else does the work for you: 'We had the contract translated' means a translator did it, not you. The form is have or get + the thing + the third form. 'Get' means the same but is less formal. Compare 'I repaired the printer' (I did it) with 'I had the printer repaired' (somebody else did).",
+    "rule_bg": "„Have something done“, когато работата я върши някой друг: „We had the contract translated“ значи, че преводач го е превел, не ти. Формата е have или get + нещото + трета форма. „Get“ значи същото, но е по-неформално. Сравни „I repaired the printer“ (аз го поправих) с „I had the printer repaired“ (друг го поправи).",
+    "form": [
+      {
+        "label": "present",
+        "value": "We have the office cleaned every Friday"
+      },
+      {
+        "label": "past",
+        "value": "We had the contract translated"
+      },
+      {
+        "label": "get (informal)",
+        "value": "I got my laptop fixed"
+      },
+      {
+        "label": "the order",
+        "value": "have + THE THING + third form"
+      }
+    ],
+    "examples": [
+      {
+        "en": "We had the contract translated before the meeting.",
+        "bg": "Дадохме договора за превод преди срещата."
+      },
+      {
+        "en": "I'm getting my laptop repaired this week.",
+        "bg": "Давам лаптопа на ремонт тази седмица."
+      },
+      {
+        "en": "They have the office cleaned every Friday evening.",
+        "bg": "Офисът им се почиства всеки петък вечер."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "We had the contract ___ by a professional.",
+        "options": [
+          "translated",
+          "translate"
+        ],
+        "correct": 0,
+        "why": "The pattern is have plus the thing plus the third form.",
+        "why_bg": "Моделът е have плюс нещото плюс трета форма."
+      },
+      {
+        "sentence": "I'm getting my laptop ___ tomorrow.",
+        "options": [
+          "repaired",
+          "repairing"
+        ],
+        "correct": 0,
+        "why": "The laptop receives the action, so the third form.",
+        "why_bg": "Лаптопът получава действието, значи трета форма."
+      },
+      {
+        "sentence": "She ___ her hair cut before the interview.",
+        "options": [
+          "had",
+          "did"
+        ],
+        "correct": 0,
+        "why": "The causative uses have or get, never do.",
+        "why_bg": "Каузативът е с have или get, никога с do."
+      },
+      {
+        "sentence": "We had ___ painted last month.",
+        "options": [
+          "the office",
+          "painted the office"
+        ],
+        "correct": 0,
+        "why": "The thing sits between 'had' and the third form.",
+        "why_bg": "Нещото стои между „had“ и трета форма."
+      },
+      {
+        "sentence": "I didn't fix it myself. I ___ it fixed.",
+        "options": [
+          "had",
+          "have been"
+        ],
+        "correct": 0,
+        "why": "The rest of the sentence is in the past, so 'had it fixed'.",
+        "why_bg": "Останалата част е в минало, значи „had it fixed“."
+      }
+    ]
+  },
+  {
+    "id": "reported-questions",
+    "category": "Sentence patterns",
+    "title": "Reported Questions and Requests",
+    "level": "B2",
+    "rule_en": "A reported question loses its question word order: 'Where is the file?' becomes 'He asked where the file was', with no 'do' and no question mark. For yes/no questions use 'if' or 'whether': 'She asked whether we had signed'. A request becomes ask somebody to do something: 'Could you send it?' becomes 'He asked me to send it'.",
+    "rule_bg": "Непрекият въпрос губи въпросителния словоред: „Where is the file?“ става „He asked where the file was“, без „do“ и без въпросителен знак. За въпроси с да/не се ползва „if“ или „whether“: „She asked whether we had signed“. Молбата става ask somebody to do something: „Could you send it?“ става „He asked me to send it“.",
+    "form": [
+      {
+        "label": "wh- question",
+        "value": "He asked where the file was (no do, no ?)"
+      },
+      {
+        "label": "yes / no question",
+        "value": "She asked if / whether we had signed"
+      },
+      {
+        "label": "request",
+        "value": "He asked me to send it"
+      },
+      {
+        "label": "never",
+        "value": "He asked where was the file"
+      }
+    ],
+    "examples": [
+      {
+        "en": "He asked where the file was, and I didn't know.",
+        "bg": "Той попита къде е файлът, а аз не знаех."
+      },
+      {
+        "en": "She asked whether we had already signed.",
+        "bg": "Тя попита дали вече сме подписали."
+      },
+      {
+        "en": "The client asked us to send the revised quote by Friday.",
+        "bg": "Клиентът ни помоли да изпратим коригираната оферта до петък."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "He asked where ___.",
+        "options": [
+          "the file was",
+          "was the file"
+        ],
+        "correct": 0,
+        "why": "A reported question drops the question word order and goes back to subject, then verb.",
+        "why_bg": "Непрекият въпрос губи въпросителния словоред и се връща към подлог, после глагол."
+      },
+      {
+        "sentence": "She asked ___ we had signed.",
+        "options": [
+          "whether",
+          "that"
+        ],
+        "correct": 0,
+        "why": "A yes/no question becomes 'if' or 'whether', never 'that'.",
+        "why_bg": "Въпрос с да/не става „if“ или „whether“, никога „that“."
+      },
+      {
+        "sentence": "He asked me ___ the report.",
+        "options": [
+          "to send",
+          "that I send"
+        ],
+        "correct": 0,
+        "why": "A request becomes ask plus person plus to plus verb.",
+        "why_bg": "Молбата става ask плюс човек плюс to плюс глагол."
+      },
+      {
+        "sentence": "They asked what time the meeting ___.",
+        "options": [
+          "started",
+          "did start"
+        ],
+        "correct": 0,
+        "why": "There is no helper in a reported question. The tense moves onto the main verb.",
+        "why_bg": "В непряк въпрос няма спомагателен. Времето минава върху главния глагол."
+      },
+      {
+        "sentence": "She asked if I ___ the email.",
+        "options": [
+          "had received",
+          "have received"
+        ],
+        "correct": 0,
+        "why": "The tense steps back, so the present perfect becomes the past perfect.",
+        "why_bg": "Времето отстъпва, затова present perfect става past perfect."
+      }
+    ]
+  },
+  {
+    "id": "non-defining-relatives",
+    "category": "Sentence patterns",
+    "title": "Defining and Non-defining Relative Clauses",
+    "level": "B2",
+    "rule_en": "A defining clause says which one you mean and takes no commas: 'The report that arrived this morning is wrong'. A non-defining clause adds extra information about something already identified and sits inside commas: 'The Varna report, which arrived this morning, is wrong'. 'That' is only allowed in the defining kind. In writing the commas change the meaning, not just the look.",
+    "rule_bg": "Определящото изречение казва кое точно имаш предвид и е без запетаи: „The report that arrived this morning is wrong“. Неопределящото добавя допълнителна информация за нещо вече назовано и стои между запетаи: „The Varna report, which arrived this morning, is wrong“. „That“ е позволено само в определящия вид. В писането запетаите променят смисъла, не само вида.",
+    "form": [
+      {
+        "label": "defining, no commas",
+        "value": "the colleague who called · the file that is missing"
+      },
+      {
+        "label": "non-defining, commas",
+        "value": "Maria, who called this morning, is on holiday"
+      },
+      {
+        "label": "that",
+        "value": "defining clauses only"
+      },
+      {
+        "label": "dropping the pronoun",
+        "value": "the file (which) you sent — only as the object"
+      }
+    ],
+    "examples": [
+      {
+        "en": "The supplier who delivers on Fridays has raised their prices.",
+        "bg": "Доставчикът, който доставя в петък, е вдигнал цените."
+      },
+      {
+        "en": "Our main supplier, who has delivered for nine years, has raised their prices.",
+        "bg": "Основният ни доставчик, който доставя от девет години, вдигна цените."
+      },
+      {
+        "en": "The file that you sent this morning is the wrong version.",
+        "bg": "Файлът, който изпрати тази сутрин, е грешната версия."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "Maria, ___ joined in March, is running the project.",
+        "options": [
+          "who",
+          "that"
+        ],
+        "correct": 0,
+        "why": "'That' is not allowed in a non-defining clause, the one sitting inside commas.",
+        "why_bg": "„That“ не се допуска в неопределящо изречение, това между запетаите."
+      },
+      {
+        "sentence": "I have three sisters. My sister ___ lives in Varna is a lawyer.",
+        "options": [
+          "who",
+          ", who"
+        ],
+        "correct": 0,
+        "why": "Three sisters, so the clause says which one you mean. A defining clause takes no commas.",
+        "why_bg": "Три сестри, значи изречението казва коя точно. Определящото изречение е без запетаи."
+      },
+      {
+        "sentence": "Our head office, ___ is in Sofia, employs forty people.",
+        "options": [
+          "which",
+          "that"
+        ],
+        "correct": 0,
+        "why": "Extra information about something already identified, so 'which' inside commas.",
+        "why_bg": "Допълнителна информация за вече назовано нещо, значи „which“ между запетаи."
+      },
+      {
+        "sentence": "The file ___ is corrupted.",
+        "options": [
+          "you sent",
+          "which you sent it"
+        ],
+        "correct": 0,
+        "why": "The pronoun can be dropped when it is the object, but it is never repeated.",
+        "why_bg": "Местоимението може да отпадне, когато е допълнение, но никога не се повтаря."
+      },
+      {
+        "sentence": "He gave the job to Ivan, ___ had the most experience.",
+        "options": [
+          "who",
+          "which"
+        ],
+        "correct": 0,
+        "why": "Ivan is a person, so 'who'.",
+        "why_bg": "Иван е човек, значи „who“."
+      }
+    ]
+  },
+  {
+    "id": "linking-contrast",
+    "category": "Linking ideas",
+    "title": "ALTHOUGH, DESPITE, HOWEVER and WHEREAS",
+    "level": "B2",
+    "rule_en": "These all show contrast, but they take different things after them. 'Although' takes a clause: 'Although the price rose, sales grew'. 'Despite' and 'in spite of' take a noun or an -ing form: 'Despite the price rise'. 'However' starts a new sentence and takes a comma: 'The price rose. However, sales grew'. 'Whereas' compares two facts side by side: 'Sofia grew, whereas Varna fell'.",
+    "rule_bg": "Всички показват контраст, но искат различно нещо след себе си. „Although“ иска цяло изречение: „Although the price rose, sales grew“. „Despite“ и „in spite of“ искат съществително или -ing форма: „Despite the price rise“. „However“ започва ново изречение и е със запетая: „The price rose. However, sales grew“. „Whereas“ сравнява два факта един до друг: „Sofia grew, whereas Varna fell“.",
+    "form": [
+      {
+        "label": "although / even though",
+        "value": "+ subject + verb"
+      },
+      {
+        "label": "despite / in spite of",
+        "value": "+ noun or -ing"
+      },
+      {
+        "label": "however",
+        "value": "new sentence, then a comma"
+      },
+      {
+        "label": "whereas",
+        "value": "+ subject + verb, comparing two facts"
+      },
+      {
+        "label": "never",
+        "value": "despite of · although the price rise"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Although we raised the price, sales grew by 8%.",
+        "bg": "Въпреки че вдигнахме цената, продажбите нараснаха с 8%."
+      },
+      {
+        "en": "Despite the price rise, sales grew by 8%.",
+        "bg": "Въпреки увеличението на цената, продажбите нараснаха с 8%."
+      },
+      {
+        "en": "Sofia grew last year, whereas Varna stayed flat.",
+        "bg": "София растеше миналата година, докато Варна остана на място."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "___ the price rose, sales grew.",
+        "options": [
+          "Although",
+          "Despite"
+        ],
+        "correct": 0,
+        "why": "A full clause follows, so 'although'. 'Despite' needs a noun.",
+        "why_bg": "Следва цяло изречение, значи „although“. „Despite“ иска съществително."
+      },
+      {
+        "sentence": "___ the price rise, sales grew.",
+        "options": [
+          "Despite",
+          "Although"
+        ],
+        "correct": 0,
+        "why": "'The price rise' is a noun, so 'despite'.",
+        "why_bg": "„The price rise“ е съществително, значи „despite“."
+      },
+      {
+        "sentence": "___ of the delay, we finished on time.",
+        "options": [
+          "In spite",
+          "Despite"
+        ],
+        "correct": 0,
+        "why": "It is 'in spite of' or 'despite' on its own, never 'despite of'.",
+        "why_bg": "Правилно е „in spite of“ или само „despite“, никога „despite of“."
+      },
+      {
+        "sentence": "Sales fell in March. ___, April was our best month.",
+        "options": [
+          "However",
+          "Although"
+        ],
+        "correct": 0,
+        "why": "'However' starts a new sentence. 'Although' joins two halves of one sentence.",
+        "why_bg": "„However“ започва ново изречение. „Although“ свързва две части на едно изречение."
+      },
+      {
+        "sentence": "Sofia grew, ___ Varna stayed flat.",
+        "options": [
+          "whereas",
+          "despite"
+        ],
+        "correct": 0,
+        "why": "'Whereas' compares two facts side by side.",
+        "why_bg": "„Whereas“ сравнява два факта един до друг."
+      }
+    ]
+  },
+  {
+    "id": "linking-cause",
+    "category": "Linking ideas",
+    "title": "Cause and Result: BECAUSE, DUE TO, SO and SUCH",
+    "level": "B2",
+    "rule_en": "'Because' and 'since' take a clause, 'because of' and 'due to' take a noun: 'because the flight was cancelled' but 'because of the cancellation'. 'Therefore' and 'as a result' introduce the result and belong in formal writing. 'So + adjective' and 'such a + noun' both mean 'very', with a result attached: 'It was so late that we stopped', 'It was such a long meeting that nobody spoke'.",
+    "rule_bg": "„Because“ и „since“ искат цяло изречение, „because of“ и „due to“ искат съществително: „because the flight was cancelled“, но „because of the cancellation“. „Therefore“ и „as a result“ въвеждат резултата и са за формално писане. „So + прилагателно“ и „such a + съществително“ значат „много“, с прикачен резултат: „It was so late that we stopped“, „It was such a long meeting that nobody spoke“.",
+    "form": [
+      {
+        "label": "because / since",
+        "value": "+ subject + verb"
+      },
+      {
+        "label": "because of / due to",
+        "value": "+ noun"
+      },
+      {
+        "label": "therefore / as a result",
+        "value": "new sentence, formal"
+      },
+      {
+        "label": "so + adjective + that",
+        "value": "It was so cold that nobody stayed"
+      },
+      {
+        "label": "such a + adjective + noun + that",
+        "value": "It was such a long meeting that two left"
+      }
+    ],
+    "examples": [
+      {
+        "en": "The launch slipped because of a supplier delay.",
+        "bg": "Стартът се измести заради забавяне от доставчик."
+      },
+      {
+        "en": "The launch slipped because the supplier was late.",
+        "bg": "Стартът се измести, защото доставчикът закъсня."
+      },
+      {
+        "en": "It was such a long meeting that two people left early.",
+        "bg": "Срещата беше толкова дълга, че двама си тръгнаха по-рано."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "We cancelled ___ the weather.",
+        "options": [
+          "because of",
+          "because"
+        ],
+        "correct": 0,
+        "why": "'The weather' is a noun, so 'because of'.",
+        "why_bg": "„The weather“ е съществително, значи „because of“."
+      },
+      {
+        "sentence": "We cancelled ___ the weather was bad.",
+        "options": [
+          "because",
+          "due to"
+        ],
+        "correct": 0,
+        "why": "A full clause follows, so 'because' without 'of'.",
+        "why_bg": "Следва цяло изречение, значи „because“ без „of“."
+      },
+      {
+        "sentence": "The supplier failed. ___, we missed the deadline.",
+        "options": [
+          "Therefore",
+          "Because"
+        ],
+        "correct": 0,
+        "why": "'Therefore' introduces the result at the start of a new sentence.",
+        "why_bg": "„Therefore“ въвежда резултата в началото на ново изречение."
+      },
+      {
+        "sentence": "It was ___ a long meeting that two people left.",
+        "options": [
+          "such",
+          "so"
+        ],
+        "correct": 0,
+        "why": "'Such a' goes with a noun phrase, 'so' with an adjective on its own.",
+        "why_bg": "„Such a“ върви със съществително словосъчетание, „so“ — със самостоятелно прилагателно."
+      },
+      {
+        "sentence": "The room was ___ cold that nobody stayed.",
+        "options": [
+          "so",
+          "such"
+        ],
+        "correct": 0,
+        "why": "'Cold' is an adjective standing alone, so 'so cold that'.",
+        "why_bg": "„Cold“ е самостоятелно прилагателно, значи „so cold that“."
+      }
+    ]
+  },
+  {
+    "id": "hedging",
+    "category": "Tone & register",
+    "title": "Softening What You Say",
+    "level": "B2",
+    "rule_en": "Direct English reads as blunt in writing, so business English softens almost everything: 'This is wrong' becomes 'I think there may be an error here'. The tools are small: a modal (might, could, would), a hedge (perhaps, slightly, a little), a distancing verb (it seems, it appears), and a question instead of a statement. Bulgarian carries politeness in the tone of voice, which is exactly why a direct translation reads as rude in an email.",
+    "rule_bg": "Директният английски звучи рязко в писмен вид, затова бизнес английският смекчава почти всичко: „This is wrong“ става „I think there may be an error here“. Инструментите са дребни: модален глагол (might, could, would), смекчител (perhaps, slightly, a little), дистанциращ глагол (it seems, it appears) и въпрос вместо твърдение. Българският носи учтивостта в тона на гласа и точно затова буквалният превод звучи грубо в имейл.",
+    "form": [
+      {
+        "label": "modal",
+        "value": "This might be an error"
+      },
+      {
+        "label": "hedge",
+        "value": "There seems to be a slight delay"
+      },
+      {
+        "label": "distancing",
+        "value": "It appears that the figures differ"
+      },
+      {
+        "label": "question instead of order",
+        "value": "Would it be possible to move the deadline?"
+      },
+      {
+        "label": "avoid in writing",
+        "value": "You are wrong · Send it now"
+      }
+    ],
+    "signals": [
+      "perhaps",
+      "slightly",
+      "a little",
+      "it seems",
+      "I'm afraid",
+      "would it be possible"
+    ],
+    "examples": [
+      {
+        "en": "There seems to be a small difference in the figures.",
+        "bg": "Изглежда има малка разлика в числата."
+      },
+      {
+        "en": "Would it be possible to move the deadline to Friday?",
+        "bg": "Възможно ли е срокът да се премести за петък?"
+      },
+      {
+        "en": "I'm afraid we may need a little more time on this.",
+        "bg": "Опасявам се, че може да ни трябва малко повече време."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "___ be an error in the invoice.",
+        "options": [
+          "There seems to",
+          "There is"
+        ],
+        "correct": 0,
+        "why": "'There seems to be' reports the same fact without accusing anybody.",
+        "why_bg": "„There seems to be“ съобщава същия факт, без да обвинява никого."
+      },
+      {
+        "sentence": "___ possible to move the meeting?",
+        "options": [
+          "Would it be",
+          "Is it"
+        ],
+        "correct": 0,
+        "why": "'Would it be' is the softer form and the standard in an email.",
+        "why_bg": "„Would it be“ е по-мекият вариант и стандартът в имейл."
+      },
+      {
+        "sentence": "The figures ___ slightly different from ours.",
+        "options": [
+          "appear to be",
+          "are"
+        ],
+        "correct": 0,
+        "why": "'Appear to be' leaves room for the other person to turn out right.",
+        "why_bg": "„Appear to be“ оставя място другият да се окаже прав."
+      },
+      {
+        "sentence": "I'm afraid we ___ need more time.",
+        "options": [
+          "may",
+          "will definitely"
+        ],
+        "correct": 0,
+        "why": "'May' softens the news. Business English understates bad news on purpose.",
+        "why_bg": "„May“ смекчава новината. Бизнес английският нарочно омекотява лошите новини."
+      },
+      {
+        "sentence": "___ send me the file when you have a moment?",
+        "options": [
+          "Could you",
+          "You must"
+        ],
+        "correct": 0,
+        "why": "A question with 'could' asks. An imperative orders, and it reads as rude between colleagues.",
+        "why_bg": "Въпрос с „could“ моли. Повелителната форма заповядва и звучи грубо между колеги."
       }
     ]
   },
@@ -2803,6 +3850,98 @@
         "correct": 1,
         "why": "'Feel' needs no reflexive pronoun in English. 'Feel myself' is a direct translation of 'чувствам се'.",
         "why_bg": "„Feel“ не иска възвратно местоимение. „Feel myself“ е буквален превод на „чувствам се“."
+      }
+    ]
+  },
+  {
+    "id": "phrasal-verb-order",
+    "category": "Verb patterns",
+    "title": "Phrasal Verbs: Where the Object Goes",
+    "level": "B2",
+    "rule_en": "Some phrasal verbs can be split: 'turn the light off' and 'turn off the light' are both fine. But when the object is a pronoun it has to go in the middle: 'turn it off', never 'turn off it'. Others never split: 'look after the children', never 'look the children after'. Which verb is which has to be learned, but the pronoun rule has no exceptions.",
+    "rule_bg": "Някои фразови глаголи се разделят: „turn the light off“ и „turn off the light“ са еднакво правилни. Но когато допълнението е местоимение, то задължително отива по средата: „turn it off“, никога „turn off it“. Други не се разделят никога: „look after the children“, никога „look the children after“. Кой глагол от кой вид е, се учи, но правилото за местоимението няма изключения.",
+    "form": [
+      {
+        "label": "separable",
+        "value": "turn the light off · turn off the light"
+      },
+      {
+        "label": "with a pronoun",
+        "value": "turn it off (never turn off it)"
+      },
+      {
+        "label": "inseparable",
+        "value": "look after them · deal with it"
+      },
+      {
+        "label": "three parts",
+        "value": "look forward to it · put up with it"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Can you fill in the form? Fill it in before you leave.",
+        "bg": "Може ли да попълниш формуляра? Попълни го, преди да тръгнеш."
+      },
+      {
+        "en": "I'll look after the client while you're away.",
+        "bg": "Ще се погрижа за клиента, докато те няма."
+      },
+      {
+        "en": "We need to deal with it today, not next week.",
+        "bg": "Трябва да се справим с това днес, не другата седмица."
+      }
+    ],
+    "exercises": [
+      {
+        "sentence": "Here's the form. Please fill ___.",
+        "options": [
+          "it in",
+          "in it"
+        ],
+        "correct": 0,
+        "why": "A pronoun always goes in the middle of a separable phrasal verb.",
+        "why_bg": "Местоимението винаги е по средата на разделим фразов глагол."
+      },
+      {
+        "sentence": "Can you turn ___?",
+        "options": [
+          "the light off",
+          "off it"
+        ],
+        "correct": 0,
+        "why": "A noun can go on either side. A pronoun can never go after the particle.",
+        "why_bg": "Съществителното може и от двете страни. Местоимението никога не може след частицата."
+      },
+      {
+        "sentence": "I'll look ___ while you're away.",
+        "options": [
+          "after the client",
+          "the client after"
+        ],
+        "correct": 0,
+        "why": "'Look after' never splits.",
+        "why_bg": "„Look after“ никога не се разделя."
+      },
+      {
+        "sentence": "We have to deal ___ today.",
+        "options": [
+          "with it",
+          "it with"
+        ],
+        "correct": 0,
+        "why": "'Deal with' is inseparable, so the object stays after the preposition.",
+        "why_bg": "„Deal with“ е неразделим, затова допълнението остава след предлога."
+      },
+      {
+        "sentence": "She turned ___ because the salary was too low.",
+        "options": [
+          "the offer down",
+          "down it"
+        ],
+        "correct": 0,
+        "why": "A noun can sit in the middle or at the end. 'Down it' is never possible.",
+        "why_bg": "Съществителното може да е по средата или накрая. „Down it“ е невъзможно."
       }
     ]
   },

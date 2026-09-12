@@ -926,5 +926,197 @@
     "why_bg": "„Very“ не върви със сравнителна степен. Ползва се much, far или a lot.",
     "category": "Comparisons",
     "grammar": "as-as-comparisons"
+  },
+  {
+    "wrong": "That mustn’t be right, the numbers don’t add up.",
+    "right": "That can't be right, the numbers don't add up.",
+    "why": "'Mustn't' means forbidden. For 'I'm sure it isn't', English uses 'can't'.",
+    "why_bg": "„Mustn't“ значи забранено. За „сигурен съм, че не е“ английският ползва „can't“.",
+    "category": "Modals",
+    "grammar": "modals-deduction"
+  },
+  {
+    "wrong": "She must forgot about the meeting.",
+    "right": "She must have forgotten about the meeting.",
+    "why": "A deduction about the past takes must have plus the third form.",
+    "why_bg": "Предположение за миналото иска must have плюс трета форма.",
+    "category": "Modals",
+    "grammar": "modals-deduction"
+  },
+  {
+    "wrong": "When I arrived, the meeting already started.",
+    "right": "When I arrived, the meeting had already started.",
+    "why": "Two past events: the earlier one takes the past perfect.",
+    "why_bg": "Две минали събития: по-ранното е в past perfect.",
+    "category": "Tenses",
+    "grammar": "past-perfect"
+  },
+  {
+    "wrong": "I have finished the report before he called.",
+    "right": "I had finished the report before he called.",
+    "why": "The whole story sits in the past, so 'had', not 'have'.",
+    "why_bg": "Цялата случка е в миналото, значи „had“, не „have“.",
+    "category": "Tenses",
+    "grammar": "past-perfect"
+  },
+  {
+    "wrong": "By Friday we will sign the contract.",
+    "right": "By Friday we will have signed the contract.",
+    "why": "'By Friday' asks about a deadline, so the future perfect.",
+    "why_bg": "„By Friday“ пита за краен срок, значи future perfect.",
+    "category": "Tenses",
+    "grammar": "future-perfect-continuous"
+  },
+  {
+    "wrong": "Don't call at three, I will present.",
+    "right": "Don't call at three, I'll be presenting.",
+    "why": "In progress at that moment, so the future continuous.",
+    "why_bg": "В развитие в този момент, значи future continuous.",
+    "category": "Tenses",
+    "grammar": "future-perfect-continuous"
+  },
+  {
+    "wrong": "If I would have known, I would have called.",
+    "right": "If I had known, I would have called.",
+    "why": "'Would' never goes in the 'if' half. There it is the past perfect.",
+    "why_bg": "„Would“ никога не стои в частта с „if“. Там е past perfect.",
+    "category": "Tenses",
+    "grammar": "third-conditional"
+  },
+  {
+    "wrong": "If we left earlier, we would have caught the flight.",
+    "right": "If we had left earlier, we would have caught the flight.",
+    "why": "A past that didn't happen takes the past perfect after 'if'.",
+    "why_bg": "Минало, което не се е случило, иска past perfect след „if“.",
+    "category": "Tenses",
+    "grammar": "third-conditional"
+  },
+  {
+    "wrong": "I wish I would have more time.",
+    "right": "I wish I had more time.",
+    "why": "'Wish' about now takes the past simple, never 'would have'.",
+    "why_bg": "„Wish“ за сега иска минало просто, никога „would have“.",
+    "category": "Tenses",
+    "grammar": "wish-if-only"
+  },
+  {
+    "wrong": "I wish I didn't send that email.",
+    "right": "I wish I hadn't sent that email.",
+    "why": "About the past, so the past perfect.",
+    "why_bg": "За миналото, значи past perfect.",
+    "category": "Tenses",
+    "grammar": "wish-if-only"
+  },
+  {
+    "wrong": "We had the contract translate.",
+    "right": "We had the contract translated.",
+    "why": "The pattern is have plus the thing plus the third form.",
+    "why_bg": "Моделът е have плюс нещото плюс трета форма.",
+    "category": "Sentence patterns",
+    "grammar": "causative"
+  },
+  {
+    "wrong": "I did repair my laptop at the shop.",
+    "right": "I had my laptop repaired at the shop.",
+    "why": "Somebody else did the work, so the causative: had it repaired.",
+    "why_bg": "Работата я свърши друг, значи каузатив: had it repaired.",
+    "category": "Sentence patterns",
+    "grammar": "causative"
+  },
+  {
+    "wrong": "He asked where was the file.",
+    "right": "He asked where the file was.",
+    "why": "A reported question drops the question word order.",
+    "why_bg": "Непрекият въпрос губи въпросителния словоред.",
+    "category": "Sentence patterns",
+    "grammar": "reported-questions"
+  },
+  {
+    "wrong": "She asked that we had signed.",
+    "right": "She asked whether we had signed.",
+    "why": "A yes/no question becomes 'if' or 'whether', never 'that'.",
+    "why_bg": "Въпрос с да/не става „if“ или „whether“, никога „that“.",
+    "category": "Sentence patterns",
+    "grammar": "reported-questions"
+  },
+  {
+    "wrong": "Maria, that joined in March, is running it.",
+    "right": "Maria, who joined in March, is running it.",
+    "why": "'That' is not allowed in a clause sitting between commas.",
+    "why_bg": "„That“ не се допуска в изречение между запетаи.",
+    "category": "Sentence patterns",
+    "grammar": "non-defining-relatives"
+  },
+  {
+    "wrong": "The file which you sent it is corrupted.",
+    "right": "The file you sent is corrupted.",
+    "why": "The object pronoun is never repeated after the relative.",
+    "why_bg": "Местоимението допълнение никога не се повтаря след относителната дума.",
+    "category": "Sentence patterns",
+    "grammar": "non-defining-relatives"
+  },
+  {
+    "wrong": "Despite of the delay, we finished on time.",
+    "right": "Despite the delay, we finished on time.",
+    "why": "It is 'despite' or 'in spite of', never 'despite of'.",
+    "why_bg": "Правилно е „despite“ или „in spite of“, никога „despite of“.",
+    "category": "Linking ideas",
+    "grammar": "linking-contrast"
+  },
+  {
+    "wrong": "Although the price rise, sales grew.",
+    "right": "Despite the price rise, sales grew.",
+    "why": "'Although' needs a clause. With a noun, use 'despite'.",
+    "why_bg": "„Although“ иска цяло изречение. Със съществително се ползва „despite“.",
+    "category": "Linking ideas",
+    "grammar": "linking-contrast"
+  },
+  {
+    "wrong": "We cancelled because of the weather was bad.",
+    "right": "We cancelled because the weather was bad.",
+    "why": "A full clause follows, so 'because' without 'of'.",
+    "why_bg": "Следва цяло изречение, значи „because“ без „of“.",
+    "category": "Linking ideas",
+    "grammar": "linking-cause"
+  },
+  {
+    "wrong": "It was so long meeting that two people left.",
+    "right": "It was such a long meeting that two people left.",
+    "why": "'Such a' goes with a noun phrase, 'so' with an adjective on its own.",
+    "why_bg": "„Such a“ върви със съществително словосъчетание, „so“ — със самостоятелно прилагателно.",
+    "category": "Linking ideas",
+    "grammar": "linking-cause"
+  },
+  {
+    "wrong": "Please fill in it before you leave.",
+    "right": "Please fill it in before you leave.",
+    "why": "A pronoun always goes in the middle of a separable phrasal verb.",
+    "why_bg": "Местоимението винаги е по средата на разделим фразов глагол.",
+    "category": "Verb patterns",
+    "grammar": "phrasal-verb-order"
+  },
+  {
+    "wrong": "I'll look the client after while you're away.",
+    "right": "I'll look after the client while you're away.",
+    "why": "'Look after' never splits.",
+    "why_bg": "„Look after“ никога не се разделя.",
+    "category": "Verb patterns",
+    "grammar": "phrasal-verb-order"
+  },
+  {
+    "wrong": "Your calculation is wrong.",
+    "right": "There seems to be an error in the calculation.",
+    "why": "Business English reports the problem without accusing the person.",
+    "why_bg": "Бизнес английският съобщава проблема, без да обвинява човека.",
+    "category": "Tone & register",
+    "grammar": "hedging"
+  },
+  {
+    "wrong": "Send me the file now.",
+    "right": "Could you send me the file when you have a moment?",
+    "why": "A bare imperative reads as an order in English, even between colleagues.",
+    "why_bg": "Гола повелителна форма звучи като заповед на английски, дори между колеги.",
+    "category": "Tone & register",
+    "grammar": "hedging"
   }
 ]
