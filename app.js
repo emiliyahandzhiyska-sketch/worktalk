@@ -783,11 +783,23 @@ function renderTodayBanner() {
   const box = document.getElementById('todayBanner');
   if (review) return; // session UI handles itself
   const q = buildTodayQueue();
+  // Grammar is due across the whole app, not per topic, so it gets its own
+  // line here rather than being mixed into the card queue.
+  const due = grammarDue();
+  const grammarLine = due.length ? `
+    <div class="mt-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 flex items-center justify-between gap-3 shadow-sm">
+      <div class="min-w-0">
+        <p class="font-bold text-sm">📐 Grammar to revisit</p>
+        <p class="text-xs text-slate-500 dark:text-slate-400 truncate">${due.length} point${due.length > 1 ? 's' : ''}: ${due.slice(0, 2).map(g => g.title).join(', ')}${due.length > 2 ? ' …' : ''}</p>
+      </div>
+      <button onclick="switchTab('grammar')" class="px-5 py-2.5 rounded-xl bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 font-bold text-sm whitespace-nowrap">Open</button>
+    </div>` : '';
+
   if (!q.length) {
     box.innerHTML = `
       <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-2xl p-4 text-sm font-semibold text-emerald-800 dark:text-emerald-200">
         ✅ Today's review is done. Come back tomorrow!
-      </div>`;
+      </div>` + grammarLine;
   } else {
     box.innerHTML = `
       <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 flex items-center justify-between gap-3 shadow-sm">
@@ -796,7 +808,7 @@ function renderTodayBanner() {
           <p class="text-xs text-slate-500 dark:text-slate-400">${q.length} card${q.length > 1 ? 's' : ''} waiting for you</p>
         </div>
         <button onclick="startReview()" class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm transition-colors">Start</button>
-      </div>`;
+      </div>` + grammarLine;
   }
 }
 
@@ -2172,6 +2184,29 @@ function uoeMistakeAnswer(i) {
 // grouping by `category` already supports that without any restructuring.
 
 const GRAMMAR_BEST_KEY = 'worktalk_grammar_best';
+const GRAMMAR_SRS_KEY = 'worktalk_grammar_srs';
+// A point you got wrong comes back tomorrow. A point you got right comes
+// back later each time, until it's a month away and effectively learned.
+const GRAMMAR_STEPS = [1, 3, 7, 16, 35];
+
+function grammarSrs() {
+  return readJson(GRAMMAR_SRS_KEY, '{}');
+}
+
+function scheduleGrammar(id, clean) {
+  const srs = grammarSrs();
+  const step = clean ? Math.min((srs[id]?.step ?? -1) + 1, GRAMMAR_STEPS.length - 1) : 0;
+  const due = new Date();
+  due.setDate(due.getDate() + GRAMMAR_STEPS[step]);
+  srs[id] = { due: due.toISOString().slice(0, 10), step };
+  localStorage.setItem(GRAMMAR_SRS_KEY, JSON.stringify(srs));
+}
+
+function grammarDue() {
+  const srs = grammarSrs();
+  const t = todayStr();
+  return grammar.filter(g => srs[g.id] && srs[g.id].due <= t);
+}
 
 function grammarBest() {
   return readJson(GRAMMAR_BEST_KEY, '{}');
@@ -2215,6 +2250,19 @@ function renderGrammarMenu() {
         ${chip(`All ${grammar.length}`, !grammarLevel, 'setGrammarLevel(null)')}
         ${levels.map(l => chip(`${l} · ${grammar.filter(g => g.level === l).length}`, grammarLevel === l, `setGrammarLevel('${l}')`)).join('')}
       </div>
+      ${(() => {
+        const due = grammarDue();
+        if (!due.length) return '';
+        return `
+          <div class="rounded-2xl border border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/20 p-4 mb-5 flex items-center justify-between gap-3">
+            <div class="min-w-0">
+              <p class="font-bold text-sm">📆 ${due.length} point${due.length > 1 ? 's' : ''} due for review</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 truncate">${due.slice(0, 3).map(g => g.title).join(' · ')}${due.length > 3 ? ' …' : ''}</p>
+            </div>
+            <button onclick="openGrammarTopic('${due[0].id}')"
+              class="px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm whitespace-nowrap transition-colors">Start</button>
+          </div>`;
+      })()}
       ${Object.entries(byCat).map(([cat, points]) => `
         <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mt-4 mb-2 first:mt-0">${cat}</p>
         <div class="space-y-2.5">
@@ -2526,6 +2574,7 @@ function renderGrammarEnd() {
   const prevBest = grammarBest()[bestKey];
   const isRecord = prevBest === undefined || score > prevBest;
   saveGrammarBest(bestKey, score);
+  scheduleGrammar(point.id, score === total);
   markDayDone();
 
   const rounds = grammarRounds(point);
