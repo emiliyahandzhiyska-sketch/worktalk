@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The January people",
+    "level": "B1",
+    "text": "Every language school in the country knows about the January people. They enrol in the first week of the year, pay in full, and arrive at the first lesson with a new notebook and a plan to study every morning before work.\n\nBy the middle of February, about a third of them have stopped. Not dramatically. They miss one Tuesday because of a deadline, then the next because of the first one, and after three weeks the lesson has quietly left their calendar.\n\nOne school in Plovdiv decided to measure it instead of complaining about it. They found that nobody drops out in week one, and hardly anybody in week two. The drop-out happens in week five, and almost always after a missed lesson that nobody mentioned.\n\nSo they changed one thing. When a student misses a lesson, somebody phones them the next day. Not to sell anything and not to tell them off. Just to say what the group covered and that the seat is still there.\n\nThe drop-out rate fell from 31% to 19% in one term. The phone calls cost about four hours a week.\n\nThe director's summary went on the staff room wall. People don't leave because it got hard. They leave because they missed one lesson and felt behind.",
+    "questions": [
+      { "q": "When do most students actually stop coming?", "options": ["Around week five, after a missed lesson", "In the first week", "At the end of the course", "During the exam period"], "correct": 0 },
+      { "q": "What did the school change?", "options": ["They phoned students the day after a missed lesson", "They lowered the price", "They made the lessons shorter", "They stopped taking January enrolments"], "correct": 0 },
+      { "q": "What was the result?", "options": ["The drop-out rate fell from 31% to 19%", "Enrolment doubled", "Nothing measurable changed", "The classes got bigger"], "correct": 0 },
+      { "q": "Why do people leave, according to the director?", "options": ["They miss one lesson and feel behind", "The course is too difficult", "The teachers are unfriendly", "The timetable is inconvenient"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Eight is the number everybody promises",
+    "level": "B2",
+    "text": "Class size eight sounds excellent in an advert. It is also the number at which a small school stops making money, which is why the adverts and the registers rarely agree.\n\nA school with a room for twelve and a group of eight is paying for four empty chairs an hour, every hour. Over a term that is more than the profit on the whole group. The honest options are three: raise the fee, raise the class size, or fill the quiet hours.\n\nThe third one is the one most schools never look at. Rooms at ten in the morning sit empty while everybody fights over six o'clock. That is a utilisation problem, and it has nothing to do with marketing.\n\nOne school offered a daytime rate to people who work shifts, parents on leave, and retired learners. The ten o'clock group filled in three weeks, at a lower fee, in a room that was already paid for.\n\nNobody had asked for a daytime course, because nobody knew it existed. The school had been counting students and never counting chairs.\n\nThe finance note afterwards was one line. We didn't need more students. We needed the same students at a different hour.",
+    "questions": [
+      { "q": "Why is a class of eight a problem in a room for twelve?", "options": ["Four empty chairs are paid for every hour", "Eight students are hard to teach", "The teacher costs more", "The room is too small"], "correct": 0 },
+      { "q": "Which option do most schools ignore?", "options": ["Filling the quiet hours of the day", "Raising the fee", "Raising the class size", "Advertising more"], "correct": 0 },
+      { "q": "Who filled the ten o'clock group?", "options": ["Shift workers, parents on leave and retired learners", "University students", "Company employees", "Teenagers after school"], "correct": 0 },
+      { "q": "What is the point of the finance note?", "options": ["The problem was the hour, not the number of students", "The school should charge more", "Marketing was the real failure", "Smaller classes are always better"], "correct": 0 }
+    ]
+  }
+]

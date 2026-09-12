@@ -1,0 +1,143 @@
+[
+  {
+    "title": "Forty minutes, first activity",
+    "level": "B1",
+    "focus": "In the classroom",
+    "setting": "Two teachers compare notes after a lesson that went off plan.",
+    "speakers": { "A": "Yana", "B": "Petar" },
+    "lines": [
+      { "s": "A", "t": "The lesson plan said forty minutes for the whole thing." },
+      { "s": "B", "t": "And?" },
+      { "s": "A", "t": "The warmer took forty minutes. They were actually talking, so I let it run." },
+      { "s": "B", "t": "That's the right call. What got cut?" },
+      { "s": "A", "t": "The drill and half the handout. The syllabus says we finish the unit today, and the syllabus has never met this group." },
+      { "s": "B", "t": "Do the drill on Thursday. They'll need it more after they've tried to use it." },
+      { "s": "A", "t": "It's a mixed-ability class, so the drill helps the quiet three and bores the front row." },
+      { "s": "B", "t": "Then put the front row in pair work with them. Everybody gets something." },
+      { "s": "A", "t": "And the recap?" },
+      { "s": "B", "t": "Five minutes at the start, always. Half of them were mentally on the bus last week." }
+    ]
+  },
+  {
+    "title": "She missed three weeks",
+    "level": "B1",
+    "focus": "Students & progress",
+    "setting": "A teacher and the head talk about a student who disappeared and came back.",
+    "speakers": { "A": "Petar", "B": "Rossitsa" },
+    "lines": [
+      { "s": "A", "t": "Milena is back. She missed three weeks." },
+      { "s": "B", "t": "Her attendance was perfect before that. What happened?" },
+      { "s": "A", "t": "A project at work. She assumed she was too far behind to return." },
+      { "s": "B", "t": "That's how most of our drop-out rate happens, and it's never about the English." },
+      { "s": "A", "t": "She caught up in one lesson. It was slightly annoying for everyone else." },
+      { "s": "B", "t": "Put that in her progress report, in those words. She'll read it twice." },
+      { "s": "A", "t": "She's hit every learning objective from the weeks she missed. I checked them one by one." },
+      { "s": "B", "t": "Write that down as well. People believe a tick more than a compliment." },
+      { "s": "A", "t": "Should I offer her a one-to-one to fill the gaps?" },
+      { "s": "B", "t": "Offer it, don't push it. She doesn't have a gap, she has a memory of having one." },
+      { "s": "A", "t": "And the placement test from September?" },
+      { "s": "B", "t": "It put her one level too low, like it does with half the confident ones. Move her up in January." }
+    ]
+  },
+  {
+    "title": "Week six is always optimistic",
+    "level": "B2",
+    "focus": "Courses & curriculum",
+    "setting": "Two teachers argue with the syllabus before a new intake starts.",
+    "speakers": { "A": "Rossitsa", "B": "Yana" },
+    "lines": [
+      { "s": "A", "t": "The September intake starts in three weeks. Is the curriculum still right?" },
+      { "s": "B", "t": "Mostly. The module order is fine. The syllabus promises the past perfect in week six." },
+      { "s": "A", "t": "And week six is always optimistic." },
+      { "s": "B", "t": "Every year. They're still fighting the past simple, and we hand them a second past." },
+      { "s": "A", "t": "How many contact hours before that point?" },
+      { "s": "B", "t": "Eighteen. It sounds like a lot until you spread it over six weeks." },
+      { "s": "A", "t": "What if we move it to week nine and give week six to self-study?" },
+      { "s": "B", "t": "Self-study only works if somebody checks it. Otherwise it's a week of nothing with a nice name." },
+      { "s": "A", "t": "Then blended learning, the honest kind: one lesson, one online task, and I look at the task." },
+      { "s": "B", "t": "That works. And put B1 as a prerequisite in writing, because people read it as a suggestion." }
+    ]
+  },
+  {
+    "title": "The tenth was sent by their employer",
+    "level": "B2",
+    "focus": "Enrolment & admissions",
+    "setting": "The head and the office manager look at why January works and February doesn't.",
+    "speakers": { "A": "Rossitsa", "B": "Dessy" },
+    "lines": [
+      { "s": "A", "t": "Enrolment is up 40% on January. It's up every January." },
+      { "s": "B", "t": "The whole country briefly believes in itself. Then February arrives." },
+      { "s": "A", "t": "What actually converts them? Admissions has the numbers." },
+      { "s": "B", "t": "The trial lesson. Nine of ten who take one sign up." },
+      { "s": "A", "t": "And the tenth?" },
+      { "s": "B", "t": "Was sent by their employer and didn't want to be there in the first place." },
+      { "s": "A", "t": "And the open day in September?" },
+      { "s": "B", "t": "The open day fills the room with people who came for the coffee. Two of them enrol, so we keep doing it." },
+      { "s": "A", "t": "Then push the trial lesson harder than the tuition fee." },
+      { "s": "B", "t": "Agreed. Nobody argues about the fee anyway, they argue about paying it all at once." },
+      { "s": "A", "t": "So offer the instalment plan by default rather than on request." },
+      { "s": "B", "t": "And publish the term dates in June. Parents plan holidays before we plan lessons." }
+    ]
+  },
+  {
+    "title": "Three empty rooms at ten",
+    "level": "B2",
+    "focus": "Running the school",
+    "setting": "A conversation about money that turns out not to be about students.",
+    "speakers": { "A": "Rossitsa", "B": "Dessy" },
+    "lines": [
+      { "s": "A", "t": "Fee income looks healthy in October and lonely in July." },
+      { "s": "B", "t": "That's the shape of this business. What's worrying you?" },
+      { "s": "A", "t": "Three empty rooms at ten in the morning, every weekday." },
+      { "s": "B", "t": "Everybody wants six o'clock, so we fight over six o'clock." },
+      { "s": "A", "t": "That's a utilisation problem, not a marketing one." },
+      { "s": "B", "t": "Then a daytime rate. Shift workers, parents on leave, people who've retired." },
+      { "s": "A", "t": "Class size can go to ten in the daytime. The rooms take twelve." },
+      { "s": "B", "t": "Who covers those hours? The timetable is finished on Friday and wrong by Monday." },
+      { "s": "A", "t": "I'll teach two of them myself. The head teacher should be in a classroom somewhere." },
+      { "s": "B", "t": "Put it in writing before the inspection. Accreditation people love a head teacher who still teaches, so let them love us." }
+    ]
+  },
+  {
+    "title": "Fifty-nine",
+    "level": "B1",
+    "focus": "Assessment & exams",
+    "setting": "Marking is finished and one result needs a decision.",
+    "speakers": { "A": "Yana", "B": "Petar" },
+    "lines": [
+      { "s": "A", "t": "Marking's done. The end-of-term assessment took the whole evening I was planning to have." },
+      { "s": "B", "t": "It always does. Any surprises?" },
+      { "s": "A", "t": "One. The pass mark is 60 and Stoyan got 59." },
+      { "s": "B", "t": "He'll remember that number for years. Everybody does." },
+      { "s": "A", "t": "Do I round it?" },
+      { "s": "B", "t": "No. Offer the resit and tell him what the missing point was, in one sentence." },
+      { "s": "A", "t": "He'll ask about the certificate before he asks about the mistake." },
+      { "s": "B", "t": "They all do. The certificate comes with the grade, the grade comes with the resit." },
+      { "s": "A", "t": "It was the writing task. He answered a different question." },
+      { "s": "B", "t": "Then he'll pass the resit. The resit group is always better prepared than the first sitting." },
+      { "s": "A", "t": "And the mock exam? Half of them skipped it." },
+      { "s": "B", "t": "Make it compulsory. The mock exists so the real one is the second time, not the first." }
+    ]
+  },
+  {
+    "title": "The photocopier is down",
+    "level": "B1",
+    "focus": "The staff room",
+    "setting": "Eight fifty-five in the staff room, the way it goes every week.",
+    "speakers": { "A": "Petar", "B": "Yana" },
+    "lines": [
+      { "s": "A", "t": "The photocopier is down." },
+      { "s": "B", "t": "Of course it is. I have twelve handouts and eleven minutes." },
+      { "s": "A", "t": "Do it on the board. They copy it and it slows them down usefully." },
+      { "s": "B", "t": "Also, Mira is ill. Somebody has to cover the nine o'clock." },
+      { "s": "A", "t": "Whoever is in the staff room at eight fifty-five is covering the nine o'clock." },
+      { "s": "B", "t": "That is the actual rule of this building and it's written nowhere." },
+      { "s": "A", "t": "I'll take it. What's her group doing?" },
+      { "s": "B", "t": "Present perfect. There's a supply teacher coming Thursday, so leave them somewhere findable." },
+      { "s": "A", "t": "Is there a staff meeting this week?" },
+      { "s": "B", "t": "Wednesday, thirty minutes, which historically means fifty." },
+      { "s": "A", "t": "And parents' evening is next week." },
+      { "s": "B", "t": "Six to eight, finishing at nine twenty. It's the end of term, so bring something to eat." }
+    ]
+  }
+]

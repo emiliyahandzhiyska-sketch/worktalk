@@ -165,6 +165,17 @@
     "dialogues": "dialogues-technical.json"
   },
   {
+    "id": "education",
+    "name": "Education English",
+    "icon": "🎓",
+    "group": "Industries",
+    "tagline": "Classrooms, enrolment, exams, running a school.",
+    "words": "words-education.json",
+    "exercises": "exercises-education.json",
+    "readings": "readings-education.json",
+    "dialogues": "dialogues-education.json"
+  },
+  {
     "id": "sport",
     "name": "Sport & Fitness English",
     "icon": "⚽",
@@ -196,5 +207,16 @@
     "exercises": "exercises-lifestyle.json",
     "readings": "readings-lifestyle.json",
     "dialogues": "dialogues-lifestyle.json"
+  },
+  {
+    "id": "languagelearning",
+    "name": "Language Learning English",
+    "icon": "🗣️",
+    "group": "Beyond work",
+    "tagline": "Levels, lessons, plateaus, the words that vanish.",
+    "words": "words-languagelearning.json",
+    "exercises": "exercises-languagelearning.json",
+    "readings": "readings-languagelearning.json",
+    "dialogues": "dialogues-languagelearning.json"
   }
 ]

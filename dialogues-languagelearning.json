@@ -1,0 +1,156 @@
+[
+  {
+    "title": "I understand everything",
+    "level": "B1",
+    "focus": "Where you're starting from",
+    "setting": "A first conversation with somebody who studied English at school and stopped.",
+    "speakers": { "A": "Teacher", "B": "Krasimir" },
+    "lines": [
+      { "s": "A", "t": "How would you describe your English?" },
+      { "s": "B", "t": "I understand everything, I just can't speak." },
+      { "s": "A", "t": "Everyone says that sentence. When did you last study?" },
+      { "s": "B", "t": "School. And a course in 2016 that I didn't finish." },
+      { "s": "A", "t": "So you're a false beginner, which is the easiest kind to teach." },
+      { "s": "B", "t": "It doesn't feel easy. Everything is rusty." },
+      { "s": "A", "t": "Rusty comes back fast. Starting from scratch is the slow one, and you're not doing that." },
+      { "s": "B", "t": "I can get by in a hotel. Not in a meeting." },
+      { "s": "A", "t": "In a hotel nobody interrupts you. Do you still build the sentence in your mother tongue first?" },
+      { "s": "B", "t": "Every time. By the time it's ready, they're talking about something else." },
+      { "s": "A", "t": "Then we brush up on what's there and build the meeting on top. What's your language level, honestly?" },
+      { "s": "B", "t": "I'd say B1. My wife would say A2." }
+    ]
+  },
+  {
+    "title": "Correct me every time",
+    "level": "B1",
+    "focus": "In the lesson",
+    "setting": "Week one and week three of the same request.",
+    "speakers": { "A": "Krasimir", "B": "Teacher" },
+    "lines": [
+      { "s": "A", "t": "Correct me every time. I want to hear all of it." },
+      { "s": "B", "t": "You say that now. Ask me again in three weeks." },
+      { "s": "A", "t": "I mean it." },
+      { "s": "B", "t": "I know. Everybody means it in week one." },
+      { "s": "A", "t": "So what do you actually do?" },
+      { "s": "B", "t": "I correct what stops people understanding you, and I let the rest go until Thursday." },
+      { "s": "A", "t": "And if I don't understand the correction?" },
+      { "s": "B", "t": "Ask for clarification. \"Why is that wrong\" is the best question in this room." },
+      { "s": "A", "t": "Is there homework?" },
+      { "s": "B", "t": "Twenty minutes. Three sentences you actually thought about beat two pages you filled in on the bus." },
+      { "s": "A", "t": "A colleague offered to be my practice partner." },
+      { "s": "B", "t": "Take it. A practice partner is worth two lessons, as long as you both stay honest about the mistakes." },
+      { "s": "A", "t": "And the role play? I'd rather not." },
+      { "s": "B", "t": "Nobody wants the role play. Everybody remembers it a month later." },
+      { "s": "A", "t": "Fine. Should I take notes during it?" },
+      { "s": "B", "t": "Afterwards. And revise them on Thursday, because on Thursday they're actually worth something." }
+    ]
+  },
+  {
+    "title": "It arrived in the lift",
+    "level": "B2",
+    "focus": "Words that won't stick",
+    "setting": "A student describes the moment a word refused to come.",
+    "speakers": { "A": "Krasimir", "B": "Teacher" },
+    "lines": [
+      { "s": "A", "t": "I drew a blank in the meeting today. Completely." },
+      { "s": "B", "t": "On which word?" },
+      { "s": "A", "t": "One I'd used twice that morning. It was on the tip of my tongue for ten minutes." },
+      { "s": "B", "t": "And it arrived afterwards, in the lift." },
+      { "s": "A", "t": "In the lift. How did you know?" },
+      { "s": "B", "t": "It always does. What did you say instead?" },
+      { "s": "A", "t": "I described it. The paper that says the goods arrived." },
+      { "s": "B", "t": "That's the whole skill. The word rings a bell now, so you'll keep it." },
+      { "s": "A", "t": "There was another one. I said \"eventually\" when I meant \"possibly\"." },
+      { "s": "B", "t": "A false friend, and the one every Bulgarian falls for. The meeting heard a promise." },
+      { "s": "A", "t": "Should I make flashcards for these? Do I memorise the list?" },
+      { "s": "B", "t": "Make the list, then say each one once in a real sentence. People who memorise lists can recite lists." },
+      { "s": "A", "t": "And the words I still lose?" },
+      { "s": "B", "t": "Write down the ones you forgot in public. You'll never look it up twice." }
+    ]
+  },
+  {
+    "title": "The day his boss left the room",
+    "level": "B2",
+    "focus": "Speaking and freezing",
+    "setting": "Why the same person is fluent in one room and silent in another.",
+    "speakers": { "A": "Teacher", "B": "Krasimir" },
+    "lines": [
+      { "s": "A", "t": "You were fluent for ten minutes in here. No stopping, no searching." },
+      { "s": "B", "t": "In here it's easy. In the meeting I'm tongue-tied." },
+      { "s": "A", "t": "What happens in the first sentence?" },
+      { "s": "B", "t": "I stumble over a word, then I mumble the rest so nobody hears the mistake." },
+      { "s": "A", "t": "So the mistake is quiet and the silence is loud. Which one costs you more?" },
+      { "s": "B", "t": "The silence. I know that and I still do it." },
+      { "s": "A", "t": "Everybody hesitates. Native speakers hesitate in a way nobody notices." },
+      { "s": "B", "t": "Last week I lost my train of thought completely and just stopped." },
+      { "s": "A", "t": "Say \"sorry, let me start again\" out loud. It buys you four seconds and sounds deliberate." },
+      { "s": "B", "t": "Funny thing. The day my boss was away I held a conversation for twenty minutes and thought on my feet the whole time." }
+    ]
+  },
+  {
+    "title": "Ninety per cent of a meeting",
+    "level": "B2",
+    "focus": "Listening and missing it",
+    "setting": "Understanding turns out to depend on the room, not the English.",
+    "speakers": { "A": "Krasimir", "B": "Teacher" },
+    "lines": [
+      { "s": "A", "t": "My listening is getting worse, not better." },
+      { "s": "B", "t": "Where? Be specific." },
+      { "s": "A", "t": "On calls. And in the café on Fridays." },
+      { "s": "B", "t": "Background noise. That isn't your English, that's the room." },
+      { "s": "A", "t": "In the office I get the gist of everything." },
+      { "s": "B", "t": "Getting the gist covers ninety per cent of a meeting and nobody admits it." },
+      { "s": "A", "t": "The Irish supplier is impossible. His accent defeats me." },
+      { "s": "B", "t": "Ask him to speak slowly. He will, for two sentences, and that's usually enough." },
+      { "s": "A", "t": "And four people talk over each other on that call anyway." },
+      { "s": "B", "t": "Then say so. \"Could we take one at a time\" is a sentence the English speakers want too." },
+      { "s": "A", "t": "And when I don't catch something, I pretend I did." },
+      { "s": "B", "t": "\"Sorry, I didn't catch what you said\" has never once made anybody look bad. Watch subtitles in English this month and the rest gets easier anyway." }
+    ]
+  },
+  {
+    "title": "Nobody decides to quit",
+    "level": "B2",
+    "focus": "Habits and motivation",
+    "setting": "A student returns after a month away and explains himself.",
+    "speakers": { "A": "Teacher", "B": "Krasimir" },
+    "lines": [
+      { "s": "A", "t": "Four weeks. What happened?" },
+      { "s": "B", "t": "Nothing dramatic. Work got busy and I fell behind." },
+      { "s": "A", "t": "That's how it always goes. Nobody decides to quit, they lose momentum." },
+      { "s": "B", "t": "I kept meaning to come back, and the longer I left it the worse it felt." },
+      { "s": "A", "t": "The gap is never as big as it feels from outside it." },
+      { "s": "B", "t": "My colleague does a language exchange twice a week and never stops." },
+      { "s": "A", "t": "A language exchange works until one of you is more polite than the other." },
+      { "s": "B", "t": "So what do I do differently?" },
+      { "s": "A", "t": "Put in the hours at a fixed time, ten minutes, before you decide anything. Immersion helps too, and it can start with your phone's language." },
+      { "s": "B", "t": "I can keep it up for two weeks. Week three is where I quietly disappear." },
+      { "s": "A", "t": "Then plan week three today. Put something easy in it and let yourself enjoy it." },
+      { "s": "B", "t": "And if it gets dull?" },
+      { "s": "A", "t": "Stick with it for three weeks. Dull is what it feels like right before it works." }
+    ]
+  },
+  {
+    "title": "The last flat bit",
+    "level": "B2",
+    "focus": "Progress and plateaus",
+    "setting": "Three months in, everything has stopped feeling better.",
+    "speakers": { "A": "Krasimir", "B": "Teacher" },
+    "lines": [
+      { "s": "A", "t": "I've stopped improving. Same work, no difference." },
+      { "s": "B", "t": "You've hit a plateau. It's the most normal thing in this room." },
+      { "s": "A", "t": "In the first three months I came on in leaps and bounds. Now nothing." },
+      { "s": "B", "t": "Leaps and bounds is the beginner's discount. It runs out around month four for everybody." },
+      { "s": "A", "t": "It doesn't feel normal. It feels like the ceiling." },
+      { "s": "B", "t": "It's the last flat bit before you start to think in English. Most people quit four weeks before it ends." },
+      { "s": "A", "t": "How would I even know it's ending?" },
+      { "s": "B", "t": "Stop counting words. Count the calls you didn't dread." },
+      { "s": "A", "t": "That's fewer than it was, actually." },
+      { "s": "B", "t": "There's your measurement. The breakthrough arrives on an ordinary Tuesday, in a sentence you didn't plan." },
+      { "s": "A", "t": "My sister picked up Italian in a year, apparently." },
+      { "s": "B", "t": "Children pick up a language. Adults learn one and then say they picked it up." },
+      { "s": "A", "t": "I did dream in English last week. Once." },
+      { "s": "B", "t": "Then tell somebody. That one's real, and the phrase you fought with in March is second nature by now." }
+    ]
+  }
+]

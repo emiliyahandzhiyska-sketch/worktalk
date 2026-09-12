@@ -1,0 +1,24 @@
+[
+  {
+    "title": "The word that arrived in the lift",
+    "level": "B1",
+    "text": "Nikolay had used the word twice that morning. In the meeting at eleven he needed it, reached for it, and found nothing at all.\n\nHe described it instead. He said \"the paper that says the goods arrived\" and the client said \"the delivery note\", and the meeting carried on. It cost four seconds.\n\nAfterwards he stood in the lift and the word arrived, complete and unhelpful, the way it always does.\n\nHe told his teacher about it that evening, expecting sympathy. She asked him what he had actually done in the meeting. He repeated the description, a little embarrassed.\n\nShe told him that was the whole skill. Everybody draws a blank. What separates people is whether they stop or go round.\n\nHe still keeps a list of words he has forgotten in meetings. It has forty-one entries. He has never once forgotten the same word twice, which is the part he didn't expect.",
+    "questions": [
+      { "q": "What did Nikolay do when the word wouldn't come?", "options": ["He described the thing instead", "He said it in Bulgarian", "He stopped speaking", "He looked it up on his phone"], "correct": 0 },
+      { "q": "How long did it cost him?", "options": ["About four seconds", "The whole meeting", "Ten minutes", "Nothing, nobody noticed"], "correct": 0 },
+      { "q": "What did his teacher say the real skill was?", "options": ["Going round a missing word instead of stopping", "Memorising more vocabulary", "Speaking more slowly", "Preparing every meeting in advance"], "correct": 0 },
+      { "q": "What surprised him about his list?", "options": ["He never forgot the same word twice", "It was shorter than he expected", "Nobody else kept one", "The words were all easy"], "correct": 0 }
+    ]
+  },
+  {
+    "title": "Four weeks before it ends",
+    "level": "B2",
+    "text": "The plateau is the part nobody puts in the advert. For two or three months everything improves visibly: more words, longer sentences, fewer pauses. Then it stops, while the work stays exactly the same.\n\nThis is where most adults quit, and they quit politely. They don't announce it. Work gets busy, a lesson gets moved, and the course ends without anybody saying so.\n\nWhat makes it worse is that the plateau is invisible from inside. You are still improving, in listening, in confidence, in the speed you recover from a mistake. None of that shows up in a way you can feel on a Tuesday evening.\n\nTeachers who have watched it for years say the same thing: the plateau usually breaks about four weeks after people give up on it. Not because of a breakthrough lesson, but because the volume finally adds up.\n\nThe useful move is to change what you measure. Stop counting new words and start counting the meetings you didn't dread, or the calls where you forgot you were speaking a second language.\n\nOne teacher puts it to every group in September, so they hear it before they need it. The plateau is not the ceiling. It is the last flat bit before the part where you stop translating.",
+    "questions": [
+      { "q": "What happens during a plateau?", "options": ["The work stays the same and the improvement stops showing", "Lessons get harder", "Students forget what they learned", "Progress speeds up"], "correct": 0 },
+      { "q": "How do most adults quit?", "options": ["Quietly, by letting lessons slip", "By telling the teacher directly", "By failing an exam", "By changing schools"], "correct": 0 },
+      { "q": "When does the plateau usually break?", "options": ["About four weeks after people give up", "Immediately after a good lesson", "Only with a new teacher", "It rarely breaks at all"], "correct": 0 },
+      { "q": "What does the text suggest measuring instead?", "options": ["Meetings you didn't dread and calls that felt normal", "New words per week", "Hours of study", "Exam scores"], "correct": 0 }
+    ]
+  }
+]

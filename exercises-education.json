@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "We sign students up for the course in September.", "key": "ENROLMENT", "model": "Enrolment is in September.", "accept": ["enrolment", "enrol"] },
+    { "original": "Eighteen per cent of our students stop before the end.", "key": "DROP", "model": "Our drop-out rate is eighteen per cent.", "accept": ["drop-out rate", "drop out rate", "drop out"] },
+    { "original": "This lesson is for a single student.", "key": "ONE", "model": "It's a one-to-one.", "accept": ["one-to-one", "one to one"] },
+    { "original": "The students in that group are at very different levels.", "key": "MIXED", "model": "It's a mixed-ability class.", "accept": ["mixed-ability", "mixed ability"] },
+    { "original": "She is teaching somebody else's class today.", "key": "COVERING", "model": "She's covering that class today.", "accept": ["covering", "cover"] },
+    { "original": "A test decides which level a new student joins.", "key": "PLACEMENT", "model": "A placement test decides the level.", "accept": ["placement test", "placement"] },
+    { "original": "He failed, so he has to take the exam again.", "key": "RESIT", "model": "He has to resit the exam.", "accept": ["resit"] },
+    { "original": "The school was officially recognised as meeting the standard.", "key": "ACCREDITATION", "model": "The school received accreditation.", "accept": ["accreditation", "accredited"] },
+    { "original": "Students can pay in agreed parts instead of all at once.", "key": "INSTALMENT", "model": "There's an instalment plan.", "accept": ["instalment"] },
+    { "original": "Sixty of the hours are actually spent with a teacher.", "key": "CONTACT", "model": "There are sixty contact hours.", "accept": ["contact hours"] },
+    { "original": "The group of students who all start in September.", "key": "INTAKE", "model": "The September intake.", "accept": ["intake"] },
+    { "original": "It's a practice exam run under real conditions.", "key": "MOCK", "model": "It's a mock exam.", "accept": ["mock"] },
+    { "original": "She fell behind and then reached the level of the others.", "key": "CAUGHT", "model": "She caught up.", "accept": ["caught up", "catch up"] },
+    { "original": "The public can come and look round the school that day.", "key": "OPEN", "model": "It's an open day.", "accept": ["open day"] },
+    { "original": "Half our rooms sit empty at ten in the morning.", "key": "UTILISATION", "model": "We have a utilisation problem.", "accept": ["utilisation"] },
+    { "original": "Reading the students' work and grading it took all evening.", "key": "MARKING", "model": "Marking took all evening.", "accept": ["marking", "marked"] }
+  ],
+  "word_formation": [
+    { "sentence": "___ for the autumn term opens on Monday.", "base": "ENROL", "accept": ["enrolment"] },
+    { "sentence": "Every ___ in the group learns differently.", "base": "STUDY", "accept": ["student"] },
+    { "sentence": "Each lesson needs one clear ___.", "base": "OBJECT", "accept": ["objective"] },
+    { "sentence": "Her ___ has improved since January.", "base": "ATTEND", "accept": ["attendance"] },
+    { "sentence": "The timetable needs better ___.", "base": "ORGANISE", "accept": ["organisation"] },
+    { "sentence": "He is a very ___ teacher.", "base": "EXPERIENCE", "accept": ["experienced"] },
+    { "sentence": "The ___ of the syllabus took a month.", "base": "REVISE", "accept": ["revision"] },
+    { "sentence": "___ closes two weeks before the course starts.", "base": "REGISTER", "accept": ["registration"] },
+    { "sentence": "The ___ lasted two days and found nothing.", "base": "INSPECT", "accept": ["inspection"] },
+    { "sentence": "The ___ at the end of term was very positive.", "base": "ASSESS", "accept": ["assessment"] },
+    { "sentence": "She gave a clear ___ of the task.", "base": "EXPLAIN", "accept": ["explanation"] },
+    { "sentence": "___ in class is not optional here.", "base": "PARTICIPATE", "accept": ["participation"] },
+    { "sentence": "The ___ between the two levels is small.", "base": "DIFFER", "accept": ["difference"] },
+    { "sentence": "We run ___ courses through the summer.", "base": "INTENSE", "accept": ["intensive"] },
+    { "sentence": "His ___ improved after the mock exam.", "base": "PERFORM", "accept": ["performance"] },
+    { "sentence": "The school has a good ___ in the city.", "base": "REPUTE", "accept": ["reputation"] }
+  ]
+}

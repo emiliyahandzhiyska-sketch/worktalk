@@ -1,0 +1,38 @@
+{
+  "transformations": [
+    { "original": "He studied English years ago and remembers almost none of it.", "key": "FALSE", "model": "He's a false beginner.", "accept": ["false beginner"] },
+    { "original": "My English is out of practice.", "key": "RUSTY", "model": "My English is rusty.", "accept": ["rusty"] },
+    { "original": "I know just enough English to manage.", "key": "BY", "model": "I get by in English.", "accept": ["get by", "getting by"] },
+    { "original": "I almost remember the word but it won't come.", "key": "TIP", "model": "It's on the tip of my tongue.", "accept": ["tip of my tongue"] },
+    { "original": "When they asked me, I remembered nothing at all.", "key": "BLANK", "model": "I drew a blank.", "accept": ["drew a blank", "draw a blank"] },
+    { "original": "I understood the general meaning without every word.", "key": "GIST", "model": "I got the gist.", "accept": ["gist"] },
+    { "original": "I didn't hear what she said.", "key": "CATCH", "model": "I didn't catch that.", "accept": ["catch"] },
+    { "original": "I couldn't speak because I was too nervous.", "key": "TONGUE", "model": "I was tongue-tied.", "accept": ["tongue-tied", "tongue tied"] },
+    { "original": "I forgot what I was saying halfway through the sentence.", "key": "TRAIN", "model": "I lost my train of thought.", "accept": ["train of thought"] },
+    { "original": "I want to improve the English I once knew.", "key": "BRUSH", "model": "I want to brush up on my English.", "accept": ["brush up"] },
+    { "original": "I'm learning it from the very beginning.", "key": "SCRATCH", "model": "I'm learning it from scratch.", "accept": ["from scratch"] },
+    { "original": "I work as usual but I've stopped feeling any better.", "key": "PLATEAU", "model": "I've hit a plateau.", "accept": ["plateau"] },
+    { "original": "Saying it takes no thought at all now.", "key": "NATURE", "model": "It's second nature.", "accept": ["second nature"] },
+    { "original": "Her English improved very quickly this month.", "key": "LEAPS", "model": "Her English came on in leaps and bounds.", "accept": ["leaps and bounds"] },
+    { "original": "That word sounds vaguely familiar.", "key": "BELL", "model": "That rings a bell.", "accept": ["rings a bell", "ring a bell"] },
+    { "original": "He slowed down over a busy month without deciding to stop.", "key": "MOMENTUM", "model": "He lost momentum.", "accept": ["lost momentum", "lose momentum"] }
+  ],
+  "word_formation": [
+    { "sentence": "Her ___ has improved a lot this year.", "base": "PRONOUNCE", "accept": ["pronunciation"] },
+    { "sentence": "I need more ___ before the interview.", "base": "PRACTISE", "accept": ["practice"] },
+    { "sentence": "___ is the hardest part for most adults.", "base": "SPEAK", "accept": ["speaking"] },
+    { "sentence": "He gave a clear ___ of the rule.", "base": "EXPLAIN", "accept": ["explanation"] },
+    { "sentence": "My ___ of English grammar is better than my speaking.", "base": "KNOW", "accept": ["knowledge"] },
+    { "sentence": "The course was surprisingly ___.", "base": "HELP", "accept": ["helpful"] },
+    { "sentence": "She was ___ about her own progress, as usual.", "base": "DOUBT", "accept": ["doubtful"] },
+    { "sentence": "___ is harder than reading and nobody warns you.", "base": "LISTEN", "accept": ["listening"] },
+    { "sentence": "I felt far more ___ after the first real call.", "base": "CONFIDENCE", "accept": ["confident"] },
+    { "sentence": "Learning a language mostly requires ___.", "base": "PATIENT", "accept": ["patience"] },
+    { "sentence": "That one lesson was genuinely ___.", "base": "USE", "accept": ["useful"] },
+    { "sentence": "Her ___ in class went up once she stopped worrying.", "base": "PARTICIPATE", "accept": ["participation"] },
+    { "sentence": "The difference between the two is barely ___.", "base": "NOTICE", "accept": ["noticeable"] },
+    { "sentence": "___ is what turns a phrase into a habit.", "base": "REPEAT", "accept": ["repetition"] },
+    { "sentence": "He was ___ for the first ten minutes, then fine.", "base": "NERVE", "accept": ["nervous"] },
+    { "sentence": "The ___ was worth every early morning.", "base": "IMPROVE", "accept": ["improvement"] }
+  ]
+}
