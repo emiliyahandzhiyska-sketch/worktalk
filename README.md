@@ -29,7 +29,7 @@ external script loads and students are never asked for notification permission.
 
 1. Create a free account at https://onesignal.com (free up to 10,000 subscribers).
 2. Add a new app, choose **Web** as the platform.
-3. Site setup: name `WorkTalk`, URL `https://worktalk-pi.vercel.app`, and turn on
+3. Site setup: name `WorkTalk`, URL `https://app.languageworkshop.works`, and turn on
    **"My site is not fully HTTPS"**? No, leave it off.
 4. Under **Advanced**, set the service worker path to `push/onesignal/` and the
    filename to `OneSignalSDKWorker.js`. The file is already in this repo.
