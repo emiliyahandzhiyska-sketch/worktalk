@@ -6,7 +6,9 @@ const DECK_KEY = 'worktalk_deck';
 
 const BRAND = {
   school: 'Language Workshop',
-  ctaUrl: 'mailto:emiliya.handzhiyska@gmail.com?subject=Lesson%20inquiry%20(via%20WorkTalk)'
+  // Opens the website's contact form with the "lessons" topic preselected.
+  // The site picks Bulgarian or English from the visitor's browser.
+  ctaUrl: 'https://languageworkshop.works/contact?topic=tutoring'
 };
 
 // Push reminders. Clearing this App ID switches them off: nothing loads and
