@@ -18,12 +18,12 @@ const PUSH = {
   oneSignalAppId: '09c2d75c-a2e1-4e36-902f-b0cdf3e1b80f'
 };
 
-// Certificate email capture. Submissions land in the Formspree inbox for
-// the address that owns this form. Clearing the endpoint switches capture
-// off: emails then stay only on the student's own device.
-// Free plan allows 50 submissions a month.
+// Certificate email capture. Submissions go to the Language Workshop website,
+// which stores them (Admin > Messages > WorkTalk) and emails the office inbox.
+// Clearing the endpoint switches capture off: emails then stay only on the
+// student's own device.
 const LEADS = {
-  endpoint: 'https://formspree.io/f/mqpzjlrk'
+  endpoint: 'https://languageworkshop.works/api/worktalk/lead'
 };
 
 // Per-deck storage key, e.g. worktalk_marketing_mastered
@@ -1520,15 +1520,13 @@ async function captureLead(email, name, deckName) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
-        // _subject is a Formspree field: it becomes the inbox subject line
-        _subject: `WorkTalk certificate: ${name || 'unnamed'} — ${deckName}`,
-        email: clean, name: name || '(no name given)',
+        email: clean, name: name || '',
         topic: deckName, source: 'WorkTalk certificate', app: location.origin
       })
     });
     // fetch only throws on network failure, so a rejected submission
-    // (monthly limit reached, form paused) would otherwise be recorded as
-    // sent and never retried. Only mark it sent when Formspree accepted it.
+    // (rate limit reached, site down) would otherwise be recorded as
+    // sent and never retried. Only mark it sent when the website accepted it.
     if (!res.ok) return;
     sent.add(sentKey);
     localStorage.setItem(LEADS_SENT_KEY, JSON.stringify([...sent]));
