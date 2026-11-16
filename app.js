@@ -408,6 +408,10 @@ const PAGE_DEFAULT = '241 245 249';
 const CLOUD_DANCER = '240 238 233'; // Pantone 11-4201, approximate hex #F0EEE9
 
 const PALETTES = {
+  // --- Matches languageworkshop.works ("Bright campus" look): warm white page, burnt orange accent ---
+  campus:  { group: 'Website', name: 'Campus orange (default)', dot: '#d0430b', bg: '253 249 246',
+             v: ['255 244 236', '255 226 209', '208 67 11', '180 56 9', '146 44 8'] },
+
   // --- Language Workshop red, from softest to the logo itself ---
   clay:    { group: 'Brand red', name: 'Clay rose (softest)', dot: '#b86b6b',
              v: ['253 244 243', '247 227 225', '184 107 107', '158 87 87', '129 70 70'] },
@@ -441,9 +445,10 @@ const PALETTES = {
              v: ['240 253 250', '204 251 241', '13 148 136', '15 118 110', '17 94 89'] }
 };
 
-const DEFAULT_PALETTE = 'photocoral';
+const DEFAULT_PALETTE = 'campus';
 
-const PALETTE_KEY = 'worktalk_palette';
+// v2: the key changed when the default palette changed, so every device picks up the new default.
+const PALETTE_KEY = 'worktalk_palette_v2';
 const SHADES = ['--brand-50', '--brand-100', '--brand-500', '--brand-600', '--brand-700'];
 
 function applyPalette(id) {
